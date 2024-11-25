@@ -1,0 +1,37 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const checkbox = document.querySelector('.setAlertInput');
+    
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                Swal.fire({
+                    html: `
+                        <div style="text-align: center;">
+                            <div class="swalalert_custom_icon">
+                                <iconify-icon icon="hugeicons:alert-01"></iconify-icon>
+                            </div>
+                            <h2 class="Swal_CustomTitle">Are You Sure You Want to Set This Note as an Alert?</h2>
+                        </div>`,
+                    showCancelButton: true,
+                    confirmButtonText: 'Yes, set it!',
+                    cancelButtonText: 'No, cancel!',
+                    reverseButtons: true,
+                    customClass: {
+                        confirmButton: 'btn btn-success',
+                        cancelButton: 'btn btn-danger'
+                    }
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Swal.fire({
+                            title: 'Alert Set!',
+                            text: 'The note has been successfully set as an alert.',
+                            icon: 'success'
+                        });
+                    } else if (result.isDismissed) {
+                        checkbox.checked = false; // Uncheck the checkbox if the user cancels
+                    }
+                });
+            }
+        });
+    });
+    </script>

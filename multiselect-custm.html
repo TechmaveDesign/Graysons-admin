@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="col-lg-6">
+        <div class="dropdown filterdropDownCustom availableUsersDropdownWrapper form-group">
+        <label class="form-label">Selected Properties</label>
+            <button class="dropbtn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Selected Properties
+                <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
+            </button>
+            <div class="dropdown-menu customdropdownmenu_style availableUsersDropdown">
+                <div class="filTerSearchMain">
+                    <input type="text" class="filterclSearch availableUsersSearchInput"
+                        placeholder="Search available users...">
+                    <iconify-icon icon="basil:search-outline"></iconify-icon>
+                </div>
+                <div class="sellallitemsMain">
+                    <div class="CustomselectallContainer">
+                        <input type="checkbox" class="selectAllAvailableUsers"> Select All
+                    </div>
+                    <div class="clDivider_full"></div>
+                </div>
+                <div class="Customdrpitems_container">
+                    <div class="mainoptionContainer">
+                        <div class="dropfilter_options">
+                            <input type="checkbox"> Elmwood Cottage
+                        </div>
+                    </div>
+                    <div class="mainoptionContainer">
+                        <div class="dropfilter_options">
+                            <input type="checkbox"> Rosewood Gardens
+                        </div>
+                    </div>
+                    <div class="mainoptionContainer">
+                        <div class="dropfilter_options">
+                            <input type="checkbox"> Ivy Court Apartments
+                        </div>
+                    </div>
+                    <div class="mainoptionContainer">
+                        <div class="dropfilter_options">
+                            <input type="checkbox"> Oakridge Manor
+                        </div>
+                    </div>
+                    <div class="mainoptionContainer">
+                        <div class="dropfilter_options">
+                            <input type="checkbox">The Meadows
+                        </div>
+                    </div>
+                    <div class="mainoptionContainer">
+                        <div class="dropfilter_options">
+                            <input type="checkbox"> Willowbrook House
+                        </div>
+                    </div>
+                    <div class="mainoptionContainer">
+                        <div class="dropfilter_options">
+                            <input type="checkbox"> Primrose Lodge
+                        </div>
+                    </div>
+                </div>
+                <div class="ButtonResetFilters">
+                    <button type="button" class="resetFilterButton">
+                        <iconify-icon icon="carbon:reset"></iconify-icon> Reset Filter
+                    </button>
+                    <button type="button" class="applyFilterButton">
+                        <iconify-icon icon="codicon:git-stash-apply"></iconify-icon> Apply
+                        Filter
+                    </button>
+                </div>
+                <p class="no-data noAvailableUsersDataMessage" style="display: none;">No
+                    data found</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+  width: 600px;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+
+.container .checkbox {
+  margin: 20px 0;
+}
+
+input[type="checkbox"] + label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+  margin-right: 15px;
+  font-size: 13px;
+}
+
+input[type="checkbox"] + label:before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+input[type="checkbox"] {
+  display: none !important;
+}
+
+input[type="checkbox"]:checked + label:after {
+  content: "✔";
+  font-size: 20px;
+  line-height: 20px;
+  color: #b7b7b7;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="yesNo_opt_container">
+        <div class="checkbox">
+          <input id="yes" type="checkbox" name="option" value="yes">
+          <label for="yes">Yes</label>
+        </div>
+        <div class="checkbox">
+          <input id="no" type="checkbox" name="option" value="no">
+          <label for="no">No</label>
+        </div>
+      </div>
+
+      
+      <script>
+        const checkboxes = document.querySelectorAll('input[type="checkbox"][name="option"]');
+
+checkboxes.forEach(checkbox => {
+  checkbox.addEventListener('change', function() {
+    if (this.checked) {
+      checkboxes.forEach(box => {
+        if (box !== this) {
+          box.checked = false;
+        }
+      });
+    }
+  });
+});
+
+      </script>
+
+</body>
+</html>
