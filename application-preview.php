@@ -45,7 +45,7 @@
                         <div class="d-flex align-items-center">
                             <div class="dropdown">
                                 <a class="contactapp-title link-dark" href="javascript:void(0)" role="button">
-                                    <h1>Application Form Details </h1>
+                                    <h1>Application Form Tetails </h1>
                                 </a>
 
                             </div>
