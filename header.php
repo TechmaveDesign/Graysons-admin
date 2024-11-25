@@ -733,7 +733,7 @@
 																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 																</li>
 																<li class="nav-item">
-																	<a class="nav-link" href="javascript:void(0);">
+																	<a class="nav-link" href="Social-hub.php">
 																		<span class="nav-link-text">Marketing</span>
 																	</a>
 																	<i
@@ -885,7 +885,7 @@
 																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 																</li>
 
-																<li class="nav-item">
+																<!-- <li class="nav-item">
 																	<a class="nav-link" href="Social-hub.php">
 
 																		<span class="nav-link-text">Social Hub</span>
@@ -893,7 +893,7 @@
 																	<i
 																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 
-																</li>
+																</li> -->
 															</ul>
 														</li>
 														<!-- <li class="nav-item">

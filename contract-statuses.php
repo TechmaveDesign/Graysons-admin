@@ -218,7 +218,6 @@
                                                     <th>Applicant Email Address</th>
                                                     <th>Applicant Contact Number</th>
                                                     <th>Form Submitted Date </th>
-                                                    <th>Application Source</th>
                                                     <th>Application Status</th>
                                                     <th>Actions</th>
                                                 </tr>
@@ -246,11 +245,7 @@
                                                     <td>+145 52 5689</td>
 
                                                     <td>13 Jan, 2020</td>
-                                                    <td>
-                                                        <div class="enquirySource">
-                                                            <iconify-icon icon="streamline:web"></iconify-icon> Website
-                                                        </div>
-                                                    </td>
+                                                   
                                                     <td><span class="badge badge-soft-success  my-1  me-2">Application Received</span>
                                                     </td>
                                                     <td>
@@ -294,11 +289,7 @@
                                                     <td class="">huma@clariesup.au</td>
                                                     <td>+234 48 2365</td>
                                                     <td>13 Jan, 2020</td>
-                                                    <td>
-                                                        <div class="enquirySource">
-                                                            <iconify-icon icon="streamline:web"></iconify-icon> Website
-                                                        </div>
-                                                    </td>
+                                                   
                                                     <td><span class="badge badge-soft-success  my-1  me-2">Application Received</span>
                                                     </td>
                                                     <td>
@@ -343,11 +334,7 @@
                                                     <td>+741 56 7896</td>
 
                                                     <td>13 Jan, 2019</td>
-                                                    <td>
-                                                        <div class="enquirySource">
-                                                            <iconify-icon icon="streamline:web"></iconify-icon> Website
-                                                        </div>
-                                                    </td>
+                                                   
                                                     <td><span class="badge badge-soft-success  my-1  me-2">Application Received</span>
                                                     </td>
                                                     <td>
@@ -391,11 +378,7 @@
                                                     <td class="">winston@worthniza.ga</td>
                                                     <td>+145 52 5463</td>
                                                     <td>13 Jan, 2020</td>
-                                                    <td>
-                                                        <div class="enquirySource">
-                                                            <iconify-icon icon="streamline:web"></iconify-icon> Website
-                                                        </div>
-                                                    </td>
+                                                   
                                                     <td><span class="badge badge-soft-success  my-1  me-2">Application Received</span>
                                                     </td>
                                                     <td>
@@ -439,11 +422,7 @@
                                                     <td class="">tomcz@jampack.com</td>
                                                     <td>+145 52 5463</td>
                                                     <td>13 Jan, 2020</td>
-                                                    <td>
-                                                        <div class="enquirySource">
-                                                            <iconify-icon icon="streamline:web"></iconify-icon> Website
-                                                        </div>
-                                                    </td>
+                                                   
                                                     <td><span class="badge bgadpastevent">Awaiting Details</span>
                                                     </td>
                                                     <td>
@@ -487,11 +466,7 @@
                                                     <td class="">dean-shaw@poww.me</td>
                                                     <td>+145 52 5463</td>
                                                     <td>13 Jan, 2020</td>
-                                                    <td>
-                                                        <div class="enquirySource">
-                                                            <iconify-icon icon="streamline:web"></iconify-icon> Website
-                                                        </div>
-                                                    </td>
+                                                   
                                                     <td><span class="badge badge-soft-success  my-1  me-2">Application Received</span>
                                                     </td>
                                                     <td>
@@ -537,11 +512,7 @@
                                                     <td class="">danialc@jampack.com</td>
                                                     <td>+145 52 5463</td>
                                                     <td>13 Jan, 2020</td>
-                                                    <td>
-                                                        <div class="enquirySource">
-                                                            <iconify-icon icon="streamline:web"></iconify-icon> Website
-                                                        </div>
-                                                    </td>
+                                                   
                                                     <td><span class="badge bgadpastevent">Awaiting Details</span>
                                                     </td>
                                                     <td>
