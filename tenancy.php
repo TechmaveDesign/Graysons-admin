@@ -273,7 +273,7 @@
 
                                                             </div>
 
-                                                            <div class="col-lg-12">
+                                                            <!-- <div class="col-lg-12">
                                                                 <div class="form-group sectionStatus">
                                                                     <label for="" class="form-label">Section 21 :
                                                                     </label>
@@ -282,9 +282,9 @@
                                                                             Sent</span></div>
 
                                                                 </div>
-                                                            </div>
+                                                            </div> -->
 
-                                                            <div class="col-md-3">
+                                                            <!-- <div class="col-md-3">
                                                                 <div class="form-group">
                                                                     <label for="" class="form-label">30 Day Letter
                                                                         Sent</label>
@@ -309,7 +309,7 @@
                                                                     <input type="text" class="form-control" id=""
                                                                         value="">
                                                                 </div>
-                                                            </div>
+                                                            </div> -->
 
                                                         </div>
                                                     </div>

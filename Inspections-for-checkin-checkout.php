@@ -68,58 +68,52 @@
                                 <div class="quick-access-form-wrap nopaddingleftright">
                                     <form class="quick-access-form border">
                                         <div class="row gx-3">
-                                            <div class="col-xxl-10">
+                                            <div class="col-xxl-12">
                                                 <div class="position-relative">
 
                                                     <div class="col-lg-12">
                                                         <div class="row gx-3">
-                                                            <div class="col-lg-3">
+                                                        <div class="col-lg-4">
                                                                 <div class="form-group">
-                                                                    <label class="form-label">Type</label>
+                                                                    <label class="form-label">Filter by Tenant</label>
                                                                     <select name="" id="" class="form-control select2">
                                                                         <option value="" selected disable readonly>
                                                                             Select an Option</option>
-                                                                            <option value="1">Private</option>
-													<option value="2">Student</option>
-													<option value="4">Commercial</option>
-													<option value="5">Dental</option>
+                                                                        <option value="Morgan Freeman">Morgan Freeman</option>
+                                                                        <option value="Jessica Alba">Jessica Alba</option>
+                                                                        <option value="Chris Evans">Chris Evans</option>
+                                                                        <option value="Emma Watson">Emma Watson</option>
                                                                     </select>
 
                                                                 </div>
 
                                                             </div>
 
-                                                            
-                                                            <div class="col-lg-3">
+                                                            <div class="col-lg-4">
                                                                 <div class="form-group">
-                                                                    <label class="form-label">Start After / Start Before Date</label>
-                                                                    <input class="form-control" type="text"
-                                                                        name="daterange" value="Pick a Date" />
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-lg-3">
-                                                                <div class="form-group">
-                                                                    <label class="form-label">End  After / End  Before Date</label>
-                                                                    <input class="form-control" type="text"
-                                                                        name="daterange" value="Pick a Date" />
-                                                                </div>
-                                                            </div>
-
-
-                                                            <div class="col-lg-3">
-                                                                <div class="form-group">
-                                                                    <label class="form-label">Debt Status</label>
+                                                                    <label class="form-label">Property</label>
                                                                     <select name="" id="" class="form-control select2">
-                                                                        <option value="" selected disable readonly>
-                                                                            Select an Option</option>
-                                                                            <option value="None">None</option>
-											<option value="30DayLetter">30 Day Notice</option>
-											<option value="DebtCollector">Debt Collector</option>
-											<option value="CountyCourtJudgement">CCJ</option>
+                                                                        <option disabled="" selected="" value="">Please
+                                                                            Select...</option>
+                                                                        <option value="2">Communal Area Inspection House
+                                                                            10</option>
+                                                                        <option value="7">Communal Area Inspection House
+                                                                            14</option>
+                                                                        <option value="21">Communal Area Inspection
+                                                                            House 18</option>
 
                                                                     </select>
 
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-4">
+
+                                                                <div class="form-group">
+                                                                    <label class="form-label">Inspection Date</label>
+                                                                    <input class="form-control customdataPicker flatpickr-input" type="text" name="" value="01/06/2024" readonly="readonly">
+                                                                    <iconify-icon icon="ion:calendar-outline" class="dateinput_icon"></iconify-icon>
                                                                 </div>
                                                             </div>
 
@@ -127,20 +121,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-xxl-2">
-                                                <div class="row justify-content-end">
-                                               
-                                                    <div class="col-auto">
-                                                        <div class="form-group">
-                                                            <label class="form-label">&nbsp;</label>
-                                                            <button type="button"
-                                                                class="btn btn-block btn-primary ">Filter
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
+                                         
                                         </div>
                                     </form>
                                 </div>
@@ -157,7 +138,7 @@
                                             <th>Contract Start Date</th>
                                             <th>Inspection Date</th>
                                             <th>End Date</th>
-                                            <th>Actions</th>
+                                            <!-- <th>Actions</th> -->
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -185,7 +166,7 @@
                                             <td>10/05/2023</td>
                                             <td>15/06/2023</td>
 
-                                            <td>
+                                            <!-- <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
 
@@ -199,7 +180,7 @@
 
                                                     </div>
                                                 </div>
-                                            </td>
+                                            </td> -->
                                         </tr>
                                         <tr>
                                             <td>
@@ -224,19 +205,7 @@
                                             <td>15/03/2023</td>
                                             <td>25/04/2023</td>
                                             <td>28/05/2023</td>
-                                            <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                        <a href="tenancy.php"
-                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                            data-bs-toggle="tooltip" data-placement="top" title=""
-                                                            data-bs-original-title="View Tenancy"
-                                                            href="vjavascript:void(0)"><span class="icon"><span
-                                                                    class="feather-icon"><i
-                                                                        data-feather="eye"></i></span></span></a>
-                                                    </div>
-                                                </div>
-                                            </td>
+                                           
                                         </tr>
 
                                         <tr>
@@ -262,19 +231,7 @@
                                             <td>01/02/2023</td>
                                             <td>14/03/2023</td>
                                             <td>18/04/2023</td>
-                                            <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                        <a href="tenancy.php"
-                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                            data-bs-toggle="tooltip" data-placement="top" title=""
-                                                            data-bs-original-title="View Tenancy"
-                                                            href="vjavascript:void(0)"><span class="icon"><span
-                                                                    class="feather-icon"><i
-                                                                        data-feather="eye"></i></span></span></a>
-                                                    </div>
-                                                </div>
-                                            </td>
+                                           
                                         </tr>
 
                                         <tr>
@@ -300,19 +257,7 @@
                                             <td>10/01/2023</td>
                                             <td>20/02/2023</td>
                                             <td>23/03/2023</td>
-                                            <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                        <a href="tenancy.php"
-                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                            data-bs-toggle="tooltip" data-placement="top" title=""
-                                                            data-bs-original-title="View Tenancy"
-                                                            href="vjavascript:void(0)"><span class="icon"><span
-                                                                    class="feather-icon"><i
-                                                                        data-feather="eye"></i></span></span></a>
-                                                    </div>
-                                                </div>
-                                            </td>
+                                           
                                         </tr>
 
                                         <tr>
@@ -338,19 +283,7 @@
                                             <td>05/06/2023</td>
                                             <td>15/07/2023</td>
                                             <td>18/08/2023</td>
-                                            <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                        <a href="tenancy.php"
-                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                            data-bs-toggle="tooltip" data-placement="top" title=""
-                                                            data-bs-original-title="View Tenancy"
-                                                            href="vjavascript:void(0)"><span class="icon"><span
-                                                                    class="feather-icon"><i
-                                                                        data-feather="eye"></i></span></span></a>
-                                                    </div>
-                                                </div>
-                                            </td>
+                                           
                                         </tr>
 
                                         <tr>
@@ -377,19 +310,7 @@
                                             <td>12/04/2023</td>
                                             <td>22/05/2023</td>
                                             <td>25/06/2023</td>
-                                            <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                        <a href="tenancy.php"
-                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                            data-bs-toggle="tooltip" data-placement="top" title=""
-                                                            data-bs-original-title="View Tenancy"
-                                                            href="vjavascript:void(0)"><span class="icon"><span
-                                                                    class="feather-icon"><i
-                                                                        data-feather="eye"></i></span></span></a>
-                                                    </div>
-                                                </div>
-                                            </td>
+                                          
                                         </tr>
 
                                     </tbody>
