@@ -478,7 +478,7 @@
                                                                 </a>
                                                             </td>
                                                             <td>Landlord</td>
-                                                            <td><span class="badge  urgentTicket_status my-1 me-2">Urgent</span></td>
+                                                            <td><span class="badge  urgentTicket_status my-1 me-2">Emergency</span></td>
                                                             <td>08/04/2024 11:30</td>
                                                             <td>29/11/2024</td>
                                                             <td>
@@ -780,7 +780,7 @@
                                                                     </div>
                                                                 </a>
                                                             </td>
-                                                            <td><span class="badge  urgentTicket_status my-1 me-2">Urgent</span></td>
+                                                            <td><span class="badge  urgentTicket_status my-1 me-2">Emergency</span></td>
                                                             <td>08/04/2024 11:30</td>
                                                             <td>29/11/2024</td>
                                                             <td>
@@ -1080,7 +1080,7 @@
                                                                     </div>
                                                                 </a>
                                                             </td>
-                                                            <td><span class="badge  urgentTicket_status my-1 me-2">Urgent</span></td>
+                                                            <td><span class="badge  urgentTicket_status my-1 me-2">Emergency</span></td>
                                                             <td>08/04/2024 11:30</td>
                                                             <td>29/11/2024</td>
                                                             <td>
@@ -1380,7 +1380,7 @@
                                                                     </div>
                                                                 </a>
                                                             </td>
-                                                            <td><span class="badge  urgentTicket_status my-1 me-2">Urgent</span></td>
+                                                            <td><span class="badge  urgentTicket_status my-1 me-2">Emergency</span></td>
                                                             <td>08/04/2024 11:30</td>
                                                             <td>29/11/2024</td>
                                                             <td>
@@ -1576,7 +1576,7 @@
                                                                     </a>
                                                                 </td>
                                                                 <td>Staff</td>
-                                                                <td><span class="badge bg-danger">Urgent</span></td>
+                                                                <td><span class="badge bg-danger">Emergency</span></td>
 
                                                                 <td>09/04/2024 17:19</td>
                                                                 <td>25/11/2024</td>
@@ -1630,7 +1630,7 @@
                                                                     </a>
                                                                 </td>
                                                                 <td>Tenant</td>
-                                                                <td><span class="badge bg-danger">Urgent</span></td>
+                                                                <td><span class="badge bg-danger">Emergency</span></td>
                                                                 <td>09/04/2024 14:45</td>
                                                                 <td>27/11/2024</td>
                                                                 <td>
@@ -1683,7 +1683,7 @@
                                                                     </a>
                                                                 </td>
                                                                 <td>Landlord</td>
-                                                                <td><span class="badge bg-danger">Urgent</span></td>
+                                                                <td><span class="badge bg-danger">Emergency</span></td>
                                                                 <td>08/04/2024 11:30</td>
                                                                 <td>29/11/2024</td>
                                                                 <td>
@@ -1736,7 +1736,7 @@
                                                                     </a>
                                                                 </td>
                                                                 <td>Staff</td>
-                                                                <td><span class="badge bg-danger">Urgent</span></td>
+                                                                <td><span class="badge bg-danger">Emergency</span></td>
                                                                 <td>09/04/2024 09:15</td>
                                                                 <td>23/11/2024</td>
                                                                 <td>
@@ -1789,7 +1789,7 @@
                                                                     </a>
                                                                 </td>
                                                                 <td>Tenant</td>
-                                                                <td><span class="badge bg-danger">Urgent</span></td>
+                                                                <td><span class="badge bg-danger">Emergency</span></td>
                                                                 <td>09/04/2024 12:00</td>
                                                                 <td>26/11/2024</td>
                                                                 <td>
