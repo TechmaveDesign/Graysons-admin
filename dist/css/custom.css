@@ -1860,7 +1860,7 @@ table.dataTable td {
 	border-top-left-radius: 0;
   }
   .commentReplyContainer .media.received .media-body .msg-box > div {
-	background: #f2f2f2bd;
+	background: #f2f2f245;
   }
   .commentReplyContainer .media .media-body .msg-box > div {
 	padding: 0.625rem 1rem;
@@ -3197,6 +3197,17 @@ div.dt-container div.dt-search input {
 	background-color: #16A085 !important; /* Dark Teal */
     color: white !important; /* Ensures text is readable */
 }
+.sidecolor_Allproperties .svg-icon > svg{
+	background-color: #FCB608 !important;
+	color: white !important;
+}
+
+.sidecolor_Compliance .svg-icon > iconify-icon {
+	background: #0057c9 !important;
+	color: #fff !important;
+  }
+
+
 .sidecolor_payments .svg-icon > svg{
 	background-color: #fec065 !important;
     color: white !important; /* Ensures text is readable */
@@ -3257,7 +3268,9 @@ div.dt-container div.dt-search input {
 	border-radius: 0px !important;
 }
 
-
+.sidecolor_Compliance iconify-icon {
+	font-size: 16px !important;
+}
 .alerts_messages button{
 	width: 100%;
 	border-radius: 0px;
@@ -7182,8 +7195,8 @@ border: 1px solid #e8e8e8;
 	border:none;
 }
 
-.approvalFooter_action .approval_details{
-	width: 50%;
+.approvalFooter_action .approval_details {
+	width: 100%;
 	display: flex;
 	align-items: center;
 	text-align: center;
@@ -7191,10 +7204,15 @@ border: 1px solid #e8e8e8;
 	padding: 7px 20px;
 	border-radius: 4px;
 	font-size: 13px;
-	border:none;
-	background-color: #17f;
-    color: white;
+	border: none;
+	background-color: #f2f5fa;
+	color: black;
 	margin-left: 5px;
+}
+.approval_details:hover {
+	background-color: #fcb608;
+	color: white;
+	font-weight: 600 !important;
 }
 .approvalFooter_action .approval_details  iconify-icon{
 	font-size: 20px;

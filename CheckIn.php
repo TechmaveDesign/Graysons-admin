@@ -75,14 +75,14 @@
                                                         <div class="row gx-3">
                                                             <div class="col-lg-3">
                                                                 <div class="form-group">
-                                                                    <label class="form-label">Type</label>
+                                                                    <label class="form-label">filter by Tenant</label>
                                                                     <select name="" id="" class="form-control select2">
                                                                         <option value="" selected disable readonly>
                                                                             Select an Option</option>
-                                                                        <option value="1">Private</option>
-                                                                        <option value="2">Student</option>
-                                                                        <option value="4">Commercial</option>
-                                                                        <option value="5">Dental</option>
+                                                                        <option value="Morgan Freeman">Morgan Freeman</option>
+                                                                        <option value="Jessica Alba">Jessica Alba</option>
+                                                                        <option value="Chris Evans">Chris Evans</option>
+                                                                        <option value="Emma Watson">Emma Watson</option>
                                                                     </select>
 
                                                                 </div>

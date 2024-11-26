@@ -635,7 +635,7 @@
 								</a>
 								<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 							</li>
-							<li class="nav-item">
+							<!-- <li class="nav-item">
 								<a class="nav-link sidecolorStaff" href="all-staff.php">
 									<span class="nav-icon-wrap">
 										<span class="svg-icon">
@@ -646,7 +646,7 @@
 
 								</a>
 								<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
-							</li>
+							</li> -->
 
 							<li class="nav-item">
 								<div class="menu-group">
@@ -688,7 +688,7 @@
 																			<path d="M16 20h2a2 2 0 0 0 2 -2v-2" />
 																			<path
 																				d="M8 16a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2" />
-																			</svg>
+																		</svg>
 																	</span>
 																</span>
 																<span class="nav-link-text">Lettings</span>
@@ -704,15 +704,14 @@
 																	</a>
 																	<i
 																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
-																	
+
 																</li>
 																<li class="nav-item">
-																					<a href="calendar.php"
-																						class="nav-link"
-																						data-key="add-enquiry-status"><span
-																							class="nav-link-text">Calendar</span>
-																					</a>
-																				</li>
+																	<a href="calendar.php" class="nav-link"
+																		data-key="add-enquiry-status"><span
+																			class="nav-link-text">Calendar</span>
+																	</a>
+																</li>
 
 																<li class="nav-item">
 																	<a class="nav-link  " href="contract-statuses.php">
@@ -732,19 +731,88 @@
 																	<i
 																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 																</li>
+
 																<li class="nav-item">
-																	<a class="nav-link" href="Social-hub.php">
-																		<span class="nav-link-text">Marketing</span>
+																	<a class="nav-link "
+																		href="property-availability.php">
+																		<span class="nav-link-text">Property
+																			Availability </span>
 																	</a>
 																	<i
 																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 																</li>
-																
+
 																<li class="nav-item">
-																	<a class="nav-link " href="property-availability.php">
-																		<span class="nav-link-text">Property Availability </span>
+																	<a class="nav-link sidecolor_Account "
+																		href="javascript:void(0);"
+																		data-bs-toggle="collapse"
+																		data-bs-target="#dash_Marketing">
+																		<span class="nav-icon-wrap">
+																			<span class="svg-icon">
+																				<iconify-icon
+																					icon="fluent:window-inprivate-account-20-regular">
+																				</iconify-icon>
+																			</span>
+																		</span>
+																		<span class="nav-link-text">Marketing</span>
 																	</a>
-																	<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+																	<i
+																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+																	<ul id="dash_Marketing"
+																		class="nav flex-column collapse  nav-children">
+																		<li class="nav-item">
+																			<a class="nav-link sidecolorhrHub"
+																				href="Social-hub.php">
+																				<span
+																					class="nav-icon-wrap position-relative">
+
+																					<span class="svg-icon">
+																						<iconify-icon
+																							icon="carbon:ibm-event-automation">
+																						</iconify-icon>
+																					</span>
+																				</span>
+																				<span class="nav-link-text">Social
+																					Hub</span>
+																			</a>
+																			<i
+																				class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+
+																		</li>
+
+																		<li class="nav-item">
+																			<a class="nav-link sidecolor_offer"
+																				href="offers.php">
+																				<span class="nav-icon-wrap">
+																					<span class="svg-icon">
+																						<svg xmlns="http://www.w3.org/2000/svg"
+																							width="24" height="24"
+																							viewBox="0 0 24 24"
+																							fill="none"
+																							stroke="currentColor"
+																							stroke-width="2"
+																							stroke-linecap="round"
+																							stroke-linejoin="round"
+																							class="icon icon-tabler icons-tabler-outline icon-tabler-tag">
+																							<path stroke="none"
+																								d="M0 0h24v24H0z"
+																								fill="none" />
+																							<path
+																								d="M7.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+																							<path
+																								d="M3 6v5.172a2 2 0 0 0 .586 1.414l7.71 7.71a2.41 2.41 0 0 0 3.408 0l5.592 -5.592a2.41 2.41 0 0 0 0 -3.408l-7.71 -7.71a2 2 0 0 0 -1.414 -.586h-5.172a3 3 0 0 0 -3 3z" />
+																						</svg>
+																					</span>
+																				</span>
+																				<span class="nav-link-text">All
+																					Offers</span>
+																			</a>
+																			<i
+																				class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+																		</li>
+
+																	</ul>
+
 																</li>
 
 																<!-- sidecolor_contracts if need add this on nav-link -->
@@ -805,7 +873,125 @@
 
 																	</ul>
 																</li>
+																<li class="nav-item">
+																	<a class="nav-link sidecolor_invoices"
+																		href="javascript:void(0);"
+																		data-bs-toggle="collapse"
+																		data-bs-target="#dash_invoice">
+																		<span class="nav-icon-wrap">
+																			<span class="svg-icon">
+																				<svg xmlns="http://www.w3.org/2000/svg"
+																					class="icon icon-tabler icon-tabler-file-digit"
+																					width="24" height="24"
+																					viewBox="0 0 24 24" stroke-width="2"
+																					stroke="currentColor" fill="none"
+																					stroke-linecap="round"
+																					stroke-linejoin="round">
+																					<path stroke="none"
+																						d="M0 0h24v24H0z" fill="none" />
+																					<path d="M14 3v4a1 1 0 0 0 1 1h4" />
+																					<rect x="9" y="12" width="3"
+																						height="5" rx="1" />
+																					<path
+																						d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+																					<path d="M15 12v5" />
+																				</svg>
+																			</span>
+																		</span>
+																		<span class="nav-link-text">Invoices</span>
+																	</a>
+																	<i
+																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+																	<ul id="dash_invoice"
+																		class="nav flex-column collapse  nav-children">
+																		<li class="nav-item">
+																			<ul class="nav menu-dropdown flex-column">
+
+																				<li class="nav-item">
+																					<a href="javascript:void(0);"
+																						class="nav-link"
+																						data-key="dispatch-invoices"><span
+																							class="nav-link-text">Dispatch
+																							Invoices</span></a>
+																				</li>
+																				<li class="nav-item">
+																					<a href="javascript:void(0);"
+																						class="nav-link"
+																						data-key="view-invoices"><span
+																							class="nav-link-text">View
+																							Invoices</span>
+																						<span
+																							class="badge diebarbadge badge-pill  ">329</span>
+																					</a>
+																				</li>
+																				<li class="nav-item">
+																					<a href="javascript:void(0);"
+																						class="nav-link"
+																						data-key="add-invoice-item-type"><span
+																							class="nav-link-text">Add
+																							Invoice Item
+																							Type</span></a>
+																				</li>
+																				<li class="nav-item">
+																					<a href="javascript:void(0);"
+																						class="nav-link"
+																						data-key="view-invoice-item-types"><span
+																							class="nav-link-text">View
+																							Invoice Item Types</span>
+																					</a>
+																				</li>
+
+																			</ul>
+																		</li>
+																	</ul>
+																</li>
+
+																<li class="nav-item">
+																	<a class="nav-link sidecolor_payments"
+																		href="javascript:void(0);"
+																		data-bs-toggle="collapse"
+																		data-bs-target="#dash_integ">
+																		<span class="nav-icon-wrap">
+																			<span class="svg-icon">
+																				<svg xmlns="http://www.w3.org/2000/svg"
+																					width="24" height="24"
+																					viewBox="0 0 24 24" fill="none"
+																					stroke="currentColor"
+																					stroke-width="2"
+																					stroke-linecap="round"
+																					stroke-linejoin="round"
+																					class="icon icon-tabler icons-tabler-outline icon-tabler-credit-card-pay">
+																					<path stroke="none"
+																						d="M0 0h24v24H0z" fill="none" />
+																					<path
+																						d="M12 19h-6a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v4.5" />
+																					<path d="M3 10h18" />
+																					<path d="M16 19h6" />
+																					<path d="M19 16l3 3l-3 3" />
+																					<path d="M7.005 15h.005" />
+																					<path d="M11 15h2" /></svg>
+																			</span>
+																		</span>
+																		<span class="nav-link-text">Payments</span>
+																	</a>
+																	<i
+																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+																	<ul id="dash_integ"
+																		class="nav flex-column collapse  nav-children">
+																		<li class="nav-item">
+																			<ul class="nav flex-column">
+																				<li class="nav-item">
+																					<a class="nav-link"
+																						href="reconciliation.php"><span
+																							class="nav-link-text">Reconciliation</span></a>
+																				</li>
+
+																			</ul>
+																		</li>
+																	</ul>
+																</li>
 															</ul>
+
 														</li>
 
 														<li class="nav-item">
@@ -848,7 +1034,7 @@
 																			<path d="M14 16l1 0" />
 																			<path
 																				d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16" />
-																			</svg>
+																		</svg>
 																	</span>
 																</span>
 																<span class="nav-link-text position-relative">Manage
@@ -859,24 +1045,32 @@
 															<ul id="dash_proPertiesManage"
 																class="nav flex-column collapse  nav-children">
 																<li class="nav-item">
-																	<a class="nav-link " href="all-properties.php">
-																		<!-- <span class="nav-icon-wrap">
-										<span class="svg-icon">
-											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="icon icon-tabler icons-tabler-outline icon-tabler-building">
-												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-												<path d="M3 21l18 0" />
-												<path d="M9 8l1 0" />
-												<path d="M9 12l1 0" />
-												<path d="M9 16l1 0" />
-												<path d="M14 8l1 0" />
-												<path d="M14 12l1 0" />
-												<path d="M14 16l1 0" />
-												<path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16" /></svg>
-										</span>
-									</span> -->
+																	<a class="nav-link sidecolor_Allproperties"
+																		href="all-properties.php">
+																		<span class="nav-icon-wrap">
+																			<span class="svg-icon">
+																				<svg xmlns="http://www.w3.org/2000/svg"
+																					width="24" height="24"
+																					viewBox="0 0 24 24" fill="none"
+																					stroke="currentColor"
+																					stroke-width="2"
+																					stroke-linecap="round"
+																					stroke-linejoin="round"
+																					class="icon icon-tabler icons-tabler-outline icon-tabler-building">
+																					<path stroke="none"
+																						d="M0 0h24v24H0z" fill="none" />
+																					<path d="M3 21l18 0" />
+																					<path d="M9 8l1 0" />
+																					<path d="M9 12l1 0" />
+																					<path d="M9 16l1 0" />
+																					<path d="M14 8l1 0" />
+																					<path d="M14 12l1 0" />
+																					<path d="M14 16l1 0" />
+																					<path
+																						d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16" />
+																				</svg>
+																			</span>
+																		</span>
 																		<span class="nav-link-text">All
 																			Properties</span>
 
@@ -885,32 +1079,179 @@
 																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 																</li>
 
-																<!-- <li class="nav-item">
-																	<a class="nav-link" href="Social-hub.php">
-
-																		<span class="nav-link-text">Social Hub</span>
+																<li class="nav-item">
+																	<a class="nav-link sidecolor_tickets"
+																		href="tickets.php">
+																		<span class="nav-icon-wrap">
+																			<span class="svg-icon">
+																				<svg xmlns="http://www.w3.org/2000/svg"
+																					width="24" height="24"
+																					viewBox="0 0 24 24" fill="none"
+																					stroke="currentColor"
+																					stroke-width="2"
+																					stroke-linecap="round"
+																					stroke-linejoin="round"
+																					class="icon icon-tabler icons-tabler-outline icon-tabler-help-hexagon">
+																					<path stroke="none"
+																						d="M0 0h24v24H0z" fill="none" />
+																					<path
+																						d="M19.875 6.27c.7 .398 1.13 1.143 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z" />
+																					<path d="M12 16v.01" />
+																					<path
+																						d="M12 13a2 2 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />
+																				</svg>
+																			</span>
+																		</span>
+																		<span class="nav-link-text">Tickets</span>
 																	</a>
 																	<i
 																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 
-																</li> -->
+																</li>
+																<li class="nav-item">
+																	<a class="nav-link sidecolor_Tenancies"
+																		href="tenancies.php">
+																		<span class="nav-icon-wrap">
+																			<span class="svg-icon">
+																				<svg xmlns="http://www.w3.org/2000/svg"
+																					width="24" height="24"
+																					viewBox="0 0 24 24" fill="none"
+																					stroke="currentColor"
+																					stroke-width="2"
+																					stroke-linecap="round"
+																					stroke-linejoin="round"
+																					class="icon icon-tabler icons-tabler-outline icon-tabler-home-infinity">
+																					<path stroke="none"
+																						d="M0 0h24v24H0z" fill="none" />
+																					<path
+																						d="M19 14v-2h2l-9 -9l-9 9h2v7a2 2 0 0 0 2 2h2.5" />
+																					<path
+																						d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 1.75 1.032" />
+																					<path
+																						d="M15.536 17.586a2.123 2.123 0 0 0 -2.929 0a1.951 1.951 0 0 0 0 2.828c.809 .781 2.12 .781 2.929 0c.809 -.781 -.805 .778 0 0l1.46 -1.41l1.46 -1.419" />
+																					<path
+																						d="M15.54 17.582l1.46 1.42l1.46 1.41c.809 .78 -.805 -.779 0 0s2.12 .781 2.929 0a1.951 1.951 0 0 0 0 -2.828a2.123 2.123 0 0 0 -2.929 0" />
+																				</svg>
+																			</span>
+																		</span>
+																		<span class="nav-link-text">Tenancies</span>
+																	</a>
+																	<i
+																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+
+																</li>
+
+																<li class="nav-item">
+																	<a class="nav-link sidecolor_Events"
+																		href="all-events.php">
+																		<span class="nav-icon-wrap">
+																			<span class="svg-icon">
+																				<svg xmlns="http://www.w3.org/2000/svg"
+																					class="icon icon-tabler icon-tabler-browser"
+																					width="24" height="24"
+																					viewBox="0 0 24 24" stroke-width="2"
+																					stroke="currentColor" fill="none"
+																					stroke-linecap="round"
+																					stroke-linejoin="round">
+																					<path stroke="none"
+																						d="M0 0h24v24H0z" fill="none" />
+																					<rect x="4" y="4" width="16"
+																						height="16" rx="1" />
+																					<line x1="4" y1="8" x2="20"
+																						y2="8" />
+																					<line x1="8" y1="4" x2="8" y2="8" />
+																				</svg>
+																			</span>
+																		</span>
+																		<span class="nav-link-text">Events</span>
+																	</a>
+																	<i
+																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+
+																</li>
+
+																<li class="nav-item">
+																	<a class="nav-link sidecolor_inventory"
+																		href="inspection.php">
+																		<span class="nav-icon-wrap">
+																			<span class="svg-icon">
+																				<svg xmlns="http://www.w3.org/2000/svg"
+																					width="24" height="24"
+																					viewBox="0 0 24 24" fill="none"
+																					stroke="currentColor"
+																					stroke-width="2"
+																					stroke-linecap="round"
+																					stroke-linejoin="round"
+																					class="icon icon-tabler icons-tabler-outline icon-tabler-building-warehouse">
+																					<path stroke="none"
+																						d="M0 0h24v24H0z" fill="none" />
+																					<path d="M3 21v-13l9 -4l9 4v13" />
+																					<path d="M13 13h4v8h-10v-6h6" />
+																					<path
+																						d="M13 21v-9a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v3" />
+																				</svg>
+																			</span>
+																		</span>
+																		<span class="nav-link-text">Inventory</span>
+																	</a>
+																	<i
+																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+
+																</li>
+
+																<li class="nav-item">
+																	<a class="nav-link sidecolor_material"
+																		href="material-stock.php">
+																		<span class="nav-icon-wrap">
+																			<span class="svg-icon">
+																				<iconify-icon icon="vaadin:stock">
+																				</iconify-icon>
+																			</span>
+																		</span>
+																		<span class="nav-link-text">Material
+																			Stock</span>
+																	</a>
+																	<i
+																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+
+																</li>
+																<li class="nav-item">
+																	<a class="nav-link sidecolor_checkincheckout"
+																		href="checkIn.php">
+																		<span class="nav-icon-wrap">
+																			<span class="svg-icon">
+																				<iconify-icon
+																					icon="fluent-mdl2:date-time-mirrored">
+																				</iconify-icon>
+																			</span>
+																		</span>
+																		<span class="nav-link-text">Check In - Check
+																			Out</span>
+																	</a>
+																	<i
+																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+
+																</li>
+
 															</ul>
 														</li>
-														<!-- <li class="nav-item">
-												<a class="nav-link" href="lock-screen.html"><span class="nav-link-text">Lock Screen</span></a>
-											</li>
+														<li class="nav-item">
+															<a class="nav-link sidecolor_Compliance custompadding_megamenu"
+																href="Compliance.php">
+																<span class="nav-icon-wrap position-relative">
 
-											
-											
-											<li class="nav-item">
-												<a class="nav-link" href="reset-password.html"><span class="nav-link-text">Reset Password</span></a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="404.html"><span class="nav-link-text">Error 404</span></a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="503.html"><span class="nav-link-text">Error 503</span></a>
-											</li> -->
+																	<span class="svg-icon">
+																		<iconify-icon
+																			icon="fluent-mdl2:compliance-audit">
+																		</iconify-icon>
+																	</span>
+																</span>
+																<span class="nav-link-text">Compliance</span>
+															</a>
+															<i
+																class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+
+														</li>
 													</ul>
 												</li>
 											</ul>
@@ -920,7 +1261,7 @@
 									<!-- department end -->
 								</div>
 							</li>
-							<li class="nav-item">
+							<!-- <li class="nav-item">
 								<a class="nav-link sidecolordue" href="NetworkTestDue.php">
 									<span class="nav-icon-wrap position-relative">
 
@@ -932,7 +1273,7 @@
 								</a>
 								<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 
-							</li>
+							</li> -->
 							<li class="nav-item">
 								<a class="nav-link sidecolorcalendar" href="calendar.php">
 									<span class="nav-icon-wrap position-relative">
@@ -956,21 +1297,6 @@
 										</span>
 									</span>
 									<span class="nav-link-text">Leave Management</span>
-								</a>
-								<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
-								
-							</li> -->
-
-							<!-- 
-							<li class="nav-item">
-								<a class="nav-link sidecolorhrHub" href="Social-hub.php" >
-									<span class="nav-icon-wrap position-relative">
-
-										<span class="svg-icon">
-										<iconify-icon icon="carbon:ibm-event-automation"></iconify-icon>
-										</span>
-									</span>
-									<span class="nav-link-text">Social Hub</span>
 								</a>
 								<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 								
@@ -1051,117 +1377,7 @@
 								<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 								
 							</li> -->
-							<li class="nav-item">
-								<a class="nav-link sidecolor_Tenancies" href="tenancies.php">
-									<span class="nav-icon-wrap">
-										<span class="svg-icon">
-											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="icon icon-tabler icons-tabler-outline icon-tabler-home-infinity">
-												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-												<path d="M19 14v-2h2l-9 -9l-9 9h2v7a2 2 0 0 0 2 2h2.5" />
-												<path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 1.75 1.032" />
-												<path
-													d="M15.536 17.586a2.123 2.123 0 0 0 -2.929 0a1.951 1.951 0 0 0 0 2.828c.809 .781 2.12 .781 2.929 0c.809 -.781 -.805 .778 0 0l1.46 -1.41l1.46 -1.419" />
-												<path
-													d="M15.54 17.582l1.46 1.42l1.46 1.41c.809 .78 -.805 -.779 0 0s2.12 .781 2.929 0a1.951 1.951 0 0 0 0 -2.828a2.123 2.123 0 0 0 -2.929 0" />
-											</svg>
-										</span>
-									</span>
-									<span class="nav-link-text">Tenancies</span>
-								</a>
-								<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 
-							</li>
-
-							<li class="nav-item">
-								<a class="nav-link sidecolor_checkincheckout" href="checkIn.php">
-									<span class="nav-icon-wrap">
-										<span class="svg-icon">
-										<iconify-icon icon="fluent-mdl2:date-time-mirrored"></iconify-icon>
-										</span>
-									</span>
-									<span class="nav-link-text">Check In - Check Out</span>
-								</a>
-								<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
-
-							</li>
-
-
-							<li class="nav-item">
-								<a class="nav-link sidecolor_Events" href="all-events.php">
-									<span class="nav-icon-wrap">
-										<span class="svg-icon">
-											<svg xmlns="http://www.w3.org/2000/svg"
-												class="icon icon-tabler icon-tabler-browser" width="24" height="24"
-												viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-												stroke-linecap="round" stroke-linejoin="round">
-												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-												<rect x="4" y="4" width="16" height="16" rx="1" />
-												<line x1="4" y1="8" x2="20" y2="8" />
-												<line x1="8" y1="4" x2="8" y2="8" />
-											</svg>
-										</span>
-									</span>
-									<span class="nav-link-text">Events</span>
-								</a>
-								<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
-								<ul id="dash_task" class="nav flex-column collapse  nav-children">
-									<li class="nav-item">
-										<ul class="nav flex-column">
-											<li class="nav-item">
-												<a href="all-events.php" class="nav-link" data-key="view-events"><span
-														class="nav-link-text">All Events</span></a>
-											</li>
-											<li class="nav-item">
-												<a href="time-logs.php" class="nav-link" data-key="view-time-logs"><span
-														class="nav-link-text">View Time Logs</span></a>
-											</li>
-
-											<li class="nav-item">
-												<a href="mileage-logs.php" class="nav-link"
-													data-key="view-mileage-logs"><span class="nav-link-text">View
-														Mileage Logs</span></a>
-											</li>
-
-										</ul>
-									</li>
-								</ul>
-							</li>
-
-							<li class="nav-item">
-								<a class="nav-link sidecolor_inventory" href="inspection.php">
-									<span class="nav-icon-wrap">
-										<span class="svg-icon">
-											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="icon icon-tabler icons-tabler-outline icon-tabler-building-warehouse">
-												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-												<path d="M3 21v-13l9 -4l9 4v13" />
-												<path d="M13 13h4v8h-10v-6h6" />
-												<path d="M13 21v-9a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v3" /></svg>
-										</span>
-									</span>
-									<span class="nav-link-text">Inventory</span>
-								</a>
-								<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
-
-							</li>
-
-							<li class="nav-item">
-								<a class="nav-link sidecolor_material" href="material-stock.php">
-									<span class="nav-icon-wrap">
-										<span class="svg-icon">
-											<iconify-icon icon="vaadin:stock"></iconify-icon>
-										</span>
-									</span>
-									<span class="nav-link-text">Material Stock</span>
-								</a>
-								<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
-
-							</li>
 							<li class="nav-item">
 								<a class="nav-link sidecolor_todo" href="daily-task.php">
 									<span class="nav-icon-wrap">
@@ -1189,7 +1405,8 @@
 								<a class="nav-link sidecolor_approvalboard" href="approval-board.php">
 									<span class="nav-icon-wrap">
 										<span class="svg-icon">
-										<iconify-icon icon="material-symbols-light:approval-outline-sharp"></iconify-icon>
+											<iconify-icon icon="material-symbols-light:approval-outline-sharp">
+											</iconify-icon>
 										</span>
 									</span>
 									<span class="nav-link-text">Approval Board</span>
@@ -1208,158 +1425,7 @@
 
 							</li>
 
-							<li class="nav-item">
-								<a class="nav-link sidecolor_invoices" href="javascript:void(0);"
-									data-bs-toggle="collapse" data-bs-target="#dash_invoice">
-									<span class="nav-icon-wrap">
-										<span class="svg-icon">
-											<svg xmlns="http://www.w3.org/2000/svg"
-												class="icon icon-tabler icon-tabler-file-digit" width="24" height="24"
-												viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-												stroke-linecap="round" stroke-linejoin="round">
-												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-												<path d="M14 3v4a1 1 0 0 0 1 1h4" />
-												<rect x="9" y="12" width="3" height="5" rx="1" />
-												<path
-													d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
-												<path d="M15 12v5" />
-											</svg>
-										</span>
-									</span>
-									<span class="nav-link-text">Invoices</span>
-								</a>
-								<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
-								<ul id="dash_invoice" class="nav flex-column collapse  nav-children">
-									<li class="nav-item">
-										<ul class="nav menu-dropdown flex-column">
-
-											<li class="nav-item">
-												<a href="javascript:void(0);" class="nav-link"
-													data-key="dispatch-invoices"><span class="nav-link-text">Dispatch
-														Invoices</span></a>
-											</li>
-											<li class="nav-item">
-												<a href="javascript:void(0);" class="nav-link"
-													data-key="view-invoices"><span class="nav-link-text">View
-														Invoices</span>
-													<span class="badge diebarbadge badge-pill  ">329</span>
-												</a>
-											</li>
-											<li class="nav-item">
-												<a href="javascript:void(0);" class="nav-link"
-													data-key="add-invoice-item-type"><span class="nav-link-text">Add
-														Invoice Item
-														Type</span></a>
-											</li>
-											<li class="nav-item">
-												<a href="javascript:void(0);" class="nav-link"
-													data-key="view-invoice-item-types"><span class="nav-link-text">View
-														Invoice Item Types</span>
-												</a>
-											</li>
-
-										</ul>
-									</li>
-								</ul>
-							</li>
-
-							<li class="nav-item">
-								<a class="nav-link sidecolor_tickets" href="tickets.php">
-									<span class="nav-icon-wrap">
-										<span class="svg-icon">
-											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="icon icon-tabler icons-tabler-outline icon-tabler-help-hexagon">
-												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-												<path
-													d="M19.875 6.27c.7 .398 1.13 1.143 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z" />
-												<path d="M12 16v.01" />
-												<path d="M12 13a2 2 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />
-											</svg>
-										</span>
-									</span>
-									<span class="nav-link-text">Tickets</span>
-								</a>
-								<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
-
-							</li>
-
 							<!-- <li class="nav-item">
-								<a class="nav-link sidecolor_Account" href="javascript:void(0);" data-bs-toggle="collapse"
-									data-bs-target="#dash_Account">
-									<span class="nav-icon-wrap">
-										<span class="svg-icon">
-										<iconify-icon icon="fluent:window-inprivate-account-20-regular"></iconify-icon>
-										</span>
-									</span>
-									<span class="nav-link-text">Accounts</span>
-								</a>
-								<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
-								<ul id="dash_Account" class="nav flex-column collapse  nav-children">
-									<li class="nav-item">
-										<ul class="nav menu-dropdown flex-column">
-
-											<li class="nav-item">
-												<a href="accounts.php" class="nav-link" data-key="dispatch-invoices"><span
-														class="nav-link-text">Ticket Invoice</span></a>
-											</li>
-											<li class="nav-item">
-												<a href="millage-invoice.php" class="nav-link" data-key="view-invoices"><span
-														class="nav-link-text">Millage Invoice </span>
-													
-												</a>
-											</li>
-											<li class="nav-item">
-												<a href="timelog-invoice.php" class="nav-link" data-key="add-invoice-item-type"><span
-														class="nav-link-text">Timelog Invoice </span></a>
-											</li>
-											<li class="nav-item">
-												<a href="inventory-invoice.php" class="nav-link" data-key="view-invoice-item-types"><span
-														class="nav-link-text">Inventory Invoice </span>
-												</a>
-											</li>
-
-										</ul>
-									</li>
-								</ul>
-							</li> -->
-
-							<li class="nav-item">
-								<a class="nav-link sidecolor_payments" href="javascript:void(0);"
-									data-bs-toggle="collapse" data-bs-target="#dash_integ">
-									<span class="nav-icon-wrap">
-										<span class="svg-icon">
-											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="icon icon-tabler icons-tabler-outline icon-tabler-credit-card-pay">
-												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-												<path
-													d="M12 19h-6a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v4.5" />
-												<path d="M3 10h18" />
-												<path d="M16 19h6" />
-												<path d="M19 16l3 3l-3 3" />
-												<path d="M7.005 15h.005" />
-												<path d="M11 15h2" /></svg>
-										</span>
-									</span>
-									<span class="nav-link-text">Payments</span>
-								</a>
-								<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
-								<ul id="dash_integ" class="nav flex-column collapse  nav-children">
-									<li class="nav-item">
-										<ul class="nav flex-column">
-											<li class="nav-item">
-												<a class="nav-link" href="reconciliation.php"><span
-														class="nav-link-text">Reconciliation</span></a>
-											</li>
-
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item">
 								<a class="nav-link sidecolor_Merchants" href="merchants.php">
 									<span class="nav-icon-wrap">
 										<span class="svg-icon">
@@ -1379,27 +1445,7 @@
 									<span class="nav-link-text">Merchants</span>
 								</a>
 								<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
-							</li>
-
-							<li class="nav-item">
-								<a class="nav-link sidecolor_offer" href="offers.php">
-									<span class="nav-icon-wrap">
-										<span class="svg-icon">
-											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-												stroke-linecap="round" stroke-linejoin="round"
-												class="icon icon-tabler icons-tabler-outline icon-tabler-tag">
-												<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-												<path d="M7.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-												<path
-													d="M3 6v5.172a2 2 0 0 0 .586 1.414l7.71 7.71a2.41 2.41 0 0 0 3.408 0l5.592 -5.592a2.41 2.41 0 0 0 0 -3.408l-7.71 -7.71a2 2 0 0 0 -1.414 -.586h-5.172a3 3 0 0 0 -3 3z" />
-											</svg>
-										</span>
-									</span>
-									<span class="nav-link-text">All Offers</span>
-								</a>
-								<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
-							</li>
+							</li> -->
 
 							<li class="nav-item">
 								<a class="nav-link sidecolor_System" href="email-templates.php">
