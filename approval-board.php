@@ -276,11 +276,7 @@
 
                                                         </div>
                                                         <div class="card-footer approvalFooter_action">
-                                                            <button class="decline_btn">
-                                                                <iconify-icon icon="bitcoin-icons:cross-filled">
-                                                                </iconify-icon>
-                                                                Decline
-                                                            </button>
+                                                           
                                                             <a href="approval-details.php" class="approval_details">
                                                                 <iconify-icon icon="proicons:eye"></iconify-icon>
                                                                 View Details
@@ -348,11 +344,7 @@
 
                                                         </div>
                                                         <div class="card-footer approvalFooter_action">
-                                                            <button class="decline_btn">
-                                                                <iconify-icon icon="bitcoin-icons:cross-filled">
-                                                                </iconify-icon>
-                                                                Decline
-                                                            </button>
+                                                           
                                                             <a href="approval-details.php" class="approval_details">
                                                                 <iconify-icon icon="proicons:eye"></iconify-icon>
                                                                 View Details
@@ -419,11 +411,7 @@
 
                                                         </div>
                                                         <div class="card-footer approvalFooter_action">
-                                                            <button class="decline_btn">
-                                                                <iconify-icon icon="bitcoin-icons:cross-filled">
-                                                                </iconify-icon>
-                                                                Decline
-                                                            </button>
+                                                           
                                                             <a href="approval-details.php" class="approval_details">
                                                                 <iconify-icon icon="proicons:eye"></iconify-icon>
                                                                 View Details
@@ -492,11 +480,7 @@
 
                                                         </div>
                                                         <div class="card-footer approvalFooter_action">
-                                                            <button class="decline_btn">
-                                                                <iconify-icon icon="bitcoin-icons:cross-filled">
-                                                                </iconify-icon>
-                                                                Decline
-                                                            </button>
+                                                           
                                                             <a href="approval-details.php" class="approval_details">
                                                                 <iconify-icon icon="proicons:eye"></iconify-icon>
                                                                 View Details
@@ -565,11 +549,7 @@
 
                                                         </div>
                                                         <div class="card-footer approvalFooter_action">
-                                                            <button class="decline_btn">
-                                                                <iconify-icon icon="bitcoin-icons:cross-filled">
-                                                                </iconify-icon>
-                                                                Decline
-                                                            </button>
+                                                           
                                                             <a href="approval-details.php" class="approval_details">
                                                                 <iconify-icon icon="proicons:eye"></iconify-icon>
                                                                 View Details
@@ -638,11 +618,7 @@
 
                                                         </div>
                                                         <div class="card-footer approvalFooter_action">
-                                                            <button class="decline_btn">
-                                                                <iconify-icon icon="bitcoin-icons:cross-filled">
-                                                                </iconify-icon>
-                                                                Decline
-                                                            </button>
+                                                           
                                                             <a href="approval-details.php" class="approval_details">
                                                                 <iconify-icon icon="proicons:eye"></iconify-icon>
                                                                 View Details
@@ -711,11 +687,7 @@
 
                                                         </div>
                                                         <div class="card-footer approvalFooter_action">
-                                                            <button class="decline_btn">
-                                                                <iconify-icon icon="bitcoin-icons:cross-filled">
-                                                                </iconify-icon>
-                                                                Decline
-                                                            </button>
+                                                           
                                                             <a href="approval-details.php" class="approval_details">
                                                                 <iconify-icon icon="proicons:eye"></iconify-icon>
                                                                 View Details
@@ -784,11 +756,7 @@
 
                                                         </div>
                                                         <div class="card-footer approvalFooter_action">
-                                                            <button class="decline_btn">
-                                                                <iconify-icon icon="bitcoin-icons:cross-filled">
-                                                                </iconify-icon>
-                                                                Decline
-                                                            </button>
+                                                           
                                                             <a href="approval-details.php" class="approval_details">
                                                                 <iconify-icon icon="proicons:eye"></iconify-icon>
                                                                 View Details

@@ -44,6 +44,7 @@
                                     </div>
                                 </div>
                             </div>
+                          
                             <div class="col-lg-4">
                                 <div class="card card-border spipeline-card">
                                     <div class="card-body">
@@ -51,14 +52,14 @@
                                         <div class="media">
                                             <div class="media-head">
                                                 <div class="avatar avatar-logo avatar-rounded">
-                                                    <span class="initial-wrap cardiconBGColor_2">
-                                                        <iconify-icon icon="mdi:account-convert-outline"></iconify-icon>
+                                                    <span class="initial-wrap cardiconBGColor_3">
+                                                        <iconify-icon icon="mdi:view-arrow-left-outline"></iconify-icon>
                                                     </span>
                                                 </div>
                                             </div>
                                             <div class="media-body">
-                                                <div class="Cardcount-name">Urgent Tickets</div>
-                                                <div class="NumberCountCard">1014</div>
+                                                <div class="Cardcount-name">Tickets overdue</div>
+                                                <div class="NumberCountCard">800 </div>
 
                                             </div>
                                         </div>
@@ -78,8 +79,8 @@
                                                 </div>
                                             </div>
                                             <div class="media-body">
-                                                <div class="Cardcount-name">Tickets overdue</div>
-                                                <div class="NumberCountCard">800 </div>
+                                                <div class="Cardcount-name"> Emergency Tickets</div>
+                                                <div class="NumberCountCard">14 </div>
 
                                             </div>
                                         </div>

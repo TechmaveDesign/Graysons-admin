@@ -19,7 +19,8 @@
     <!-- Page Body -->
     <div class="hk-pg-body py-0">
         <div class="contactapp-wrap">
-            <!-- sub menu header -->
+         <!-- sub menu header -->
+<?php include('headers/hrheader.php') ?>
             <div class="contactapp-content">
                 <div class="contactapp-detail-wrap">
                     <header class="contact-header">

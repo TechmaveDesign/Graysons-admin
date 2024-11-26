@@ -19,6 +19,11 @@
 												<a href="leave-management.php" class="nav-link" data-key="view-mileage-logs"><span
 														class="nav-link-text">Leave Management</span></a>
 											</li>
+
+											<li class="nav-item">
+												<a href="all-staff.php" class="nav-link" data-key="view-mileage-logs"><span
+														class="nav-link-text">All Staff</span></a>
+											</li>
 											
 
 										</ul>

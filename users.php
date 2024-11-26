@@ -254,7 +254,7 @@
                                             <td class="">morgan@jampack.com</td>
                                             <td>+145 52 5689</td>
 
-                                            <td>Superuser</td>
+                                            <td>Landlords</td>
                                             <td>13 Jan, 2020</td>
 
                                             <td><span class="badge badge-soft-success  my-1  me-2">Active</span></td>
@@ -297,7 +297,7 @@
                                             <td class="">huma@clariesup.au</td>
                                             <td>+234 48 2365</td>
 
-                                            <td>Admin</td>
+                                            <td>Landlords</td>
                                             <td>13 Jan, 2020</td>
                                             <td><span class="badge badge-soft-success  my-1  me-2">Active</span></td>
                                             <td>
@@ -390,7 +390,7 @@
                                             </td>
                                             <td class="">winston@worthniza.ga</td>
                                             <td>+145 52 5463</td>
-                                            <td>Merchant</td>
+                                            <td>Internal User</td>
                                             <td>13 Jan, 2020</td>
                                             <td><span class="badge badge-soft-success  my-1  me-2">Active</span></td>
                                             <td>
@@ -438,7 +438,7 @@
                                             </td>
                                             <td class="">tomcz@jampack.com</td>
                                             <td>+145 52 5463</td>
-                                            <td>Admin</td>
+                                            <td>Staff Users</td>
                                             <td>13 Jan, 2020</td>
                                             <td><span class="badge badge-soft-danger   my-1  me-2">Inactive</span></td>
                                             <td>
@@ -486,7 +486,7 @@
                                             </td>
                                             <td class="">dean-shaw@poww.me</td>
                                             <td>+145 52 5463</td>
-                                            <td>Maintenance</td>
+                                            <td>Landlord</td>
                                             <td>13 Jan, 2020</td>
                                             <td><span class="badge badge-soft-success  my-1  me-2">Active</span></td>
                                             <td>
@@ -535,7 +535,7 @@
                                             </td>
                                             <td class="">danialc@jampack.com</td>
                                             <td>+145 52 5463</td>
-                                            <td>Bookkeeper</td>
+                                            <td>Internal User</td>
                                             <td>13 Jan, 2020</td>
                                             <td><span class="badge badge-soft-danger   my-1  me-2">Inactive</span></td>
                                             <td>
@@ -746,26 +746,7 @@
                                                 </div>
                                                 Tenant
                                             </div>
-                                            <div class="dropdown-item flexdropItem">
-                                                <div class="d-flex align-items-center">
-                                                    <span class="form-check mb-0"><input type="checkbox"
-                                                            class="form-check-input " id="chk_sel_3"><label
-                                                            class="form-check-label"
-                                                            for="chk_sel_3"></label></span><span
-                                                        class="contact-star"></span>
-                                                </div>
-                                                Bookkeeper
-                                            </div>
-                                            <div class="dropdown-item flexdropItem">
-                                                <div class="d-flex align-items-center">
-                                                    <span class="form-check mb-0"><input type="checkbox"
-                                                            class="form-check-input " id="chk_sel_3"><label
-                                                            class="form-check-label"
-                                                            for="chk_sel_3"></label></span><span
-                                                        class="contact-star"></span>
-                                                </div>
-                                                Maintenance
-                                            </div>
+                                            
                                             <div class="dropdown-item flexdropItem">
                                                 <div class="d-flex align-items-center">
                                                     <span class="form-check mb-0"><input type="checkbox"
@@ -784,7 +765,7 @@
                                                             for="chk_sel_3"></label></span><span
                                                         class="contact-star"></span>
                                                 </div>
-                                                Superuser
+                                                Staff User
                                             </div>
                                             <div class="dropdown-item flexdropItem">
                                                 <div class="d-flex align-items-center">
@@ -794,18 +775,9 @@
                                                             for="chk_sel_3"></label></span><span
                                                         class="contact-star"></span>
                                                 </div>
-                                                Merchant
+                                                Internal User
                                             </div>
-                                            <div class="dropdown-item flexdropItem">
-                                                <div class="d-flex align-items-center">
-                                                    <span class="form-check mb-0"><input type="checkbox"
-                                                            class="form-check-input " id="chk_sel_3"><label
-                                                            class="form-check-label"
-                                                            for="chk_sel_3"></label></span><span
-                                                        class="contact-star"></span>
-                                                </div>
-                                                Admin
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>

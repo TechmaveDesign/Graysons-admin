@@ -19,7 +19,8 @@
     <!-- Page Body -->
     <div class="hk-pg-body py-0">
         <div class="contactapp-wrap">
-
+<!-- sub menu header -->
+<?php include('headers/hrheader.php') ?>
             <div class="contactapp-content">
                 <div class="contactapp-detail-wrap">
 
@@ -39,7 +40,9 @@
                             </div>
                         </div>
                         <div class="contact-options-wrap">
-
+                        <button id="toggleButton" type="button"
+                                class="btn  btn-flush-dark flush-soft-hover fIlterCmnButton"><span class="icon"><span
+                                        class="feather-icon"><i data-feather="list"></i></span></span>Filter</button>
                             <a id="refreshButton"
                                 class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover no-caret d-sm-inline-block d-none"
                                 href="#" data-bs-toggle="tooltip" data-placement="top" title=""
@@ -92,7 +95,63 @@
 
 <div class="contact-body">
 <div class="nicescroll-bar">
+<div class="userFilters onerowfilter" id="filterDiv" style="display: none;">
+                                <div class="quick-access-form-wrap nopaddingleftright">
+                                    <form class="quick-access-form border">
+                                        <div class="row gx-3">
+                                        <div class="col-lg-12">
+                                                        <div class="row gx-3">
 
+                                                            <div class="col-lg-4">
+                                                                <div class="form-group">
+                                                                    <label class="form-label">Filter by  Department</label>
+                                                                    <select name="" id="department_select" class="form-control select2">
+                                                                    <option value="" selected disabled>Select a Department</option>
+                        <option value="HR">Human Resources</option>
+                        <option value="Account">Account</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Property Department">Property Department</option>
+                        <option value="Operations">Operations</option>
+                        <option value="Legal">Legal</option>
+                        <option value="Customer Support">Customer Support</option>
+                                                                    </select>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-lg-4">
+                                                                <div class="form-group">
+                                                                    <label class="form-label">Filter by Roles</label>
+                                                                    <select name="" id="Roles_select_options"  class="form-control select2">
+                                                                        <option value="" selected disable readonly>
+                                                                            Select an Option</option>
+                                                                        <option value="Staff">Staff</option>
+                                                                        <option value="User">User
+                                                                        </option>
+                                                                        <option value="Admin">Admin</option>
+                                                                    </select>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-4">
+
+                                                                <div class="form-group">
+                                                                    <label class="form-label">last Updated</label>
+                                                                    <input class="form-control customdataPicker flatpickr-input" type="text" name="" value="" placeholder="Pick a Date" readonly="readonly">
+                                                                    <iconify-icon icon="ion:calendar-outline" class="dateinput_icon"></iconify-icon>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                            
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
     <div class="tab-content">
         <div class="tab-pane fade show active" id="AllStaffTab">
             <div class="contact-list-view">
@@ -814,3 +873,23 @@
         });
     });
 </script>
+
+<!-- filters show hide script -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Get reference to the button and the filter div
+        var button = document.getElementById("toggleButton");
+        var filterDiv = document.getElementById("filterDiv");
+        // Add click event listener to the button
+        button.addEventListener("click", function() {
+            // Toggle the visibility of the filter div
+            if (filterDiv.style.display === "none") {
+                filterDiv.style.display = "block";
+            } else {
+                filterDiv.style.display = "none";
+            }
+        });
+    });
+</script>
+<!-- filters show hide script end-->
+

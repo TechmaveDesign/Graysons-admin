@@ -20,7 +20,7 @@
 
 <div class="container-xxl">
     <!-- Page Header -->
-    <div class="hk-pg-header eventhubHeader">
+    <!-- <div class="hk-pg-header eventhubHeader">
         <div class="d-flex">
             <div class="d-flex flex-wrap justify-content-between flex-1">
                 <div class="mb-lg-0 mb-2 me-8">
@@ -31,7 +31,7 @@
             </div>
         </div>
 
-    </div>
+    </div> -->
     <!-- /Page Header -->
 
     <!-- Page Body -->
@@ -44,7 +44,7 @@
                         <div class="d-flex align-items-center">
                             <div class="dropdown">
                                 <a class="contactapp-title link-dark" href="#" role="button">
-                                    <h1>Social Hub</h1>
+                                    <h1>Social Events</h1>
                                 </a>
 
                             </div>
@@ -84,6 +84,27 @@
                         </div>
                         <div class=" sustomdividerLedtArrow"></div>
                     </header>
+
+                    <ul class="nav nav-tabs nav-line nav-icon fullwidthCustom_tabsUL nav-light">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#AddPropertytb">
+                                <div class="d-flex align-items-center">
+                                    <span class="nav-link-text">Social Events</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " data-bs-toggle="tab" href="#AddDevelopmenttb">
+                                <div class="d-flex align-items-center">
+                                    <span class="nav-link-text">Draft Social Events</span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+
+
                     <div class="contact-body">
                         <div class="nicescroll-bar">
                             <div class="userFilters onerowfilter" id="filterDiv" style="display: none;">
@@ -166,16 +187,20 @@
                             </div>
                             <div class="contact-list-view">
 
-                                <table class="table common-datatable nowrap w-100 ">
+                            <div class="tab-content notpMargin_tab">
+                                <div class="tab-pane fade show active" id="AddPropertytb">
+                                    <div class="contact-list-view">
+
+                                       
+                                        <table class="table common-datatable nowrap w-100 ">
                                     <thead>
                                         <tr>
                                             <th>Event ID</th>
-                                            <th>Event Name</th>
+                                            <th>Social Event Name</th>
                                             <th>Start Date & Time</th>
                                             <th>End Date & Time</th>
                                             <th>Location</th>
                                             <th>Organizer</th>
-                                            <th>Status</th>
                                             <th>Created Date</th>
                                             <th>Actions</th>
                                         </tr>
@@ -190,7 +215,6 @@
                                             <td>2024-09-15 17:00</td>
                                             <td>Convention Center, City</td>
                                             <td>Graysons Properties</td>
-                                            <td><span class="badge bg-secondary">Draft</span></td>
                                          
                                             <td>2024-07-19</td>
                                             <td>
@@ -225,7 +249,6 @@
                                             <td>2024-08-20 16:00</td>
                                             <td>Community Hall, Town</td>
                                             <td>Graysons Properties</td>
-                                            <td><span class="badge bg-warning">Approval Needed</span></td>
                                             <td>2024-07-19</td>
                                             <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
@@ -259,7 +282,6 @@
                                             <td>2024-10-05 15:00</td>
                                             <td>Hotel Grand, Metropolis</td>
                                             <td>Graysons Properties</td>
-                                            <td><span class="badge bg-danger">Cancelled</span></td>
                                             <td>2024-07-19</td>
                                             <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
@@ -296,7 +318,6 @@
                                             <td>2024-11-12 14:00</td>
                                             <td>Design Hub, City</td>
                                             <td>Graysons Properties</td>
-                                            <td><span class="badge bg-warning">Approval Needed</span></td>
                                           
                                             <td>2024-07-19</td>
                                             <td>
@@ -334,7 +355,6 @@
                                             <td>2024-12-03 17:00</td>
                                             <td>Expo Center, Capital</td>
                                             <td>Graysons Properties</td>
-                                            <td><span class="badge bg-info">Upcoming</span></td>
                                        
                                             <td>2024-07-19</td>
                                             <td>
@@ -373,7 +393,6 @@
                                             <td>2024-12-03 17:00</td>
                                             <td>Expo Center, Capital</td>
                                             <td>Graysons Properties</td>
-                                            <td><span class="badge bgadpastevent">Past Event</span></td>
                                             <td>2024-07-19</td>
                                             <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
@@ -411,7 +430,6 @@
                                             <td>2024-12-03 17:00</td>
                                             <td>Expo Center, Capital</td>
                                             <td>Graysons Properties</td>
-                                            <td><span class="badge bgadjustment">Adjustment Needed</span></td>
                                             <td>2024-07-19</td>
                                             <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
@@ -449,7 +467,6 @@
                                             <td>2024-11-12 14:00</td>
                                             <td>Design Hub, City</td>
                                             <td>Graysons Properties</td>
-                                            <td><span class="badge bg-success">Approved</span></td>
                                           
                                             <td>2024-07-19</td>
                                             <td>
@@ -482,6 +499,325 @@
 
                                     </tbody>
                                 </table>
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane fade" id="AddDevelopmenttb">
+                                    <div class="contact-list-view">
+                                    
+                                        <table class="table common-datatable nowrap w-100 ">
+                                    <thead>
+                                        <tr>
+                                            <th>Event ID</th>
+                                            <th>Social Event Name</th>
+                                            <th>Start Date & Time</th>
+                                            <th>End Date & Time</th>
+                                            <th>Location</th>
+                                            <th>Organizer</th>
+                                            <th>Created Date</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Annual Tech Conference</td>
+                                            
+
+                                            <td>2024-09-15 09:00</td>
+                                            <td>2024-09-15 17:00</td>
+                                            <td>Convention Center, City</td>
+                                            <td>Graysons Properties</td>
+                                         
+                                            <td>2024-07-19</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+                                                        <button
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                            type="button" data-bs-toggle="modal" data-bs-target="#EditHubEvent"><span class="icon"><span
+                                                                    class="feather-icon">
+                                                                    <iconify-icon icon="fluent:edit-16-regular">
+                                                                    </iconify-icon>
+                                                                </span></span></button>
+                                                                <a
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                            href="Event-Details.php">
+                                                            <span class="icon">
+                                                                <span class="feather-icon">
+                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                    </iconify-icon>
+                                                                </span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Startup Workshop</td>
+                                           
+                                            <td>2024-08-20 10:00</td>
+                                            <td>2024-08-20 16:00</td>
+                                            <td>Community Hall, Town</td>
+                                            <td>Graysons Properties</td>
+                                            <td>2024-07-19</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+                                                        <button
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                            type="button" data-bs-toggle="modal" data-bs-target="#EditHubEvent"><span class="icon"><span
+                                                                    class="feather-icon">
+                                                                    <iconify-icon icon="fluent:edit-16-regular">
+                                                                    </iconify-icon>
+                                                                </span></span></button>
+                                                                <a
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                            href="Event-Details.php">
+                                                            <span class="icon">
+                                                                <span class="feather-icon">
+                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                    </iconify-icon>
+                                                                </span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Marketing Summit</td>
+                                           
+                                            <td>2024-10-05 09:00</td>
+                                            <td>2024-10-05 15:00</td>
+                                            <td>Hotel Grand, Metropolis</td>
+                                            <td>Graysons Properties</td>
+                                            <td>2024-07-19</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+                                                        <button
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                            type="button" data-bs-toggle="modal" data-bs-target="#EditHubEvent">
+                                                            <span class="icon">
+                                                                <span class="feather-icon">
+                                                                    <iconify-icon icon="fluent:edit-16-regular">
+                                                                    </iconify-icon>
+                                                                </span>
+                                                            </span>
+                                                        </button>
+                                                        <a
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                            href="Event-Details.php">
+                                                            <span class="icon">
+                                                                <span class="feather-icon">
+                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                    </iconify-icon>
+                                                                </span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Design Thinking Workshop</td>
+                                            
+                                            <td>2024-11-12 10:00</td>
+                                            <td>2024-11-12 14:00</td>
+                                            <td>Design Hub, City</td>
+                                            <td>Graysons Properties</td>
+                                          
+                                            <td>2024-07-19</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+                                                        <button
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                            type="button" data-bs-toggle="modal" data-bs-target="#EditHubEvent">
+                                                            <span class="icon">
+                                                                <span class="feather-icon">
+                                                                    <iconify-icon icon="fluent:edit-16-regular">
+                                                                    </iconify-icon>
+                                                                </span>
+                                                            </span>
+                                                        </button>
+                                                        <a
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                            href="Event-Details.php">
+                                                            <span class="icon">
+                                                                <span class="feather-icon">
+                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                    </iconify-icon>
+                                                                </span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Health & Wellness Expo</td>
+                                           
+                                            <td>2024-12-03 09:00</td>
+                                            <td>2024-12-03 17:00</td>
+                                            <td>Expo Center, Capital</td>
+                                            <td>Graysons Properties</td>
+                                       
+                                            <td>2024-07-19</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+                                                        <button
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                            type="button" data-bs-toggle="modal" data-bs-target="#EditHubEvent">
+                                                            <span class="icon">
+                                                                <span class="feather-icon">
+                                                                    <iconify-icon icon="fluent:edit-16-regular">
+                                                                    </iconify-icon>
+                                                                </span>
+                                                            </span>
+                                                        </button>
+                                                        <a
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                            href="Event-Details.php">
+                                                            <span class="icon">
+                                                                <span class="feather-icon">
+                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                    </iconify-icon>
+                                                                </span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Wellness Expo</td>
+                                           
+                                            <td>2024-12-03 09:00</td>
+                                            <td>2024-12-03 17:00</td>
+                                            <td>Expo Center, Capital</td>
+                                            <td>Graysons Properties</td>
+                                            <td>2024-07-19</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+                                                        <button
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                            type="button" data-bs-toggle="modal" data-bs-target="#EditHubEvent">
+                                                            <span class="icon">
+                                                                <span class="feather-icon">
+                                                                    <iconify-icon icon="fluent:edit-16-regular">
+                                                                    </iconify-icon>
+                                                                </span>
+                                                            </span>
+                                                        </button>
+                                                        <a
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                            href="Event-Details.php">
+                                                            <span class="icon">
+                                                                <span class="feather-icon">
+                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                    </iconify-icon>
+                                                                </span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Wellness</td>
+                                           
+                                            <td>2024-12-03 09:00</td>
+                                            <td>2024-12-03 17:00</td>
+                                            <td>Expo Center, Capital</td>
+                                            <td>Graysons Properties</td>
+                                            <td>2024-07-19</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+                                                        <button
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                            type="button" data-bs-toggle="modal" data-bs-target="#EditHubEvent">
+                                                            <span class="icon">
+                                                                <span class="feather-icon">
+                                                                    <iconify-icon icon="fluent:edit-16-regular">
+                                                                    </iconify-icon>
+                                                                </span>
+                                                            </span>
+                                                        </button>
+                                                        <a
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                            href="Event-Details.php">
+                                                            <span class="icon">
+                                                                <span class="feather-icon">
+                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                    </iconify-icon>
+                                                                </span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Design Thinking Workshop</td>
+                                            
+                                            <td>2024-11-12 10:00</td>
+                                            <td>2024-11-12 14:00</td>
+                                            <td>Design Hub, City</td>
+                                            <td>Graysons Properties</td>
+                                          
+                                            <td>2024-07-19</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+                                                        <button
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                            type="button" data-bs-toggle="modal" data-bs-target="#EditHubEvent">
+                                                            <span class="icon">
+                                                                <span class="feather-icon">
+                                                                    <iconify-icon icon="fluent:edit-16-regular">
+                                                                    </iconify-icon>
+                                                                </span>
+                                                            </span>
+                                                        </button>
+                                                        <a
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                            href="Event-Details.php">
+                                                            <span class="icon">
+                                                                <span class="feather-icon">
+                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                    </iconify-icon>
+                                                                </span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                                
                             </div>
                         </div>
                     </div>
@@ -527,14 +863,14 @@
                            <div class="row">
                                <div class="col-sm-12">
                                    <div class="form-group">
-                                       <label class="form-label">Event Title</label>
+                                       <label class="form-label">Social Event Title</label>
                                        <input class="form-control" type="text">
                                    </div>
                                </div>
 
                                <div class="col-sm-12">
                                    <div class="form-group">
-                                       <label class="form-label">Event Organizer</label>
+                                       <label class="form-label">Social Event Organizer</label>
                                        <input class="form-control" type="text" value="Graysons Properties">
                                    </div>
                                </div>
@@ -547,7 +883,7 @@
 
                                <div class="col-sm-12">
                                    <div class="form-group">
-                                       <label class="form-label">Event Type</label>
+                                       <label class="form-label">Social Event Type</label>
                                        <input class="form-control" type="text">
                                    </div>
                                </div>
@@ -612,7 +948,7 @@
 
                                 <div class="col-md-12">
                                     <div class="form-group inputwith_Icon">
-                                        <label class="form-label">Event Location</label>
+                                        <label class="form-label">Social Event Location</label>
                                         <input class="form-control" type="text" name="" placeholder="" readonly="readonly">
                                         <iconify-icon icon="ep:location"></iconify-icon>
                                     </div>
@@ -700,7 +1036,7 @@
     <form action="" method="post" id="wizardForm3">
             <div class="modal-content">
                 <div class="ModalheaderArea">
-                    <h5 class="mb-4">Edit Event</h5>
+                    <h5 class="mb-4">Edit Social Event</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
@@ -727,13 +1063,13 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="form-group">
-                                            <label class="form-label">Event Title</label>
+                                            <label class="form-label">Social Event Title</label>
                                             <input class="form-control" type="text" id="eventTitleEdit">
                                         </div>
                                     </div>
                                     <div class="col-sm-12">
                                         <div class="form-group">
-                                            <label class="form-label">Event Organizer</label>
+                                            <label class="form-label">Social Event Organizer</label>
                                             <input class="form-control" type="text" id="eventOrganizerEdit" value="Graysons Properties">
                                         </div>
                                     </div>
@@ -745,7 +1081,7 @@
                                     </div>
                                     <div class="col-sm-12">
                                         <div class="form-group">
-                                            <label class="form-label">Event Type</label>
+                                            <label class="form-label">Social Event Type</label>
                                             <input class="form-control" type="text" id="eventTypeEdit">
                                         </div>
                                     </div>
@@ -802,7 +1138,7 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group inputwith_Icon">
-                                            <label class="form-label">Event Location</label>
+                                            <label class="form-label">Social Event Location</label>
                                             <input class="form-control" type="text" id="eventLocationEdit" placeholder="" readonly>
                                             <iconify-icon icon="ep:location"></iconify-icon>
                                         </div>
