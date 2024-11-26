@@ -42,6 +42,8 @@
 	<link rel="stylesheet" href="dist/css/custom.css">
 	<!-- CSS -->
 	<link href="dist/css/style.css" rel="stylesheet" type="text/css">
+	<link href="dist/css/custom-ank.css" rel="stylesheet" type="text/css">
+
 
 	<style>
 		/* Loader styles */
