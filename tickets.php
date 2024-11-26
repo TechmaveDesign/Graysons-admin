@@ -132,6 +132,90 @@
                         </div>
                         <div class=" sustomdividerLedtArrow"></div>
                     </header>
+                    <div class="fullwidthDesktopTabs MobileScrollShow " id="nopaddingTop">
+                                <button class="scroll-btn prev" type="button">
+                                    <iconify-icon icon="tabler:arrow-left"></iconify-icon>
+                                </button>
+
+                                <ul  class="nav nav-tabs nav-line nav-icon fullwidthCustom_tabsUL nav-light">
+
+
+                                <li class="nav-item">
+                                        <a class="nav-link active" data-bs-toggle="tab" href="#allEnquiry">
+                                            <div class="d-flex align-items-center">
+                                                <span class="nav-link-text">All Tickets</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " data-bs-toggle="tab" href="#openEnquiry">
+                                            <div class="d-flex align-items-center">
+                                                <span class="nav-link-text">Staff Tickets</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#processingEnquiry">
+                                            <div class="d-flex align-items-center">
+                                                <span class="nav-link-text">Tenant Tickets</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#Enquiry_followup1">
+                                            <div class="d-flex align-items-center">
+                                                <span class="nav-link-text">Landlord Tickets</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#Enquiry_followup2">
+                                            <div class="d-flex align-items-center">
+                                                <span class="nav-link-text">Emergency Tickets</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <!-- <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#Enquiry_FinalFollowUp">
+                                            <div class="d-flex align-items-center">
+                                                <span class="nav-link-text">Final Follow up </span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#DeadLeads">
+                                            <div class="d-flex align-items-center">
+                                                <span class="nav-link-text">Dead Leads </span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#Enquiry_requirmentNotmet">
+                                            <div class="d-flex align-items-center">
+                                                <span class="nav-link-text">Requirements not met </span>
+
+                                            </div>
+                                        </a>
+                                    </li> -->
+
+                                    
+                                   
+                                </ul>
+                                <button class="scroll-btn next" type="button">
+                                    <iconify-icon icon="tabler:arrow-right"></iconify-icon>
+                                </button>
+
+                            </div>
                     <div class="contact-body">
                         <div class="nicescroll-bar">
                             <div class="userFilters onerowfilter" id="filterDiv" style="display: none;">
@@ -218,292 +302,2356 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="contact-list-view">
 
-                                <table class="table common-datatable  nowrap w-100 ">
-                                    <thead>
-                                        <tr>
-                                            <th>Ticket ID</th>
-                                            <th>Ticket Title</th>
-                                            <th>Property</th>
-                                            <th>Area</th>
-                                            <th>Department</th>
-                                            <th>Category</th>
-                                            <th>Sub Category</th>
-                                            <th>Ticket Category</th>
-                                            <th>issued By</th>
-                                            <th>Status</th>
-                                            <th>Raised On</th>
-                                            <th>Expected Finish Date</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><a href="view-ticket.php" class="highlightLink">#2073</a></td>
-                                            <td>Routine Cleaning</td>
-                                            <td>
-                                                <div class="LongMesage_container">
-                                                    <input class="refuge-collection-input tableLongMessage_Input"
-                                                        value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House">
-                                                    <button class="view-btn tablemessageview_btn" type="button"
-                                                        data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        aria-label="Click to view"
-                                                        data-bs-original-title="Click to view Full Message">
-                                                        <i class="bi bi-eye"></i> Read More
-                                                    </button>
-                                                </div>
-                                            </td>
-                                            <td>Manchester</td>
-                                            <td>Accounts</td>
-                                            <td>Bathroom</td>
-                                            <td>Wall</td>
-                                            <td>Maintenance Ticket</td>
-                                            <td>
-                                                <a href="view-user-details.php">
-                                                    <div class="media align-items-center">
-                                                        <div class="media-head me-2">
-                                                            <div class="avatar avatar-xs avatar-rounded">
-                                                                <img src="dist/img/newimages/users/userdummy.png"
-                                                                    alt="user" class="avatar-img">
-                                                            </div>
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <span class="d-block text-high-em">Charlie
-                                                                Chaplin</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </td>
-                                            <td><span class="badge bg-info">Overdue</span></td>
+                            <div class="tab-content">
+                            <div class="tab-pane fade show active" id="allEnquiry">
+                                    <div class="fullwidthTabInner_content_container">
+                                        <!-- <div class="docfilterbutton">
+                                            <h2 class="tabinnerTitle">Enquiry Statuses </h2>
+                                        </div> -->
+                                        <div class="card">
+                                            <div class="card-body">
+                                                
+                                                <div class="contact-list-view">
 
-                                            <td>09/04/2024 17:19</td>
-                                            <td>25/11/2024</td>
-                                            <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                        <a href="view-ticket.php"
-                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                            type="button"><span class="icon"><span class="feather-icon">
-                                                                    <iconify-icon icon="teenyicons:eye-outline">
-                                                                    </iconify-icon>
-                                                                </span></span></a>
+                                                <table class="table common-datatable  nowrap w-100 ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Ticket ID</th>
+                                                            <th>Ticket Title</th>
+                                                            <th>Property</th>
+                                                            <th>Area</th>
+                                                            <th>Department</th>
+                                                            <th>Category</th>
+                                                            <th>Sub Category</th>
+                                                            <th>Ticket Category</th>
+                                                            <th>Issued By</th>
+                                                            <th>User Type</th>
+                                                            <th>Status</th>
+                                                            <th>Raised On</th>
+                                                            <th>Expected Finish Date</th>
+                                                            <th>Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><a href="view-ticket.php" class="highlightLink">#2073</a></td>
+                                                            <td>Routine Cleaning</td>
+                                                            <td>
+                                                                <div class="LongMesage_container">
+                                                                    <input class="refuge-collection-input tableLongMessage_Input"
+                                                                        value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House">
+                                                                    <button class="view-btn tablemessageview_btn" type="button"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        aria-label="Click to view"
+                                                                        data-bs-original-title="Click to view Full Message">
+                                                                        <i class="bi bi-eye"></i> Read More
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                            <td>Manchester</td>
+                                                            <td>Accounts</td>
+                                                            <td>Bathroom</td>
+                                                            <td>Wall</td>
+                                                            <td>Maintenance Ticket</td>
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Charlie
+                                                                                Chaplin</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td>Staff</td>
+                                                            <td><span class="badge bg-info">Overdue</span></td>
+
+                                                            <td>09/04/2024 17:19</td>
+                                                            <td>25/11/2024</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+                                                                        <a href="view-ticket.php"
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                            type="button"><span class="icon"><span class="feather-icon">
+                                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                                    </iconify-icon>
+                                                                                </span></span></a>
+                                                                    </div>
+
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="view-ticket.php" class="highlightLink">#2023</a></td>
+                                                            <td>Routine Cleaning</td>
+                                                            <td>
+                                                                <div class="LongMesage_container">
+                                                                    <input class="refuge-collection-input tableLongMessage_Input"
+                                                                        value="Bedroom 2 101, Flat 7 (Floor 2, No7), Garden View@Emerald Apartments">
+                                                                    <button class="view-btn tablemessageview_btn" type="button"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        aria-label="Click to view"
+                                                                        data-bs-original-title="Click to view Full Message">
+                                                                        <i class="bi bi-eye"></i> Read More
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                            <td>Sunderland</td>
+                                                            <td>Maintenance</td>
+                                                            <td>Living Room</td>
+                                                            <td>Floor</td>
+                                                            <td>Maintenance Ticket</td>
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Dean Shaw</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td>Tenant</td>
+                                                            <td><span class="badge badge-soft-warning my-1 me-2">Pending</span></td>
+                                                            <td>09/04/2024 14:45</td>
+                                                            <td>27/11/2024</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+                                                                        <a href="view-ticket.php"
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                            type="button"><span class="icon"><span class="feather-icon">
+                                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                                    </iconify-icon>
+                                                                                </span></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><a href="view-ticket.php" class="highlightLink">#2054</a></td>
+                                                            <td>Deep Cleaning</td>
+                                                            <td>
+                                                                <div class="LongMesage_container">
+                                                                    <input class="refuge-collection-input tableLongMessage_Input"
+                                                                        value="Kitchen 206, Flat 12 (Floor 3, No12), Sea View@Oceanic Towers">
+                                                                    <button class="view-btn tablemessageview_btn" type="button"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        aria-label="Click to view"
+                                                                        data-bs-original-title="Click to view Full Message">
+                                                                        <i class="bi bi-eye"></i> Read More
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                            <td>Bristol</td>
+                                                            <td>Operations</td>
+                                                            <td>Kitchen</td>
+                                                            <td>Ceiling</td>
+                                                            <td>General Enquiry Ticket</td>
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Tom Cruz</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td>Landlord</td>
+                                                            <td><span class="badge  urgentTicket_status my-1 me-2">Urgent</span></td>
+                                                            <td>08/04/2024 11:30</td>
+                                                            <td>29/11/2024</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+                                                                        <a href="view-ticket.php"
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                            type="button"><span class="icon"><span class="feather-icon">
+                                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                                    </iconify-icon>
+                                                                                </span></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><a href="view-ticket.php" class="highlightLink">#1273</a></td>
+                                                            <td>General Inspection</td>
+                                                            <td>
+                                                                <div class="LongMesage_container">
+                                                                    <input class="refuge-collection-input tableLongMessage_Input"
+                                                                        value="Lobby 002, Flat 1 (Ground Floor, No1), Street View@Central Plaza">
+                                                                    <button class="view-btn tablemessageview_btn" type="button"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        aria-label="Click to view"
+                                                                        data-bs-original-title="Click to view Full Message">
+                                                                        <i class="bi bi-eye"></i> Read More
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                            <td>Kitchen</td>
+                                                            <td>Security</td>
+                                                            <td>Lobby</td>
+                                                            <td>Windows</td>
+                                                            <td>Maintenance Ticket</td>
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Huma Therman</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td>Staff</td>
+                                                            <td><span class="badge bg-primary">In Progress</span></td>
+                                                            <td>09/04/2024 09:15</td>
+                                                            <td>23/11/2024</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+                                                                        <a href="view-ticket.php"
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                            type="button"><span class="icon"><span class="feather-icon">
+                                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                                    </iconify-icon>
+                                                                                </span></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><a href="view-ticket.php" class="highlightLink">#2543</a></td>
+                                                            <td>Emergency Repair</td>
+                                                            <td>
+                                                                <div class="LongMesage_container">
+                                                                    <input class="refuge-collection-input tableLongMessage_Input"
+                                                                        value="Hallway 305, Flat 15 (Floor 3, No15), River View@Riverside Residences">
+                                                                    <button class="view-btn tablemessageview_btn" type="button"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        aria-label="Click to view"
+                                                                        data-bs-original-title="Click to view Full Message">
+                                                                        <i class="bi bi-eye"></i> Read More
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                            <td>Bedroom</td>
+                                                            <td>Maintenance</td>
+                                                            <td>Hallway</td>
+                                                            <td>Door</td>
+                                                            <td>General Enquiry Ticket</td>
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Danial Craig</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td>Tenant</td>
+                                                            <td><span class="badge badge-soft-warning my-1 me-2">Pending</span></td>
+                                                            <td>09/04/2024 12:00</td>
+                                                            <td>26/11/2024</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+                                                                        <a href="view-ticket.php"
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                            type="button"><span class="icon"><span class="feather-icon">
+                                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                                    </iconify-icon>
+                                                                                </span></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="tab-pane fade " id="openEnquiry">
+                                    <div class="fullwidthTabInner_content_container">
+                                        <!-- <div class="docfilterbutton">
+                                            <h2 class="tabinnerTitle">Enquiry Statuses </h2>
+                                        </div> -->
+                                        <div class="card">
+                                            <div class="card-body">
+                                                
+                                                <div class="contact-list-view">
+
+                                                <table class="table common-datatable  nowrap w-100 ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Ticket ID</th>
+                                                            <th>Ticket Title</th>
+                                                            <th>Property</th>
+                                                            <th>Area</th>
+                                                            <th>Department</th>
+                                                            <th>Category</th>
+                                                            <th>Sub Category</th>
+                                                            <th>Ticket Category</th>
+                                                            <th>issued By</th>
+                                                            <th>Status</th>
+                                                            <th>Raised On</th>
+                                                            <th>Expected Finish Date</th>
+                                                            <th>Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><a href="view-ticket.php" class="highlightLink">#2073</a></td>
+                                                            <td>Routine Cleaning</td>
+                                                            <td>
+                                                                <div class="LongMesage_container">
+                                                                    <input class="refuge-collection-input tableLongMessage_Input"
+                                                                        value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House">
+                                                                    <button class="view-btn tablemessageview_btn" type="button"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        aria-label="Click to view"
+                                                                        data-bs-original-title="Click to view Full Message">
+                                                                        <i class="bi bi-eye"></i> Read More
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                            <td>Manchester</td>
+                                                            <td>Accounts</td>
+                                                            <td>Bathroom</td>
+                                                            <td>Wall</td>
+                                                            <td>Maintenance Ticket</td>
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Charlie
+                                                                                Chaplin</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td><span class="badge bg-info">Overdue</span></td>
+
+                                                            <td>09/04/2024 17:19</td>
+                                                            <td>25/11/2024</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+                                                                        <a href="view-ticket.php"
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                            type="button"><span class="icon"><span class="feather-icon">
+                                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                                    </iconify-icon>
+                                                                                </span></span></a>
+                                                                    </div>
+
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="view-ticket.php" class="highlightLink">#2023</a></td>
+                                                            <td>Routine Cleaning</td>
+                                                            <td>
+                                                                <div class="LongMesage_container">
+                                                                    <input class="refuge-collection-input tableLongMessage_Input"
+                                                                        value="Bedroom 2 101, Flat 7 (Floor 2, No7), Garden View@Emerald Apartments">
+                                                                    <button class="view-btn tablemessageview_btn" type="button"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        aria-label="Click to view"
+                                                                        data-bs-original-title="Click to view Full Message">
+                                                                        <i class="bi bi-eye"></i> Read More
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                            <td>Sunderland</td>
+                                                            <td>Maintenance</td>
+                                                            <td>Living Room</td>
+                                                            <td>Floor</td>
+                                                            <td>Maintenance Ticket</td>
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Dean Shaw</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td><span class="badge badge-soft-warning my-1 me-2">Pending</span></td>
+                                                            <td>09/04/2024 14:45</td>
+                                                            <td>27/11/2024</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+                                                                        <a href="view-ticket.php"
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                            type="button"><span class="icon"><span class="feather-icon">
+                                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                                    </iconify-icon>
+                                                                                </span></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><a href="view-ticket.php" class="highlightLink">#2054</a></td>
+                                                            <td>Deep Cleaning</td>
+                                                            <td>
+                                                                <div class="LongMesage_container">
+                                                                    <input class="refuge-collection-input tableLongMessage_Input"
+                                                                        value="Kitchen 206, Flat 12 (Floor 3, No12), Sea View@Oceanic Towers">
+                                                                    <button class="view-btn tablemessageview_btn" type="button"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        aria-label="Click to view"
+                                                                        data-bs-original-title="Click to view Full Message">
+                                                                        <i class="bi bi-eye"></i> Read More
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                            <td>Bristol</td>
+                                                            <td>Operations</td>
+                                                            <td>Kitchen</td>
+                                                            <td>Ceiling</td>
+                                                            <td>General Enquiry Ticket</td>
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Tom Cruz</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td><span class="badge  urgentTicket_status my-1 me-2">Urgent</span></td>
+                                                            <td>08/04/2024 11:30</td>
+                                                            <td>29/11/2024</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+                                                                        <a href="view-ticket.php"
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                            type="button"><span class="icon"><span class="feather-icon">
+                                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                                    </iconify-icon>
+                                                                                </span></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><a href="view-ticket.php" class="highlightLink">#1273</a></td>
+                                                            <td>General Inspection</td>
+                                                            <td>
+                                                                <div class="LongMesage_container">
+                                                                    <input class="refuge-collection-input tableLongMessage_Input"
+                                                                        value="Lobby 002, Flat 1 (Ground Floor, No1), Street View@Central Plaza">
+                                                                    <button class="view-btn tablemessageview_btn" type="button"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        aria-label="Click to view"
+                                                                        data-bs-original-title="Click to view Full Message">
+                                                                        <i class="bi bi-eye"></i> Read More
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                            <td>Kitchen</td>
+                                                            <td>Security</td>
+                                                            <td>Lobby</td>
+                                                            <td>Windows</td>
+                                                            <td>Maintenance Ticket</td>
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Huma Therman</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td><span class="badge bg-primary">In Progress</span></td>
+                                                            <td>09/04/2024 09:15</td>
+                                                            <td>23/11/2024</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+                                                                        <a href="view-ticket.php"
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                            type="button"><span class="icon"><span class="feather-icon">
+                                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                                    </iconify-icon>
+                                                                                </span></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><a href="view-ticket.php" class="highlightLink">#2543</a></td>
+                                                            <td>Emergency Repair</td>
+                                                            <td>
+                                                                <div class="LongMesage_container">
+                                                                    <input class="refuge-collection-input tableLongMessage_Input"
+                                                                        value="Hallway 305, Flat 15 (Floor 3, No15), River View@Riverside Residences">
+                                                                    <button class="view-btn tablemessageview_btn" type="button"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        aria-label="Click to view"
+                                                                        data-bs-original-title="Click to view Full Message">
+                                                                        <i class="bi bi-eye"></i> Read More
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                            <td>Bedroom</td>
+                                                            <td>Maintenance</td>
+                                                            <td>Hallway</td>
+                                                            <td>Door</td>
+                                                            <td>General Enquiry Ticket</td>
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Danial Craig</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td><span class="badge badge-soft-warning my-1 me-2">Pending</span></td>
+                                                            <td>09/04/2024 12:00</td>
+                                                            <td>26/11/2024</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+                                                                        <a href="view-ticket.php"
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                            type="button"><span class="icon"><span class="feather-icon">
+                                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                                    </iconify-icon>
+                                                                                </span></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="tab-pane fade" id="processingEnquiry">
+                                <div class="fullwidthTabInner_content_container">
+                                        <!-- <div class="docfilterbutton">
+                                            <h2 class="tabinnerTitle">Enquiry Statuses </h2>
+                                        </div> -->
+                                        <div class="card">
+                                            <div class="card-body">
+                                                
+                                                <div class="contact-list-view">
+
+                                                <table class="table common-datatable  nowrap w-100 ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Ticket ID</th>
+                                                            <th>Ticket Title</th>
+                                                            <th>Property</th>
+                                                            <th>Area</th>
+                                                            <th>Department</th>
+                                                            <th>Category</th>
+                                                            <th>Sub Category</th>
+                                                            <th>Ticket Category</th>
+                                                            <th>issued By</th>
+                                                            <th>Status</th>
+                                                            <th>Raised On</th>
+                                                            <th>Expected Finish Date</th>
+                                                            <th>Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><a href="view-ticket.php" class="highlightLink">#2073</a></td>
+                                                            <td>Routine Cleaning</td>
+                                                            <td>
+                                                                <div class="LongMesage_container">
+                                                                    <input class="refuge-collection-input tableLongMessage_Input"
+                                                                        value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House">
+                                                                    <button class="view-btn tablemessageview_btn" type="button"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        aria-label="Click to view"
+                                                                        data-bs-original-title="Click to view Full Message">
+                                                                        <i class="bi bi-eye"></i> Read More
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                            <td>Manchester</td>
+                                                            <td>Accounts</td>
+                                                            <td>Bathroom</td>
+                                                            <td>Wall</td>
+                                                            <td>Maintenance Ticket</td>
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Charlie
+                                                                                Chaplin</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td><span class="badge bg-info">Overdue</span></td>
+
+                                                            <td>09/04/2024 17:19</td>
+                                                            <td>25/11/2024</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+                                                                        <a href="view-ticket.php"
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                            type="button"><span class="icon"><span class="feather-icon">
+                                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                                    </iconify-icon>
+                                                                                </span></span></a>
+                                                                    </div>
+
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="view-ticket.php" class="highlightLink">#2023</a></td>
+                                                            <td>Routine Cleaning</td>
+                                                            <td>
+                                                                <div class="LongMesage_container">
+                                                                    <input class="refuge-collection-input tableLongMessage_Input"
+                                                                        value="Bedroom 2 101, Flat 7 (Floor 2, No7), Garden View@Emerald Apartments">
+                                                                    <button class="view-btn tablemessageview_btn" type="button"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        aria-label="Click to view"
+                                                                        data-bs-original-title="Click to view Full Message">
+                                                                        <i class="bi bi-eye"></i> Read More
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                            <td>Sunderland</td>
+                                                            <td>Maintenance</td>
+                                                            <td>Living Room</td>
+                                                            <td>Floor</td>
+                                                            <td>Maintenance Ticket</td>
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Dean Shaw</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td><span class="badge badge-soft-warning my-1 me-2">Pending</span></td>
+                                                            <td>09/04/2024 14:45</td>
+                                                            <td>27/11/2024</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+                                                                        <a href="view-ticket.php"
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                            type="button"><span class="icon"><span class="feather-icon">
+                                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                                    </iconify-icon>
+                                                                                </span></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><a href="view-ticket.php" class="highlightLink">#2054</a></td>
+                                                            <td>Deep Cleaning</td>
+                                                            <td>
+                                                                <div class="LongMesage_container">
+                                                                    <input class="refuge-collection-input tableLongMessage_Input"
+                                                                        value="Kitchen 206, Flat 12 (Floor 3, No12), Sea View@Oceanic Towers">
+                                                                    <button class="view-btn tablemessageview_btn" type="button"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        aria-label="Click to view"
+                                                                        data-bs-original-title="Click to view Full Message">
+                                                                        <i class="bi bi-eye"></i> Read More
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                            <td>Bristol</td>
+                                                            <td>Operations</td>
+                                                            <td>Kitchen</td>
+                                                            <td>Ceiling</td>
+                                                            <td>General Enquiry Ticket</td>
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Tom Cruz</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td><span class="badge  urgentTicket_status my-1 me-2">Urgent</span></td>
+                                                            <td>08/04/2024 11:30</td>
+                                                            <td>29/11/2024</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+                                                                        <a href="view-ticket.php"
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                            type="button"><span class="icon"><span class="feather-icon">
+                                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                                    </iconify-icon>
+                                                                                </span></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><a href="view-ticket.php" class="highlightLink">#1273</a></td>
+                                                            <td>General Inspection</td>
+                                                            <td>
+                                                                <div class="LongMesage_container">
+                                                                    <input class="refuge-collection-input tableLongMessage_Input"
+                                                                        value="Lobby 002, Flat 1 (Ground Floor, No1), Street View@Central Plaza">
+                                                                    <button class="view-btn tablemessageview_btn" type="button"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        aria-label="Click to view"
+                                                                        data-bs-original-title="Click to view Full Message">
+                                                                        <i class="bi bi-eye"></i> Read More
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                            <td>Kitchen</td>
+                                                            <td>Security</td>
+                                                            <td>Lobby</td>
+                                                            <td>Windows</td>
+                                                            <td>Maintenance Ticket</td>
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Huma Therman</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td><span class="badge bg-primary">In Progress</span></td>
+                                                            <td>09/04/2024 09:15</td>
+                                                            <td>23/11/2024</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+                                                                        <a href="view-ticket.php"
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                            type="button"><span class="icon"><span class="feather-icon">
+                                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                                    </iconify-icon>
+                                                                                </span></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><a href="view-ticket.php" class="highlightLink">#2543</a></td>
+                                                            <td>Emergency Repair</td>
+                                                            <td>
+                                                                <div class="LongMesage_container">
+                                                                    <input class="refuge-collection-input tableLongMessage_Input"
+                                                                        value="Hallway 305, Flat 15 (Floor 3, No15), River View@Riverside Residences">
+                                                                    <button class="view-btn tablemessageview_btn" type="button"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        aria-label="Click to view"
+                                                                        data-bs-original-title="Click to view Full Message">
+                                                                        <i class="bi bi-eye"></i> Read More
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                            <td>Bedroom</td>
+                                                            <td>Maintenance</td>
+                                                            <td>Hallway</td>
+                                                            <td>Door</td>
+                                                            <td>General Enquiry Ticket</td>
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Danial Craig</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td><span class="badge badge-soft-warning my-1 me-2">Pending</span></td>
+                                                            <td>09/04/2024 12:00</td>
+                                                            <td>26/11/2024</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+                                                                        <a href="view-ticket.php"
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                            type="button"><span class="icon"><span class="feather-icon">
+                                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                                    </iconify-icon>
+                                                                                </span></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane fade" id="Enquiry_followup1">
+                                <div class="fullwidthTabInner_content_container">
+                                        <!-- <div class="docfilterbutton">
+                                            <h2 class="tabinnerTitle">Enquiry Statuses </h2>
+                                        </div> -->
+                                        <div class="card">
+                                            <div class="card-body">
+                                                
+                                                <div class="contact-list-view">
+
+                                                <table class="table common-datatable  nowrap w-100 ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Ticket ID</th>
+                                                            <th>Ticket Title</th>
+                                                            <th>Property</th>
+                                                            <th>Area</th>
+                                                            <th>Department</th>
+                                                            <th>Category</th>
+                                                            <th>Sub Category</th>
+                                                            <th>Ticket Category</th>
+                                                            <th>issued By</th>
+                                                            <th>Status</th>
+                                                            <th>Raised On</th>
+                                                            <th>Expected Finish Date</th>
+                                                            <th>Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><a href="view-ticket.php" class="highlightLink">#2073</a></td>
+                                                            <td>Routine Cleaning</td>
+                                                            <td>
+                                                                <div class="LongMesage_container">
+                                                                    <input class="refuge-collection-input tableLongMessage_Input"
+                                                                        value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House">
+                                                                    <button class="view-btn tablemessageview_btn" type="button"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        aria-label="Click to view"
+                                                                        data-bs-original-title="Click to view Full Message">
+                                                                        <i class="bi bi-eye"></i> Read More
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                            <td>Manchester</td>
+                                                            <td>Accounts</td>
+                                                            <td>Bathroom</td>
+                                                            <td>Wall</td>
+                                                            <td>Maintenance Ticket</td>
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Charlie
+                                                                                Chaplin</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td><span class="badge bg-info">Overdue</span></td>
+
+                                                            <td>09/04/2024 17:19</td>
+                                                            <td>25/11/2024</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+                                                                        <a href="view-ticket.php"
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                            type="button"><span class="icon"><span class="feather-icon">
+                                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                                    </iconify-icon>
+                                                                                </span></span></a>
+                                                                    </div>
+
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="view-ticket.php" class="highlightLink">#2023</a></td>
+                                                            <td>Routine Cleaning</td>
+                                                            <td>
+                                                                <div class="LongMesage_container">
+                                                                    <input class="refuge-collection-input tableLongMessage_Input"
+                                                                        value="Bedroom 2 101, Flat 7 (Floor 2, No7), Garden View@Emerald Apartments">
+                                                                    <button class="view-btn tablemessageview_btn" type="button"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        aria-label="Click to view"
+                                                                        data-bs-original-title="Click to view Full Message">
+                                                                        <i class="bi bi-eye"></i> Read More
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                            <td>Sunderland</td>
+                                                            <td>Maintenance</td>
+                                                            <td>Living Room</td>
+                                                            <td>Floor</td>
+                                                            <td>Maintenance Ticket</td>
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Dean Shaw</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td><span class="badge badge-soft-warning my-1 me-2">Pending</span></td>
+                                                            <td>09/04/2024 14:45</td>
+                                                            <td>27/11/2024</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+                                                                        <a href="view-ticket.php"
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                            type="button"><span class="icon"><span class="feather-icon">
+                                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                                    </iconify-icon>
+                                                                                </span></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><a href="view-ticket.php" class="highlightLink">#2054</a></td>
+                                                            <td>Deep Cleaning</td>
+                                                            <td>
+                                                                <div class="LongMesage_container">
+                                                                    <input class="refuge-collection-input tableLongMessage_Input"
+                                                                        value="Kitchen 206, Flat 12 (Floor 3, No12), Sea View@Oceanic Towers">
+                                                                    <button class="view-btn tablemessageview_btn" type="button"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        aria-label="Click to view"
+                                                                        data-bs-original-title="Click to view Full Message">
+                                                                        <i class="bi bi-eye"></i> Read More
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                            <td>Bristol</td>
+                                                            <td>Operations</td>
+                                                            <td>Kitchen</td>
+                                                            <td>Ceiling</td>
+                                                            <td>General Enquiry Ticket</td>
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Tom Cruz</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td><span class="badge  urgentTicket_status my-1 me-2">Urgent</span></td>
+                                                            <td>08/04/2024 11:30</td>
+                                                            <td>29/11/2024</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+                                                                        <a href="view-ticket.php"
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                            type="button"><span class="icon"><span class="feather-icon">
+                                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                                    </iconify-icon>
+                                                                                </span></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><a href="view-ticket.php" class="highlightLink">#1273</a></td>
+                                                            <td>General Inspection</td>
+                                                            <td>
+                                                                <div class="LongMesage_container">
+                                                                    <input class="refuge-collection-input tableLongMessage_Input"
+                                                                        value="Lobby 002, Flat 1 (Ground Floor, No1), Street View@Central Plaza">
+                                                                    <button class="view-btn tablemessageview_btn" type="button"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        aria-label="Click to view"
+                                                                        data-bs-original-title="Click to view Full Message">
+                                                                        <i class="bi bi-eye"></i> Read More
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                            <td>Kitchen</td>
+                                                            <td>Security</td>
+                                                            <td>Lobby</td>
+                                                            <td>Windows</td>
+                                                            <td>Maintenance Ticket</td>
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Huma Therman</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td><span class="badge bg-primary">In Progress</span></td>
+                                                            <td>09/04/2024 09:15</td>
+                                                            <td>23/11/2024</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+                                                                        <a href="view-ticket.php"
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                            type="button"><span class="icon"><span class="feather-icon">
+                                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                                    </iconify-icon>
+                                                                                </span></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td><a href="view-ticket.php" class="highlightLink">#2543</a></td>
+                                                            <td>Emergency Repair</td>
+                                                            <td>
+                                                                <div class="LongMesage_container">
+                                                                    <input class="refuge-collection-input tableLongMessage_Input"
+                                                                        value="Hallway 305, Flat 15 (Floor 3, No15), River View@Riverside Residences">
+                                                                    <button class="view-btn tablemessageview_btn" type="button"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        aria-label="Click to view"
+                                                                        data-bs-original-title="Click to view Full Message">
+                                                                        <i class="bi bi-eye"></i> Read More
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                            <td>Bedroom</td>
+                                                            <td>Maintenance</td>
+                                                            <td>Hallway</td>
+                                                            <td>Door</td>
+                                                            <td>General Enquiry Ticket</td>
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Danial Craig</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td><span class="badge badge-soft-warning my-1 me-2">Pending</span></td>
+                                                            <td>09/04/2024 12:00</td>
+                                                            <td>26/11/2024</td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+                                                                        <a href="view-ticket.php"
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                            type="button"><span class="icon"><span class="feather-icon">
+                                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                                    </iconify-icon>
+                                                                                </span></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane fade" id="Enquiry_followup2">
+                                <div class="fullwidthTabInner_content_container">
+                                        <!-- <div class="docfilterbutton">
+                                            <h2 class="tabinnerTitle">Enquiry Statuses </h2>
+                                        </div> -->
+                                        <div class="card">
+                                            <div class="card-body">
+                                            <div class="contact-list-view">
+
+                                                    <table class="table common-datatable  nowrap w-100 ">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Ticket ID</th>
+                                                                <th>Ticket Title</th>
+                                                                <th>Property</th>
+                                                                <th>Area</th>
+                                                                <th>Department</th>
+                                                                <th>Category</th>
+                                                                <th>Sub Category</th>
+                                                                <th>Ticket Category</th>
+                                                                <th>Issued By</th>
+                                                                <th>User Type</th>
+                                                                <th>Status</th>
+                                                                <th>Raised On</th>
+                                                                <th>Expected Finish Date</th>
+                                                                <th>Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><a href="view-ticket.php" class="highlightLink">#2073</a></td>
+                                                                <td>Routine Cleaning</td>
+                                                                <td>
+                                                                    <div class="LongMesage_container">
+                                                                        <input class="refuge-collection-input tableLongMessage_Input"
+                                                                            value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House">
+                                                                        <button class="view-btn tablemessageview_btn" type="button"
+                                                                            data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                            aria-label="Click to view"
+                                                                            data-bs-original-title="Click to view Full Message">
+                                                                            <i class="bi bi-eye"></i> Read More
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                                <td>Manchester</td>
+                                                                <td>Accounts</td>
+                                                                <td>Bathroom</td>
+                                                                <td>Wall</td>
+                                                                <td>Maintenance Ticket</td>
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span class="d-block text-high-em">Charlie
+                                                                                    Chaplin</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td>Staff</td>
+                                                                <td><span class="badge bg-danger">Urgent</span></td>
+
+                                                                <td>09/04/2024 17:19</td>
+                                                                <td>25/11/2024</td>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a href="view-ticket.php"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                type="button"><span class="icon"><span class="feather-icon">
+                                                                                        <iconify-icon icon="teenyicons:eye-outline">
+                                                                                        </iconify-icon>
+                                                                                    </span></span></a>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="view-ticket.php" class="highlightLink">#2023</a></td>
+                                                                <td>Routine Cleaning</td>
+                                                                <td>
+                                                                    <div class="LongMesage_container">
+                                                                        <input class="refuge-collection-input tableLongMessage_Input"
+                                                                            value="Bedroom 2 101, Flat 7 (Floor 2, No7), Garden View@Emerald Apartments">
+                                                                        <button class="view-btn tablemessageview_btn" type="button"
+                                                                            data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                            aria-label="Click to view"
+                                                                            data-bs-original-title="Click to view Full Message">
+                                                                            <i class="bi bi-eye"></i> Read More
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                                <td>Sunderland</td>
+                                                                <td>Maintenance</td>
+                                                                <td>Living Room</td>
+                                                                <td>Floor</td>
+                                                                <td>Maintenance Ticket</td>
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span class="d-block text-high-em">Dean Shaw</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td>Tenant</td>
+                                                                <td><span class="badge bg-danger">Urgent</span></td>
+                                                                <td>09/04/2024 14:45</td>
+                                                                <td>27/11/2024</td>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a href="view-ticket.php"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                                type="button"><span class="icon"><span class="feather-icon">
+                                                                                        <iconify-icon icon="teenyicons:eye-outline">
+                                                                                        </iconify-icon>
+                                                                                    </span></span></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><a href="view-ticket.php" class="highlightLink">#2054</a></td>
+                                                                <td>Deep Cleaning</td>
+                                                                <td>
+                                                                    <div class="LongMesage_container">
+                                                                        <input class="refuge-collection-input tableLongMessage_Input"
+                                                                            value="Kitchen 206, Flat 12 (Floor 3, No12), Sea View@Oceanic Towers">
+                                                                        <button class="view-btn tablemessageview_btn" type="button"
+                                                                            data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                            aria-label="Click to view"
+                                                                            data-bs-original-title="Click to view Full Message">
+                                                                            <i class="bi bi-eye"></i> Read More
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                                <td>Bristol</td>
+                                                                <td>Operations</td>
+                                                                <td>Kitchen</td>
+                                                                <td>Ceiling</td>
+                                                                <td>General Enquiry Ticket</td>
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span class="d-block text-high-em">Tom Cruz</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td>Landlord</td>
+                                                                <td><span class="badge bg-danger">Urgent</span></td>
+                                                                <td>08/04/2024 11:30</td>
+                                                                <td>29/11/2024</td>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a href="view-ticket.php"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                                type="button"><span class="icon"><span class="feather-icon">
+                                                                                        <iconify-icon icon="teenyicons:eye-outline">
+                                                                                        </iconify-icon>
+                                                                                    </span></span></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><a href="view-ticket.php" class="highlightLink">#1273</a></td>
+                                                                <td>General Inspection</td>
+                                                                <td>
+                                                                    <div class="LongMesage_container">
+                                                                        <input class="refuge-collection-input tableLongMessage_Input"
+                                                                            value="Lobby 002, Flat 1 (Ground Floor, No1), Street View@Central Plaza">
+                                                                        <button class="view-btn tablemessageview_btn" type="button"
+                                                                            data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                            aria-label="Click to view"
+                                                                            data-bs-original-title="Click to view Full Message">
+                                                                            <i class="bi bi-eye"></i> Read More
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                                <td>Kitchen</td>
+                                                                <td>Security</td>
+                                                                <td>Lobby</td>
+                                                                <td>Windows</td>
+                                                                <td>Maintenance Ticket</td>
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span class="d-block text-high-em">Huma Therman</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td>Staff</td>
+                                                                <td><span class="badge bg-danger">Urgent</span></td>
+                                                                <td>09/04/2024 09:15</td>
+                                                                <td>23/11/2024</td>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a href="view-ticket.php"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                                type="button"><span class="icon"><span class="feather-icon">
+                                                                                        <iconify-icon icon="teenyicons:eye-outline">
+                                                                                        </iconify-icon>
+                                                                                    </span></span></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><a href="view-ticket.php" class="highlightLink">#2543</a></td>
+                                                                <td>Emergency Repair</td>
+                                                                <td>
+                                                                    <div class="LongMesage_container">
+                                                                        <input class="refuge-collection-input tableLongMessage_Input"
+                                                                            value="Hallway 305, Flat 15 (Floor 3, No15), River View@Riverside Residences">
+                                                                        <button class="view-btn tablemessageview_btn" type="button"
+                                                                            data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                            aria-label="Click to view"
+                                                                            data-bs-original-title="Click to view Full Message">
+                                                                            <i class="bi bi-eye"></i> Read More
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                                <td>Bedroom</td>
+                                                                <td>Maintenance</td>
+                                                                <td>Hallway</td>
+                                                                <td>Door</td>
+                                                                <td>General Enquiry Ticket</td>
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span class="d-block text-high-em">Danial Craig</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td>Tenant</td>
+                                                                <td><span class="badge bg-danger">Urgent</span></td>
+                                                                <td>09/04/2024 12:00</td>
+                                                                <td>26/11/2024</td>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a href="view-ticket.php"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                                type="button"><span class="icon"><span class="feather-icon">
+                                                                                        <iconify-icon icon="teenyicons:eye-outline">
+                                                                                        </iconify-icon>
+                                                                                    </span></span></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
                                                     </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane fade" id="Enquiry_FinalFollowUp">
+                                <div class="fullwidthTabInner_content_container">
+                                        <!-- <div class="docfilterbutton">
+                                            <h2 class="tabinnerTitle">Enquiry Statuses </h2>
+                                        </div> -->
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="contact-list-view">
+
+                                                    <table class="table common-datatable nowrap w-100">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Enquiry ID</th>
+                                                                <th>Status</th>
+                                                                <th>Enquiry Date</th>
+                                                                <th>Tenant</th>
+                                                                <th>last Updated Date</th>
+                                                                <th>Property Enquired About</th>
+                                                                <th>Location</th>
+                                                                <th>Apartment Size</th>
+                                                                <th>Applicant Type</th>
+                                                                <th>Preferred moving date</th>
+                                                                <th>Weekly Budget</th>
+                                                                <th>Group Size</th>
+                                                                <th>Nationality</th>
+                                                                <th>Night/Day Person</th>
+                                                                <th>Enquiry Source</th>
+                                                                <th>Actions</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><a href="Enquiry-details.php">ENQ12345</a></td>
+                                                                <td><span class="badge bg-info finalfollowupBadge">Final Follow Up</span></td>
+                                                                <td>23/04/2023 </td>
+                                                                <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                        <iconify-icon icon="noto:star"></iconify-icon> Morgan Freeman
+                                                                    </a>
+                                                                </td>
+                                                                <td>23/04/2023 18:18</td>
+                                                                <td>3 BHK Apartment in Downtown</td>
+                                                                <td>
+                                                                    Newcastle
+                                                                </td>
+                                                                <td>1 Bed Apartment</td>
+                                                                <td>Student</td>
+                                                                <td>15/09/2024</td>
+                                                                <td>$60,000</td>
+                                                                <td>3</td>
+                                                                <td>International</td>
+
+                                                                <td>Day</td>
+                                                                <td>
+                                                                    <div class="enquirySource">
+                                                                        <iconify-icon icon="solar:phone-outline"></iconify-icon> Phone
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a href="Enquiry-details.php"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span class="feather-icon">
+                                                                                        <iconify-icon icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="Enquiry-details.php">ENQ12346</a></td>
+                                                                <td><span class="badge bg-info finalfollowupBadge">Final Follow Up</span></td>
+                                                                <td>15/03/2023</td>
+                                                                <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                        <iconify-icon icon="noto:star"></iconify-icon> Jessica Alba
+                                                                    </a></td>
+                                                                <td>15/03/2023 16:40</td>
+                                                                <td>2 BHK Condo in Uptown</td>
+                                                                <td>
+                                                                    Northumbria
+                                                                </td>
+                                                                <td>3 Bed Apartment</td>
+                                                                <td>Professional</td>
+                                                                <td>20/09/2024</td>
+                                                                <td>$10,000</td>
+                                                                <td>2</td>
+                                                                <td>UK</td>
+
+                                                                <td>Night</td>
+                                                                <td>
+                                                                    <div class="enquirySource">
+                                                                        <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a href="Enquiry-details.php"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span class="feather-icon">
+                                                                                        <iconify-icon icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="Enquiry-details.php">ENQ12347</a></td>
+                                                                <td><span class="badge bg-info finalfollowupBadge">Final Follow Up</span></td>
+                                                                <td>01/02/2023</td>
+                                                                <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                        <iconify-icon icon="noto:star"></iconify-icon> Chris Evans
+                                                                    </a></td>
+                                                                <td>10/02/2024 15:15</td>
+                                                                <td>4 BHK Villa in Suburban Heights</td>
+                                                                <td>
+                                                                    Sunderland
+                                                                </td>
+                                                                <td>6 Bed Apartment</td>
+                                                                <td>Student</td>
+                                                                <td>22/10/2024</td>
+                                                                <td>$50,000</td>
+                                                                <td>4</td>
+                                                                <td>Mix</td>
+
+                                                                <td>Day</td>
+                                                                <td>
+                                                                    <div class="enquirySource">
+                                                                        <iconify-icon icon="streamline:web"></iconify-icon> Website
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a href="Enquiry-details.php"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span class="feather-icon">
+                                                                                        <iconify-icon icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="Enquiry-details.php">ENQ12348</a></td>
+                                                                <td><span class="badge bg-info finalfollowupBadge">Final Follow Up</span></td>
+                                                                <td>10/01/2023</td>
+                                                                <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                        <iconify-icon icon="noto:star"></iconify-icon> Emma Watson
+                                                                    </a></td>
+                                                                <td>18/06/2024 12:00</td>
+                                                                <td>Luxury Penthouse in City Center</td>
+                                                                <td>
+                                                                    Durham
+                                                                </td>
+                                                                <td>4 Bed Apartment</td>
+                                                                <td>Professional</td>
+                                                                <td>05/08/2024</td>
+                                                                <td>$20,000</td>
+                                                                <td>1</td>
+                                                                <td>UK</td>
+
+                                                                <td>Night</td>
+                                                                <td>
+                                                                    <div class="enquirySource">
+                                                                        <iconify-icon icon="lets-icons:user"></iconify-icon> Vendor
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a href="Enquiry-details.php"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span class="feather-icon">
+                                                                                        <iconify-icon icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="Enquiry-details.php">ENQ12349</a></td>
+                                                                <td><span class="badge bg-info finalfollowupBadge">Final Follow Up</span></td>
+                                                                <td>05/06/2023</td>
+                                                                <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                        <iconify-icon icon="noto:star"></iconify-icon> Tom Hanks
+                                                                    </a></td>
+                                                                <td>26/08/2024 14:28</td>
+                                                                <td>2 BHK Studio Apartment in Riverside</td>
+                                                                <td>
+                                                                    Northumbria
+                                                                </td>
+                                                                <td>2 Bed Apartment</td>
+                                                                <td>Family</td>
+                                                                <td>30/09/2024</td>
+                                                                <td>$25,000</td>
+                                                                <td>3</td>
+                                                                <td>International</td>
+
+                                                                <td>Day</td>
+                                                                <td>
+                                                                    <div class="enquirySource">
+                                                                        <iconify-icon icon="solar:phone-outline"></iconify-icon> Phone
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a href="Enquiry-details.php"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span class="feather-icon">
+                                                                                        <iconify-icon icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="Enquiry-details.php">ENQ12350</a></td>
+                                                                <td><span class="badge bg-info finalfollowupBadge">Final Follow Up</span></td>
+                                                                <td>12/04/2023</td>
+                                                                <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                        <iconify-icon icon="noto:star"></iconify-icon> Scarlett Johansson
+                                                                    </a>
+                                                                </td>
+                                                                <td>12/08/2024 15:15</td>
+                                                                <td>Commercial Office Space in Tech Park</td>
+                                                                <td>
+                                                                    Newcastle
+                                                                </td>
+                                                                <td>5 Bed Apartment</td>
+                                                                <td>Student</td>
+                                                                <td>30/07/2024</td>
+                                                                <td>$250,000</td>
+                                                                <td>2</td>
+                                                                <td>Mix</td>
+
+                                                                <td>Night</td>
+                                                                <td>
+                                                                    <div class="enquirySource">
+                                                                        <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a href="Enquiry-details.php"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span class="feather-icon">
+                                                                                        <iconify-icon icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
 
                                                 </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="view-ticket.php" class="highlightLink">#2023</a></td>
-                                            <td>Routine Cleaning</td>
-                                            <td>
-                                                <div class="LongMesage_container">
-                                                    <input class="refuge-collection-input tableLongMessage_Input"
-                                                        value="Bedroom 2 101, Flat 7 (Floor 2, No7), Garden View@Emerald Apartments">
-                                                    <button class="view-btn tablemessageview_btn" type="button"
-                                                        data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        aria-label="Click to view"
-                                                        data-bs-original-title="Click to view Full Message">
-                                                        <i class="bi bi-eye"></i> Read More
-                                                    </button>
-                                                </div>
-                                            </td>
-                                            <td>Sunderland</td>
-                                            <td>Maintenance</td>
-                                            <td>Living Room</td>
-                                            <td>Floor</td>
-                                            <td>Maintenance Ticket</td>
-                                            <td>
-                                                <a href="view-user-details.php">
-                                                    <div class="media align-items-center">
-                                                        <div class="media-head me-2">
-                                                            <div class="avatar avatar-xs avatar-rounded">
-                                                                <img src="dist/img/newimages/users/userdummy.png"
-                                                                    alt="user" class="avatar-img">
-                                                            </div>
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <span class="d-block text-high-em">Dean Shaw</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </td>
-                                            <td><span class="badge badge-soft-warning my-1 me-2">Pending</span></td>
-                                            <td>09/04/2024 14:45</td>
-                                            <td>27/11/2024</td>
-                                            <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                        <a href="view-ticket.php"
-                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                                            type="button"><span class="icon"><span class="feather-icon">
-                                                                    <iconify-icon icon="teenyicons:eye-outline">
-                                                                    </iconify-icon>
-                                                                </span></span></a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                        <tr>
-                                            <td><a href="view-ticket.php" class="highlightLink">#2054</a></td>
-                                            <td>Deep Cleaning</td>
-                                            <td>
-                                                <div class="LongMesage_container">
-                                                    <input class="refuge-collection-input tableLongMessage_Input"
-                                                        value="Kitchen 206, Flat 12 (Floor 3, No12), Sea View@Oceanic Towers">
-                                                    <button class="view-btn tablemessageview_btn" type="button"
-                                                        data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        aria-label="Click to view"
-                                                        data-bs-original-title="Click to view Full Message">
-                                                        <i class="bi bi-eye"></i> Read More
-                                                    </button>
-                                                </div>
-                                            </td>
-                                            <td>Bristol</td>
-                                            <td>Operations</td>
-                                            <td>Kitchen</td>
-                                            <td>Ceiling</td>
-                                            <td>General Enquiry Ticket</td>
-                                            <td>
-                                                <a href="view-user-details.php">
-                                                    <div class="media align-items-center">
-                                                        <div class="media-head me-2">
-                                                            <div class="avatar avatar-xs avatar-rounded">
-                                                                <img src="dist/img/newimages/users/userdummy.png"
-                                                                    alt="user" class="avatar-img">
-                                                            </div>
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <span class="d-block text-high-em">Tom Cruz</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </td>
-                                            <td><span class="badge  urgentTicket_status my-1 me-2">Urgent</span></td>
-                                            <td>08/04/2024 11:30</td>
-                                            <td>29/11/2024</td>
-                                            <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                        <a href="view-ticket.php"
-                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                                            type="button"><span class="icon"><span class="feather-icon">
-                                                                    <iconify-icon icon="teenyicons:eye-outline">
-                                                                    </iconify-icon>
-                                                                </span></span></a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                </div>
 
-                                        <tr>
-                                            <td><a href="view-ticket.php" class="highlightLink">#1273</a></td>
-                                            <td>General Inspection</td>
-                                            <td>
-                                                <div class="LongMesage_container">
-                                                    <input class="refuge-collection-input tableLongMessage_Input"
-                                                        value="Lobby 002, Flat 1 (Ground Floor, No1), Street View@Central Plaza">
-                                                    <button class="view-btn tablemessageview_btn" type="button"
-                                                        data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        aria-label="Click to view"
-                                                        data-bs-original-title="Click to view Full Message">
-                                                        <i class="bi bi-eye"></i> Read More
-                                                    </button>
-                                                </div>
-                                            </td>
-                                            <td>Kitchen</td>
-                                            <td>Security</td>
-                                            <td>Lobby</td>
-                                            <td>Windows</td>
-                                            <td>Maintenance Ticket</td>
-                                            <td>
-                                                <a href="view-user-details.php">
-                                                    <div class="media align-items-center">
-                                                        <div class="media-head me-2">
-                                                            <div class="avatar avatar-xs avatar-rounded">
-                                                                <img src="dist/img/newimages/users/userdummy.png"
-                                                                    alt="user" class="avatar-img">
-                                                            </div>
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <span class="d-block text-high-em">Huma Therman</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </td>
-                                            <td><span class="badge bg-primary">In Progress</span></td>
-                                            <td>09/04/2024 09:15</td>
-                                            <td>23/11/2024</td>
-                                            <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                        <a href="view-ticket.php"
-                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                                            type="button"><span class="icon"><span class="feather-icon">
-                                                                    <iconify-icon icon="teenyicons:eye-outline">
-                                                                    </iconify-icon>
-                                                                </span></span></a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                <div class="tab-pane fade" id="DeadLeads">
+                                <div class="fullwidthTabInner_content_container">
+                                        <!-- <div class="docfilterbutton">
+                                            <h2 class="tabinnerTitle">Enquiry Statuses </h2>
+                                        </div> -->
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="contact-list-view">
 
-                                        <tr>
-                                            <td><a href="view-ticket.php" class="highlightLink">#2543</a></td>
-                                            <td>Emergency Repair</td>
-                                            <td>
-                                                <div class="LongMesage_container">
-                                                    <input class="refuge-collection-input tableLongMessage_Input"
-                                                        value="Hallway 305, Flat 15 (Floor 3, No15), River View@Riverside Residences">
-                                                    <button class="view-btn tablemessageview_btn" type="button"
-                                                        data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        aria-label="Click to view"
-                                                        data-bs-original-title="Click to view Full Message">
-                                                        <i class="bi bi-eye"></i> Read More
-                                                    </button>
-                                                </div>
-                                            </td>
-                                            <td>Bedroom</td>
-                                            <td>Maintenance</td>
-                                            <td>Hallway</td>
-                                            <td>Door</td>
-                                            <td>General Enquiry Ticket</td>
-                                            <td>
-                                                <a href="view-user-details.php">
-                                                    <div class="media align-items-center">
-                                                        <div class="media-head me-2">
-                                                            <div class="avatar avatar-xs avatar-rounded">
-                                                                <img src="dist/img/newimages/users/userdummy.png"
-                                                                    alt="user" class="avatar-img">
-                                                            </div>
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <span class="d-block text-high-em">Danial Craig</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </td>
-                                            <td><span class="badge badge-soft-warning my-1 me-2">Pending</span></td>
-                                            <td>09/04/2024 12:00</td>
-                                            <td>26/11/2024</td>
-                                            <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                        <a href="view-ticket.php"
-                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                                            type="button"><span class="icon"><span class="feather-icon">
-                                                                    <iconify-icon icon="teenyicons:eye-outline">
-                                                                    </iconify-icon>
-                                                                </span></span></a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                                    <table class="table common-datatable nowrap w-100">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Enquiry ID</th>
+                                                                <th>Status</th>
+                                                                <th>Enquiry Date</th>
+                                                                <th>Tenant</th>
+                                                                <th>last Updated Date</th>
+                                                                <th>Property Enquired About</th>
+                                                                <th>Location</th>
+                                                                <th>Apartment Size</th>
+                                                                <th>Applicant Type</th>
+                                                                <th>Preferred moving date</th>
+                                                                <th>Weekly Budget</th>
+                                                                <th>Group Size</th>
+                                                                <th>Nationality</th>
+                                                                <th>Night/Day Person</th>
+                                                                <th>Enquiry Source</th>
+                                                                <th>Actions</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><a href="Enquiry-details.php">ENQ12345</a></td>
+                                                                <td><span class="badge bg-danger Deadleads_badge">Dead Lead</span></td>
+                                                                <td>23/04/2023 </td>
+                                                                <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                        <iconify-icon icon="noto:star"></iconify-icon> Morgan Freeman
+                                                                    </a>
+                                                                </td>
+                                                                <td>23/04/2023 18:18</td>
+                                                                <td>3 BHK Apartment in Downtown</td>
+                                                                <td>
+                                                                    Newcastle
+                                                                </td>
+                                                                <td>1 Bed Apartment</td>
+                                                                <td>Student</td>
+                                                                <td>15/09/2024</td>
+                                                                <td>$60,000</td>
+                                                                <td>3</td>
+                                                                <td>International</td>
 
-                                    </tbody>
-                                </table>
+                                                                <td>Day</td>
+                                                                <td>
+                                                                    <div class="enquirySource">
+                                                                        <iconify-icon icon="solar:phone-outline"></iconify-icon> Phone
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a href="Enquiry-details.php"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span class="feather-icon">
+                                                                                        <iconify-icon icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="Enquiry-details.php">ENQ12346</a></td>
+                                                                <td><span class="badge bg-danger Deadleads_badge">Dead Lead</span></td>
+                                                                <td>15/03/2023</td>
+                                                                <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                        <iconify-icon icon="noto:star"></iconify-icon> Jessica Alba
+                                                                    </a></td>
+                                                                <td>15/03/2023 16:40</td>
+                                                                <td>2 BHK Condo in Uptown</td>
+                                                                <td>
+                                                                    Northumbria
+                                                                </td>
+                                                                <td>3 Bed Apartment</td>
+                                                                <td>Professional</td>
+                                                                <td>20/09/2024</td>
+                                                                <td>$10,000</td>
+                                                                <td>2</td>
+                                                                <td>UK</td>
+
+                                                                <td>Night</td>
+                                                                <td>
+                                                                    <div class="enquirySource">
+                                                                        <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a href="Enquiry-details.php"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span class="feather-icon">
+                                                                                        <iconify-icon icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="Enquiry-details.php">ENQ12347</a></td>
+                                                                <td><span class="badge bg-danger Deadleads_badge">Dead Lead</span></td>
+                                                                <td>01/02/2023</td>
+                                                                <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                        <iconify-icon icon="noto:star"></iconify-icon> Chris Evans
+                                                                    </a></td>
+                                                                <td>10/02/2024 15:15</td>
+                                                                <td>4 BHK Villa in Suburban Heights</td>
+                                                                <td>
+                                                                    Sunderland
+                                                                </td>
+                                                                <td>6 Bed Apartment</td>
+                                                                <td>Student</td>
+                                                                <td>22/10/2024</td>
+                                                                <td>$50,000</td>
+                                                                <td>4</td>
+                                                                <td>Mix</td>
+
+                                                                <td>Day</td>
+                                                                <td>
+                                                                    <div class="enquirySource">
+                                                                        <iconify-icon icon="streamline:web"></iconify-icon> Website
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a href="Enquiry-details.php"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span class="feather-icon">
+                                                                                        <iconify-icon icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="Enquiry-details.php">ENQ12348</a></td>
+                                                                <td><span class="badge bg-danger Deadleads_badge">Dead Lead</span></td>
+                                                                <td>10/01/2023</td>
+                                                                <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                        <iconify-icon icon="noto:star"></iconify-icon> Emma Watson
+                                                                    </a></td>
+                                                                <td>18/06/2024 12:00</td>
+                                                                <td>Luxury Penthouse in City Center</td>
+                                                                <td>
+                                                                    Durham
+                                                                </td>
+                                                                <td>4 Bed Apartment</td>
+                                                                <td>Professional</td>
+                                                                <td>05/08/2024</td>
+                                                                <td>$20,000</td>
+                                                                <td>1</td>
+                                                                <td>UK</td>
+
+                                                                <td>Night</td>
+                                                                <td>
+                                                                    <div class="enquirySource">
+                                                                        <iconify-icon icon="lets-icons:user"></iconify-icon> Vendor
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a href="Enquiry-details.php"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span class="feather-icon">
+                                                                                        <iconify-icon icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="Enquiry-details.php">ENQ12349</a></td>
+                                                                <td><span class="badge bg-danger Deadleads_badge">Dead Lead</span></td>
+                                                                <td>05/06/2023</td>
+                                                                <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                        <iconify-icon icon="noto:star"></iconify-icon> Tom Hanks
+                                                                    </a></td>
+                                                                <td>26/08/2024 14:28</td>
+                                                                <td>2 BHK Studio Apartment in Riverside</td>
+                                                                <td>
+                                                                    Northumbria
+                                                                </td>
+                                                                <td>2 Bed Apartment</td>
+                                                                <td>Family</td>
+                                                                <td>30/09/2024</td>
+                                                                <td>$25,000</td>
+                                                                <td>3</td>
+                                                                <td>International</td>
+
+                                                                <td>Day</td>
+                                                                <td>
+                                                                    <div class="enquirySource">
+                                                                        <iconify-icon icon="solar:phone-outline"></iconify-icon> Phone
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a href="Enquiry-details.php"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span class="feather-icon">
+                                                                                        <iconify-icon icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="Enquiry-details.php">ENQ12350</a></td>
+                                                                <td><span class="badge bg-danger Deadleads_badge">Dead Lead</span></td>
+                                                                <td>12/04/2023</td>
+                                                                <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                        <iconify-icon icon="noto:star"></iconify-icon> Scarlett Johansson
+                                                                    </a>
+                                                                </td>
+                                                                <td>12/08/2024 15:15</td>
+                                                                <td>Commercial Office Space in Tech Park</td>
+                                                                <td>
+                                                                    Newcastle
+                                                                </td>
+                                                                <td>5 Bed Apartment</td>
+                                                                <td>Student</td>
+                                                                <td>30/07/2024</td>
+                                                                <td>$250,000</td>
+                                                                <td>2</td>
+                                                                <td>Mix</td>
+
+                                                                <td>Night</td>
+                                                                <td>
+                                                                    <div class="enquirySource">
+                                                                        <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a href="Enquiry-details.php"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span class="feather-icon">
+                                                                                        <iconify-icon icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane fade" id="Enquiry_requirmentNotmet">
+                                <div class="fullwidthTabInner_content_container">
+                                        <!-- <div class="docfilterbutton">
+                                            <h2 class="tabinnerTitle">Enquiry Statuses </h2>
+                                        </div> -->
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="contact-list-view">
+
+                                                    <table class="table common-datatable nowrap w-100">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Enquiry ID</th>
+                                                                <th>Status</th>
+                                                                <th>Enquiry Date</th>
+                                                                <th>Tenant</th>
+                                                                <th>last Updated Date</th>
+                                                                <th>Property Enquired About</th>
+                                                                <th>Location</th>
+                                                                <th>Apartment Size</th>
+                                                                <th>Applicant Type</th>
+                                                                <th>Preferred moving date</th>
+                                                                <th>Weekly Budget</th>
+                                                                <th>Group Size</th>
+                                                                <th>Nationality</th>
+                                                                <th>Night/Day Person</th>
+                                                                <th>Enquiry Source</th>
+                                                                <th>Actions</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><a href="Enquiry-details.php">ENQ12345</a></td>
+                                                                <td><span class="badge bg-Requirements Requirements_not_met_badge">Requirements not met</span></td>
+                                                                <td>23/04/2023 </td>
+                                                                <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                        <iconify-icon icon="noto:star"></iconify-icon> Morgan Freeman
+                                                                    </a>
+                                                                </td>
+                                                                <td>23/04/2023 18:18</td>
+                                                                <td>3 BHK Apartment in Downtown</td>
+                                                                <td>
+                                                                    Newcastle
+                                                                </td>
+                                                                <td>1 Bed Apartment</td>
+                                                                <td>Student</td>
+                                                                <td>15/09/2024</td>
+                                                                <td>$60,000</td>
+                                                                <td>3</td>
+                                                                <td>International</td>
+
+                                                                <td>Day</td>
+                                                                <td>
+                                                                    <div class="enquirySource">
+                                                                        <iconify-icon icon="solar:phone-outline"></iconify-icon> Phone
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a href="Enquiry-details.php"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span class="feather-icon">
+                                                                                        <iconify-icon icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="Enquiry-details.php">ENQ12346</a></td>
+                                                                <td><span class="badge bg-Requirements Requirements_not_met_badge">Requirements not met</span></td>
+                                                                <td>15/03/2023</td>
+                                                                <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                        <iconify-icon icon="noto:star"></iconify-icon> Jessica Alba
+                                                                    </a></td>
+                                                                <td>15/03/2023 16:40</td>
+                                                                <td>2 BHK Condo in Uptown</td>
+                                                                <td>
+                                                                    Northumbria
+                                                                </td>
+                                                                <td>3 Bed Apartment</td>
+                                                                <td>Professional</td>
+                                                                <td>20/09/2024</td>
+                                                                <td>$10,000</td>
+                                                                <td>2</td>
+                                                                <td>UK</td>
+
+                                                                <td>Night</td>
+                                                                <td>
+                                                                    <div class="enquirySource">
+                                                                        <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a href="Enquiry-details.php"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span class="feather-icon">
+                                                                                        <iconify-icon icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="Enquiry-details.php">ENQ12347</a></td>
+                                                                <td><span class="badge bg-Requirements Requirements_not_met_badge">Requirements not met</span></td>
+                                                                <td>01/02/2023</td>
+                                                                <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                        <iconify-icon icon="noto:star"></iconify-icon> Chris Evans
+                                                                    </a></td>
+                                                                <td>10/02/2024 15:15</td>
+                                                                <td>4 BHK Villa in Suburban Heights</td>
+                                                                <td>
+                                                                    Sunderland
+                                                                </td>
+                                                                <td>6 Bed Apartment</td>
+                                                                <td>Student</td>
+                                                                <td>22/10/2024</td>
+                                                                <td>$50,000</td>
+                                                                <td>4</td>
+                                                                <td>Mix</td>
+
+                                                                <td>Day</td>
+                                                                <td>
+                                                                    <div class="enquirySource">
+                                                                        <iconify-icon icon="streamline:web"></iconify-icon> Website
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a href="Enquiry-details.php"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span class="feather-icon">
+                                                                                        <iconify-icon icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="Enquiry-details.php">ENQ12348</a></td>
+                                                                <td><span class="badge bg-Requirements Requirements_not_met_badge">Requirements not met</span></td>
+                                                                <td>10/01/2023</td>
+                                                                <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                        <iconify-icon icon="noto:star"></iconify-icon> Emma Watson
+                                                                    </a></td>
+                                                                <td>18/06/2024 12:00</td>
+                                                                <td>Luxury Penthouse in City Center</td>
+                                                                <td>
+                                                                    Durham
+                                                                </td>
+                                                                <td>4 Bed Apartment</td>
+                                                                <td>Professional</td>
+                                                                <td>05/08/2024</td>
+                                                                <td>$20,000</td>
+                                                                <td>1</td>
+                                                                <td>UK</td>
+
+                                                                <td>Night</td>
+                                                                <td>
+                                                                    <div class="enquirySource">
+                                                                        <iconify-icon icon="lets-icons:user"></iconify-icon> Vendor
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a href="Enquiry-details.php"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span class="feather-icon">
+                                                                                        <iconify-icon icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="Enquiry-details.php">ENQ12349</a></td>
+                                                                <td><span class="badge bg-Requirements Requirements_not_met_badge">Requirements not met</span></td>
+                                                                <td>05/06/2023</td>
+                                                                <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                        <iconify-icon icon="noto:star"></iconify-icon> Tom Hanks
+                                                                    </a></td>
+                                                                <td>26/08/2024 14:28</td>
+                                                                <td>2 BHK Studio Apartment in Riverside</td>
+                                                                <td>
+                                                                    Northumbria
+                                                                </td>
+                                                                <td>2 Bed Apartment</td>
+                                                                <td>Family</td>
+                                                                <td>30/09/2024</td>
+                                                                <td>$25,000</td>
+                                                                <td>3</td>
+                                                                <td>International</td>
+
+                                                                <td>Day</td>
+                                                                <td>
+                                                                    <div class="enquirySource">
+                                                                        <iconify-icon icon="solar:phone-outline"></iconify-icon> Phone
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a href="Enquiry-details.php"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span class="feather-icon">
+                                                                                        <iconify-icon icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="Enquiry-details.php">ENQ12350</a></td>
+                                                                <td><span class="badge bg-Requirements Requirements_not_met_badge">Requirements not met</span></td>
+                                                                <td>12/04/2023</td>
+                                                                <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                        <iconify-icon icon="noto:star"></iconify-icon> Scarlett Johansson
+                                                                    </a>
+                                                                </td>
+                                                                <td>12/08/2024 15:15</td>
+                                                                <td>Commercial Office Space in Tech Park</td>
+                                                                <td>
+                                                                    Newcastle
+                                                                </td>
+                                                                <td>5 Bed Apartment</td>
+                                                                <td>Student</td>
+                                                                <td>30/07/2024</td>
+                                                                <td>$250,000</td>
+                                                                <td>2</td>
+                                                                <td>Mix</td>
+
+                                                                <td>Night</td>
+                                                                <td>
+                                                                    <div class="enquirySource">
+                                                                        <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a href="Enquiry-details.php"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span class="feather-icon">
+                                                                                        <iconify-icon icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
                             </div>
+
+                            
+                            
+                            
                         </div>
                     </div>
                 </div>

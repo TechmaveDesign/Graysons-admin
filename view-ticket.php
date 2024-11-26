@@ -61,7 +61,7 @@
 
                     <form action="view-ticket.php" method="post">
                         <div class="contact-body">
-                            <div class="fullwidthDesktopTabs MobileScrollShow">
+                            <div class="fullwidthDesktopTabs MobileScrollShow" id="nopaddingTop">
                                 <button class="scroll-btn prev" type="button">
                                     <iconify-icon icon="tabler:arrow-left"></iconify-icon>
                                 </button>
@@ -73,6 +73,22 @@
                                         <a class="nav-link active" data-bs-toggle="tab" href="#Details">
                                             <div class="d-flex align-items-center">
                                                 <span class="nav-link-text">Ticket Information</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#CreateTask">
+                                            <div class="d-flex align-items-center">
+                                                <span class="nav-link-text">Tasks</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#AssignMaterial">
+                                            <div class="d-flex align-items-center">
+                                                <span class="nav-link-text">Assign Material</span>
+
                                             </div>
                                         </a>
                                     </li>
@@ -133,8 +149,8 @@
                                                             </div>
                                                             <div class="media-body">
                                                                 <div class="fw-medium text-dark">Reported By</div>
-                                                                <div class="fs-7"><a href="view-user-details.php">Clews,
-                                                                        Abbie</a> @ 11/04/2024 00:04</div>
+                                                                <div class="fs-7"><span class="userTypeStaff">Staff</span> - <a href="view-user-details.php">Clews Abbie</a> ,
+                                                                         @ 11/04/2024 00:04</div>
                                                             </div>
                                                         </div>
 
@@ -690,6 +706,228 @@
                                                 </button>
                                             </div>
                                         </div>
+
+
+                                        <div class="tab-pane fade" id="CreateTask">
+                                            <div class="fullwidthTabInner_content_container">
+                                            <div class="row ">
+                                                <div class="col-lg-8 mx-auto">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <h1 class="secTitle">Create Task</h1>
+                                                            </div>
+                                                    
+                                                            </div>
+                                                         
+                                                            
+                                                            <div class="col-lg-12 px-0">
+                                                            <div class="taskContainer1">
+                                                                <!-- The default taskBox will be added by jQuery -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12">
+                                                            <div class="addTaskBox text-end">
+                                                                <a href="#" class="addTaskBtn" id="addTaskBtn1" data-target-container=".taskContainer1">+ Add Task</a>
+                                                            </div>
+                                                        </div>
+
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        </div>
+                                                        <div class="FormSubmit_fix_container">
+                                                            <div class="buttonsHJI">
+                                                                <a href="ticket-detail.php">
+                                                                    <button type="button" class="btn btn-primary commonUpdateButton">
+                                                                    <iconify-icon icon="lucide:save"></iconify-icon> Save Task
+                                                                    </button>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <button type="button" class="btn commonCancleButton">
+                                                                        Cancel
+                                                                    </button>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="tab-pane fade" id="AssignMaterial">
+                                            <div class="fullwidthTabInner_content_container">
+                                                
+                                                    <div class="card">
+                                                       <div class="card-body">
+                                                       <div class="contact-list-view">
+                                                            <table class="table common-datatable nowrap w-100 assignMaterial">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Assigned / Requested by</th>
+                                                                        <th>Product Name </th>
+                                                                        <th>Qty</th>
+                                                                        <th>Status</th>
+                                                                        <th>Date</th>
+                                                                       
+                                                                    </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="view-user-details.php">
+                                                                                <div class="media align-items-center">
+                                                                                    <div class="media-head me-2">
+                                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="media-body">
+                                                                                        <span class="d-block text-high-em">Charlie Chaplin</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </td>
+                                                                        <td>Ac PCB</td>
+                                                                        <td>5</td>
+                                                                        <td><span class="badge bg-success">Assigned</span></td>
+                                                                        <td>24 Nov, 2024</td>
+                                                                    </tr>
+                                                                    <!-- Dynamically generated rows -->
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="view-user-details.php">
+                                                                                <div class="media align-items-center">
+                                                                                    <div class="media-head me-2">
+                                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="media-body">
+                                                                                        <span class="d-block text-high-em">John Doe</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </td>
+                                                                        <td>Energy-Saving LED Bulb 12W</td>
+                                                                        <td>2</td>
+                                                                        <td><span class="badge bg-info">Requested</span></td>
+                                                                        <td>20 Nov, 2024</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="view-user-details.php">
+                                                                                <div class="media align-items-center">
+                                                                                    <div class="media-head me-2">
+                                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="media-body">
+                                                                                        <span class="d-block text-high-em">Jane Smith</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </td>
+                                                                        <td>Heavy-Duty Copper Wire Cable 100m</td>
+                                                                        <td>1</td>
+                                                                        <td><span class="badge bg-success">Assigned</span></td>
+                                                                        <td>21 Nov, 2024</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="view-user-details.php">
+                                                                                <div class="media align-items-center">
+                                                                                    <div class="media-head me-2">
+                                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="media-body">
+                                                                                        <span class="d-block text-high-em">Emily Davis</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </td>
+                                                                        <td>Hinge</td>
+                                                                        <td>4</td>
+                                                                        <td><span class="badge bg-info">Requested</span></td>
+                                                                        <td>14 Nov, 2024</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="view-user-details.php">
+                                                                                <div class="media align-items-center">
+                                                                                    <div class="media-head me-2">
+                                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="media-body">
+                                                                                        <span class="d-block text-high-em">Robert Brown</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </td>
+                                                                        <td>LED Bulb</td>
+                                                                        <td>3</td>
+                                                                        <td><span class="badge bg-success">Assigned</span></td>
+                                                                        <td>15 Nov, 2024</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="view-user-details.php">
+                                                                                <div class="media align-items-center">
+                                                                                    <div class="media-head me-2">
+                                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="media-body">
+                                                                                        <span class="d-block text-high-em">Sophia Lee</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </td>
+                                                                        <td>Heating</td>
+                                                                        <td>5</td>
+                                                                        <td><span class="badge bg-info">Requested</span></td>
+                                                                        <td>19 Nov, 2024</td>
+                                                                    </tr>
+                                                                    
+
+                                                                </tbody>
+                                                            </table>
+                                                            </div>
+                                                               
+
+                                                          
+                                                         </div>
+
+                                                   </div>
+                                                </div>
+                                          
+
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
                                         <div class="tab-pane fade" id="TimeLog">
                                             <div class="fullwidthTabInner_content_container">
                                                 <div class="docFilterContainer">
@@ -1896,6 +2134,8 @@
                                             </div>
 
                                         </div>
+
+                                       
 
                                     </div>
 
@@ -3254,9 +3494,211 @@
 
 <!-- slick  slider for multple images end -->
 
+
+
 <!-- Fullcalendar JS -->
 <script src="vendors/fullcalendar/index.global.min.js"></script>
 <script src="vendors/%40fullcalendar/bootstrap5/index.global.min.js"></script>
 <script src="dist/js/fullcalendar-init.js"></script>
 <!-- Bootstrap Notify JS -->
 <script src="dist/js/bootstrap-notify.min.js"></script>
+
+
+
+<script>
+$(document).ready(function() {
+    function createTaskBox(container) {
+        const newTaskBox = `
+        <div class="col-lg-12 taskBox px-0">
+            <div class="taskAppend">
+                <div class="taskHeaderBHI">
+                    <h6>Another Task</h6>
+                    <button class="removeTaskBtn"><iconify-icon icon="ph:trash-bold"></iconify-icon></button>
+                </div>
+                <div class="taskLHI">
+                    <div class="row">
+                        <div class="col-lg-9 pr-0">
+                            <div class="form-group">
+                                <label for="taskInput" class="form-label">Task</label>
+                                <input type="text" class="form-control taskInput" value="" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <label for="priceInput" class="form-label">Allocated Time</label>
+                                <input type="text" class="form-control priceInput" value="" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="BoxHJO">
+                                <div class="form-check">
+                                    <input type="checkbox" id="checkboxOutline${Date.now()}" class="form-check-input setAlertInput">
+                                    <label class="form-check-label" for="checkboxOutline${Date.now()}">
+                                        <span class="done-strikethrough">If you want to add the images, please check</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="imagesbox" style="display: none;">
+                                <div class="imgCont">
+                                    <div class="flex items-center gap-2">
+                                        <input id="imgCheckbox${Date.now()}" type="checkbox" class="form-check-input row-checkbox">
+                                        <img src="dist/img/newimages/img-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="imgCont">
+                                    <div class="flex items-center gap-2">
+                                        <input id="imgCheckbox${Date.now()}" type="checkbox" class="form-check-input row-checkbox">
+                                        <img src="dist/img/newimages/img-3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <!-- Add more imgCont blocks as needed -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>`;
+
+        $(container).append(newTaskBox);
+        initializeTaskBoxEvents($(container).find('.taskBox').last());
+    }
+
+    function initializeTaskBoxEvents(taskBox) {
+        const checkboxOutline = taskBox.find('.setAlertInput');
+        const imagesBox = taskBox.find('.imagesbox');
+
+        checkboxOutline.on('change', function() {
+            if (this.checked) {
+                imagesBox.slideDown(); // Smooth animation
+            } else {
+                imagesBox.slideUp();
+            }
+        });
+
+        taskBox.find('.imgCont img').on('click', function() {
+            const checkbox = $(this).prev('input[type="checkbox"]');
+            checkbox.prop('checked', !checkbox.prop('checked'));
+            $(this).css('border-color', checkbox.prop('checked') ? '#f90' : 'transparent');
+        });
+
+        taskBox.find('.imgCont input[type="checkbox"]').on('change', function() {
+            const img = $(this).next('img');
+            img.css('border-color', $(this).prop('checked') ? '#f90' : 'transparent');
+        });
+
+        taskBox.find('.removeTaskBtn').on('click', function() {
+            $(this).closest('.taskBox').remove();
+        });
+    }
+
+    const defaultTaskBox = `
+    <div class="col-lg-12 taskBox px-0">
+        <div class="taskAppend">
+            <div class="taskHeaderBHI">
+                <h6>Add Task</h6>
+            </div>
+            <div class="taskLHI">
+                <div class="row">
+                    <div class="col-lg-9 pr-0">
+                        <div class="form-group">
+                            <label for="taskInput" class="form-label">Task</label>
+                            <input type="text" class="form-control taskInput" value="" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label for="priceInput" class="form-label">Allocated Time</label>
+                            <input type="text" class="form-control priceInput" value="" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="BoxHJO">
+                            <div class="form-check">
+                                <input type="checkbox" id="checkboxOutline${Date.now()}" class="form-check-input setAlertInput">
+                                <label class="form-check-label" for="checkboxOutline${Date.now()}">
+                                    <span class="done-strikethrough">If you want to add the images, please check</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="imagesbox" style="display: none;">
+                            <div class="imgCont">
+                                <div class="flex items-center gap-2">
+                                    <input id="imgCheckbox${Date.now()}" type="checkbox" class="form-check-input row-checkbox">
+                                    <img src="dist/img/newimages/img-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="imgCont">
+                                <div class="flex items-center gap-2">
+                                    <input id="imgCheckbox${Date.now()}" type="checkbox" class="form-check-input row-checkbox">
+                                    <img src="dist/img/newimages/img-3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>`;
+
+    $('.taskContainer1').append(defaultTaskBox);
+    initializeTaskBoxEvents($('.taskBox'));
+
+    $('.addTaskBtn').on('click', function(event) {
+        event.preventDefault();
+        const containerSelector = $(this).data('target-container');
+        createTaskBox(containerSelector);
+    });
+});
+</script>
+<script>
+    (function () {
+  const quantityContainer = document.querySelector(".quantity");
+  const minusBtn = quantityContainer.querySelector(".minus");
+  const plusBtn = quantityContainer.querySelector(".plus");
+  const inputBox = quantityContainer.querySelector(".input-box");
+
+  updateButtonStates();
+
+  quantityContainer.addEventListener("click", handleButtonClick);
+  inputBox.addEventListener("input", handleQuantityChange);
+
+  function updateButtonStates() {
+    const value = parseInt(inputBox.value);
+    minusBtn.disabled = value <= 1;
+    plusBtn.disabled = value >= parseInt(inputBox.max);
+  }
+
+  function handleButtonClick(event) {
+    if (event.target.classList.contains("minus")) {
+      decreaseValue();
+    } else if (event.target.classList.contains("plus")) {
+      increaseValue();
+    }
+  }
+
+  function decreaseValue() {
+    let value = parseInt(inputBox.value);
+    value = isNaN(value) ? 1 : Math.max(value - 1, 1);
+    inputBox.value = value;
+    updateButtonStates();
+    handleQuantityChange();
+  }
+
+  function increaseValue() {
+    let value = parseInt(inputBox.value);
+    value = isNaN(value) ? 1 : Math.min(value + 1, parseInt(inputBox.max));
+    inputBox.value = value;
+    updateButtonStates();
+    handleQuantityChange();
+  }
+
+  function handleQuantityChange() {
+    let value = parseInt(inputBox.value);
+    value = isNaN(value) ? 1 : value;
+
+    // Execute your code here based on the updated quantity value
+    console.log("Quantity changed:", value);
+  }
+})();
+
+</script>

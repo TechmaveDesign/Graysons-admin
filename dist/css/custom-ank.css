@@ -1,0 +1,144 @@
+.secTitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+    background: #eceef1;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.taskAppend {
+    /* padding: 10px; */
+    background: aliceblue;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.taskHeaderBHI {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ececec;
+    padding: 10px 15px;
+}
+.taskLHI {
+    padding: 10px 15px;
+}
+.removeTaskBtn {
+    cursor: pointer;
+    color: red;
+    padding: 10px 10px;
+    background: #ff110017;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    border: none;
+}
+.addTaskBtn {
+    padding: 4px 10px;
+    background: #ff9843;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 16px;
+}
+.addTaskBtn:hover, .addTaskBtn:focus{
+    color: #fff;
+}
+.imgCont img {
+    display: block;
+    max-width: 112px;
+    border: 2px solid transparent;
+}
+.imgCont input[type="checkbox"] {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+}
+.imgCont {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+}
+.commonUpdateButton {
+    padding: 5px 15px;
+    background: #007d88;
+    border: #007d88;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.taskHeaderBHI h6 {
+    margin-bottom: 0;
+}
+.commonCancleButton {
+    padding: 5px 15px;
+    background: #e7e7e7;
+}
+.quantity {
+    display: inline-flex;
+    border: 2px solid #eceef1;
+    border-radius: 4px;
+    overflow: hidden;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    margin-top: 28px;
+}
+  
+.quantity button {
+    background-color: #eceef1;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    width: 60px;
+    height: auto;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+  
+.quantity button:hover {
+    background-color: #e4e5e8;
+    color: #000;
+}
+  
+  .input-box {
+    width: 60px;
+    text-align: center;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    outline: none;
+}
+  
+  /* Hide the number input spin buttons */
+  .input-box::-webkit-inner-spin-button,
+  .input-box::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .input-box[type="number"] {
+    -moz-appearance: textfield;
+  }
+  .addMaterial {
+    padding: 6px 4px;
+    background: #00a9ec;
+    border-radius: 5px;
+    margin-top: 27px;
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+}
+.assignMaterial tr td {
+    padding: 10px !important;
+}
+.userTypeStaff {
+    color: #00a1f7;
+    font-weight: 500;
+}
