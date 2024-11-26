@@ -235,7 +235,6 @@
                                 </div>
 
                                 <div class="fullwidthDesktopTabs MobileScrollShow">
-                                  
 
                                     <ul class="nav nav-tabs nav-line nav-icon fullwidthCustom_tabsUL nav-light">
 
@@ -255,7 +254,6 @@
                                         </li>
 
                                     </ul>
-                                 
 
                                 </div>
 
@@ -460,6 +458,60 @@
                                                                             </div>
 
                                                                         </div>
+
+                                                                        <div class="AddProperty_Budget">
+                                                                        <div class="tabtable_tbHeading">
+                                                                            <h1>Add Budgets</h1>
+                                                                        </div>
+                                                                        <div class="row">
+
+                                                                            <div class="col-lg-3">
+                                                                                <div class="form-group">
+                                                                                    <label
+                                                                                        for="exampleFormControlInput1"
+                                                                                        class="form-label">Compliances
+                                                                                        Budget</label>
+                                                                                    <input type="text"
+                                                                                        class="form-control" id=""
+                                                                                        vlaue="" placeholder="">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-3">
+                                                                                <div class="form-group">
+                                                                                    <label
+                                                                                        for="exampleFormControlInput1"
+                                                                                        class="form-label">Compliances
+                                                                                        Budget</label>
+                                                                                    <input type="text"
+                                                                                        class="form-control" id=""
+                                                                                        vlaue="" placeholder="">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-3">
+                                                                                <div class="form-group">
+                                                                                    <label
+                                                                                        for="exampleFormControlInput1"
+                                                                                        class="form-label">Labour
+                                                                                        Budget</label>
+                                                                                    <input type="text"
+                                                                                        class="form-control" id=""
+                                                                                        vlaue="" placeholder="">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-3">
+                                                                                <div class="form-group">
+                                                                                    <label
+                                                                                        for="exampleFormControlInput1"
+                                                                                        class="form-label">Material
+                                                                                        Budget</label>
+                                                                                    <input type="text"
+                                                                                        class="form-control" id=""
+                                                                                        vlaue="" placeholder="">
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
 
@@ -513,7 +565,7 @@
                                                 <img src="dist/img/newimages/norecord.jpg" alt="">
                                             </div>
                                         </div>
-                                </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="canvasFooterContainer">
@@ -728,16 +780,16 @@
 <style>
     .canvasFooterContainer {
         position: fixed !important;
-  width: 100% !important;
-  height: 70px;
-  margin-left: -70px;
+        width: 100% !important;
+        height: 70px;
+        margin-left: -70px;
     }
 
     .hk-wrapper[data-layout="vertical"][data-layout-style="default"] .canvasFooterContainer {
         position: fixed !important;
-  width: 100% !important;
-  height: 70px;
-  margin-left: -270px;
+        width: 100% !important;
+        height: 70px;
+        margin-left: -270px;
     }
 </style>
 <!-- end -->

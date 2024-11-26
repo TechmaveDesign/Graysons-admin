@@ -165,9 +165,8 @@
                                                                 class="table common-datatable withoutActionTR nowrap w-100 ">
                                                                 <thead>
                                                                     <tr>
-
-                                                                        <th>Item</th>
                                                                         <th>Location</th>
+                                                                        <th>Item</th>
                                                                         <th>Status</th>
                                                                         <th>Uploded Pictures</th>
                                                                     </tr>
@@ -175,10 +174,11 @@
                                                                 <tbody>
                                                                     <tr>
 
+                                                                       
+                                                                        <td>Bathroom</td>
                                                                         <td>
                                                                             Tiles - Wall/Floor
                                                                         </td>
-                                                                        <td>Bathroom</td>
                                                                         <td>Checked - Working</td>
                                                                         <td>
                                                                             <div class="uplodedinspection_pictures">
@@ -194,32 +194,37 @@
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td>Paint - Interior</td>
+                                                                        
                                                                         <td>Living Room</td>
+                                                                        <td>Paint - Interior</td>
                                                                         <td>Checked - Good Condition</td>
                                                                         <td></td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td>Doorknob</td>
+                                                                        
                                                                         <td>Bedroom</td>
+                                                                        <td>Doorknob</td>
                                                                         <td>Checked - Functional</td>
                                                                         <td></td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td>Light Fixture</td>
+                                                                       
                                                                         <td>Kitchen</td>
+                                                                        <td>Light Fixture</td>
                                                                         <td>Checked - Working Properly</td>
                                                                         <td></td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td>Faucet</td>
+                                                                        
                                                                         <td>Bathroom</td>
+                                                                        <td>Faucet</td>
                                                                         <td>Checked - No Leaks</td>
                                                                         <td></td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td>Window - Frame</td>
+                                                                        
                                                                         <td>Living Room</td>
+                                                                        <td>Window - Frame</td>
                                                                         <td>Checked - Secure</td>
                                                                         <td>
                                                                             <div class="uplodedinspection_pictures">
@@ -264,6 +269,25 @@
                                                             <img src="dist/img/newimages/signature-images/1.jpg"
                                                                 class="lightbox-trigger" alt="">
 
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="Signature_timestemp">
+                                                        <div class="enquiryRight_header_data TaskAction_wrapper">
+                                                            <div class="enquiryDate dueDate_container">
+                                                                <iconify-icon icon="ion:calendar-outline">
+                                                                </iconify-icon>
+                                                                <div class="duedatelabel">Date & Time : </div> Nov 20, 2024 15:45
+                                                            </div>
+                                                            <div class="IPAddress_wrap">
+                                                                <div class="IPlAbel">
+                                                                    IP Address :
+                                                                </div>
+                                                                <div class="IPAddress">192.168.1.1</div>
+                                                            </div>
+                                                          
+
+                                                        </div>
                                                         </div>
                                                     </div>
                                                 </div>

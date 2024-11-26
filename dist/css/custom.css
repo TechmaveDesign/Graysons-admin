@@ -1436,8 +1436,12 @@ table.dataTable td {
 	text-decoration: none;
 	cursor: pointer;
   }
+  .SignatureContainer{
+	text-align: center;
+  }
   .SignatureContainer img{
-	width: 80%;
+	width: 40%;
+	margin: 0 auto;
   }
   .signatureUser_name{
 	width: 100%;
@@ -8109,8 +8113,21 @@ margin-top: 0px;
 	padding-top: 20px;
 }
 
+.IPAddress_wrap{
+	display: flex;
+	align-items: center;
+}
+.IPlAbel {
+	color: #000;
+}
+.IPAddress{
+	color: #00ab66;
+	padding-left: 4px;
+}
 
-
+.AddProperty_Budget{
+	margin-top: 20px;
+}
 
 
 
