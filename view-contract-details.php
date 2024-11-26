@@ -75,7 +75,7 @@
 
                     <form action="view-contract-details.php" method="">
                         <div class="contact-body">
-                            <div class="fullwidthDesktopTabs MobileScrollShow">
+                            <div class="fullwidthDesktopTabs MobileScrollShow " id="nopaddingTop">
                                 <button class="scroll-btn prev" type="button">
                                     <iconify-icon icon="tabler:arrow-left"></iconify-icon>
                                 </button>
@@ -94,7 +94,16 @@
                                     <li class="nav-item">
                                         <a class="nav-link" data-bs-toggle="tab" href="#History">
                                             <div class="d-flex align-items-center">
-                                                <span class="nav-link-text">History</span>
+                                                <span class="nav-link-text">History Activity</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#AllNotes">
+                                            <div class="d-flex align-items-center">
+                                                <span class="nav-link-text">All Notes</span>
 
                                             </div>
                                         </a>
@@ -3282,7 +3291,7 @@
                                                     <div class="col-lg-12">
                                                         <div class="tabinnertitle_withRightAction">
                                                             <h2 class="tabinnerTitle">History Activity</h2>
-                                                            <div class="cntrt_detailright_header_action">
+                                                            <!-- <div class="cntrt_detailright_header_action">
 
                                                                 <button type="button"
                                                                     class="AddNoteRightact_button rightactionbutton_cmnStyle"
@@ -3291,7 +3300,7 @@
                                                                     <iconify-icon icon="fluent:note-add-24-regular">
                                                                     </iconify-icon> Add Note
                                                                 </button>
-                                                            </div>
+                                                            </div> -->
                                                         </div>
                                                         <div class="contractHistory_data">
                                                             <div class="contact-body">
@@ -3789,6 +3798,335 @@
 
                                             </div>
 
+                                        </div>
+
+                                        <div class="tab-pane fade" id="AllNotes">
+                                        <div class="contact-list-view">
+                                                    <header class="task-header taskheader_noPadding">
+                                                        <div class="d-flex align-items-center">
+
+                                                        <div class="enquiryID_container noBtStat_margin">
+                                                                        <div class="EnquiryID">
+                                                                            Application Status
+                                                                        </div>
+                                                                        <div class="IDButton">
+                                                                            <div class="dropdown statusChange_dropdown">
+                                                                                <button
+                                                                                    class=" bg-success dropdown-toggle"
+                                                                                    type="button"
+                                                                                    id="dropdownMenuButton"
+                                                                                    data-bs-toggle="dropdown"
+                                                                                    aria-expanded="false">
+                                                                                    Change Status <iconify-icon
+                                                                                        icon="iconamoon:arrow-down-2">
+                                                                                    </iconify-icon>
+                                                                                </button>
+                                                                                <ul class="dropdown-menu"
+                                                                                    aria-labelledby="dropdownMenuButton">
+                                                                                    <li><a class="dropdown-item"
+                                                                                            href="#"
+                                                                                            data-color="bg-success"> Ready For Contract 
+                                                                                        </a></li>
+                                                                                    <li><a class="dropdown-item"
+                                                                                            href="#"
+                                                                                            data-color="bg-warning">Application Received</a></li>
+
+                                                                                            <li><a class="dropdown-item"
+                                                                                            href="#"
+                                                                                            data-color="bg-warning"> Reference Check issued </a></li>
+                                                                                            <li><a class="dropdown-item"
+                                                                                            href="#"
+                                                                                            data-color="bg-warning">  Awaiting Details  </a></li>
+                                                                                            <li><a class="dropdown-item"
+                                                                                            href="#"
+                                                                                            data-color="bg-warning">  Awaiting Room Allowcation</a></li>
+                                                                                            <li><a class="dropdown-item"
+                                                                                            href="#"
+                                                                                            data-color="bg-warning">   Awaiting Tenancy Setup </a></li>
+
+                                                                                </ul>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                        
+                                                           
+
+                                                        </div>
+
+                                                        <div class="enquiryRight_header_data TaskAction_wrapper">
+                                                            <div class="enquiryDate dueDate_container">
+                                                                <iconify-icon icon="ion:calendar-outline">
+                                                                </iconify-icon>
+                                                                <div class="duedatelabel">Last Updated on : </div> Nov 20, 2024
+                                                            </div>
+                                                            <div class="enquiryID_container">
+                                                                <div class="EnquiryID">
+                                                                    Current Status
+                                                                </div>
+                                                                <div class="IDButton appoinment_confirmed">
+                                                                    <button type="button" class="SourceDataBtn"> Application Received 
+                                                                    </button></div>
+                                                            </div>
+                                                          
+
+                                                        </div>
+
+                                                    </header>
+
+                                                    <div class="task-detail-body Contractstatusess_Notes">
+                                                        <div class="row">
+
+                                                        <div class="contractNotes">
+                                                        <div
+                                                                        class="d-flex align-items-center justify-content-between mb-2">
+                                                                        <div class="title title-lg mb-0"><span>All
+                                                                                Notes</span></div>
+
+                                                                    </div>
+
+                                                                    <div class="comment-block">
+
+                                                                        <div class="card card-border note-block">
+                                                                            <div class="card-body">
+
+                                                                                <div class="media align-items-center">
+                                                                                    <div class="media-head">
+                                                                                        <div
+                                                                                            class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="avatar-img">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="media-body">
+                                                                                        <div class="noteAuthor_title">
+                                                                                            Martin Luther</div>
+                                                                                        <div class="NoteTiming">
+                                                                                            9 Apr, 20, 7:14 AM
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <p class="NoteDescription">@<a href="#"
+                                                                                        class="fw-medium">Charlie
+                                                                                        Darvin</a> Tenant was
+                                                                                    very interested in the
+                                                                                    property, appreciating the
+                                                                                    layout and natural light.
+                                                                                    They need two bedrooms, a
+                                                                                    workspace, and a parking
+                                                                                    spot. They have a small dog
+                                                                                    and prefer to move in by the
+                                                                                    end of next month. Awaiting
+                                                                                    their decision by the end of
+                                                                                    the week.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="card card-border note-block ">
+                                                                            <div class="card-body">
+
+                                                                                <div class="media align-items-center">
+                                                                                    <div class="media-head">
+                                                                                        <div
+                                                                                            class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="avatar-img">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="media-body">
+                                                                                        <div class="noteAuthor_title">
+                                                                                            Katherine Jones
+                                                                                        </div>
+                                                                                        <div class="NoteTiming">
+                                                                                            8 Apr, 20, 5:30 PM
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <p class="NoteDescription">@<a href="#"
+                                                                                        class="fw-medium">Martin
+                                                                                        Luther</a> Viscosity
+                                                                                    ratio for "Appear view" link
+                                                                                    text is 3.7:1 which is less
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="separator separator-light">
+                                                                        </div>
+
+                                                                        <div class="AddNoteEnuSection" id="AddNote">
+                                                                            <div class="form-group">
+                                                                                <label class="form-label">Note
+                                                                                    header</label>
+                                                                                <input class="form-control" type="text"
+                                                                                    name="" placeholder="Add Title">
+                                                                            </div>
+
+                                                                            <div class="form-group">
+                                                                                <label class="form-label">Add
+                                                                                    Notes</label>
+                                                                                <textarea class="form-control"
+                                                                                    rows="5"></textarea>
+                                                                            </div>
+                                                                            <div class="NoteAction_container">
+                                                                                <div class="sendEnquiryNote_container">
+                                                                                    <div class="addto_todolist">
+                                                                                        <div class="form-check">
+                                                                                            <input type="checkbox"
+                                                                                                class="form-check-input"
+                                                                                                id="customCheckList-todo">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="customCheckList-todo">
+                                                                                                Add to ToDo List
+                                                                                                <span
+                                                                                                    class="done-strikethrough"></span>
+                                                                                            </label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="sendEnquiryNote_container setAlert_container">
+                                                                                    <div class="addto_todolist">
+                                                                                        <div class="form-check">
+                                                                                            <input type="checkbox"
+                                                                                                class="form-check-input setAlertInput">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="customCheckList-todo">
+                                                                                                Set As Alert
+                                                                                                <span
+                                                                                                    class="done-strikethrough"></span>
+                                                                                            </label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                            <div class="Showing_departmentand_users"
+                                                                                style="display: none;">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-6">
+                                                                                        <div class="form-group">
+                                                                                            <label
+                                                                                                class="form-label">Select
+                                                                                                Department</label>
+                                                                                            <select
+                                                                                                class="form-control select2"
+                                                                                                id="selectDepartment">
+                                                                                                <option disabled
+                                                                                                    selected value="">
+                                                                                                    Please
+                                                                                                    Select...
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Account Department">
+                                                                                                    Account
+                                                                                                    Department
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="HR Department">
+                                                                                                    HR
+                                                                                                    Department
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Contract Department">
+                                                                                                    Contract
+                                                                                                    Department
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Lettings Department">
+                                                                                                    Lettings
+                                                                                                    Department
+                                                                                                </option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-md-6">
+                                                                                        <div class="form-group">
+                                                                                            <label
+                                                                                                class="form-label">Select
+                                                                                                Users</label>
+                                                                                            <select
+                                                                                                class="form-control select2"
+                                                                                                id="selectUser">
+                                                                                                <option disabled
+                                                                                                    selected value="">
+                                                                                                    Please
+                                                                                                    Select...
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="John Doe">
+                                                                                                    John Doe
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Jane Smith">
+                                                                                                    Jane Smith
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Alice Johnson">
+                                                                                                    Alice
+                                                                                                    Johnson
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Robert Brown">
+                                                                                                    Robert Brown
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Michael Williams">
+                                                                                                    Michael
+                                                                                                    Williams
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Emily Davis">
+                                                                                                    Emily Davis
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="David Wilson">
+                                                                                                    David Wilson
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Sophia Martinez">
+                                                                                                    Sophia
+                                                                                                    Martinez
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="James Anderson">
+                                                                                                    James
+                                                                                                    Anderson
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Olivia Taylor">
+                                                                                                    Olivia
+                                                                                                    Taylor
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Chris Thomas">
+                                                                                                    Chris Thomas
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Emma Harris">
+                                                                                                    Emma Harris
+                                                                                                </option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                        </div>
+                                                          
+                                                           
+                                                            
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
                                         </div>
 
                                     </div>
@@ -4511,3 +4849,220 @@ JavaScript to dynamically populate the year options end
         });
     });
 </script>
+
+  <!-- don't Remove this scripts these all Required Scripts for this page  -->
+    <!-- Repeater JS -->
+    <script src="vendors/jquery.repeater/jquery.repeater.min.js"></script>
+    <!-- Drag JS -->
+    <script src="vendors/dragula/dist/dragula.min.js"></script>
+    <script src="dist/js/todo-data.js"></script>
+
+    <script>
+        $(".department_select").select2({
+            placeholder: "Select a Department"
+        })
+        $(".DepartmentUser_select").select2({
+            placeholder: "Select a User"
+        })
+    </script>
+
+    <!-- --------------------------------------------------------- 
+ assign note task to department from the left side under note js Functionality to 
+  hide the assign selection option  start
+  -------------------------------------------------------->
+
+    <script>
+        $(document).ready(function() {
+            // Toggle the visibility of Showing_departmentand_users based on the checkbox
+            $('#customCheckList-todo').change(function() {
+                if ($(this).is(':checked')) {
+                    $('.Showing_departmentand_users').slideDown(); // Show the section
+                } else {
+                    $('.Showing_departmentand_users').slideUp(); // Hide the section
+                }
+            });
+            // Handle the Send Note button click
+            $('#sendBtn2').click(function() {
+                var selectedDepartment = $('#selectDepartment').val();
+                var selectedUser = $('#selectUser').val();
+                if (selectedDepartment && selectedUser) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Note Sent!',
+                        text: `Note sent to ${selectedDepartment} and ${selectedUser}.`
+                    });
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Missing Information',
+                        text: 'Please select both a department and a user.'
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!-- --------------------------------------------------------- 
+ assign note task to department from the left side under note js Functionality to 
+  hide the assign selection option  end
+  -------------------------------------------------------->
+
+    <!-- ****************************
+  Note set as alert confirmation popup js start
+****************************** -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const checkbox = document.querySelector('.setAlertInput');
+            checkbox.addEventListener('change', function() {
+                if (this.checked) {
+                    Swal.fire({
+                        html: `
+                    <div style="text-align: center;">
+                        <div class="swalalert_custom_icon">
+                            <iconify-icon icon="hugeicons:alert-01"></iconify-icon>
+                        </div>
+                        <h2 class="Swal_CustomTitle">Are You Sure You Want to Set This Note as an Alert?</h2>
+                    </div>`,
+                        showCancelButton: true,
+                        confirmButtonText: 'Yes, set it!',
+                        cancelButtonText: 'No, cancel!',
+                        reverseButtons: true,
+                        customClass: {
+                            confirmButton: 'btn btn-success',
+                            cancelButton: 'btn btn-danger'
+                        }
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            Swal.fire({
+                                title: 'Alert Set!',
+                                text: 'The note has been successfully set as an alert.',
+                                icon: 'success'
+                            });
+                        } else if (result.isDismissed) {
+                            checkbox.checked =
+                            false; // Uncheck the checkbox if the user cancels
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+    <!-- ****************************
+  Note set as alert confirmation popup js end
+****************************** -->
+
+    <!-- custom task duration  field functionality js -->
+    <script>
+        $(document).ready(function() {
+            // Initialize Select2
+            $('#durationSelect').select2({
+                minimumResultsForSearch: Infinity // This disables the search box if you don't need it
+            });
+            // Hide custom field by default
+            $('.customTile_field').hide();
+            // Show/hide custom field based on selected option
+            $('#durationSelect').on('change', function() {
+                if ($(this).val() === 'Custom') {
+                    $('.customTile_field').show();
+                } else {
+                    $('.customTile_field').hide();
+                }
+            });
+        });
+    </script>
+    <!-- custom task duration  field functionality js end-->
+
+    <!--  custom field numver validation and time calculation js -->
+    <script>
+        $(document).ready(function() {
+            // Restrict input to digits only
+            $('#timeInput').on('input', function() {
+                this.value = this.value.replace(/[^0-9]/g, ''); // Only allow numbers
+                var minutes = parseInt(this.value) || 0; // Convert to integer or default to 0 if empty
+                var hours = Math.floor(minutes / 60); // Calculate hours
+                var remainingMinutes = minutes % 60; // Calculate remaining minutes
+                // Display the result in "X hr Y min" format
+                if (minutes > 0) {
+                    var timeFormatted = (hours > 0 ? hours + " hr " : "") + (remainingMinutes > 0 ?
+                        remainingMinutes + " min" : "");
+                    $('#timeOutput').text(timeFormatted);
+                } else {
+                    $('#timeOutput').text(''); // Clear the output if input is empty
+                }
+            });
+        });
+    </script>
+    <!--  custom field numver validation and time calculation js end-->
+
+    <!-- validation alert for the assign task to other staff -->
+    <script>
+        // Function to check if department and user are selected
+        function checkSelections() {
+            const department = $('#department_select').val(); // Get value from select2
+            const user = $('#DepartmentUser_select').val(); // Get value from select2
+            const assignButton = document.querySelector('.AssignButton');
+            // Enable the button if both department and user are selected
+            if (department && user) {
+                assignButton.disabled = false;
+            } else {
+                assignButton.disabled = true;
+            }
+        }
+        // Listen for changes in the Select2 fields
+        $('#department_select').on('change', checkSelections);
+        $('#DepartmentUser_select').on('change', checkSelections);
+        // Handle the click event for the Assign button
+        document.querySelector('.AssignButton').addEventListener('click', function() {
+            const selectedUser = $('#DepartmentUser_select').find('option:selected')
+        .text(); // Get selected user text
+            Swal.fire({
+                title: 'Are you sure?',
+                text: `Do you want to assign this task to ${selectedUser}?`,
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, assign it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire(
+                        'Assigned!',
+                        `Task has been assigned to ${selectedUser}.`,
+                        'success'
+                    );
+                }
+            });
+        });
+    </script>
+    <!-- validation alert for the assign task to other staff end-->
+
+
+    <!-- custom enquiry dropdown starts changebale js -->
+<script>
+    document.querySelectorAll('.statusChange_dropdown .dropdown-item').forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+            const selectedText = this.textContent
+                .trim(); // Get the text without leading/trailing spaces
+            const selectedColor = this.getAttribute('data-color');
+            const dropdownButton = document.getElementById('dropdownMenuButton');
+            // Update the dropdown button text and background color
+            dropdownButton.innerHTML =
+                `<iconify-icon icon="iconamoon:arrow-down-2"></iconify-icon> ${selectedText}`;
+            dropdownButton.className = `btn dropdown-toggle ${selectedColor}`;
+            // Close the dropdown after selection
+            const dropdown = bootstrap.Dropdown.getInstance(dropdownButton);
+            dropdown.hide();
+        });
+    });
+    // Automatically close the dropdown when clicking outside
+    document.addEventListener('click', function(event) {
+        const dropdownElement = document.querySelector('.dropdown-menu.show');
+        if (dropdownElement && !dropdownElement.contains(event.target) && !event.target.matches(
+                '.dropdown-toggle')) {
+            const dropdown = bootstrap.Dropdown.getInstance(document.getElementById('dropdownMenuButton'));
+            dropdown.hide();
+        }
+    });
+</script>
+<!-- end -->

@@ -3962,7 +3962,7 @@
 
                                                         <div class="enquiryID_container noBtStat_margin">
                                                                         <div class="EnquiryID">
-                                                                            Enquiry Status
+                                                                            Application Status
                                                                         </div>
                                                                         <div class="IDButton">
                                                                             <div class="dropdown statusChange_dropdown">
