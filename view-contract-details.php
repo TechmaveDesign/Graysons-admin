@@ -94,7 +94,7 @@
                                     <li class="nav-item">
                                         <a class="nav-link" data-bs-toggle="tab" href="#History">
                                             <div class="d-flex align-items-center">
-                                                <span class="nav-link-text">History Activity</span>
+                                                <span class="nav-link-text">Activity History </span>
 
                                             </div>
                                         </a>

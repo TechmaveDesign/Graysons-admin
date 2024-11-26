@@ -8129,7 +8129,15 @@ margin-top: 0px;
 	margin-top: 20px;
 }
 
-
+.ActionBtnInnertabs_properties {
+	text-align: right;
+	display: flex;
+	justify-content: end;
+	margin-bottom: 20px;
+}
+.innertabscenter_action_Footer{
+	position: relative !important;
+}
 
 /* Media query for mobile screens */
 @media (max-width: 768px) {

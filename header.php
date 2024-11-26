@@ -1219,7 +1219,7 @@
 																</li>
 																<li class="nav-item">
 																	<a class="nav-link sidecolor_checkincheckout"
-																		href="checkIn.php">
+																		href="CheckIn.php">
 																		<span class="nav-icon-wrap">
 																			<span class="svg-icon">
 																				<iconify-icon

@@ -246,6 +246,20 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#ScheduleInspection">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="nav-link-text">Schedule Inspection</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#AddTimings_inspections">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="nav-link-text">Add Inspection Timings</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
                                             <a class="nav-link " data-bs-toggle="tab" href="#AddDevelopmenttb">
                                                 <div class="d-flex align-items-center">
                                                     <span class="nav-link-text">Add Development</span>
@@ -556,9 +570,199 @@
                                                 </div>
                                             </div>
                                         </div>
-
+                                        <div class="canvasFooterContainer innertabscenter_action_Footer">
+                                <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
+                                    data-bs-dismiss="offcanvas">Cancel</button>
+                                <button type="submit"
+                                    class="canvasSubmit_button commonCanvas_buttonFooter">Save</button>
+                            </div>
                                     </div>
 
+                                    <div class="tab-pane fade" id="ScheduleInspection">
+
+                                    <div class="ActionBtnInnertabs_properties">
+                                    <button class="btn btn-sm addiconiButton commonAddnewButton btn-primary ms-3" type="button" data-bs-toggle="modal" data-bs-target="#AddHubEvent">
+								<iconify-icon icon="lets-icons:add-round">
+								</iconify-icon> Schedule Inspection
+							</button>
+                                    </div>
+                                    <div class="contact-list-view">
+
+<table class="table common-datatable nowrap w-100 ">
+    <thead>
+        <tr>
+
+            <th>Address </th>
+            <th>Area</th>
+            <th>Unit Type</th>
+            <th>Unit Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                1 Harvest Close
+            </td>
+            <td>Sunderland</td>
+            <td>Flat 1</td>
+
+            <td>11</td>
+            <td>
+                <div class="d-flex align-items-center ActionDropdown">
+                    <div class="d-flex">
+                       
+                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="edit-property.php">
+                            <span class="icon">
+                                <iconify-icon icon="fluent:edit-16-regular">
+                                </iconify-icon>
+                            </span>
+                        </a>
+                        <a href="property-details.php"
+                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                            data-bs-toggle="tooltip" data-placement="top" title=""
+                            data-bs-original-title="View Property Details"
+                            href="property-details.php"><span class="icon"><span
+                                    class="feather-icon"><i
+                                        data-feather="eye"></i></span></span></a>
+
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>23 Rosewood Avenue</td>
+            <td>Bristol</td>
+            <td>Apartment 3B</td>
+            <td>8</td>
+            <td>
+                <div class="d-flex align-items-center ActionDropdown">
+                    <div class="d-flex">
+                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="edit-property.php">
+                            <span class="icon">
+                                <iconify-icon icon="fluent:edit-16-regular">
+                                </iconify-icon>
+                            </span>
+                        </a>
+                        <a href="property-details.php"
+                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                            data-bs-toggle="tooltip" data-placement="top" title=""
+                            data-bs-original-title="View Property Details"><span
+                                class="icon"><span class="feather-icon"><i
+                                        data-feather="eye"></i></span></span></a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>17 Maple Street</td>
+            <td>Manchester</td>
+            <td>Flat 2A</td>
+            <td>5</td>
+            <td>
+                <div class="d-flex align-items-center ActionDropdown">
+                    <div class="d-flex">
+                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="edit-property.php">
+                            <span class="icon">
+                                <iconify-icon icon="fluent:edit-16-regular">
+                                </iconify-icon>
+                            </span>
+                        </a>
+                        <a href="property-details.php"
+                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                            data-bs-toggle="tooltip" data-placement="top" title=""
+                            data-bs-original-title="View Property Details"><span
+                                class="icon"><span class="feather-icon"><i
+                                        data-feather="eye"></i></span></span></a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>42 Elm Street</td>
+            <td>Leeds</td>
+            <td>House 5C</td>
+            <td>12</td>
+            <td>
+                <div class="d-flex align-items-center ActionDropdown">
+                    <div class="d-flex">
+                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="edit-property.php">
+                            <span class="icon">
+                                <iconify-icon icon="fluent:edit-16-regular">
+                                </iconify-icon>
+                            </span>
+                        </a>
+                        <a href="property-details.php"
+                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                            data-bs-toggle="tooltip" data-placement="top" title=""
+                            data-bs-original-title="View Property Details"><span
+                                class="icon"><span class="feather-icon"><i
+                                        data-feather="eye"></i></span></span></a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>9 Oak Lane</td>
+            <td>Liverpool</td>
+            <td>Flat 5D</td>
+            <td>9</td>
+            <td>
+                <div class="d-flex align-items-center ActionDropdown">
+                    <div class="d-flex">
+                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="edit-property.php">
+                            <span class="icon">
+                                <iconify-icon icon="fluent:edit-16-regular">
+                                </iconify-icon>
+                            </span>
+                        </a>
+                        <a href="property-details.php"
+                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                            data-bs-toggle="tooltip" data-placement="top" title=""
+                            data-bs-original-title="View Property Details"><span
+                                class="icon"><span class="feather-icon"><i
+                                        data-feather="eye"></i></span></span></a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>31 Willow Crescent</td>
+            <td>Newcastle</td>
+            <td>Apartment 2C</td>
+            <td>7</td>
+            <td>
+                <div class="d-flex align-items-center ActionDropdown">
+                    <div class="d-flex">
+                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="edit-property.php">
+                            <span class="icon">
+                                <iconify-icon icon="fluent:edit-16-regular">
+                                </iconify-icon>
+                            </span>
+                        </a>
+                        <a href="property-details.php"
+                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                            data-bs-toggle="tooltip" data-placement="top" title=""
+                            data-bs-original-title="View Property Details"><span
+                                class="icon"><span class="feather-icon"><i
+                                        data-feather="eye"></i></span></span></a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+</div>
+                                    </div>
+                                    <div class="tab-pane fade" id="AddTimings_inspections">
+                                        <div class="nodatafount_cmn_container">
+                                            <div class="nodataImageWrap">
+                                                <img src="dist/img/newimages/norecord.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="tab-pane fade" id="AddDevelopmenttb">
                                         <div class="nodatafount_cmn_container">
                                             <div class="nodataImageWrap">
@@ -566,14 +770,10 @@
                                             </div>
                                         </div>
                                     </div>
+                                    
                                 </div>
                             </div>
-                            <div class="canvasFooterContainer">
-                                <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
-                                    data-bs-dismiss="offcanvas">Cancel</button>
-                                <button type="submit"
-                                    class="canvasSubmit_button commonCanvas_buttonFooter">Save</button>
-                            </div>
+                            
                         </div>
                     </form>
 
@@ -587,6 +787,129 @@
     <!-- /Page Body -->
 
 </div>
+
+
+<!-- Schedule Inspection modal-->
+<div id="AddHubEvent" class="modal customwizard_formStyle sm_modalCustom fade" tabindex="-1" role="dialog"
+	aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<form action="" method="post" id="wizardForm">
+			<div class="modal-content">
+
+				<div class="ModalheaderArea">
+					<h5 class="mb-4">Add New Task</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+
+				</div>
+
+				<div class="modal-body">
+
+					<div class="taskAddContainer">
+						
+						<div class="step" id="step1">
+							<div class="wizardstep_innerContainer">
+								<div class="stepheadingheader">
+									<div class="steptitleIcon">
+										<iconify-icon icon="carbon:ibm-event-automation"></iconify-icon>
+									</div>
+									<h1>What's your task about?</h2>
+								</div>
+
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="form-group">
+											<label class="form-label">Task Title</label>
+											<input class="form-control" type="text">
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class="form-label">Date From</label>
+											<input class="form-control customdataPicker flatpickr-input" type="text"
+												name="" value="01/06/2024" readonly="readonly">
+											<iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
+											</iconify-icon>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class="form-label">Date To</label>
+											<input class="form-control customdataPicker flatpickr-input" type="text"
+												name="" value="01/06/2024" readonly="readonly">
+											<iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
+											</iconify-icon>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class="form-label">Start Time</label>
+											<input type="text" name="time" value=""
+													class="form-control time__pickers" id="timepicker"
+													placeholder="Select Time" required="" readonly="">
+                                            <iconify-icon icon="lucide:clock-2" class="dateinput_icon"></iconify-icon>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class="form-label">End Time</label>
+											<input type="text" name="time" value=""
+													class="form-control time__pickers" id="timepicker"
+													placeholder="Select Time" required="" readonly="">
+                                            <iconify-icon icon="lucide:clock-2" class="dateinput_icon"></iconify-icon>
+										</div>
+									</div>
+
+									<div class="col-lg-12">
+    <div class="form-group">
+        <label class="form-label">Duration</label>
+        <select name="" id="durationSelect" class="form-control select2">
+            <option value="" selected disabled readonly>Select an Option</option>
+            <option value="15 Min">15 Min</option>
+            <option value="20 Min">20 Min</option>
+            <option value="1 hour">1 hour</option>
+            <option value="Custom" class="custominpField_option">Custom</option>
+        </select>
+    </div>
+</div>
+
+<div class="col-sm-12 customTile_field" style="display:none;">
+<div class="form-group">
+        <label class="form-label">Add Duration (in Min)</label>
+        <input id="timeInput" class="form-control" type="text" value="">
+		<div id="timeOutput"></div>
+    </div>
+   
+</div>
+									
+
+									
+
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="form-navigation canvasFooterContainer CustomModal_footer taskadd_footer">
+
+                                    <div class="eventSubmit_container">
+                                    
+                                <button type="submit" class="submitButton canvasSubmit_button commonCanvas_buttonFooter" style="display: inline-block;">Submit</button>
+                                    </div>
+                            </div>
+
+			</div>
+		</form>
+	</div>
+</div>
+<!-- Schedule  Inspection modal end-->
 
 <?php include('footer.php') ?>
 
@@ -777,19 +1100,5 @@
 <!-- property type custom add and reflect on select2 -->
 
 <!-- style for submit form action container dont remove this -->
-<style>
-    .canvasFooterContainer {
-        position: fixed !important;
-        width: 100% !important;
-        height: 70px;
-        margin-left: -70px;
-    }
 
-    .hk-wrapper[data-layout="vertical"][data-layout-style="default"] .canvasFooterContainer {
-        position: fixed !important;
-        width: 100% !important;
-        height: 70px;
-        margin-left: -270px;
-    }
-</style>
 <!-- end -->

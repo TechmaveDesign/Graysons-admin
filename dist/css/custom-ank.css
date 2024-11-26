@@ -79,51 +79,7 @@
     padding: 5px 15px;
     background: #e7e7e7;
 }
-.quantity {
-    display: inline-flex;
-    border: 2px solid #eceef1;
-    border-radius: 4px;
-    overflow: hidden;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-    margin-top: 28px;
-}
-  
-.quantity button {
-    background-color: #eceef1;
-    color: #000;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-    width: 60px;
-    height: auto;
-    text-align: center;
-    transition: background-color 0.2s;
-}
-  
-.quantity button:hover {
-    background-color: #e4e5e8;
-    color: #000;
-}
-  
-  .input-box {
-    width: 60px;
-    text-align: center;
-    border: none;
-    padding: 5px 10px;
-    font-size: 16px;
-    outline: none;
-}
-  
-  /* Hide the number input spin buttons */
-  .input-box::-webkit-inner-spin-button,
-  .input-box::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-  
-  .input-box[type="number"] {
-    -moz-appearance: textfield;
-  }
+
   .addMaterial {
     padding: 6px 4px;
     background: #00a9ec;
