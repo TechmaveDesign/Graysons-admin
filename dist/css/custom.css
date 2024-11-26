@@ -8097,10 +8097,17 @@ margin-top: 0px;
 }
 
 
+#notesinersubtab_margintp{
+	margin-top: 20px !important;
+	padding-bottom: 0px !important;
+}
 
-
-
-
+#nopaddingTop{
+	padding-top: 0px !important;
+}
+.Contractstatusess_Notes{
+	padding-top: 20px;
+}
 
 
 
