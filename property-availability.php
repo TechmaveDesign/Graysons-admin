@@ -96,7 +96,7 @@
                                                                 </div>
                                                             </div>
 
-                                                            <div class="col-lg-2">
+                                                            <div class="col-lg-3">
                                                                 <div class="form-group">
                                                                     <label class="form-label">Property</label>
                                                                     <select name="" id="" class="form-control select2">

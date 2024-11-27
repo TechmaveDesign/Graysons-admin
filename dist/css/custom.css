@@ -8139,6 +8139,26 @@ margin-top: 0px;
 	position: relative !important;
 }
 
+.ScheduleInspection_addWrap {
+	padding: 20px;
+	height: 500px;
+	overflow-y: scroll;
+	scrollbar-width: thin;
+}
+
+.ScheduleAddBtnfor_property.hidden {
+    display: none !important;
+}
+
+
+
+
+
+
+
+
+
+
 /* Media query for mobile screens */
 @media (max-width: 768px) {
     .manage_approvalBoard .card-list {
