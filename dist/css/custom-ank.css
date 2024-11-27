@@ -142,3 +142,33 @@
     color: #00a1f7;
     font-weight: 500;
 }
+.addTimingsButtonBox .commonAddnewButton {
+    display: inline-flex !important;
+}
+.addTimingsButtonBox {
+    text-align: end;
+    margin-bottom: 10px;
+}
+.UnitTimeBox {
+    padding: 15px;
+    background: #f7f7f7;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.removeTime {
+    padding: 0;
+    background: #ff000000;
+    border: none;
+    color: #ff0000;
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    font-size: 18px;
+}
+.removeTime:hover,.removeTime:focus{
+    background: #ff000000;
+    border: none;
+    color: #ff0000;
+}
