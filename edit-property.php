@@ -234,7 +234,7 @@
                                 </div>
                             </div>
 
-                            <div class="fullwidthDesktopTabs MobileScrollShow">
+                            <div class="fullwidthDesktopTabs MobileScrollShow" id="nopaddingTop">
                             
 
                                 <ul class="nav nav-tabs nav-line nav-icon fullwidthCustom_tabsUL nav-light">

@@ -37,14 +37,11 @@
                             </div>
                         </div>
                         <div class="contact-options-wrap">
-                        <button
-     id="scheduleInspectionBtn"
-    class="btn btn-sm addiconiButton commonAddnewButton btn-primary ms-3 ScheduleAddBtnfor_property hidden"
-    type="button"
-    data-bs-toggle="modal"
-    data-bs-target="#property_inspection_modal">
-    <iconify-icon icon="lets-icons:add-round"></iconify-icon> Schedule Inspection
-</button>
+                            <button id="scheduleInspectionBtn"
+                                class="btn btn-sm addiconiButton commonAddnewButton btn-primary ms-3 ScheduleAddBtnfor_property hidden"
+                                type="button" data-bs-toggle="modal" data-bs-target="#property_inspection_modal">
+                                <iconify-icon icon="lets-icons:add-round"></iconify-icon> Schedule Inspection
+                            </button>
 
                             <a id="refreshButton"
                                 class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover no-caret d-sm-inline-block d-none"
@@ -239,7 +236,7 @@
                                     </div>
                                 </div>
 
-                                <div class="fullwidthDesktopTabs MobileScrollShow">
+                                <div class="fullwidthDesktopTabs MobileScrollShow" id="nopaddingTop">
 
                                     <ul class="nav nav-tabs nav-line nav-icon fullwidthCustom_tabsUL nav-light">
 
@@ -585,142 +582,151 @@
 
                                     <div class="tab-pane fade" id="ScheduleInspection">
 
-                                        
                                         <div class="contact-list-view">
 
-                                        <table class="table common-datatable nowrap w-100">
-    <thead>
-        <tr>
-            <th>Property</th>
-            <th>Area</th>
-            <th>Unit Type</th>
-            <th>Assigned Inspector</th>
-            <th>Frequency</th>
-            <th>Date From</th>
-            <th>Date To</th>
-            <th>Start Time</th>
-            <th>End Time</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1 Harvest Close</td>
-            <td>Sunderland</td>
-            <td>Flat 1</td>
-            <td>John Smith</td>
-            <td>Weekly</td>
-            <td>01, January 2024</td>
-            <td>31, January 2024</td>
-            <td>10:00 AM</td>
-            <td>12:00 PM</td>
-            <td>
-                <div class="d-flex align-items-center ActionDropdown">
-                    <div class="d-flex">
-                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
-                        data-bs-target="#Edit_property_inspection_modal">
-                            <span class="icon">
-                                <iconify-icon icon="fluent:edit-16-regular"></iconify-icon>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>23 Rosewood Avenue</td>
-            <td>Bristol</td>
-            <td>Apartment 3B</td>
-            <td>Jane Doe</td>
-            <td>Monthly</td>
-            <td>01, February 2024</td>
-            <td>28, February 2024</td>
-            <td>2:00 PM</td>
-            <td>4:00 PM</td>
-            <td>
-                <div class="d-flex align-items-center ActionDropdown">
-                    <div class="d-flex">
-                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
-                        data-bs-target="#Edit_property_inspection_modal">
-                            <span class="icon">
-                                <iconify-icon icon="fluent:edit-16-regular"></iconify-icon>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>17 Maple Street</td>
-            <td>Manchester</td>
-            <td>Flat 2A</td>
-            <td>Mark Taylor</td>
-            <td>One-Time</td>
-            <td>15, March 2024</td>
-            <td>15, March 2024</td>
-            <td>9:00 AM</td>
-            <td>11:00 AM</td>
-            <td>
-                <div class="d-flex align-items-center ActionDropdown">
-                    <div class="d-flex">
-                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
-                        data-bs-target="#Edit_property_inspection_modal">
-                            <span class="icon">
-                                <iconify-icon icon="fluent:edit-16-regular"></iconify-icon>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>42 Elm Street</td>
-            <td>Leeds</td>
-            <td>House 5C</td>
-            <td>Emily White</td>
-            <td>Bi-Weekly</td>
-            <td>01, April 2024</td>
-            <td>15, April 2024</td>
-            <td>1:00 PM</td>
-            <td>3:00 PM</td>
-            <td>
-                <div class="d-flex align-items-center ActionDropdown">
-                    <div class="d-flex">
-                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
-                        data-bs-target="#Edit_property_inspection_modal">
-                            <span class="icon">
-                                <iconify-icon icon="fluent:edit-16-regular"></iconify-icon>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>9 Oak Lane</td>
-            <td>Liverpool</td>
-            <td>Flat 5D</td>
-            <td>Chris Brown</td>
-            <td>Monthly</td>
-            <td>01, May 2024</td>
-            <td>31, May 2024</td>
-            <td>10:30 AM</td>
-            <td>12:30 PM</td>
-            <td>
-                <div class="d-flex align-items-center ActionDropdown">
-                    <div class="d-flex">
-                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
-                        data-bs-target="#Edit_property_inspection_modal">
-                            <span class="icon">
-                                <iconify-icon icon="fluent:edit-16-regular"></iconify-icon>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </td>
-        </tr>
-    </tbody>
-</table>
+                                            <table class="table common-datatable nowrap w-100">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Property</th>
+                                                        <th>Area</th>
+                                                        <th>Unit Type</th>
+                                                        <th>Assigned Inspector</th>
+                                                        <th>Frequency</th>
+                                                        <th>Date From</th>
+                                                        <th>Date To</th>
+                                                        <th>Start Time</th>
+                                                        <th>End Time</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1 Harvest Close</td>
+                                                        <td>Sunderland</td>
+                                                        <td>Flat 1</td>
+                                                        <td>John Smith</td>
+                                                        <td>Weekly</td>
+                                                        <td>01, January 2024</td>
+                                                        <td>31, January 2024</td>
+                                                        <td>10:00 AM</td>
+                                                        <td>12:00 PM</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#Edit_property_inspection_modal">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>23 Rosewood Avenue</td>
+                                                        <td>Bristol</td>
+                                                        <td>Apartment 3B</td>
+                                                        <td>Jane Doe</td>
+                                                        <td>Monthly</td>
+                                                        <td>01, February 2024</td>
+                                                        <td>28, February 2024</td>
+                                                        <td>2:00 PM</td>
+                                                        <td>4:00 PM</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#Edit_property_inspection_modal">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>17 Maple Street</td>
+                                                        <td>Manchester</td>
+                                                        <td>Flat 2A</td>
+                                                        <td>Mark Taylor</td>
+                                                        <td>One-Time</td>
+                                                        <td>15, March 2024</td>
+                                                        <td>15, March 2024</td>
+                                                        <td>9:00 AM</td>
+                                                        <td>11:00 AM</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#Edit_property_inspection_modal">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>42 Elm Street</td>
+                                                        <td>Leeds</td>
+                                                        <td>House 5C</td>
+                                                        <td>Emily White</td>
+                                                        <td>Bi-Weekly</td>
+                                                        <td>01, April 2024</td>
+                                                        <td>15, April 2024</td>
+                                                        <td>1:00 PM</td>
+                                                        <td>3:00 PM</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#Edit_property_inspection_modal">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>9 Oak Lane</td>
+                                                        <td>Liverpool</td>
+                                                        <td>Flat 5D</td>
+                                                        <td>Chris Brown</td>
+                                                        <td>Monthly</td>
+                                                        <td>01, May 2024</td>
+                                                        <td>31, May 2024</td>
+                                                        <td>10:30 AM</td>
+                                                        <td>12:30 PM</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#Edit_property_inspection_modal">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
 
                                         </div>
                                     </div>
@@ -773,194 +779,190 @@
 
                 <div class="modal-body">
 
-                <div class="ScheduleInspection_addWrap">
-                                <div class="stepheadingheader">
-                                    <div class="steptitleIcon">
-                                    <iconify-icon icon="carbon:inspection"></iconify-icon>
-                                    </div>
-                                    <h1>What property inspection are you scheduling?</h2>
+                    <div class="ScheduleInspection_addWrap">
+                        <div class="stepheadingheader">
+                            <div class="steptitleIcon">
+                                <iconify-icon icon="carbon:inspection"></iconify-icon>
+                            </div>
+                            <h1>What property inspection are you scheduling?</h2>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label class="form-label">Inspection Title</label>
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="form-label">Property</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option value="" selected disable readonly>
+                                            Select an Option</option>
+                                        <option value="Westlands Dental Studio, Front Street, Lanchester">
+                                            Westlands Dental Studio, Front Street,
+                                            Lanchester</option>
+                                        <option value="Sunset Boulevard, Los Angeles, California">
+                                            Sunset Boulevard, Los Angeles, California
+                                        </option>
+                                        <option value="Marvel Avenue, Brooklyn, New York">
+                                            Marvel Avenue, Brooklyn, New York
+                                        </option>
+                                        <option value="Forest Gump Road, Greenbow, Alabama">
+                                            Forest Gump Road, Greenbow, Alabama</option>
+
+                                    </select>
+
                                 </div>
 
-                                <div class="row">
+                            </div>
 
-                                <div class="col-sm-12">
-                                   <div class="form-group">
-                                       <label class="form-label">Inspection Title</label>
-                                       <input class="form-control" type="text">
-                                   </div>
-                               </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="form-label">Unit Type</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option value="" selected disable readonly>
+                                            Select an Option</option>
+                                        <option value="Studio">Studio</option>
+                                        <option value="Annex ">Annex </option>
+                                        <option value="Room">Room</option>
+                                        <option value="Basement Studios">Basement
+                                            Studios</option>
+                                        <option value="Flat">Flat</option>
+                                        <option value="Cottage">Cottage</option>
+                                        <option value="Annex Flat 1">Annex Flat 1
+                                        </option>
+                                        <option value="Bedroom">Bedroom</option>
+                                        <option value="Annex Studio">Annex Studio
+                                        </option>
+                                        <option value="Bedrooms 1">Bedrooms 1</option>
+                                        <option value="Bedrooms 2">Bedrooms 2</option>
+                                        <option value="Bedrooms 3">Bedrooms 3</option>
+                                        <option value="Bedrooms 4">Bedrooms 4</option>
+                                        <option value="Bedrooms 5">Bedrooms 5</option>
+                                        <option value="Bedrooms 6">Bedrooms 6</option>
+                                        <option value="Bedrooms 7">Bedrooms 7</option>
+                                    </select>
 
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label class="form-label">Property</label>
-                                            <select name="" id="" class="form-control select2">
-                                                <option value="" selected disable readonly>
-                                                    Select an Option</option>
-                                                <option value="Westlands Dental Studio, Front Street, Lanchester">
-                                                    Westlands Dental Studio, Front Street,
-                                                    Lanchester</option>
-                                                <option value="Sunset Boulevard, Los Angeles, California">
-                                                    Sunset Boulevard, Los Angeles, California
-                                                </option>
-                                                <option value="Marvel Avenue, Brooklyn, New York">
-                                                    Marvel Avenue, Brooklyn, New York
-                                                </option>
-                                                <option value="Forest Gump Road, Greenbow, Alabama">
-                                                    Forest Gump Road, Greenbow, Alabama</option>
+                                </div>
 
-                                            </select>
+                            </div>
 
-                                        </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="form-label">Area</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option value="" selected disable readonly>
+                                            Select an Option</option>
+                                        <option value="Sunderland">Sunderland</option>
+                                        <option value="Bedlington">Bedlington</option>
+                                        <option value="Newcastle upon Tyne">Newcastle
+                                            upon Tyne</option>
+                                        <option value="Durham">Durham</option>
+                                        <option value="Lanchester">Lanchester</option>
+                                        <option value="Newcastle Upon Tyne ">Newcastle
+                                            Upon Tyne </option>
+                                        <option value="Ponteland">Ponteland</option>
+                                        <option value="Newcastle Upon Tyne">Newcastle
+                                            Upon Tyne</option>
+                                        <option value="Jesmond">Jesmond</option>
+                                        <option value="London">London</option>
+                                        <option value="West One">West One</option>
+                                        <option value="Newcastle">Newcastle</option>
+                                    </select>
 
-                                    </div>
+                                </div>
 
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label class="form-label">Unit Type</label>
-                                            <select name="" id="" class="form-control select2">
-                                                <option value="" selected disable readonly>
-                                                    Select an Option</option>
-                                                <option value="Studio">Studio</option>
-                                                <option value="Annex ">Annex </option>
-                                                <option value="Room">Room</option>
-                                                <option value="Basement Studios">Basement
-                                                    Studios</option>
-                                                <option value="Flat">Flat</option>
-                                                <option value="Cottage">Cottage</option>
-                                                <option value="Annex Flat 1">Annex Flat 1
-                                                </option>
-                                                <option value="Bedroom">Bedroom</option>
-                                                <option value="Annex Studio">Annex Studio
-                                                </option>
-                                                <option value="Bedrooms 1">Bedrooms 1</option>
-                                                <option value="Bedrooms 2">Bedrooms 2</option>
-                                                <option value="Bedrooms 3">Bedrooms 3</option>
-                                                <option value="Bedrooms 4">Bedrooms 4</option>
-                                                <option value="Bedrooms 5">Bedrooms 5</option>
-                                                <option value="Bedrooms 6">Bedrooms 6</option>
-                                                <option value="Bedrooms 7">Bedrooms 7</option>
-                                            </select>
+                            </div>
 
-                                        </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Assigned to Staff</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option disabled="" selected="" value="">Please Select...</option>
+                                        <option value="1">Danial Craig</option>
+                                        <option value="2">Emily Blunt</option>
+                                        <option value="3">John Doe</option>
+                                        <option value="4">Sophia Turner</option>
+                                        <option value="5">Michael Jordan</option>
+                                        <option value="6">Olivia Smith</option>
 
-                                    </div>
-
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label class="form-label">Area</label>
-                                            <select name="" id="" class="form-control select2">
-                                                <option value="" selected disable readonly>
-                                                    Select an Option</option>
-                                                <option value="Sunderland">Sunderland</option>
-                                                <option value="Bedlington">Bedlington</option>
-                                                <option value="Newcastle upon Tyne">Newcastle
-                                                    upon Tyne</option>
-                                                <option value="Durham">Durham</option>
-                                                <option value="Lanchester">Lanchester</option>
-                                                <option value="Newcastle Upon Tyne ">Newcastle
-                                                    Upon Tyne </option>
-                                                <option value="Ponteland">Ponteland</option>
-                                                <option value="Newcastle Upon Tyne">Newcastle
-                                                    Upon Tyne</option>
-                                                <option value="Jesmond">Jesmond</option>
-                                                <option value="London">London</option>
-                                                <option value="West One">West One</option>
-                                                <option value="Newcastle">Newcastle</option>
-                                            </select>
-
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Assigned to Staff</label>
-                                            <select name="" id="" class="form-control select2">
-                                                <option disabled="" selected="" value="">Please Select...</option>
-                                                <option value="1">Danial Craig</option>
-                                                <option value="2">Emily Blunt</option>
-                                                <option value="3">John Doe</option>
-                                                <option value="4">Sophia Turner</option>
-                                                <option value="5">Michael Jordan</option>
-                                                <option value="6">Olivia Smith</option>
-
-                                            </select>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label class="form-label">How often</label>
-                                            <select name="" id="" class="form-control select2">
-                                                <option value="" selected disable readonly>
-                                                    Select an Option</option>
-                                                <option value="One off">One off</option>
-                                                <option value="Every day">Every day</option>
-                                                <option value="Every Weekday">Every Weekday</option>
-                                                <option value="Every week">Every week</option>
-                                                <option value="Every month">Every month</option>
-                                                <option value="Every year">Every year</option>
-
-                                            </select>
-
-                                        </div>
-
-                                    </div>
-
-                                    
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Date From</label>
-                                            <input class="form-control customdataPicker flatpickr-input" type="text"
-                                                name="" value="01/06/2024" readonly="readonly">
-                                            <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
-                                            </iconify-icon>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Date To</label>
-                                            <input class="form-control customdataPicker flatpickr-input" type="text"
-                                                name="" value="01/06/2024" readonly="readonly">
-                                            <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
-                                            </iconify-icon>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Start Time</label>
-                                            <input type="text" name="time" value="" class="form-control time__pickers"
-                                                id="timepicker" placeholder="Select Time" required="" readonly="">
-                                            <iconify-icon icon="lucide:clock-2" class="dateinput_icon"></iconify-icon>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label">End Time</label>
-                                            <input type="text" name="time" value="" class="form-control time__pickers"
-                                                id="timepicker" placeholder="Select Time" required="" readonly="">
-                                            <iconify-icon icon="lucide:clock-2" class="dateinput_icon"></iconify-icon>
-                                        </div>
-                                    </div>
-
-                                    
-
-                                    <div class="col-sm-12 customTile_field" style="display:none;">
-                                        <div class="form-group">
-                                            <label class="form-label">Add Duration (in Min)</label>
-                                            <input id="timeInput" class="form-control" type="text" value="">
-                                            <div id="timeOutput"></div>
-                                        </div>
-
-                                    </div>
+                                    </select>
 
                                 </div>
                             </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-label">How often</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option value="" selected disable readonly>
+                                            Select an Option</option>
+                                        <option value="One off">One off</option>
+                                        <option value="Every day">Every day</option>
+                                        <option value="Every Weekday">Every Weekday</option>
+                                        <option value="Every week">Every week</option>
+                                        <option value="Every month">Every month</option>
+                                        <option value="Every year">Every year</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Date From</label>
+                                    <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+                                        value="01/06/2024" readonly="readonly">
+                                    <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
+                                    </iconify-icon>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Date To</label>
+                                    <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+                                        value="01/06/2024" readonly="readonly">
+                                    <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
+                                    </iconify-icon>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Start Time</label>
+                                    <input type="text" name="time" value="" class="form-control time__pickers"
+                                        id="timepicker" placeholder="Select Time" required="" readonly="">
+                                    <iconify-icon icon="lucide:clock-2" class="dateinput_icon"></iconify-icon>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">End Time</label>
+                                    <input type="text" name="time" value="" class="form-control time__pickers"
+                                        id="timepicker" placeholder="Select Time" required="" readonly="">
+                                    <iconify-icon icon="lucide:clock-2" class="dateinput_icon"></iconify-icon>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 customTile_field" style="display:none;">
+                                <div class="form-group">
+                                    <label class="form-label">Add Duration (in Min)</label>
+                                    <input id="timeInput" class="form-control" type="text" value="">
+                                    <div id="timeOutput"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
                 <div class="form-navigation canvasFooterContainer CustomModal_footer taskadd_footer">
 
@@ -978,8 +980,8 @@
 <!-- Schedule  Inspection modal end-->
 
 <!--Edit  Schedule Inspection modal-->
-<div id="Edit_property_inspection_modal" class="modal customwizard_formStyle sm_modalCustom fade" tabindex="-1" role="dialog"
-    aria-hidden="true">
+<div id="Edit_property_inspection_modal" class="modal customwizard_formStyle sm_modalCustom fade" tabindex="-1"
+    role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <form action="" method="post" id="wizardForm">
             <div class="modal-content">
@@ -994,194 +996,190 @@
 
                 <div class="modal-body">
 
-                <div class="ScheduleInspection_addWrap">
-                                <div class="stepheadingheader">
-                                    <div class="steptitleIcon">
-                                    <iconify-icon icon="carbon:inspection"></iconify-icon>
-                                    </div>
-                                    <h1>Modify the property inspection schedule</h2>
+                    <div class="ScheduleInspection_addWrap">
+                        <div class="stepheadingheader">
+                            <div class="steptitleIcon">
+                                <iconify-icon icon="carbon:inspection"></iconify-icon>
+                            </div>
+                            <h1>Modify the property inspection schedule</h2>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label class="form-label">Inspection Title</label>
+                                    <input class="form-control" type="text" value="23 Rosewood Avenue">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="form-label">Property</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option value="" disable readonly>
+                                            Select an Option</option>
+                                        <option value="Westlands Dental Studio, Front Street, Lanchester" selected>
+                                            Westlands Dental Studio, Front Street,
+                                            Lanchester</option>
+                                        <option value="Sunset Boulevard, Los Angeles, California">
+                                            Sunset Boulevard, Los Angeles, California
+                                        </option>
+                                        <option value="Marvel Avenue, Brooklyn, New York">
+                                            Marvel Avenue, Brooklyn, New York
+                                        </option>
+                                        <option value="Forest Gump Road, Greenbow, Alabama">
+                                            Forest Gump Road, Greenbow, Alabama</option>
+
+                                    </select>
+
                                 </div>
 
-                                <div class="row">
+                            </div>
 
-                                <div class="col-sm-12">
-                                   <div class="form-group">
-                                       <label class="form-label">Inspection Title</label>
-                                       <input class="form-control" type="text" value="23 Rosewood Avenue">
-                                   </div>
-                               </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="form-label">Unit Type</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option value="" disable readonly>
+                                            Select an Option</option>
+                                        <option value="Studio">Studio</option>
+                                        <option value="Annex" selected>Annex </option>
+                                        <option value="Room">Room</option>
+                                        <option value="Basement Studios">Basement
+                                            Studios</option>
+                                        <option value="Flat">Flat</option>
+                                        <option value="Cottage">Cottage</option>
+                                        <option value="Annex Flat 1">Annex Flat 1
+                                        </option>
+                                        <option value="Bedroom">Bedroom</option>
+                                        <option value="Annex Studio">Annex Studio
+                                        </option>
+                                        <option value="Bedrooms 1">Bedrooms 1</option>
+                                        <option value="Bedrooms 2">Bedrooms 2</option>
+                                        <option value="Bedrooms 3">Bedrooms 3</option>
+                                        <option value="Bedrooms 4">Bedrooms 4</option>
+                                        <option value="Bedrooms 5">Bedrooms 5</option>
+                                        <option value="Bedrooms 6">Bedrooms 6</option>
+                                        <option value="Bedrooms 7">Bedrooms 7</option>
+                                    </select>
 
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label class="form-label">Property</label>
-                                            <select name="" id="" class="form-control select2">
-                                                <option value=""  disable readonly>
-                                                    Select an Option</option>
-                                                <option value="Westlands Dental Studio, Front Street, Lanchester" selected>
-                                                    Westlands Dental Studio, Front Street,
-                                                    Lanchester</option>
-                                                <option value="Sunset Boulevard, Los Angeles, California">
-                                                    Sunset Boulevard, Los Angeles, California
-                                                </option>
-                                                <option value="Marvel Avenue, Brooklyn, New York">
-                                                    Marvel Avenue, Brooklyn, New York
-                                                </option>
-                                                <option value="Forest Gump Road, Greenbow, Alabama">
-                                                    Forest Gump Road, Greenbow, Alabama</option>
+                                </div>
 
-                                            </select>
+                            </div>
 
-                                        </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="form-label">Area</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option value="" disable readonly>
+                                            Select an Option</option>
+                                        <option value="Sunderland">Sunderland</option>
+                                        <option value="Bedlington">Bedlington</option>
+                                        <option value="Newcastle upon Tyne" selected>Newcastle
+                                            upon Tyne</option>
+                                        <option value="Durham">Durham</option>
+                                        <option value="Lanchester">Lanchester</option>
+                                        <option value="Newcastle Upon Tyne ">Newcastle
+                                            Upon Tyne </option>
+                                        <option value="Ponteland">Ponteland</option>
+                                        <option value="Newcastle Upon Tyne">Newcastle
+                                            Upon Tyne</option>
+                                        <option value="Jesmond">Jesmond</option>
+                                        <option value="London">London</option>
+                                        <option value="West One">West One</option>
+                                        <option value="Newcastle">Newcastle</option>
+                                    </select>
 
-                                    </div>
+                                </div>
 
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label class="form-label">Unit Type</label>
-                                            <select name="" id="" class="form-control select2">
-                                                <option value=""  disable readonly>
-                                                    Select an Option</option>
-                                                <option value="Studio">Studio</option>
-                                                <option value="Annex" selected>Annex </option>
-                                                <option value="Room">Room</option>
-                                                <option value="Basement Studios">Basement
-                                                    Studios</option>
-                                                <option value="Flat">Flat</option>
-                                                <option value="Cottage">Cottage</option>
-                                                <option value="Annex Flat 1">Annex Flat 1
-                                                </option>
-                                                <option value="Bedroom">Bedroom</option>
-                                                <option value="Annex Studio">Annex Studio
-                                                </option>
-                                                <option value="Bedrooms 1">Bedrooms 1</option>
-                                                <option value="Bedrooms 2">Bedrooms 2</option>
-                                                <option value="Bedrooms 3">Bedrooms 3</option>
-                                                <option value="Bedrooms 4">Bedrooms 4</option>
-                                                <option value="Bedrooms 5">Bedrooms 5</option>
-                                                <option value="Bedrooms 6">Bedrooms 6</option>
-                                                <option value="Bedrooms 7">Bedrooms 7</option>
-                                            </select>
+                            </div>
 
-                                        </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Assigned to Staff</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option disabled="" value="">Please Select...</option>
+                                        <option value="1">Danial Craig</option>
+                                        <option value="2" selected>Emily Blunt</option>
+                                        <option value="3">John Doe</option>
+                                        <option value="4">Sophia Turner</option>
+                                        <option value="5">Michael Jordan</option>
+                                        <option value="6">Olivia Smith</option>
 
-                                    </div>
-
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label class="form-label">Area</label>
-                                            <select name="" id="" class="form-control select2">
-                                                <option value="" disable readonly>
-                                                    Select an Option</option>
-                                                <option value="Sunderland">Sunderland</option>
-                                                <option value="Bedlington">Bedlington</option>
-                                                <option value="Newcastle upon Tyne" selected>Newcastle
-                                                    upon Tyne</option>
-                                                <option value="Durham">Durham</option>
-                                                <option value="Lanchester">Lanchester</option>
-                                                <option value="Newcastle Upon Tyne ">Newcastle
-                                                    Upon Tyne </option>
-                                                <option value="Ponteland">Ponteland</option>
-                                                <option value="Newcastle Upon Tyne">Newcastle
-                                                    Upon Tyne</option>
-                                                <option value="Jesmond">Jesmond</option>
-                                                <option value="London">London</option>
-                                                <option value="West One">West One</option>
-                                                <option value="Newcastle">Newcastle</option>
-                                            </select>
-
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Assigned to Staff</label>
-                                            <select name="" id="" class="form-control select2">
-                                                <option disabled="" value="">Please Select...</option>
-                                                <option value="1">Danial Craig</option>
-                                                <option value="2" selected>Emily Blunt</option>
-                                                <option value="3">John Doe</option>
-                                                <option value="4">Sophia Turner</option>
-                                                <option value="5">Michael Jordan</option>
-                                                <option value="6">Olivia Smith</option>
-
-                                            </select>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label class="form-label">How often</label>
-                                            <select name="" id="" class="form-control select2">
-                                                <option value="" disable readonly>
-                                                    Select an Option</option>
-                                                <option value="One off">One off</option>
-                                                <option value="Every day">Every day</option>
-                                                <option value="Every Weekday">Every Weekday</option>
-                                                <option value="Every week">Every week</option>
-                                                <option value="Every month" selected>Every month</option>
-                                                <option value="Every year">Every year</option>
-
-                                            </select>
-
-                                        </div>
-
-                                    </div>
-
-                                    
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Date From</label>
-                                            <input class="form-control customdataPicker flatpickr-input" type="text"
-                                                name="" value="01/06/2024" readonly="readonly">
-                                            <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
-                                            </iconify-icon>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Date To</label>
-                                            <input class="form-control customdataPicker flatpickr-input" type="text"
-                                                name="" value="01/06/2024" readonly="readonly">
-                                            <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
-                                            </iconify-icon>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Start Time</label>
-                                            <input type="text" name="time" value="" class="form-control time__pickers"
-                                                id="timepicker" placeholder="Select Time" required="" readonly="">
-                                            <iconify-icon icon="lucide:clock-2" class="dateinput_icon"></iconify-icon>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label">End Time</label>
-                                            <input type="text" name="time" value="" class="form-control time__pickers"
-                                                id="timepicker" placeholder="Select Time" required="" readonly="">
-                                            <iconify-icon icon="lucide:clock-2" class="dateinput_icon"></iconify-icon>
-                                        </div>
-                                    </div>
-
-                                    
-
-                                    <div class="col-sm-12 customTile_field" style="display:none;">
-                                        <div class="form-group">
-                                            <label class="form-label">Add Duration (in Min)</label>
-                                            <input id="timeInput" class="form-control" type="text" value="">
-                                            <div id="timeOutput"></div>
-                                        </div>
-
-                                    </div>
+                                    </select>
 
                                 </div>
                             </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-label">How often</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option value="" disable readonly>
+                                            Select an Option</option>
+                                        <option value="One off">One off</option>
+                                        <option value="Every day">Every day</option>
+                                        <option value="Every Weekday">Every Weekday</option>
+                                        <option value="Every week">Every week</option>
+                                        <option value="Every month" selected>Every month</option>
+                                        <option value="Every year">Every year</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Date From</label>
+                                    <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+                                        value="01/06/2024" readonly="readonly">
+                                    <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
+                                    </iconify-icon>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Date To</label>
+                                    <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+                                        value="01/06/2024" readonly="readonly">
+                                    <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
+                                    </iconify-icon>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Start Time</label>
+                                    <input type="text" name="time" value="" class="form-control time__pickers"
+                                        id="timepicker" placeholder="Select Time" required="" readonly="">
+                                    <iconify-icon icon="lucide:clock-2" class="dateinput_icon"></iconify-icon>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">End Time</label>
+                                    <input type="text" name="time" value="" class="form-control time__pickers"
+                                        id="timepicker" placeholder="Select Time" required="" readonly="">
+                                    <iconify-icon icon="lucide:clock-2" class="dateinput_icon"></iconify-icon>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 customTile_field" style="display:none;">
+                                <div class="form-group">
+                                    <label class="form-label">Add Duration (in Min)</label>
+                                    <input id="timeInput" class="form-control" type="text" value="">
+                                    <div id="timeOutput"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
                 <div class="form-navigation canvasFooterContainer CustomModal_footer taskadd_footer">
 
@@ -1386,22 +1384,19 @@
 </script>
 <!-- property type custom add and reflect on select2 -->
 
-
 <!-- schedule add button show only when schedule tab is active -->
 <script>
-   $(document).ready(function () {
-    // Monitor changes for active class on the <li> element
-    $('a[href="#ScheduleInspection"]').on('shown.bs.tab', function () {
-        // Remove the 'hidden' class to show the button when the tab is active
-        $("#scheduleInspectionBtn").removeClass("hidden");
+    $(document).ready(function() {
+        // Monitor changes for active class on the <li> element
+        $('a[href="#ScheduleInspection"]').on('shown.bs.tab', function() {
+            // Remove the 'hidden' class to show the button when the tab is active
+            $("#scheduleInspectionBtn").removeClass("hidden");
+        });
+        $('a[href="#ScheduleInspection"]').on('hidden.bs.tab', function() {
+            // Add the 'hidden' class to hide the button when the tab is inactive
+            $("#scheduleInspectionBtn").addClass("hidden");
+        });
     });
-
-    $('a[href="#ScheduleInspection"]').on('hidden.bs.tab', function () {
-        // Add the 'hidden' class to hide the button when the tab is inactive
-        $("#scheduleInspectionBtn").addClass("hidden");
-    });
-});
-
 </script>
 
 <!-- schedule add button show only when schedule tab is active end-->
