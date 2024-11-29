@@ -211,7 +211,7 @@
 
 <!-- add inventory check status modal start -->
 <div class="modal fade" id="checkstatusadd_modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-dialog-centered mw-400p" role="document">
+    <div class="modal-dialog modal-dialog-centered " role="document">
         <div class="modal-content">
             <div class="modal-header smModalHeader header-wth-bg-inv">
                 <h5 class="modal-title">Add Inventory Check Status </h5>
@@ -219,8 +219,8 @@
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <form class="m-3" action="inventory_item_check_statuses.php" role="search">
-                <div class="modal-body p-0">
+            <form class="" action="inventory_item_check_statuses.php" role="search">
+                <div class="modal-body ">
 
                     <div class="row">
                         <div class="col-md-12">
@@ -233,10 +233,13 @@
                     </div>
 
                 </div>
-                <div class="modal-footer justify-content-right mdmodal_FTborder">
-                    <button type="submit" class="canvasSubmit_button smModalButton">Submit</button>
+                <div class="form-navigation canvasFooterContainer CustomModal_footer taskadd_footer">
 
-                </div>
+<div class="eventSubmit_container">
+
+    <button type="submit" class="submitButton canvasSubmit_button commonCanvas_buttonFooter" style="display: inline-block;">Submit</button>
+</div>
+</div>
             </form>
         </div>
     </div>

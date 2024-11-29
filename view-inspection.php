@@ -165,71 +165,84 @@
                                                                 class="table common-datatable withoutActionTR nowrap w-100 ">
                                                                 <thead>
                                                                     <tr>
-
+                                                                    <th>Location</th>
                                                                         <th>Item</th>
-                                                                        <th>Location</th>
                                                                         <th>Status</th>
                                                                         <th>Uploded Pictures</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
                                                                     <tr>
-
+                                                                    <td>Bathroom</td>
                                                                         <td>
                                                                             Tiles - Wall/Floor
                                                                         </td>
-                                                                        <td>Bathroom</td>
+                                                                      
                                                                         <td>Checked - Working</td>
                                                                         <td>
-                                                                            <div class="uplodedinspection_pictures">
+                                                                        <div class="uplodedinspection_pictures">
                                                                                 <div class="inspPicture_item">
-                                                                                    <img src="dist/img/interests/interest-6.png"
-                                                                                        class="lightbox-trigger" alt="">
+                                                                                    <img src="dist/img/img-thumb1.jpg"
+                                                                                        data-panorama="dist/img/img-thumb1.jpg"
+                                                                                        class="lightbox-trigger"
+                                                                                        alt="Panorama 1">
                                                                                 </div>
                                                                                 <div class="inspPicture_item">
-                                                                                    <img src="dist/img/interests/interest-6.png"
-                                                                                        class="lightbox-trigger" alt="">
+                                                                                    <img src="dist/img/slide4.jpg"
+                                                                                        data-panorama="dist/img/slide4.jpg"
+                                                                                        class="lightbox-trigger"
+                                                                                        alt="Panorama 2">
                                                                                 </div>
                                                                             </div>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
+                                                                    <td>Living Room</td>
                                                                         <td>Paint - Interior</td>
-                                                                        <td>Living Room</td>
+                                                                        
                                                                         <td>Checked - Good Condition</td>
                                                                         <td></td>
                                                                     </tr>
                                                                     <tr>
+                                                                    <td>Bedroom</td>
                                                                         <td>Doorknob</td>
-                                                                        <td>Bedroom</td>
+                                                                        
                                                                         <td>Checked - Functional</td>
                                                                         <td></td>
                                                                     </tr>
                                                                     <tr>
+                                                                    <td>Kitchen</td>
                                                                         <td>Light Fixture</td>
-                                                                        <td>Kitchen</td>
+                                                                     
                                                                         <td>Checked - Working Properly</td>
                                                                         <td></td>
                                                                     </tr>
                                                                     <tr>
+                                                                    <td>Bathroom</td>
                                                                         <td>Faucet</td>
-                                                                        <td>Bathroom</td>
+                                                                   
                                                                         <td>Checked - No Leaks</td>
                                                                         <td></td>
                                                                     </tr>
                                                                     <tr>
+                                                                    <td>Living Room</td>
                                                                         <td>Window - Frame</td>
-                                                                        <td>Living Room</td>
+                                                                      
                                                                         <td>Checked - Secure</td>
                                                                         <td>
+                                                                            <!-- Image gallery -->
                                                                             <div class="uplodedinspection_pictures">
                                                                                 <div class="inspPicture_item">
-                                                                                    <img src="dist/img/interests/interest-8.png"
-                                                                                        class="lightbox-trigger" alt="">
+                                                                                    <img src="dist/img/tree-736885_960_720.jpg"
+                                                                                        data-panorama="dist/img/tree-736885_960_720.jpg"
+                                                                                        class="lightbox-trigger"
+                                                                                        alt="Panorama 1">
                                                                                 </div>
                                                                                 <div class="inspPicture_item">
-                                                                                    <img src="dist/img/interests/interest-8.png"
-                                                                                        class="lightbox-trigger" alt="">
+                                                                                    <img src="dist/img/glass-3000-3654214.jpg"
+                                                                                        data-panorama="dist/img/glass-3000-3654214.jpg"
+                                                                                        class="lightbox-trigger"
+                                                                                        alt="Panorama 2">
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -264,6 +277,25 @@
                                                             <img src="dist/img/newimages/signature-images/1.jpg"
                                                                 class="lightbox-trigger" alt="">
 
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="Signature_timestemp">
+                                                        <div class="enquiryRight_header_data TaskAction_wrapper">
+                                                            <div class="enquiryDate dueDate_container">
+                                                                <iconify-icon icon="ion:calendar-outline">
+                                                                </iconify-icon>
+                                                                <div class="duedatelabel">Date & Time : </div> Nov 20, 2024 15:45
+                                                            </div>
+                                                            <div class="IPAddress_wrap">
+                                                                <div class="IPlAbel">
+                                                                    IP Address :
+                                                                </div>
+                                                                <div class="IPAddress">192.168.1.1</div>
+                                                            </div>
+                                                          
+
+                                                        </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -308,27 +340,20 @@
 </div>
 <!-- /Page Body -->
 
+<!-- 360 image Modal for Photo Sphere Viewer -->
+<div id="viewer-modal">
+    <button class="close-btn" id="close-viewer">Close</button>
+    <button class="prev-btn" id="prev-image"><iconify-icon icon="majesticons:arrow-left-line"></iconify-icon></button>
+    <button class="next-btn" id="next-image"><iconify-icon icon="majesticons:arrow-right-line"></iconify-icon></button>
+    <div id="viewer"></div>
+</div>
+
 <?php include('footer.php') ?>
 
-<!-- tabs scroll js start-->
-<script>
-    $(document).ready(function() {
-        $('.next').click(function() {
-            $('.nav-tabs').animate({
-                scrollLeft: '+=100'
-            }, 300);
-        });
-        $('.prev').click(function() {
-            $('.nav-tabs').animate({
-                scrollLeft: '-=100'
-            }, 300);
-        });
-    });
-</script>
-<!-- tabs scroll js end-->
+
 
 <!-- inspection image view js -->
-<div id="lightbox" class="lightbox">
+<!-- <div id="lightbox" class="lightbox">
     <span class="close">&times;</span>
     <img src="" class="lightbox-image" alt="lightbox image">
 </div>
@@ -339,27 +364,104 @@
         const lightboxClose = document.querySelector('.close');
         const triggers = document.querySelectorAll('.lightbox-trigger');
         const body = document.querySelector('body');
-        // Add click event listener to each trigger
+
         triggers.forEach(trigger => {
             trigger.addEventListener('click', function() {
                 const imageSrc = this.src;
                 lightboxImage.src = imageSrc;
                 lightbox.style.display = 'block';
-                body.style.overflow = 'hidden'; // Hide body overflow
+                body.style.overflow = 'hidden'; 
             });
         });
-        // Close the lightbox
         lightboxClose.addEventListener('click', function() {
             lightbox.style.display = 'none';
-            body.style.overflow = 'auto'; // Restore body overflow
+            body.style.overflow = 'auto'; 
         });
-        // Close the lightbox when clicking outside of it
         window.addEventListener('click', function(event) {
             if (event.target === lightbox) {
                 lightbox.style.display = 'none';
-                body.style.overflow = 'auto'; // Restore body overflow
+                body.style.overflow = 'auto'; 
             }
         });
     });
-</script>
+</script> -->
 <!-- inspection image view js end-->
+
+<!-- 360 image view  js start -->
+<!-- Photo Sphere Viewer styles -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css" />
+<script type="importmap">
+    {
+            "imports": {
+                "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.module.js",
+                "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js"
+            }
+        }
+    </script>
+
+<script type="module">
+    import { Viewer } from '@photo-sphere-viewer/core';
+
+        let viewer = null;
+        const images = Array.from(document.querySelectorAll('.lightbox-trigger')).map(img => img.dataset.panorama);
+        let currentIndex = 0;
+
+        // Function to open the viewer
+        function openViewer(index) {
+            const modal = document.getElementById('viewer-modal');
+            modal.style.display = 'flex';
+            currentIndex = index;
+
+            if (!viewer) {
+                viewer = new Viewer({
+                    container: document.getElementById('viewer'),
+                    panorama: images[currentIndex],
+                });
+            } else {
+                viewer.setPanorama(images[currentIndex]);
+            }
+        }
+
+        // Function to close the viewer
+        function closeViewer() {
+            document.getElementById('viewer-modal').style.display = 'none';
+        }
+
+        // Function to show the previous image
+        function showPreviousImage() {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = images.length - 1; // Loop to last image
+            }
+            viewer.setPanorama(images[currentIndex]);
+        }
+
+        // Function to show the next image
+        function showNextImage() {
+            if (currentIndex < images.length - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0; // Loop to first image
+            }
+            viewer.setPanorama(images[currentIndex]);
+        }
+
+        // Attach event listeners
+        document.querySelectorAll('.lightbox-trigger').forEach((item, index) => {
+            item.addEventListener('click', () => openViewer(index));
+        });
+
+        document.getElementById('close-viewer').addEventListener('click', closeViewer);
+        document.getElementById('prev-image').addEventListener('click', showPreviousImage);
+        document.getElementById('next-image').addEventListener('click', showNextImage);
+
+        // Close modal when clicking outside the viewer
+        document.getElementById('viewer-modal').addEventListener('click', (event) => {
+            if (event.target.id === 'viewer-modal') {
+                closeViewer();
+            }
+        });
+    </script>
+<!-- 360 image view  js end -->
+

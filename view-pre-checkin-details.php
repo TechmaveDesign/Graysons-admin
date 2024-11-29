@@ -25,7 +25,7 @@
                         <div class="d-flex align-items-center">
                             <div class="dropdown">
                                 <a class="contactapp-title link-dark" href="#" role="button">
-                                    <h1>Check In Details </h1>
+                                    <h1>Pre Check In Details </h1>
                                 </a>
 
                             </div>
@@ -136,7 +136,7 @@
                                                                     <span class="d-block fs-4 text-dark mb-1">
                                                                         Type</span>
                                                                     <span class="d-block text-capitalize "> <span
-                                                                            class="badge badge-soft-success  my-1  me-2">Check
+                                                                            class="badge badge-soft-success  my-1  me-2">Pre Check
                                                                             In</span></span>
                                                                 </div>
                                                             </div>

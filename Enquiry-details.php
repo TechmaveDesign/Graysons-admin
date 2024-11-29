@@ -127,16 +127,15 @@
                                                                             <input type="text" id="myID"
                                                                                 value="86cvr79t2"
                                                                                 class="idDataBtn enqID_copyInput"
-                                                                                readonly><button
-                                                                                id="success_notification"
-                                                                                class="copyidBtn_custom"><span>
-                                                                                    <iconify-icon
-                                                                                        icon="solar:copy-line-duotone">
-                                                                                    </iconify-icon>
-                                                                                </span></button>
+                                                                                readonly>
                                                                             <div id="alertPlaceholder">
                                                                             </div>
 
+                                                                        </div>
+                                                                        <div class="Copyidbutton_wrap">
+                                                                        <button
+                                                                                id="success_notification"
+                                                                                class="copyidBtn_custom">Copy ID</button>
                                                                         </div>
                                                                     </div>
 
@@ -1059,8 +1058,12 @@
                                                                 </div>
 
                                                                 <div class="pastHistoryand_actibities">
-                                                                    <ul
-                                                                        class="nav nav-justified nav-light nav-tabs custominner_tbEntTabs nav-segmented-tabs active-theme mt-4">
+                                                                    <div class="scrollTabContainerMAin enquirydetail_bottom_tabs">
+                                                                    <!-- <button class="scroll-btn prev" type="button">
+                                                    <iconify-icon icon="tabler:arrow-left"></iconify-icon>
+                                                </button> -->
+                                                <ul id="scrolableTabs"
+                                                                        class="nav nav-tabs nav-line nav-icon nav-light ">
                                                                         <li class="nav-item">
                                                                             <a class="nav-link active"
                                                                                 data-bs-toggle="tab"
@@ -1109,6 +1112,11 @@
                                                                             </a>
                                                                         </li>
                                                                     </ul>
+                                                                    <!-- <button class="scroll-btn next" type="button">
+                                                    <iconify-icon icon="tabler:arrow-right"></iconify-icon>
+                                                </button> -->
+                                                                    </div>
+                                                                    
                                                                     <div class="tab-content enquiryTabsContent">
                                                                         <div class="tab-pane fade show active"
                                                                             id="tab_checklist">
@@ -1229,7 +1237,8 @@
                                                                                     <div class="card-body">
 
                                                                                         <div
-                                                                                            class="media align-items-center">
+                                                                                            class="media align-items-center notehead_withTag">
+                                                                                            <div class="notesSendBy">
                                                                                             <div class="media-head">
                                                                                                 <div
                                                                                                     class="avatar avatar-xs avatar-rounded">
@@ -1245,6 +1254,10 @@
                                                                                                 <div class="NoteTiming">
                                                                                                     9 Apr, 20, 7:14 AM
                                                                                                 </div>
+                                                                                            </div>
+                                                                                            </div>
+                                                                                            <div class="NoteTag">
+                                                                                            <iconify-icon icon="solar:tag-line-duotone"></iconify-icon> Viewing Note
                                                                                             </div>
                                                                                         </div>
                                                                                         <p class="NoteDescription">@<a
@@ -1268,7 +1281,8 @@
                                                                                     <div class="card-body">
 
                                                                                         <div
-                                                                                            class="media align-items-center">
+                                                                                            class="media align-items-center notehead_withTag">
+                                                                                            <div class="notesSendBy">
                                                                                             <div class="media-head">
                                                                                                 <div
                                                                                                     class="avatar avatar-xs avatar-rounded">
@@ -1286,6 +1300,12 @@
                                                                                                     8 Apr, 20, 5:30 PM
                                                                                                 </div>
                                                                                             </div>
+                                                                                            </div>
+
+                                                                                            <div class="NoteTag">
+                                                                                            <iconify-icon icon="solar:tag-line-duotone"></iconify-icon> Viewing Note
+                                                                                            </div>
+                                                                                            
                                                                                         </div>
                                                                                         <p class="NoteDescription">@<a
                                                                                                 href="#"
@@ -1299,196 +1319,69 @@
                                                                                 <div class="separator separator-light">
                                                                                 </div>
 
-                                                                                <div class="AddNoteEnuSection"
-                                                                                    id="AddNote">
-                                                                                    <div class="form-group">
-                                                                                        <label class="form-label">Note
-                                                                                            header</label>
-                                                                                        <input class="form-control"
-                                                                                            type="text" name=""
-                                                                                            placeholder="Add Title">
-                                                                                    </div>
+                                                                                
 
-                                                                                    <div class="form-group">
-                                                                                        <label class="form-label">Add
-                                                                                            Note</label>
-                                                                                        <textarea class="form-control"
-                                                                                            rows="5"></textarea>
+                                                                                <div class="AddNoteEnuSection" id="AddNote1">
+        <div class="form-group">
+            <label class="form-label">Note header</label>
+            <input class="form-control note-title" type="text" placeholder="Add Title">
+        </div>
+    
+        <div class="form-group">
+            <label class="form-label">Add Comment</label>
+            <textarea class="form-control note-comment" rows="5"></textarea>
+        </div>
+        
+        <div class="NoteAction_container">
+            <div class="sendEnquiryNote_container">
+                <div class="addto_todolist">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input customCheckList-todo">
+                        <label class="form-check-label">Add to ToDo List <span class="done-strikethrough"></span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="sendEnquiryNote_container setAlert_container">
+                <div class="addto_todolist">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input setAlertInput">
+                        <label class="form-check-label">Set As Alert <span class="done-strikethrough"></span></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="Showing_departmentand_users" style="display: none;">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label">Select Department</label>
+                        <select class="form-control select2 select-department">
+                            <option disabled selected value="">Please Select...</option>
+                            <option value="Account Department">Account Department</option>
+                            <option value="HR Department">HR Department</option>
+                            <option value="Contract Department">Contract Department</option>
+                            <option value="Lettings Department">Lettings Department</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label">Select Users</label>
+                        <select class="form-control select2 select-user">
+                            <option disabled selected value="">Please Select...</option>
+                            <option value="John Doe">John Doe</option>
+                            <option value="Jane Smith">Jane Smith</option>
+                            <option value="Alice Johnson">Alice Johnson</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="submitnote_container">
+                                                                                    <button type="button" class="sendBtn_common_main addenun_noteBtn send-note">Send Note</button>
                                                                                     </div>
-                                                                                    <div class="NoteAction_container">
-                                                                                        <div
-                                                                                            class="sendEnquiryNote_container">
-                                                                                            <div class="addto_todolist">
-                                                                                                <div class="form-check">
-                                                                                                    <input
-                                                                                                        type="checkbox"
-                                                                                                        class="form-check-input"
-                                                                                                        id="customCheckList-todo">
-                                                                                                    <label
-                                                                                                        class="form-check-label"
-                                                                                                        for="customCheckList-todo">
-                                                                                                        Add to ToDo List
-                                                                                                        <span
-                                                                                                            class="done-strikethrough"></span>
-                                                                                                    </label>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div
-                                                                                            class="sendEnquiryNote_container setAlert_container">
-                                                                                            <div class="addto_todolist">
-                                                                                                <div class="form-check">
-                                                                                                    <input
-                                                                                                        type="checkbox"
-                                                                                                        class="form-check-input setAlertInput">
-                                                                                                    <label
-                                                                                                        class="form-check-label"
-                                                                                                        for="customCheckList-todo">
-                                                                                                        Set As Alert
-                                                                                                        <span
-                                                                                                            class="done-strikethrough"></span>
-                                                                                                    </label>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div
-                                                                                            class="form-group inpicon_without_label CsMl-10">
-                                                                                            <input
-                                                                                                class="form-control customdataPicker"
-                                                                                                type="text" name=""
-                                                                                                value=""
-                                                                                                placeholder="Due Date" />
-                                                                                            <iconify-icon
-                                                                                                icon="ion:calendar-outline"
-                                                                                                class="dateinput_icon">
-                                                                                            </iconify-icon>
-                                                                                        </div>
-                                                                                    </div>
-
-                                                                                    <div class="Showing_departmentand_users"
-                                                                                        style="display: none;">
-                                                                                        <div class="row">
-                                                                                            <div class="col-md-6">
-                                                                                                <div class="form-group">
-                                                                                                    <label
-                                                                                                        class="form-label">Select
-                                                                                                        Department</label>
-                                                                                                    <select
-                                                                                                        class="form-control select2"
-                                                                                                        id="selectDepartment">
-                                                                                                        <option disabled
-                                                                                                            selected
-                                                                                                            value="">
-                                                                                                            Please
-                                                                                                            Select...
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Account Department">
-                                                                                                            Account
-                                                                                                            Department
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="HR Department">
-                                                                                                            HR
-                                                                                                            Department
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Contract Department">
-                                                                                                            Contract
-                                                                                                            Department
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Lettings Department">
-                                                                                                            Lettings
-                                                                                                            Department
-                                                                                                        </option>
-                                                                                                    </select>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="col-md-6">
-                                                                                                <div class="form-group">
-                                                                                                    <label
-                                                                                                        class="form-label">Select
-                                                                                                        Users</label>
-                                                                                                    <select
-                                                                                                        class="form-control select2"
-                                                                                                        id="selectUser">
-                                                                                                        <option disabled
-                                                                                                            selected
-                                                                                                            value="">
-                                                                                                            Please
-                                                                                                            Select...
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="John Doe">
-                                                                                                            John Doe
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Jane Smith">
-                                                                                                            Jane Smith
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Alice Johnson">
-                                                                                                            Alice
-                                                                                                            Johnson
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Robert Brown">
-                                                                                                            Robert Brown
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Michael Williams">
-                                                                                                            Michael
-                                                                                                            Williams
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Emily Davis">
-                                                                                                            Emily Davis
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="David Wilson">
-                                                                                                            David Wilson
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Sophia Martinez">
-                                                                                                            Sophia
-                                                                                                            Martinez
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="James Anderson">
-                                                                                                            James
-                                                                                                            Anderson
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Olivia Taylor">
-                                                                                                            Olivia
-                                                                                                            Taylor
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Chris Thomas">
-                                                                                                            Chris Thomas
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Emma Harris">
-                                                                                                            Emma Harris
-                                                                                                        </option>
-                                                                                                    </select>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-
-                                                                                    <div class="submitnote_container">
-                                                                                        <button id="sendBtn2"
-                                                                                            type="button"
-                                                                                            class="sendBtn_common_main addenun_noteBtn">
-                                                                                            <iconify-icon
-                                                                                                icon="mynaui:send">
-                                                                                            </iconify-icon>
-                                                                                            Send Note
-                                                                                        </button>
-                                                                                    </div>
-                                                                                </div>
+    </div>
 
                                                                                 <!-- <div class="AssignTasks_container">
                                                                                     <h2>Add Task</h2>
@@ -3260,6 +3153,70 @@
 
                         </li>
 
+                        <li>
+                        <div class="AddNoteEnuSection" id="AddNote2">
+        <div class="form-group">
+            <label class="form-label">Note header</label>
+            <input class="form-control note-title" type="text" placeholder="Add Title">
+        </div>
+    
+        <div class="form-group">
+            <label class="form-label">Add Comment</label>
+            <textarea class="form-control note-comment" rows="5"></textarea>
+        </div>
+        
+        <div class="NoteAction_container">
+            <div class="sendEnquiryNote_container">
+                <div class="addto_todolist">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input customCheckList-todo">
+                        <label class="form-check-label">Add to ToDo List <span class="done-strikethrough"></span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="sendEnquiryNote_container setAlert_container">
+                <div class="addto_todolist">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input setAlertInput">
+                        <label class="form-check-label">Set As Alert <span class="done-strikethrough"></span></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="Showing_departmentand_users" style="display: none;">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label">Select Department</label>
+                        <select class="form-control select2 select-department">
+                            <option disabled selected value="">Please Select...</option>
+                            <option value="Account Department">Account Department</option>
+                            <option value="HR Department">HR Department</option>
+                            <option value="Contract Department">Contract Department</option>
+                            <option value="Lettings Department">Lettings Department</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label">Select Users</label>
+                        <select class="form-control select2 select-user">
+                            <option disabled selected value="">Please Select...</option>
+                            <option value="John Doe">John Doe</option>
+                            <option value="Jane Smith">Jane Smith</option>
+                            <option value="Alice Johnson">Alice Johnson</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Calendaraddnote_btnWrap">
+        <button type="button" class="sendBtn_common_main addenun_noteBtn send-note">Send Note</button>
+        </div>
+    </div>
+                        </li>
+
                     </ul>
                     <!-- Other details you want to display -->
                 </div>
@@ -4101,36 +4058,75 @@
   hide the assign selection option  start
   -------------------------------------------------------->
 
-<script>
-    $(document).ready(function() {
-        // Toggle the visibility of Showing_departmentand_users based on the checkbox
-        $('#customCheckList-todo').change(function() {
-            if ($(this).is(':checked')) {
-                $('.Showing_departmentand_users').slideDown(); // Show the section
-            } else {
-                $('.Showing_departmentand_users').slideUp(); // Hide the section
-            }
-        });
-        // Handle the Send Note button click
-        $('#sendBtn2').click(function() {
-            var selectedDepartment = $('#selectDepartment').val();
-            var selectedUser = $('#selectUser').val();
-            if (selectedDepartment && selectedUser) {
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Note Sent!',
-                    text: `Note sent to ${selectedDepartment} and ${selectedUser}.`
-                });
-            } else {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Missing Information',
-                    text: 'Please select both a department and a user.'
-                });
-            }
-        });
+  <script>
+        $(document).ready(function () {
+    // Toggle the visibility of Showing_departmentand_users based on the checkbox
+    $(document).on('change', '.customCheckList-todo', function () {
+        const container = $(this).closest('.AddNoteEnuSection');
+        if ($(this).is(':checked')) {
+            container.find('.Showing_departmentand_users').slideDown(); // Show the section
+        } else {
+            container.find('.Showing_departmentand_users').slideUp(); // Hide the section
+        }
     });
-</script>
+
+    // Handle the Send Note button click
+    $(document).on('click', '.send-note', function () {
+        const container = $(this).closest('.AddNoteEnuSection');
+        const selectedDepartment = container.find('.select-department').val();
+        const selectedUser = container.find('.select-user').val();
+        
+        if (selectedDepartment && selectedUser) {
+            Swal.fire({
+                icon: 'success',
+                title: 'Note Sent!',
+                text: `Note sent to ${selectedDepartment} and ${selectedUser}.`
+            });
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Missing Information',
+                text: 'Please select both a department and a user.'
+            });
+        }
+    });
+
+    // Handle Set Alert confirmation
+    $(document).on('change', '.setAlertInput', function () {
+        const checkbox = $(this);
+        if (checkbox.is(':checked')) {
+            Swal.fire({
+                html: `
+                    <div style="text-align: center;">
+                        <div class="swalalert_custom_icon">
+                            <iconify-icon icon="hugeicons:alert-01"></iconify-icon>
+                        </div>
+                        <h2 class="Swal_CustomTitle">Are You Sure You Want to Set This Note as an Alert?</h2>
+                    </div>`,
+                showCancelButton: true,
+                confirmButtonText: 'Yes, set it!',
+                cancelButtonText: 'No, cancel!',
+                reverseButtons: true,
+                customClass: {
+                    confirmButton: 'btn btn-success',
+                    cancelButton: 'btn btn-danger'
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire({
+                        title: 'Alert Set!',
+                        text: 'The note has been successfully set as an alert.',
+                        icon: 'success'
+                    });
+                } else if (result.isDismissed) {
+                    checkbox.prop('checked', false); // Uncheck the checkbox if the user cancels
+                }
+            });
+        }
+    });
+});
+
+    </script>
 
 <!-- --------------------------------------------------------- 
  assign note task to department from the left side under note js Functionality to 
@@ -4201,48 +4197,7 @@
 </script>
 <!-- end -->
 
-<!-- ****************************
-  Note set as alert confirmation popup js start
-****************************** -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const checkbox = document.querySelector('.setAlertInput');
-        checkbox.addEventListener('change', function() {
-            if (this.checked) {
-                Swal.fire({
-                    html: `
-                    <div style="text-align: center;">
-                        <div class="swalalert_custom_icon">
-                            <iconify-icon icon="hugeicons:alert-01"></iconify-icon>
-                        </div>
-                        <h2 class="Swal_CustomTitle">Are You Sure You Want to Set This Note as an Alert?</h2>
-                    </div>`,
-                    showCancelButton: true,
-                    confirmButtonText: 'Yes, set it!',
-                    cancelButtonText: 'No, cancel!',
-                    reverseButtons: true,
-                    customClass: {
-                        confirmButton: 'btn btn-success',
-                        cancelButton: 'btn btn-danger'
-                    }
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        Swal.fire({
-                            title: 'Alert Set!',
-                            text: 'The note has been successfully set as an alert.',
-                            icon: 'success'
-                        });
-                    } else if (result.isDismissed) {
-                        checkbox.checked = false; // Uncheck the checkbox if the user cancels
-                    }
-                });
-            }
-        });
-    });
-</script>
-<!-- ****************************
-  Note set as alert confirmation popup js end
-****************************** -->
+
 
 <!-- department calendar select 2 (dont remove this select2 function this is only for department filter) -->
 <script>
@@ -4290,3 +4245,20 @@
 
 
  </script>
+
+ <!-- tabs scroll js start-->
+<script>
+    $(document).ready(function() {
+        $('.next').click(function() {
+            $('.nav-tabs').animate({
+                scrollLeft: '+=100'
+            }, 300);
+        });
+        $('.prev').click(function() {
+            $('.nav-tabs').animate({
+                scrollLeft: '-=100'
+            }, 300);
+        });
+    });
+</script>
+<!-- tabs scroll js end-->

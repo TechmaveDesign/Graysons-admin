@@ -103,9 +103,9 @@
                             </div>
                         </div>
                         <div class="contact-options-wrap">
-                            <!-- <button id="toggleButton" type="button"
+                            <button id="toggleButton" type="button"
                                 class="btn  btn-flush-dark flush-soft-hover fIlterCmnButton"><span class="icon"><span
-                                        class="feather-icon"><i data-feather="list"></i></span></span>Filter</button> -->
+                                        class="feather-icon"><i data-feather="list"></i></span></span>Filter</button>
 
                             <button class="btn btn-sm addiconiButton commonAddnewButton btn-primary ms-3" type="button"
                                 data-bs-toggle="offcanvas" data-bs-target="#addissueModal"
@@ -218,86 +218,240 @@
                             </div>
                     <div class="contact-body">
                         <div class="nicescroll-bar">
-                            <div class="userFilters onerowfilter" id="filterDiv" style="display: none;">
+                            <div class="userFilters" id="filterDiv" style="display: none;">
                                 <div class="quick-access-form-wrap nopaddingleftright">
                                     <form class="quick-access-form border">
                                         <div class="row gx-3">
-                                            <div class="col-xxl-10">
-                                                <div class="position-relative">
+                                        <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label class="form-label">Department</label>
+                                        <select name="" id="" class="form-control select2">
+                                            <option disabled="" selected="" value="">Please Select...</option>
+                                            <option value="1">Maintenance</option>
+                                            <option value="2">Accounts</option>
+                                            <option value="3">General</option>
+                                            <option value="4">Complaints Ticket</option>
+                                        </select>
 
-                                                    <div class="col-lg-12">
-                                                        <div class="row gx-3">
-                                                            <div class="col-lg-3">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-label">Property</label>
+                                        <select name="" id="" class="form-control select2">
+                                            <option disabled="" selected="" value="">Please Select...</option>
+                                            <option value="1141">Communal Area Inspection House 10</option>
+                                            <option value="1147">Communal Area Inspection House 8</option>
+                                            <option value="1151">Bedroom A, Apartment Apartment 2, City View @ Stepney
+                                                Lane, Dulcie House, 11-13 Stepney Lane, Newcastle upon Tyne </option>
+
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-label">Area</label>
+                                        <select name="" id="" class="form-control select2">
+                                            <option disabled="" selected="" value="">Please Select...</option>
+                                            <option value="Bedroom">Bedroom</option>
+                                            <option value="Kitchen">Kitchen</option>
+                                            <option value="Bathroom">Bathroom</option>
+                                            <option value="Living Room">Living Room</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label class="form-label">Category</label>
+                                        <select name="" id="" class="form-control select2">
+                                            <option disabled="" selected="" value="">Please Select...</option>
+                                            <option value="1141">Bathroom</option>
+                                            <option value="1147">Bedroom</option>
+                                            <option value="1151">Dining Room</option>
+                                            <option value="1154">Kitchen</option>
+                                            <option value="1161">Living Room</option>
+                                            <option value="1165">Lighting</option>
+                                            <option value="1169">Flooring</option>
+                                            <option value="1170">Interior Walls</option>
+                                            <option value="1171">Alarms</option>
+                                            <option value="1175">Fire</option>
+                                            <option value="1176">Leak</option>
+                                            <option value="1177">Heating</option>
+                                            <option value="1178">Exterior</option>
+                                            <option value="1182">Roof</option>
+                                            <option value="1183">Windows</option>
+                                            <option value="1186">Doors</option>
+                                            <option value="1189">Utilities &amp; Services</option>
+                                            <option value="1194">Pests/Vermin</option>
+                                            <option value="1198">Shared/Communal Facilities</option>
+                                            <option value="1203">Other</option>
+                                            <option value="1210">Boiler</option>
+                                            <option value="1242">Fire Extinguisher</option>
+                                            <option value="1244">Heatworx</option>
+                                            <option value="1248">ILS (Ian Smith)</option>
+                                            <option value="1255">Kevin (Electrician)</option>
+                                            <option value="1267">Garry (Electrician)</option>
+                                            <option value="1273">UK Lifts</option>
+                                            <option value="1274">MacDonald Martin</option>
+                                            <option value="1279">GEMS (Peter Goldwater)</option>
+                                            <option value="1282">TLJ</option>
+                                            <option value="1283">Kwik Flow</option>
+                                            <option value="1290">Rafal Jeske</option>
+                                            <option value="1295">Emergency Call Out</option>
+                                            <option value="1296">Ashbrooke Audio Visual</option>
+                                            <option value="1298">Computers/Printers</option>
+                                            <option value="1299">Lights</option>
+                                            <option value="1300">Routine Cleaning</option>
+                                            <option value="1302">Property Inspection</option>
+                                            <option value="1303">Portable Heaters</option>
+                                            <option value="1307">Hot Water</option>
+                                            <option value="1308">Service Report Recommendations</option>
+                                            <option value="1309">Routine Fire Alarm Testing</option>
+                                            <option value="1310">Routine Emergency Light Testing</option>
+                                            <option value="1311">Legionella Test</option>
+                                            <option value="1312">Fire Extinguinsher Check</option>
+                                            <option value="1315">CG Plumbing and Heating</option>
+                                            <option value="1316">Check Out Appointment</option>
+                                            <option value="1317">Check-In Appointment</option>
+                                            <option value="1318">Furniture Renewal</option>
+                                            <option value="1319">Tenant Lock Out</option>
+                                            <option value="1320">Air BND</option>
+                                            <option value="1321">Viewing</option>
+                                            <option value="1322">Welcome Letter</option>
+                                            <option value="1323">Expansion Vessel Inspection</option>
+                                            <option value="1324">Late Payment Charge</option>
+                                            <option value="1325">Rent</option>
+                                            <option value="1326">General Enquiries</option>
+                                            <option value="1327">Cancellation of Tenancy Contract</option>
+                                            <option value="1328">Marketing</option>
+                                            <option value="1329">Emergency Call Out</option>
+                                            <option value="1330">Student Exemption Certificates</option>
+                                            <option value="1331">New Tenant</option>
+                                            <option value="1332">Dental</option>
+                                            <option value="1333">Council Tax</option>
+                                            <option value="1338">Corridors</option>
+                                            <option value="1339">PCC Room</option>
+                                            <option value="1350">Office Time </option>
+                                            <option value="1351">Staff Holidays </option>
+                                            <option value="1352">Laundry Credit Cards</option>
+                                            <option value="1353">Unable to Clean</option>
+                                            <option value="1354">Tenancy Renewal</option>
+                                            <option value="1356">Monthly Washing Machine Clean</option>
+                                            <option value="1357">Order Cleaning Products</option>
+                                            <option value="1359">Require Vacuum</option>
+                                            <option value="1360">Post Tenancy Key Return</option>
+                                            <option value="1361">Self Isolation</option>
+                                            <option value="1365">Presentation Room Leazes Terraces Reservation</option>
+                                            <option value="1371">PAT Testing</option>
+                                            <option value="1373">Overtime Claim Back</option>
+                                            <option value="1374">Sick Leave</option>
+                                            <option value="1375">Guest Overnight Stay</option>
+                                            <option value="1376">Green Push Button</option>
+                                            <option value="1379">End of Term Departure</option>
+                                            <option value="1380">Emergency On Call</option>
+                                            <option value="1381">Lock Laundry room between 10-12PM</option>
+                                            <option value="1382">Jopling House Communal Rooms</option>
+                                            <option value="1412">Mental Wellbeing &amp; Counselling</option>
+                                            <option value="1415">Order Building Materials</option>
+                                            <option value="1416">Cleaning Stock List</option>
+                                            <option value="1417">Laundry Coins</option>
+
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label class="form-label">Sub Category</label>
+                                        <select name="" id="" class="form-control select2">
+                                            <option disabled="" selected="" value="">Please Select...</option>
+                                            <option value="1141">Bathroom</option>
+                                            <option value="1147">Bedroom</option>
+                                            <option value="1151">Dining Room</option>
+                                            <option value="1154">Kitchen</option>
+                                            <option value="1161">Living Room</option>
+                                            <option value="1165">Lighting</option>
+                                            <option value="1169">Flooring</option>
+
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-label">Ticket Category</label>
+                                        <select name="" id="" class="form-control select2">
+                                            <option disabled="" selected="" value="">Please Select...</option>
+                                            <option value="General Enquiry Ticket">General Enquiry Ticket</option>
+                                            <option value="Maintenance Ticket">Maintenance Ticket</option>
+
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label class="form-label">User Type</label>
+                                        <select name="" id="" class="form-control select2">
+                                            <option disabled="" selected="" value="">Please Select...</option>
+                                            <option value="Landlord">Landlord</option>
+                                            <option value="Tenant">Tenant</option>
+                                            <option value="Staff">Staff</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label class="form-label">User Name</label>
+                                        <select name="" id="" class="form-control select2">
+                                            <option disabled="" selected="" value="">Please Select...</option>
+                                            <option value="1">Danial Craig</option>
+        <option value="2">Emily Blunt</option>
+        <option value="3">John Doe</option>
+        <option value="4">Sophia Turner</option>
+        <option value="5">Michael Jordan</option>
+        <option value="6">Olivia Smith</option>
+
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-label">Status</label>
+                                        <select name="" id="" class="form-control select2">
+                                            <option disabled="" selected="" value="">Please Select...</option>
+                                            <option value="Emergency">Emergency</option>
+        <option value="Pending">Pending</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Overdue">Overdue</option>
+        <option value="Pending">Pending</option>
+
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                
+
+                                <div class="col-md-2">
+
                                                                 <div class="form-group">
-                                                                    <label class="form-label">Type</label>
-                                                                    <select name="" id="" class="form-control select2">
-                                                                        <option value="" selected disable readonly>
-                                                                            Select an Option</option>
-                                                                        <option value="1">Private</option>
-                                                                        <option value="2">Student</option>
-                                                                        <option value="4">Commercial</option>
-                                                                        <option value="5">Dental</option>
-                                                                    </select>
-
-                                                                </div>
-
-                                                            </div>
-
-                                                            <div class="col-lg-3">
-                                                                <div class="form-group">
-                                                                    <label class="form-label">Start After / Start Before
-                                                                        Date</label>
-                                                                    <input class="form-control" type="text"
-                                                                        name="daterange" value="Pick a Date" />
+                                                                    <label class="form-label">Expected Finish Date</label>
+                                                                    <input class="form-control customdataPicker flatpickr-input" type="text" name="" value="01/06/2024" readonly="readonly">
+                                                                    <iconify-icon icon="ion:calendar-outline" class="dateinput_icon"></iconify-icon>
                                                                 </div>
                                                             </div>
-
-                                                            <div class="col-lg-3">
-                                                                <div class="form-group">
-                                                                    <label class="form-label">End After / End Before
-                                                                        Date</label>
-                                                                    <input class="form-control" type="text"
-                                                                        name="daterange" value="Pick a Date" />
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-lg-3">
-                                                                <div class="form-group">
-                                                                    <label class="form-label">Debt Status</label>
-                                                                    <select name="" id="" class="form-control select2">
-                                                                        <option value="" selected disable readonly>
-                                                                            Select an Option</option>
-                                                                        <option value="None">None</option>
-                                                                        <option value="30DayLetter">30 Day Notice
-                                                                        </option>
-                                                                        <option value="DebtCollector">Debt Collector
-                                                                        </option>
-                                                                        <option value="CountyCourtJudgement">CCJ
-                                                                        </option>
-
-                                                                    </select>
-
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xxl-2">
-                                                <div class="row justify-content-end">
-
-                                                    <div class="col-auto">
-                                                        <div class="form-group">
-                                                            <label class="form-label">&nbsp;</label>
-                                                            <button type="button"
-                                                                class="btn btn-block btn-primary ">Filter
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
                                         </div>
                                     </form>
                                 </div>
@@ -2691,22 +2845,13 @@
                 <div class="add-users-modal-body-table-header text-headline-6">Add New Ticket</div>
                 <div class="formstartcontainer">
                     <div class="row">
-                        <div class="col-lg-12">
-                            <div class="row">
-
-                                <!-- <div class="col-md-4">
+                    <div class="col-md-12">
                                     <div class="form-group">
-                                        <label class="form-label">Visible to Tenants</label>
-                                        <select name="" id="" class="form-control select2">
-                                            <option disabled="" selected="" value="">Please Select...</option>
-                                            <option value="1">None</option>
-                                            <option value="2">Room Tenant</option>
-                                            <option value="3">Unit Tenants</option>
-
-                                        </select>
-
+                                        <label class="form-label">Ticket Title</label>
+                                        <input type="text" class="form-control" id="Title">
                                     </div>
-                                </div> -->
+
+                                </div>
 
                                 <div class="col-md-3">
                                     <div class="form-group">
@@ -2731,6 +2876,20 @@
                                             <option value="1151">Bedroom A, Apartment Apartment 2, City View @ Stepney
                                                 Lane, Dulcie House, 11-13 Stepney Lane, Newcastle upon Tyne </option>
 
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-label">Ares</label>
+                                        <select name="" id="" class="form-control select2">
+                                            <option disabled="" selected="" value="">Please Select...</option>
+                                            <option value="Bedroom">Bedroom</option>
+                                            <option value="Kitchen">Kitchen</option>
+                                            <option value="Bathroom">Bathroom</option>
+                                            <option value="Living Room">Living Room</option>
                                         </select>
 
                                     </div>
@@ -2855,12 +3014,70 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-12">
+                                <div class="col-md-3">
                                     <div class="form-group">
-                                        <label class="form-label">Ticket Title</label>
-                                        <input type="text" class="form-control" id="Title">
-                                    </div>
+                                        <label class="form-label">Ticket Category</label>
+                                        <select name="" id="" class="form-control select2">
+                                            <option disabled="" selected="" value="">Please Select...</option>
+                                            <option value="General Enquiry Ticket">General Enquiry Ticket</option>
+                                            <option value="Maintenance Ticket">Maintenance Ticket</option>
 
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-label">User Type</label>
+                                        <select name="" id="" class="form-control select2">
+                                            <option disabled="" selected="" value="">Please Select...</option>
+                                            <option value="Landlord">Landlord</option>
+                                            <option value="Tenant">Tenant</option>
+                                            <option value="Staff">Staff</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-label">User Name</label>
+                                        <select name="" id="" class="form-control select2">
+                                            <option disabled="" selected="" value="">Please Select...</option>
+                                            <option value="1">Danial Craig</option>
+        <option value="2">Emily Blunt</option>
+        <option value="3">John Doe</option>
+        <option value="4">Sophia Turner</option>
+        <option value="5">Michael Jordan</option>
+        <option value="6">Olivia Smith</option>
+
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-label">Status</label>
+                                        <select name="" id="" class="form-control select2">
+                                            <option disabled="" selected="" value="">Please Select...</option>
+                                            <option value="Emergency">Emergency</option>
+        <option value="Pending">Pending</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Overdue">Overdue</option>
+        <option value="Pending">Pending</option>
+
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-label">Expected Finish Date</label>
+                                        <input class="form-control customdataPicker flatpickr-input" type="text" name="" placeholder="Select Date" readonly="readonly">
+                                    </div>
                                 </div>
 
                                 <div class="col-lg-12">
@@ -2901,9 +3118,6 @@
 
                                     </div>
                                 </div>
-
-                            </div>
-                        </div>
 
                     </div>
                 </div>

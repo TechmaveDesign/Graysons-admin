@@ -25,12 +25,12 @@
                         <div class="d-flex align-items-center">
                             <div class="dropdown">
                                 <a class="contactapp-title link-dark" href="##" role="button">
-                                    <h1>Tenancy </h1>
+                                    <h1>Parking Tenancy Details </h1>
                                 </a>
 
                             </div>
                             <div class=" ms-3">
-                                <a href="landlord-Income Summary.php"
+                                <a href="view-user-details.php"
                                     class="btn btn-sm cmnbackbtn btn-outline-secondary "><iconify-icon icon="line-md:list-3" ></iconify-icon> Back</a>
 
                             </div>
@@ -60,9 +60,9 @@
                         <div class=" sustomdividerLedtArrow"></div>
                     </header>
 
-                    <form action="tenancy.php" method="post">
+                    <form action="parking-tenency-details.php" method="post">
                         <div class="contact-body">
-                            <div class="fullwidthDesktopTabs MobileScrollShow">
+                            <div class="fullwidthDesktopTabs MobileScrollShow" id="nopaddingTop">
                                 <button class="scroll-btn prev" type="button">
                                     <iconify-icon icon="tabler:arrow-left"></iconify-icon>
                                 </button>
@@ -130,186 +130,146 @@
 
                                                     <div class="card-body">
                                                         <div class="row">
-                                                            <div class="col-md-3">
+                                                        <div class="row">
 
-                                                                <div class="form-group">
-                                                                    <label class="form-label">Tenant</label>
-                                                                    <a href="view-user-details.php">
-                                                                        <input type="text" class="form-control" id=""
-                                                                            value="Morgan Freeman" readonly=""> </a>
-                                                                </div>
+<div class="col-md-3">
 
-                                                            </div>
+    <div class="form-group">
+        <label class="form-label"> Date of Agreemant</label>
+        <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+            value="01/06/2024" readonly="readonly">
+        <iconify-icon icon="ion:calendar-outline" class="dateinput_icon"></iconify-icon>
+    </div>
+</div>
 
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label for="" class="form-label">Address</label>
-                                                                    <div class="input-group">
-                                                                        <input type="text"
-                                                                            class="form-control refuge-collection-input"
-                                                                            value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House, 1-7 Union Street, Sunderland">
-                                                                        <button
-                                                                            class="btn btn-outline-secondary view-btn inputadonButton"
-                                                                            type="button" data-bs-toggle="tooltip"
-                                                                            data-bs-placement="top"
-                                                                            title="Click to view">
-                                                                            <i class="bi bi-eye"></i>
-                                                                        </button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label for="" class="form-label">Type</label>
-                                                                    <input type="text" class="form-control" id=""
-                                                                        value="Student" readonly disabled>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label for="" class="form-label">Start Date</label>
-                                                                    <input type="text"
-                                                                        class="form-control customdataPicker flatpickr-input"
-                                                                        value="May, 22 2024 " readonly="readonly">
-                                                                </div>
-                                                            </div>
+<div class="col-md-3">
+    <div class="form-group">
+        <label class="form-label">User Name</label>
+        <input type="text" class="form-control" id="Title" value="Dean Shaw" readonly
+            disabled>
+    </div>
 
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label for="" class="form-label">Check-In
-                                                                        Date</label>
-                                                                    <input type="text"
-                                                                        class="form-control customdataPicker flatpickr-input"
-                                                                        value="May, 22 2024 " readonly="readonly">
-                                                                </div>
-                                                            </div>
+</div>
+<div class="col-md-3">
+    <div class="form-group">
+        <label class="form-label">Property Address</label>
+        <select name="" id="" class="form-control select2">
+            <option disabled="" selected="" value="">Please Select...</option>
+            <option value="1">Communal Area Inspection House 14</option>
+            <option value="15" selected>Communal Area Inspection House 16</option>
+            <option value="19">Communal Area Inspection House 22</option>
 
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label for="" class="form-label">Check-Out
-                                                                        Date</label>
-                                                                    <input type="text"
-                                                                        class="form-control customdataPicker flatpickr-input"
-                                                                        value="May, 22 2024 " readonly="readonly">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label for="" class="form-label">End Date</label>
-                                                                    <input type="text"
-                                                                        class="form-control customdataPicker flatpickr-input"
-                                                                        value="May, 22 2024 " readonly="readonly">
-                                                                </div>
-                                                            </div>
+        </select>
 
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label for="" class="form-label">Keys Issued</label>
-                                                                    <input type="text" class="form-control" id=""
-                                                                        value="0">
-                                                                </div>
-                                                            </div>
+    </div>
+</div>
 
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label for="" class="form-label"> Parking Permit
-                                                                        Status</label>
-                                                                    <select name="" id="" class="form-control select2">
-                                                                        <option value="" disable readonly selected>
-                                                                            Salect an Option</option>
-                                                                        <option value="1">Not Requested</option>
-                                                                        <option value="2">Requested</option>
-                                                                        <option value="3">Awaiting Payment</option>
-                                                                        <option value="4">Paid</option>
-                                                                        <option value="5">Revoked</option>
-                                                                        <option value="6">Expired</option>
-                                                                        <option value="7">Payment added to rent</option>
-                                                                    </select>
-                                                                </div>
+<div class="col-md-3">
+    <div class="form-group">
+        <label class="form-label">Type</label>
+        <select name="" id="" class="form-control select2">
+            <option disabled="" selected="" value="">Please Select...</option>
+            <option value="1">Private</option>
+            <option value="2">Student</option>
+            <option value="4">Commercial</option>
+            <option value="5">Dental</option>
 
-                                                            </div>
+        </select>
 
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label for="" class="form-label">Parking
-                                                                        Permit</label>
-                                                                    <input type="text" class="form-control" id=""
-                                                                        value="">
-                                                                </div>
-                                                            </div>
+    </div>
+</div>
 
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label for="" class="form-label"> Council Tax
-                                                                        Type</label>
-                                                                    <select name="" id="" class="form-control select2">
-                                                                        <option value="" disable readonly selected>
-                                                                            Salect an Option</option>
-                                                                        <option value="1">Full Time Student</option>
-                                                                        <option value="2">Part Time Student </option>
-                                                                        <option value="3">Professional</option>
-                                                                        <option value="4">Universal Credits</option>
-                                                                    </select>
-                                                                </div>
+<div class="col-md-3">
+    <div class="form-group">
+        <label class="form-label">Car Number</label>
+        <input type="text" class="form-control" id="Title" value="">
+    </div>
 
-                                                            </div>
+</div>
 
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label for="" class="form-label"> Council Tax
-                                                                        Status</label>
-                                                                    <select name="" id="" class="form-control select2">
-                                                                        <option value="" disable readonly selected>
-                                                                            Salect an Option</option>
-                                                                        <option value="1">Tenant Responsible</option>
-                                                                        <option value="2">Requested Exemption</option>
-                                                                        <option value="3">Exemption Certificate Recieved
-                                                                        </option>
-                                                                        <option value="4">Exemption Provided to Council
-                                                                        </option>
-                                                                        <option value="5">Included in Rent</option>
-                                                                    </select>
-                                                                </div>
+<div class="col-md-3">
+    <div class="form-group">
+        <label class="form-label">Licence Number</label>
+        <input type="text" class="form-control" id="Title" value="">
+    </div>
 
-                                                            </div>
+</div>
 
-                                                            <!-- <div class="col-lg-12">
-                                                                <div class="form-group sectionStatus">
-                                                                    <label for="" class="form-label">Section 21 :
-                                                                    </label>
-                                                                    <div class="SectionStatus"><span
-                                                                            class="badge badge-soft-danger my-1  me-2">Not
-                                                                            Sent</span></div>
+<div class="col-md-3">
 
-                                                                </div>
-                                                            </div> -->
+    <div class="form-group">
+        <label class="form-label">Licence Date</label>
+        <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+            value="01/06/2024" readonly="readonly">
+        <iconify-icon icon="ion:calendar-outline" class="dateinput_icon"></iconify-icon>
+    </div>
+</div>
 
-                                                            <!-- <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label for="" class="form-label">30 Day Letter
-                                                                        Sent</label>
-                                                                    <input type="text" class="form-control" id=""
-                                                                        value="">
-                                                                </div>
-                                                            </div>
+<div class="col-md-3">
+    <div class="form-group">
+        <label class="form-label">Rental Amount</label>
+        <input type="text" class="form-control" id="Title" value="">
+    </div>
 
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label for="" class="form-label">Referred to Debt
-                                                                        Collector</label>
-                                                                    <input type="text" class="form-control" id=""
-                                                                        value="">
-                                                                </div>
-                                                            </div>
+</div>
 
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label for="" class="form-label">County Court
-                                                                        Judgement</label>
-                                                                    <input type="text" class="form-control" id=""
-                                                                        value="">
-                                                                </div>
-                                                            </div> -->
+<div class="col-md-3">
+    <div class="form-group">
+        <label class="form-label">Installments</label>
+        <select name="" id="" class="form-control select2">
+            <option disabled="" selected="" value="">Please Select...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="4">3</option>
+            <option value="4">4</option>
+
+        </select>
+
+    </div>
+</div>
+
+<div class="col-md-3">
+
+    <div class="form-group">
+        <label class="form-label">Date of Inatallments</label>
+        <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+            value="01/06/2024" readonly="readonly">
+        <iconify-icon icon="ion:calendar-outline" class="dateinput_icon"></iconify-icon>
+    </div>
+</div>
+
+<div class="col-md-3">
+    <div class="form-group">
+        <label class="form-label">Bay Number</label>
+        <input type="text" class="form-control" id="Title" value="">
+    </div>
+
+</div>
+
+
+
+<div class="col-md-3">
+
+    <div class="form-group">
+        <label class="form-label">Tenancy Start Date</label>
+        <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+            value="01/06/2024" readonly="readonly">
+        <iconify-icon icon="ion:calendar-outline" class="dateinput_icon"></iconify-icon>
+    </div>
+</div>
+
+<div class="col-md-3">
+
+    <div class="form-group">
+        <label class="form-label">Tenancy End Date</label>
+        <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+            value="01/06/2024" readonly="readonly">
+        <iconify-icon icon="ion:calendar-outline" class="dateinput_icon"></iconify-icon>
+    </div>
+</div>
+
+
+</div>
 
                                                         </div>
                                                     </div>
@@ -800,177 +760,71 @@
                                                 <div class="card">
                                                     <div class="card-body">
 
-                                                    <div class="AddNoteEnuSection" id="AddNote">
-                                                                            <div class="form-group">
-                                                                                <label class="form-label">Note
-                                                                                    header</label>
-                                                                                <input class="form-control" type="text"
-                                                                                    name="" placeholder="Add Title">
-                                                                            </div>
+                                                    <div class="AddNoteEnuSection" id="AddNote1">
+    <div class="form-group">
+        <label class="form-label">Note header</label>
+        <input class="form-control note-title" type="text" placeholder="Add Title">
+    </div>
 
-                                                                            <div class="form-group">
-                                                                                <label class="form-label">Add
-                                                                                    Comment</label>
-                                                                                <textarea class="form-control"
-                                                                                    rows="5"></textarea>
-                                                                            </div>
-                                                                            <div class="NoteAction_container">
-                                                                                <div class="sendEnquiryNote_container">
-                                                                                    <div class="addto_todolist">
-                                                                                        <div class="form-check">
-                                                                                            <input type="checkbox"
-                                                                                                class="form-check-input"
-                                                                                                id="customCheckList-todo">
-                                                                                            <label
-                                                                                                class="form-check-label"
-                                                                                                for="customCheckList-todo">
-                                                                                                Add to ToDo List
-                                                                                                <span
-                                                                                                    class="done-strikethrough"></span>
-                                                                                            </label>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div
-                                                                                    class="sendEnquiryNote_container setAlert_container">
-                                                                                    <div class="addto_todolist">
-                                                                                        <div class="form-check">
-                                                                                            <input type="checkbox"
-                                                                                                class="form-check-input setAlertInput">
-                                                                                            <label
-                                                                                                class="form-check-label"
-                                                                                                for="customCheckList-todo">
-                                                                                                Set As Alert
-                                                                                                <span
-                                                                                                    class="done-strikethrough"></span>
-                                                                                            </label>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
+    <div class="form-group">
+        <label class="form-label">Add Comment</label>
+        <textarea class="form-control note-comment" rows="5"></textarea>
+    </div>
+    
+    <div class="NoteAction_container">
+        <div class="sendEnquiryNote_container">
+            <div class="addto_todolist">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input customCheckList-todo">
+                    <label class="form-check-label">Add to ToDo List <span class="done-strikethrough"></span></label>
+                </div>
+            </div>
+        </div>
+        <div class="sendEnquiryNote_container setAlert_container">
+            <div class="addto_todolist">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input setAlertInput">
+                    <label class="form-check-label">Set As Alert <span class="done-strikethrough"></span></label>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                                                                            </div>
+    <div class="Showing_departmentand_users" style="display: none;">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="form-label">Select Department</label>
+                    <select class="form-control select2 select-department">
+                        <option disabled selected value="">Please Select...</option>
+                        <option value="Account Department">Account Department</option>
+                        <option value="HR Department">HR Department</option>
+                        <option value="Contract Department">Contract Department</option>
+                        <option value="Lettings Department">Lettings Department</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="form-label">Select Users</label>
+                    <select class="form-control select2 select-user">
+                        <option disabled selected value="">Please Select...</option>
+                        <option value="John Doe">John Doe</option>
+                        <option value="Jane Smith">Jane Smith</option>
+                        <option value="Alice Johnson">Alice Johnson</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
 
-                                                                            <div class="Showing_departmentand_users"
-                                                                                style="display: none;">
-                                                                                <div class="row">
-                                                                                    <div class="col-md-6">
-                                                                                        <div class="form-group">
-                                                                                            <label
-                                                                                                class="form-label">Select
-                                                                                                Department</label>
-                                                                                            <select
-                                                                                                class="form-control select2"
-                                                                                                id="selectDepartment">
-                                                                                                <option disabled
-                                                                                                    selected value="">
-                                                                                                    Please
-                                                                                                    Select...
-                                                                                                </option>
-                                                                                                <option
-                                                                                                    value="Account Department">
-                                                                                                    Account
-                                                                                                    Department
-                                                                                                </option>
-                                                                                                <option
-                                                                                                    value="HR Department">
-                                                                                                    HR
-                                                                                                    Department
-                                                                                                </option>
-                                                                                                <option
-                                                                                                    value="Contract Department">
-                                                                                                    Contract
-                                                                                                    Department
-                                                                                                </option>
-                                                                                                <option
-                                                                                                    value="Lettings Department">
-                                                                                                    Lettings
-                                                                                                    Department
-                                                                                                </option>
-                                                                                            </select>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-md-6">
-                                                                                        <div class="form-group">
-                                                                                            <label
-                                                                                                class="form-label">Select
-                                                                                                Users</label>
-                                                                                            <select
-                                                                                                class="form-control select2"
-                                                                                                id="selectUser">
-                                                                                                <option disabled
-                                                                                                    selected value="">
-                                                                                                    Please
-                                                                                                    Select...
-                                                                                                </option>
-                                                                                                <option
-                                                                                                    value="John Doe">
-                                                                                                    John Doe
-                                                                                                </option>
-                                                                                                <option
-                                                                                                    value="Jane Smith">
-                                                                                                    Jane Smith
-                                                                                                </option>
-                                                                                                <option
-                                                                                                    value="Alice Johnson">
-                                                                                                    Alice
-                                                                                                    Johnson
-                                                                                                </option>
-                                                                                                <option
-                                                                                                    value="Robert Brown">
-                                                                                                    Robert Brown
-                                                                                                </option>
-                                                                                                <option
-                                                                                                    value="Michael Williams">
-                                                                                                    Michael
-                                                                                                    Williams
-                                                                                                </option>
-                                                                                                <option
-                                                                                                    value="Emily Davis">
-                                                                                                    Emily Davis
-                                                                                                </option>
-                                                                                                <option
-                                                                                                    value="David Wilson">
-                                                                                                    David Wilson
-                                                                                                </option>
-                                                                                                <option
-                                                                                                    value="Sophia Martinez">
-                                                                                                    Sophia
-                                                                                                    Martinez
-                                                                                                </option>
-                                                                                                <option
-                                                                                                    value="James Anderson">
-                                                                                                    James
-                                                                                                    Anderson
-                                                                                                </option>
-                                                                                                <option
-                                                                                                    value="Olivia Taylor">
-                                                                                                    Olivia
-                                                                                                    Taylor
-                                                                                                </option>
-                                                                                                <option
-                                                                                                    value="Chris Thomas">
-                                                                                                    Chris Thomas
-                                                                                                </option>
-                                                                                                <option
-                                                                                                    value="Emma Harris">
-                                                                                                    Emma Harris
-                                                                                                </option>
-                                                                                            </select>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="savechangesformContainer">
-                                                <button type="submit" class="buttonInfOUpdate">
-                                                    <iconify-icon icon="fluent:save-32-regular">
-                                                    </iconify-icon>
-                                                    Save Changes
-                                                </button>
+                                            <button type="button" class="sendBtn_common_main addenun_noteBtn send-note">Send Note</button>
                                             </div>
                                         </div>
 
@@ -1208,129 +1062,77 @@
 <!-- end -->
 
 
-<!-- add not functionality js start -->
- <!-- --------------------------------------------------------- 
- assign note task to department from the left side under note js Functionality to 
-  hide the assign selection option  start
-  -------------------------------------------------------->
 
-  <script>
-        $(document).ready(function() {
-            // Toggle the visibility of Showing_departmentand_users based on the checkbox
-            $('#customCheckList-todo').change(function() {
-                if ($(this).is(':checked')) {
-                    $('.Showing_departmentand_users').slideDown(); // Show the section
-                } else {
-                    $('.Showing_departmentand_users').slideUp(); // Hide the section
-                }
+<!-- add notes js start -->
+<script>
+    $(document).ready(function () {
+    // Toggle the visibility of Showing_departmentand_users based on the checkbox
+    $(document).on('change', '.customCheckList-todo', function () {
+        const container = $(this).closest('.AddNoteEnuSection');
+        if ($(this).is(':checked')) {
+            container.find('.Showing_departmentand_users').slideDown(); // Show the section
+        } else {
+            container.find('.Showing_departmentand_users').slideUp(); // Hide the section
+        }
+    });
+
+    // Handle the Send Note button click
+    $(document).on('click', '.send-note', function () {
+        const container = $(this).closest('.AddNoteEnuSection');
+        const selectedDepartment = container.find('.select-department').val();
+        const selectedUser = container.find('.select-user').val();
+        
+        if (selectedDepartment && selectedUser) {
+            Swal.fire({
+                icon: 'success',
+                title: 'Note Sent!',
+                text: `Note sent to ${selectedDepartment} and ${selectedUser}.`
             });
-            // Handle the Send Note button click
-            $('#sendBtn2').click(function() {
-                var selectedDepartment = $('#selectDepartment').val();
-                var selectedUser = $('#selectUser').val();
-                if (selectedDepartment && selectedUser) {
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Note Sent!',
-                        text: `Note sent to ${selectedDepartment} and ${selectedUser}.`
-                    });
-                } else {
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Missing Information',
-                        text: 'Please select both a department and a user.'
-                    });
-                }
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Missing Information',
+                text: 'Please select both a department and a user.'
             });
-        });
-    </script>
+        }
+    });
 
-
-
-    <!-- ****************************
-  Note set as alert confirmation popup js start
-****************************** -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const checkbox = document.querySelector('.setAlertInput');
-            checkbox.addEventListener('change', function() {
-                if (this.checked) {
-                    Swal.fire({
-                        html: `
+    // Handle Set Alert confirmation
+    $(document).on('change', '.setAlertInput', function () {
+        const checkbox = $(this);
+        if (checkbox.is(':checked')) {
+            Swal.fire({
+                html: `
                     <div style="text-align: center;">
                         <div class="swalalert_custom_icon">
                             <iconify-icon icon="hugeicons:alert-01"></iconify-icon>
                         </div>
                         <h2 class="Swal_CustomTitle">Are You Sure You Want to Set This Note as an Alert?</h2>
                     </div>`,
-                        showCancelButton: true,
-                        confirmButtonText: 'Yes, set it!',
-                        cancelButtonText: 'No, cancel!',
-                        reverseButtons: true,
-                        customClass: {
-                            confirmButton: 'btn btn-success',
-                            cancelButton: 'btn btn-danger'
-                        }
-                    }).then((result) => {
-                        if (result.isConfirmed) {
-                            Swal.fire({
-                                title: 'Alert Set!',
-                                text: 'The note has been successfully set as an alert.',
-                                icon: 'success'
-                            });
-                        } else if (result.isDismissed) {
-                            checkbox.checked =
-                            false; // Uncheck the checkbox if the user cancels
-                        }
-                    });
-                }
-            });
-        });
-    </script>
-    <!-- ****************************
-  Note set as alert confirmation popup js end
-****************************** -->
-
-    <!-- validation alert for the assign task to other staff -->
-    <script>
-        // Function to check if department and user are selected
-        function checkSelections() {
-            const department = $('#department_select').val(); // Get value from select2
-            const user = $('#DepartmentUser_select').val(); // Get value from select2
-            const assignButton = document.querySelector('.AssignButton');
-            // Enable the button if both department and user are selected
-            if (department && user) {
-                assignButton.disabled = false;
-            } else {
-                assignButton.disabled = true;
-            }
-        }
-        // Listen for changes in the Select2 fields
-        $('#department_select').on('change', checkSelections);
-        $('#DepartmentUser_select').on('change', checkSelections);
-        // Handle the click event for the Assign button
-        document.querySelector('.AssignButton').addEventListener('click', function() {
-            const selectedUser = $('#DepartmentUser_select').find('option:selected')
-        .text(); // Get selected user text
-            Swal.fire({
-                title: 'Are you sure?',
-                text: `Do you want to assign this task to ${selectedUser}?`,
-                icon: 'warning',
                 showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Yes, assign it!'
+                confirmButtonText: 'Yes, set it!',
+                cancelButtonText: 'No, cancel!',
+                reverseButtons: true,
+                customClass: {
+                    confirmButton: 'btn btn-success',
+                    cancelButton: 'btn btn-danger'
+                }
             }).then((result) => {
                 if (result.isConfirmed) {
-                    Swal.fire(
-                        'Assigned!',
-                        `Task has been assigned to ${selectedUser}.`,
-                        'success'
-                    );
+                    Swal.fire({
+                        title: 'Alert Set!',
+                        text: 'The note has been successfully set as an alert.',
+                        icon: 'success'
+                    });
+                } else if (result.isDismissed) {
+                    checkbox.prop('checked', false); // Uncheck the checkbox if the user cancels
                 }
             });
-        });
-    </script>
-    <!-- validation alert for the assign task to other staff end-->
+        }
+    });
+});
+</script>
+<!-- add notes functionality end -->
 
-    <!--add notes functionality end -->
+
+   

@@ -1174,7 +1174,7 @@
 
 																<li class="nav-item">
 																	<a class="nav-link sidecolor_inventory"
-																		href="inspection.php">
+																		href="parking_tenancies.php">
 																		<span class="nav-icon-wrap">
 																			<span class="svg-icon">
 																				<svg xmlns="http://www.w3.org/2000/svg"
@@ -1194,7 +1194,7 @@
 																				</svg>
 																			</span>
 																		</span>
-																		<span class="nav-link-text">Inventory</span>
+																		<span class="nav-link-text">Parking Tenancies</span>
 																	</a>
 																	<i
 																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
@@ -1227,8 +1227,7 @@
 																				</iconify-icon>
 																			</span>
 																		</span>
-																		<span class="nav-link-text">Check In - Check
-																			Out</span>
+																		<span class="nav-link-text">Inspections</span>
 																	</a>
 																	<i
 																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>

@@ -75,6 +75,7 @@
 
                                                     <div class="col-lg-12">
                                                         <div class="row gx-3">
+                                                           
 
                                                             <div class="col-lg-2">
                                                                 <div class="form-group">
@@ -131,6 +132,8 @@
 
                                                                 </div>
                                                             </div>
+
+                                                            
 
                                                             <div class="col-lg-2">
                                                                 <div class="form-group">
@@ -338,159 +341,135 @@
                                     <thead>
                                         <tr>
 
-                                            <th>Property </th>
-                                            <th>Floor</th>
-                                            <th>Room Type</th>
-                                            <th>Size</th>
-                                            <th>Apartment Comment</th>
-                                            <th>Bedroom Comment</th>
-                                            <th>Current Tenancy end Date</th>
-                                            <th>Tenancy Start Date</th>
-                                            <th>Contract Length in weeks</th>
-                                            <th>Weekly Rental Price </th>
-                                            <th>Council Tax Price ( If applicable )</th>
-                                            <th>Utility Weekly Price</th>
-                                            <th>Total Weekly Price</th>
-                                            <th>Min Deposit</th>
-                                            <th>Mid Deposit</th>
-                                            <th>Max Deposit</th>
-                                            <th>Tenant Name</th>
-                                            <th>Surname</th>
-                                            <th> Tenant Nationality</th>
-                                            <th>Tenant Status</th>
-                                            <th>New Tenant or Renewal</th>
-                                            <th>Date applied</th>
-                                            <th>Payment Term</th>
-                                            <th>Contract status</th>
-                                            <th>Reference Check Status</th>
-                                            <th>Landlord Billed</th>
-                                            <th>Parking</th>
-                                            <th>Rental Total</th>
-                                            <th>Utilities Total</th>
-                                            <th>Council Tax Total</th>
-                                            <th>Total Income</th>
-                                            <th>Action</th>
+                                            <th>Address </th>
+                                            <th>Area</th>
+                                            <th>Unit Type</th>
+                                            <th>Unit Name</th>
+                                            <th>Available Rooms</th>
+                                            <th>Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <a href="property-details.php">
-                                                    <div class="LongMesage_container">
-                                                        <input class="refuge-collection-input tableLongMessage_Input"
-                                                            value="Sunset Boulevard, Los Angeles, California"></input>
-                                                        <button class="view-btn tablemessageview_btn" type="button"
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            aria-label="Click to view"
-                                                            data-bs-original-title="Click to view Full Message">
-                                                            <i class="bi bi-eye"></i> Read More
-                                                        </button>
-                                                    </div>
-                                                </a>
+                                                1 Harvest Close
                                             </td>
-                                            <td>3</td>
-                                            <td>2-Bedroom Apartment</td>
-                                            <td>1200 sqft</td>
-                                            <td>Spacious and well-lit</td>
-                                            <td>Master bedroom with en-suite</td>
-                                            <td>2024-12-31</td>
-                                            <td>2024-01-01</td>
-                                            <td>52</td>
-                                            <td>£500</td>
-                                            <td>£30</td>
-                                            <td>£50</td>
-                                            <td>£580</td>
-                                            <td>£1,500</td>
-                                            <td>£2,000</td>
-                                            <td>£2,500</td>
-                                            <td>John</td>
-                                            <td>Doe</td>
-                                            <td>American</td>
-                                            <td>Employed</td>
-                                            <td>New Tenant</td>
-                                            <td>2023-11-29</td>
-                                            <td>Monthly</td>
-                                            <td>Active</td>
-                                            <td>Completed</td>
-                                            <td>Yes</td>
-                                            <td>Available</td>
-                                            <td>£26,000</td>
-                                            <td>£2,600</td>
-                                            <td>£1,560</td>
-                                            <td>£30,160</td>
+                                            <td>Sunderland</td>
+                                            <td>Flat 1</td>
+                                            <td>11</td>
+                                            <td>4/4</td>
                                             <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
+
                                                         <a href="property-details.php"
                                                             class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                             data-bs-toggle="tooltip" data-placement="top" title=""
-                                                            data-bs-original-title="View Property Details">
-                                                            <span class="icon">
-                                                                <span class="feather-icon"><i
-                                                                        data-feather="eye"></i></span>
-                                                            </span>
-                                                        </a>
+                                                            data-bs-original-title="View Property Details"><span
+                                                                class="icon"><span class="feather-icon"><i
+                                                                        data-feather="eye"></i></span></span></a>
+
                                                     </div>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                                <a href="property-details.php">
-                                                    <div class="LongMesage_container">
-                                                        <input class="refuge-collection-input tableLongMessage_Input"
-                                                            value="Sunset Boulevard, Los Angeles, California"></input>
-                                                        <button class="view-btn tablemessageview_btn" type="button"
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            aria-label="Click to view"
-                                                            data-bs-original-title="Click to view Full Message">
-                                                            <i class="bi bi-eye"></i> Read More
-                                                        </button>
-                                                    </div>
-                                                </a>
-                                            </td>
-                                            <td>3</td>
-                                            <td>2-Bedroom Apartment</td>
-                                            <td>1200 sqft</td>
-                                            <td>Spacious and well-lit</td>
-                                            <td>Master bedroom with en-suite</td>
-                                            <td>2024-12-31</td>
-                                            <td>2024-01-01</td>
-                                            <td>52</td>
-                                            <td>£500</td>
-                                            <td>£30</td>
-                                            <td>£50</td>
-                                            <td>£580</td>
-                                            <td>£1,500</td>
-                                            <td>£2,000</td>
-                                            <td>£2,500</td>
-                                            <td>John</td>
-                                            <td>Doe</td>
-                                            <td>American</td>
-                                            <td>Employed</td>
-                                            <td>New Tenant</td>
-                                            <td>2023-11-29</td>
-                                            <td>Monthly</td>
-                                            <td>Active</td>
-                                            <td>Completed</td>
-                                            <td>Yes</td>
-                                            <td>Available</td>
-                                            <td>£26,000</td>
-                                            <td>£2,600</td>
-                                            <td>£1,560</td>
-                                            <td>£30,160</td>
+                                            <td>23 Rosewood Avenue</td>
+                                            <td>Bristol</td>
+                                            <td>Apartment 3B</td>
+                                            <td>8</td>
+                                            <td>2/2</td>
                                             <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
+
                                                         <a href="property-details.php"
                                                             class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                             data-bs-toggle="tooltip" data-placement="top" title=""
-                                                            data-bs-original-title="View Property Details">
-                                                            <span class="icon">
-                                                                <span class="feather-icon"><i
-                                                                        data-feather="eye"></i></span>
-                                                            </span>
-                                                        </a>
+                                                            data-bs-original-title="View Property Details"><span
+                                                                class="icon"><span class="feather-icon"><i
+                                                                        data-feather="eye"></i></span></span></a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>17 Maple Street</td>
+                                            <td>Manchester</td>
+                                            <td>Flat 2A</td>
+                                            <td>5</td>
+                                            <td>3/3</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+
+                                                        <a href="property-details.php"
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                            data-bs-toggle="tooltip" data-placement="top" title=""
+                                                            data-bs-original-title="View Property Details"><span
+                                                                class="icon"><span class="feather-icon"><i
+                                                                        data-feather="eye"></i></span></span></a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>42 Elm Street</td>
+                                            <td>Leeds</td>
+                                            <td>House 5C</td>
+                                            <td>12</td>
+                                            <td>2/2</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+
+                                                        <a href="property-details.php"
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                            data-bs-toggle="tooltip" data-placement="top" title=""
+                                                            data-bs-original-title="View Property Details"><span
+                                                                class="icon"><span class="feather-icon"><i
+                                                                        data-feather="eye"></i></span></span></a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>9 Oak Lane</td>
+                                            <td>Liverpool</td>
+                                            <td>Flat 5D</td>
+                                            <td>9</td>
+                                            <td>4/4</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+
+                                                        <a href="property-details.php"
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                            data-bs-toggle="tooltip" data-placement="top" title=""
+                                                            data-bs-original-title="View Property Details"><span
+                                                                class="icon"><span class="feather-icon"><i
+                                                                        data-feather="eye"></i></span></span></a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>31 Willow Crescent</td>
+                                            <td>Newcastle</td>
+                                            <td>Apartment 2C</td>
+                                            <td>7</td>
+                                            <td>3/3</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+
+                                                        <a href="property-details.php"
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                            data-bs-toggle="tooltip" data-placement="top" title=""
+                                                            data-bs-original-title="View Property Details"><span
+                                                                class="icon"><span class="feather-icon"><i
+                                                                        data-feather="eye"></i></span></span></a>
                                                     </div>
                                                 </div>
                                             </td>
@@ -498,8 +477,6 @@
 
                                     </tbody>
                                 </table>
-                                
-
                             </div>
                         </div>
                     </div>
@@ -570,71 +547,3 @@
         console.log("Maximum Bedrooms:", maxBedrooms);
     }
 </script>
-
-
-
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Select all toggle buttons
-            const toggleButtons = document.querySelectorAll(".btn-toggle");
-
-            // Attach event listeners to each button
-            toggleButtons.forEach(function (button) {
-                button.addEventListener("click", function () {
-                    // Toggle active state
-                    button.classList.toggle("active");
-
-                    // Find the corresponding content row
-                    const contentRow = button.closest("tr").nextElementSibling;
-
-                    if (contentRow && contentRow.classList.contains("tr-content-body")) {
-                        // Toggle row visibility
-                        const isHidden = contentRow.style.display === "none" || contentRow.style.display === "";
-                        contentRow.style.display = isHidden ? "table-row" : "none";
-
-                        // Update button icon
-                        const icon = button.querySelector("i");
-                        if (isHidden) {
-                            icon.classList.remove("bi-chevron-down");
-                            icon.classList.add("bi-chevron-up");
-                        } else {
-                            icon.classList.remove("bi-chevron-up");
-                            icon.classList.add("bi-chevron-down");
-                        }
-                    }
-                });
-            });
-        });
-    </script>
-
-<style>
-        .expanded-content {
-            padding: 10px;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        .tr-content-body {
-            display: none;
-        }
-
-        .tr-content-body td {
-            background-color: #f8f8f8;
-        }
-
-        .btn-toggle {
-            background: none;
-            border: none;
-            outline: none;
-            cursor: pointer;
-        }
-
-        .btn-toggle i {
-            transition: transform 0.3s ease;
-        }
-
-        .btn-toggle.active i {
-            transform: rotate(180deg);
-        }
-    </style>

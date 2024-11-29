@@ -15,59 +15,17 @@
 </style>
 
 <div class="container-xxl">
-  
 
     <!-- Page Body -->
     <div class="hk-pg-body py-0">
         <div class="contactapp-wrap">
 
-        <!-- <nav class="contactapp-sidebar">
-						<div data-simplebar class="nicescroll-bar">
-							<div class="menu-content-wrap">
-								
-								<div class="menu-group">
-                                   
-                                <div class="MenuTypeTitle">
-                                    <h2>Users Menu</h2>
-                                </div>
-
-                                <ul class="nav flex-column">
-											
-											<li class="nav-item active">
-												<a class="nav-link" href="users.php"><span class="nav-link-text">View
-														Users</span></a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="inactive_users.php"><span class="nav-link-text">Inactive
-														Users</span></a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="landlords.php"><span
-														class="nav-link-text">Landlords</span></a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="landlord-Income Summary.php"><span class="nav-link-text">Landlord
-														Income Summary</span></a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="unverified_emails.php"><span class="nav-link-text">Unverified
-														Emails</span></a>
-											</li>
-
-										</ul>
-								</div>
-								
-							</div>
-						</div>
-						
-					</nav> -->
-
             <div class="contactapp-content">
                 <div class="contactapp-detail-wrap">
-                    
+
                     <!-- sub menu header -->
-                <?php include('headers/user-header.php') ?>
-                      <!-- sub menu header -->
+                    <?php include('headers/user-header.php') ?>
+                    <!-- sub menu header -->
 
                     <header class="contact-header">
                         <div class="d-flex align-items-center">
@@ -78,9 +36,10 @@
 
                             </div>
                             <div class=" ms-3">
-                               
-                                    <a href="index.php"
-                                    class="btn btn-sm cmnbackbtn btn-outline-secondary "><iconify-icon icon="line-md:list-3" ></iconify-icon> Back</a>
+
+                                <a href="index.php" class="btn btn-sm cmnbackbtn btn-outline-secondary ">
+                                    <iconify-icon icon="line-md:list-3"></iconify-icon> Back
+                                </a>
                             </div>
                         </div>
                         <div class="contact-options-wrap">
@@ -94,24 +53,9 @@
                                 data-bs-original-title="Refresh"><span class="icon"><span class="feather-icon"><i
                                             data-feather="refresh-cw"></i></span></span></a>
                             <div class="v-separator d-lg-block d-none"></div>
-                            <!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover dropdown-toggle no-caret  d-lg-inline-block d-none  ms-sm-0"
-                                href="#" data-bs-toggle="dropdown"><span class="icon" data-bs-toggle="tooltip"
-                                    data-placement="top" title="" data-bs-original-title="Manage Contact"><span
-                                        class="feather-icon"><i data-feather="settings"></i></span></span></a> -->
                             <div class="dropdown-menu dropdown-menu-end">
                                 <a class="dropdown-item" href="#">Import</a>
                             </div>
-                            <!-- <a href="#" class="btn btn-icon btn-rounded btn-primary"><span class="icon"><span
-                                        class="feather-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
-                                            <line x1="12" y1="5" x2="12" y2="19"></line>
-                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        </svg>
-                                    </span>
-                                </span>
-                            </a> -->
                             <button class="btn btn-sm commonAddnewButton btn-primary ms-3" data-bs-toggle="offcanvas"
                                 data-bs-target="#offcanvasBottom" aria-controls="offcanvasExample"><span><span
                                         class="icon"><span class="feather-icon"><svg xmlns="http://www.w3.org/2000/svg"
@@ -134,6 +78,65 @@
                         </div>
                         <div class="sustomdividerLedtArrow"></div>
                     </header>
+
+                    <!-- users type tabs -->
+                    <div class="fullwidthDesktopTabs MobileScrollShow" id="nopaddingTop">
+                        <button class="scroll-btn prev" type="button">
+                            <iconify-icon icon="tabler:arrow-left"></iconify-icon>
+                        </button>
+
+                        <ul class="nav nav-tabs nav-line nav-icon fullwidthCustom_tabsUL nav-light">
+
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#AllusersList">
+                                    <div class="d-flex align-items-center">
+                                        <span class="nav-link-text">All Users</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#StaffUsers">
+                                    <div class="d-flex align-items-center">
+                                        <span class="nav-link-text">Staff Users</span>
+
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#Tenentsusers">
+                                    <div class="d-flex align-items-center">
+                                        <span class="nav-link-text">Tenents</span>
+
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#Lendlordsusers">
+                                    <div class="d-flex align-items-center">
+                                        <span class="nav-link-text">Lendlords</span>
+
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#VendorsUsers">
+                                    <div class="d-flex align-items-center">
+                                        <span class="nav-link-text">Vendors</span>
+
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <button class="scroll-btn next" type="button">
+                            <iconify-icon icon="tabler:arrow-right"></iconify-icon>
+                        </button>
+
+                    </div>
+
                     <div class="contact-body">
                         <div class="nicescroll-bar">
                             <div class="userFilters onerowfilter" id="filterDiv" style="display: none;">
@@ -210,7 +213,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                   
+
                                                 </div>
 
                                             </div>
@@ -218,356 +221,1538 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="contact-list-view">
 
-                                <table class="table common-datatable nowrap w-100 ">
-                                    <thead>
-                                        <tr>
+                            <!-- add new content here start -->
+                            <div class="post-list propertyTabContent">
 
-                                            <th>Name</th>
-                                            <th>Email Address</th>
-                                            <th>Contact Number</th>
-                                            <th>Roles</th>
-                                            <th>Date Created</th>
-                                            <th>Status</th>
-                                            <th>Actions</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active" id="AllusersList">
+                                        <div class="fullwidthTabInner_content_container">
+                                            <div class="contact-list-view">
 
-                                            <td>
-                                                <a href="view-user-details.php">
-                                                <div class="media align-items-center">
-                                                    <div class="media-head me-2">
-                                                        <div class="avatar avatar-xs avatar-rounded">
-                                                            <img src="dist/img/newimages/users/userdummy.png" alt="user"
-                                                                class="avatar-img">
-                                                        </div>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <span class="d-block text-high-em">Morgan Freeman</span>
-                                                    </div>
+                                                <table class="table common-datatable nowrap w-100 ">
+                                                    <thead>
+                                                        <tr>
+
+                                                            <th>Name</th>
+                                                            <th>Email Address</th>
+                                                            <th>Contact Number</th>
+                                                            <th>Roles</th>
+                                                            <th>Date Created</th>
+                                                            <th>Status</th>
+                                                            <th>Actions</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div
+                                                                                class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Morgan
+                                                                                Freeman</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td class="">morgan@jampack.com</td>
+                                                            <td>+145 52 5689</td>
+
+                                                            <td>Landlords</td>
+                                                            <td>13 Jan, 2020</td>
+
+                                                            <td><span
+                                                                    class="badge badge-soft-success  my-1  me-2">Active</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+
+                                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-placement="top" title=""
+                                                                            data-bs-original-title="View User Details"
+                                                                            href="view-user-details.php"><span
+                                                                                class="icon"><span
+                                                                                    class="feather-icon"><i
+                                                                                        data-feather="eye"></i></span></span></a>
+
+                                                                        <button
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                class="icon"><span
+                                                                                    class="feather-icon"><i
+                                                                                        data-feather="trash"></i></span></span></button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div
+                                                                                class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Huma
+                                                                                Therman</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td class="">huma@clariesup.au</td>
+                                                            <td>+234 48 2365</td>
+
+                                                            <td>Landlords</td>
+                                                            <td>13 Jan, 2020</td>
+                                                            <td><span
+                                                                    class="badge badge-soft-success  my-1  me-2">Active</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+
+                                                                        <!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+data-bs-toggle="offcanvas" data-bs-target="#edituserCanvas"
+aria-controls="offcanvasExample" href="##"><span
+class="icon"><span class="feather-icon"><i
+    data-feather="edit"></i></span></span></a> -->
+                                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-placement="top" title=""
+                                                                            data-bs-original-title="View User Details"
+                                                                            href="view-user-details.php"><span
+                                                                                class="icon"><span
+                                                                                    class="feather-icon"><i
+                                                                                        data-feather="eye"></i></span></span></a>
+                                                                        <button
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                class="icon"><span
+                                                                                    class="feather-icon"><i
+                                                                                        data-feather="trash"></i></span></span></button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div
+                                                                                class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Charlie
+                                                                                Chaplin</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td class="">charlie@leernoca.monster</td>
+                                                            <td>+741 56 7896</td>
+
+                                                            <td>Tenant</td>
+                                                            <td>13 Jan, 2019</td>
+                                                            <td><span
+                                                                    class="badge badge-soft-success  my-1  me-2">Active</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+
+                                                                        <!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+data-bs-toggle="offcanvas" data-bs-target="#edituserCanvas"
+aria-controls="offcanvasExample" href="##"><span
+class="icon"><span class="feather-icon"><i
+    data-feather="edit"></i></span></span></a> -->
+
+                                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-placement="top" title=""
+                                                                            data-bs-original-title="View User Details"
+                                                                            href="view-user-details.php"><span
+                                                                                class="icon"><span
+                                                                                    class="feather-icon"><i
+                                                                                        data-feather="eye"></i></span></span></a>
+
+                                                                        <button
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                class="icon"><span
+                                                                                    class="feather-icon"><i
+                                                                                        data-feather="trash"></i></span></span></button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div
+                                                                                class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Winston
+                                                                                Churchil</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td class="">winston@worthniza.ga</td>
+                                                            <td>+145 52 5463</td>
+                                                            <td>Internal User</td>
+                                                            <td>13 Jan, 2020</td>
+                                                            <td><span
+                                                                    class="badge badge-soft-success  my-1  me-2">Active</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+
+                                                                        <!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+data-bs-toggle="offcanvas" data-bs-target="#edituserCanvas"
+aria-controls="offcanvasExample" href="##"><span
+class="icon"><span class="feather-icon"><i
+    data-feather="edit"></i></span></span></a> -->
+
+                                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-placement="top" title=""
+                                                                            data-bs-original-title="View User Details"
+                                                                            href="view-user-details.php"><span
+                                                                                class="icon"><span
+                                                                                    class="feather-icon"><i
+                                                                                        data-feather="eye"></i></span></span></a>
+
+                                                                        <button
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                class="icon"><span
+                                                                                    class="feather-icon"><i
+                                                                                        data-feather="trash"></i></span></span></button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div
+                                                                                class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Tom
+                                                                                Cruz</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td class="">tomcz@jampack.com</td>
+                                                            <td>+145 52 5463</td>
+                                                            <td>Staff Users</td>
+                                                            <td>13 Jan, 2020</td>
+                                                            <td><span
+                                                                    class="badge badge-soft-danger   my-1  me-2">Inactive</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+
+                                                                        <!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+data-bs-toggle="offcanvas" data-bs-target="#edituserCanvas"
+aria-controls="offcanvasExample" href="##"><span
+class="icon"><span class="feather-icon"><i
+    data-feather="edit"></i></span></span></a> -->
+
+                                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-placement="top" title=""
+                                                                            data-bs-original-title="View User Details"
+                                                                            href="view-user-details.php"><span
+                                                                                class="icon"><span
+                                                                                    class="feather-icon"><i
+                                                                                        data-feather="eye"></i></span></span></a>
+
+                                                                        <button
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                class="icon"><span
+                                                                                    class="feather-icon"><i
+                                                                                        data-feather="trash"></i></span></span></button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div
+                                                                                class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Dean
+                                                                                Shaw</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td class="">dean-shaw@poww.me</td>
+                                                            <td>+145 52 5463</td>
+                                                            <td>Landlord</td>
+                                                            <td>13 Jan, 2020</td>
+                                                            <td><span
+                                                                    class="badge badge-soft-success  my-1  me-2">Active</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+
+                                                                        <!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+data-bs-toggle="offcanvas" data-bs-target="#edituserCanvas"
+aria-controls="offcanvasExample" href="##"><span
+class="icon"><span class="feather-icon"><i
+    data-feather="edit"></i></span></span></a> -->
+
+                                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-placement="top" title=""
+                                                                            data-bs-original-title="View User Details"
+                                                                            href="view-user-details.php"><span
+                                                                                class="icon"><span
+                                                                                    class="feather-icon"><i
+                                                                                        data-feather="eye"></i></span></span></a>
+
+                                                                        <button
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"
+                                                                            id="del-button"><span class="icon"><span
+                                                                                    class="feather-icon"><i
+                                                                                        data-feather="trash"></i></span></span></button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <td>
+                                                                <a href="view-user-details.php">
+                                                                    <div class="media align-items-center">
+                                                                        <div class="media-head me-2">
+                                                                            <div
+                                                                                class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <span class="d-block text-high-em">Danial
+                                                                                Craig</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </td>
+                                                            <td class="">danialc@jampack.com</td>
+                                                            <td>+145 52 5463</td>
+                                                            <td>Internal User</td>
+                                                            <td>13 Jan, 2020</td>
+                                                            <td><span
+                                                                    class="badge badge-soft-danger   my-1  me-2">Inactive</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center ActionDropdown">
+                                                                    <div class="d-flex">
+
+                                                                        <!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+href="##" data-bs-toggle="offcanvas"
+data-bs-target="#edituserCanvas"
+aria-controls="offcanvasExample"><span class="icon"><span
+class="feather-icon"><i
+    data-feather="edit"></i></span></span></a> -->
+
+                                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-placement="top" title=""
+                                                                            data-bs-original-title="View User Details"
+                                                                            href="view-user-details.php"><span
+                                                                                class="icon"><span
+                                                                                    class="feather-icon"><i
+                                                                                        data-feather="eye"></i></span></span></a>
+
+                                                                        <button
+                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button "><span
+                                                                                class="icon"><span
+                                                                                    class="feather-icon"><i
+                                                                                        data-feather="trash"></i></span></span></button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="StaffUsers">
+                                            <div class="fullwidthTabInner_content_container">
+                                                <div class="contact-list-view">
+
+                                                    <table class="table common-datatable nowrap w-100 ">
+                                                        <thead>
+                                                            <tr>
+
+                                                                <th>Name</th>
+                                                                <th>Email Address</th>
+                                                                <th>Contact Number</th>
+                                                                <th>Roles</th>
+                                                                <th>Date Created</th>
+                                                                <th>Status</th>
+                                                                <th>Actions</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div
+                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span
+                                                                                    class="d-block text-high-em">Morgan
+                                                                                    Freeman</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="">morgan@jampack.com</td>
+                                                                <td>+145 52 5689</td>
+
+                                                                <td>Staff</td>
+                                                                <td>13 Jan, 2020</td>
+
+                                                                <td><span
+                                                                        class="badge badge-soft-success  my-1  me-2">Active</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div
+                                                                        class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+
+                                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                data-bs-original-title="View User Details"
+                                                                                href="view-user-details.php"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="eye"></i></span></span></a>
+
+                                                                            <button
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="trash"></i></span></span></button>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div
+                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span class="d-block text-high-em">Huma
+                                                                                    Therman</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="">huma@clariesup.au</td>
+                                                                <td>+234 48 2365</td>
+
+                                                                <td>Staff</td>
+                                                                <td>13 Jan, 2020</td>
+                                                                <td><span
+                                                                        class="badge badge-soft-success  my-1  me-2">Active</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div
+                                                                        class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                data-bs-original-title="View User Details"
+                                                                                href="view-user-details.php"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="eye"></i></span></span></a>
+                                                                            <button
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="trash"></i></span></span></button>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div
+                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span
+                                                                                    class="d-block text-high-em">Charlie
+                                                                                    Chaplin</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="">charlie@leernoca.monster</td>
+                                                                <td>+741 56 7896</td>
+
+                                                                <td>Staff</td>
+                                                                <td>13 Jan, 2019</td>
+                                                                <td><span
+                                                                        class="badge badge-soft-success  my-1  me-2">Active</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div
+                                                                        class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                data-bs-original-title="View User Details"
+                                                                                href="view-user-details.php"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="eye"></i></span></span></a>
+
+                                                                            <button
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="trash"></i></span></span></button>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div
+                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span
+                                                                                    class="d-block text-high-em">Winston
+                                                                                    Churchil</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="">winston@worthniza.ga</td>
+                                                                <td>+145 52 5463</td>
+                                                                <td>Staff</td>
+                                                                <td>13 Jan, 2020</td>
+                                                                <td><span
+                                                                        class="badge badge-soft-success  my-1  me-2">Active</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div
+                                                                        class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                data-bs-original-title="View User Details"
+                                                                                href="view-user-details.php"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="eye"></i></span></span></a>
+
+                                                                            <button
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="trash"></i></span></span></button>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div
+                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span class="d-block text-high-em">Tom
+                                                                                    Cruz</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="">tomcz@jampack.com</td>
+                                                                <td>+145 52 5463</td>
+                                                                <td>Staff</td>
+                                                                <td>13 Jan, 2020</td>
+                                                                <td><span
+                                                                        class="badge badge-soft-danger   my-1  me-2">Inactive</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div
+                                                                        class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                data-bs-original-title="View User Details"
+                                                                                href="view-user-details.php"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="eye"></i></span></span></a>
+
+                                                                            <button
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="trash"></i></span></span></button>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
                                                 </div>
-                                                </a>
-                                            </td>
-                                            <td class="">morgan@jampack.com</td>
-                                            <td>+145 52 5689</td>
+                                            </div>
 
-                                            <td>Landlords</td>
-                                            <td>13 Jan, 2020</td>
+                                        </div>
 
-                                            <td><span class="badge badge-soft-success  my-1  me-2">Active</span></td>
-                                            <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
+                                        <div class="tab-pane fade" id="Tenentsusers">
+                                        <div class="fullwidthTabInner_content_container">
+                                                <div class="contact-list-view">
 
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                            data-bs-toggle="tooltip" data-placement="top" title=""
-                                                            data-bs-original-title="View User Details" href="view-user-details.php"><span
-                                                                class="icon"><span class="feather-icon"><i
-                                                                        data-feather="eye"></i></span></span></a>
+                                                    <table class="table common-datatable nowrap w-100 ">
+                                                        <thead>
+                                                            <tr>
 
-                                                        <button
-                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
-                                                                class="icon"><span class="feather-icon"><i
-                                                                        data-feather="trash"></i></span></span></button>
-                                                    </div>
-                                                   
+                                                                <th>Name</th>
+                                                                <th>Email Address</th>
+                                                                <th>Contact Number</th>
+                                                                <th>Roles</th>
+                                                                <th>Date Created</th>
+                                                                <th>Status</th>
+                                                                <th>Actions</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div
+                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span
+                                                                                    class="d-block text-high-em">Morgan
+                                                                                    Freeman</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="">morgan@jampack.com</td>
+                                                                <td>+145 52 5689</td>
+
+                                                                <td>Tenant</td>
+                                                                <td>13 Jan, 2020</td>
+
+                                                                <td><span
+                                                                        class="badge badge-soft-success  my-1  me-2">Active</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div
+                                                                        class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+
+                                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                data-bs-original-title="View User Details"
+                                                                                href="view-user-details.php"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="eye"></i></span></span></a>
+
+                                                                            <button
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="trash"></i></span></span></button>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div
+                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span class="d-block text-high-em">Huma
+                                                                                    Therman</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="">huma@clariesup.au</td>
+                                                                <td>+234 48 2365</td>
+
+                                                                <td>Tenant</td>
+                                                                <td>13 Jan, 2020</td>
+                                                                <td><span
+                                                                        class="badge badge-soft-success  my-1  me-2">Active</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div
+                                                                        class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                data-bs-original-title="View User Details"
+                                                                                href="view-user-details.php"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="eye"></i></span></span></a>
+                                                                            <button
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="trash"></i></span></span></button>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div
+                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span
+                                                                                    class="d-block text-high-em">Charlie
+                                                                                    Chaplin</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="">charlie@leernoca.monster</td>
+                                                                <td>+741 56 7896</td>
+
+                                                                <td>Tenant</td>
+                                                                <td>13 Jan, 2019</td>
+                                                                <td><span
+                                                                        class="badge badge-soft-success  my-1  me-2">Active</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div
+                                                                        class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                data-bs-original-title="View User Details"
+                                                                                href="view-user-details.php"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="eye"></i></span></span></a>
+
+                                                                            <button
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="trash"></i></span></span></button>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div
+                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span
+                                                                                    class="d-block text-high-em">Winston
+                                                                                    Churchil</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="">winston@worthniza.ga</td>
+                                                                <td>+145 52 5463</td>
+                                                                <td>Tenant</td>
+                                                                <td>13 Jan, 2020</td>
+                                                                <td><span
+                                                                        class="badge badge-soft-success  my-1  me-2">Active</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div
+                                                                        class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                data-bs-original-title="View User Details"
+                                                                                href="view-user-details.php"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="eye"></i></span></span></a>
+
+                                                                            <button
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="trash"></i></span></span></button>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div
+                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span class="d-block text-high-em">Tom
+                                                                                    Cruz</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="">tomcz@jampack.com</td>
+                                                                <td>+145 52 5463</td>
+                                                                <td>Tenant</td>
+                                                                <td>13 Jan, 2020</td>
+                                                                <td><span
+                                                                        class="badge badge-soft-danger   my-1  me-2">Inactive</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div
+                                                                        class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                data-bs-original-title="View User Details"
+                                                                                href="view-user-details.php"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="eye"></i></span></span></a>
+
+                                                                            <button
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="trash"></i></span></span></button>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
                                                 </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
+                                            </div>
+                                        </div>
 
-                                            <td>
-                                            <a href="view-user-details.php">
-                                                <div class="media align-items-center">
-                                                    <div class="media-head me-2">
-                                                        <div class="avatar avatar-xs avatar-rounded">
-                                                            <img src="dist/img/newimages/users/userdummy.png" alt="user"
-                                                                class="avatar-img">
-                                                        </div>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <span class="d-block text-high-em">Huma Therman</span>
-                                                    </div>
+                                        <div class="tab-pane fade" id="Lendlordsusers">
+                                        <div class="fullwidthTabInner_content_container">
+                                                <div class="contact-list-view">
+
+                                                    <table class="table common-datatable nowrap w-100 ">
+                                                        <thead>
+                                                            <tr>
+
+                                                                <th>Name</th>
+                                                                <th>Email Address</th>
+                                                                <th>Contact Number</th>
+                                                                <th>Roles</th>
+                                                                <th>Date Created</th>
+                                                                <th>Status</th>
+                                                                <th>Actions</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div
+                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span
+                                                                                    class="d-block text-high-em">Morgan
+                                                                                    Freeman</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="">morgan@jampack.com</td>
+                                                                <td>+145 52 5689</td>
+
+                                                                <td>Landlord</td>
+                                                                <td>13 Jan, 2020</td>
+
+                                                                <td><span
+                                                                        class="badge badge-soft-success  my-1  me-2">Active</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div
+                                                                        class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+
+                                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                data-bs-original-title="View User Details"
+                                                                                href="view-user-details.php"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="eye"></i></span></span></a>
+
+                                                                            <button
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="trash"></i></span></span></button>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div
+                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span class="d-block text-high-em">Huma
+                                                                                    Therman</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="">huma@clariesup.au</td>
+                                                                <td>+234 48 2365</td>
+
+                                                                <td>Landlord</td>
+                                                                <td>13 Jan, 2020</td>
+                                                                <td><span
+                                                                        class="badge badge-soft-success  my-1  me-2">Active</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div
+                                                                        class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                data-bs-original-title="View User Details"
+                                                                                href="view-user-details.php"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="eye"></i></span></span></a>
+                                                                            <button
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="trash"></i></span></span></button>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div
+                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span
+                                                                                    class="d-block text-high-em">Charlie
+                                                                                    Chaplin</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="">charlie@leernoca.monster</td>
+                                                                <td>+741 56 7896</td>
+
+                                                                <td>Landlord</td>
+                                                                <td>13 Jan, 2019</td>
+                                                                <td><span
+                                                                        class="badge badge-soft-success  my-1  me-2">Active</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div
+                                                                        class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                data-bs-original-title="View User Details"
+                                                                                href="view-user-details.php"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="eye"></i></span></span></a>
+
+                                                                            <button
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="trash"></i></span></span></button>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div
+                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span
+                                                                                    class="d-block text-high-em">Winston
+                                                                                    Churchil</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="">winston@worthniza.ga</td>
+                                                                <td>+145 52 5463</td>
+                                                                <td>Landlord</td>
+                                                                <td>13 Jan, 2020</td>
+                                                                <td><span
+                                                                        class="badge badge-soft-success  my-1  me-2">Active</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div
+                                                                        class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                data-bs-original-title="View User Details"
+                                                                                href="view-user-details.php"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="eye"></i></span></span></a>
+
+                                                                            <button
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="trash"></i></span></span></button>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div
+                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span class="d-block text-high-em">Tom
+                                                                                    Cruz</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="">tomcz@jampack.com</td>
+                                                                <td>+145 52 5463</td>
+                                                                <td>Landlord</td>
+                                                                <td>13 Jan, 2020</td>
+                                                                <td><span
+                                                                        class="badge badge-soft-danger   my-1  me-2">Inactive</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div
+                                                                        class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                data-bs-original-title="View User Details"
+                                                                                href="view-user-details.php"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="eye"></i></span></span></a>
+
+                                                                            <button
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="trash"></i></span></span></button>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
                                                 </div>
-                                                </a>
-                                            </td>
-                                            <td class="">huma@clariesup.au</td>
-                                            <td>+234 48 2365</td>
+                                            </div>
 
-                                            <td>Landlords</td>
-                                            <td>13 Jan, 2020</td>
-                                            <td><span class="badge badge-soft-success  my-1  me-2">Active</span></td>
-                                            <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
+                                        </div>
 
-                                                        <!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                                            data-bs-toggle="offcanvas" data-bs-target="#edituserCanvas"
-                                                            aria-controls="offcanvasExample" href="##"><span
-                                                                class="icon"><span class="feather-icon"><i
-                                                                        data-feather="edit"></i></span></span></a> -->
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                            data-bs-toggle="tooltip" data-placement="top" title=""
-                                                            data-bs-original-title="View User Details" href="view-user-details.php"><span
-                                                                class="icon"><span class="feather-icon"><i
-                                                                        data-feather="eye"></i></span></span></a>
-                                                        <button
-                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
-                                                                class="icon"><span class="feather-icon"><i
-                                                                        data-feather="trash"></i></span></span></button>
-                                                    </div>
+                                        <div class="tab-pane fade" id="VendorsUsers">
+                                        <div class="fullwidthTabInner_content_container">
+                                                <div class="contact-list-view">
 
+                                                    <table class="table common-datatable nowrap w-100 ">
+                                                        <thead>
+                                                            <tr>
+
+                                                                <th>Name</th>
+                                                                <th>Email Address</th>
+                                                                <th>Contact Number</th>
+                                                                <th>Roles</th>
+                                                                <th>Date Created</th>
+                                                                <th>Status</th>
+                                                                <th>Actions</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div
+                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span
+                                                                                    class="d-block text-high-em">Morgan
+                                                                                    Freeman</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="">morgan@jampack.com</td>
+                                                                <td>+145 52 5689</td>
+
+                                                                <td>Vendor</td>
+                                                                <td>13 Jan, 2020</td>
+
+                                                                <td><span
+                                                                        class="badge badge-soft-success  my-1  me-2">Active</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div
+                                                                        class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+
+                                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                data-bs-original-title="View User Details"
+                                                                                href="view-user-details.php"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="eye"></i></span></span></a>
+
+                                                                            <button
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="trash"></i></span></span></button>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div
+                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span class="d-block text-high-em">Huma
+                                                                                    Therman</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="">huma@clariesup.au</td>
+                                                                <td>+234 48 2365</td>
+
+                                                                <td>Vendor</td>
+                                                                <td>13 Jan, 2020</td>
+                                                                <td><span
+                                                                        class="badge badge-soft-success  my-1  me-2">Active</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div
+                                                                        class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                data-bs-original-title="View User Details"
+                                                                                href="view-user-details.php"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="eye"></i></span></span></a>
+                                                                            <button
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="trash"></i></span></span></button>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div
+                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span
+                                                                                    class="d-block text-high-em">Charlie
+                                                                                    Chaplin</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="">charlie@leernoca.monster</td>
+                                                                <td>+741 56 7896</td>
+
+                                                                <td>Vendor</td>
+                                                                <td>13 Jan, 2019</td>
+                                                                <td><span
+                                                                        class="badge badge-soft-success  my-1  me-2">Active</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div
+                                                                        class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                data-bs-original-title="View User Details"
+                                                                                href="view-user-details.php"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="eye"></i></span></span></a>
+
+                                                                            <button
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="trash"></i></span></span></button>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div
+                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span
+                                                                                    class="d-block text-high-em">Winston
+                                                                                    Churchil</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="">winston@worthniza.ga</td>
+                                                                <td>+145 52 5463</td>
+                                                                <td>Vendor</td>
+                                                                <td>13 Jan, 2020</td>
+                                                                <td><span
+                                                                        class="badge badge-soft-success  my-1  me-2">Active</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div
+                                                                        class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                data-bs-original-title="View User Details"
+                                                                                href="view-user-details.php"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="eye"></i></span></span></a>
+
+                                                                            <button
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="trash"></i></span></span></button>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div
+                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span class="d-block text-high-em">Tom
+                                                                                    Cruz</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="">tomcz@jampack.com</td>
+                                                                <td>+145 52 5463</td>
+                                                                <td>Vendor</td>
+                                                                <td>13 Jan, 2020</td>
+                                                                <td><span
+                                                                        class="badge badge-soft-danger   my-1  me-2">Inactive</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div
+                                                                        class="d-flex align-items-center ActionDropdown">
+                                                                        <div class="d-flex">
+                                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                data-bs-toggle="tooltip"
+                                                                                data-placement="top" title=""
+                                                                                data-bs-original-title="View User Details"
+                                                                                href="view-user-details.php"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="eye"></i></span></span></a>
+
+                                                                            <button
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
+                                                                                    class="icon"><span
+                                                                                        class="feather-icon"><i
+                                                                                            data-feather="trash"></i></span></span></button>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
                                                 </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
+                                            </div>
 
-                                            <td>
-                                            <a href="view-user-details.php">
-                                                <div class="media align-items-center">
-                                                    <div class="media-head me-2">
-                                                        <div class="avatar avatar-xs avatar-rounded">
-                                                            <img src="dist/img/newimages/users/userdummy.png" alt="user"
-                                                                class="avatar-img">
-                                                        </div>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <span class="d-block text-high-em">Charlie Chaplin</span>
-                                                    </div>
-                                                </div>
-                                                </a>
-                                            </td>
-                                            <td class="">charlie@leernoca.monster</td>
-                                            <td>+741 56 7896</td>
-
-                                            <td>Tenant</td>
-                                            <td>13 Jan, 2019</td>
-                                            <td><span class="badge badge-soft-success  my-1  me-2">Active</span></td>
-                                            <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-
-                                                        <!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                                            data-bs-toggle="offcanvas" data-bs-target="#edituserCanvas"
-                                                            aria-controls="offcanvasExample" href="##"><span
-                                                                class="icon"><span class="feather-icon"><i
-                                                                        data-feather="edit"></i></span></span></a> -->
-
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                            data-bs-toggle="tooltip" data-placement="top" title=""
-                                                            data-bs-original-title="View User Details" href="view-user-details.php"><span
-                                                                class="icon"><span class="feather-icon"><i
-                                                                        data-feather="eye"></i></span></span></a>
-
-                                                        <button
-                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
-                                                                class="icon"><span class="feather-icon"><i
-                                                                        data-feather="trash"></i></span></span></button>
-                                                    </div>
-
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td>
-                                            <a href="view-user-details.php">
-                                                <div class="media align-items-center">
-                                                    <div class="media-head me-2">
-                                                        <div class="avatar avatar-xs avatar-rounded">
-                                                            <img src="dist/img/newimages/users/userdummy.png" alt="user"
-                                                                class="avatar-img">
-                                                        </div>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <span class="d-block text-high-em">Winston Churchil</span>
-                                                    </div>
-                                                </div>
-                                                </a>
-                                            </td>
-                                            <td class="">winston@worthniza.ga</td>
-                                            <td>+145 52 5463</td>
-                                            <td>Internal User</td>
-                                            <td>13 Jan, 2020</td>
-                                            <td><span class="badge badge-soft-success  my-1  me-2">Active</span></td>
-                                            <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-
-                                                        <!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                                            data-bs-toggle="offcanvas" data-bs-target="#edituserCanvas"
-                                                            aria-controls="offcanvasExample" href="##"><span
-                                                                class="icon"><span class="feather-icon"><i
-                                                                        data-feather="edit"></i></span></span></a> -->
-
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                            data-bs-toggle="tooltip" data-placement="top" title=""
-                                                            data-bs-original-title="View User Details" href="view-user-details.php"><span
-                                                                class="icon"><span class="feather-icon"><i
-                                                                        data-feather="eye"></i></span></span></a>
-
-                                                        <button
-                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
-                                                                class="icon"><span class="feather-icon"><i
-                                                                        data-feather="trash"></i></span></span></button>
-                                                    </div>
-
-                                                </div>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-
-                                            <td>
-                                            <a href="view-user-details.php">
-                                                <div class="media align-items-center">
-                                                    <div class="media-head me-2">
-                                                        <div class="avatar avatar-xs avatar-rounded">
-                                                            <img src="dist/img/newimages/users/userdummy.png" alt="user"
-                                                                class="avatar-img">
-                                                        </div>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <span class="d-block text-high-em">Tom Cruz</span>
-                                                    </div>
-                                                </div>
-                                                </a>
-                                            </td>
-                                            <td class="">tomcz@jampack.com</td>
-                                            <td>+145 52 5463</td>
-                                            <td>Staff Users</td>
-                                            <td>13 Jan, 2020</td>
-                                            <td><span class="badge badge-soft-danger   my-1  me-2">Inactive</span></td>
-                                            <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-
-                                                        <!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                                            data-bs-toggle="offcanvas" data-bs-target="#edituserCanvas"
-                                                            aria-controls="offcanvasExample" href="##"><span
-                                                                class="icon"><span class="feather-icon"><i
-                                                                        data-feather="edit"></i></span></span></a> -->
-
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                            data-bs-toggle="tooltip" data-placement="top" title=""
-                                                            data-bs-original-title="View User Details" href="view-user-details.php"><span
-                                                                class="icon"><span class="feather-icon"><i
-                                                                        data-feather="eye"></i></span></span></a>
-
-                                                        <button
-                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"><span
-                                                                class="icon"><span class="feather-icon"><i
-                                                                        data-feather="trash"></i></span></span></button>
-                                                    </div>
-
-                                                </div>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-
-                                            <td>
-                                            <a href="view-user-details.php">
-                                                <div class="media align-items-center">
-                                                    <div class="media-head me-2">
-                                                        <div class="avatar avatar-xs avatar-rounded">
-                                                            <img src="dist/img/newimages/users/userdummy.png" alt="user"
-                                                                class="avatar-img">
-                                                        </div>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <span class="d-block text-high-em">Dean Shaw</span>
-                                                    </div>
-                                                </div>
-                                                </a>
-                                            </td>
-                                            <td class="">dean-shaw@poww.me</td>
-                                            <td>+145 52 5463</td>
-                                            <td>Landlord</td>
-                                            <td>13 Jan, 2020</td>
-                                            <td><span class="badge badge-soft-success  my-1  me-2">Active</span></td>
-                                            <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-
-                                                        <!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                                            data-bs-toggle="offcanvas" data-bs-target="#edituserCanvas"
-                                                            aria-controls="offcanvasExample" href="##"><span
-                                                                class="icon"><span class="feather-icon"><i
-                                                                        data-feather="edit"></i></span></span></a> -->
-
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                            data-bs-toggle="tooltip" data-placement="top" title=""
-                                                            data-bs-original-title="View User Details" href="view-user-details.php"><span
-                                                                class="icon"><span class="feather-icon"><i
-                                                                        data-feather="eye"></i></span></span></a>
-
-                                                        <button
-                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button"
-                                                            id="del-button"><span class="icon"><span
-                                                                    class="feather-icon"><i
-                                                                        data-feather="trash"></i></span></span></button>
-                                                    </div>
-
-                                                </div>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-
-                                            <td>
-                                            <a href="view-user-details.php">
-                                                <div class="media align-items-center">
-                                                    <div class="media-head me-2">
-                                                        <div class="avatar avatar-xs avatar-rounded">
-                                                            <img src="dist/img/newimages/users/userdummy.png" alt="user"
-                                                                class="avatar-img">
-                                                        </div>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <span class="d-block text-high-em">Danial Craig</span>
-                                                    </div>
-                                                </div>
-                                                </a>
-                                            </td>
-                                            <td class="">danialc@jampack.com</td>
-                                            <td>+145 52 5463</td>
-                                            <td>Internal User</td>
-                                            <td>13 Jan, 2020</td>
-                                            <td><span class="badge badge-soft-danger   my-1  me-2">Inactive</span></td>
-                                            <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-
-                                                        <!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                                            href="##" data-bs-toggle="offcanvas"
-                                                            data-bs-target="#edituserCanvas"
-                                                            aria-controls="offcanvasExample"><span class="icon"><span
-                                                                    class="feather-icon"><i
-                                                                        data-feather="edit"></i></span></span></a> -->
-
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                                            data-bs-toggle="tooltip" data-placement="top" title=""
-                                                            data-bs-original-title="View User Details" href="view-user-details.php"><span
-                                                                class="icon"><span class="feather-icon"><i
-                                                                        data-feather="eye"></i></span></span></a>
-
-                                                        <button
-                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button "><span
-                                                                class="icon"><span class="feather-icon"><i
-                                                                        data-feather="trash"></i></span></span></button>
-                                                    </div>
-
-                                                </div>
-                                            </td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -606,10 +1791,9 @@
     <div class="Canvas_ct_divider"></div>
     <form class="" action="users.php">
         <div class="offcanvas-body">
-           
 
             <div class="addingForm_Container">
-            <div class="add-users-modal-body-table-header text-headline-6">Add New User to System</div>
+                <div class="add-users-modal-body-table-header text-headline-6">Add New User to System</div>
 
                 <div class="formstartcontainer">
                     <div class="row">
@@ -746,7 +1930,7 @@
                                                 </div>
                                                 Tenant
                                             </div>
-                                            
+
                                             <div class="dropdown-item flexdropItem">
                                                 <div class="d-flex align-items-center">
                                                     <span class="form-check mb-0"><input type="checkbox"
@@ -777,7 +1961,7 @@
                                                 </div>
                                                 Internal User
                                             </div>
-                                            
+
                                         </div>
                                     </div>
                                 </div>
@@ -798,11 +1982,7 @@
 </div>
 <!-- add user offcanvas modal end -->
 
-
 <?php include('footer.php') ?>
-
-
-
 
 <!-- active inactive user status sitcher js -->
 <script>

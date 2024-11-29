@@ -1,13 +1,13 @@
 .secTitle {
-    font-size: 18px;
-    margin-bottom: 10px;
-    background: #eceef1;
-    padding: 5px 15px;
-    border-radius: 5px;
+	font-size: 17px;
+	margin-bottom: 10px;
+	background: #eceef1;
+	padding: 10px 15px;
+	border-radius: 5px;
 }
 .taskAppend {
     /* padding: 10px; */
-    background: aliceblue;
+    background: #f4f4f9a6;
     border-radius: 5px;
     margin-top: 10px;
 }
@@ -106,6 +106,9 @@
     margin-bottom: 10px;
 }
 .UnitTimeBox {
+	position: relative;
+}
+.UnitTimeBox .row{
     padding: 15px;
     background: #f7f7f7;
     border-radius: 5px;
@@ -113,15 +116,16 @@
     position: relative;
 }
 .removeTime {
-    padding: 0;
-    background: #ff000000;
-    border: none;
-    color: #ff0000;
-    display: flex;
-    position: absolute;
-    top: 10px;
-    right: 8px;
-    font-size: 18px;
+	padding: 0;
+	background: #ff000000;
+	border: none;
+	color: #ff0000;
+	display: flex;
+	position: absolute;
+	top: 0px;
+	right: -45px;
+	font-size: 18px;
+    color: #656f7d;
 }
 .removeTime:hover,.removeTime:focus{
     background: #ff000000;

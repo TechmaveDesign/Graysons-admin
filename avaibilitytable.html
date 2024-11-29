@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Table Structure</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #FFC000; /* Gold background for headers */
+            color: black;
+        }
+
+        .highlight-row {
+            background-color: #FFFF00; /* Yellow for group rows */
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .comment-row {
+            background-color: #FFEECC; /* Light peach for comments */
+        }
+
+        .specific-row {
+            background-color: #D9EAD3; /* Light green for professional flats */
+        }
+    </style>
+</head>
+<body>
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Floor</th>
+                <th>Room Type</th>
+                <th>Size</th>
+                <th>Apartment Comment</th>
+                <th>Bedroom Comment</th>
+                <th>Current Tenancy End Date</th>
+                <th>Tenancy Start Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Group 1 -->
+            <tr class="highlight-row">
+                <td colspan="8">2 LEAZES TERRACE</td>
+            </tr>
+            <tr class="comment-row">
+                <td rowspan="3">Flat 1 (3 Bedroom Apartment Student)</td>
+                <td>Lower Ground</td>
+                <td>En-Suite Bedroom</td>
+                <td>12 Sqm</td>
+                <td rowspan="3">Option to put a comment about the apartment, e.g., suitable for students in 2nd year</td>
+                <td>Option to put comment about bedrooms</td>
+                <td>04/09/2025</td>
+                <td>12/09/2024</td>
+            </tr>
+            <tr class="comment-row">
+                <td>Lower Ground</td>
+                <td>En-Suite Bedroom</td>
+                <td>12 Sqm</td>
+                <td>Option to put comment about bedrooms</td>
+                <td>04/09/2025</td>
+                <td>12/09/2024</td>
+            </tr>
+            <tr class="comment-row">
+                <td>Lower Ground</td>
+                <td>En-Suite Bedroom</td>
+                <td>12 Sqm</td>
+                <td>Option to put comment about bedrooms</td>
+                <td>26/08/2025</td>
+                <td>12/09/2024</td>
+            </tr>
+
+            <!-- Group 2 -->
+            <tr class="specific-row">
+                <td rowspan="3">Flat 2 (3 Bedroom Apartment Professionals)</td>
+                <td>Ground</td>
+                <td>En-Suite Bedroom</td>
+                <td>12 Sqm</td>
+                <td rowspan="3">Only professionals accepted; tenants must be females</td>
+                <td>Must Be a Female Tenant</td>
+                <td>12/09/2025</td>
+                <td>20/09/2024</td>
+            </tr>
+            <tr class="specific-row">
+                <td>Ground</td>
+                <td>En-Suite Bedroom</td>
+                <td>12 Sqm</td>
+                <td>Must Be a Female Tenant</td>
+                <td>12/09/2025</td>
+                <td>20/09/2024</td>
+            </tr>
+            <tr class="specific-row">
+                <td>Ground</td>
+                <td>En-Suite Bedroom</td>
+                <td>12 Sqm</td>
+                <td>Must Be a Female Tenant</td>
+                <td>12/08/2025</td>
+                <td>20/09/2024</td>
+            </tr>
+
+            <!-- Group 3 -->
+            <tr class="highlight-row">
+                <td colspan="8">2 LEAZES TERRACE</td>
+            </tr>
+            <tr class="comment-row">
+                <td rowspan="5">Flat 1 (3 Bedroom Apartment Student)</td>
+                <td>First</td>
+                <td></td>
+                <td>12 Sqm</td>
+                <td rowspan="5">Must be a full student group to apply, Apartment has 3 bathrooms</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="comment-row">
+                <td>First</td>
+                <td></td>
+                <td>10 Sqm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="comment-row">
+                <td>Second</td>
+                <td></td>
+                <td>10 Sqm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="comment-row">
+                <td>Second</td>
+                <td></td>
+                <td>15 Sqm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="comment-row">
+                <td>Second</td>
+                <td></td>
+                <td>15 Sqm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Initialize DataTable
+            $('#data-table').DataTable({
+                paging: false,
+                searching: false,
+                info: false,
+                ordering: false
+            });
+        });
+    </script>
+</body>
+</html>
