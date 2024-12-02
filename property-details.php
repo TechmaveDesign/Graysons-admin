@@ -1206,48 +1206,273 @@
                                                 <div class="card">
                                                     <div class="card-body">
 
-                                                        <div class="notesContentBox">
-                                                            <div class="note">
-                                                                <h3>Inspection Note 1</h3>
-                                                                <p>Checked the electrical wiring in the kitchen. Found
-                                                                    loose connections near the oven.</p>
-                                                                <p>Recommendation: Arrange for an electrician to fix the
-                                                                    wiring immediately to avoid any safety hazards.</p>
-                                                            </div>
-                                                            <div class="note">
-                                                                <h3>Inspection Note 2</h3>
-                                                                <p>Examined the plumbing system in the bathroom.
-                                                                    Discovered a leak under the sink.</p>
-                                                                <p>Action Required: Contact a plumber to repair the leak
-                                                                    and prevent water damage.</p>
-                                                            </div>
-                                                            <div class="note">
-                                                                <h3>Inspection Note 3</h3>
-                                                                <p>Inspected the roof for any signs of damage. Noticed
-                                                                    missing shingles near the chimney.</p>
-                                                                <p>Resolution: Schedule a roofer to replace the missing
-                                                                    shingles and inspect for further damage.</p>
-                                                            </div>
-                                                        </div>
+                                                        <div class="row">
+                                                        <div
+            class="d-flex align-items-center justify-content-between mb-2">
+            <div class="title title-lg mb-0"><span>All
+                    Comments</span></div>
 
-                                                        <div class="form-group">
-                                                            <div class="form-label-group">
-                                                                <label>Write a Note</label>
-                                                                <small class="text-muted">1200</small>
-                                                            </div>
-                                                            <textarea class="form-control" rows="8"
-                                                                placeholder="Write an internal note"></textarea>
+        </div>
+
+        <div class="comment-block">
+
+            <div class="card card-border note-block">
+                <div class="card-body">
+
+                    <div class="media align-items-center">
+                        <div class="media-head">
+                            <div
+                                class="avatar avatar-xs avatar-rounded">
+                                <img src="dist/img/newimages/users/userdummy.png"
+                                    alt="user"
+                                    class="avatar-img">
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <div class="noteAuthor_title">
+                                Martin Luther</div>
+                            <div class="NoteTiming">
+                                9 Apr, 20, 7:14 AM
+                            </div>
+                        </div>
+                    </div>
+                    <p class="NoteDescription">@<a href="#"
+                            class="fw-medium">Charlie
+                            Darvin</a> Tenant was
+                        very interested in the
+                        property, appreciating the
+                        layout and natural light.
+                        They need two bedrooms, a
+                        workspace, and a parking
+                        spot. They have a small dog
+                        and prefer to move in by the
+                        end of next month. Awaiting
+                        their decision by the end of
+                        the week.</p>
+                </div>
+            </div>
+            <div class="card card-border note-block ">
+                <div class="card-body">
+
+                    <div class="media align-items-center">
+                        <div class="media-head">
+                            <div
+                                class="avatar avatar-xs avatar-rounded">
+                                <img src="dist/img/newimages/users/userdummy.png"
+                                    alt="user"
+                                    class="avatar-img">
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <div class="noteAuthor_title">
+                                Katherine Jones
+                            </div>
+                            <div class="NoteTiming">
+                                8 Apr, 20, 5:30 PM
+                            </div>
+                        </div>
+                    </div>
+                    <p class="NoteDescription">@<a href="#"
+                            class="fw-medium">Martin
+                            Luther</a> Viscosity
+                        ratio for "Appear view" link
+                        text is 3.7:1 which is less
+                    </p>
+                </div>
+            </div>
+            <div class="separator separator-light">
+            </div>
+
+            <div class="AddNoteEnuSection" id="AddNote">
+                <div class="form-group">
+                    <label class="form-label">Note
+                        header</label>
+                    <input class="form-control" type="text"
+                        name="" placeholder="Add Title">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Add
+                        Comment</label>
+                    <textarea class="form-control"
+                        rows="5"></textarea>
+                </div>
+                <div class="NoteAction_container">
+                    <div class="sendEnquiryNote_container">
+                        <div class="addto_todolist">
+                            <div class="form-check">
+                                <input type="checkbox"
+                                    class="form-check-input"
+                                    id="customCheckList-todo">
+                                <label
+                                    class="form-check-label"
+                                    for="customCheckList-todo">
+                                    Add to ToDo List
+                                    <span
+                                        class="done-strikethrough"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="sendEnquiryNote_container setAlert_container">
+                        <div class="addto_todolist">
+                            <div class="form-check">
+                                <input type="checkbox"
+                                    class="form-check-input setAlertInput">
+                                <label
+                                    class="form-check-label"
+                                    for="customCheckList-todo">
+                                    Set As Alert
+                                    <span
+                                        class="done-strikethrough"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="Showing_departmentand_users"
+                    style="display: none;">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label
+                                    class="form-label">Select
+                                    Department</label>
+                                <select
+                                    class="form-control select2"
+                                    id="selectDepartment">
+                                    <option disabled
+                                        selected value="">
+                                        Please
+                                        Select...
+                                    </option>
+                                    <option
+                                        value="Account Department">
+                                        Account
+                                        Department
+                                    </option>
+                                    <option
+                                        value="HR Department">
+                                        HR
+                                        Department
+                                    </option>
+                                    <option
+                                        value="Contract Department">
+                                        Contract
+                                        Department
+                                    </option>
+                                    <option
+                                        value="Lettings Department">
+                                        Lettings
+                                        Department
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label
+                                    class="form-label">Select
+                                    Users</label>
+                                <select
+                                    class="form-control select2"
+                                    id="selectUser">
+                                    <option disabled
+                                        selected value="">
+                                        Please
+                                        Select...
+                                    </option>
+                                    <option
+                                        value="John Doe">
+                                        John Doe
+                                    </option>
+                                    <option
+                                        value="Jane Smith">
+                                        Jane Smith
+                                    </option>
+                                    <option
+                                        value="Alice Johnson">
+                                        Alice
+                                        Johnson
+                                    </option>
+                                    <option
+                                        value="Robert Brown">
+                                        Robert Brown
+                                    </option>
+                                    <option
+                                        value="Michael Williams">
+                                        Michael
+                                        Williams
+                                    </option>
+                                    <option
+                                        value="Emily Davis">
+                                        Emily Davis
+                                    </option>
+                                    <option
+                                        value="David Wilson">
+                                        David Wilson
+                                    </option>
+                                    <option
+                                        value="Sophia Martinez">
+                                        Sophia
+                                        Martinez
+                                    </option>
+                                    <option
+                                        value="James Anderson">
+                                        James
+                                        Anderson
+                                    </option>
+                                    <option
+                                        value="Olivia Taylor">
+                                        Olivia
+                                        Taylor
+                                    </option>
+                                    <option
+                                        value="Chris Thomas">
+                                        Chris Thomas
+                                    </option>
+                                    <option
+                                        value="Emma Harris">
+                                        Emma Harris
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label
+                                    class="form-label">Select
+                                    Due Date</label>
+                                <input
+                                    class="form-control customdataPicker"
+                                    type="text" name=""
+                                    value=""
+                                    placeholder="Due Date" />
+                                <iconify-icon
+                                    icon="ion:calendar-outline"
+                                    class="dateinput_icon">
+                                </iconify-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+                                                        </div>
+                                                        <div class="submitnote_container">
+                                                            <button type="button"
+                                                                class="sendBtn_common_main addenun_noteBtn send-note">Send
+                                                                Note</button>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="savechangesformContainer">
-                                                <button type="submit" class="buttonInfOUpdate">
-                                                    <iconify-icon icon="fluent:save-32-regular">
-                                                    </iconify-icon>
-                                                    Save Changes
-                                                </button>
-                                            </div>
+
                                         </div>
 
                                         <!-- <div class="tab-pane fade" id="Parent">
@@ -4476,6 +4701,84 @@
 
 <?php include('footer.php') ?>
 
+<!-- add note script -->
+<!-- --------------------------------------------------------- 
+ assign note task to department from the left side under note js Functionality to 
+  hide the assign selection option  start
+  -------------------------------------------------------->
+
+  <script>
+    $(document).ready(function() {
+        // Toggle the visibility of Showing_departmentand_users based on the checkbox
+        $(document).on('change', '.customCheckList-todo', function() {
+            const container = $(this).closest('.AddNoteEnuSection');
+            if ($(this).is(':checked')) {
+                container.find('.Showing_departmentand_users').slideDown(); // Show the section
+            } else {
+                container.find('.Showing_departmentand_users').slideUp(); // Hide the section
+            }
+        });
+        // Handle the Send Note button click
+        $(document).on('click', '.send-note', function() {
+            const container = $(this).closest('.AddNoteEnuSection');
+            const selectedDepartment = container.find('.select-department').val();
+            const selectedUser = container.find('.select-user').val();
+            if (selectedDepartment && selectedUser) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Note Sent!',
+                    text: `Note sent to ${selectedDepartment} and ${selectedUser}.`
+                });
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Missing Information',
+                    text: 'Please select both a department and a user.'
+                });
+            }
+        });
+        // Handle Set Alert confirmation
+        $(document).on('change', '.setAlertInput', function() {
+            const checkbox = $(this);
+            if (checkbox.is(':checked')) {
+                Swal.fire({
+                    html: `
+                    <div style="text-align: center;">
+                        <div class="swalalert_custom_icon">
+                            <iconify-icon icon="hugeicons:alert-01"></iconify-icon>
+                        </div>
+                        <h2 class="Swal_CustomTitle">Are You Sure You Want to Set This Note as an Alert?</h2>
+                    </div>`,
+                    showCancelButton: true,
+                    confirmButtonText: 'Yes, set it!',
+                    cancelButtonText: 'No, cancel!',
+                    reverseButtons: true,
+                    customClass: {
+                        confirmButton: 'btn btn-success',
+                        cancelButton: 'btn btn-danger'
+                    }
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Swal.fire({
+                            title: 'Alert Set!',
+                            text: 'The note has been successfully set as an alert.',
+                            icon: 'success'
+                        });
+                    } else if (result.isDismissed) {
+                        checkbox.prop('checked',
+                            false); // Uncheck the checkbox if the user cancels
+                    }
+                });
+            }
+        });
+    });
+</script>
+
+<!-- --------------------------------------------------------- 
+ assign note task to department from the left side under note js Functionality to 
+  hide the assign selection option  end
+  -------------------------------------------------------->
+
 <!-- tabs scroll js start-->
 <script>
     $(document).ready(function() {
@@ -4728,3 +5031,4 @@
     });
 </script>
 <!-- filepod image uploader end-->
+

@@ -64,7 +64,7 @@
 
                     <form action="property-details.php" method="POST">
                         <div class="contact-body">
-                            <div class="fullwidthDesktopTabs MobileScrollShow">
+                            <div class="fullwidthDesktopTabs MobileScrollShow" id="nopaddingTop">
                                 <button class="scroll-btn prev" type="button">
                                     <iconify-icon icon="tabler:arrow-left"></iconify-icon>
                                 </button>

@@ -853,7 +853,7 @@
                                                                             <div class="Showing_departmentand_users"
                                                                                 style="display: none;">
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-4">
                                                                                         <div class="form-group">
                                                                                             <label
                                                                                                 class="form-label">Select
@@ -889,7 +889,7 @@
                                                                                             </select>
                                                                                         </div>
                                                                                     </div>
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-4">
                                                                                         <div class="form-group">
                                                                                             <label
                                                                                                 class="form-label">Select
@@ -958,6 +958,14 @@
                                                                                             </select>
                                                                                         </div>
                                                                                     </div>
+                                                                                    <div class="col-lg-4">
+                <div class="form-group">
+                <label class="form-label">Select Due Date</label>
+    <input class="form-control customdataPicker" type="text" name="" value="" placeholder="Due Date" />
+    <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
+    </iconify-icon>
+</div>
+                </div>
                                                                                 </div>
                                                                             </div>
 

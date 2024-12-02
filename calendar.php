@@ -323,6 +323,15 @@
                         </select>
                     </div>
                 </div>
+
+                <div class="col-lg-12">
+                <div class="form-group">
+                <label class="form-label">Select Due Date</label>
+    <input class="form-control customdataPicker" type="text" name="" value="" placeholder="Due Date" />
+    <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
+    </iconify-icon>
+</div>
+                </div>
             </div>
         </div>
         <div class="submitnote_container">

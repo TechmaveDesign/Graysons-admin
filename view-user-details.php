@@ -1027,11 +1027,12 @@
                 </div>
             </div>
         </div>
+        
     </div>
 
     <div class="Showing_departmentand_users" style="display: none;">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="form-group">
                     <label class="form-label">Select Department</label>
                     <select class="form-control select2 select-department">
@@ -1043,7 +1044,7 @@
                     </select>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="form-group">
                     <label class="form-label">Select Users</label>
                     <select class="form-control select2 select-user">
@@ -1054,6 +1055,14 @@
                     </select>
                 </div>
             </div>
+            <div class="col-lg-4">
+                <div class="form-group">
+                <label class="form-label">Select Due Date</label>
+    <input class="form-control customdataPicker" type="text" name="" value="" placeholder="Due Date" />
+    <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
+    </iconify-icon>
+</div>
+                </div>
         </div>
     </div>
 
@@ -1654,11 +1663,12 @@
                 </div>
             </div>
         </div>
+        
     </div>
 
     <div class="Showing_departmentand_users" style="display: none;">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="form-group">
                     <label class="form-label">Select Department</label>
                     <select class="form-control select2 select-department">
@@ -1670,7 +1680,7 @@
                     </select>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="form-group">
                     <label class="form-label">Select Users</label>
                     <select class="form-control select2 select-user">
@@ -1681,6 +1691,14 @@
                     </select>
                 </div>
             </div>
+            <div class="col-lg-4">
+                <div class="form-group">
+                <label class="form-label">Select Due Date</label>
+    <input class="form-control customdataPicker" type="text" name="" value="" placeholder="Due Date" />
+    <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
+    </iconify-icon>
+</div>
+                </div>
         </div>
     </div>
 
@@ -3357,7 +3375,7 @@
                                                                 </div>
                                                                 <div class="card-body">
                                                                     <div class="row">
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label class="form-label">Title</label>
                                                                                 <input type="text" class="form-control"
@@ -3365,7 +3383,7 @@
                                                                             </div>
 
                                                                         </div>
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label for="firstname"
                                                                                     class="form-label">First
@@ -3375,7 +3393,7 @@
                                                                             </div>
 
                                                                         </div>
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label for="Middle"
                                                                                     class="form-label">Middle
@@ -3385,7 +3403,7 @@
                                                                             </div>
 
                                                                         </div>
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label for="Surname"
                                                                                     class="form-label">Surname</label>
@@ -3394,7 +3412,7 @@
                                                                             </div>
 
                                                                         </div>
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label for="Email"
                                                                                     class="form-label">Email</label>
@@ -3404,7 +3422,7 @@
                                                                             </div>
 
                                                                         </div>
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label for="Contact" class="form-label">
                                                                                     Contact Number</label>
@@ -3414,7 +3432,7 @@
 
                                                                         </div>
 
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label for="Contact" class="form-label">
                                                                                     Alt Contact Number</label>
@@ -3424,7 +3442,7 @@
 
                                                                         </div>
 
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label class="form-label">Date of
                                                                                     Birth</label>
@@ -3436,7 +3454,7 @@
                                                                             </div>
                                                                         </div>
 
-                                                                        <div class="col-md-6">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label for="addressline1"
                                                                                     class="form-label"> Address Line
@@ -3448,7 +3466,7 @@
 
                                                                         </div>
 
-                                                                        <div class="col-md-6">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label for="addressline2"
                                                                                     class="form-label"> Address Line
@@ -3460,7 +3478,7 @@
 
                                                                         </div>
 
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label for="Town/City"
                                                                                     class="form-label">
@@ -3471,7 +3489,7 @@
 
                                                                         </div>
 
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label for="County" class="form-label">
                                                                                     County</label>
@@ -3481,7 +3499,7 @@
 
                                                                         </div>
 
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label for="Postcode"
                                                                                     class="form-label"> Postcode</label>

@@ -322,7 +322,7 @@
                                         <div class="contact-more-info">
 
                                             <div class="scrollTabContainerMAin">
-                                               
+
                                                 <ul class="nav nav-tabs nav-line nav-icon nav-light customuserviewTabs"
                                                     id="scrolableTabs_sort">
 
@@ -334,8 +334,7 @@
                                                             <span class="nav-link-text">Documents</span>
                                                         </a>
                                                     </li>
-                                                   
-                                                   
+
                                                     <li class="nav-item">
                                                         <a class="nav-link" data-bs-toggle="tab" href="#notes">
                                                             <span class="nav-icon-wrap"><span class="feather-icon"><i
@@ -351,7 +350,7 @@
                                                             <span class="nav-link-text">Extended Details</span>
                                                         </a>
                                                     </li>
-                                                    
+
                                                     <li class="nav-item">
                                                         <a class="nav-link" data-bs-toggle="tab" href="#Roles">
                                                             <span class="nav-icon-wrap"><span class="feather-icon"><i
@@ -376,7 +375,7 @@
                                                     </li>
 
                                                 </ul>
-                                                
+
                                             </div>
 
                                             <div class="tab-content usertabsContent">
@@ -499,7 +498,7 @@
 
                                                                                 </div>
                                                                             </div>
-                                                                           
+
                                                                         </div>
 
                                                                     </div>
@@ -670,9 +669,7 @@
                                                     </div>
 
                                                 </div>
-                                                
-                                                
-                                                
+
                                                 <div class="tab-pane fade " id="notes">
 
                                                     <div class="row">
@@ -693,21 +690,117 @@
 
                                                                 </div>
 
-                                                                <div class="form-group">
+                                                                <div class="AddNoteEnuSection" id="AddNote1">
+                                                                    <div class="form-group">
+                                                                        <label class="form-label">Note header</label>
+                                                                        <input class="form-control note-title"
+                                                                            type="text" placeholder="Add Title">
+                                                                    </div>
 
-                                                                    <textarea class="form-control" rows="8"
-                                                                        placeholder="Write an internal note"></textarea>
+                                                                    <div class="form-group">
+                                                                        <label class="form-label">Add Comment</label>
+                                                                        <textarea class="form-control note-comment"
+                                                                            rows="5"></textarea>
+                                                                    </div>
+
+                                                                    <div class="NoteAction_container">
+                                                                        <div class="sendEnquiryNote_container">
+                                                                            <div class="addto_todolist">
+                                                                                <div class="form-check">
+                                                                                    <input type="checkbox"
+                                                                                        class="form-check-input customCheckList-todo">
+                                                                                    <label class="form-check-label">Add
+                                                                                        to ToDo List <span
+                                                                                            class="done-strikethrough"></span></label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="sendEnquiryNote_container setAlert_container">
+                                                                            <div class="addto_todolist">
+                                                                                <div class="form-check">
+                                                                                    <input type="checkbox"
+                                                                                        class="form-check-input setAlertInput">
+                                                                                    <label class="form-check-label">Set
+                                                                                        As Alert <span
+                                                                                            class="done-strikethrough"></span></label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="Showing_departmentand_users"
+                                                                        style="display: none;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <div class="form-group">
+                                                                                    <label class="form-label">Select
+                                                                                        Department</label>
+                                                                                    <select
+                                                                                        class="form-control select2 select-department">
+                                                                                        <option disabled selected
+                                                                                            value="">Please Select...
+                                                                                        </option>
+                                                                                        <option
+                                                                                            value="Account Department">
+                                                                                            Account Department</option>
+                                                                                        <option value="HR Department">HR
+                                                                                            Department</option>
+                                                                                        <option
+                                                                                            value="Contract Department">
+                                                                                            Contract Department</option>
+                                                                                        <option
+                                                                                            value="Lettings Department">
+                                                                                            Lettings Department</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="form-group">
+                                                                                    <label class="form-label">Select
+                                                                                        Users</label>
+                                                                                    <select
+                                                                                        class="form-control select2 select-user">
+                                                                                        <option disabled selected
+                                                                                            value="">Please Select...
+                                                                                        </option>
+                                                                                        <option value="John Doe">John
+                                                                                            Doe</option>
+                                                                                        <option value="Jane Smith">Jane
+                                                                                            Smith</option>
+                                                                                        <option value="Alice Johnson">
+                                                                                            Alice Johnson</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4">
+                                                                                <div class="form-group">
+                                                                                    <label class="form-label">Select Due
+                                                                                        Date</label>
+                                                                                    <input
+                                                                                        class="form-control customdataPicker"
+                                                                                        type="text" name="" value=""
+                                                                                        placeholder="Due Date" />
+                                                                                    <iconify-icon
+                                                                                        icon="ion:calendar-outline"
+                                                                                        class="dateinput_icon">
+                                                                                    </iconify-icon>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="savechangesformContainer">
+                                                                    <button type="button"
+                                                                        class="sendBtn_common_main addenun_noteBtn send-note">Send
+                                                                        Note</button>
                                                                 </div>
                                                             </div>
                                                         </div>
 
-                                                    </div>
-
-                                                    <div class="savechangesformContainer">
-                                                        <button Type="submit" class="buttonInfOUpdate">
-                                                            <iconify-icon icon="fluent:save-32-regular"></iconify-icon>
-                                                            Save Changes
-                                                        </button>
                                                     </div>
 
                                                 </div>
@@ -829,8 +922,6 @@
 
                                                 </div>
 
-                                                
-
                                                 <div class="tab-pane fade " id="Roles">
 
                                                     <div class="mainuserFilesds_tabpaneContainer">
@@ -840,7 +931,7 @@
                                                         </div>
 
                                                         <ul id="todo_list" class="advance-list customtRoleListStyle">
-                                                        <li class="advance-list-item single-task-list active-todo">
+                                                            <li class="advance-list-item single-task-list active-todo">
                                                                 <div
                                                                     class="d-flex align-items-center justify-content-between">
                                                                     <div class="d-flex align-items-center">
@@ -2242,8 +2333,6 @@
 
                                                 </div>
 
-                                                
-
                                                 <div class="tab-pane fade " id="password">
 
                                                     <div class="mainuserFilesds_tabpaneContainer">
@@ -2372,8 +2461,6 @@
     </div>
     <!-- /Page Body -->
 </div>
-
-
 
 <!-- add document offcanvas -->
 <div class="offcanvas offcanvas-bottom custombottm_offcanvasStyle" tabindex="-1" id="addDocument"
@@ -2569,10 +2656,6 @@
 </div>
 <!-- edit document offcanvas modal end -->
 
-
-
-
-
 <?php include('footer.php') ?>
 
 <!-- create invoice js -->
@@ -2630,8 +2713,6 @@
 </script>
 <!-- filters show hide script end-->
 
-
-
 <!-- document Delete alert -->
 <script>
     $(document).on("click", '.docDeleteButton', function(e) {
@@ -2663,8 +2744,6 @@
     });
 </script>
 <!-- document Delete alert end-->
-
-
 
 <!-- passwordinput hide show 1 -->
 <script>
@@ -2701,3 +2780,80 @@
     });
 </script>
 <!-- passwordinput hide show 2 end-->
+
+<!-- --------------------------------------------------------- 
+ assign note task to department from the left side under note js Functionality to 
+  hide the assign selection option  start
+  -------------------------------------------------------->
+
+<script>
+    $(document).ready(function() {
+        // Toggle the visibility of Showing_departmentand_users based on the checkbox
+        $(document).on('change', '.customCheckList-todo', function() {
+            const container = $(this).closest('.AddNoteEnuSection');
+            if ($(this).is(':checked')) {
+                container.find('.Showing_departmentand_users').slideDown(); // Show the section
+            } else {
+                container.find('.Showing_departmentand_users').slideUp(); // Hide the section
+            }
+        });
+        // Handle the Send Note button click
+        $(document).on('click', '.send-note', function() {
+            const container = $(this).closest('.AddNoteEnuSection');
+            const selectedDepartment = container.find('.select-department').val();
+            const selectedUser = container.find('.select-user').val();
+            if (selectedDepartment && selectedUser) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Note Sent!',
+                    text: `Note sent to ${selectedDepartment} and ${selectedUser}.`
+                });
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Missing Information',
+                    text: 'Please select both a department and a user.'
+                });
+            }
+        });
+        // Handle Set Alert confirmation
+        $(document).on('change', '.setAlertInput', function() {
+            const checkbox = $(this);
+            if (checkbox.is(':checked')) {
+                Swal.fire({
+                    html: `
+                    <div style="text-align: center;">
+                        <div class="swalalert_custom_icon">
+                            <iconify-icon icon="hugeicons:alert-01"></iconify-icon>
+                        </div>
+                        <h2 class="Swal_CustomTitle">Are You Sure You Want to Set This Note as an Alert?</h2>
+                    </div>`,
+                    showCancelButton: true,
+                    confirmButtonText: 'Yes, set it!',
+                    cancelButtonText: 'No, cancel!',
+                    reverseButtons: true,
+                    customClass: {
+                        confirmButton: 'btn btn-success',
+                        cancelButton: 'btn btn-danger'
+                    }
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Swal.fire({
+                            title: 'Alert Set!',
+                            text: 'The note has been successfully set as an alert.',
+                            icon: 'success'
+                        });
+                    } else if (result.isDismissed) {
+                        checkbox.prop('checked',
+                            false); // Uncheck the checkbox if the user cancels
+                    }
+                });
+            }
+        });
+    });
+</script>
+
+<!-- --------------------------------------------------------- 
+ assign note task to department from the left side under note js Functionality to 
+  hide the assign selection option  end
+  -------------------------------------------------------->

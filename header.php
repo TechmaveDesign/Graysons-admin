@@ -1238,7 +1238,7 @@
 														</li>
 														<li class="nav-item">
 															<a class="nav-link sidecolor_Compliance custompadding_megamenu"
-																href="Compliance.php">
+																href="compliance-vendors.php">
 																<span class="nav-icon-wrap position-relative">
 
 																	<span class="svg-icon">
