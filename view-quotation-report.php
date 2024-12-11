@@ -38,7 +38,8 @@
 
                             </div>
                             <div class=" ms-3">
-                                <a href="view-compliance-details.php" class="btn btn-sm cmnbackbtn btn-outline-secondary ">
+                                <a href="view-all-property-quotations.php"
+                                    class="btn btn-sm cmnbackbtn btn-outline-secondary ">
                                     <iconify-icon icon="line-md:list-3"></iconify-icon> Back
                                 </a>
 
@@ -120,28 +121,56 @@
                                             <div class="fullwidthTabInner_content_container">
                                                 <div class="card card-border mb-lg-4 mb-3">
                                                     <div class="card-header card-header-action">
-                                                    <div class="media align-items-center">
+                                                        <div class="media align-items-center">
                                                             <div class="media-head me-2">
                                                                 <div class="avatar avatar-sm avatar-rounded">
-                                                                    <img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                        alt="user" class="avatar-img">
                                                                 </div>
                                                             </div>
                                                             <div class="media-body">
-                                                                <div class="fw-medium text-dark">Viewed By</div>
-                                                                <div class="fs-7"><a href="view-user-details.php">Koriakowski,
+                                                                <div class="fw-medium text-dark">Viewed and Confirmed By
+                                                                </div>
+                                                                <div class="fs-7"><a
+                                                                        href="view-user-details.php">Koriakowski,
                                                                         Krystian</a> @ 01/09/2018 15:01</div>
                                                             </div>
                                                         </div>
 
                                                         <div class="cardRightDetail_boxContainer">
                                                             <div class="flexcheckColumn">
+                                                                <div class="form-group">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="gridCheck">
+                                                                        <label class="form-check-label" for="gridCheck">
+                                                                            Confirm the report
+                                                                        </label>
+                                                                    </div>
 
+                                                                </div>
                                                             </div>
                                                         </div>
 
                                                     </div>
                                                     <div class="card-body custombodyPadding">
                                                         <div class="d-flex text-center inspectionpropert_details">
+                                                            <div class="flex-1 border-end CustomFlex_style">
+                                                                <div class="ticInfo_Item">
+                                                                    <span class="d-block TicketDetails_info_title">
+                                                                        Job ID</span>
+
+                                                                    <span
+                                                                        class="d-block text-capitalize ticketdetailinfo_data">
+                                                                        <span
+                                                                            class="badge badge-soft-success  my-1  me-2 JobID_specific"
+                                                                            id="JobID_specific">
+                                                                            <iconify-icon icon="hugeicons:job-link">
+                                                                            </iconify-icon> CJ12345
+                                                                        </span></span>
+
+                                                                </div>
+                                                            </div>
                                                             <div class="flex-1 border-end CustomFlex_style">
                                                                 <div class="ticInfo_Item">
                                                                     <span class="d-block TicketDetails_info_title">
@@ -171,29 +200,32 @@
                                                                     <span
                                                                         class="d-block text-capitalize ticketdetailinfo_data">
                                                                         <span
-                                                                            class="badge badge-soft-success  my-1  me-2"> Charlie Chaplin
-                                                                            </span></span>
+                                                                            class="badge badge-soft-success  my-1  me-2">
+                                                                            Charlie Chaplin
+                                                                        </span></span>
                                                                 </div>
                                                             </div>
                                                             <div class="flex-1 border-end CustomFlex_style">
                                                                 <div class="ticInfo_Item">
                                                                     <span class="d-block TicketDetails_info_title">
-                                                                    Quotation Requested</span>
+                                                                        Quotation Requested</span>
                                                                     <span
                                                                         class="d-block text-capitalize ticketdetailinfo_data">
                                                                         <span
-                                                                            class="badge badge-soft-success  my-1  me-2"> £65
-                                                                            </span></span>
+                                                                            class="badge badge-soft-success  my-1  me-2">
+                                                                            £65
+                                                                        </span></span>
                                                                 </div>
                                                             </div>
                                                             <div class="flex-1 border-end CustomFlex_style">
                                                                 <div class="ticInfo_Item">
                                                                     <span class="d-block TicketDetails_info_title">
-                                                                    Status</span>
-                                                                    <span class="d-block text-capitalize "> <span class="badge badge-soft-success  my-1  me-2">Accepted</span></span>
+                                                                        Status</span>
+                                                                    <span class="d-block text-capitalize "> <span
+                                                                            class="badge badge-soft-success  my-1  me-2">Accepted</span></span>
                                                                 </div>
                                                             </div>
-                                                            
+
                                                             <div class="flex-1 CustomFlex_style ">
                                                                 <div class="ticInfo_Item">
                                                                     <div class="d-block TicketDetails_info_title ">
@@ -212,36 +244,42 @@
 
                                                 </div>
 
-                                             
-
                                             </div>
 
                                             <div class="row">
                                                 <div class="col-lg-6">
                                                     <div class="card">
                                                         <div class="card-body">
-                                                        <div class="Quotation_document">
-                                                         <div class="Quotation_docImage">
-                                                            <img src="dist/img/newimages/documentimage-vector.jpg" alt="">
-                                                            <div class="Downloadquote_doc_button">
-                                                                <button type="button" class="cmnCheckincheckout_btn"><span>Download Document</span></button>
+                                                            <div class="Quotation_document">
+                                                                <div class="Quotation_docImage">
+                                                                    <img src="dist/img/newimages/documentimage-vector.jpg"
+                                                                        alt="">
+                                                                    <div class="Downloadquote_doc_button">
+                                                                        <button type="button"
+                                                                            class="cmnCheckincheckout_btn"><span>Download
+                                                                                Document</span></button>
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                         </div>
-                                                    </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <div class="card">
                                                         <div class="card-body">
-                                                        <div class="Quotation_document">
-                                                         <div class="Quotation_docImage">
-                                                            <img src="dist/img/newimages/report-defauldimage.jpg" alt="">
-                                                            <div class="Downloadquote_doc_button">
-                                                                <button type="button" class="cmnCheckincheckout_btn"><span><iconify-icon icon="proicons:eye"></iconify-icon> View Report</span></button>
+                                                            <div class="Quotation_document">
+                                                                <div class="Quotation_docImage">
+                                                                    <img src="dist/img/newimages/report-defauldimage.jpg"
+                                                                        alt="">
+                                                                    <div class="Downloadquote_doc_button">
+                                                                        <a href="javascript:void(0);" target="_blank"
+                                                                            class="cmnCheckincheckout_btn"><span>
+                                                                                <iconify-icon icon="proicons:eye">
+                                                                                </iconify-icon> View Report
+                                                                            </span></a>
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                         </div>
-                                                    </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -721,29 +759,34 @@
                                                                 <div class="card card-border note-block">
                                                                     <div class="card-body">
 
-                                                                    <div class="media align-items-center notehead_withTag">
-                                                                                            <div class="notesSendBy">
-                                                                                                <div class="media-head">
-                                                                                                    <div class="avatar avatar-xs avatar-rounded">
-                                                                                                        <img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div class="media-body">
-                                                                                                    <div class="noteAuthor_title">
-                                                                                                        Martin Luther
-                                                                                                    </div>
-                                                                                                    <div class="NoteTiming">
-                                                                                                        9 Apr, 20, 7:14
-                                                                                                        AM
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="NoteTag">
-                                                                                                <iconify-icon icon="solar:tag-line-duotone">
-                                                                                                </iconify-icon> Viewing
-                                                                                                Note
-                                                                                            </div>
-                                                                                        </div>
+                                                                        <div
+                                                                            class="media align-items-center notehead_withTag">
+                                                                            <div class="notesSendBy">
+                                                                                <div class="media-head">
+                                                                                    <div
+                                                                                        class="avatar avatar-xs avatar-rounded">
+                                                                                        <img src="dist/img/newimages/users/userdummy.png"
+                                                                                            alt="user"
+                                                                                            class="avatar-img">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="media-body">
+                                                                                    <div class="noteAuthor_title">
+                                                                                        Martin Luther
+                                                                                    </div>
+                                                                                    <div class="NoteTiming">
+                                                                                        9 Apr, 20, 7:14
+                                                                                        AM
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="NoteTag">
+                                                                                <iconify-icon
+                                                                                    icon="solar:tag-line-duotone">
+                                                                                </iconify-icon> Viewing
+                                                                                Note
+                                                                            </div>
+                                                                        </div>
                                                                         <p class="NoteDescription">@<a href="#"
                                                                                 class="fw-medium">Charlie
                                                                                 Darvin</a> Tenant was
@@ -762,31 +805,36 @@
                                                                 <div class="card card-border note-block ">
                                                                     <div class="card-body">
 
-                                                                    <div class="media align-items-center notehead_withTag">
-                                                                                            <div class="notesSendBy">
-                                                                                                <div class="media-head">
-                                                                                                    <div class="avatar avatar-xs avatar-rounded">
-                                                                                                        <img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div class="media-body">
-                                                                                                    <div class="noteAuthor_title">
-                                                                                                        Katherine Jones
-                                                                                                    </div>
-                                                                                                    <div class="NoteTiming">
-                                                                                                        8 Apr, 20, 5:30
-                                                                                                        PM
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
+                                                                        <div
+                                                                            class="media align-items-center notehead_withTag">
+                                                                            <div class="notesSendBy">
+                                                                                <div class="media-head">
+                                                                                    <div
+                                                                                        class="avatar avatar-xs avatar-rounded">
+                                                                                        <img src="dist/img/newimages/users/userdummy.png"
+                                                                                            alt="user"
+                                                                                            class="avatar-img">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="media-body">
+                                                                                    <div class="noteAuthor_title">
+                                                                                        Katherine Jones
+                                                                                    </div>
+                                                                                    <div class="NoteTiming">
+                                                                                        8 Apr, 20, 5:30
+                                                                                        PM
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
 
-                                                                                            <div class="NoteTag">
-                                                                                                <iconify-icon icon="solar:tag-line-duotone">
-                                                                                                </iconify-icon> Viewing
-                                                                                                Note
-                                                                                            </div>
+                                                                            <div class="NoteTag">
+                                                                                <iconify-icon
+                                                                                    icon="solar:tag-line-duotone">
+                                                                                </iconify-icon> Viewing
+                                                                                Note
+                                                                            </div>
 
-                                                                                        </div>
+                                                                        </div>
                                                                         <p class="NoteDescription">@<a href="#"
                                                                                 class="fw-medium">Martin
                                                                                 Luther</a> Viscosity
@@ -985,6 +1033,7 @@
     </div>
 </div>
 <!-- /Page Body -->
+</div>
 
 <!-- Modal for scheduling a visit -->
 <div id="schedulevisit_modal" class="modal customwizard_formStyle sm_modalCustom fade" tabindex="-1" role="dialog"
@@ -1063,9 +1112,42 @@
     </div>
 </div>
 
-<!-- Modal for scheduling a visit -->
-<div id="Addquote_document_modal" class="modal  sm_modalCustom fade" tabindex="-1" role="dialog"
-    aria-hidden="true">
+<!-- Modal for upload document -->
+<div id="AddReport_modal" class="modal  sm_modalCustom fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <form action="" method="post">
+            <div class="modal-content">
+
+                <div class="ModalheaderArea">
+                    <h5 class="mb-4">Upload Report</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label class="form-label">Upload Quotation Report</label>
+                            <input type="file" class="filepond" id="imageInput" name="imageInput" multiple
+                                data-max-file-size="3MB" data-max-files="5">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-navigation canvasFooterContainer CustomModal_footer taskadd_footer">
+                    <div class="eventSubmit_container">
+                        <button type="submit" class="submitButton canvasSubmit_button commonCanvas_buttonFooter"
+                            style="display: inline-block;">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+</div>
+
+<!-- Modal for upload document -->
+<div id="Addquote_document_modal" class="modal  sm_modalCustom fade" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <form action="" method="post">
             <div class="modal-content">
@@ -1075,37 +1157,147 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label class="form-label">Upload Document</label>
+                            <input type="file" class="filepond" id="imageInput2" name="imageInput" multiple
+                                data-max-file-size="3MB" data-max-files="5">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-navigation canvasFooterContainer CustomModal_footer taskadd_footer">
+                    <div class="eventSubmit_container">
+                        <button type="submit" class="submitButton canvasSubmit_button commonCanvas_buttonFooter"
+                            style="display: inline-block;">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+</div>
+
+<!-- Re Quotation Modal -->
+<div class="modal sm_modalCustom fade" id="requestReQuoteModal" tabindex="-1" aria-labelledby="requestReQuoteModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <form id="reQuoteForm">
+            <div class="modal-content">
+
+                <div class="ModalheaderArea">
+                    <h5 class="modal-title" id="requestReQuoteModalLabel">Re Quotation Request</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="mb-3">
+                        <label for="quoteTitle" class="form-label">Quotation Title</label>
+                        <input type="text" class="form-control" id="quoteTitle" placeholder="Enter Title" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="quoteMessage" class="form-label">Quotation Message</label>
+                        <textarea class="form-control" id="quoteMessage" rows="4" placeholder="Enter Message"
+                            required></textarea>
+                    </div>
+
+                </div>
+
+                <div class="form-navigation canvasFooterContainer CustomModal_footer taskadd_footer">
+                    <div class="eventSubmit_container">
+                        <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
+                            data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="submitButton canvasSubmit_button commonCanvas_buttonFooter"
+                            id="requotemsgSend" style="display: inline-block;">Submit</button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal for scheduling a visit -->
+<div id="schedulevisit_modal" class="modal customwizard_formStyle sm_modalCustom fade" tabindex="-1" role="dialog"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <form action="" method="post" id="wizardForm">
+            <div class="modal-content">
+
+                <div class="ModalheaderArea">
+                    <h5 class="mb-4">Schedule a Visit</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
 
                 </div>
 
                 <div class="modal-body">
 
-                    <div class="col-lg-12">
-                        <div class="form-group">
-                            <label class="form-label">Upload Document</label>
-                            <input type="file" class="filepond" id="imageInput" name="imageInput" multiple
-                                data-max-file-size="3MB" data-max-files="5">
-                        </div>
-                    </div>
+                    <div class="taskAddContainer">
 
+                        <div class="step" id="step1">
+                            <div class="wizardstep_innerContainer">
+                                <div class="stepheadingheader">
+                                    <div class="steptitleIcon">
+                                        <iconify-icon icon="carbon:ibm-event-automation"></iconify-icon>
+                                    </div>
+                                    <h1>Schedule a Visit for Job ID: <div class="JobId"><a href="##">CJ12345</a></div>
+                                        </h2>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label class="form-label">Visit Title</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="form-label">Visit Date</label>
+                                            <input class="form-control customdataPicker flatpickr-input" type="text"
+                                                name="" value="01/06/2024" readonly="readonly">
+                                            <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
+                                            </iconify-icon>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="form-label">Visit Time</label>
+                                            <input type="text" name="time" value="" class="form-control time__pickers"
+                                                id="timepicker" placeholder="Select Time" required="" readonly="">
+                                            <iconify-icon icon="lucide:clock-2" class="dateinput_icon"></iconify-icon>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
                 <div class="form-navigation canvasFooterContainer CustomModal_footer taskadd_footer">
 
-    <div class="eventSubmit_container">
+                    <div class="eventSubmit_container">
 
-        <button type="submit" class="submitButton canvasSubmit_button commonCanvas_buttonFooter"
-            style="display: inline-block;">Submit</button>
+                        <button type="submit" class="submitButton canvasSubmit_button commonCanvas_buttonFooter"
+                            style="display: inline-block;">Submit</button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
     </div>
 </div>
-            </div>
-
-
-
-</form>
-</div>
-
-</div>
-</div>
+<!-- end -->
 
 <?php include('footer.php') ?>
 
@@ -1278,36 +1470,6 @@
 <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
 <script src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.js"></script>
 
-<!-- filepond video js -->
-<script>
-    // Register the plugins
-    FilePond.registerPlugin(
-        FilePondPluginFileValidateType,
-        FilePondPluginMediaPreview
-    );
-    // Create a FilePond instance
-    const inputElement = document.querySelector('#videoInput');
-    const pond = FilePond.create(inputElement, {
-        acceptedFileTypes: ['video/*'],
-        fileValidateTypeDetectType: (source, type) => new Promise((resolve, reject) => {
-            resolve(type);
-        })
-    });
-    // Optional: FilePond configuration
-    FilePond.setOptions({
-        allowMultiple: true,
-        maxFiles: 10
-    });
-    // Handle video previews
-    pond.on('addfile', (error, file) => {
-        if (error) {
-            console.error('Error adding file', error);
-            return;
-        }
-    });
-</script>
-<!-- filepond video js end -->
-
 <!-- filepod image uploader start-->
 <script>
     // Register the plugins
@@ -1341,4 +1503,122 @@
         }
     });
 </script>
+
+<!-- report upload -->
+<script>
+    // Register the plugins
+    FilePond.registerPlugin(
+        FilePondPluginImagePreview,
+        FilePondPluginFileValidateSize,
+        FilePondPluginFileValidateType
+    );
+    // Turn all file input elements into ponds
+    FilePond.create(document.querySelector('#imageInput2'), {
+        acceptedFileTypes: ['image/*'],
+        labelIdle: 'Drag & Drop your images or <span class="filepond--label-action">Browse</span>',
+        server: {
+            // configure your server endpoints here
+            url: '/upload',
+            process: {
+                url: './process',
+                method: 'POST',
+                headers: {
+                    'x-customheader': 'Hello World'
+                },
+                withCredentials: false,
+                onload: (response) => response.key,
+                onerror: (response) => response.data,
+                ondata: (formData) => {
+                    formData.append('Hello', 'World');
+                    return formData;
+                }
+            },
+            revert: './revert'
+        }
+    });
+</script>
 <!-- filepod image uploader end-->
+
+<!-- request re quote js start -->
+<script>
+    $(document).ready(function() {
+        // Attach change event listener to all selects with the class
+        $(".statusSelect_withsearch").on("change", function() {
+            const selectedValue = $(this).val();
+            // Check if the selected value is "Request Re Quote"
+            if (selectedValue === "Request Re Quote") {
+                // Show Bootstrap modal
+                const modal = new bootstrap.Modal($("#requestReQuoteModal"));
+                modal.show();
+                // Reset the modal form on each open
+                $("#reQuoteForm")[0].reset();
+                // Handle form submission
+                $("#submitQuote").off("click").on("click", function() {
+                    const title = $("#quoteTitle").val().trim();
+                    const message = $("#quoteMessage").val().trim();
+                    if (title && message) {
+                        alert(`Title: ${title}\nMessage: ${message}`);
+                        modal.hide(); // Hide modal after form submission
+                    } else {
+                        alert("Please fill in both fields before submitting.");
+                    }
+                });
+            }
+        });
+    });
+</script>
+<!-- request re quote js start -->
+
+<!-- re Quote submitalrt message -->
+<script>
+    $(document).ready(function() {
+        // Handle Submit button click
+        $("#requotemsgSend").on("click", function(e) {
+            e.preventDefault(); // Prevent the default form submission
+            // Validate the form fields (optional)
+            const title = $("#quoteTitle").val().trim();
+            const message = $("#quoteMessage").val().trim();
+            if (title && message) {
+                // Close the modal
+                $("#requestReQuoteModal").modal("hide");
+                // Show SweetAlert2 confirmation with a custom class on the OK button
+                Swal.fire({
+                    html: `
+                    <div style="text-align: center;">
+                        <div class="swalalert_custom_icon">
+                            <img src="dist/img/newimages/successgif.gif" alt="">
+                            
+                        </div>
+                        <h2 class="Swal_CustomTitle">Re Quotation Request Sent</h2>
+                        <p>Your request has been sent successfully!</p>
+                    </div>`,
+                    confirmButtonText: "Close",
+                    timer: 3000,
+                    timerProgressBar: true,
+                    customClass: {
+                        confirmButton: "my-ok-button" // Add your custom class here
+                    },
+                });
+            } else {
+                // Show an error alert if fields are empty
+                Swal.fire({
+                    html: `
+                    <div style="text-align: center;">
+                        <div class="swalalert_custom_icon">
+                            <img src="dist/img/newimages/errorgif3.gif" alt="">
+                        </div>
+                        <h2 class="Swal_CustomTitle">Form Incomplete</h2>
+                        <p>Please fill in both the title and message fields before submitting.</p>
+                    </div>`,
+                    confirmButtonText: "Close",
+                    timer: 3000,
+                    timerProgressBar: true,
+                    customClass: {
+                        confirmButton: "my-ok-button" // Add the same or a different custom class
+                    },
+                });
+            }
+        });
+    });
+</script>
+<!-- end -->

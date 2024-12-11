@@ -77,62 +77,106 @@
                                     <div class="quick-access-form-wrap nopaddingleftright">
                                         <form class="quick-access-form border">
                                             <div class="row gx-3">
-                                                <div class="col-lg-12">
-                                                    <div class="row gx-3">
+                                            <div class="col-lg-3">
+                                                                <div class="form-group">
+                                                                    <label class="form-label">Filter by Property</label>
+                                                                    <select name="" id="" class="form-control select2">
+                                                                        <option value="" selected disable readonly>
+                                                                            Select an Option</option>
+                                                                        <option value="23 St Bedes Terrace">23 St Bedes
+                                                                            Terrace</option>
+                                                                        <option value="6 Mowbray Close">6 Mowbray Close
+                                                                        </option>
+                                                                        <option value="9 Mowbray Close">9 Mowbray Close
+                                                                        </option>
+                                                                        <option value="45 Ormonde Street">45 Ormonde
+                                                                            Street</option>
+                                                                        <option value="43 Fordland Place">43 Fordland
+                                                                            Place</option>
+                                                                        <option value="1-4 Thornhill Crescent">1-4
+                                                                            Thornhill Crescent</option>
+                                                                        <option value="13 Glassey Terrace">13 Glassey
+                                                                            Terrace</option>
+                                                                        <option value="4 Glassey Terrace">4 Glassey
+                                                                            Terrace</option>
+                                                                        <option value="226-228 Hylton Road">226-228
+                                                                            Hylton Road</option>
+                                                                        <option value="55 Arbroath Road">55 Arbroath
+                                                                            Road</option>
+                                                                        <option value="61 Hall Farm Road">61 Hall Farm
+                                                                            Road</option>
+                                                                        <option value="27 Hall Farm Road">27 Hall Farm
+                                                                            Road</option>
+                                                                        <option value="27 Appleby Square">27 Appleby
+                                                                            Square</option>
+                                                                        <option value="16 Ardrossan Road">16 Ardrossan
+                                                                            Road</option>
+                                                                        <option value="1 Harvest Close">1 Harvest Close
+                                                                        </option>
+                                                                        <option value="19 Linacre Close">19 Linacre
+                                                                            Close</option>
+                                                                        <option value="7 The Leazes">7 The Leazes
+                                                                        </option>
+                                                                        <option value="3 Valiant Way">3 Valiant Way
+                                                                        </option>
+                                                                        <option value="26 Manor House">26 Manor House
+                                                                        </option>
+                                                                        <option value="57 Forsyth Road">57 Forsyth Road
+                                                                        </option>
+                                                                        <option value="35 Glenthorn Road">35 Glenthorn
+                                                                            Road</option>
+                                                                        <option value="23 Claremont Road">23 Claremont
+                                                                            Road</option>
+                                                                        <option value="125 Croydon Road">125 Croydon
+                                                                            Road</option>
+                                                                        <option value="131 Croydon Road">131 Croydon
+                                                                            Road</option>
+                                                                        <option value="1-7 Union Street">1-7 Union
+                                                                            Street</option>
+                                                                        <option value="1 Kingswood Drive">1 Kingswood
+                                                                            Drive</option>
+                                                                    </select>
 
-                                                        <div class="col-lg-4">
-                                                            <div class="form-group">
-                                                                <label class="form-label">Filter by Department</label>
-                                                                <select name="" id="department_select"
-                                                                    class="form-control select2">
-                                                                    <option value="" selected disabled>Select a
-                                                                        Department</option>
-                                                                    <option value="HR">Human Resources</option>
-                                                                    <option value="Account">Account</option>
-                                                                    <option value="Marketing">Marketing</option>
-                                                                    <option value="Property Department">Property
-                                                                        Department</option>
-                                                                    <option value="Operations">Operations</option>
-                                                                    <option value="Legal">Legal</option>
-                                                                    <option value="Customer Support">Customer Support
-                                                                    </option>
-                                                                </select>
+                                                                </div>
 
                                                             </div>
-
-                                                        </div>
-
-                                                        <div class="col-lg-4">
-                                                            <div class="form-group">
-                                                                <label class="form-label">Filter by Roles</label>
-                                                                <select name="" id="Roles_select_options"
-                                                                    class="form-control select2">
-                                                                    <option value="" selected disable readonly>
-                                                                        Select an Option</option>
-                                                                    <option value="Staff">Staff</option>
-                                                                    <option value="User">User
-                                                                    </option>
-                                                                    <option value="Admin">Admin</option>
-                                                                </select>
-
-                                                            </div>
-
-                                                        </div>
-
-                                                        <div class="col-md-4">
-
-                                                            <div class="form-group">
-                                                                <label class="form-label">last Updated</label>
-                                                                <input
-                                                                    class="form-control customdataPicker flatpickr-input"
-                                                                    type="text" name="" value=""
-                                                                    placeholder="Pick a Date" readonly="readonly">
-                                                                <iconify-icon icon="ion:calendar-outline"
-                                                                    class="dateinput_icon"></iconify-icon>
-                                                            </div>
-                                                        </div>
-
+                                            <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="vendorCategory" class="form-label">Filter by Vendor
+                                                            Name <span class="RequiredField_badge">*</span></label>
+                                                        <select class="form-control select2">
+                                                            <option value="" disabled>Select Vendor</option>
+                                                            <option value="John Doe">John Doe</option>
+                                                            <option value="Jane Smith">Jane Smith</option>
+                                                        </select>
                                                     </div>
+
+                                                </div>
+
+                                                <div class="col-lg-3">
+
+                                                    <div class="form-group">
+                                                        <label class="form-label">Filter by Job Title</label>
+                                                        <input class="form-control" placeholder="Enter Job Title"
+                                                            value="" type="text">
+                                                    </div>
+                                                </div>
+                                                
+
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="vendorCategory" class="form-label">Filter by
+                                                            Category <span class="RequiredField_badge">*</span></label>
+                                                        <select class="form-control  select2" required>
+                                                            <option value="" disabled>Select category</option>
+                                                            <option value="Electrical Services">Electrical Services
+                                                            </option>
+                                                            <option value="Plumbing Services">Plumbing Services</option>
+                                                            <option value="Catering Services">Catering Services</option>
+                                                            <option value="Cleaning Services">Cleaning Services</option>
+                                                        </select>
+                                                    </div>
+
                                                 </div>
 
                                             </div>
@@ -163,11 +207,12 @@
                                             <tr>
                                                 <td><a href="view-compliance-details.php">CJ12345</a></td>
                                                 <td>
-                                                    <a href="property-details.php">
+                                                   <div class="morethenone_properties_wrap">
+                                                   <a href="property-details.php">
                                                         <div class="LongMesage_container">
                                                             <input
                                                                 class="refuge-collection-input tableLongMessage_Input"
-                                                                value="Attention all tenants: The maintenance crew will be performing routine inspections tomorrow. Please ensure that your units are accessible. Thank you for your cooperation."></input>
+                                                                value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House"></input>
                                                             <button class="view-btn tablemessageview_btn" type="button"
                                                                 data-bs-toggle="tooltip" data-bs-placement="top"
                                                                 aria-label="Click to view"
@@ -177,11 +222,47 @@
                                                             </button>
                                                         </div>
                                                     </a>
+                                                    <div class="avatar-group avatar-group-sm avatar-group-overlapped morethan1property">
+                                                            <div class="avatar avatar-soft-primary avatar-rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="3+ more properties">
+                                                                <span class="initial-wrap">3+</span>
+                                                            </div>
+                                                        </div>
+                                                   </div>
                                                 </td>
                                                 <td>Fire Alarm Installation</td>
                                                 <td>Electrical Services</td>
                                                 <!-- <td class=""><span class="badge bg-success">Accepted</span></td> -->
-                                                <td>ABC Electrical, XYZ</td>
+                                                <td>
+
+                                                 <!-- use this if vendors is multiple -->
+                                                        <div class="avatar-group avatar-group-sm avatar-group-overlapped me-3">
+                                                            <div class="avatar avatar-rounded" data-bs-toggle="tooltip"
+                                                                data-bs-placement="top" title=""
+                                                                data-bs-original-title="Katharine">
+                                                                <img src="dist/img/avatar8.jpg" alt="user"
+                                                                    class="avatar-img">
+                                                            </div>
+                                                            <div class="avatar avatar-rounded" data-bs-toggle="tooltip"
+                                                                data-bs-placement="top" title=""
+                                                                data-bs-original-title="Dean">
+                                                                <img src="dist/img/avatar13.jpg" alt="user"
+                                                                    class="avatar-img">
+                                                            </div>
+                                                            <div class="avatar avatar-rounded" data-bs-toggle="tooltip"
+                                                                data-bs-placement="top" title=""
+                                                                data-bs-original-title="Morgan">
+                                                                <img src="dist/img/avatar2.jpg" alt="user"
+                                                                    class="avatar-img">
+                                                            </div>
+                                                            <div class="avatar avatar-soft-danger avatar-rounded"
+                                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                title="" data-bs-original-title="Tooltip text">
+                                                                <span class="initial-wrap">3+</span>
+                                                            </div>
+                                                        </div>
+                                              
+
+                                                </td>
                                                 <!-- <td>2024-11-30</td>
                                                 <td>WO1234</td>
                                                 <td>2024-12-05</td>
@@ -195,7 +276,8 @@
                                                             <!-- View Details Button -->
                                                             <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                                                 data-bs-toggle="tooltip" data-placement="top"
-                                                                title="View compliance Details" href="view-compliance-details.php">
+                                                                title="View compliance Details"
+                                                                href="view-compliance-details.php">
                                                                 <span class="icon">
                                                                     <span class="feather-icon">
                                                                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -218,8 +300,6 @@
                                                                                 </iconify-icon>
                                                                             </span></span><span class="btn-text">Schedule a Visit
                                                                         </span></span></a> -->
-
-                                                            
 
                                                             <!-- Delete Button -->
                                                             <!-- <button
@@ -251,7 +331,7 @@
                                                         <div class="LongMesage_container">
                                                             <input
                                                                 class="refuge-collection-input tableLongMessage_Input"
-                                                                value="Attention all tenants: The maintenance crew will be performing routine inspections tomorrow. Please ensure that your units are accessible. Thank you for your cooperation."></input>
+                                                                value="Lobby 002, Flat 1 (Ground Floor, No1), Street View@Central Plaza"></input>
                                                             <button class="view-btn tablemessageview_btn" type="button"
                                                                 data-bs-toggle="tooltip" data-bs-placement="top"
                                                                 aria-label="Click to view"
@@ -265,7 +345,7 @@
                                                 <td>Plumbing Repair</td>
                                                 <td>Plumbing Services</td>
                                                 <!-- <td class=""><span class="badge bg-danger">Rejected</span></td> -->
-                                                <td>HydroPlumb Solutions</td>
+                                                <td>Morgan</td>
                                                 <!-- <td>2024-11-25</td>
                                                 <td>WO1235</td>
                                                 <td>N/A</td>
@@ -278,7 +358,8 @@
                                                             <!-- View Details Button -->
                                                             <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                                                 data-bs-toggle="tooltip" data-placement="top"
-                                                                title="View compliance Details" href="view-compliance-details.php">
+                                                                title="View compliance Details"
+                                                                href="view-compliance-details.php">
                                                                 <span class="icon">
                                                                     <span class="feather-icon">
                                                                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -341,7 +422,7 @@
     <div class="offcanvas-header custom-canvas-header">
         <div class="canvas-header-title">
             <iconify-icon icon="si:user-duotone"></iconify-icon>
-         Request Compliance Quotation 
+            Request Compliance Quotation
         </div>
         <div class="closeCanvasContainer">
             <button type="button" class="canvascloseButton" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -366,38 +447,71 @@
                 <div class="formstartcontainer">
                     <div class="row">
 
-                        <div class="col-lg-4">
+                        <div class="col-lg-2">
                             <div class="form-group">
                                 <label for="jobTitle" class="form-label">Job Title</label>
                                 <input type="text" class="form-control" id="jobTitle" placeholder="Enter the job title">
                             </div>
                         </div>
 
-                        <div class="col-lg-4">
-                            <div class="form-group">
-                                <label class="form-label">Property Name</label>
-                                <select name="" id="propertyName" class="form-control select2">
-                                    <option value="" selected disable readonly>
-                                        Select an Option</option>
-                                    <option value="Westlands Dental Studio, Front Street, Lanchester">
-                                        Westlands Dental Studio, Front Street,
-                                        Lanchester</option>
-                                    <option value="Sunset Boulevard, Los Angeles, California">
-                                        Sunset Boulevard, Los Angeles, California
-                                    </option>
-                                    <option value="Marvel Avenue, Brooklyn, New York">
-                                        Marvel Avenue, Brooklyn, New York
-                                    </option>
-                                    <option value="Forest Gump Road, Greenbow, Alabama">
-                                        Forest Gump Road, Greenbow, Alabama</option>
+                        <div class="col-lg-3">
+                        <div class="form-group">
+                                            <label class="form-label">All Properties</label>
+                                            <div class="dropdown filterdropDownCustom available-users-dropdown-wrapper" >
+                                                <button class="dropbtn dropdown-toggle dropmenuBtn" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="selected-count">Select More Properties</span>
+                                                    <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
+                                                </button>
+                                                <div
+                                                    class="dropdown-menu customdropdownmenu_style available-users-dropdown">
+                                                    <div class="filTerSearchMain">
+                                                        <input type="text" class="filterclSearch available-users-search"
+                                                            placeholder="Search More Properties...">
+                                                        <iconify-icon icon="basil:search-outline"></iconify-icon>
+                                                    </div>
+                                                    <div class="sellallitemsMain">
+                                                        <div class="CustomselectallContainer">
+                                                            <input type="checkbox"
+                                                                class="select-all-available-users form-check-input">
+                                                            Select All
+                                                        </div>
+                                                        <div class="clDivider_full"></div>
+                                                    </div>
+                                                    <div class="Customdrpitems_container">
+                                                        <div class="mainoptionContainer">
+                                                            <div class="dropfilter_options">
+                                                                <input type="checkbox"
+                                                                    class="individual-option form-check-input"> Bedroom
+                                                                3 133, Flat 3 (Floor 1, No3), City View@Phoenix House
+                                                            </div>
+                                                        </div>
+                                                        <div class="mainoptionContainer">
+                                                            <div class="dropfilter_options">
+                                                                <input type="checkbox"
+                                                                    class="individual-option form-check-input">
+                                                                Bedroom 2 101, Flat 7 (Floor 2, No7), Garden
+                                                                View@Emerald Apartments
+                                                            </div>
+                                                        </div>
+                                                        <div class="mainoptionContainer">
+                                                            <div class="dropfilter_options">
+                                                                <input type="checkbox"
+                                                                    class="individual-option form-check-input">
+                                                                Lobby 002, Flat 1 (Ground Floor, No1), Street
+                                                                View@Central Plaza
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                                </select>
-
-                            </div>
+                                                    <p class="no-data" style="display: none;">No data found</p>
+                                                </div>
+                                            </div>
+                                        </div>
 
                         </div>
 
-                        <div class="col-lg-4">
+                        <div class="col-lg-2">
                             <div class="form-group">
                                 <label for="category" class="form-label">Category</label>
                                 <select class="form-select select2" id="category">
@@ -409,98 +523,88 @@
                             </div>
                         </div>
 
-                        <!-- <div class="col-lg-4">
-                            <div class="form-group">
-                                <label for="status" class="form-label">Status</label>
-                                <select class="form-select select2" id="status">
-                                    <option value="Pending">Pending</option>
-                                    <option value="In Progress">In Progress</option>
-                                    <option value="Completed">Completed</option>
-                                </select>
-                            </div>
-                        </div> -->
+                        <div class="col-md-2">
 
-                        <div class="col-lg-8">
+<div class="form-group">
+    <label class="form-label">Due Date</label>
+    <input class="form-control customdataPicker flatpickr-input" type="text" name="" value="01/06/2024" readonly="readonly">
+    <iconify-icon icon="ion:calendar-outline" class="dateinput_icon"></iconify-icon>
+</div>
+</div>
+
+                       
+                        <div class="col-lg-3">
+                        <div class="form-group">
+                                            <label class="form-label">All Vendors</label>
+                                            <div class="dropdown filterdropDownCustom available-users-dropdown-wrapper" >
+                                                <button class="dropbtn dropdown-toggle dropmenuBtn" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="selected-count">Select Vendors</span>
+                                                    <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
+                                                </button>
+                                                <div
+                                                    class="dropdown-menu customdropdownmenu_style available-users-dropdown">
+                                                    <div class="filTerSearchMain">
+                                                        <input type="text" class="filterclSearch available-users-search"
+                                                            placeholder="Search Vendors....">
+                                                        <iconify-icon icon="basil:search-outline"></iconify-icon>
+                                                    </div>
+                                                    <div class="sellallitemsMain">
+                                                        <div class="CustomselectallContainer">
+                                                            <input type="checkbox"
+                                                                class="select-all-available-users form-check-input">
+                                                            Select All
+                                                        </div>
+                                                        <div class="clDivider_full"></div>
+                                                    </div>
+                                                    <div class="Customdrpitems_container">
+                                                        <div class="mainoptionContainer">
+                                                            <div class="dropfilter_options">
+                                                                <input type="checkbox"
+                                                                    class="individual-option form-check-input"> John Doe
+                                                            </div>
+                                                        </div>
+                                                        <div class="mainoptionContainer">
+                                                            <div class="dropfilter_options">
+                                                                <input type="checkbox"
+                                                                    class="individual-option form-check-input">
+                                                                    Jane Smith
+                                                            </div>
+                                                        </div>
+                                                        <div class="mainoptionContainer">
+                                                            <div class="dropfilter_options">
+                                                                <input type="checkbox"
+                                                                    class="individual-option form-check-input">
+                                                                    Alice Johnson
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="no-data" style="display: none;">No data found</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                        </div>
+
+                        
+
+                        <div class="col-lg-12">
                             <div class="form-group">
-                                <label for="category" class="form-label">Vendors</label>
-                                <select class="form-select select2" id="vendorSelect" multiple="multiple">
-                                    <option value="select-all" id="select-all-option" disabled>Select All</option>
-                                    <option value="John Doe">John Doe</option>
-                                    <option value="Jane Smith">Jane Smith</option>
-                                    <option value="Alice Johnson">Alice Johnson</option>
-                                    <option value="Bob Brown">Bob Brown</option>
-                                </select>
+                                <div class="form-label-group">
+                                    <label>Message/Task</label>
+                                </div>
+                                <textarea class="form-control" rows="4" placeholder="Write here..."></textarea>
                             </div>
                         </div>
 
-                        <div class="col-lg-4">
+                        <div class="col-lg-12">
                             <div class="form-group">
-                                <label for="">&nbsp;</label>
-                            </div>
-                            <div class="form-check form-check-sm">
-                                <input type="checkbox" class="form-check-input" id="customChecks1">
-                                <label class="form-check-label" for="customChecks1">Select All vendors</label>
-                            </div>
-                        </div>
-
-                        <!-- <div class="col-md-4">
-                            <div class="form-group">
-                                <label class="form-label">Visit Date</label>
-                                <input class="form-control customdataPicker flatpickr-input" id="visitDate" type="text"
-                                    name="" value="" placeholder="Select visit date">
-                                <iconify-icon icon="ion:calendar-outline" class="dateinput_icon"></iconify-icon>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4">
-                            <div class="form-group">
-                                <label for="workOrderId" class="form-label">Work Order ID</label>
-                                <input type="text" class="form-control" id="workOrderId"
-                                    placeholder="Enter work order ID">
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="form-group">
-                                <label for="completionDate" class="form-label">Completion Date</label>
-                                <input class="form-control customdataPicker flatpickr-input" id="completionDate"
-                                    type="text" name="" value="" placeholder="Select visit date">
-                                <iconify-icon icon="ion:calendar-outline" class="dateinput_icon"></iconify-icon>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="form-group">
-                                <label for="renewalDate" class="form-label">Renewal Date</label>
-                                <input class="form-control customdataPicker flatpickr-input" id="renewalDate"
-                                    type="text" name="" value="" placeholder="Select visit date">
-                                <iconify-icon icon="ion:calendar-outline" class="dateinput_icon"></iconify-icon>
-
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="form-group">
-                                <label for="billingStatus" class="form-label">Billing Status</label>
-                                <select class="form-select select2" id="billingStatus">
-                                    <option value="Not Applicable">Not Applicable</option>
-                                    <option value="Pending">Pending</option>
-                                    <option value="Paid">Paid</option>
-                                </select>
-                            </div>
-                        </div> -->
-                        <!-- <div class="col-lg-4">
-                            <div class="form-group">
-                                <label for="thirdPartyEmail" class="form-label">Third-Party Email</label>
-                                <input type="email" class="form-control" id="thirdPartyEmail"
-                                    placeholder="Enter third-party email to send request">
-                            </div>
-                        </div> -->
-
-                        <!-- <div class="col-lg-12">
-                            <div class="form-group">
-                                <label class="form-label">Documents</label>
+                                <label class="form-label">Upload Attachments</label>
                                 <input type="file" class="filepond" id="imageInput" name="imageInput" multiple
                                     data-max-file-size="3MB" data-max-files="5">
                             </div>
-                        </div> -->
+                        </div>
 
                     </div>
                 </div>
@@ -516,14 +620,6 @@
     </form>
 </div>
 <!-- add compliance offcanvas modal end -->
-
-
-
-
-
-
-
-
 
 <?php include('footer.php') ?>
 
@@ -563,3 +659,154 @@
 </script>
 <!-- input lenthy content show js end-->
 
+<!-- multiple video File Uploader js -->
+<!-- NOTE: Dont add this code in footer section -->
+<!-- filepond for videos uploader -->
+<link href="dist/customplugins/file-uploader/filepond.css" rel="stylesheet">
+<link href="dist/customplugins/file-uploader/filepond-plugin-media-preview.min.css" rel="stylesheet">
+<script src="dist/customplugins/file-uploader/filepond.js"></script>
+<script src="dist/customplugins/file-uploader/filepond-plugin-file-validate-type.js"></script>
+<script src="dist/customplugins/file-uploader/filepond-plugin-media-preview.min.js"></script>
+<script src="dist/customplugins/file-uploader/lg-video.min.js"></script>
+<!-- filepond for images uploader -->
+<link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
+<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+<script src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.js"></script>
+
+<!-- filepond video js -->
+<!-- <script>
+    // Register the plugins
+    FilePond.registerPlugin(
+        FilePondPluginFileValidateType,
+        FilePondPluginMediaPreview
+    );
+    // Create a FilePond instance
+    const inputElement = document.querySelector('#videoInput');
+    const pond = FilePond.create(inputElement, {
+        acceptedFileTypes: ['video/*'],
+        fileValidateTypeDetectType: (source, type) => new Promise((resolve, reject) => {
+            resolve(type);
+        })
+    });
+    // Optional: FilePond configuration
+    FilePond.setOptions({
+        allowMultiple: true,
+        maxFiles: 10
+    });
+    // Handle video previews
+    pond.on('addfile', (error, file) => {
+        if (error) {
+            console.error('Error adding file', error);
+            return;
+        }
+    });
+</script> -->
+<!-- filepond video js end -->
+
+<!-- filepod image uploader start-->
+<script>
+    // Register the plugins
+    FilePond.registerPlugin(
+        FilePondPluginImagePreview,
+        FilePondPluginFileValidateSize,
+        FilePondPluginFileValidateType
+    );
+    // Turn all file input elements into ponds
+    FilePond.create(document.querySelector('#imageInput'), {
+        acceptedFileTypes: ['image/*'],
+        labelIdle: 'Drag & Drop your images or <span class="filepond--label-action">Browse</span>',
+        server: {
+            // configure your server endpoints here
+            url: '/upload',
+            process: {
+                url: './process',
+                method: 'POST',
+                headers: {
+                    'x-customheader': 'Hello World'
+                },
+                withCredentials: false,
+                onload: (response) => response.key,
+                onerror: (response) => response.data,
+                ondata: (formData) => {
+                    formData.append('Hello', 'World');
+                    return formData;
+                }
+            },
+            revert: './revert'
+        }
+    });
+</script>
+<!-- filepod image uploader end-->
+
+
+  <!-- custom multiple select js start -->
+  <script>
+   $(document).ready(function () {
+    // Update the count of selected options
+    function updateSelectedCount(dropdownWrapper) {
+        const selectedCount = dropdownWrapper.find(".individual-option:checked").length;
+        const selectedCountElement = dropdownWrapper.find(".selected-count");
+
+        if (selectedCount === 0) {
+            selectedCountElement.text("Select Location");
+        } else if (selectedCount === 1) {
+            selectedCountElement.text("1 selected");
+        } else {
+            selectedCountElement.text(`${selectedCount} selected`);
+        }
+    }
+
+    // Handle Select All checkbox
+    $(".select-all-available-users").on("change", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        const isChecked = $(this).prop("checked");
+        dropdownWrapper.find(".individual-option").prop("checked", isChecked);
+        updateSelectedCount(dropdownWrapper);
+    });
+
+    // Handle individual option selection
+    $(".individual-option").on("change", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        const totalOptions = dropdownWrapper.find(".individual-option").length;
+        const selectedOptions = dropdownWrapper.find(".individual-option:checked").length;
+
+        // Toggle the Select All checkbox
+        dropdownWrapper.find(".select-all-available-users").prop("checked", totalOptions === selectedOptions);
+
+        updateSelectedCount(dropdownWrapper);
+    });
+
+    // Reset Filter button
+    $(".reset-filter").on("click", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        dropdownWrapper.find(".individual-option").prop("checked", false);
+        dropdownWrapper.find(".select-all-available-users").prop("checked", false);
+        updateSelectedCount(dropdownWrapper);
+    });
+
+    // Apply Filter button
+    $(".apply-filter").on("click", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        const selectedItems = dropdownWrapper.find(".individual-option:checked").map(function () {
+            return $(this).parent().text().trim();
+        }).get();
+        console.log("Selected Items:", selectedItems);
+    });
+
+    // Filter search functionality
+    $(".available-users-search").on("keyup", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        const searchTerm = $(this).val().toLowerCase();
+        const options = dropdownWrapper.find(".mainoptionContainer");
+
+        options.filter(function () {
+            $(this).toggle($(this).text().toLowerCase().includes(searchTerm));
+        });
+
+        const noDataMessage = dropdownWrapper.find(".no-data");
+        noDataMessage.toggle(options.filter(":visible").length === 0);
+    });
+});
+
+</script>
+<!-- end -->

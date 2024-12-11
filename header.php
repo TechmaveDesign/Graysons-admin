@@ -14,8 +14,7 @@
 		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-	<!-- iconify icons -->
-	<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="dist/img/newimages/favicon.jpg">
@@ -526,7 +525,7 @@
 													</div>
 												</div>
 												<div class="fs-7">contact@Graysonsproperties.com</div>
-												<a href="javascript:void(0);"
+												<a href="login.php"
 													class="d-block fs-8 link-secondary"><u>Sign Out</u></a>
 											</div>
 										</div>
@@ -745,6 +744,33 @@
 																</li>
 
 																<li class="nav-item">
+																	<a class="nav-link "
+																		href="tenancy-dashboard-panel.php">
+																		<span class="nav-link-text">Tenancy Dashboard</span>
+																	</a>
+																	<i
+																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+																</li>
+
+																<li class="nav-item">
+																	<a class="nav-link "
+																		href="tenancy-renewal.php">
+																		<span class="nav-link-text">Tenancy Renewal</span>
+																	</a>
+																	<i
+																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+																</li>
+
+																<li class="nav-item">
+																	<a class="nav-link "
+																		href="tenancy-setup.php">
+																		<span class="nav-link-text">Tenancy Setup</span>
+																	</a>
+																	<i
+																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+																</li>
+
+																<li class="nav-item">
 																	<a class="nav-link sidecolor_Account "
 																		href="javascript:void(0);"
 																		data-bs-toggle="collapse"
@@ -813,6 +839,23 @@
 																				class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 																		</li>
 
+																		<li class="nav-item">
+																			<a class="nav-link sidecolor_webmanage"
+																				href="javascript:void(0);">
+																				<span
+																					class="nav-icon-wrap position-relative">
+
+																					<span class="svg-icon">
+																					<iconify-icon icon="streamline:web"></iconify-icon>
+																					</span>
+																				</span>
+																				<span class="nav-link-text">Website Management</span>
+																			</a>
+																			<i
+																				class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+
+																		</li>
+
 																	</ul>
 
 																</li>
@@ -841,6 +884,14 @@
 																class="nav flex-column collapse  nav-children">
 																<li class="nav-item">
 																	<ul class="nav menu-dropdown flex-column">
+
+																	
+
+																	<li class="nav-item">
+																			<a href="deposite-invoices.php" class="nav-link"
+																				data-key="dispatch-invoices"><span
+																					class="nav-link-text">RENT ALLOCATION</span></a>
+																		</li>
 
 																		<li class="nav-item">
 																			<a href="accounts.php" class="nav-link"
@@ -1238,7 +1289,7 @@
 														</li>
 														<li class="nav-item">
 															<a class="nav-link sidecolor_Compliance custompadding_megamenu"
-																href="compliance-vendors.php">
+																href="all-compliance.php">
 																<span class="nav-icon-wrap position-relative">
 
 																	<span class="svg-icon">
@@ -1486,7 +1537,7 @@
 									<li class="nav-item">
 										<ul class="nav flex-column">
 											<li class="nav-item">
-												<a class="nav-link" href="javascript:void(0);"><span
+												<a class="nav-link" href="communication-center.php"><span
 														class="nav-link-text">Call Emergency
 														Helpline</span></a>
 											</li>

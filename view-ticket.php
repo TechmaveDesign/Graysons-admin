@@ -85,9 +85,25 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#ticketQuotation">
+                                            <div class="d-flex align-items-center">
+                                                <span class="nav-link-text">Quotation</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
                                         <a class="nav-link" data-bs-toggle="tab" href="#AssignMaterial">
                                             <div class="d-flex align-items-center">
                                                 <span class="nav-link-text">Assign Material</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#completedtasks">
+                                            <div class="d-flex align-items-center">
+                                                <span class="nav-link-text">Completed Tasks</span>
 
                                             </div>
                                         </a>
@@ -233,6 +249,16 @@
                                                                         class="d-block text-capitalize ticketdetailinfo_data">
                                                                         <span
                                                                             class="badge badge-soft-success  my-1  me-2">Bedroom</span></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-1 border-end CustomFlex_style">
+                                                                <div class="ticInfo_Item">
+                                                                    <span class="d-block TicketDetails_info_title">
+                                                                        Expected Due Date</span>
+                                                                    <span
+                                                                        class="d-block text-capitalize ticketdetailinfo_data">
+                                                                        <span
+                                                                            class="badge badge-soft-success  my-1  me-2">15 Dec, 2024</span></span>
                                                                 </div>
                                                             </div>
                                                             <div class="flex-1 CustomFlex_style ">
@@ -755,7 +781,7 @@
                                         <div class="tab-pane fade" id="CreateTask">
                                             <div class="fullwidthTabInner_content_container">
                                                 <div class="row ">
-                                                    <div class="col-lg-8 mx-auto">
+                                                    <div class="col-lg-12">
                                                         <div class="card">
                                                             <div class="card-body">
                                                                 <div class="row">
@@ -797,6 +823,383 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="tab-pane fade" id="ticketQuotation">
+                                            <div class="fullwidthTabInner_content_container">
+                                                <div class="row ">
+                                                    <div class="col-lg-8">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12">
+
+                                                                        <div class="docfilterbutton">
+                                                                            <h2 class="tabinnerTitle">Create Quotation
+                                                                            </h2>
+                                                                            <div class="RightTabinr_container">
+                                                                                <span class="badge bg-success">Sent
+                                                                                    Quotation</span>
+
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="col-lg-12">
+                                                                        <div class="row align-items-center">
+
+                                                                            <div class="col-md-4">
+                                                                                <div class="form-group">
+                                                                                    <label for="" class="form-label">
+                                                                                        Select Term & condition</label>
+                                                                                    <select name="" id=""
+                                                                                        class="form-control select2">
+                                                                                        <option value="" disable
+                                                                                            readonly selected>
+                                                                                            Salect an Option</option>
+                                                                                        <option value="Term Condtion 1">
+                                                                                            Term Condtion 1 </option>
+
+                                                                                        <option value="Term Condtion 2">
+                                                                                            Term Condtion 2</option>
+
+                                                                                        <option value="Term Condtion 3">
+                                                                                            Term Condtion 3
+                                                                                        </option>
+
+                                                                                    </select>
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                            <div class="col-lg-2">
+                                                                                <div class="form-group">
+                                                                                    <label
+                                                                                        for="exampleFormControlInput1"
+                                                                                        class="form-label">Overall
+                                                                                        Amount</label>
+                                                                                    <input type="text"
+                                                                                        class="form-control"
+                                                                                        value="£500">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-6">
+                                                                            <div class="form-check form-check-sm">
+                                                    <input type="checkbox" class="form-check-input" id="customChecks1">
+                                                    <label class="form-check-label" for="customChecks1">If you want
+                                                                                        to add price on the task basis
+                                                                                        please check</label>
+                                                </div>
+
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-lg-12">
+                                                                        <div class="taskAppend">
+                                                                            <div class="taskHeaderBHI">
+                                                                                <h6>Task</h6>
+                                                                                <a href="#" class="editbtn">
+                                                                                    <iconify-icon
+                                                                                        icon="akar-icons:edit">
+                                                                                    </iconify-icon>
+                                                                                </a>
+                                                                                <!-- Remove button is not included here -->
+                                                                            </div>
+                                                                            <div class="taskLHI">
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-6 pr-0">
+                                                                                        <div class="form-group mb-0">
+                                                                                            <label for="taskInput"
+                                                                                                class="form-label">Task
+                                                                                                Title</label>
+                                                                                            <input type="text"
+                                                                                                class="form-control taskInput"
+                                                                                                value="" placeholder="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-3 pr-0">
+                                                                                        <div class="form-group mb-0">
+                                                                                            <label for="priceInput"
+                                                                                                class="form-label">Allocated
+                                                                                                Date &amp; Time</label>
+                                                                                            <input type="text"
+                                                                                                class="form-control priceInput"
+                                                                                                value="" placeholder="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-3">
+                                                                                        <div class="form-group mb-0">
+                                                                                            <label for="priceInput"
+                                                                                                class="form-label">Price</label>
+                                                                                            <input type="text"
+                                                                                                class="form-control priceInput"
+                                                                                                value="" placeholder="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-12">
+
+                                                                                        <div class="d-flex">
+                                                                                            <div class="imgCont">
+                                                                                                <div
+                                                                                                    class="flex items-center gap-2">
+
+                                                                                                    <img src="assets/images/img-1.jpg"
+                                                                                                        alt="">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="imgCont">
+                                                                                                <div
+                                                                                                    class="flex items-center gap-2">
+
+                                                                                                    <img src="assets/images/img-2.jpg"
+                                                                                                        alt="">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="taskAppend">
+                                                                            <div class="taskHeaderBHI">
+                                                                                <h6>Task</h6>
+                                                                                <a href="#" class="editbtn">
+                                                                                    <iconify-icon
+                                                                                        icon="akar-icons:edit">
+                                                                                    </iconify-icon>
+                                                                                </a>
+                                                                                <!-- Remove button is not included here -->
+                                                                            </div>
+                                                                            <div class="taskLHI">
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-6 pr-0">
+                                                                                        <div class="form-group mb-0">
+                                                                                            <label for="taskInput"
+                                                                                                class="form-label">Task
+                                                                                                Title</label>
+                                                                                            <input type="text"
+                                                                                                class="form-control taskInput"
+                                                                                                value="" placeholder="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-3 pr-0">
+                                                                                        <div class="form-group mb-0">
+                                                                                            <label for="priceInput"
+                                                                                                class="form-label">Allocated
+                                                                                                Date &amp; Time</label>
+                                                                                            <input type="text"
+                                                                                                class="form-control priceInput"
+                                                                                                value="" placeholder="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-3">
+                                                                                        <div class="form-group mb-0">
+                                                                                            <label for="priceInput"
+                                                                                                class="form-label">Price</label>
+                                                                                            <input type="text"
+                                                                                                class="form-control priceInput"
+                                                                                                value="" placeholder="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-12">
+
+                                                                                        <div class="d-flex">
+                                                                                            <div class="imgCont">
+                                                                                                <div
+                                                                                                    class="flex items-center gap-2">
+
+                                                                                                    <img src="assets/images/img-1.jpg"
+                                                                                                        alt="">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="imgCont">
+                                                                                                <div
+                                                                                                    class="flex items-center gap-2">
+
+                                                                                                    <img src="assets/images/img-2.jpg"
+                                                                                                        alt="">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="taskAppend">
+                                                                            <div class="taskHeaderBHI">
+                                                                                <h6>Task</h6>
+                                                                                <a href="#" class="editbtn">
+                                                                                    <iconify-icon
+                                                                                        icon="akar-icons:edit">
+                                                                                    </iconify-icon>
+                                                                                </a>
+                                                                                <!-- Remove button is not included here -->
+                                                                            </div>
+                                                                            <div class="taskLHI">
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-6 pr-0">
+                                                                                        <div class="form-group mb-0">
+                                                                                            <label for="taskInput"
+                                                                                                class="form-label">Task
+                                                                                                Title</label>
+                                                                                            <input type="text"
+                                                                                                class="form-control taskInput"
+                                                                                                value="" placeholder="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-3 pr-0">
+                                                                                        <div class="form-group mb-0">
+                                                                                            <label for="priceInput"
+                                                                                                class="form-label">Allocated
+                                                                                                Date &amp; Time</label>
+                                                                                            <input type="text"
+                                                                                                class="form-control priceInput"
+                                                                                                value="" placeholder="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-3">
+                                                                                        <div class="form-group mb-0">
+                                                                                            <label for="priceInput"
+                                                                                                class="form-label">Price</label>
+                                                                                            <input type="text"
+                                                                                                class="form-control priceInput"
+                                                                                                value="" placeholder="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-12">
+
+                                                                                        <div class="d-flex">
+                                                                                            <div class="imgCont">
+                                                                                                <div
+                                                                                                    class="flex items-center gap-2">
+
+                                                                                                    <img src="assets/images/img-1.jpg"
+                                                                                                        alt="">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="imgCont">
+                                                                                                <div
+                                                                                                    class="flex items-center gap-2">
+
+                                                                                                    <img src="assets/images/img-2.jpg"
+                                                                                                        alt="">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- <div class="col-lg-12">
+                                    <div class="addTaskBox text-end">
+                                        <a href="#" class="addTaskBtn" id="addTaskBtn2" data-target-container=".taskContainer2">+ Add Task</a>
+                                    </div>
+                                </div> -->
+
+                                                                </div>
+                                                                <!-- <div class="FormSubmit_fix_container priceBOX">
+                                    <h5 class="taskTotal">Total Price : $ 120</h5>
+                                    <div class="buttonsHJI">
+                                    <a href="ticket-detail.php">
+                                    <button type="button" class="btn btn-primary commonUpdateButton">
+                                    <iconify-icon icon="tabler:send"></iconify-icon> Send Quotation
+                                    </button>
+                                </a>
+
+                            <a href="#">
+                                <button type="button" class="btn commonCancleButton">
+                                    Cancel
+                                </button>
+                            </a>
+                                    </div>
+                              
+
+                    </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <!-- <div class="col-lg-12">
+                                    <div class="form-group">
+                                            <label for="exampleFormControlInput1" class="form-label">Staff Availability </label>
+                                            <select class="form-input border-slate-200 dark:border-zink-500 focus:outline-none focus:border-custom-500 disabled:bg-slate-100 dark:disabled:bg-zink-600 disabled:border-slate-300 dark:disabled:border-zink-500 dark:disabled:text-zink-200 disabled:text-slate-500 dark:text-zink-100 dark:bg-zink-700 dark:focus:border-custom-800 placeholder:text-slate-400 dark:placeholder:text-zink-200" data-choices name="choices-single-default" id="choices-single-default">
+                                                <option value="Choice 2">Jhon Weassly</option>
+                                                <option value="Choice 3">Tom Crush</option>
+                                                <option value="Choice 4">Denny Paul</option>
+                                            </select>
+                                        </div>
+                                    </div> -->
+                                                                    <div class="col-lg-12">
+                                                                        <div class="card">
+                                                                            <div class="card-header">
+                                                                            <div class="signatureUser_name">Signature </div>
+                                                                            </div>
+                                                                            <div class="card-body">
+                                                                            <div class="QuotationSignature">
+                                                                                <img src="dist/img/newimages/signature-images/1.jpg" alt="">
+                                                                                
+                                                                            </div>
+                                                                            </div>
+                                                                            <div class="card-footer">
+                                                                            <div class="Signature_timestemp">
+                                                            <div class="enquiryRight_header_data TaskAction_wrapper">
+                                                                <div class="enquiryDate dueDate_container">
+                                                                    <iconify-icon icon="ion:calendar-outline">
+                                                                    </iconify-icon>
+                                                                    <div class="duedatelabel">Date &amp; Time : </div> Nov
+                                                                    20, 2024 15:45
+                                                                </div>
+                                                            
+
+                                                            </div>
+                                                        </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="FormSubmit_fix_container priceBOX">
+                                                        <h5 class="taskTotal">Total Price : £ 120</h5>
+                                                        <div class="buttonsHJI">
+                                                            <!-- <a href="ticket-detail.php">
+                                    <button type="button" class="btn btn-primary commonUpdateButton">
+                                    <iconify-icon icon="tabler:send"></iconify-icon> Send Quotation to Account
+                                    </button>
+                                </a> -->
+                                                            <a href="#">
+                                                                <button type="button"
+                                                                    class="btn btn-primary commonUpdateButton Raises_DepositeInvoise_btn">
+                                                                    <iconify-icon icon="tabler:send"></iconify-icon>
+                                                                    Raise Deposite Invoice
+                                                                </button>
+                                                                <button type="button"
+                                                                    class="btn btn-primary commonUpdateButton sendQuotationbtn">
+                                                                    <iconify-icon icon="tabler:send"></iconify-icon>
+                                                                    Send Quotation to client
+                                                                </button>
+                                                            </a>
+
+                                                            <!-- <a href="tickets.php">
+                                                                <button type="button" class="btn commonCancleButton">
+                                                                    Cancel
+                                                                </button>
+                                                            </a> -->
+                                                        </div>
+
                                                     </div>
                                                 </div>
 
@@ -989,6 +1392,650 @@
                                                         </div>
 
                                                     </div>
+
+                                                </div>
+                                                
+                                            </div>
+
+                                        </div>
+
+                                        <div class="tab-pane fade" id="completedtasks">
+                                            <div class="fullwidthTabInner_content_container">
+
+                                          
+                          <div class="card">
+                              <div class="card-body">
+                                  <div class="row">
+                                  <!-- <div class="col-lg-12">
+                                      <h1 class="secTitle titleBtn">Ticket All History List </h1>
+                                  </div> -->
+                                  <div class="col-lg-12">
+
+                                  <div class="docfilterbutton completedrtask_headeract">
+                                                    <h2 class="tabinnerTitle">All Task List  </h2>
+                                                    <div class="RightTabinr_container">
+                                                    <div class="allSelect flex items-center gap-2 checkboxTask">
+                                                <input id="allSelectCheck" class="" type="checkbox" value="">
+                                                <label for="allSelectCheck" class="align-middle">All Select</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <!-- <label for="exampleFormControlInput1" class="form-label">Client Name</label> -->
+                                                <select class="form-input select2" id="choices-single-default">
+                                                    <option value="Select">--Status--</option>
+                                                    <option value="In Progress">In Progress</option>
+                                                    <option value="Done">Done</option>
+                                                    <option value="Approved">Approved</option>
+                                                </select>
+                                            </div>
+                                                    </div>
+                                                </div>
+
+
+                                      
+                                  </div>
+                                  <div class="col-lg-12">
+                                  <div class="accordion taskAccordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header taskHeader" id="headingOne">
+                                        <div class="flex items-center gap-2 checkboxTask">
+                                            <input id="checkboxOutline8" class="" type="checkbox" value="">
+                                            <label for="checkboxOutline8" class="align-middle"></label>
+                                        </div>
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                         <div class="taskBlex">
+                                         <h6>Water Leakage from Ceiling</h6>
+                                         <span class="badge badge-soft-warning my-1 me-2">In progress</span>
+                                         </div>
+                                       
+                                        </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        <ul class="issueHistoryList">
+
+                                                                    <li>
+                                                                        <label for="" class="form-label historyLabel ">Before Images & video
+                                                                            : </label>
+                                                                       
+                                                        <div class="multiImageSlider slider">
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock12.jpg">
+                                                                    <img src="dist/img/issue-images/mock12.jpg"
+                                                                        alt="Image 1">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock5.jpg">
+                                                                    <img src="dist/img/issue-images/mock5.jpg"
+                                                                        alt="Image 2">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock6.jpg">
+                                                                    <img src="dist/img/issue-images/mock6.jpg"
+                                                                        alt="Image 3">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock7.jpg">
+                                                                    <img src="dist/img/issue-images/mock7.jpg"
+                                                                        alt="Image 4">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock8.jpg">
+                                                                    <img src="dist/img/issue-images/mock8.jpg"
+                                                                        alt="Image 5">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock9.jpg">
+                                                                    <img src="dist/img/issue-images/mock9.jpg"
+                                                                        alt="Image 6">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock10.jpg">
+                                                                    <img src="dist/img/issue-images/mock10.jpg"
+                                                                        alt="Image 7">
+                                                                </a>
+                                                            </div>
+
+                                                            <!-- Add more slides as needed -->
+                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label for="" class="form-label historyLabel ">After Images & video
+                                                                            : </label>
+                                                                            <div class="multiImageSlider slider">
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock12.jpg">
+                                                                    <img src="dist/img/issue-images/mock12.jpg"
+                                                                        alt="Image 1">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock5.jpg">
+                                                                    <img src="dist/img/issue-images/mock5.jpg"
+                                                                        alt="Image 2">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock6.jpg">
+                                                                    <img src="dist/img/issue-images/mock6.jpg"
+                                                                        alt="Image 3">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock7.jpg">
+                                                                    <img src="dist/img/issue-images/mock7.jpg"
+                                                                        alt="Image 4">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock8.jpg">
+                                                                    <img src="dist/img/issue-images/mock8.jpg"
+                                                                        alt="Image 5">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock9.jpg">
+                                                                    <img src="dist/img/issue-images/mock9.jpg"
+                                                                        alt="Image 6">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock10.jpg">
+                                                                    <img src="dist/img/issue-images/mock10.jpg"
+                                                                        alt="Image 7">
+                                                                </a>
+                                                            </div>
+
+                                                            <!-- Add more slides as needed -->
+                                                        </div>
+                                                                    </li>
+                                                                    <li><label for="" class="form-label historyLabel">Added
+                                                                            Notes : </label>
+                                                                        <ol class="commentpointslist">
+                                                                            <li>The tiles are missing under the shower
+                                                                                tray, some of the tiles are in the
+                                                                                bathroom.</li>
+                                                                            <li>The sink is clogged, the water drains
+                                                                                poorly, I wanted to clear it, but I
+                                                                                can't unscrew the plug.</li>
+                                                                        </ol>
+
+                                                                        <p>The tiles under the shower tray might have
+                                                                            been displaced due to water damage.
+                                                                            Recommend thorough inspection and
+                                                                            replacement.</p>
+                                                                    </li>
+                                                                </ul>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header taskHeader" id="headingTwo">
+                                        <div class="flex items-center gap-2 checkboxTask">
+                                            <input id="checkboxOutline9" class="size-4 cursor-pointer bg-white border border-slate-200 checked:bg-none dark:bg-zink-700 dark:border-zink-500 rounded-sm appearance-none arrow-none relative after:absolute after:content-['\eb7b'] after:top-0 after:left-0 after:font-remix after:leading-none after:opacity-0 checked:after:opacity-100 after:text-orange-500 checked:border-orange-500 dark:after:text-orange-500 dark:checked:border-orange-800" type="checkbox" value="">
+                                            <label for="checkboxOutline9" class="align-middle"></label>
+                                        </div>
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                           <div class="taskBlex">
+                                           <h6>Ac Repair</h6>
+                                           <span class="badge badge-soft-success my-1 me-2">Done</span>
+                                           </div>
+                                          
+                                        </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        <ul class="issueHistoryList">
+                                        <li>
+                                                                        <label for="" class="form-label historyLabel ">Before Images & video
+                                                                            : </label>
+                                                                            <div class="multiImageSlider slider">
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock12.jpg">
+                                                                    <img src="dist/img/issue-images/mock12.jpg"
+                                                                        alt="Image 1">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock5.jpg">
+                                                                    <img src="dist/img/issue-images/mock5.jpg"
+                                                                        alt="Image 2">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock6.jpg">
+                                                                    <img src="dist/img/issue-images/mock6.jpg"
+                                                                        alt="Image 3">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock7.jpg">
+                                                                    <img src="dist/img/issue-images/mock7.jpg"
+                                                                        alt="Image 4">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock8.jpg">
+                                                                    <img src="dist/img/issue-images/mock8.jpg"
+                                                                        alt="Image 5">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock9.jpg">
+                                                                    <img src="dist/img/issue-images/mock9.jpg"
+                                                                        alt="Image 6">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock10.jpg">
+                                                                    <img src="dist/img/issue-images/mock10.jpg"
+                                                                        alt="Image 7">
+                                                                </a>
+                                                            </div>
+
+                                                            <!-- Add more slides as needed -->
+                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label for="" class="form-label historyLabel ">After Images & video
+                                                                            : </label>
+                                                                            <div class="multiImageSlider slider">
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock12.jpg">
+                                                                    <img src="dist/img/issue-images/mock12.jpg"
+                                                                        alt="Image 1">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock5.jpg">
+                                                                    <img src="dist/img/issue-images/mock5.jpg"
+                                                                        alt="Image 2">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock6.jpg">
+                                                                    <img src="dist/img/issue-images/mock6.jpg"
+                                                                        alt="Image 3">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock7.jpg">
+                                                                    <img src="dist/img/issue-images/mock7.jpg"
+                                                                        alt="Image 4">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock8.jpg">
+                                                                    <img src="dist/img/issue-images/mock8.jpg"
+                                                                        alt="Image 5">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock9.jpg">
+                                                                    <img src="dist/img/issue-images/mock9.jpg"
+                                                                        alt="Image 6">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock10.jpg">
+                                                                    <img src="dist/img/issue-images/mock10.jpg"
+                                                                        alt="Image 7">
+                                                                </a>
+                                                            </div>
+
+                                                            <!-- Add more slides as needed -->
+                                                        </div>
+                                                                    </li>
+                                                                    <li><label for="" class="form-label historyLabel">Added
+                                                                            Notes : </label>
+                                                                        <ol class="commentpointslist">
+                                                                            <li>The tiles are missing under the shower
+                                                                                tray, some of the tiles are in the
+                                                                                bathroom.</li>
+                                                                            <li>The sink is clogged, the water drains
+                                                                                poorly, I wanted to clear it, but I
+                                                                                can't unscrew the plug.</li>
+                                                                        </ol>
+
+                                                                        <p>The tiles under the shower tray might have
+                                                                            been displaced due to water damage.
+                                                                            Recommend thorough inspection and
+                                                                            replacement.</p>
+                                                                    </li>
+
+                                                                </ul>
+                                        </div>
+                                        </div>
+                                    </div>
+                                
+                                    </div>
+
+                                  </div>
+                                     
+                                  </div>
+                                 
+                              </div>
+                          </div>
+
+
+                                            <div class="card card-border mb-lg-4 mb-3">
+                                                    <div class="card-header card-header-action">
+                                                        
+                                                    <h5>Material detail</h5>
+
+                                                        <!-- <div class="cardRightDetail_boxContainer">
+                                                            <div class="flexcheckColumn">
+                                                                <div class="form-group">
+                                                                    <div class="form-check customformchec_kInpdisabled">
+                                                                        <input type="checkbox" class="form-check-input" id="customCheckList6" disabled="">
+                                                                        <label class="form-check-label" for="customCheckList6">
+                                                                            Requested presence during maintenance
+                                                                            <span class="done-strikethrough"></span>
+                                                                        </label>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+
+                                                    </div>
+                                                    <div class="card-body custombodyPadding">
+                                                        <div class="d-flex text-center inspectionpropert_details">
+                                                            <div class="flex-1 border-end CustomFlex_style">
+                                                                <div class="ticInfo_Item">
+                                                                    <span class="d-block TicketDetails_info_title">
+                                                                    Supplier Name</span>
+                                                                    <span class="d-block text-capitalize ticketdetailinfo_data">
+                                                                        <span class="badge badge-soft-success  my-1  me-2">Romi</span></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-1 border-end CustomFlex_style">
+                                                                <div class="ticInfo_Item">
+                                                                    <span class="d-block TicketDetails_info_title">
+                                                                    Receipt No.</span>
+                                                                    <span class="d-block text-capitalize ticketdetailinfo_data">
+                                                                        <span class="badge badge-soft-success  my-1  me-2"> #4567 </span></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-1 border-end CustomFlex_style">
+                                                                <div class="ticInfo_Item">
+                                                                    <span class="d-block TicketDetails_info_title">
+                                                                    Receipt Image</span>
+                                                                    <span class="d-block text-capitalize ticketdetailinfo_data">
+                                                                    <a class="receiptImg" data-fancybox="gallery" href="dist/img/newimages/inspectionitems/Faucet2.jpg">
+                                                                    <img src="dist/img/newimages/inspectionitems/Faucet2.jpg" alt="Image 5">
+                                                                </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="flex-1 border-end CustomFlex_style">
+                                                                <div class="ticInfo_Item">
+                                                                    <span class="d-block TicketDetails_info_title">
+                                                                    Total Cost</span>
+                                                                    <span class="d-block text-capitalize ticketdetailinfo_data">
+                                                                        <span class="badge badge-soft-success  my-1  me-2"> $08.00</span></span>
+                                                                </div>
+                                                            </div>
+                                                            
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="contact-list-view">
+                                                            <table
+                                                                class="table common-datatable nowrap w-100 assignMaterial">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Material</th>
+                                                                        <th>Quantity </th>
+                                                                        <th>Price</th>
+
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                            <tr>
+                                                                <td>Screw</td>
+                                                                <td>2</td>
+                                                                <td>$ 1</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Screw Driver</td>
+                                                                <td>2</td>
+                                                                <td>$ 1</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>retractation</td>
+                                                                <td>6</td>
+                                                                <td>$ 6</td>
+                                                            </tr>   
+                                                         </tbody>
+                                                            </table>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                    <div class="card">
+                                                    <div class="card-header">
+                                                        <div class="card-title customcardTitle">
+                                                            <h6>Comments</h6>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="card-body">
+
+                                                        <div class="commentReplyContainer">
+                                                            <ul id="dummy_avatar"
+                                                                class="list-unstyled chat-single-list">
+                                                                <li class="media received">
+                                                                    <div class="avatar avatar-xs avatar-rounded">
+                                                                        <img src="dist/img/newimages/users/userdummy.png"
+                                                                            alt="user" class="avatar-img">
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <div class="msg-box">
+                                                                            <div>
+                                                                                <p>Hi, I noticed some water leakage in
+                                                                                    the ceiling of my bedroom. It's been
+                                                                                    happening for a few days now, and
+                                                                                    I'm worried it might cause damage to
+                                                                                    the property. Can you please send
+                                                                                    someone to inspect and fix it as
+                                                                                    soon as possible?</p>
+                                                                                <div class="replyUserAuthor">
+                                                                                    <a href="view-user-details.php">Danial
+                                                                                        Craig</a>
+                                                                                    <div class="commentdateandtime">
+                                                                                        11/04/2024 00:04</div>
+                                                                                    <div
+                                                                                        class="comment_visibilityStatus">
+                                                                                        Status: <span
+                                                                                            class="badge badge-soft-success  my-1  me-2">Everyone</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="media sent">
+                                                                    <div class="media-body">
+                                                                        <div class="msg-box">
+                                                                            <div>
+                                                                                <p>Thank you for bringing this to our
+                                                                                    attention. We apologize for any
+                                                                                    inconvenience caused by the water
+                                                                                    leakage in your bedroom. Our
+                                                                                    maintenance team will be dispatched
+                                                                                    immediately to inspect the issue and
+                                                                                    take appropriate action to resolve
+                                                                                    it promptly. Your safety and comfort
+                                                                                    are our top priorities, and we
+                                                                                    appreciate your patience as we work
+                                                                                    to address this matter.</p>
+                                                                                <div class="replyUserAuthor">
+                                                                                    <a href="view-user-details.php">Morgan
+                                                                                        Freeman</a>
+                                                                                    <div class="commentdateandtime">
+                                                                                        11/04/2024 00:04</div>
+                                                                                    <div
+                                                                                        class="comment_visibilityStatus">
+                                                                                        Status: <span
+                                                                                            class="badge badge-soft-success  my-1  me-2">Staff
+                                                                                            Only </span></div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="media sent">
+                                                                    <div class="media-body">
+                                                                        <div class="msg-box">
+                                                                            <div>
+                                                                                <p>We'll send someone ASAP to fix it.
+                                                                                    Thanks for letting us know.</p>
+                                                                                <div class="replyUserAuthor">
+                                                                                    <a href="view-user-details.php">Morgan
+                                                                                        Freeman</a>
+                                                                                    <div class="commentdateandtime">
+                                                                                        11/04/2024 00:04</div>
+                                                                                    <div
+                                                                                        class="comment_visibilityStatus">
+                                                                                        Status: <span
+                                                                                            class="badge badge-soft-success  my-1  me-2">Staff
+                                                                                            Only </span></div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="media received">
+                                                                    <div class="avatar avatar-xs avatar-rounded">
+                                                                        <img src="dist/img/newimages/users/userdummy.png"
+                                                                            alt="user" class="avatar-img">
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <div class="msg-box">
+                                                                            <div>
+                                                                                <p>Thanks</p>
+                                                                                <div class="replyUserAuthor">
+                                                                                    <a href="view-user-details.php">Danial
+                                                                                        Craig</a>
+                                                                                    <div class="commentdateandtime">
+                                                                                        11/04/2024 00:04</div>
+                                                                                    <div
+                                                                                        class="comment_visibilityStatus">
+                                                                                        Status: <span
+                                                                                            class="badge badge-soft-success  my-1  me-2">Everyone</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+
+                                                        </div>
+                                                    </div>
+                                                    <footer class="chat-footer">
+
+                                                        <div class="row">
+                                                            <div class="col-lg-9">
+                                                                <div class="input-group mt-4">
+                                                                    <span class="input-affix-wrapper">
+                                                                        <input type="text" id="input_msg_send_chatapp"
+                                                                            name="send-msg"
+                                                                            class="input-msg-send form-control rounded-input"
+                                                                            placeholder="Type your message...">
+                                                                        <span class="input-suffix">
+                                                                            <button
+                                                                                class="btn btn-icon btn-flush-primary btn-rounded btn-send">
+                                                                                <span class="icon"><span
+                                                                                        class="feather-icon">
+                                                                                        <iconify-icon
+                                                                                            icon="radix-icons:arrow-right">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </button>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <div class="form-group  formgroup_marginNone">
+                                                                    <label class="form-label">Visibility</label>
+                                                                    <select name="" id="" class="form-control select2">
+                                                                        <option disabled="" selected="" value="">Please
+                                                                            Select...</option>
+                                                                        <option value="1">Everyone</option>
+                                                                        <option value="2">Staff Only</option>
+                                                                        <option value="3">Landlord</option>
+                                                                        <option value="4">Tenant</option>
+
+                                                                    </select>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </footer>
+                                                </div>
+                                                    </div>
+
+                                                    <div class="savechangesformContainer">
+                                                <button type="submit" class="buttonInfOUpdate">
+                                                    <iconify-icon icon="fluent:save-32-regular">
+                                                    </iconify-icon>
+                                                    Save Changes
+                                                </button>
+                                            </div>
+
 
                                                 </div>
                                             </div>
@@ -4308,6 +5355,18 @@
             // instead of a settings object
         ]
     });
+    // Refresh slick slider when accordion is shown
+    $('#collapseOne').on('shown.bs.collapse', function () {
+            $('.slider').slick('setPosition');
+        });
+
+        $('#collapseTwo').on('shown.bs.collapse', function () {
+            $('.slider').slick('setPosition');
+        });
+
+        $('#collapseThree').on('shown.bs.collapse', function () {
+            $('.slider').slick('setPosition');
+        });
 </script>
 
 <!-- slick  slider for multple images end -->
@@ -4659,3 +5718,33 @@
     });
 </script>
 <!-- filepod image uploader end-->
+
+
+<!-- Task All Selcte checkbox js -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const allSelectCheck = document.getElementById('allSelectCheck');
+        const taskCheckboxes = document.querySelectorAll('.taskHeader input[type="checkbox"]');
+
+        allSelectCheck.addEventListener('change', function() {
+            taskCheckboxes.forEach(checkbox => {
+                checkbox.checked = allSelectCheck.checked;
+            });
+        });
+
+        taskCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                if (!checkbox.checked) {
+                    allSelectCheck.checked = false;
+                } else {
+                    const allChecked = Array.from(taskCheckboxes).every(chk => chk.checked);
+                    allSelectCheck.checked = allChecked;
+                }
+            });
+        });
+    });
+</script>
+
+
+
+

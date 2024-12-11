@@ -122,16 +122,6 @@
                                                                 </div>
 
                                                             </div>
-
-                                                            <div class="col-lg-2">
-                                                                <div class="form-group">
-                                                                    <label class="form-label">Weekly Budget</label>
-                                                                    <input class="form-control" placeholder="" value=""
-                                                                        type="text">
-
-                                                                </div>
-                                                            </div>
-
                                                             <div class="col-lg-2">
                                                                 <div class="form-group">
                                                                     <label class="form-label">Address</label>
@@ -222,6 +212,68 @@
                                                                 </div>
 
                                                             </div>
+                                                            <div class="col-lg-3">
+                                                                <div class="form-group">
+                                                                    <label class="form-label">Filter By Flat</label>
+                                                                    <select name="" id="" class="form-control select2">
+                                                                        <option value="" selected disable readonly>
+                                                                            Select an Option</option>
+                                                                        <option
+                                                                            value="FLAT 1 ( 3 Bedroom Apartment Student )">
+                                                                            FLAT 1 ( 3 Bedroom Apartment Student )</option>
+                                                                        <option
+                                                                            value="FLAT 2 ( 3 Bedroom Apartment Professionals)">
+                                                                            FLAT 2 ( 3 Bedroom Apartment Professionals)
+                                                                        </option>
+                                                                        
+
+                                                                    </select>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-lg-3">
+                                                                <div class="form-group">
+                                                                    <label class="form-label">Filter By Bedroom</label>
+                                                                    <select name="" id="" class="form-control select2">
+                                                                        <option value="" selected disable readonly>
+                                                                            Select an Option</option>
+                                                                        <option
+                                                                            value="Bedroom A">
+                                                                            Bedroom A</option>
+                                                                        <option
+                                                                            value="Bedroom B">
+                                                                            Bedroom B
+                                                                        </option>
+                                                                        <option
+                                                                            value="Bedroom C">
+                                                                            Bedroom C</option>
+                                                                        <option
+                                                                            value="Bedroom D">
+                                                                            Bedroom D
+                                                                        </option>
+                                                                        <option
+                                                                            value="Bedroom E">
+                                                                            Bedroom E
+                                                                        </option>
+
+                                                                    </select>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-lg-2">
+                                                                <div class="form-group">
+                                                                    <label class="form-label">Weekly Budget</label>
+                                                                    <input class="form-control" placeholder="" value=""
+                                                                        type="text">
+
+                                                                </div>
+                                                            </div>
+
+                                                            
 
                                                             <div class="col-lg-2">
                                                                 <div class="form-group">
@@ -264,27 +316,7 @@
                                                                 </div>
                                                             </div>
 
-                                                            <div class="col-lg-2">
-                                                                <div class="form-group">
-                                                                    <label class="form-label">Include Enquiries</label>
-                                                                    <select name="" id="" class="form-control select2">
-                                                                        <option value="" selected disable readonly>
-                                                                            Select an Option</option>
-                                                                        <option value="Enquiry Received">Enquiry
-                                                                            Received</option>
-                                                                        <option value="Information Requested ">
-                                                                            Information Requested </option>
-                                                                        <option value="Information Sent">Information
-                                                                            Sent</option>
-                                                                        <option value="Viewings Booked">Viewings Booked
-                                                                        </option>
-                                                                        <option value="Viewing Cancelled">Viewing
-                                                                            Cancelled</option>
-                                                                    </select>
-
-                                                                </div>
-
-                                                            </div>
+                                                            
 
                                                             <div class="col-lg-2">
                                                                 <div class="form-group">
@@ -309,13 +341,13 @@
                                                             </div>
                                                             <div class="col-auto flexcheckColumn">
                                                                 <div class="form-group">
-                                                                    <label class="form-label">&nbsp;</label>
+                                                                    
                                                                     <div class="form-check">
                                                                         <input type="checkbox" class="form-check-input"
                                                                             id="customCheckList6">
                                                                         <label class="form-check-label"
                                                                             for="customCheckList6">
-                                                                            Include Shared Occupancy
+                                                                            Sold Occupancy Fleactue
                                                                             <span class="done-strikethrough"></span>
                                                                         </label>
 
@@ -333,12 +365,13 @@
                                 </div>
                             </div>
                             <div class="contact-list-view">
-
                                 <table class="table common-datatable nowrap w-100 ">
                                     <thead>
                                         <tr>
-
                                             <th>Property </th>
+                                            <th>Address</th>
+                                            <th>Flat</th>
+                                            <th>Bedroom</th>
                                             <th>Floor</th>
                                             <th>Room Type</th>
                                             <th>Size</th>
@@ -378,7 +411,7 @@
                                                 <a href="property-details.php">
                                                     <div class="LongMesage_container">
                                                         <input class="refuge-collection-input tableLongMessage_Input"
-                                                            value="Sunset Boulevard, Los Angeles, California"></input>
+                                                            value="Leazes Terrace, Newcastle Upon Tyne, NE1 4LY"></input>
                                                         <button class="view-btn tablemessageview_btn" type="button"
                                                             data-bs-toggle="tooltip" data-bs-placement="top"
                                                             aria-label="Click to view"
@@ -388,9 +421,12 @@
                                                     </div>
                                                 </a>
                                             </td>
-                                            <td>3</td>
-                                            <td>2-Bedroom Apartment</td>
-                                            <td>1200 sqft</td>
+                                            <td>2 Leazes Terrace </td>
+                                            <td>FLAT 1 ( 3 Bedroom Apartment Student )</td>
+                                            <td>Bedroom A</td>
+                                            <td>Lower Ground</td>
+                                            <td>En-Suite Bedroom</td>
+                                            <td>12 Sqm</td>
                                             <td>Spacious and well-lit</td>
                                             <td>Master bedroom with en-suite</td>
                                             <td>2024-12-31</td>
@@ -433,13 +469,148 @@
                                                     </div>
                                                 </div>
                                             </td>
+
                                         </tr>
+                                        <tr>
+                                            
+                                            <td>
+                                                <a href="property-details.php">
+                                                    <div class="LongMesage_container">
+                                                        <input class="refuge-collection-input tableLongMessage_Input"
+                                                            value="Leazes Terrace, Newcastle Upon Tyne, NE1 4LY"></input>
+                                                        <button class="view-btn tablemessageview_btn" type="button"
+                                                            data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            aria-label="Click to view"
+                                                            data-bs-original-title="Click to view Full Message">
+                                                            <i class="bi bi-eye"></i> Read More
+                                                        </button>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td>2 Leazes Terrace </td>
+                                            <td>FLAT 1 ( 3 Bedroom Apartment Student )</td>
+                                            <td>Bedroom B</td>
+                                            <td>Lower Ground</td>
+                                            <td>En-Suite Bedroom</td>
+                                            <td>12 Sqm</td>
+                                            <td>Spacious and well-lit</td>
+                                            <td>Master bedroom with en-suite</td>
+                                            <td>2024-12-31</td>
+                                            <td>2024-01-01</td>
+                                            <td>52</td>
+                                            <td>£500</td>
+                                            <td>£30</td>
+                                            <td>£50</td>
+                                            <td>£580</td>
+                                            <td>£1,500</td>
+                                            <td>£2,000</td>
+                                            <td>£2,500</td>
+                                            <td>John</td>
+                                            <td>Doe</td>
+                                            <td>American</td>
+                                            <td>Employed</td>
+                                            <td>New Tenant</td>
+                                            <td>2023-11-29</td>
+                                            <td>Monthly</td>
+                                            <td>Active</td>
+                                            <td>Completed</td>
+                                            <td>Yes</td>
+                                            <td>Available</td>
+                                            <td>£26,000</td>
+                                            <td>£2,600</td>
+                                            <td>£1,560</td>
+                                            <td>£30,160</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+                                                        <a href="property-details.php"
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                            data-bs-toggle="tooltip" data-placement="top" title=""
+                                                            data-bs-original-title="View Property Details">
+                                                            <span class="icon">
+                                                                <span class="feather-icon"><i
+                                                                        data-feather="eye"></i></span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>
+                                                <a href="property-details.php">
+                                                    <div class="LongMesage_container">
+                                                        <input class="refuge-collection-input tableLongMessage_Input"
+                                                            value="Leazes Terrace, Newcastle Upon Tyne, NE1 4LY"></input>
+                                                        <button class="view-btn tablemessageview_btn" type="button"
+                                                            data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            aria-label="Click to view"
+                                                            data-bs-original-title="Click to view Full Message">
+                                                            <i class="bi bi-eye"></i> Read More
+                                                        </button>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td>2 Leazes Terrace </td>
+                                            <td>FLAT 1 ( 3 Bedroom Apartment Student )</td>
+                                            <td>Bedroom C</td>
+                                            <td>Lower Ground</td>
+                                            <td>En-Suite Bedroom</td>
+                                            <td>12 Sqm</td>
+                                            <td>Spacious and well-lit</td>
+                                            <td>Master bedroom with en-suite</td>
+                                            <td>2024-12-31</td>
+                                            <td>2024-01-01</td>
+                                            <td>52</td>
+                                            <td>£500</td>
+                                            <td>£30</td>
+                                            <td>£50</td>
+                                            <td>£580</td>
+                                            <td>£1,500</td>
+                                            <td>£2,000</td>
+                                            <td>£2,500</td>
+                                            <td>John</td>
+                                            <td>Doe</td>
+                                            <td>American</td>
+                                            <td>Employed</td>
+                                            <td>New Tenant</td>
+                                            <td>2023-11-29</td>
+                                            <td>Monthly</td>
+                                            <td>Active</td>
+                                            <td>Completed</td>
+                                            <td>Yes</td>
+                                            <td>Available</td>
+                                            <td>£26,000</td>
+                                            <td>£2,600</td>
+                                            <td>£1,560</td>
+                                            <td>£30,160</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+                                                        <a href="property-details.php"
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                            data-bs-toggle="tooltip" data-placement="top" title=""
+                                                            data-bs-original-title="View Property Details">
+                                                            <span class="icon">
+                                                                <span class="feather-icon"><i
+                                                                        data-feather="eye"></i></span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+
+
                                         <tr>
                                             <td>
                                                 <a href="property-details.php">
                                                     <div class="LongMesage_container">
                                                         <input class="refuge-collection-input tableLongMessage_Input"
-                                                            value="Sunset Boulevard, Los Angeles, California"></input>
+                                                            value="Leazes Terrace, Newcastle Upon Tyne, NE1 4LY"></input>
                                                         <button class="view-btn tablemessageview_btn" type="button"
                                                             data-bs-toggle="tooltip" data-bs-placement="top"
                                                             aria-label="Click to view"
@@ -449,9 +620,12 @@
                                                     </div>
                                                 </a>
                                             </td>
-                                            <td>3</td>
-                                            <td>2-Bedroom Apartment</td>
-                                            <td>1200 sqft</td>
+                                            <td>2 Leazes Terrace </td>
+                                            <td>FLAT 2 ( 3 Bedroom Apartment Professionals)</td>
+                                            <td>Bedroom A</td>
+                                            <td>Ground</td>
+                                            <td>En-Suite Bedroom</td>
+                                            <td>12 Sqm</td>
                                             <td>Spacious and well-lit</td>
                                             <td>Master bedroom with en-suite</td>
                                             <td>2024-12-31</td>
@@ -494,11 +668,476 @@
                                                     </div>
                                                 </div>
                                             </td>
+
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>
+                                                <a href="property-details.php">
+                                                    <div class="LongMesage_container">
+                                                        <input class="refuge-collection-input tableLongMessage_Input"
+                                                            value="Leazes Terrace, Newcastle Upon Tyne, NE1 4LY"></input>
+                                                        <button class="view-btn tablemessageview_btn" type="button"
+                                                            data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            aria-label="Click to view"
+                                                            data-bs-original-title="Click to view Full Message">
+                                                            <i class="bi bi-eye"></i> Read More
+                                                        </button>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td>2 Leazes Terrace </td>
+                                            <td>FLAT 2 ( 3 Bedroom Apartment Professionals)</td>
+                                            <td>Bedroom B</td>
+                                            <td>Ground</td>
+                                            <td>En-Suite Bedroom</td>
+                                            <td>12 Sqm</td>
+                                            <td>Spacious and well-lit</td>
+                                            <td>Master bedroom with en-suite</td>
+                                            <td>2024-12-31</td>
+                                            <td>2024-01-01</td>
+                                            <td>52</td>
+                                            <td>£500</td>
+                                            <td>£30</td>
+                                            <td>£50</td>
+                                            <td>£580</td>
+                                            <td>£1,500</td>
+                                            <td>£2,000</td>
+                                            <td>£2,500</td>
+                                            <td>John</td>
+                                            <td>Doe</td>
+                                            <td>American</td>
+                                            <td>Employed</td>
+                                            <td>New Tenant</td>
+                                            <td>2023-11-29</td>
+                                            <td>Monthly</td>
+                                            <td>Active</td>
+                                            <td>Completed</td>
+                                            <td>Yes</td>
+                                            <td>Available</td>
+                                            <td>£26,000</td>
+                                            <td>£2,600</td>
+                                            <td>£1,560</td>
+                                            <td>£30,160</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+                                                        <a href="property-details.php"
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                            data-bs-toggle="tooltip" data-placement="top" title=""
+                                                            data-bs-original-title="View Property Details">
+                                                            <span class="icon">
+                                                                <span class="feather-icon"><i
+                                                                        data-feather="eye"></i></span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>
+                                                <a href="property-details.php">
+                                                    <div class="LongMesage_container">
+                                                        <input class="refuge-collection-input tableLongMessage_Input"
+                                                            value="Leazes Terrace, Newcastle Upon Tyne, NE1 4LY"></input>
+                                                        <button class="view-btn tablemessageview_btn" type="button"
+                                                            data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            aria-label="Click to view"
+                                                            data-bs-original-title="Click to view Full Message">
+                                                            <i class="bi bi-eye"></i> Read More
+                                                        </button>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td>2 Leazes Terrace </td>
+                                            <td>FLAT 2 ( 3 Bedroom Apartment Professionals)</td>
+                                            <td>Bedroom C</td>
+                                            <td>Ground</td>
+                                            <td>En-Suite Bedroom</td>
+                                            <td>12 Sqm</td>
+                                            <td>Spacious and well-lit</td>
+                                            <td>Master bedroom with en-suite</td>
+                                            <td>2024-12-31</td>
+                                            <td>2024-01-01</td>
+                                            <td>52</td>
+                                            <td>£500</td>
+                                            <td>£30</td>
+                                            <td>£50</td>
+                                            <td>£580</td>
+                                            <td>£1,500</td>
+                                            <td>£2,000</td>
+                                            <td>£2,500</td>
+                                            <td>John</td>
+                                            <td>Doe</td>
+                                            <td>American</td>
+                                            <td>Employed</td>
+                                            <td>New Tenant</td>
+                                            <td>2023-11-29</td>
+                                            <td>Monthly</td>
+                                            <td>Active</td>
+                                            <td>Completed</td>
+                                            <td>Yes</td>
+                                            <td>Available</td>
+                                            <td>£26,000</td>
+                                            <td>£2,600</td>
+                                            <td>£1,560</td>
+                                            <td>£30,160</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+                                                        <a href="property-details.php"
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                            data-bs-toggle="tooltip" data-placement="top" title=""
+                                                            data-bs-original-title="View Property Details">
+                                                            <span class="icon">
+                                                                <span class="feather-icon"><i
+                                                                        data-feather="eye"></i></span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr>
+                                            
+                                            <td>
+                                                <a href="property-details.php">
+                                                    <div class="LongMesage_container">
+                                                        <input class="refuge-collection-input tableLongMessage_Input"
+                                                            value="Leazes Terrace, Newcastle Upon Tyne, NE1 4LY"></input>
+                                                        <button class="view-btn tablemessageview_btn" type="button"
+                                                            data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            aria-label="Click to view"
+                                                            data-bs-original-title="Click to view Full Message">
+                                                            <i class="bi bi-eye"></i> Read More
+                                                        </button>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td>2 Leazes Terrace </td>
+                                            <td>FLAT 1 ( 3 Bedroom Apartment Student )</td>
+                                            <td>Bedroom A</td>
+                                            <td>First</td>
+                                            <td>En-Suite Bedroom</td>
+                                            <td>12 Sqm</td>
+                                            <td>Spacious and well-lit</td>
+                                            <td>Master bedroom with en-suite</td>
+                                            <td>2024-12-31</td>
+                                            <td>2024-01-01</td>
+                                            <td>52</td>
+                                            <td>£500</td>
+                                            <td>£30</td>
+                                            <td>£50</td>
+                                            <td>£580</td>
+                                            <td>£1,500</td>
+                                            <td>£2,000</td>
+                                            <td>£2,500</td>
+                                            <td>John</td>
+                                            <td>Doe</td>
+                                            <td>American</td>
+                                            <td>Employed</td>
+                                            <td>New Tenant</td>
+                                            <td>2023-11-29</td>
+                                            <td>Monthly</td>
+                                            <td>Active</td>
+                                            <td>Completed</td>
+                                            <td>Yes</td>
+                                            <td>Available</td>
+                                            <td>£26,000</td>
+                                            <td>£2,600</td>
+                                            <td>£1,560</td>
+                                            <td>£30,160</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+                                                        <a href="property-details.php"
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                            data-bs-toggle="tooltip" data-placement="top" title=""
+                                                            data-bs-original-title="View Property Details">
+                                                            <span class="icon">
+                                                                <span class="feather-icon"><i
+                                                                        data-feather="eye"></i></span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>
+                                                <a href="property-details.php">
+                                                    <div class="LongMesage_container">
+                                                        <input class="refuge-collection-input tableLongMessage_Input"
+                                                            value="Leazes Terrace, Newcastle Upon Tyne, NE1 4LY"></input>
+                                                        <button class="view-btn tablemessageview_btn" type="button"
+                                                            data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            aria-label="Click to view"
+                                                            data-bs-original-title="Click to view Full Message">
+                                                            <i class="bi bi-eye"></i> Read More
+                                                        </button>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td>2 Leazes Terrace </td>
+                                            <td>FLAT 1 ( 3 Bedroom Apartment Student )</td>
+                                            <td>Bedroom B</td>
+                                            <td>First</td>
+                                            <td>En-Suite Bedroom</td>
+                                            <td>10 Sqm</td>
+                                            <td>Spacious and well-lit</td>
+                                            <td>Master bedroom with en-suite</td>
+                                            <td>2024-12-31</td>
+                                            <td>2024-01-01</td>
+                                            <td>52</td>
+                                            <td>£500</td>
+                                            <td>£30</td>
+                                            <td>£50</td>
+                                            <td>£580</td>
+                                            <td>£1,500</td>
+                                            <td>£2,000</td>
+                                            <td>£2,500</td>
+                                            <td>John</td>
+                                            <td>Doe</td>
+                                            <td>American</td>
+                                            <td>Employed</td>
+                                            <td>New Tenant</td>
+                                            <td>2023-11-29</td>
+                                            <td>Monthly</td>
+                                            <td>Active</td>
+                                            <td>Completed</td>
+                                            <td>Yes</td>
+                                            <td>Available</td>
+                                            <td>£26,000</td>
+                                            <td>£2,600</td>
+                                            <td>£1,560</td>
+                                            <td>£30,160</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+                                                        <a href="property-details.php"
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                            data-bs-toggle="tooltip" data-placement="top" title=""
+                                                            data-bs-original-title="View Property Details">
+                                                            <span class="icon">
+                                                                <span class="feather-icon"><i
+                                                                        data-feather="eye"></i></span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr>
+                                            
+                                            <td>
+                                                <a href="property-details.php">
+                                                    <div class="LongMesage_container">
+                                                        <input class="refuge-collection-input tableLongMessage_Input"
+                                                            value="Leazes Terrace, Newcastle Upon Tyne, NE1 4LY"></input>
+                                                        <button class="view-btn tablemessageview_btn" type="button"
+                                                            data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            aria-label="Click to view"
+                                                            data-bs-original-title="Click to view Full Message">
+                                                            <i class="bi bi-eye"></i> Read More
+                                                        </button>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td>2 Leazes Terrace </td>
+                                            <td>FLAT 1 ( 3 Bedroom Apartment Student )</td>
+                                            <td>Bedroom C</td>
+                                            <td>Second </td>
+                                            <td>En-Suite Bedroom</td>
+                                            <td>10 Sqm</td>
+                                            <td>Spacious and well-lit</td>
+                                            <td>Master bedroom with en-suite</td>
+                                            <td>2024-12-31</td>
+                                            <td>2024-01-01</td>
+                                            <td>52</td>
+                                            <td>£500</td>
+                                            <td>£30</td>
+                                            <td>£50</td>
+                                            <td>£580</td>
+                                            <td>£1,500</td>
+                                            <td>£2,000</td>
+                                            <td>£2,500</td>
+                                            <td>John</td>
+                                            <td>Doe</td>
+                                            <td>American</td>
+                                            <td>Employed</td>
+                                            <td>New Tenant</td>
+                                            <td>2023-11-29</td>
+                                            <td>Monthly</td>
+                                            <td>Active</td>
+                                            <td>Completed</td>
+                                            <td>Yes</td>
+                                            <td>Available</td>
+                                            <td>£26,000</td>
+                                            <td>£2,600</td>
+                                            <td>£1,560</td>
+                                            <td>£30,160</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+                                                        <a href="property-details.php"
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                            data-bs-toggle="tooltip" data-placement="top" title=""
+                                                            data-bs-original-title="View Property Details">
+                                                            <span class="icon">
+                                                                <span class="feather-icon"><i
+                                                                        data-feather="eye"></i></span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>
+                                                <a href="property-details.php">
+                                                    <div class="LongMesage_container">
+                                                        <input class="refuge-collection-input tableLongMessage_Input"
+                                                            value="Leazes Terrace, Newcastle Upon Tyne, NE1 4LY"></input>
+                                                        <button class="view-btn tablemessageview_btn" type="button"
+                                                            data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            aria-label="Click to view"
+                                                            data-bs-original-title="Click to view Full Message">
+                                                            <i class="bi bi-eye"></i> Read More
+                                                        </button>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td>2 Leazes Terrace </td>
+                                            <td>FLAT 1 ( 3 Bedroom Apartment Student )</td>
+                                            <td>Bedroom D</td>
+                                            <td>Second </td>
+                                            <td>En-Suite Bedroom</td>
+                                            <td>15 Sqm</td>
+                                            <td>Spacious and well-lit</td>
+                                            <td>Master bedroom with en-suite</td>
+                                            <td>2024-12-31</td>
+                                            <td>2024-01-01</td>
+                                            <td>52</td>
+                                            <td>£500</td>
+                                            <td>£30</td>
+                                            <td>£50</td>
+                                            <td>£580</td>
+                                            <td>£1,500</td>
+                                            <td>£2,000</td>
+                                            <td>£2,500</td>
+                                            <td>John</td>
+                                            <td>Doe</td>
+                                            <td>American</td>
+                                            <td>Employed</td>
+                                            <td>New Tenant</td>
+                                            <td>2023-11-29</td>
+                                            <td>Monthly</td>
+                                            <td>Active</td>
+                                            <td>Completed</td>
+                                            <td>Yes</td>
+                                            <td>Available</td>
+                                            <td>£26,000</td>
+                                            <td>£2,600</td>
+                                            <td>£1,560</td>
+                                            <td>£30,160</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+                                                        <a href="property-details.php"
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                            data-bs-toggle="tooltip" data-placement="top" title=""
+                                                            data-bs-original-title="View Property Details">
+                                                            <span class="icon">
+                                                                <span class="feather-icon"><i
+                                                                        data-feather="eye"></i></span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr>
+                                            
+                                            <td>
+                                                <a href="property-details.php">
+                                                    <div class="LongMesage_container">
+                                                        <input class="refuge-collection-input tableLongMessage_Input"
+                                                            value="Leazes Terrace, Newcastle Upon Tyne, NE1 4LY"></input>
+                                                        <button class="view-btn tablemessageview_btn" type="button"
+                                                            data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            aria-label="Click to view"
+                                                            data-bs-original-title="Click to view Full Message">
+                                                            <i class="bi bi-eye"></i> Read More
+                                                        </button>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td>2 Leazes Terrace </td>
+                                            <td>FLAT 1 ( 3 Bedroom Apartment Student )</td>
+                                            <td>Bedroom E</td>
+                                            <td>Second </td>
+                                            <td>En-Suite Bedroom</td>
+                                            <td>15 Sqm</td>
+                                            <td>Spacious and well-lit</td>
+                                            <td>Master bedroom with en-suite</td>
+                                            <td>2024-12-31</td>
+                                            <td>2024-01-01</td>
+                                            <td>52</td>
+                                            <td>£500</td>
+                                            <td>£30</td>
+                                            <td>£50</td>
+                                            <td>£580</td>
+                                            <td>£1,500</td>
+                                            <td>£2,000</td>
+                                            <td>£2,500</td>
+                                            <td>John</td>
+                                            <td>Doe</td>
+                                            <td>American</td>
+                                            <td>Employed</td>
+                                            <td>New Tenant</td>
+                                            <td>2023-11-29</td>
+                                            <td>Monthly</td>
+                                            <td>Active</td>
+                                            <td>Completed</td>
+                                            <td>Yes</td>
+                                            <td>Available</td>
+                                            <td>£26,000</td>
+                                            <td>£2,600</td>
+                                            <td>£1,560</td>
+                                            <td>£30,160</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+                                                        <a href="property-details.php"
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                            data-bs-toggle="tooltip" data-placement="top" title=""
+                                                            data-bs-original-title="View Property Details">
+                                                            <span class="icon">
+                                                                <span class="feather-icon"><i
+                                                                        data-feather="eye"></i></span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+
                                         </tr>
 
                                     </tbody>
                                 </table>
-                                
 
                             </div>
                         </div>
@@ -571,70 +1210,45 @@
     }
 </script>
 
-
-
 <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Select all toggle buttons
-            const toggleButtons = document.querySelectorAll(".btn-toggle");
+    $(document).ready(function () {
+        // Initialize DataTable
+        let table = $(".common-datatable").DataTable();
 
-            // Attach event listeners to each button
-            toggleButtons.forEach(function (button) {
-                button.addEventListener("click", function () {
-                    // Toggle active state
-                    button.classList.toggle("active");
+        // Create an object to group rows by Flat and Floor
+        let flatFloorGroups = {};
 
-                    // Find the corresponding content row
-                    const contentRow = button.closest("tr").nextElementSibling;
+        // Use DataTables API to iterate through each row
+        table.rows().every(function () {
+            let row = this.node(); // Get the actual DOM row
+            let flatValue = $(row).find("td:nth-child(1)").text().trim(); // Get Flat column value
+            let floorValue = $(row).find("td:nth-child(3)").text().trim(); // Get Floor column value
 
-                    if (contentRow && contentRow.classList.contains("tr-content-body")) {
-                        // Toggle row visibility
-                        const isHidden = contentRow.style.display === "none" || contentRow.style.display === "";
-                        contentRow.style.display = isHidden ? "table-row" : "none";
+            // Create a unique key for each Flat-Floor combination
+            let flatFloorKey = `${flatValue}_${floorValue}`;
 
-                        // Update button icon
-                        const icon = button.querySelector("i");
-                        if (isHidden) {
-                            icon.classList.remove("bi-chevron-down");
-                            icon.classList.add("bi-chevron-up");
-                        } else {
-                            icon.classList.remove("bi-chevron-up");
-                            icon.classList.add("bi-chevron-down");
-                        }
-                    }
-                });
+            // Group rows by Flat-Floor combination
+            if (!flatFloorGroups[flatFloorKey]) {
+                flatFloorGroups[flatFloorKey] = [];
+            }
+            flatFloorGroups[flatFloorKey].push($(row)); // Store the entire row (<tr>)
+        });
+
+        // Define colors for alternating groups
+        let colors = ["#f8d7da", "#d4edda", "#fff3cd", "#d1ecf1"];
+        let colorIndex = 0;
+
+        // Apply colors to grouped rows
+        $.each(flatFloorGroups, function (flatFloorKey, rows) {
+            // Assign a color from the palette
+            let currentColor = colors[colorIndex % colors.length];
+            colorIndex++;
+
+            // Apply the background color to all <td> elements in the group
+            rows.forEach(function (row) {
+                row.find("td").css("background-color", currentColor);
             });
         });
-    </script>
+    });
+</script>
 
-<style>
-        .expanded-content {
-            padding: 10px;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        .tr-content-body {
-            display: none;
-        }
-
-        .tr-content-body td {
-            background-color: #f8f8f8;
-        }
-
-        .btn-toggle {
-            background: none;
-            border: none;
-            outline: none;
-            cursor: pointer;
-        }
-
-        .btn-toggle i {
-            transition: transform 0.3s ease;
-        }
-
-        .btn-toggle.active i {
-            transform: rotate(180deg);
-        }
-    </style>

@@ -168,7 +168,7 @@
                                     <li class="nav-item">
                                         <a class="nav-link" data-bs-toggle="tab" href="#PreferredContract">
                                             <div class="d-flex align-items-center">
-                                                <span class="nav-link-text">Preferred Contracts</span>
+                                                <span class="nav-link-text">Preferred Contractors</span>
 
                                             </div>
                                         </a>
@@ -1207,262 +1207,240 @@
                                                     <div class="card-body">
 
                                                         <div class="row">
-                                                        <div
-            class="d-flex align-items-center justify-content-between mb-2">
-            <div class="title title-lg mb-0"><span>All
-                    Comments</span></div>
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-between mb-2">
+                                                                <div class="title title-lg mb-0"><span>All
+                                                                        Comments</span></div>
 
-        </div>
+                                                            </div>
 
-        <div class="comment-block">
+                                                            <div class="comment-block">
 
-            <div class="card card-border note-block">
-                <div class="card-body">
+                                                                <div class="card card-border note-block">
+                                                                    <div class="card-body">
 
-                    <div class="media align-items-center">
-                        <div class="media-head">
-                            <div
-                                class="avatar avatar-xs avatar-rounded">
-                                <img src="dist/img/newimages/users/userdummy.png"
-                                    alt="user"
-                                    class="avatar-img">
-                            </div>
-                        </div>
-                        <div class="media-body">
-                            <div class="noteAuthor_title">
-                                Martin Luther</div>
-                            <div class="NoteTiming">
-                                9 Apr, 20, 7:14 AM
-                            </div>
-                        </div>
-                    </div>
-                    <p class="NoteDescription">@<a href="#"
-                            class="fw-medium">Charlie
-                            Darvin</a> Tenant was
-                        very interested in the
-                        property, appreciating the
-                        layout and natural light.
-                        They need two bedrooms, a
-                        workspace, and a parking
-                        spot. They have a small dog
-                        and prefer to move in by the
-                        end of next month. Awaiting
-                        their decision by the end of
-                        the week.</p>
-                </div>
-            </div>
-            <div class="card card-border note-block ">
-                <div class="card-body">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head">
+                                                                                <div
+                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <div class="noteAuthor_title">
+                                                                                    Martin Luther</div>
+                                                                                <div class="NoteTiming">
+                                                                                    9 Apr, 20, 7:14 AM
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <p class="NoteDescription">@<a href="#"
+                                                                                class="fw-medium">Charlie
+                                                                                Darvin</a> Tenant was
+                                                                            very interested in the
+                                                                            property, appreciating the
+                                                                            layout and natural light.
+                                                                            They need two bedrooms, a
+                                                                            workspace, and a parking
+                                                                            spot. They have a small dog
+                                                                            and prefer to move in by the
+                                                                            end of next month. Awaiting
+                                                                            their decision by the end of
+                                                                            the week.</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card card-border note-block ">
+                                                                    <div class="card-body">
 
-                    <div class="media align-items-center">
-                        <div class="media-head">
-                            <div
-                                class="avatar avatar-xs avatar-rounded">
-                                <img src="dist/img/newimages/users/userdummy.png"
-                                    alt="user"
-                                    class="avatar-img">
-                            </div>
-                        </div>
-                        <div class="media-body">
-                            <div class="noteAuthor_title">
-                                Katherine Jones
-                            </div>
-                            <div class="NoteTiming">
-                                8 Apr, 20, 5:30 PM
-                            </div>
-                        </div>
-                    </div>
-                    <p class="NoteDescription">@<a href="#"
-                            class="fw-medium">Martin
-                            Luther</a> Viscosity
-                        ratio for "Appear view" link
-                        text is 3.7:1 which is less
-                    </p>
-                </div>
-            </div>
-            <div class="separator separator-light">
-            </div>
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head">
+                                                                                <div
+                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <div class="noteAuthor_title">
+                                                                                    Katherine Jones
+                                                                                </div>
+                                                                                <div class="NoteTiming">
+                                                                                    8 Apr, 20, 5:30 PM
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <p class="NoteDescription">@<a href="#"
+                                                                                class="fw-medium">Martin
+                                                                                Luther</a> Viscosity
+                                                                            ratio for "Appear view" link
+                                                                            text is 3.7:1 which is less
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="separator separator-light">
+                                                                </div>
 
-            <div class="AddNoteEnuSection" id="AddNote">
-                <div class="form-group">
-                    <label class="form-label">Note
-                        header</label>
-                    <input class="form-control" type="text"
-                        name="" placeholder="Add Title">
-                </div>
+                                                                <div class="AddNoteEnuSection" id="AddNote">
+                                                                    <div class="form-group">
+                                                                        <label class="form-label">Note
+                                                                            header</label>
+                                                                        <input class="form-control" type="text" name=""
+                                                                            placeholder="Add Title">
+                                                                    </div>
 
-                <div class="form-group">
-                    <label class="form-label">Add
-                        Comment</label>
-                    <textarea class="form-control"
-                        rows="5"></textarea>
-                </div>
-                <div class="NoteAction_container">
-                    <div class="sendEnquiryNote_container">
-                        <div class="addto_todolist">
-                            <div class="form-check">
-                                <input type="checkbox"
-                                    class="form-check-input"
-                                    id="customCheckList-todo">
-                                <label
-                                    class="form-check-label"
-                                    for="customCheckList-todo">
-                                    Add to ToDo List
-                                    <span
-                                        class="done-strikethrough"></span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="sendEnquiryNote_container setAlert_container">
-                        <div class="addto_todolist">
-                            <div class="form-check">
-                                <input type="checkbox"
-                                    class="form-check-input setAlertInput">
-                                <label
-                                    class="form-check-label"
-                                    for="customCheckList-todo">
-                                    Set As Alert
-                                    <span
-                                        class="done-strikethrough"></span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="form-label">Add
+                                                                            Comment</label>
+                                                                        <textarea class="form-control"
+                                                                            rows="5"></textarea>
+                                                                    </div>
+                                                                    <div class="NoteAction_container">
+                                                                        <div class="sendEnquiryNote_container">
+                                                                            <div class="addto_todolist">
+                                                                                <div class="form-check">
+                                                                                    <input type="checkbox"
+                                                                                        class="form-check-input"
+                                                                                        id="customCheckList-todo">
+                                                                                    <label class="form-check-label"
+                                                                                        for="customCheckList-todo">
+                                                                                        Add to ToDo List
+                                                                                        <span
+                                                                                            class="done-strikethrough"></span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="sendEnquiryNote_container setAlert_container">
+                                                                            <div class="addto_todolist">
+                                                                                <div class="form-check">
+                                                                                    <input type="checkbox"
+                                                                                        class="form-check-input setAlertInput">
+                                                                                    <label class="form-check-label"
+                                                                                        for="customCheckList-todo">
+                                                                                        Set As Alert
+                                                                                        <span
+                                                                                            class="done-strikethrough"></span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
 
-                </div>
+                                                                    </div>
 
-                <div class="Showing_departmentand_users"
-                    style="display: none;">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label
-                                    class="form-label">Select
-                                    Department</label>
-                                <select
-                                    class="form-control select2"
-                                    id="selectDepartment">
-                                    <option disabled
-                                        selected value="">
-                                        Please
-                                        Select...
-                                    </option>
-                                    <option
-                                        value="Account Department">
-                                        Account
-                                        Department
-                                    </option>
-                                    <option
-                                        value="HR Department">
-                                        HR
-                                        Department
-                                    </option>
-                                    <option
-                                        value="Contract Department">
-                                        Contract
-                                        Department
-                                    </option>
-                                    <option
-                                        value="Lettings Department">
-                                        Lettings
-                                        Department
-                                    </option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label
-                                    class="form-label">Select
-                                    Users</label>
-                                <select
-                                    class="form-control select2"
-                                    id="selectUser">
-                                    <option disabled
-                                        selected value="">
-                                        Please
-                                        Select...
-                                    </option>
-                                    <option
-                                        value="John Doe">
-                                        John Doe
-                                    </option>
-                                    <option
-                                        value="Jane Smith">
-                                        Jane Smith
-                                    </option>
-                                    <option
-                                        value="Alice Johnson">
-                                        Alice
-                                        Johnson
-                                    </option>
-                                    <option
-                                        value="Robert Brown">
-                                        Robert Brown
-                                    </option>
-                                    <option
-                                        value="Michael Williams">
-                                        Michael
-                                        Williams
-                                    </option>
-                                    <option
-                                        value="Emily Davis">
-                                        Emily Davis
-                                    </option>
-                                    <option
-                                        value="David Wilson">
-                                        David Wilson
-                                    </option>
-                                    <option
-                                        value="Sophia Martinez">
-                                        Sophia
-                                        Martinez
-                                    </option>
-                                    <option
-                                        value="James Anderson">
-                                        James
-                                        Anderson
-                                    </option>
-                                    <option
-                                        value="Olivia Taylor">
-                                        Olivia
-                                        Taylor
-                                    </option>
-                                    <option
-                                        value="Chris Thomas">
-                                        Chris Thomas
-                                    </option>
-                                    <option
-                                        value="Emma Harris">
-                                        Emma Harris
-                                    </option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="form-group">
-                                <label
-                                    class="form-label">Select
-                                    Due Date</label>
-                                <input
-                                    class="form-control customdataPicker"
-                                    type="text" name=""
-                                    value=""
-                                    placeholder="Due Date" />
-                                <iconify-icon
-                                    icon="ion:calendar-outline"
-                                    class="dateinput_icon">
-                                </iconify-icon>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                                                    <div class="Showing_departmentand_users"
+                                                                        style="display: none;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <div class="form-group">
+                                                                                    <label class="form-label">Select
+                                                                                        Department</label>
+                                                                                    <select class="form-control select2"
+                                                                                        id="selectDepartment">
+                                                                                        <option disabled selected
+                                                                                            value="">
+                                                                                            Please
+                                                                                            Select...
+                                                                                        </option>
+                                                                                        <option
+                                                                                            value="Account Department">
+                                                                                            Account
+                                                                                            Department
+                                                                                        </option>
+                                                                                        <option value="HR Department">
+                                                                                            HR
+                                                                                            Department
+                                                                                        </option>
+                                                                                        <option
+                                                                                            value="Contract Department">
+                                                                                            Contract
+                                                                                            Department
+                                                                                        </option>
+                                                                                        <option
+                                                                                            value="Lettings Department">
+                                                                                            Lettings
+                                                                                            Department
+                                                                                        </option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="form-group">
+                                                                                    <label class="form-label">Select
+                                                                                        Users</label>
+                                                                                    <select class="form-control select2"
+                                                                                        id="selectUser">
+                                                                                        <option disabled selected
+                                                                                            value="">
+                                                                                            Please
+                                                                                            Select...
+                                                                                        </option>
+                                                                                        <option value="John Doe">
+                                                                                            John Doe
+                                                                                        </option>
+                                                                                        <option value="Jane Smith">
+                                                                                            Jane Smith
+                                                                                        </option>
+                                                                                        <option value="Alice Johnson">
+                                                                                            Alice
+                                                                                            Johnson
+                                                                                        </option>
+                                                                                        <option value="Robert Brown">
+                                                                                            Robert Brown
+                                                                                        </option>
+                                                                                        <option
+                                                                                            value="Michael Williams">
+                                                                                            Michael
+                                                                                            Williams
+                                                                                        </option>
+                                                                                        <option value="Emily Davis">
+                                                                                            Emily Davis
+                                                                                        </option>
+                                                                                        <option value="David Wilson">
+                                                                                            David Wilson
+                                                                                        </option>
+                                                                                        <option value="Sophia Martinez">
+                                                                                            Sophia
+                                                                                            Martinez
+                                                                                        </option>
+                                                                                        <option value="James Anderson">
+                                                                                            James
+                                                                                            Anderson
+                                                                                        </option>
+                                                                                        <option value="Olivia Taylor">
+                                                                                            Olivia
+                                                                                            Taylor
+                                                                                        </option>
+                                                                                        <option value="Chris Thomas">
+                                                                                            Chris Thomas
+                                                                                        </option>
+                                                                                        <option value="Emma Harris">
+                                                                                            Emma Harris
+                                                                                        </option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4">
+                                                                                <div class="form-group">
+                                                                                    <label class="form-label">Select
+                                                                                        Due Date</label>
+                                                                                    <input
+                                                                                        class="form-control customdataPicker"
+                                                                                        type="text" name="" value=""
+                                                                                        placeholder="Due Date" />
+                                                                                    <iconify-icon
+                                                                                        icon="ion:calendar-outline"
+                                                                                        class="dateinput_icon">
+                                                                                    </iconify-icon>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
 
-            </div>
+                                                                </div>
 
-        </div>
+                                                            </div>
                                                         </div>
                                                         <div class="submitnote_container">
                                                             <button type="button"
@@ -2478,16 +2456,15 @@
                                         <div class="tab-pane fade" id="PreferredContract">
                                             <div class="fullwidthTabInner_content_container">
                                                 <div class="docfilterbutton">
-                                                    <h2 class="tabinnerTitle">Preferred Contract</h2>
+                                                    <h2 class="tabinnerTitle">Preferred Contractors</h2>
                                                     <div class="RightTabinr_container">
-
                                                         <button
                                                             class="btn btn-sm addiconiButton commonAddnewButton btn-primary ms-3"
                                                             type="button" data-bs-toggle="offcanvas"
                                                             data-bs-target="#AddContractmodal"
                                                             aria-controls="offcanvasExample">
                                                             <iconify-icon icon="lets-icons:add-round">
-                                                            </iconify-icon> Add Contract
+                                                            </iconify-icon> Add Contractor
                                                         </button>
                                                     </div>
                                                 </div>
@@ -2530,6 +2507,7 @@
                                                                         </td>
                                                                         <td>1234567890</td>
                                                                         <td>student@gmail.com</td>
+                                                                        
                                                                         <td>
                                                                             <div
                                                                                 class="d-flex align-items-center ActionDropdown">
@@ -2546,6 +2524,17 @@
                                                                                                     icon="fluent:edit-16-regular">
                                                                                                 </iconify-icon>
                                                                                             </span></span></button>
+                                                                                            <button type="button" data-bs-toggle="offcanvas"
+                                                                                        data-bs-target="#Viewpreffered_contract"
+                                                                                        aria-controls="offcanvasExample"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span
+                                                                                        class="feather-icon">
+                                                                                        <iconify-icon
+                                                                                            icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </button>
                                                                                 </div>
 
                                                                             </div>
@@ -2574,6 +2563,7 @@
                                                                         </td>
                                                                         <td>9876543210</td>
                                                                         <td>johnsmith@example.com</td>
+                                                                        
                                                                         <td>
                                                                             <div
                                                                                 class="d-flex align-items-center ActionDropdown">
@@ -2592,6 +2582,17 @@
                                                                                             </span>
                                                                                         </span>
                                                                                     </button>
+                                                                                    <button type="button" data-bs-toggle="offcanvas"
+                                                                                        data-bs-target="#Viewpreffered_contract"
+                                                                                        aria-controls="offcanvasExample"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span
+                                                                                        class="feather-icon">
+                                                                                        <iconify-icon
+                                                                                            icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </button>
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -2620,6 +2621,7 @@
                                                                         </td>
                                                                         <td>1122334455</td>
                                                                         <td>janedoe@example.com</td>
+                                                                        
                                                                         <td>
                                                                             <div
                                                                                 class="d-flex align-items-center ActionDropdown">
@@ -2638,6 +2640,17 @@
                                                                                             </span>
                                                                                         </span>
                                                                                     </button>
+                                                                                    <button type="button" data-bs-toggle="offcanvas"
+                                                                                        data-bs-target="#Viewpreffered_contract"
+                                                                                        aria-controls="offcanvasExample"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span
+                                                                                        class="feather-icon">
+                                                                                        <iconify-icon
+                                                                                            icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </button>
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -2666,6 +2679,7 @@
                                                                         </td>
                                                                         <td>2233445566</td>
                                                                         <td>michaeljordan@example.com</td>
+                                                                        
                                                                         <td>
                                                                             <div
                                                                                 class="d-flex align-items-center ActionDropdown">
@@ -2684,6 +2698,17 @@
                                                                                             </span>
                                                                                         </span>
                                                                                     </button>
+                                                                                    <button type="button" data-bs-toggle="offcanvas"
+                                                                                        data-bs-target="#Viewpreffered_contract"
+                                                                                        aria-controls="offcanvasExample"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span
+                                                                                        class="feather-icon">
+                                                                                        <iconify-icon
+                                                                                            icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </button>
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -2712,6 +2737,7 @@
                                                                         </td>
                                                                         <td>3344556677</td>
                                                                         <td>sarahconnor@example.com</td>
+                                                                        
                                                                         <td>
                                                                             <div
                                                                                 class="d-flex align-items-center ActionDropdown">
@@ -2730,6 +2756,17 @@
                                                                                             </span>
                                                                                         </span>
                                                                                     </button>
+                                                                                    <button type="button" data-bs-toggle="offcanvas"
+                                                                                        data-bs-target="#Viewpreffered_contract"
+                                                                                        aria-controls="offcanvasExample"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span
+                                                                                        class="feather-icon">
+                                                                                        <iconify-icon
+                                                                                            icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </button>
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -2758,6 +2795,7 @@
                                                                         </td>
                                                                         <td>4455667788</td>
                                                                         <td>lisasimpson@example.com</td>
+                                                                       
                                                                         <td>
                                                                             <div
                                                                                 class="d-flex align-items-center ActionDropdown">
@@ -2776,6 +2814,17 @@
                                                                                             </span>
                                                                                         </span>
                                                                                     </button>
+                                                                                    <button type="button" data-bs-toggle="offcanvas"
+                                                                                        data-bs-target="#Viewpreffered_contract"
+                                                                                        aria-controls="offcanvasExample"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span
+                                                                                        class="feather-icon">
+                                                                                        <iconify-icon
+                                                                                            icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </button>
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -2804,6 +2853,7 @@
                                                                         </td>
                                                                         <td>5566778899</td>
                                                                         <td>tonystark@example.com</td>
+                                                                        
                                                                         <td>
                                                                             <div
                                                                                 class="d-flex align-items-center ActionDropdown">
@@ -2822,6 +2872,17 @@
                                                                                             </span>
                                                                                         </span>
                                                                                     </button>
+                                                                                    <button type="button" data-bs-toggle="offcanvas"
+                                                                                        data-bs-target="#Viewpreffered_contract"
+                                                                                        aria-controls="offcanvasExample"
+                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                <span class="icon"><span
+                                                                                        class="feather-icon">
+                                                                                        <iconify-icon
+                                                                                            icon="ant-design:eye-outlined">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </button>
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -4504,6 +4565,14 @@
 
                                 </div>
 
+                                <div class="col-lg-12">
+                                <div class="form-group">
+                                                                        <label class="form-label">Add
+                                                                            Contract Description</label>
+                                                                        <textarea class="form-control" rows="5"></textarea>
+                                                                    </div>
+                                </div>
+
                             </div>
                         </div>
 
@@ -4589,6 +4658,13 @@
                                     </div>
 
                                 </div>
+                                <div class="col-lg-12">
+                                <div class="form-group">
+                                                                        <label class="form-label">Add
+                                                                            Contract Description</label>
+                                                                        <textarea class="form-control" rows="5"></textarea>
+                                                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -4607,6 +4683,98 @@
     </form>
 </div>
 <!-- Edit preffered contracr offcanvas modal end -->
+
+<!--View contracts contract offcanvas -->
+<div class="offcanvas offcanvas-bottom custombottm_offcanvasStyle" tabindex="-1" id="Viewpreffered_contract"
+    aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header custom-canvas-header">
+        <div class="canvas-header-title">
+            <iconify-icon icon="pajamas:issue-type-incident" width="1.2em" height="1.2em"></iconify-icon>
+            View Contract
+        </div>
+        <div class="closeCanvasContainer">
+            <button type="button" class="canvascloseButton" data-bs-dismiss="offcanvas" aria-label="Close">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    class="ct-icon" style="min-width: 20px; min-height: 20px; color: var(--ct-white);"
+                    data-testid="icon">
+                    <path
+                        d="M11.375 14.5C11.5583 14.6833 11.7667 14.775 12 14.775C12.2333 14.775 12.4417 14.6833 12.625 14.5L15.625 11.525C15.7583 11.3917 15.8207 11.2167 15.812 11C15.804 10.7833 15.7333 10.6083 15.6 10.475C15.45 10.325 15.275 10.25 15.075 10.25C14.875 10.25 14.7 10.325 14.55 10.475L12 13.025L9.425 10.45C9.29167 10.3167 9.11667 10.254 8.9 10.262C8.68333 10.2707 8.50833 10.3417 8.375 10.475C8.225 10.625 8.15 10.8 8.15 11C8.15 11.2 8.225 11.375 8.375 11.525L11.375 14.5ZM12 21.5C10.6833 21.5 9.446 21.25 8.288 20.75C7.12933 20.25 6.125 19.575 5.275 18.725C4.425 17.875 3.75 16.8707 3.25 15.712C2.75 14.554 2.5 13.3167 2.5 12C2.5 10.6833 2.75 9.44567 3.25 8.287C3.75 7.129 4.425 6.125 5.275 5.275C6.125 4.425 7.12933 3.75 8.288 3.25C9.446 2.75 10.6833 2.5 12 2.5C13.3167 2.5 14.5543 2.75 15.713 3.25C16.871 3.75 17.875 4.425 18.725 5.275C19.575 6.125 20.25 7.129 20.75 8.287C21.25 9.44567 21.5 10.6833 21.5 12C21.5 13.3167 21.25 14.554 20.75 15.712C20.25 16.8707 19.575 17.875 18.725 18.725C17.875 19.575 16.871 20.25 15.713 20.75C14.5543 21.25 13.3167 21.5 12 21.5ZM12 20C14.2167 20 16.1043 19.221 17.663 17.663C19.221 16.1043 20 14.2167 20 12C20 9.78333 19.221 7.89567 17.663 6.337C16.1043 4.779 14.2167 4 12 4C9.78333 4 7.896 4.779 6.338 6.337C4.77933 7.89567 4 9.78333 4 12C4 14.2167 4.77933 16.1043 6.338 17.663C7.896 19.221 9.78333 20 12 20Z"
+                        fill="currentColor"></path>
+                </svg>Close
+            </button>
+        </div>
+
+    </div>
+    <div class="Canvas_ct_divider"></div>
+    <form class="" action="property-details.php" method="POST">
+        <div class="offcanvas-body">
+
+            <div class="addingForm_Container ">
+                
+                <div class="formstartcontainer">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Type</label>
+                                        <select name="" id="" class="form-control select2" disabled readonly>
+                                            <option disabled="" selected="" value="">Please Select...</option>
+                                            <option value="1" selected>Maintenance</option>
+                                            <option value="2">Accounts</option>
+                                            <option value="3">General</option>
+                                            <option value="4">Complaints Ticket</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="Name" value="John Smith" readonly>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Mobile Number</label>
+                                        <input type="text" class="form-control" id="mobilenumbercntr" value="9876543210" readonly>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Email Address</label>
+                                        <input type="text" class="form-control" id="cntr_emailaddress" value="johnsmith@example.com" readonly>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-12">
+                                <div class="form-group">
+                                                                        <label class="form-label">Add
+                                                                        Contractor Description</label>
+                                                                        <textarea class="form-control" rows="5" readonly>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti obcaecati aliquid pariatur ad quae minima?</textarea>
+                                                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="canvasFooterContainer">
+            <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
+                data-bs-dismiss="offcanvas">Close</button>
+        </div>
+    </form>
+</div>
+<!-- View contracts offcanvas modal end -->
 
 <!-- add source code modal-->
 <div id="AddSecureCodes" class="modal sm_modalCustom fade" tabindex="-1" role="dialog" aria-hidden="true">
@@ -4707,7 +4875,7 @@
   hide the assign selection option  start
   -------------------------------------------------------->
 
-  <script>
+<script>
     $(document).ready(function() {
         // Toggle the visibility of Showing_departmentand_users based on the checkbox
         $(document).on('change', '.customCheckList-todo', function() {
@@ -5031,4 +5199,3 @@
     });
 </script>
 <!-- filepod image uploader end-->
-

@@ -3558,7 +3558,9 @@
                                                     <div class="mainuserFilesds_tabpaneContainer">
                                                         <div class="docfilterbutton">
                                                             <h2 class="tabinnerTitle">Manage Password</h2>
-                                                            <div class="lastpasswordChangeDate">
+                                                            <div class="managepassword_action_right">
+                                                            
+                                                        <div class="lastpasswordChangeDate">
                                                                 <iconify-icon icon="iconamoon:lock-light">
                                                                 </iconify-icon> Last Changed: <div
                                                                     class="dateShowlastchanged"><span
@@ -3566,9 +3568,18 @@
                                                                         Mar , 18 2024
                                                                     </span></div>
                                                             </div>
+                                                            <button Type="button" class="buttonInfOUpdate commonUpdateButton" id="requesttemprary_Pass">
+                                                            <iconify-icon icon="carbon:intent-request-scale-in"></iconify-icon>
+                                                            Request Temporary Password
+                                                        </button>
+                                                        <button Type="button" class="buttonInfOUpdate commonUpdateButton " id="requestchange_Pass">
+                                                            <iconify-icon icon="carbon:intent-request-scale-in"></iconify-icon>
+                                                            Request Change Password
+                                                        </button>
+                                                            </div>
                                                         </div>
 
-                                                        <div class="row">
+                                                        <!-- <div class="row">
 
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
@@ -3605,14 +3616,14 @@
                                                                 </div>
                                                             </div>
 
-                                                        </div>
+                                                        </div> -->
                                                     </div>
-                                                    <div class="savechangesformContainer">
+                                                    <!-- <div class="savechangesformContainer">
                                                         <button Type="submit" class="buttonInfOUpdate">
                                                             <iconify-icon icon="fluent:save-32-regular"></iconify-icon>
                                                             Change Password
                                                         </button>
-                                                    </div>
+                                                    </div> -->
 
                                                     <div class="MutiUserAuthntication_container">
                                                         <div class="row">
@@ -5847,3 +5858,74 @@
 
 </script>
 <!-- add notes functionality end -->
+
+
+<!-- password change request confirmation alert  -->
+<script>
+    // Custom styles for the Swal buttons
+    const swalCustomClasses = {
+        confirmButton: 'my-custom-confirm-button', // Custom class for the confirm button
+        cancelButton: 'my-custom-cancel-button'   // Custom class for the cancel button
+    };
+
+    const swalOkCustomClass = {
+        confirmButton: 'my-ok-button' // Custom class for the OK button in confirmation
+    };
+
+    // Request Temporary Password
+    document.getElementById("requesttemprary_Pass").addEventListener("click", function () {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: 'Do you want to request a temporary password? An email will be sent with further instructions.',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Yes, request it!',
+            cancelButtonText: 'Cancel',
+            customClass: swalCustomClasses
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Simulate sending a request
+                setTimeout(() => {
+                    Swal.fire({
+                        title: 'Request Sent!',
+                        text: 'A temporary password request has been sent for approval. You will receive an email shortly.',
+                        icon: 'success',
+                        timer: 3000,
+                timerProgressBar: true,
+                        confirmButtonText: 'Close',
+                        customClass: swalOkCustomClass
+                    });
+                }, 1000);
+            }
+        });
+    });
+
+    // Request Change Password
+    document.getElementById("requestchange_Pass").addEventListener("click", function () {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: 'Do you want to request a password change? An email will be sent with further instructions.',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Yes, request it!',
+            cancelButtonText: 'Cancel',
+            customClass: swalCustomClasses
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Simulate sending a request
+                setTimeout(() => {
+                    Swal.fire({
+                        title: 'Request Sent!',
+                        text: 'A password change request has been sent for approval. You will receive an email shortly.',
+                        icon: 'success',
+                        timer: 3000,
+                timerProgressBar: true,
+                        confirmButtonText: 'Close',
+                        customClass: swalOkCustomClass
+                    });
+                }, 1000);
+            }
+        });
+    });
+</script>
+<!-- password change request confirmation alert  end-->

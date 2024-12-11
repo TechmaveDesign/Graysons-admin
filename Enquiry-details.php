@@ -1204,283 +1204,986 @@
 
                                                                         </div>
                                                                         <div class="tab-pane fade" id="tab_comments">
-                                                                            <div
-                                                                                class="d-flex align-items-center justify-content-between mb-2">
-                                                                                <h2> All Notes</h2>
-                                                                                <a href="#AddNote"
-                                                                                    class="btn btn-xs btn-icon btn-rounded btn-light"
-                                                                                    data-bs-toggle="tooltip"
-                                                                                    data-bs-placement="top" title=""
-                                                                                    data-bs-original-title="Add Note"><span
-                                                                                        class="icon"><span
-                                                                                            class="feather-icon"><svg
-                                                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                                                width="24" height="24"
-                                                                                                viewBox="0 0 24 24"
-                                                                                                fill="none"
-                                                                                                stroke="currentColor"
-                                                                                                stroke-width="2"
-                                                                                                stroke-linecap="round"
-                                                                                                stroke-linejoin="round"
-                                                                                                class="feather feather-plus">
-                                                                                                <line x1="12" y1="5"
-                                                                                                    x2="12" y2="19">
-                                                                                                </line>
-                                                                                                <line x1="5" y1="12"
-                                                                                                    x2="19" y2="12">
-                                                                                                </line>
-                                                                                            </svg></span></span></a>
-                                                                            </div>
-                                                                            <div class="comment-block">
 
+                                                                            <div class="row">
+
+                                                                                <ul
+                                                                                    class="nav applicant_activiti_inrTabs  nav-justified nav-light nav-tabs nav-segmented-tabs active-theme  ">
+
+                                                                                    <li class="nav-item">
+                                                                                        <a class="nav-link active"
+                                                                                            data-bs-toggle="tab"
+                                                                                            href="#General_Notes">
+                                                                                            <span
+                                                                                                class="nav-link-text badge-on-text">General
+                                                                                                Notes
+                                                                                            </span>
+                                                                                        </a>
+                                                                                    </li>
+
+                                                                                    <li class="nav-item">
+                                                                                        <a class="nav-link"
+                                                                                            data-bs-toggle="tab"
+                                                                                            href="#Medical_notes">
+                                                                                            <span
+                                                                                                class="nav-link-text badge-on-text">Medical
+                                                                                                Notes</span>
+                                                                                        </a>
+                                                                                    </li>
+
+                                                                                    <li class="nav-item">
+                                                                                        <a class="nav-link"
+                                                                                            data-bs-toggle="tab"
+                                                                                            href="#Emergency_notes">
+                                                                                            <span
+                                                                                                class="nav-link-text badge-on-text">Emergency
+                                                                                                Notes</span>
+                                                                                        </a>
+                                                                                    </li>
+
+                                                                                </ul>
                                                                                 <div
-                                                                                    class="card card-border note-block">
-                                                                                    <div class="card-body">
+                                                                                    class="tab-content tasktab_content notpMargin_tab  nobtPadding">
 
+                                                                                    <div class="tab-pane fade show active"
+                                                                                        id="General_Notes">
                                                                                         <div
-                                                                                            class="media align-items-center notehead_withTag">
-                                                                                            <div class="notesSendBy">
-                                                                                                <div class="media-head">
-                                                                                                    <div
-                                                                                                        class="avatar avatar-xs avatar-rounded">
-                                                                                                        <img src="dist/img/newimages/users/userdummy.png"
-                                                                                                            alt="user"
-                                                                                                            class="avatar-img">
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div class="media-body">
-                                                                                                    <div
-                                                                                                        class="noteAuthor_title">
-                                                                                                        Martin Luther
-                                                                                                    </div>
-                                                                                                    <div
-                                                                                                        class="NoteTiming">
-                                                                                                        9 Apr, 20, 7:14
-                                                                                                        AM
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="NoteTag">
-                                                                                                <iconify-icon
-                                                                                                    icon="solar:tag-line-duotone">
-                                                                                                </iconify-icon> Viewing
-                                                                                                Note
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <p class="NoteDescription">@<a
-                                                                                                href="#"
-                                                                                                class="fw-medium">Charlie
-                                                                                                Darvin</a> Tenant was
-                                                                                            very interested in the
-                                                                                            property, appreciating the
-                                                                                            layout and natural light.
-                                                                                            They need two bedrooms, a
-                                                                                            workspace, and a parking
-                                                                                            spot. They have a small dog
-                                                                                            and prefer to move in by the
-                                                                                            end of next month. Awaiting
-                                                                                            their decision by the end of
-                                                                                            the week.</p>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div
-                                                                                    class="card card-border note-block ">
-                                                                                    <div class="card-body">
-
-                                                                                        <div
-                                                                                            class="media align-items-center notehead_withTag">
-                                                                                            <div class="notesSendBy">
-                                                                                                <div class="media-head">
-                                                                                                    <div
-                                                                                                        class="avatar avatar-xs avatar-rounded">
-                                                                                                        <img src="dist/img/newimages/users/userdummy.png"
-                                                                                                            alt="user"
-                                                                                                            class="avatar-img">
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div class="media-body">
-                                                                                                    <div
-                                                                                                        class="noteAuthor_title">
-                                                                                                        Katherine Jones
-                                                                                                    </div>
-                                                                                                    <div
-                                                                                                        class="NoteTiming">
-                                                                                                        8 Apr, 20, 5:30
-                                                                                                        PM
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-
-                                                                                            <div class="NoteTag">
-                                                                                                <iconify-icon
-                                                                                                    icon="solar:tag-line-duotone">
-                                                                                                </iconify-icon> Viewing
-                                                                                                Note
-                                                                                            </div>
-
-                                                                                        </div>
-                                                                                        <p class="NoteDescription">@<a
-                                                                                                href="#"
-                                                                                                class="fw-medium">Martin
-                                                                                                Luther</a> Viscosity
-                                                                                            ratio for "Appear view" link
-                                                                                            text is 3.7:1 which is less
-                                                                                        </p>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="separator separator-light">
-                                                                                </div>
-
-                                                                                <div class="AddNoteEnuSection"
-                                                                                    id="AddNote1">
-                                                                                    <div class="form-group">
-                                                                                        <label class="form-label">Note
-                                                                                            header</label>
-                                                                                        <input
-                                                                                            class="form-control note-title"
-                                                                                            type="text"
-                                                                                            placeholder="Add Title">
-                                                                                    </div>
-
-                                                                                    <div class="form-group">
-                                                                                        <label class="form-label">Add
-                                                                                            Comment</label>
-                                                                                        <textarea
-                                                                                            class="form-control note-comment"
-                                                                                            rows="5"></textarea>
-                                                                                    </div>
-
-                                                                                    <div class="NoteAction_container">
-                                                                                        <div
-                                                                                            class="sendEnquiryNote_container">
-                                                                                            <div class="addto_todolist">
-                                                                                                <div class="form-check">
-                                                                                                    <input
-                                                                                                        type="checkbox"
-                                                                                                        class="form-check-input customCheckList-todo">
-                                                                                                    <label
-                                                                                                        class="form-check-label">Add
-                                                                                                        to ToDo List
-                                                                                                        <span
-                                                                                                            class="done-strikethrough"></span></label>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div
-                                                                                            class="sendEnquiryNote_container setAlert_container">
-                                                                                            <div class="addto_todolist">
-                                                                                                <div class="form-check">
-                                                                                                    <input
-                                                                                                        type="checkbox"
-                                                                                                        class="form-check-input setAlertInput">
-                                                                                                    <label
-                                                                                                        class="form-check-label">Set
-                                                                                                        As Alert <span
-                                                                                                            class="done-strikethrough"></span></label>
-                                                                                                </div>
-                                                                                            </div>
+                                                                                            class="singlesectionTitleSM">
+                                                                                            <h2>General Notes</h2>
                                                                                         </div>
 
-                                                                                    </div>
+                                                                                        <div class="comment-block">
 
-                                                                                    <div class="Showing_departmentand_users"
-                                                                                        style="display: none;">
-                                                                                        <div class="row">
-                                                                                            <div class="col-md-4">
+                                                                                            <div
+                                                                                                class="card card-border note-block">
+                                                                                                <div class="card-body">
+
+                                                                                                    <div
+                                                                                                        class="media align-items-center notehead_withTag">
+                                                                                                        <div
+                                                                                                            class="notesSendBy">
+                                                                                                            <div
+                                                                                                                class="media-head">
+                                                                                                                <div
+                                                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                                        alt="user"
+                                                                                                                        class="avatar-img">
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div
+                                                                                                                class="media-body">
+                                                                                                                <div
+                                                                                                                    class="noteAuthor_title">
+                                                                                                                    Martin
+                                                                                                                    Luther
+                                                                                                                </div>
+                                                                                                                <div
+                                                                                                                    class="NoteTiming">
+                                                                                                                    9
+                                                                                                                    Apr,
+                                                                                                                    20,
+                                                                                                                    7:14
+                                                                                                                    AM
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="NoteTag">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:tag-line-duotone">
+                                                                                                            </iconify-icon>
+                                                                                                            Viewing
+                                                                                                            Note
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <p
+                                                                                                        class="NoteDescription">
+                                                                                                        @<a href="#"
+                                                                                                            class="fw-medium">Charlie
+                                                                                                            Darvin</a>
+                                                                                                        Tenant was
+                                                                                                        very interested
+                                                                                                        in the
+                                                                                                        property,
+                                                                                                        appreciating the
+                                                                                                        layout and
+                                                                                                        natural light.
+                                                                                                        They need two
+                                                                                                        bedrooms, a
+                                                                                                        workspace, and a
+                                                                                                        parking
+                                                                                                        spot. They have
+                                                                                                        a small dog
+                                                                                                        and prefer to
+                                                                                                        move in by the
+                                                                                                        end of next
+                                                                                                        month. Awaiting
+                                                                                                        their decision
+                                                                                                        by the end of
+                                                                                                        the week.</p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="card card-border note-block ">
+                                                                                                <div class="card-body">
+
+                                                                                                    <div
+                                                                                                        class="media align-items-center notehead_withTag">
+                                                                                                        <div
+                                                                                                            class="notesSendBy">
+                                                                                                            <div
+                                                                                                                class="media-head">
+                                                                                                                <div
+                                                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                                        alt="user"
+                                                                                                                        class="avatar-img">
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div
+                                                                                                                class="media-body">
+                                                                                                                <div
+                                                                                                                    class="noteAuthor_title">
+                                                                                                                    Katherine
+                                                                                                                    Jones
+                                                                                                                </div>
+                                                                                                                <div
+                                                                                                                    class="NoteTiming">
+                                                                                                                    8
+                                                                                                                    Apr,
+                                                                                                                    20,
+                                                                                                                    5:30
+                                                                                                                    PM
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+
+                                                                                                        <div
+                                                                                                            class="NoteTag">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:tag-line-duotone">
+                                                                                                            </iconify-icon>
+                                                                                                            Viewing
+                                                                                                            Note
+                                                                                                        </div>
+
+                                                                                                    </div>
+                                                                                                    <p
+                                                                                                        class="NoteDescription">
+                                                                                                        @<a href="#"
+                                                                                                            class="fw-medium">Martin
+                                                                                                            Luther</a>
+                                                                                                        Viscosity
+                                                                                                        ratio for
+                                                                                                        "Appear view"
+                                                                                                        link
+                                                                                                        text is 3.7:1
+                                                                                                        which is less
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="separator separator-light">
+                                                                                            </div>
+
+                                                                                            <div class="AddNoteEnuSection"
+                                                                                                id="AddNote1">
                                                                                                 <div class="form-group">
                                                                                                     <label
-                                                                                                        class="form-label">Select
-                                                                                                        Department</label>
-                                                                                                    <select
-                                                                                                        class="form-control select2 select-department">
-                                                                                                        <option disabled
-                                                                                                            selected
-                                                                                                            value="">
-                                                                                                            Please
-                                                                                                            Select...
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Account Department">
-                                                                                                            Account
-                                                                                                            Department
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="HR Department">
-                                                                                                            HR
-                                                                                                            Department
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Contract Department">
-                                                                                                            Contract
-                                                                                                            Department
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Lettings Department">
-                                                                                                            Lettings
-                                                                                                            Department
-                                                                                                        </option>
-                                                                                                    </select>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="col-md-4">
-                                                                                                <div class="form-group">
-                                                                                                    <label
-                                                                                                        class="form-label">Select
-                                                                                                        Users</label>
-                                                                                                    <select
-                                                                                                        class="form-control select2 select-user">
-                                                                                                        <option disabled
-                                                                                                            selected
-                                                                                                            value="">
-                                                                                                            Please
-                                                                                                            Select...
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="John Doe">
-                                                                                                            John Doe
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Jane Smith">
-                                                                                                            Jane Smith
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Alice Johnson">
-                                                                                                            Alice
-                                                                                                            Johnson
-                                                                                                        </option>
-                                                                                                    </select>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="col-lg-4">
-                                                                                                <div class="form-group">
-                                                                                                    <label
-                                                                                                        class="form-label">Select
-                                                                                                        Due Date</label>
+                                                                                                        class="form-label">Note
+                                                                                                        header</label>
                                                                                                     <input
-                                                                                                        class="form-control customdataPicker"
+                                                                                                        class="form-control note-title"
                                                                                                         type="text"
-                                                                                                        name="" value=""
-                                                                                                        placeholder="Due Date" />
-                                                                                                    <iconify-icon
-                                                                                                        icon="ion:calendar-outline"
-                                                                                                        class="dateinput_icon">
-                                                                                                    </iconify-icon>
+                                                                                                        placeholder="Add Title">
+                                                                                                </div>
+
+                                                                                                <div class="form-group">
+                                                                                                    <label
+                                                                                                        class="form-label">Add
+                                                                                                        Comment</label>
+                                                                                                    <textarea
+                                                                                                        class="form-control note-comment"
+                                                                                                        rows="5"></textarea>
+                                                                                                </div>
+
+                                                                                                <div
+                                                                                                    class="NoteAction_container">
+                                                                                                    <div
+                                                                                                        class="sendEnquiryNote_container">
+                                                                                                        <div
+                                                                                                            class="addto_todolist">
+                                                                                                            <div
+                                                                                                                class="form-check">
+                                                                                                                <input
+                                                                                                                    type="checkbox"
+                                                                                                                    class="form-check-input customCheckList-todo">
+                                                                                                                <label
+                                                                                                                    class="form-check-label">Add
+                                                                                                                    to
+                                                                                                                    ToDo
+                                                                                                                    List
+                                                                                                                    <span
+                                                                                                                        class="done-strikethrough"></span></label>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="sendEnquiryNote_container setAlert_container">
+                                                                                                        <div
+                                                                                                            class="addto_todolist">
+                                                                                                            <div
+                                                                                                                class="form-check">
+                                                                                                                <input
+                                                                                                                    type="checkbox"
+                                                                                                                    class="form-check-input setAlertInput">
+                                                                                                                <label
+                                                                                                                    class="form-check-label">Set
+                                                                                                                    As
+                                                                                                                    Alert
+                                                                                                                    <span
+                                                                                                                        class="done-strikethrough"></span></label>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+
+                                                                                                </div>
+
+                                                                                                <div class="Showing_departmentand_users"
+                                                                                                    style="display: none;">
+                                                                                                    <div class="row">
+                                                                                                        <div
+                                                                                                            class="col-md-4">
+                                                                                                            <div
+                                                                                                                class="form-group">
+                                                                                                                <label
+                                                                                                                    class="form-label">Select
+                                                                                                                    Department</label>
+                                                                                                                <select
+                                                                                                                    class="form-control select2 select-department">
+                                                                                                                    <option
+                                                                                                                        disabled
+                                                                                                                        selected
+                                                                                                                        value="">
+                                                                                                                        Please
+                                                                                                                        Select...
+                                                                                                                    </option>
+                                                                                                                    <option
+                                                                                                                        value="Account Department">
+                                                                                                                        Account
+                                                                                                                        Department
+                                                                                                                    </option>
+                                                                                                                    <option
+                                                                                                                        value="HR Department">
+                                                                                                                        HR
+                                                                                                                        Department
+                                                                                                                    </option>
+                                                                                                                    <option
+                                                                                                                        value="Contract Department">
+                                                                                                                        Contract
+                                                                                                                        Department
+                                                                                                                    </option>
+                                                                                                                    <option
+                                                                                                                        value="Lettings Department">
+                                                                                                                        Lettings
+                                                                                                                        Department
+                                                                                                                    </option>
+                                                                                                                </select>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="col-md-4">
+                                                                                                            <div
+                                                                                                                class="form-group">
+                                                                                                                <label
+                                                                                                                    class="form-label">Select
+                                                                                                                    Users</label>
+                                                                                                                <select
+                                                                                                                    class="form-control select2 select-user">
+                                                                                                                    <option
+                                                                                                                        disabled
+                                                                                                                        selected
+                                                                                                                        value="">
+                                                                                                                        Please
+                                                                                                                        Select...
+                                                                                                                    </option>
+                                                                                                                    <option
+                                                                                                                        value="John Doe">
+                                                                                                                        John
+                                                                                                                        Doe
+                                                                                                                    </option>
+                                                                                                                    <option
+                                                                                                                        value="Jane Smith">
+                                                                                                                        Jane
+                                                                                                                        Smith
+                                                                                                                    </option>
+                                                                                                                    <option
+                                                                                                                        value="Alice Johnson">
+                                                                                                                        Alice
+                                                                                                                        Johnson
+                                                                                                                    </option>
+                                                                                                                </select>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="col-lg-4">
+                                                                                                            <div
+                                                                                                                class="form-group">
+                                                                                                                <label
+                                                                                                                    class="form-label">Select
+                                                                                                                    Due
+                                                                                                                    Date</label>
+                                                                                                                <input
+                                                                                                                    class="form-control customdataPicker"
+                                                                                                                    type="text"
+                                                                                                                    name=""
+                                                                                                                    value=""
+                                                                                                                    placeholder="Due Date" />
+                                                                                                                <iconify-icon
+                                                                                                                    icon="ion:calendar-outline"
+                                                                                                                    class="dateinput_icon">
+                                                                                                                </iconify-icon>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="submitnote_container">
+                                                                                                    <button
+                                                                                                        type="button"
+                                                                                                        class="sendBtn_common_main addenun_noteBtn send-note">Save</button>
                                                                                                 </div>
                                                                                             </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="submitnote_container">
-                                                                                        <button type="button"
-                                                                                            class="sendBtn_common_main addenun_noteBtn send-note">Send
-                                                                                            Note</button>
-                                                                                    </div>
-                                                                                </div>
 
-                                                                                <!-- <div class="AssignTasks_container">
+                                                                                            <!-- <div class="AssignTasks_container">
                                                                                     <h2>Add Task</h2>
                                                                                 </div> -->
 
+                                                                                        </div>
+
+                                                                                    </div>
+
+                                                                                    <div class="tab-pane fade"
+                                                                                        id="Medical_notes">
+
+                                                                                        <div
+                                                                                            class="singlesectionTitleSM">
+                                                                                            <h2>Medical Notes</h2>
+                                                                                        </div>
+                                                                                        <div class="task-detail-body ">
+                                                                                            <div class="row">
+
+                                                                                                <div
+                                                                                                    class="contractNotes">
+
+                                                                                                    <div
+                                                                                                        class="comment-block">
+
+                                                                                                        <div
+                                                                                                            class="card card-border note-block">
+                                                                                                            <div
+                                                                                                                class="card-body">
+
+                                                                                                                <div
+                                                                                                                    class="media align-items-center">
+                                                                                                                    <div
+                                                                                                                        class="media-head">
+                                                                                                                        <div
+                                                                                                                            class="avatar avatar-xs avatar-rounded">
+                                                                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                                                alt="user"
+                                                                                                                                class="avatar-img">
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div
+                                                                                                                        class="media-body">
+                                                                                                                        <div
+                                                                                                                            class="noteAuthor_title">
+                                                                                                                            Martin
+                                                                                                                            Luther
+                                                                                                                        </div>
+                                                                                                                        <div
+                                                                                                                            class="NoteTiming">
+                                                                                                                            9
+                                                                                                                            Apr,
+                                                                                                                            20,
+                                                                                                                            7:14
+                                                                                                                            AM
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <p
+                                                                                                                    class="NoteDescription">
+                                                                                                                    @<a href="#"
+                                                                                                                        class="fw-medium">Charlie
+                                                                                                                        Darvin</a>
+                                                                                                                    Tenant
+                                                                                                                    was
+                                                                                                                    very
+                                                                                                                    interested
+                                                                                                                    in
+                                                                                                                    the
+                                                                                                                    property,
+                                                                                                                    appreciating
+                                                                                                                    the
+                                                                                                                    layout
+                                                                                                                    and
+                                                                                                                    natural
+                                                                                                                    light.
+                                                                                                                    They
+                                                                                                                    need
+                                                                                                                    two
+                                                                                                                    bedrooms,
+                                                                                                                    a
+                                                                                                                    workspace,
+                                                                                                                    and
+                                                                                                                    a
+                                                                                                                    parking
+                                                                                                                    spot.
+                                                                                                                    They
+                                                                                                                    have
+                                                                                                                    a
+                                                                                                                    small
+                                                                                                                    dog
+                                                                                                                    and
+                                                                                                                    prefer
+                                                                                                                    to
+                                                                                                                    move
+                                                                                                                    in
+                                                                                                                    by
+                                                                                                                    the
+                                                                                                                    end
+                                                                                                                    of
+                                                                                                                    next
+                                                                                                                    month.
+                                                                                                                    Awaiting
+                                                                                                                    their
+                                                                                                                    decision
+                                                                                                                    by
+                                                                                                                    the
+                                                                                                                    end
+                                                                                                                    of
+                                                                                                                    the
+                                                                                                                    week.
+                                                                                                                </p>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="card card-border note-block ">
+                                                                                                            <div
+                                                                                                                class="card-body">
+
+                                                                                                                <div
+                                                                                                                    class="media align-items-center">
+                                                                                                                    <div
+                                                                                                                        class="media-head">
+                                                                                                                        <div
+                                                                                                                            class="avatar avatar-xs avatar-rounded">
+                                                                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                                                alt="user"
+                                                                                                                                class="avatar-img">
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div
+                                                                                                                        class="media-body">
+                                                                                                                        <div
+                                                                                                                            class="noteAuthor_title">
+                                                                                                                            Katherine
+                                                                                                                            Jones
+                                                                                                                        </div>
+                                                                                                                        <div
+                                                                                                                            class="NoteTiming">
+                                                                                                                            8
+                                                                                                                            Apr,
+                                                                                                                            20,
+                                                                                                                            5:30
+                                                                                                                            PM
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <p
+                                                                                                                    class="NoteDescription">
+                                                                                                                    @<a href="#"
+                                                                                                                        class="fw-medium">Martin
+                                                                                                                        Luther</a>
+                                                                                                                    Viscosity
+                                                                                                                    ratio
+                                                                                                                    for
+                                                                                                                    "Appear
+                                                                                                                    view"
+                                                                                                                    link
+                                                                                                                    text
+                                                                                                                    is
+                                                                                                                    3.7:1
+                                                                                                                    which
+                                                                                                                    is
+                                                                                                                    less
+                                                                                                                </p>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="separator separator-light">
+                                                                                                        </div>
+
+                                                                                                        <div class="AddNoteEnuSection"
+                                                                                                            id="AddNote">
+                                                                                                            <div
+                                                                                                                class="form-group">
+                                                                                                                <label
+                                                                                                                    class="form-label">Note
+                                                                                                                    header</label>
+                                                                                                                <input
+                                                                                                                    class="form-control"
+                                                                                                                    type="text"
+                                                                                                                    name=""
+                                                                                                                    placeholder="Add Title">
+                                                                                                            </div>
+
+                                                                                                            <div
+                                                                                                                class="form-group">
+                                                                                                                <label
+                                                                                                                    class="form-label">Add
+                                                                                                                    Notes</label>
+                                                                                                                <textarea
+                                                                                                                    class="form-control"
+                                                                                                                    rows="5"></textarea>
+                                                                                                            </div>
+                                                                                                            <div
+                                                                                                                class="NoteAction_container">
+                                                                                                                <div
+                                                                                                                    class="sendEnquiryNote_container">
+                                                                                                                    <div
+                                                                                                                        class="addto_todolist">
+                                                                                                                        <div
+                                                                                                                            class="form-check">
+                                                                                                                            <input
+                                                                                                                                type="checkbox"
+                                                                                                                                class="form-check-input customCheckList-todo"
+                                                                                                                                id="customCheckList-todo">
+                                                                                                                            <label
+                                                                                                                                class="form-check-label"
+                                                                                                                                for="customCheckList-todo2">
+                                                                                                                                Add
+                                                                                                                                to
+                                                                                                                                ToDo
+                                                                                                                                List
+                                                                                                                                <span
+                                                                                                                                    class="done-strikethrough"></span>
+                                                                                                                            </label>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <!-- <div
+                                                                            class="sendEnquiryNote_container setAlert_container">
+                                                                            <div class="addto_todolist">
+                                                                                <div class="form-check">
+                                                                                    <input type="checkbox"
+                                                                                        class="form-check-input setAlertInput">
+                                                                                    <label class="form-check-label"
+                                                                                        for="customCheckList-todo">
+                                                                                        Set As Alert
+                                                                                        <span
+                                                                                            class="done-strikethrough"></span>
+                                                                                    </label>
+                                                                                </div>
                                                                             </div>
+                                                                        </div> -->
+
+                                                                                                            </div>
+
+                                                                                                            <div class="Showing_departmentand_users"
+                                                                                                                style="display: none;">
+                                                                                                                <div
+                                                                                                                    class="row">
+                                                                                                                    <div
+                                                                                                                        class="col-md-4">
+                                                                                                                        <div
+                                                                                                                            class="form-group">
+                                                                                                                            <label
+                                                                                                                                class="form-label">Select
+                                                                                                                                Department</label>
+                                                                                                                            <select
+                                                                                                                                class="form-control select2"
+                                                                                                                                id="selectDepartment2">
+                                                                                                                                <option
+                                                                                                                                    disabled
+                                                                                                                                    selected
+                                                                                                                                    value="">
+                                                                                                                                    Please
+                                                                                                                                    Select...
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Account Department">
+                                                                                                                                    Account
+                                                                                                                                    Department
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="HR Department">
+                                                                                                                                    HR
+                                                                                                                                    Department
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Contract Department">
+                                                                                                                                    Contract
+                                                                                                                                    Department
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Lettings Department">
+                                                                                                                                    Lettings
+                                                                                                                                    Department
+                                                                                                                                </option>
+                                                                                                                            </select>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div
+                                                                                                                        class="col-md-4">
+                                                                                                                        <div
+                                                                                                                            class="form-group">
+                                                                                                                            <label
+                                                                                                                                class="form-label">Select
+                                                                                                                                Users</label>
+                                                                                                                            <select
+                                                                                                                                class="form-control select2"
+                                                                                                                                id="selectUser2">
+                                                                                                                                <option
+                                                                                                                                    disabled
+                                                                                                                                    selected
+                                                                                                                                    value="">
+                                                                                                                                    Please
+                                                                                                                                    Select...
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="John Doe">
+                                                                                                                                    John
+                                                                                                                                    Doe
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Jane Smith">
+                                                                                                                                    Jane
+                                                                                                                                    Smith
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Alice Johnson">
+                                                                                                                                    Alice
+                                                                                                                                    Johnson
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Robert Brown">
+                                                                                                                                    Robert
+                                                                                                                                    Brown
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Michael Williams">
+                                                                                                                                    Michael
+                                                                                                                                    Williams
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Emily Davis">
+                                                                                                                                    Emily
+                                                                                                                                    Davis
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="David Wilson">
+                                                                                                                                    David
+                                                                                                                                    Wilson
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Sophia Martinez">
+                                                                                                                                    Sophia
+                                                                                                                                    Martinez
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="James Anderson">
+                                                                                                                                    James
+                                                                                                                                    Anderson
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Olivia Taylor">
+                                                                                                                                    Olivia
+                                                                                                                                    Taylor
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Chris Thomas">
+                                                                                                                                    Chris
+                                                                                                                                    Thomas
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Emma Harris">
+                                                                                                                                    Emma
+                                                                                                                                    Harris
+                                                                                                                                </option>
+                                                                                                                            </select>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div
+                                                                                                                        class="col-lg-4">
+                                                                                                                        <div
+                                                                                                                            class="form-group">
+                                                                                                                            <label
+                                                                                                                                class="form-label">Select
+                                                                                                                                Due
+                                                                                                                                Date</label>
+                                                                                                                            <input
+                                                                                                                                class="form-control customdataPicker"
+                                                                                                                                type="text"
+                                                                                                                                name=""
+                                                                                                                                value=""
+                                                                                                                                placeholder="Due Date" />
+                                                                                                                            <iconify-icon
+                                                                                                                                icon="ion:calendar-outline"
+                                                                                                                                class="dateinput_icon">
+                                                                                                                            </iconify-icon>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div
+                                                                                                                class="submitnote_container">
+                                                                                                                <button
+                                                                                                                    type="button"
+                                                                                                                    class="sendBtn_common_main addenun_noteBtn send-note">Save</button>
+                                                                                                            </div>
+                                                                                                        </div>
+
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="tab-pane fade"
+                                                                                        id="Emergency_notes">
+                                                                                        <div
+                                                                                            class="singlesectionTitleSM">
+                                                                                            <h2>Emergency Notes</h2>
+                                                                                        </div>
+                                                                                        <div class="AddNoteEnuSection">
+                                                                                            <div class="form-group">
+                                                                                                <label
+                                                                                                    class="form-label">Note
+                                                                                                    header</label>
+                                                                                                <input
+                                                                                                    class="form-control"
+                                                                                                    type="text" name=""
+                                                                                                    placeholder="Add Title">
+                                                                                            </div>
+
+                                                                                            <div class="form-group">
+                                                                                                <label
+                                                                                                    class="form-label">Add
+                                                                                                    Comment</label>
+                                                                                                <textarea
+                                                                                                    class="form-control"
+                                                                                                    rows="5"></textarea>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="NoteAction_container">
+                                                                                                <div
+                                                                                                    class="sendEnquiryNote_container">
+                                                                                                    <div
+                                                                                                        class="addto_todolist">
+                                                                                                        <div
+                                                                                                            class="form-check">
+                                                                                                            <input
+                                                                                                                type="checkbox"
+                                                                                                                class="form-check-input customCheckList-todo"
+                                                                                                                id="customCheckList-todo">
+                                                                                                            <label
+                                                                                                                class="form-check-label"
+                                                                                                                for="customCheckList-todo">
+                                                                                                                Add to
+                                                                                                                ToDo
+                                                                                                                List
+                                                                                                                <span
+                                                                                                                    class="done-strikethrough"></span>
+                                                                                                            </label>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="sendEnquiryNote_container setAlert_container">
+                                                                                                    <div
+                                                                                                        class="addto_todolist">
+                                                                                                        <div
+                                                                                                            class="form-check">
+                                                                                                            <input
+                                                                                                                type="checkbox"
+                                                                                                                class="form-check-input setAlertInput">
+                                                                                                            <label
+                                                                                                                class="form-check-label"
+                                                                                                                for="customCheckList-todo">
+                                                                                                                Set As
+                                                                                                                Alert
+                                                                                                                <span
+                                                                                                                    class="done-strikethrough"></span>
+                                                                                                            </label>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                            </div>
+
+                                                                                            <div class="Showing_departmentand_users"
+                                                                                                style="display: none;">
+                                                                                                <div class="row">
+                                                                                                    <div
+                                                                                                        class="col-md-4">
+                                                                                                        <div
+                                                                                                            class="form-group">
+                                                                                                            <label
+                                                                                                                class="form-label">Select
+                                                                                                                Department</label>
+                                                                                                            <select
+                                                                                                                class="form-control select2"
+                                                                                                                id="selectDepartment">
+                                                                                                                <option
+                                                                                                                    disabled
+                                                                                                                    selected
+                                                                                                                    value="">
+                                                                                                                    Please
+                                                                                                                    Select...
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Account Department">
+                                                                                                                    Account
+                                                                                                                    Department
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="HR Department">
+                                                                                                                    HR
+                                                                                                                    Department
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Contract Department">
+                                                                                                                    Contract
+                                                                                                                    Department
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Lettings Department">
+                                                                                                                    Lettings
+                                                                                                                    Department
+                                                                                                                </option>
+                                                                                                            </select>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="col-md-4">
+                                                                                                        <div
+                                                                                                            class="form-group">
+                                                                                                            <label
+                                                                                                                class="form-label">Select
+                                                                                                                Users</label>
+                                                                                                            <select
+                                                                                                                class="form-control select2"
+                                                                                                                id="selectUser">
+                                                                                                                <option
+                                                                                                                    disabled
+                                                                                                                    selected
+                                                                                                                    value="">
+                                                                                                                    Please
+                                                                                                                    Select...
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="John Doe">
+                                                                                                                    John
+                                                                                                                    Doe
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Jane Smith">
+                                                                                                                    Jane
+                                                                                                                    Smith
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Alice Johnson">
+                                                                                                                    Alice
+                                                                                                                    Johnson
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Robert Brown">
+                                                                                                                    Robert
+                                                                                                                    Brown
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Michael Williams">
+                                                                                                                    Michael
+                                                                                                                    Williams
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Emily Davis">
+                                                                                                                    Emily
+                                                                                                                    Davis
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="David Wilson">
+                                                                                                                    David
+                                                                                                                    Wilson
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Sophia Martinez">
+                                                                                                                    Sophia
+                                                                                                                    Martinez
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="James Anderson">
+                                                                                                                    James
+                                                                                                                    Anderson
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Olivia Taylor">
+                                                                                                                    Olivia
+                                                                                                                    Taylor
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Chris Thomas">
+                                                                                                                    Chris
+                                                                                                                    Thomas
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Emma Harris">
+                                                                                                                    Emma
+                                                                                                                    Harris
+                                                                                                                </option>
+                                                                                                            </select>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="col-lg-4">
+                                                                                                        <div
+                                                                                                            class="form-group">
+                                                                                                            <label
+                                                                                                                class="form-label">Select
+                                                                                                                Due
+                                                                                                                Date</label>
+                                                                                                            <input
+                                                                                                                class="form-control customdataPicker"
+                                                                                                                type="text"
+                                                                                                                name=""
+                                                                                                                value=""
+                                                                                                                placeholder="Due Date" />
+                                                                                                            <iconify-icon
+                                                                                                                icon="ion:calendar-outline"
+                                                                                                                class="dateinput_icon">
+                                                                                                            </iconify-icon>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="submitnote_container">
+                                                                                            <button type="button"
+                                                                                                class="sendBtn_common_main addenun_noteBtn send-note">Save</button>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+
                                                                         </div>
                                                                         <div class="tab-pane fade" id="tab_files">
                                                                             <div
@@ -2966,6 +3669,24 @@
 
                             <div class="col-lg-6">
                                 <div class="viewedHistory_modalcard">
+                                <div class="flex_containerCmn scheduleviewungmd_rviewall">
+                                                                    <h2>Available Properties</h2>
+                                                                    <div class="rightpropertyheader_actions">
+                                                                        <div id="send_property_to_tent" class="hiddenelements">
+                                                                            <button id="sendBtn" type="button" class="sendBtn_common_main">
+                                                                                <img src="dist/img/newimages/AI-default.51bec1607029ffbd.svg" alt="">
+                                                                                Add Properties
+                                                                            </button>
+                                                                        </div>
+                                                                        <div class="scheduleViewing">
+                                                                            <a href="property-availability.php" target="_blank" class="scheduleViewingBtn viewallbtn_right">
+                                                                                <iconify-icon icon="bytesize:eye">
+                                                                                </iconify-icon>
+                                                                                View All
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                     <div class="card card-border">
                                         <div class="card-header">
                                             <h2>Viewed Properties</h2>

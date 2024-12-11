@@ -7,77 +7,135 @@
 </head>
 <body>
     <div class="col-lg-6">
-        <div class="dropdown filterdropDownCustom availableUsersDropdownWrapper form-group">
-        <label class="form-label">Selected Properties</label>
-            <button class="dropbtn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Selected Properties
-                <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
-            </button>
-            <div class="dropdown-menu customdropdownmenu_style availableUsersDropdown">
-                <div class="filTerSearchMain">
-                    <input type="text" class="filterclSearch availableUsersSearchInput"
-                        placeholder="Search available users...">
-                    <iconify-icon icon="basil:search-outline"></iconify-icon>
+        <div class="form-group">
+            <label class="form-label">All Properties</label>
+            <div class="dropdown filterdropDownCustom available-users-dropdown-wrapper" >
+                <button class="dropbtn dropdown-toggle dropmenuBtn" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="selected-count">Select More Properties</span>
+                    <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
+                </button>
+                <div
+                    class="dropdown-menu customdropdownmenu_style available-users-dropdown">
+                    <div class="filTerSearchMain">
+                        <input type="text" class="filterclSearch available-users-search"
+                            placeholder="Search More Properties...">
+                        <iconify-icon icon="basil:search-outline"></iconify-icon>
+                    </div>
+                    <div class="sellallitemsMain">
+                        <div class="CustomselectallContainer">
+                            <input type="checkbox"
+                                class="select-all-available-users form-check-input">
+                            Select All
+                        </div>
+                        <div class="clDivider_full"></div>
+                    </div>
+                    <div class="Customdrpitems_container">
+                        <div class="mainoptionContainer">
+                            <div class="dropfilter_options">
+                                <input type="checkbox"
+                                    class="individual-option form-check-input"> Bedroom
+                                3 133, Flat 3 (Floor 1, No3), City View@Phoenix House
+                            </div>
+                        </div>
+                        <div class="mainoptionContainer">
+                            <div class="dropfilter_options">
+                                <input type="checkbox"
+                                    class="individual-option form-check-input">
+                                Bedroom 2 101, Flat 7 (Floor 2, No7), Garden
+                                View@Emerald Apartments
+                            </div>
+                        </div>
+                        <div class="mainoptionContainer">
+                            <div class="dropfilter_options">
+                                <input type="checkbox"
+                                    class="individual-option form-check-input">
+                                Lobby 002, Flat 1 (Ground Floor, No1), Street
+                                View@Central Plaza
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="no-data" style="display: none;">No data found</p>
                 </div>
-                <div class="sellallitemsMain">
-                    <div class="CustomselectallContainer">
-                        <input type="checkbox" class="selectAllAvailableUsers"> Select All
-                    </div>
-                    <div class="clDivider_full"></div>
-                </div>
-                <div class="Customdrpitems_container">
-                    <div class="mainoptionContainer">
-                        <div class="dropfilter_options">
-                            <input type="checkbox"> Elmwood Cottage
-                        </div>
-                    </div>
-                    <div class="mainoptionContainer">
-                        <div class="dropfilter_options">
-                            <input type="checkbox"> Rosewood Gardens
-                        </div>
-                    </div>
-                    <div class="mainoptionContainer">
-                        <div class="dropfilter_options">
-                            <input type="checkbox"> Ivy Court Apartments
-                        </div>
-                    </div>
-                    <div class="mainoptionContainer">
-                        <div class="dropfilter_options">
-                            <input type="checkbox"> Oakridge Manor
-                        </div>
-                    </div>
-                    <div class="mainoptionContainer">
-                        <div class="dropfilter_options">
-                            <input type="checkbox">The Meadows
-                        </div>
-                    </div>
-                    <div class="mainoptionContainer">
-                        <div class="dropfilter_options">
-                            <input type="checkbox"> Willowbrook House
-                        </div>
-                    </div>
-                    <div class="mainoptionContainer">
-                        <div class="dropfilter_options">
-                            <input type="checkbox"> Primrose Lodge
-                        </div>
-                    </div>
-                </div>
-                <div class="ButtonResetFilters">
-                    <button type="button" class="resetFilterButton">
-                        <iconify-icon icon="carbon:reset"></iconify-icon> Reset Filter
-                    </button>
-                    <button type="button" class="applyFilterButton">
-                        <iconify-icon icon="codicon:git-stash-apply"></iconify-icon> Apply
-                        Filter
-                    </button>
-                </div>
-                <p class="no-data noAvailableUsersDataMessage" style="display: none;">No
-                    data found</p>
             </div>
         </div>
-
     </div>
+
+
+    <!-- custom multiple select js start -->
+    <script>
+        $(document).ready(function () {
+         // Update the count of selected options
+         function updateSelectedCount(dropdownWrapper) {
+             const selectedCount = dropdownWrapper.find(".individual-option:checked").length;
+             const selectedCountElement = dropdownWrapper.find(".selected-count");
+     
+             if (selectedCount === 0) {
+                 selectedCountElement.text("Select Location");
+             } else if (selectedCount === 1) {
+                 selectedCountElement.text("1 selected");
+             } else {
+                 selectedCountElement.text(`${selectedCount} selected`);
+             }
+         }
+     
+         // Handle Select All checkbox
+         $(".select-all-available-users").on("change", function () {
+             const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+             const isChecked = $(this).prop("checked");
+             dropdownWrapper.find(".individual-option").prop("checked", isChecked);
+             updateSelectedCount(dropdownWrapper);
+         });
+     
+         // Handle individual option selection
+         $(".individual-option").on("change", function () {
+             const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+             const totalOptions = dropdownWrapper.find(".individual-option").length;
+             const selectedOptions = dropdownWrapper.find(".individual-option:checked").length;
+     
+             // Toggle the Select All checkbox
+             dropdownWrapper.find(".select-all-available-users").prop("checked", totalOptions === selectedOptions);
+     
+             updateSelectedCount(dropdownWrapper);
+         });
+     
+         // Reset Filter button
+         $(".reset-filter").on("click", function () {
+             const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+             dropdownWrapper.find(".individual-option").prop("checked", false);
+             dropdownWrapper.find(".select-all-available-users").prop("checked", false);
+             updateSelectedCount(dropdownWrapper);
+         });
+     
+         // Apply Filter button
+         $(".apply-filter").on("click", function () {
+             const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+             const selectedItems = dropdownWrapper.find(".individual-option:checked").map(function () {
+                 return $(this).parent().text().trim();
+             }).get();
+             console.log("Selected Items:", selectedItems);
+         });
+     
+         // Filter search functionality
+         $(".available-users-search").on("keyup", function () {
+             const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+             const searchTerm = $(this).val().toLowerCase();
+             const options = dropdownWrapper.find(".mainoptionContainer");
+     
+             options.filter(function () {
+                 $(this).toggle($(this).text().toLowerCase().includes(searchTerm));
+             });
+     
+             const noDataMessage = dropdownWrapper.find(".no-data");
+             noDataMessage.toggle(options.filter(":visible").length === 0);
+         });
+     });
+     
+     </script>
+<!-- end -->
+
+
 
 </body>
 </html>

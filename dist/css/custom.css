@@ -784,7 +784,7 @@ div.dt-buttons {
 }
 .sweetaleart_description {
 	font-size: 16px;
-	padding: 0px 68px;
+	padding: 0px 30px;
 	line-height: 25px;
 }
 .swal2-html-container .align-items-center {
@@ -1028,6 +1028,7 @@ div.dt-buttons {
 }
 .RightTabinr_container {
 	display: flex;
+	align-items: center;
 }
 .sperarationProfile_heading{
 	font-size: 18px;
@@ -1382,8 +1383,8 @@ table.dataTable td {
 	padding: 10px !important;
 }
 .uplodedinspection_pictures img{
-	width: 40px;
-	height: 40px;
+	width: 30px;
+  height: 30px;
 	object-fit: cover;
 	border-radius: 4px;
 	cursor: pointer;
@@ -1566,7 +1567,9 @@ table.dataTable td {
 }
 .customtablecreation_Add{
 	background: #ebfcf5;
-  color: #00ab66;
+	color: #00ab66;
+	display: flex !important;
+	white-space: nowrap;
 }
 .actionapndButton_container .cmntabapndBtn{
 	display: flex;
@@ -1580,9 +1583,7 @@ table.dataTable td {
 	display: flex;
 	align-items: center;
 }
-#folderTable {
-	border: 1px solid #ebeded;
-}
+
 .addFolderBtn {
 	background: #009b84;
 	margin-bottom: 20px;
@@ -1665,11 +1666,11 @@ table.dataTable td {
 
 .addnewPaymentButton {
 	background: #3db482 !important;
-	color: #fff;
-	padding: 7px 20px;
-	border-radius: 4px;
-	border: none;
-	font-size: 15px;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
 }
 .invoiceSummary_title{
 	color: #131313 !important;
@@ -2626,7 +2627,7 @@ margin-right: 5px;
 #addFolderBtn {
 	display: flex !important;
 	align-items: center;
-	margin-bottom: 20px;
+	margin-bottom: 0px !important;
 	padding: 5px 15px !important;
 	font-weight: normal;
 	background: #ebeef7;
@@ -3268,6 +3269,11 @@ div.dt-container div.dt-search input {
 .sidecolor_checkincheckout .svg-icon > iconify-icon{
 	background-color: #532990 !important;
 	color: white !important;
+}
+
+.sidecolor_webmanage .svg-icon > iconify-icon{
+	background-color: #27bc7d !important;
+  color: #fff !important;
 }
 
 .hk-wrapper[data-layout="vertical"] .hk-menu .menu-content-wrap .menu-group .navbar-nav > .nav-item.active > .nav-link {
@@ -5273,7 +5279,7 @@ body{
 
 .table  td {
 	font-size: 13px !important;
-	padding: 5px 20px !important;
+	padding: 5px 20px ;
 	font-weight: 500;
 	color: #292929 !important;
 }
@@ -5466,7 +5472,7 @@ body{
   font-weight: normal;
   border-top-left-radius: 0px !important;
   border-bottom-left-radius: 0px !important;
-  padding: 7px 15px;
+  padding: 7.2px 15px;
 }
 #newPropertyType {
 	border-top-right-radius: 0px !important;
@@ -6522,6 +6528,7 @@ margin-right: 10px;
 }
 .Swal_CustomTitle {
 	font-size: 21px;
+	margin-bottom: 5px;
 }
 .form-group {
 	position: relative;
@@ -8536,22 +8543,561 @@ color: #161616 !important;
 	margin: 20px 0px 40px 0px;
 }
 
-.Downloadquote_doc_button button span{
+.Downloadquote_doc_button a span{
 	display: flex;
 	align-items: center;
 }
-.Downloadquote_doc_button button iconify-icon{
+.Downloadquote_doc_button a iconify-icon{
 	margin-right:5px;
 	font-size:20px;
 }
+.innertabbt_submit_action{
+	position: relative !important;
+	width: 100% !important;
+}
+
+.nobtPadding{
+	padding-bottom: 0px !important;
+}
+
+.inspectionwith360view{
+	display: flex;
+	align-items: center;
+}
+.inspection_multiitems{
+	display: flex;
+	align-items: center;
+}
+
+.inepect_iteamName {
+	margin-right: 6px;
+  min-width: 50px;
+  max-width: 200px;
+}
+
+.view-360-btn {
+	padding: 4px 10px;
+	background: #efeff5;
+	color: #151515;
+	border: none;
+	margin-left: 10px;
+	font-size: 12px;
+	border-radius: 4px !important;
+	display: flex;
+  align-items: center;
+}
+
+.view-360-btn iconify-icon{
+	font-size: 15px;
+	margin-right: 3px;
+}
+
+.multipleinspectItems_wrap .inspection_multiitems:nth-child(1) {
+	margin-bottom: 10px;
+  }
 
 
+.detailrowoneTd{
+	padding: 0px !important;
+}
+#detailrowoneTd{
+	padding: 0px !important;
+}
+
+.bedroomComment {
+    width: 100%; /* Set the width to 50% */
+    word-wrap: break-word; /* Ensure long words break to the next line */
+    word-break: break-word; /* Break words if necessary */
+    white-space: normal; /* Allow content to wrap */
+}
+.btn.toggle-info {
+	width: 40px;
+	height: 40px;
+	border-radius: 50px;
+	background: #ececf5;
+	font-size: 20px;
+	margin: 5px 0px;
+	color: #000;
+}
+.btn.toggle-info:hover {
+	width: 40px;
+	height: 40px;
+	border-radius: 50px;
+	background: #fcb608;
+	font-size: 20px;
+	margin: 5px 0px;
+	color: #fff;
+}
+
+.QuotationSignature img{
+	width: 100%;
+}
+
+.commonUpdateButton.Raises_DepositeInvoise_btn {
+	font-size: 14px !important;
+	border-radius: 3px;
+	background: #0eb37b;
+}
+.commonUpdateButton.sendQuotationbtn {
+	font-size: 14px !important;
+	border-radius: 3px;
+	background: #0e6db3;
+}
 
 
+.FormSubmit_fix_container.priceBOX .taskTotal {
+	margin-bottom: 0px !important;
+	margin-right: 20px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.receiptImg img {
+	width: 70px;
+	border-radius: 4px;
+}
+.checkboxTask {
+	padding-left: 12px;
+}
+.taskAccordion .accordion-button {
+	padding: 8px 15px 8px 8px;
+}
+.taskBlex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 97%;
+}
+.taskHeader {
+	display: flex;
+}
+.taskBlex h6 {
+	margin-bottom: 0px;
+}
 
 
+.taskAccordion .accordion-button {
+	background: transparent !important;
+}
+
+.completedrtask_headeract .form-group{
+margin-bottom: 0px !important;
+}
+.allSelect.checkboxTask {
+	margin-right: 20px;
+}
+
+#requesttemprary_Pass{
+	font-size: 14px !important;
+	border-radius: 3px;
+	background: #0eb37b;
+	border: none !important;
+	margin-right: 6px;
+	margin-left: 10px;
+}
+#requestchange_Pass{
+	font-size: 14px !important;
+	border-radius: 3px;
+	background: #0e6db3;
+	border: none !important;
+}
+
+.managepassword_action_right {
+	display: flex;
+	align-items: center;
+}
 
 
+.swal2-styled.swal2-cancel {
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	border: 0;
+	border-radius: .25em;
+	background: initial;
+	background-color: initial;
+	background-color: #f7f7f7;
+	color: #242424;
+	font-size: 14px !important;
+}
+.swal2-cancel.swal2-styled:hover {
+	border: 0;
+	border-radius: .25em;
+	background: initial;
+	background-color: initial;
+	background-color: #f7f7f7;
+	color: #242424;
+	font-size: 14px !important;
+}
+#swal2-title {
+	font-size: 21px;
+}
+.swal2-icon.swal2-warning {
+	margin-top: 10px;
+}
+.swal2-icon.swal2-success {
+	margin-top: 10px;
+}
+
+.swal2-actions {
+	width: 100%;
+  }
+  .swal2-confirm.my-ok-button.swal2-styled{
+	width: 100% !important;
+	background: #f2f2fa !important;
+	color: #000;
+}
+.prioritystatus{
+	display: flex;
+	align-items: center;
+}
+.prioritystatus .dot-label1 {
+	border-radius: 50px;
+	display: block;
+	height: 10px;
+	width: 10px;
+	margin-right: 0.5rem;
+	margin-top: 0px !important;
+}
+.highpriority_badge{
+	background: rgb(3, 189, 113);
+}
+.highPriority .priorityStatus_text{
+color: rgb(3, 189, 113);
+}
+
+.lowPriority .lowpriority_badge{
+	background: #ecba14;
+}
+.lowPriority  .priorityStatus_text{
+	color: #ecba14;
+}
+
+.MediumPriority .Mediumpriority_badge{
+	background: rgb(40, 138, 249);
+}
+.MediumPriority  .priorityStatus_text {
+	color:  rgb(40, 138, 249);
+}
+.tickets_cardsnumber .icon1 {
+	border-radius: 7px;
+	color: #fff;
+	font-size: 24px;
+	height: 55px;
+	line-height: 57px;
+	text-align: center;
+	width: 55px;
+}
+.tickets_cardsnumber .bg-primary-transparent {
+	background: rgba(51,102,255,.1);
+	color: #36f !important;
+}
+.tickets_cardsnumber .bg-secondary-transparent {
+	background: rgba(254,127,0,.1);
+	color: #fe7f00 !important;
+}
+.tickets_cardsnumber .bg-success-transparent {
+	background: rgba(13,205,148,.1);
+	color: #0dcd94 !important;
+}
+.priorityTitle {
+	color: #000;
+	font-size: 17px;
+	font-weight: 500;
+}
+
+.prioritycardwrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.text-mediumpriority{
+	color: #36f ;
+}
+
+.cardiconBGColor_emergency {
+	background: #f84f4f !important;
+	color: #fff;
+}
+.tickets_cardsnumber {
+	margin-bottom: 10px;
+}
+.swal2-icon.swal2-error.swal2-icon-show {
+	margin-top: 10px !important;
+}
+.swalalert_custom_icon img {
+	width: 45%;
+	margin: 10px 0px;
+}
+
+#JobID_specific{
+	background: #50c37d !important;
+	color: #fff !important;
+	display: flex;
+	align-items: center;
+}
+#JobID_specific iconify-icon{
+	margin-right: 4px;
+  font-size: 15px;
+  position: relative;
+  top: -1px;
+}
+.morethenone_properties_wrap{
+	display: flex;
+	align-items: center;
+}
+.multinotesTabs {
+	width: 41% !important;
+	margin-bottom: 20px !important;
+	margin-top: 10px !important;
+}
+.singlesectionTitle h2 {
+	font-size: 20px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+.singlesectionTitleSM {
+	margin-top: 18px;
+	margin-bottom: 13px;
+}
+.singlesectionTitleSM h2{
+	font-size: 18px;
+}
+.IconBoxTiles {
+	width: 35px;
+	height: 35px;
+	border-radius: 50px;
+	background-color: rgb(242, 242, 247);
+	color: rgb(30, 30, 30);
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.dashtileFlexWrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.dashtileLink .tiledashTitle{
+	color: gray;
+}
+#MakeEnquiry_confirmation{
+	margin-left: 20px;
+}
+#MakeEnquiry_confirmation iconify-icon{
+margin-right: 3px !important;
+font-size: 18px;
+}
+.CustomselectallContainer input {
+	margin-top: 0px;
+}
+.addmorevisitSchedule_forthesame{
+	text-align: right;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.addmorevisitSchedule_forthesame button {
+	background: transparent;
+	border: none;
+	padding: 0px;
+	font-size: 13px;
+	display: flex;
+	align-items: center;
+	color: #0cb06b;
+}
+
+.addmorevisitSchedule_forthesame button iconify-icon{
+	margin-right: 4px;
+}
+
+.LastLogintimeTitle {
+	display: flex;
+	align-items: center;
+}
+
+.LastLogintimeTitle iconify-icon {
+	margin-right: 4px;
+	font-size: 17px;
+	position: relative;
+	top: 1px;
+}
+.currentLoginTime {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+#lastLogin {
+	font-size: 20px;
+	font-weight: 500;
+	text-align: right;
+}
+.AddpropertforClient_mdWrap{
+	padding: 20px;
+}
+
+
+.budget-title{
+	font-size: 18px;
+	margin-bottom: 0px;
+}
+
+.budget-title iconify-icon{
+	margin-left: 3px;
+	font-size: 15px;
+}
+
+ 
+.add-field-button{
+	border: none;
+	padding: 0px;
+	background: transparent;
+	color: #00ab66;
+	display: flex;
+	align-items: center;
+	font-size: 13px;
+  font-weight: 500;
+}
+
+.add-field-button iconify-icon{
+	margin-right: 2px;
+  font-size: 17px;
+}
+
+.custom-floor-tabs .nav-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 10px 20px;
+	transition: all 0.3s ease;
+	position: relative;
+	color: #333;
+  }
+  
+  .custom-floor-tabs .nav-link i {
+	font-size: 1.2rem;
+  }
+  
+  .custom-floor-tabs .nav-link.active {
+	background-color: #f4f1ff;
+	border-color: #673ab7;
+	color: #0cb06b;
+  }
+  
+  .custom-floor-tabs .nav-link .checkmark {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	color: #0cb06b;
+	display: none;
+  }
+  #FloorInrTabs li button {
+	display: flex;
+	flex-direction: column;
+}  
+#FloorInrTabs li button.active {
+	background: transparent !important;
+	color: #0cb06b;
+	border-color: #0cb06b !important;
+}
+.addFloorsForpr{
+	display: flex !important;
+  align-items: center;
+  margin-bottom: 0px !important;
+  padding: 5px 15px !important;
+  font-weight: normal;
+  background: #198fe5;
+  color: #fff !important;
+  font-size: 14px !important;
+  border-radius: 4px;
+}
+.modaltitlewith_icon{
+	display: flex;
+	align-items: center;
+}
+.modaltitlewith_icon iconify-icon{
+	margin-right: 4px;
+}
+
+
+#propertylistingTabs  li button iconify-icon{
+	margin-right: 4px;
+}
+
+.docfilterbutton {
+	text-align: right;
+	display: flex;
+	justify-content: space-between;
+	align-items: center !important;
+	margin-bottom: 20px;
+	padding-bottom: 0px;
+	/* border-bottom: 1px dashed #869caf; */
+	background-color: #c2d0e147;
+	align-items: center !important;
+	padding: 10px 20px;
+	border-radius: 6px;
+}
+
+.voidBtn {
+	display: flex !important;
+  font-size: 13px !important;
+}
+
+.voidBtn iconify-icon{
+	font-size: 13px !important;
+	color: red;
+}
+
+.btn.btn-icon[class*="voidBtn"].btn-flush-dark.flush-soft-hover::before{
+	display: none !important;
+
+}
+.VoidStatus_TB h6 {
+	display: flex;
+	align-items: center;
+	margin-bottom:0px;
+}
+.VoidStatus_TB h6 iconify-icon{
+	margin-right:4px;
+	position: relative;
+	top: 0px;
+}
+
+.flexHeader_between{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.invoiceCheckbox_nomrbt .form-group{
+	margin-bottom: 0px;
+}
+
+.invoiceFlex_header{
+	display: flex;
+	align-items: center;
+}
+
+.invoiceFlex_header .form-label{
+	margin-right: 5px;
+}
+
+.depositeamount_col{
+	margin-right: 10px;
+}
+.flex_containerCmn.scheduleviewungmd_rviewall {
+	background: #f2f1f7cf;
+	padding: 8px 15px;
+	border-radius: 5px;
+}
+.scheduleviewungmd_rviewall h2{
+	font-size: 18px;
+	margin-bottom: 0px !important;
+}
 
 /* Media query for mobile screens */
 @media (max-width: 768px) {
