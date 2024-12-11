@@ -5724,7 +5724,7 @@ input.tableInput {
 }
 
 .inpTH_custom {
-padding: 0px !important;
+	padding: 7px !important;
 background: white;
 border-radius: 0px !important;
 border: 1px solid rgb(223, 229, 238) !important;
@@ -9105,7 +9105,7 @@ font-size: 18px;
 }
 
 .sharedropdown_intext{
-	font-size: 15px !important;
+	font-size: 14px !important;
 	color: #000 !important;
 	display: flex !important;
   align-items: center;
@@ -9124,6 +9124,26 @@ font-size: 18px;
 .sharepropertyWrap {
 	margin-left: 10px;
 }
+
+.sharecmniconbg{
+	background: #f6f7f9 !important
+}
+
+.messageiconcolor iconify-icon {
+	color: #198fe5;
+}
+
+.calendaruserfilters{
+	margin-left: 10px !important;
+}
+.offcanvas.timelogHRHUBModal {
+	width: 35% !important;
+}
+.common-datatable .form-check-input:checked {
+	background-color: #FBB70B;
+	border-color: #FBB70B !important;
+  }
+
 
 /* Media query for mobile screens */
 @media (max-width: 768px) {

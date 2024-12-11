@@ -12,32 +12,12 @@
             padding-left: 0px !important;
         }
     }
+
+   
 </style>
 
 <div class="container-xxl">
-    <!-- Page Header -->
-    <!-- <div class="hk-pg-header  pt-7">
-					<div class="d-flex">
-						<div class="d-flex flex-wrap justify-content-between flex-1">
-							<div class="mb-lg-0 mb-2 me-8">
-								<h1 class="pg-title">Welcome back</h1>
-								<p>Welcome back to your Admin Panel, where every detail of your operations awaits your command.</p>
-							</div>
-							<div class="pg-header-action-wrap">
-								<div class="input-group w-300p">
-									<span class="input-affix-wrapper">
-										<span class="input-prefix"><span class="feather-icon"><i
-													data-feather="calendar"></i></span></span>
-										<input class="form-control form-wth-icon" name="datetimes"
-											value="Aug 18,2020 - Aug 19, 2020">
-									</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-				</div> -->
-    <!-- /Page Header -->
+
 
     <!-- Page Body -->
     <div class="hk-pg-body py-0">
@@ -64,15 +44,15 @@
                         </div>
                         <div class="contact-options-wrap">
 
-                        <div class="statuschange_milage_select">
-                                        <select name="" id="" class="form-control select2" data-placeholder="Change Status">
-                                            <option disabled="" selected="" value="">Change Status</option>
-                                            <option value="Choice 2">Pending</option>
-                                                <option value="Choice 3">Approved</option>
-                                                <option value="Choice 4">Paid</option>
+                            <div class="statuschange_milage_select">
+                                <select name="" id="" class="form-control select2" data-placeholder="Change Status">
+                                    <option disabled="" selected="" value="">Change Status</option>
+                                    <option value="Choice 2">Pending</option>
+                                    <option value="Choice 3">Approved</option>
+                                    <option value="Choice 4">Paid</option>
 
-                                        </select>
-                                    </div>
+                                </select>
+                            </div>
 
                             <button id="toggleButton" type="button"
                                 class="btn  btn-flush-dark flush-soft-hover fIlterCmnButton"><span class="icon"><span
@@ -83,8 +63,6 @@
                                 data-bs-original-title="Refresh"><span class="icon"><span class="feather-icon"><i
                                             data-feather="refresh-cw"></i></span></span></a>
                             <div class="v-separator d-lg-block d-none"></div>
-
-                           
 
                             <button class="btn btn-sm addiconiButton commonAddnewButton btn-primary ms-3" type="button"
                                 data-bs-toggle="offcanvas" data-bs-target="#AddTimeLog"
@@ -175,7 +153,7 @@
                                 </div>
                             </div>
                             <div class="contact-list-view">
-                            
+
                                 <table class="table common-datatable nowrap w-100 ">
                                     <thead>
                                         <tr>
@@ -238,7 +216,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                        <td>
+                                            <td>
                                                 <input type="checkbox"
                                                     class="form-check-input inpTH_custom  rowCheckbox">
                                             </td>
@@ -285,7 +263,7 @@
                                         </tr>
 
                                         <tr>
-                                        <td>
+                                            <td>
                                                 <input type="checkbox"
                                                     class="form-check-input inpTH_custom  rowCheckbox">
                                             </td>
@@ -332,7 +310,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                        <td>
+                                            <td>
                                                 <input type="checkbox"
                                                     class="form-check-input inpTH_custom  rowCheckbox">
                                             </td>
@@ -378,7 +356,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                        <td>
+                                            <td>
                                                 <input type="checkbox"
                                                     class="form-check-input inpTH_custom  rowCheckbox">
                                             </td>
@@ -623,7 +601,7 @@
 <!-- edit mileage modal end -->
 
 <!--Offcanvas Wrapper-->
-<div class="offcanvas rightOffcanvas offcanvas-end" tabindex="-1" id="logDetailModal"
+<div class="offcanvas timelogHRHUBModal rightOffcanvas offcanvas-end" tabindex="-1" id="logDetailModal"
     aria-labelledby="offcanvasTopLabel">
     <div class="offcanvas-header">
         <div class="canvas-header-title">
@@ -632,8 +610,12 @@
         </div>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
+   
+
+    
     <div class="offcanvas-body">
         <div class="rightcanvas_Container">
+        <form action="mileage-logs.php">
             <div class="card card-border eventDetailCard mb-lg-4 mb-3">
                 <div class="card-header card-header-action">
                     <div class="media align-items-center">
@@ -745,8 +727,120 @@
 
             </ul>
 
+            <div class="comment-block">
+
+                <div class="card card-border note-block">
+                    <div class="card-body">
+
+                        <div class="media align-items-center notehead_withTag">
+                            <div class="notesSendBy">
+                                <div class="media-head">
+                                    <div class="avatar avatar-xs avatar-rounded">
+                                        <img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="noteAuthor_title">
+                                        Martin
+                                        Luther
+                                    </div>
+                                    <div class="NoteTiming">
+                                        9
+                                        Apr,
+                                        20,
+                                        7:14
+                                        AM
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <p class="NoteDescription">
+                            @<a href="#" class="fw-medium">Charlie
+                                Darvin</a>
+                            Tenant was
+                            very interested
+                            in the
+                            property,
+                            appreciating the
+                            layout and
+                            natural light.
+                            They need two
+                            bedrooms, a
+                            workspace, and a
+                            parking
+                            spot. They have
+                            a small dog
+                            and prefer to
+                            move in by the
+                            end of next
+                            month. Awaiting
+                            their decision
+                            by the end of
+                            the week.</p>
+                    </div>
+                </div>
+                <div class="card card-border note-block ">
+                    <div class="card-body">
+
+                        <div class="media align-items-center notehead_withTag">
+                            <div class="notesSendBy">
+                                <div class="media-head">
+                                    <div class="avatar avatar-xs avatar-rounded">
+                                        <img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="noteAuthor_title">
+                                        Katherine
+                                        Jones
+                                    </div>
+                                    <div class="NoteTiming">
+                                        8
+                                        Apr,
+                                        20,
+                                        5:30
+                                        PM
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <p class="NoteDescription">
+                            @<a href="#" class="fw-medium">Martin
+                                Luther</a>
+                            Viscosity
+                            ratio for
+                            "Appear view"
+                            link
+                            text is 3.7:1
+                            which is less
+                        </p>
+                    </div>
+                </div>
+                <div class="separator separator-light">
+                </div>
+
+                <div class="AddNoteEnuSection" id="">
+
+                    <div class="form-group">
+                        <label class="form-label">Add
+                            Comment</label>
+                        <textarea class="form-control note-comment" rows="5"></textarea>
+                    </div>
+
+                    <div class="submitnote_container">
+                        <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter">Submit</button>
+                    </div>
+                </div>
+
+              
+
+            </div>
+            </form>
         </div>
     </div>
+  
 </div>
 <!--/ Offcanvas Wrapper-->
 
@@ -790,25 +884,22 @@
 <!-- table data select functionality -->
 <script>
     document.addEventListener('DOMContentLoaded', (event) => {
-    const selectAllCheckbox = document.getElementById('selectAllTb');
-    const rowCheckboxes = document.querySelectorAll('.rowCheckbox');
-
-    selectAllCheckbox.addEventListener('change', function() {
+        const selectAllCheckbox = document.getElementById('selectAllTb');
+        const rowCheckboxes = document.querySelectorAll('.rowCheckbox');
+        selectAllCheckbox.addEventListener('change', function() {
+            rowCheckboxes.forEach(checkbox => {
+                checkbox.checked = this.checked;
+            });
+        });
         rowCheckboxes.forEach(checkbox => {
-            checkbox.checked = this.checked;
+            checkbox.addEventListener('change', function() {
+                if (!this.checked) {
+                    selectAllCheckbox.checked = false;
+                } else if (document.querySelectorAll('.rowCheckbox:checked').length ===
+                    rowCheckboxes.length) {
+                    selectAllCheckbox.checked = true;
+                }
+            });
         });
     });
-
-    rowCheckboxes.forEach(checkbox => {
-        checkbox.addEventListener('change', function() {
-            if (!this.checked) {
-                selectAllCheckbox.checked = false;
-            } else if (document.querySelectorAll('.rowCheckbox:checked').length === rowCheckboxes.length) {
-                selectAllCheckbox.checked = true;
-            }
-        });
-    });
-});
-
 </script>
-
