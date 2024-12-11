@@ -1328,6 +1328,21 @@
 																class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 
 														</li>
+														<li class="nav-item">
+															<a class="nav-link sidecolor_Procurement custompadding_megamenu"
+																href="##">
+																<span class="nav-icon-wrap position-relative">
+
+																	<span class="svg-icon">
+																	<iconify-icon icon="bx:purchase-tag"></iconify-icon>
+																	</span>
+																</span>
+																<span class="nav-link-text">Procurement</span>
+															</a>
+															<i
+																class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+
+														</li>
 													</ul>
 												</li>
 											</ul>

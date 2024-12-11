@@ -3135,6 +3135,11 @@ div.dt-container div.dt-search input {
   color: #fff !important;
 }
 
+.sidecolor_Procurement .svg-icon > iconify-icon{
+	background-color: #FF9843 !important;
+  color: #fff !important;
+}
+
 .sidecolorleave .svg-icon > iconify-icon{
 	background-color: #27bc7d !important;
   color: #fff !important;
