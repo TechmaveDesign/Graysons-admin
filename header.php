@@ -884,10 +884,34 @@
 																class="nav flex-column collapse  nav-children">
 																<li class="nav-item">
 																	<ul class="nav menu-dropdown flex-column">
-
+																	<li class="nav-item">
+																			<a href="all-rent-invoices.php" class="nav-link"
+																				data-key="dispatch-invoices"><span
+																					class="nav-link-text">Invoices</span></a>
+																		</li>
+																		<li class="nav-item">
+																			<a href="#" class="nav-link"
+																				data-key="dispatch-invoices"><span
+																					class="nav-link-text">Damage Deposite Registration</span></a>
+																		</li>
+																		<li class="nav-item">
+																			<a href="#" class="nav-link"
+																				data-key="dispatch-invoices"><span
+																					class="nav-link-text">Strip (Rent Advance)</span></a>
+																		</li>
+																		<li class="nav-item">
+																			<a href="#" class="nav-link"
+																				data-key="dispatch-invoices"><span
+																					class="nav-link-text">Pay by Card</span></a>
+																		</li>
+																		<li class="nav-item">
+																			<a href="#" class="nav-link"
+																				data-key="dispatch-invoices"><span
+																					class="nav-link-text">Unallocated Account</span></a>
+																		</li>
 																	
 
-																	<li class="nav-item">
+																	<!-- <li class="nav-item">
 																			<a href="deposite-invoices.php" class="nav-link"
 																				data-key="dispatch-invoices"><span
 																					class="nav-link-text">RENT ALLOCATION</span></a>
@@ -922,7 +946,7 @@
 																					class="nav-link-text">Inventory
 																					Invoice </span>
 																			</a>
-																		</li>
+																		</li> -->
 
 																	</ul>
 																</li>
