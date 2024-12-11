@@ -16,7 +16,7 @@
 </li>
 
 <li class="nav-item">
-    <a href="javascript:void(0);" class="nav-link"
+    <a href="marketing-settings.php" class="nav-link"
         data-key="view-inventory-item-check-statuses"><span
             class="nav-link-text">Marketing Settings</span></a>
 </li>

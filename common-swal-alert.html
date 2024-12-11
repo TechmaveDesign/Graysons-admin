@@ -35,3 +35,109 @@
         });
     });
     </script>
+
+
+<!-- second design implimented on compliance request modal submit -->
+<script>
+    $(document).ready(function () {
+     // Handle Submit button click
+     $("#requotemsgSend").on("click", function (e) {
+         e.preventDefault(); // Prevent the default form submission
+ 
+         // Validate the form fields (optional)
+         const title = $("#quoteTitle").val().trim();
+         const message = $("#quoteMessage").val().trim();
+ 
+         if (title && message) {
+             // Close the modal
+             $("#requestReQuoteModal").modal("hide");
+ 
+             // Show SweetAlert2 confirmation with a custom class on the OK button
+             Swal.fire({
+                 icon: "success",
+                 title: "Re Quotation Request Sent",
+                 text: "Your request has been sent successfully!",
+                 confirmButtonText: "OK",
+                 timer: 3000,
+                 timerProgressBar: true,
+                 customClass: {
+                     confirmButton: "my-ok-button" // Add your custom class here
+                 },
+             });
+         } else {
+             // Show an error alert if fields are empty
+             Swal.fire({
+                 icon: "error",
+                 title: "Form Incomplete",
+                 text: "Please fill in both the title and message fields before submitting.",
+                 confirmButtonText: "OK",
+                 customClass: {
+                     confirmButton: "my-ok-button" // Add the same or a different custom class
+                 },
+             });
+         }
+     });
+ });
+ 
+ 
+  </script>
+
+
+<!-- use this for swal custom gif image ,  icon -->
+
+<script>
+    $(document).ready(function () {
+     // Handle Submit button click
+     $("#requotemsgSend").on("click", function (e) {
+         e.preventDefault(); // Prevent the default form submission
+ 
+         // Validate the form fields (optional)
+         const title = $("#quoteTitle").val().trim();
+         const message = $("#quoteMessage").val().trim();
+ 
+         if (title && message) {
+             // Close the modal
+             $("#requestReQuoteModal").modal("hide");
+ 
+             // Show SweetAlert2 confirmation with a custom class on the OK button
+             Swal.fire({
+                 html: `
+                     <div style="text-align: center;">
+                         <div class="swalalert_custom_icon">
+                             <img src="dist/img/newimages/successgif.gif" alt="">
+                             
+                         </div>
+                         <h2 class="Swal_CustomTitle">Re Quotation Request Sent</h2>
+                         <p>Your request has been sent successfully!</p>
+                     </div>`,
+                 confirmButtonText: "Close",
+                 timer: 3000,
+                 timerProgressBar: true,
+                 customClass: {
+                     confirmButton: "my-ok-button" // Add your custom class here
+                 },
+             });
+         } else {
+             // Show an error alert if fields are empty
+             Swal.fire({
+                 html: `
+                     <div style="text-align: center;">
+                         <div class="swalalert_custom_icon">
+                             <img src="dist/img/newimages/errorgif3.gif" alt="">
+                         </div>
+                         <h2 class="Swal_CustomTitle">Form Incomplete</h2>
+                         <p>Please fill in both the title and message fields before submitting.</p>
+                     </div>`,
+                 confirmButtonText: "Close",
+                 timer: 3000,
+                 timerProgressBar: true,
+                 customClass: {
+                     confirmButton: "my-ok-button" // Add the same or a different custom class
+                 },
+             });
+         }
+     });
+ });
+ 
+ 
+  </script>

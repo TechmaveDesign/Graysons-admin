@@ -364,6 +364,16 @@
                                                         </a>
                                                     </li>
                                                     <li class="nav-item">
+                                                        <a class="nav-link" data-bs-toggle="tab"
+                                                            href="#ParkingTenancies">
+                                                            <span class="nav-icon-wrap"><span class="feather-icon">
+                                                                    <iconify-icon icon="mdi:car-brake-parking">
+                                                                    </iconify-icon>
+                                                                </span></span>
+                                                            <span class="nav-link-text">Parking Tenancies</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
                                                         <a class="nav-link" data-bs-toggle="tab" href="#Invoices">
                                                             <span class="nav-icon-wrap"><span class="feather-icon">
                                                                     <iconify-icon icon="hugeicons:invoice-01">
@@ -989,18 +999,78 @@
 
                                                                         </div>
 
-                                                                        <div class="form-group">
+                                                                        <div class="AddNoteEnuSection" id="AddNote1">
+    <div class="form-group">
+        <label class="form-label">Note header</label>
+        <input class="form-control note-title" type="text" placeholder="Add Title">
+    </div>
 
-                                                                            <textarea class="form-control" rows="8"
-                                                                                placeholder="Write an internal note"></textarea>
-                                                                        </div>
+    <div class="form-group">
+        <label class="form-label">Add Comment</label>
+        <textarea class="form-control note-comment" rows="5"></textarea>
+    </div>
+    
+    <div class="NoteAction_container">
+        <div class="sendEnquiryNote_container">
+            <div class="addto_todolist">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input customCheckList-todo">
+                    <label class="form-check-label">Add to ToDo List <span class="done-strikethrough"></span></label>
+                </div>
+            </div>
+        </div>
+        <div class="sendEnquiryNote_container setAlert_container">
+            <div class="addto_todolist">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input setAlertInput">
+                    <label class="form-check-label">Set As Alert <span class="done-strikethrough"></span></label>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="Showing_departmentand_users" style="display: none;">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label class="form-label">Select Department</label>
+                    <select class="form-control select2 select-department">
+                        <option disabled selected value="">Please Select...</option>
+                        <option value="Account Department">Account Department</option>
+                        <option value="HR Department">HR Department</option>
+                        <option value="Contract Department">Contract Department</option>
+                        <option value="Lettings Department">Lettings Department</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label class="form-label">Select Users</label>
+                    <select class="form-control select2 select-user">
+                        <option disabled selected value="">Please Select...</option>
+                        <option value="John Doe">John Doe</option>
+                        <option value="Jane Smith">Jane Smith</option>
+                        <option value="Alice Johnson">Alice Johnson</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="form-group">
+                <label class="form-label">Select Due Date</label>
+    <input class="form-control customdataPicker" type="text" name="" value="" placeholder="Due Date" />
+    <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
+    </iconify-icon>
+</div>
+                </div>
+        </div>
+    </div>
+
+</div>
+
                                                                     </div>
                                                                     <div class="savechangesformContainer">
-                                                                        <button type="submit" class="buttonInfOUpdate">
-                                                                            <iconify-icon icon="fluent:save-32-regular">
-                                                                            </iconify-icon>
-                                                                            Save Changes
-                                                                        </button>
+                                                                    <button type="button" class="sendBtn_common_main addenun_noteBtn send-note">Send Note</button>
                                                                     </div>
 
                                                                 </div>
@@ -1156,8 +1226,8 @@
 
                                                                         <th>Property </th>
                                                                         <th>Type</th>
-                                                                        <th>Start</th>
-                                                                        <th>End</th>
+                                                                        <th>Start Date</th>
+                                                                        <th>End Date</th>
                                                                         <th>Outstanding Payments</th>
                                                                         <th>Actions</th>
                                                                     </tr>
@@ -1316,6 +1386,121 @@
                                                     </div>
 
                                                 </div>
+                                                <div class="tab-pane fade " id="ParkingTenancies">
+
+                                                    <div class="mainuserFilesds_tabpaneContainer">
+                                                        <div class="docfilterbutton">
+                                                            <h2 class="tabinnerTitle">All Parking Tenancies</h2>
+                                                            <div class="RightTabinr_container">
+
+                                                                <button
+                                                                    class="btn btn-sm addiconiButton commonAddnewButton btn-primary ms-3"
+                                                                    type="button" data-bs-toggle="offcanvas"
+                                                                    data-bs-target="#AddParkingTenancyModal"
+                                                                    aria-controls="offcanvasExample">
+                                                                    <iconify-icon icon="lets-icons:add-round">
+                                                                    </iconify-icon> Add New Parking Tenancy
+                                                                </button>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="contact-list-view mt-4 topborderstyle">
+
+                                                            <table class="table common-datatable nowrap w-100 ">
+                                                                <thead>
+                                                                    <tr>
+
+                                                                        <th>Property </th>
+                                                                        <th>Tenancy Start Date</th>
+                                                                        <th>Tenancy End Date</th>
+                                                                        <th>Outstanding Payments</th>
+                                                                        <th>Details</th>
+                                                                        <th>Payment Plan Type</th>
+                                                                        <th>Monthly Payment</th>
+                                                                        <th>Total Installments</th>
+                                                                        <th>Status</th>
+                                                                        <th>Actions</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="LongMesage_container">
+                                                                                <input
+                                                                                    class="refuge-collection-input tableLongMessage_Input"
+                                                                                    value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House">
+                                                                                <button
+                                                                                    class="view-btn tablemessageview_btn"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="tooltip"
+                                                                                    data-bs-placement="top"
+                                                                                    aria-label="Click to view"
+                                                                                    data-bs-original-title="Click to view Full Message">
+                                                                                    <i class="bi bi-eye"></i> Read More
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            09/04/2024 17:19
+                                                                        </td>
+                                                                        <td>28/09/2023 19:47</td>
+                                                                        <td>0</td>
+                                                                        <td class="">
+                                                                            <a href="property-details.php">
+                                                                                <div class="LongMesage_container">
+                                                                                    <input
+                                                                                        class="refuge-collection-input tableLongMessage_Input"
+                                                                                        value="Bay 34, Reg number: YA14ZPM"></input>
+                                                                                    <button
+                                                                                        class="view-btn tablemessageview_btn"
+                                                                                        type="button"
+                                                                                        data-bs-toggle="tooltip"
+                                                                                        data-bs-placement="top"
+                                                                                        aria-label="Click to view"
+                                                                                        data-bs-original-title="Click to view Full Message">
+                                                                                        <i class="bi bi-eye"></i> Read
+                                                                                        More
+                                                                                    </button>
+                                                                                </div>
+                                                                            </a>
+                                                                        </td>
+                                                                        <td>Monthly</td>
+                                                                        <td>£546</td>
+                                                                        <td>5</td>
+                                                                        <td><span
+                                                                                class="badge badge-soft-success  my-1  me-2">Payment
+                                                                                added to rent</span>
+                                                                        </td>
+
+                                                                        <td>
+                                                                            <div
+                                                                                class="d-flex align-items-center ActionDropdown">
+                                                                                <div class="d-flex">
+                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                        data-bs-toggle="tooltip"
+                                                                                        data-placement="top" title=""
+                                                                                        data-bs-original-title="View Tenancy Details"
+                                                                                        href="parking-tenency-details.php">
+                                                                                        <span class="icon">
+                                                                                            <span class="feather-icon">
+                                                                                                <iconify-icon
+                                                                                                    icon="majesticons:eye-line">
+                                                                                                </iconify-icon>
+                                                                                            </span>
+                                                                                        </span>
+                                                                                    </a>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
                                                 <div class="tab-pane fade " id="Invoices">
 
                                                     <div class="mainuserFilesds_tabpaneContainer">
@@ -1450,21 +1635,82 @@
 
                                                                 </div>
 
-                                                                <div class="form-group">
+                                                                <div class="AddNoteEnuSection" id="AddNote1">
+    <div class="form-group">
+        <label class="form-label">Note header</label>
+        <input class="form-control note-title" type="text" placeholder="Add Title">
+    </div>
 
-                                                                    <textarea class="form-control" rows="8"
-                                                                        placeholder="Write an internal note"></textarea>
-                                                                </div>
+    <div class="form-group">
+        <label class="form-label">Add Comment</label>
+        <textarea class="form-control note-comment" rows="5"></textarea>
+    </div>
+    
+    <div class="NoteAction_container">
+        <div class="sendEnquiryNote_container">
+            <div class="addto_todolist">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input customCheckList-todo">
+                    <label class="form-check-label">Add to ToDo List <span class="done-strikethrough"></span></label>
+                </div>
+            </div>
+        </div>
+        <div class="sendEnquiryNote_container setAlert_container">
+            <div class="addto_todolist">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input setAlertInput">
+                    <label class="form-check-label">Set As Alert <span class="done-strikethrough"></span></label>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="Showing_departmentand_users" style="display: none;">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label class="form-label">Select Department</label>
+                    <select class="form-control select2 select-department">
+                        <option disabled selected value="">Please Select...</option>
+                        <option value="Account Department">Account Department</option>
+                        <option value="HR Department">HR Department</option>
+                        <option value="Contract Department">Contract Department</option>
+                        <option value="Lettings Department">Lettings Department</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label class="form-label">Select Users</label>
+                    <select class="form-control select2 select-user">
+                        <option disabled selected value="">Please Select...</option>
+                        <option value="John Doe">John Doe</option>
+                        <option value="Jane Smith">Jane Smith</option>
+                        <option value="Alice Johnson">Alice Johnson</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="form-group">
+                <label class="form-label">Select Due Date</label>
+    <input class="form-control customdataPicker" type="text" name="" value="" placeholder="Due Date" />
+    <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
+    </iconify-icon>
+</div>
+                </div>
+        </div>
+    </div>
+
+</div>
+
                                                             </div>
                                                         </div>
 
                                                     </div>
 
                                                     <div class="savechangesformContainer">
-                                                        <button Type="submit" class="buttonInfOUpdate">
-                                                            <iconify-icon icon="fluent:save-32-regular"></iconify-icon>
-                                                            Save Changes
-                                                        </button>
+                                                    <button type="button" class="sendBtn_common_main addenun_noteBtn send-note">Send Note</button>
                                                     </div>
 
                                                 </div>
@@ -3129,7 +3375,7 @@
                                                                 </div>
                                                                 <div class="card-body">
                                                                     <div class="row">
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label class="form-label">Title</label>
                                                                                 <input type="text" class="form-control"
@@ -3137,7 +3383,7 @@
                                                                             </div>
 
                                                                         </div>
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label for="firstname"
                                                                                     class="form-label">First
@@ -3147,7 +3393,7 @@
                                                                             </div>
 
                                                                         </div>
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label for="Middle"
                                                                                     class="form-label">Middle
@@ -3157,7 +3403,7 @@
                                                                             </div>
 
                                                                         </div>
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label for="Surname"
                                                                                     class="form-label">Surname</label>
@@ -3166,7 +3412,7 @@
                                                                             </div>
 
                                                                         </div>
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label for="Email"
                                                                                     class="form-label">Email</label>
@@ -3176,7 +3422,7 @@
                                                                             </div>
 
                                                                         </div>
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label for="Contact" class="form-label">
                                                                                     Contact Number</label>
@@ -3186,7 +3432,7 @@
 
                                                                         </div>
 
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label for="Contact" class="form-label">
                                                                                     Alt Contact Number</label>
@@ -3196,7 +3442,7 @@
 
                                                                         </div>
 
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label class="form-label">Date of
                                                                                     Birth</label>
@@ -3208,7 +3454,7 @@
                                                                             </div>
                                                                         </div>
 
-                                                                        <div class="col-md-6">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label for="addressline1"
                                                                                     class="form-label"> Address Line
@@ -3220,7 +3466,7 @@
 
                                                                         </div>
 
-                                                                        <div class="col-md-6">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label for="addressline2"
                                                                                     class="form-label"> Address Line
@@ -3232,7 +3478,7 @@
 
                                                                         </div>
 
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label for="Town/City"
                                                                                     class="form-label">
@@ -3243,7 +3489,7 @@
 
                                                                         </div>
 
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label for="County" class="form-label">
                                                                                     County</label>
@@ -3253,7 +3499,7 @@
 
                                                                         </div>
 
-                                                                        <div class="col-md-3">
+                                                                        <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <label for="Postcode"
                                                                                     class="form-label"> Postcode</label>
@@ -3312,7 +3558,9 @@
                                                     <div class="mainuserFilesds_tabpaneContainer">
                                                         <div class="docfilterbutton">
                                                             <h2 class="tabinnerTitle">Manage Password</h2>
-                                                            <div class="lastpasswordChangeDate">
+                                                            <div class="managepassword_action_right">
+                                                            
+                                                        <div class="lastpasswordChangeDate">
                                                                 <iconify-icon icon="iconamoon:lock-light">
                                                                 </iconify-icon> Last Changed: <div
                                                                     class="dateShowlastchanged"><span
@@ -3320,9 +3568,18 @@
                                                                         Mar , 18 2024
                                                                     </span></div>
                                                             </div>
+                                                            <button Type="button" class="buttonInfOUpdate commonUpdateButton" id="requesttemprary_Pass">
+                                                            <iconify-icon icon="carbon:intent-request-scale-in"></iconify-icon>
+                                                            Request Temporary Password
+                                                        </button>
+                                                        <button Type="button" class="buttonInfOUpdate commonUpdateButton " id="requestchange_Pass">
+                                                            <iconify-icon icon="carbon:intent-request-scale-in"></iconify-icon>
+                                                            Request Change Password
+                                                        </button>
+                                                            </div>
                                                         </div>
 
-                                                        <div class="row">
+                                                        <!-- <div class="row">
 
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
@@ -3359,14 +3616,14 @@
                                                                 </div>
                                                             </div>
 
-                                                        </div>
+                                                        </div> -->
                                                     </div>
-                                                    <div class="savechangesformContainer">
+                                                    <!-- <div class="savechangesformContainer">
                                                         <button Type="submit" class="buttonInfOUpdate">
                                                             <iconify-icon icon="fluent:save-32-regular"></iconify-icon>
                                                             Change Password
                                                         </button>
-                                                    </div>
+                                                    </div> -->
 
                                                     <div class="MutiUserAuthntication_container">
                                                         <div class="row">
@@ -4621,6 +4878,424 @@
 </div>
 <!-- Add Tenancy  offcanvas modal end -->
 
+
+ <!-- Add Parking Tenancy offcanvas form modal-->
+<div class="offcanvas offcanvas-bottom custombottm_offcanvasStyle" tabindex="-1" id="AddParkingTenancyModal"
+    aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header custom-canvas-header">
+        <div class="canvas-header-title">
+        <iconify-icon icon="mdi:car-brake-parking"></iconify-icon>
+            Add Parking Tenancy
+        </div>
+        <div class="closeCanvasContainer">
+            <button type="button" class="canvascloseButton" data-bs-dismiss="offcanvas" aria-label="Close">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    class="ct-icon" style="min-width: 20px; min-height: 20px; color: var(--ct-white);"
+                    data-testid="icon">
+                    <path
+                        d="M11.375 14.5C11.5583 14.6833 11.7667 14.775 12 14.775C12.2333 14.775 12.4417 14.6833 12.625 14.5L15.625 11.525C15.7583 11.3917 15.8207 11.2167 15.812 11C15.804 10.7833 15.7333 10.6083 15.6 10.475C15.45 10.325 15.275 10.25 15.075 10.25C14.875 10.25 14.7 10.325 14.55 10.475L12 13.025L9.425 10.45C9.29167 10.3167 9.11667 10.254 8.9 10.262C8.68333 10.2707 8.50833 10.3417 8.375 10.475C8.225 10.625 8.15 10.8 8.15 11C8.15 11.2 8.225 11.375 8.375 11.525L11.375 14.5ZM12 21.5C10.6833 21.5 9.446 21.25 8.288 20.75C7.12933 20.25 6.125 19.575 5.275 18.725C4.425 17.875 3.75 16.8707 3.25 15.712C2.75 14.554 2.5 13.3167 2.5 12C2.5 10.6833 2.75 9.44567 3.25 8.287C3.75 7.129 4.425 6.125 5.275 5.275C6.125 4.425 7.12933 3.75 8.288 3.25C9.446 2.75 10.6833 2.5 12 2.5C13.3167 2.5 14.5543 2.75 15.713 3.25C16.871 3.75 17.875 4.425 18.725 5.275C19.575 6.125 20.25 7.129 20.75 8.287C21.25 9.44567 21.5 10.6833 21.5 12C21.5 13.3167 21.25 14.554 20.75 15.712C20.25 16.8707 19.575 17.875 18.725 18.725C17.875 19.575 16.871 20.25 15.713 20.75C14.5543 21.25 13.3167 21.5 12 21.5ZM12 20C14.2167 20 16.1043 19.221 17.663 17.663C19.221 16.1043 20 14.2167 20 12C20 9.78333 19.221 7.89567 17.663 6.337C16.1043 4.779 14.2167 4 12 4C9.78333 4 7.896 4.779 6.338 6.337C4.77933 7.89567 4 9.78333 4 12C4 14.2167 4.77933 16.1043 6.338 17.663C7.896 19.221 9.78333 20 12 20Z"
+                        fill="currentColor"></path>
+                </svg>Close
+            </button>
+        </div>
+
+    </div>
+    <div class="Canvas_ct_divider"></div>
+    <form class="" action="view-user-details.php">
+        <div class="offcanvas-body">
+
+            <div class="addingForm_Container">
+                <div class="add-users-modal-body-table-header text-headline-6">Add New Parking Tenancy</div>
+
+                <div class="formstartcontainer">
+                    <div class="row">
+                        <div class="col-lg-12">
+                        <div class="row">
+
+<div class="col-md-3">
+
+    <div class="form-group">
+        <label class="form-label"> Date of Agreemant</label>
+        <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+            value="01/06/2024" readonly="readonly">
+        <iconify-icon icon="ion:calendar-outline" class="dateinput_icon"></iconify-icon>
+    </div>
+</div>
+
+<div class="col-md-3">
+    <div class="form-group">
+        <label class="form-label">User Name</label>
+        <input type="text" class="form-control" id="Title" value="Dean Shaw" readonly
+            disabled>
+    </div>
+
+</div>
+<div class="col-md-3">
+    <div class="form-group">
+        <label class="form-label">Property Address</label>
+        <select name="" id="" class="form-control select2">
+            <option disabled="" selected="" value="">Please Select...</option>
+            <option value="1">Communal Area Inspection House 14</option>
+            <option value="15" selected>Communal Area Inspection House 16</option>
+            <option value="19">Communal Area Inspection House 22</option>
+
+        </select>
+
+    </div>
+</div>
+
+<div class="col-md-3">
+    <div class="form-group">
+        <label class="form-label">Type</label>
+        <select name="" id="" class="form-control select2">
+            <option disabled="" selected="" value="">Please Select...</option>
+            <option value="1">Private</option>
+            <option value="2">Student</option>
+            <option value="4">Commercial</option>
+            <option value="5">Dental</option>
+
+        </select>
+
+    </div>
+</div>
+
+<div class="col-md-3">
+    <div class="form-group">
+        <label class="form-label">Car Number</label>
+        <input type="text" class="form-control" id="Title" value="">
+    </div>
+
+</div>
+
+<div class="col-md-3">
+    <div class="form-group">
+        <label class="form-label">Licence Number</label>
+        <input type="text" class="form-control" id="Title" value="">
+    </div>
+
+</div>
+
+<div class="col-md-3">
+
+    <div class="form-group">
+        <label class="form-label">Licence Date</label>
+        <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+            value="01/06/2024" readonly="readonly">
+        <iconify-icon icon="ion:calendar-outline" class="dateinput_icon"></iconify-icon>
+    </div>
+</div>
+
+<div class="col-md-3">
+    <div class="form-group">
+        <label class="form-label">Rental Amount</label>
+        <input type="text" class="form-control" id="Title" value="">
+    </div>
+
+</div>
+
+<div class="col-md-3">
+    <div class="form-group">
+        <label class="form-label">Installments</label>
+        <select name="" id="" class="form-control select2">
+            <option disabled="" selected="" value="">Please Select...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="4">3</option>
+            <option value="4">4</option>
+
+        </select>
+
+    </div>
+</div>
+
+<div class="col-md-3">
+
+    <div class="form-group">
+        <label class="form-label">Date of Inatallments</label>
+        <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+            value="01/06/2024" readonly="readonly">
+        <iconify-icon icon="ion:calendar-outline" class="dateinput_icon"></iconify-icon>
+    </div>
+</div>
+
+<div class="col-md-3">
+    <div class="form-group">
+        <label class="form-label">Bay Number</label>
+        <input type="text" class="form-control" id="Title" value="">
+    </div>
+
+</div>
+
+
+
+<div class="col-md-3">
+
+    <div class="form-group">
+        <label class="form-label">Tenancy Start Date</label>
+        <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+            value="01/06/2024" readonly="readonly">
+        <iconify-icon icon="ion:calendar-outline" class="dateinput_icon"></iconify-icon>
+    </div>
+</div>
+
+<div class="col-md-3">
+
+    <div class="form-group">
+        <label class="form-label">Tenancy End Date</label>
+        <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+            value="01/06/2024" readonly="readonly">
+        <iconify-icon icon="ion:calendar-outline" class="dateinput_icon"></iconify-icon>
+    </div>
+</div>
+
+<div class="col-auto">
+    <div class="form-group">
+        <label for="" class="form-label">&nbsp;</label>
+        <div class="form-check">
+            <input class="form-check-input guranterCheckbox" type="checkbox"
+                id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+                Guarantor Required
+            </label>
+        </div>
+    </div>
+</div>
+</div>
+
+                            <div class="Guarantor_Container idrequiredChecked">
+                                <div class="row">
+                                    <h2>Guarantor Details</h2>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="" class="form-label">Guarantor Forename</label>
+                                            <input type="text" class="form-control" id="">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="" class="form-label">Guarantor Surname</label>
+                                            <input type="text" class="form-control" id="">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="" class="form-label">Guarantor Email</label>
+                                            <input type="email" class="form-control" id="">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="" class="form-label"> Guarantor Contact Number</label>
+                                            <input type="phone" class="form-control" id="">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="addressline1" class="form-label">Guarantor Address Line
+                                                1</label>
+                                            <input type="text" class="form-control" id="addressline1">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="addressline2" class="form-label"> Guarantor Address Line
+                                                2</label>
+                                            <input type="text" class="form-control" id="addressline2">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="Town/City" class="form-label">Guarantor Town/City</label>
+                                            <input type="text" class="form-control" id="Town/City">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="County" class="form-label">Guarantor County</label>
+                                            <input type="text" class="form-control" id="County">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="Postcode" class="form-label">Guarantor Postcode</label>
+                                            <input type="text" class="form-control" id="Postcode">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="paymentPlanDeposite_container">
+
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="" class="form-label">Deposit</label>
+                                            <input type="text" class="form-control" id="" value="£0">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label class="form-label">Payment Plan Type</label>
+                                            <select name="" id="paymentFrequency" class="form-control select2">
+                                                <option disabled="" selected="" value="">Please Select...</option>
+                                                <option value="monthly">Monthly</option>
+                                                <option value="weekly">Weekly</option>
+                                                <option value="custom">Custom</option>
+                                            </select>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="monthyPayment_opt payment_opt ">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="" class="form-label">Monthly Rental Payment</label>
+                                                <input type="text" class="form-control" id="" value="£0">
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="" class="form-label">Monthly Utility Payment</label>
+                                                <input type="text" class="form-control" id="" value="£0">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label class="form-label">Payment Date</label>
+                                                <select name="" id="" class="form-control select2">
+                                                    <option disabled selected value="">Please Select...</option>
+                                                    <option value="monthly">Monthly</option>
+                                                    <option value="1st">1st</option>
+                                                    <option value="2nd">2nd</option>
+                                                    <option value="3rd">3rd</option>
+                                                    <option value="4th">4th</option>
+                                                    <option value="5th">5th</option>
+                                                    <option value="6th">6th</option>
+                                                    <option value="7th">7th</option>
+                                                    <option value="8th">8th</option>
+                                                    <option value="9th">9th</option>
+                                                    <option value="10th">10th</option>
+                                                    <option value="11th">11th</option>
+                                                    <option value="12th">12th</option>
+                                                    <option value="13th">13th</option>
+                                                    <option value="14th">14th</option>
+                                                    <option value="15th">15th</option>
+                                                    <option value="16th">16th</option>
+                                                    <option value="17th">17th</option>
+                                                    <option value="18th">18th</option>
+                                                    <option value="19th">19th</option>
+                                                    <option value="20th">20th</option>
+                                                    <option value="21st">21st</option>
+                                                    <option value="22nd">22nd</option>
+                                                    <option value="23rd">23rd</option>
+                                                    <option value="24th">24th</option>
+                                                    <option value="25th">25th</option>
+                                                    <option value="26th">26th</option>
+                                                    <option value="27th">27th</option>
+                                                    <option value="28th">28th</option>
+                                                    <option value="29th">29th</option>
+                                                    <option value="30th">30th</option>
+                                                    <option value="31st">31st</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="WeeklyPayment_opt payment_opt ">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="" class="form-label">Weekly Rental Payment</label>
+                                                <input type="text" class="form-control" id="" value="£0">
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="" class="form-label">Weekly Utility Payment</label>
+                                                <input type="text" class="form-control" id="" value="£0">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label class="form-label">Payment Day</label>
+                                                <select name="" id="" class="form-control select2">
+                                                    <option disabled selected value="">Please Select...</option>
+                                                    <option value="1">Monday</option>
+                                                    <option value="2">Tuesday</option>
+                                                    <option value="3">Wednesday</option>
+                                                    <option value="4">Thursday</option>
+                                                    <option value="5">Friday</option>
+                                                    <option value="6">Saturday</option>
+                                                    <option value="0">Sunday</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="proccedPlan_button_container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+
+                                        <button id="paymentAdded_sucess" type="button" class="btn btn-primary">
+                                            <iconify-icon icon="fluent-mdl2:generate"></iconify-icon> Generate Payment
+                                            Plan
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="canvasFooterContainer">
+            <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
+                data-bs-dismiss="offcanvas">Cancel</button>
+            <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter">Submit</button>
+        </div>
+    </form>
+</div>
+<!-- Add Parking Tenancy  offcanvas modal end -->
+
 <!-- create new Invoice offcanvas form modal-->
 <div class="offcanvas offcanvas-bottom height90Canvas custombottm_offcanvasStyle" tabindex="-1" id="CreateInvoiceModal"
     aria-labelledby="offcanvasTopLabel">
@@ -5076,38 +5751,181 @@
 </script>
 <!-- increase decreas number for add invoice modal custom jquery end -->
 
-
 <!-- for contract tab status action -->
- <script>
-document.getElementById('pendingtenancy_action').addEventListener('click', function () {
-    Swal.fire({
-        title: 'Review and Approve',
-        text: "Please review all the details before approving.",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonText: 'Approve',
-        cancelButtonText: 'Cancel',
-        input: 'checkbox',
-        inputPlaceholder: 'I have reviewed all the details',
-        inputValidator: (result) => {
-            return !result && 'You need to confirm that you reviewed all the details!'
-        },
-        customClass: {
-            popup: 'Review-and-Approve' // Add your custom class here
+<script>
+    document.getElementById('pendingtenancy_action').addEventListener('click', function() {
+        Swal.fire({
+            title: 'Review and Approve',
+            text: "Please review all the details before approving.",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Approve',
+            cancelButtonText: 'Cancel',
+            input: 'checkbox',
+            inputPlaceholder: 'I have reviewed all the details',
+            inputValidator: (result) => {
+                return !result && 'You need to confirm that you reviewed all the details!'
+            },
+            customClass: {
+                popup: 'Review-and-Approve' // Add your custom class here
+            }
+        }).then((result) => {
+            if (result.isConfirmed) {
+                document.getElementById('pendingtenancy_action').textContent = 'Approved';
+                document.getElementById('pendingtenancy_action').classList.remove('bg-warning');
+                document.getElementById('pendingtenancy_action').classList.add('bg-success');
+                Swal.fire(
+                    'Approved!',
+                    'The tenancy has been approved.',
+                    'success'
+                );
+            }
+        });
+    });
+</script>
+<!-- for contract tab status action end-->
+
+
+<!-- add notes js start -->
+
+<script>
+    $(document).ready(function () {
+    // Toggle the visibility of Showing_departmentand_users based on the checkbox
+    $(document).on('change', '.customCheckList-todo', function () {
+        const container = $(this).closest('.AddNoteEnuSection');
+        if ($(this).is(':checked')) {
+            container.find('.Showing_departmentand_users').slideDown(); // Show the section
+        } else {
+            container.find('.Showing_departmentand_users').slideUp(); // Hide the section
         }
-    }).then((result) => {
-        if (result.isConfirmed) {
-            document.getElementById('pendingtenancy_action').textContent = 'Approved';
-            document.getElementById('pendingtenancy_action').classList.remove('bg-warning');
-            document.getElementById('pendingtenancy_action').classList.add('bg-success');
-            Swal.fire(
-                'Approved!',
-                'The tenancy has been approved.',
-                'success'
-            );
+    });
+
+    // Handle the Send Note button click
+    $(document).on('click', '.send-note', function () {
+        const container = $(this).closest('.AddNoteEnuSection');
+        const selectedDepartment = container.find('.select-department').val();
+        const selectedUser = container.find('.select-user').val();
+        
+        if (selectedDepartment && selectedUser) {
+            Swal.fire({
+                icon: 'success',
+                title: 'Note Sent!',
+                text: `Note sent to ${selectedDepartment} and ${selectedUser}.`
+            });
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Missing Information',
+                text: 'Please select both a department and a user.'
+            });
+        }
+    });
+
+    // Handle Set Alert confirmation
+    $(document).on('change', '.setAlertInput', function () {
+        const checkbox = $(this);
+        if (checkbox.is(':checked')) {
+            Swal.fire({
+                html: `
+                    <div style="text-align: center;">
+                        <div class="swalalert_custom_icon">
+                            <iconify-icon icon="hugeicons:alert-01"></iconify-icon>
+                        </div>
+                        <h2 class="Swal_CustomTitle">Are You Sure You Want to Set This Note as an Alert?</h2>
+                    </div>`,
+                showCancelButton: true,
+                confirmButtonText: 'Yes, set it!',
+                cancelButtonText: 'No, cancel!',
+                reverseButtons: true,
+                customClass: {
+                    confirmButton: 'btn btn-success',
+                    cancelButton: 'btn btn-danger'
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire({
+                        title: 'Alert Set!',
+                        text: 'The note has been successfully set as an alert.',
+                        icon: 'success'
+                    });
+                } else if (result.isDismissed) {
+                    checkbox.prop('checked', false); // Uncheck the checkbox if the user cancels
+                }
+            });
         }
     });
 });
 
- </script>
- <!-- for contract tab status action end-->
+</script>
+<!-- add notes functionality end -->
+
+
+<!-- password change request confirmation alert  -->
+<script>
+    // Custom styles for the Swal buttons
+    const swalCustomClasses = {
+        confirmButton: 'my-custom-confirm-button', // Custom class for the confirm button
+        cancelButton: 'my-custom-cancel-button'   // Custom class for the cancel button
+    };
+
+    const swalOkCustomClass = {
+        confirmButton: 'my-ok-button' // Custom class for the OK button in confirmation
+    };
+
+    // Request Temporary Password
+    document.getElementById("requesttemprary_Pass").addEventListener("click", function () {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: 'Do you want to request a temporary password? An email will be sent with further instructions.',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Yes, request it!',
+            cancelButtonText: 'Cancel',
+            customClass: swalCustomClasses
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Simulate sending a request
+                setTimeout(() => {
+                    Swal.fire({
+                        title: 'Request Sent!',
+                        text: 'A temporary password request has been sent for approval. You will receive an email shortly.',
+                        icon: 'success',
+                        timer: 3000,
+                timerProgressBar: true,
+                        confirmButtonText: 'Close',
+                        customClass: swalOkCustomClass
+                    });
+                }, 1000);
+            }
+        });
+    });
+
+    // Request Change Password
+    document.getElementById("requestchange_Pass").addEventListener("click", function () {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: 'Do you want to request a password change? An email will be sent with further instructions.',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Yes, request it!',
+            cancelButtonText: 'Cancel',
+            customClass: swalCustomClasses
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Simulate sending a request
+                setTimeout(() => {
+                    Swal.fire({
+                        title: 'Request Sent!',
+                        text: 'A password change request has been sent for approval. You will receive an email shortly.',
+                        icon: 'success',
+                        timer: 3000,
+                timerProgressBar: true,
+                        confirmButtonText: 'Close',
+                        customClass: swalOkCustomClass
+                    });
+                }, 1000);
+            }
+        });
+    });
+</script>
+<!-- password change request confirmation alert  end-->

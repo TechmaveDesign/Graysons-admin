@@ -119,7 +119,7 @@
                                                             <div class="col-lg-4">
                                                                 <div class="form-group">
                                                                     <label class="form-label">User</label>
-                                                                    <select name="" id="" class="form-control select2">
+                                                                    <select name="" class="form-control select2">
                                                                         <option value="" selected disable readonly>
                                                                             Select an Option</option>
                                                                         <option value="">Gowthorpe, Jason</option>

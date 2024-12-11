@@ -28,6 +28,9 @@
 <!-- jQuery -->
 <script src="vendors/jquery/dist/jquery.min.js"></script>
 
+<!-- iconify icons  -->
+<script src="dist/js/iconify.js"></script>
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <!-- Sweetalert JS -->
@@ -129,41 +132,7 @@
 </script>
 <!-- sidebar document search bar functionality js end -->
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // Function to fetch last login time from server or local storage
-        function fetchLastLoginTime() {
-            // Simulating fetching last login time from server
-            // In real-world scenario, replace this with actual fetching logic
-            return new Promise(function(resolve, reject) {
-                // Simulated AJAX call
-                setTimeout(function() {
-                    // Sample last login time (you should replace this with actual fetching logic)
-                    var currentTime = new Date();
-                    var lastLoginTime = formatTime(currentTime);
-                    resolve(lastLoginTime);
-                }, 1000); // Simulating delay of 1 second
-            });
-        }
-        // Format time
-        function formatTime(date) {
-            var hours = date.getHours();
-            var minutes = date.getMinutes();
-            var seconds = date.getSeconds();
-            return `${hours}:${minutes}:${seconds}`;
-        }
-        // Update last login time
-        function updateLastLoginTime() {
-            fetchLastLoginTime().then(function(lastLoginTime) {
-                document.getElementById("lastLogin").innerText = lastLoginTime;
-            });
-        }
-        // Initial update
-        updateLastLoginTime();
-        // Update last login time every 1 second
-        setInterval(updateLastLoginTime, 1000); // Update every 1 second
-    });
-</script>
+
 
 
 <!-- page refresh on click refresh button  -->

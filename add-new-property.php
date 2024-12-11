@@ -37,9 +37,23 @@
                             </div>
                         </div>
                         <div class="contact-options-wrap">
-                            <!-- <button id="toggleButton" type="button"
-                                class="btn  btn-flush-dark flush-soft-hover fIlterCmnButton"><span class="icon"><span
-                                        class="feather-icon"><i data-feather="list"></i></span></span>Filter</button> -->
+                            <button id="scheduleInspectionBtn"
+                                class="btn btn-sm addiconiButton commonAddnewButton btn-primary ms-3 ScheduleAddBtnfor_property hidden"
+                                type="button" data-bs-toggle="modal" data-bs-target="#property_inspection_modal">
+                                <iconify-icon icon="lets-icons:add-round"></iconify-icon> Schedule Inspection
+                            </button>
+                            <button id="AddInspectionTimings"
+                                class="btn btn-sm addiconiButton commonAddnewButton AddInspection_timings__property btn-primary ms-3 hidden"
+                                data-bs-toggle="offcanvas" data-bs-target="#addinventorymodal"
+                                aria-controls="offcanvasExample">
+                                <iconify-icon icon="lets-icons:add-round"></iconify-icon> Add Inspection Times
+                            </button>
+
+                            <button id="Addproperty_development"
+                                class="btn btn-sm addiconiButton commonAddnewButton btn-primary ms-3 ScheduleAddBtnfor_property hidden"
+                                type="button" data-bs-toggle="modal" data-bs-target="#Addproperty__modal">
+                                <iconify-icon icon="lets-icons:add-round"></iconify-icon> Add New Property
+                            </button>
 
                             <a id="refreshButton"
                                 class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover no-caret d-sm-inline-block d-none"
@@ -66,6 +80,42 @@
 
                     <form action="all-properties.php">
                         <div class="contact-body">
+                            <div class="fullwidthDesktopTabs MobileScrollShow" id="nopaddingTop">
+
+                                <ul class="nav nav-tabs nav-line nav-icon fullwidthCustom_tabsUL nav-light">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-bs-toggle="tab" href="#AddPropertytb">
+                                            <div class="d-flex align-items-center">
+                                                <span class="nav-link-text">Add Property</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#ScheduleInspection">
+                                            <div class="d-flex align-items-center">
+                                                <span class="nav-link-text">Schedule Inspection</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#AddTimings_inspections">
+                                            <div class="d-flex align-items-center">
+                                                <span class="nav-link-text">Add Inspection Timings</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " data-bs-toggle="tab" href="#AddDevelopmenttb">
+                                            <div class="d-flex align-items-center">
+                                                <span class="nav-link-text">Add Development</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
                             <div class="nicescroll-bar">
                                 <div class="userFilters onerowfilter" id="filterDiv" style="display: none;">
                                     <div class="quick-access-form-wrap nopaddingleftright">
@@ -234,30 +284,7 @@
                                     </div>
                                 </div>
 
-                                <div class="fullwidthDesktopTabs MobileScrollShow">
-
-                                    <ul class="nav nav-tabs nav-line nav-icon fullwidthCustom_tabsUL nav-light">
-
-                                        <li class="nav-item">
-                                            <a class="nav-link active" data-bs-toggle="tab" href="#AddPropertytb">
-                                                <div class="d-flex align-items-center">
-                                                    <span class="nav-link-text">Add Property</span>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link " data-bs-toggle="tab" href="#AddDevelopmenttb">
-                                                <div class="d-flex align-items-center">
-                                                    <span class="nav-link-text">Add Development</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
-
-                                <div class="tab-content">
+                                <div class="tab-content notpMargin_tab">
                                     <div class="tab-pane fade show active" id="AddPropertytb">
                                         <div class="fullwidthTabInner_content_container">
 
@@ -270,78 +297,7 @@
                                                                 <div class="row">
                                                                     <div class="col-lg-12">
                                                                         <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group">
-                                                                                    <label
-                                                                                        class="form-label">Address</label>
-                                                                                    <input type="text"
-                                                                                        class="form-control" value="">
-                                                                                </div>
-
-                                                                            </div>
-                                                                            <div class=" col-md-3">
-                                                                                <div class="form-group">
-                                                                                    <label for=""
-                                                                                        class="form-label">Area</label>
-                                                                                    <input type="text"
-                                                                                        class="form-control" value="">
-                                                                                </div>
-
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group">
-                                                                                    <label for=""
-                                                                                        class="form-label">Postcode</label>
-                                                                                    <input type="text"
-                                                                                        class="form-control" id=""
-                                                                                        value="">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-3">
-                                                                                <div class="form-group">
-                                                                                    <label for=""
-                                                                                        class="form-label">Access
-                                                                                        Code</label>
-                                                                                    <input type="text"
-                                                                                        class="form-control" id="">
-                                                                                </div>
-
-                                                                            </div>
-
-                                                                            <div class="col-md-4">
-                                                                                <div class="form-group">
-                                                                                    <label for=""
-                                                                                        class="form-label">Alarm
-                                                                                        Code</label>
-                                                                                    <input type="phone"
-                                                                                        class="form-control" id="">
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="col-md-4">
-                                                                                <div class="form-group">
-                                                                                    <label class="form-label">Default
-                                                                                        Tenancy Type</label>
-                                                                                    <select name="" id=""
-                                                                                        class="form-control select2">
-                                                                                        <option disabled="" selected=""
-                                                                                            value="">Please
-                                                                                            Select...</option>
-                                                                                        <option value="1">Private
-                                                                                        </option>
-                                                                                        <option value="2">Student
-                                                                                        </option>
-                                                                                        <option value="4">Commercial
-                                                                                        </option>
-                                                                                        <option value="5">Dental
-                                                                                        </option>
-
-                                                                                    </select>
-
-                                                                                </div>
-                                                                            </div>
-
-                                                                            <div class="col-md-4">
+                                                                        <div class="col-md-3">
                                                                                 <div class="form-group">
                                                                                     <label
                                                                                         class="form-label">Landlord</label>
@@ -402,178 +358,1033 @@
 
                                                                                 </div>
                                                                             </div>
-
-                                                                            <div class="col-md-4">
+                                                                            <div class="col-md-3">
                                                                                 <div class="form-group">
-                                                                                    <label class="form-label">Select
-                                                                                        Property Type</label>
-                                                                                    <select name="" id="propertyType"
+                                                                                    <label
+                                                                                        class="form-label">Address</label>
+                                                                                    <input type="text"
+                                                                                        class="form-control" value="">
+                                                                                </div>
+
+                                                                            </div>
+                                                                            <div class=" col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label for=""
+                                                                                        class="form-label">Area</label>
+                                                                                    <input type="text"
+                                                                                        class="form-control" value="">
+                                                                                </div>
+
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label for=""
+                                                                                        class="form-label">Postcode</label>
+                                                                                    <input type="text"
+                                                                                        class="form-control" id=""
+                                                                                        value="">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-3">
+                                                                                        <div class="form-group">
+                                                                                            <label
+                                                                                                class="form-label">Assign
+                                                                                                Staff</label>
+                                                                                            <select name=""
+                                                                                                class="form-control select2">
+                                                                                                <option value=""
+                                                                                                    selected disable
+                                                                                                    readonly>
+                                                                                                    Select an Option
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Danial Craig">
+                                                                                                    Danial Craig
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Emma Watson">
+                                                                                                    Emma
+                                                                                                    Watson</option>
+                                                                                                <option
+                                                                                                    value="Jennifer Lawrence">
+                                                                                                    Jennifer Lawrence
+                                                                                                </option>
+                                                                                                <option
+                                                                                                    value="Scarlett Johansson">
+                                                                                                    Scarlett Johansson
+                                                                                                </option>
+                                                                                            </select>
+
+                                                                                        </div>
+
+                                                                                    </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="form-group">
+                                                                                    <label for=""
+                                                                                        class="form-label">Access
+                                                                                        Code</label>
+                                                                                    <input type="text"
+                                                                                        class="form-control" id="">
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                            <div class="col-md-2">
+                                                                                <div class="form-group">
+                                                                                    <label for=""
+                                                                                        class="form-label">Alarm
+                                                                                        Code</label>
+                                                                                    <input type="phone"
+                                                                                        class="form-control" id="">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-md-2">
+                                                                                <div class="form-group">
+                                                                                    <label class="form-label">Default
+                                                                                        Tenancy Type</label>
+                                                                                    <select name="" id=""
                                                                                         class="form-control select2">
                                                                                         <option disabled="" selected=""
                                                                                             value="">Please
                                                                                             Select...</option>
-                                                                                        <option value="Building">
-                                                                                            Building</option>
-                                                                                        <option value="Apartment">
-                                                                                            Apartment</option>
-                                                                                        <option value="House">House
+                                                                                        <option value="1">Private
                                                                                         </option>
+                                                                                        <option value="2">Student
+                                                                                        </option>
+                                                                                        <option value="4">Commercial
+                                                                                        </option>
+                                                                                        <option value="5">Dental
+                                                                                        </option>
+
                                                                                     </select>
+
                                                                                 </div>
                                                                             </div>
 
-                                                                            <div class="col-auto customcenterCol">
-                                                                                <div class="form-group">
-                                                                                    <label
-                                                                                        class="form-label">&nbsp;</label>
-                                                                                    <button type="button"
-                                                                                        id="addPropertyTypeButton"
-                                                                                        class="btn btn-icon btn-rounded btn-primary form-control">
-                                                                                        <span class="icon">
-                                                                                            <span class="feather-icon">
-                                                                                                <iconify-icon
-                                                                                                    icon="eva:plus-fill">
-                                                                                                </iconify-icon>
-                                                                                            </span>
-                                                                                        </span>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-3 hiddentype"
-                                                                                id="newPropertyTypeDiv">
-                                                                                <div class="form-group">
-                                                                                    <label class="form-label">Add New
-                                                                                        Property Type</label>
-                                                                                    <div
-                                                                                        class="addpropertyTypeContainer">
-                                                                                        <input type="text"
-                                                                                            id="newPropertyType"
-                                                                                            class="form-control"
-                                                                                            placeholder="New Property Type">
-                                                                                        <button type="button"
-                                                                                            id="savePropertyTypeButton"
-                                                                                            class="btn btn-primary ">Save</button>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
+                                                                            
 
+                                                                            <div class="col-md-3">
+    <div class="form-group">
+        <label class="form-label">Select Property Type</label>
+        <select name="" class="form-control select2 property-type-select">
+            <option disabled selected value="">Please Select...</option>
+            <option value="Building">Building</option>
+            <option value="Apartment">Apartment</option>
+            <option value="House">House</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+</div>
+
+<div class="col-md-3 newPropertyTypeDiv">
+    <div class="form-group">
+        <label class="form-label">Add New Property Type</label>
+        <div class="addpropertyTypeContainer">
+            <input type="text" class="form-control" placeholder="New Property Type">
+        </div>
+    </div>
+</div>
                                                                         </div>
 
-                                                                        <div class="AddProperty_Budget">
-                                                                        <div class="tabtable_tbHeading">
-                                                                            <h1>Add Budgets</h1>
-                                                                        </div>
-                                                                        <div class="row">
-
-                                                                            <div class="col-lg-3">
-                                                                                <div class="form-group">
-                                                                                    <label
-                                                                                        for="exampleFormControlInput1"
-                                                                                        class="form-label">Compliances
-                                                                                        Budget</label>
-                                                                                    <input type="text"
-                                                                                        class="form-control" id=""
-                                                                                        vlaue="" placeholder="">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-lg-3">
-                                                                                <div class="form-group">
-                                                                                    <label
-                                                                                        for="exampleFormControlInput1"
-                                                                                        class="form-label">Compliances
-                                                                                        Budget</label>
-                                                                                    <input type="text"
-                                                                                        class="form-control" id=""
-                                                                                        vlaue="" placeholder="">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-lg-3">
-                                                                                <div class="form-group">
-                                                                                    <label
-                                                                                        for="exampleFormControlInput1"
-                                                                                        class="form-label">Labour
-                                                                                        Budget</label>
-                                                                                    <input type="text"
-                                                                                        class="form-control" id=""
-                                                                                        vlaue="" placeholder="">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-lg-3">
-                                                                                <div class="form-group">
-                                                                                    <label
-                                                                                        for="exampleFormControlInput1"
-                                                                                        class="form-label">Material
-                                                                                        Budget</label>
-                                                                                    <input type="text"
-                                                                                        class="form-control" id=""
-                                                                                        vlaue="" placeholder="">
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
-                                                                        </div>
+                                                                        
                                                                     </div>
                                                                 </div>
 
-                                                                <div class="SubuNitAddContainer">
-                                                                    <div class="container mt-5">
-                                                                        <div class="row">
-                                                                            <div class="col-lg-12">
-                                                                                <div class="addSubUnitButton">
-
-                                                                                    <button
-                                                                                        class="btn btn-primary addFolderBtn AddpropertyUnit"
-                                                                                        type="button" id="addFolderBtn">
-                                                                                        <iconify-icon
-                                                                                            icon="stash:list-add-light">
-                                                                                        </iconify-icon> Add Unit
-                                                                                        <i
-                                                                                            class="bi bi-arrow-up-right-down-duotone"></i>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <table id="folderTable"
-                                                                            class="table  nowrap table-advance">
-                                                                            <thead>
-                                                                                <tr>
-                                                                                    <th>Unit Type</th>
-                                                                                    <th>Unit Name</th>
-                                                                                    <th>Action</th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <!-- Table rows will be added dynamically using JavaScript -->
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </div>
-                                                                </div>
+                                                               
                                                             </div>
 
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
+                                            <div class="card">
+                                                        <div class="card-body">
+                                                            <div class="AddProperty_Budget">
+                                                                <div class="docfilterbutton">
+                                                                    <div class="flexheaderLeftWrap">
+                                                                        <h1 class="budget-title">
+                                                                            Add Budgets
+                                                                            <span class="edit-title-icon"
+                                                                                style="cursor: pointer;">
+                                                                                <iconify-icon
+                                                                                    icon="fluent:edit-16-regular">
+                                                                                </iconify-icon>
+                                                                            </span>
+                                                                        </h1>
+                                                                        <div class="edit-title-container"
+                                                                            style="display: none;">
+                                                                            <input type="text"
+                                                                                class="edit-title-input form-control"
+                                                                                value="Add Budgets"
+                                                                                style="width: 70%; display: inline-block;" />
+                                                                            <button type="button"
+                                                                                class="save-title-button btn btn-success">Save</button>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="flexheader_right_action">
+                                                                        <button type="button" class="add-field-button">
+                                                                            <iconify-icon icon="si:add-fill">
+                                                                            </iconify-icon> Add
+                                                                            Field
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row budget-fields-container">
+                                                                    <div class="col-lg-3 budget-field">
+                                                                        <div class="form-group">
+                                                                            <label contenteditable="true"
+                                                                                class="form-label">Compliances
+                                                                                Budget</label>
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3 budget-field">
+                                                                        <div class="form-group">
+                                                                            <label contenteditable="true"
+                                                                                class="form-label">Compliances
+                                                                                Budget</label>
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3 budget-field">
+                                                                        <div class="form-group">
+                                                                            <label contenteditable="true"
+                                                                                class="form-label">Labour
+                                                                                Budget</label>
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3 budget-field">
+                                                                        <div class="form-group">
+                                                                            <label contenteditable="true"
+                                                                                class="form-label">Material
+                                                                                Budget</label>
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <div class="docfilterbutton">
+                                                                <div class="flexheaderLeftWrap">
+                                                                    <h1 class="budget-title">Manage Floor's
+                                                                    </h1>
+                                                                </div>
+                                                                <div class="flexheader_right_action">
+                                                                    <button
+                                                                        class=" addFolderBtn AddpropertyUnit addFloorsForpr"
+                                                                        type="button" data-bs-toggle="modal"
+                                                                        data-bs-target="#floorAdd__modal">
+                                                                        <iconify-icon icon="stash:list-add-light">
+                                                                        </iconify-icon> Add Floor
+                                                                        <i
+                                                                            class="bi bi-arrow-up-right-down-duotone"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="" id="FloorInrTabs">
+                                                                <!-- Floor Tabs -->
+                                                                <ul class="nav nav-pills custom-floor-tabs"
+                                                                    id="floorTab2" role="tablist">
+                                                                    <li class="nav-item" role="presentation">
+                                                                        <button class="nav-link active" id="gfloor2-tab"
+                                                                            data-bs-toggle="pill"
+                                                                            data-bs-target="#gfloor2" type="button"
+                                                                            role="tab" aria-controls="gfloor2"
+                                                                            aria-selected="true">
+                                                                            <i class="bi bi-building"></i> G
+                                                                            Floor
+                                                                        </button>
+                                                                    </li>
+                                                                    <li class="nav-item" role="presentation">
+                                                                        <button class="nav-link" id="firstfloor2-tab"
+                                                                            data-bs-toggle="pill"
+                                                                            data-bs-target="#firstfloor2" type="button"
+                                                                            role="tab" aria-controls="firstfloor2"
+                                                                            aria-selected="false">
+                                                                            <i class="bi bi-building"></i> 1st
+                                                                            Floor
+                                                                        </button>
+                                                                    </li>
+                                                                    <li class="nav-item" role="presentation">
+                                                                        <button class="nav-link" id="secondfloor2-tab"
+                                                                            data-bs-toggle="pill"
+                                                                            data-bs-target="#secondfloor2" type="button"
+                                                                            role="tab" aria-controls="secondfloor2"
+                                                                            aria-selected="false">
+                                                                            <i class="bi bi-building"></i> 2nd
+                                                                            Floor
+                                                                        </button>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <!-- Tab Content -->
+                                                            <div class="tab-content mt-3" id="floorTabContent">
+                                                                <div class="tab-pane fade show active" id="gfloor2"
+                                                                    role="tabpanel" aria-labelledby="gfloor2-tab">
+
+                                                                    <div class="SubuNitAddContainer"
+                                                                        id="unitContainer4">
+                                                                        <div class="container mt-5">
+                                                                            <div class="row">
+                                                                                <div class="col-lg-12">
+
+                                                                                    <div class="docfilterbutton">
+                                                                                        <div class="flexheaderLeftWrap">
+                                                                                            <h1 class="budget-title">
+                                                                                                Add Property
+                                                                                                Units</h1>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="flexheader_right_action">
+                                                                                            <button
+                                                                                                class="btn btn-primary addFolderBtn AddpropertyUnit"
+                                                                                                type="button"
+                                                                                                id="addFolderBtn">
+                                                                                                <iconify-icon
+                                                                                                    icon="stash:list-add-light">
+                                                                                                </iconify-icon>
+                                                                                                Add Unit
+                                                                                                <i
+                                                                                                    class="bi bi-arrow-up-right-down-duotone"></i>
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <table id="folderTable"
+                                                                                class="table Unitaddtable">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>Unit Type</th>
+                                                                                        <th>Unit Name</th>
+                                                                                        <th>Access Code</th>
+                                                                                        <th>Office Key Label
+                                                                                        </th>
+                                                                                        <th>Master Key Code
+                                                                                        </th>
+                                                                                        <th>Alarm Code</th>
+                                                                                        <th>Action</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <!-- Table rows will be added dynamically using JavaScript -->
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="firstfloor2"
+                                                                    role="tabpanel" aria-labelledby="firstfloor2-tab">
+                                                                    <div class="SubuNitAddContainer"
+                                                                        id="unitContainer5">
+                                                                        <div class="container mt-5">
+                                                                            <div class="row">
+                                                                                <div class="col-lg-12">
+
+                                                                                    <div class="docfilterbutton">
+                                                                                        <div class="flexheaderLeftWrap">
+                                                                                            <h1 class="budget-title">
+                                                                                                Add Property
+                                                                                                Units</h1>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="flexheader_right_action">
+                                                                                            <button
+                                                                                                class="btn btn-primary addFolderBtn AddpropertyUnit"
+                                                                                                type="button"
+                                                                                                id="addFolderBtn">
+                                                                                                <iconify-icon
+                                                                                                    icon="stash:list-add-light">
+                                                                                                </iconify-icon>
+                                                                                                Add Unit
+                                                                                                <i
+                                                                                                    class="bi bi-arrow-up-right-down-duotone"></i>
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <table id="folderTable"
+                                                                                class="table Unitaddtable">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>Unit Type</th>
+                                                                                        <th>Unit Name</th>
+                                                                                        <th>Access Code</th>
+                                                                                        <th>Office Key Label
+                                                                                        </th>
+                                                                                        <th>Master Key Code
+                                                                                        </th>
+                                                                                        <th>Alarm Code</th>
+                                                                                        <th>Action</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <!-- Table rows will be added dynamically using JavaScript -->
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="secondfloor2"
+                                                                    role="tabpanel" aria-labelledby="secondfloor2-tab">
+                                                                    <div class="SubuNitAddContainer"
+                                                                        id="unitContainer6">
+                                                                        <div class="container mt-5">
+                                                                            <div class="row">
+                                                                                <div class="col-lg-12">
+
+                                                                                    <div class="docfilterbutton">
+                                                                                        <div class="flexheaderLeftWrap">
+                                                                                            <h1 class="budget-title">
+                                                                                                Add Property
+                                                                                                Units</h1>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="flexheader_right_action">
+                                                                                            <button
+                                                                                                class="btn btn-primary addFolderBtn AddpropertyUnit"
+                                                                                                type="button"
+                                                                                                id="addFolderBtn">
+                                                                                                <iconify-icon
+                                                                                                    icon="stash:list-add-light">
+                                                                                                </iconify-icon>
+                                                                                                Add Unit
+                                                                                                <i
+                                                                                                    class="bi bi-arrow-up-right-down-duotone"></i>
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <table id="folderTable"
+                                                                                class="table Unitaddtable">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>Unit Type</th>
+                                                                                        <th>Unit Name</th>
+                                                                                        <th>Access Code</th>
+                                                                                        <th>Office Key Label
+                                                                                        </th>
+                                                                                        <th>Master Key Code
+                                                                                        </th>
+                                                                                        <th>Alarm Code</th>
+                                                                                        <th>Action</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <!-- Table rows will be added dynamically using JavaScript -->
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                        </div>
+                                        <div class="canvasFooterContainer innertabscenter_action_Footer">
+                                            <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
+                                                data-bs-dismiss="offcanvas">Cancel</button>
+                                            <button type="submit"
+                                                class="canvasSubmit_button commonCanvas_buttonFooter">Save</button>
+                                        </div>
                                     </div>
 
+                                    <div class="tab-pane fade" id="ScheduleInspection">
+
+                                        <div class="contact-list-view">
+
+                                            <table class="table common-datatable nowrap w-100">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Property</th>
+                                                        <th>Area</th>
+                                                        <th>Unit Type</th>
+                                                        <th>Assigned Inspector</th>
+                                                        <th>Frequency</th>
+                                                        <th>Date From</th>
+                                                        <th>Date To</th>
+                                                        <th>Start Time</th>
+                                                        <th>End Time</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1 Harvest Close</td>
+                                                        <td>Sunderland</td>
+                                                        <td>Flat 1</td>
+                                                        <td>John Smith</td>
+                                                        <td>Weekly</td>
+                                                        <td>01, January 2024</td>
+                                                        <td>31, January 2024</td>
+                                                        <td>10:00 AM</td>
+                                                        <td>12:00 PM</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#Edit_property_inspection_modal">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>23 Rosewood Avenue</td>
+                                                        <td>Bristol</td>
+                                                        <td>Apartment 3B</td>
+                                                        <td>Jane Doe</td>
+                                                        <td>Monthly</td>
+                                                        <td>01, February 2024</td>
+                                                        <td>28, February 2024</td>
+                                                        <td>2:00 PM</td>
+                                                        <td>4:00 PM</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#Edit_property_inspection_modal">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>17 Maple Street</td>
+                                                        <td>Manchester</td>
+                                                        <td>Flat 2A</td>
+                                                        <td>Mark Taylor</td>
+                                                        <td>One-Time</td>
+                                                        <td>15, March 2024</td>
+                                                        <td>15, March 2024</td>
+                                                        <td>9:00 AM</td>
+                                                        <td>11:00 AM</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#Edit_property_inspection_modal">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>42 Elm Street</td>
+                                                        <td>Leeds</td>
+                                                        <td>House 5C</td>
+                                                        <td>Emily White</td>
+                                                        <td>Bi-Weekly</td>
+                                                        <td>01, April 2024</td>
+                                                        <td>15, April 2024</td>
+                                                        <td>1:00 PM</td>
+                                                        <td>3:00 PM</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#Edit_property_inspection_modal">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>9 Oak Lane</td>
+                                                        <td>Liverpool</td>
+                                                        <td>Flat 5D</td>
+                                                        <td>Chris Brown</td>
+                                                        <td>Monthly</td>
+                                                        <td>01, May 2024</td>
+                                                        <td>31, May 2024</td>
+                                                        <td>10:30 AM</td>
+                                                        <td>12:30 PM</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#Edit_property_inspection_modal">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="AddTimings_inspections">
+                                        <div class="contact-list-view">
+                                            <table class="table common-datatable nowrap w-100 ">
+                                                <thead>
+                                                    <tr>
+
+                                                        <th>Address </th>
+                                                        <th>Area</th>
+                                                        <th>Unit Type</th>
+                                                        <th>Unit Name</th>
+                                                        <th>Inspection Time's</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            1 Harvest Close
+                                                        </td>
+                                                        <td>Sunderland</td>
+                                                        <td>Flat 1</td>
+                                                        <td>11</td>
+                                                        <td>12:00 PM</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        href="#" data-bs-toggle="offcanvas"
+                                                                        data-bs-target="#Editinventorymodal"
+                                                                        aria-controls="offcanvasExample">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="property-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                                        title=""
+                                                                        data-bs-original-title="View Property Details"
+                                                                        href="property-details.php"><span
+                                                                            class="icon"><span class="feather-icon"><i
+                                                                                    data-feather="eye"></i></span></span></a>
+
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>23 Rosewood Avenue</td>
+                                                        <td>Bristol</td>
+                                                        <td>Apartment 3B</td>
+                                                        <td>8</td>
+                                                        <td>02:00 PM</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        href="#" data-bs-toggle="offcanvas"
+                                                                        data-bs-target="#Editinventorymodal"
+                                                                        aria-controls="offcanvasExample">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="property-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                                        title=""
+                                                                        data-bs-original-title="View Property Details"><span
+                                                                            class="icon"><span class="feather-icon"><i
+                                                                                    data-feather="eye"></i></span></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>17 Maple Street</td>
+                                                        <td>Manchester</td>
+                                                        <td>Flat 2A</td>
+                                                        <td>5</td>
+                                                        <td>10:00 AM</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        href="#" data-bs-toggle="offcanvas"
+                                                                        data-bs-target="#Editinventorymodal"
+                                                                        aria-controls="offcanvasExample">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="property-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                                        title=""
+                                                                        data-bs-original-title="View Property Details"><span
+                                                                            class="icon"><span class="feather-icon"><i
+                                                                                    data-feather="eye"></i></span></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>42 Elm Street</td>
+                                                        <td>Leeds</td>
+                                                        <td>House 5C</td>
+                                                        <td>12</td>
+                                                        <td>12:20 PM</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        href="#" data-bs-toggle="offcanvas"
+                                                                        data-bs-target="#Editinventorymodal"
+                                                                        aria-controls="offcanvasExample">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="property-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                                        title=""
+                                                                        data-bs-original-title="View Property Details"><span
+                                                                            class="icon"><span class="feather-icon"><i
+                                                                                    data-feather="eye"></i></span></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>9 Oak Lane</td>
+                                                        <td>Liverpool</td>
+                                                        <td>Flat 5D</td>
+                                                        <td>9</td>
+                                                        <td>03:00 PM</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        href="#" data-bs-toggle="offcanvas"
+                                                                        data-bs-target="#Editinventorymodal"
+                                                                        aria-controls="offcanvasExample">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="property-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                                        title=""
+                                                                        data-bs-original-title="View Property Details"><span
+                                                                            class="icon"><span class="feather-icon"><i
+                                                                                    data-feather="eye"></i></span></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>31 Willow Crescent</td>
+                                                        <td>Newcastle</td>
+                                                        <td>Apartment 2C</td>
+                                                        <td>7</td>
+                                                        <td>11:00 PM</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        href="#" data-bs-toggle="offcanvas"
+                                                                        data-bs-target="#Editinventorymodal"
+                                                                        aria-controls="offcanvasExample">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="property-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                                        title=""
+                                                                        data-bs-original-title="View Property Details"><span
+                                                                            class="icon"><span class="feather-icon"><i
+                                                                                    data-feather="eye"></i></span></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                     <div class="tab-pane fade" id="AddDevelopmenttb">
-                                        <div class="nodatafount_cmn_container">
+                                        <!-- <div class="nodatafount_cmn_container">
                                             <div class="nodataImageWrap">
                                                 <img src="dist/img/newimages/norecord.jpg" alt="">
                                             </div>
+                                        </div> -->
+
+                                        <div class="contact-list-view">
+
+                                            <table class="table common-datatable nowrap w-100 ">
+                                                <thead>
+                                                    <tr>
+
+                                                        <th>Client Name </th>
+                                                        <th>Mobile No</th>
+                                                        <th>Email address</th>
+                                                        <th>No. of Properties</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td>
+                                                            <a href="view-user-details.php">
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-head me-2">
+                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                alt="user" class="avatar-img">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <span class="d-block text-high-em">Charlie
+                                                                            Chaplin</span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>8675123490</td>
+                                                        <td>david.martinez@example.com</td>
+                                                        <td>7</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+
+                                                                    <a href="manage-properties.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                                        title=""
+                                                                        data-bs-original-title="View Property Details"><span
+                                                                            class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="hugeicons:property-view">
+                                                                                </iconify-icon>
+                                                                            </span></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="even">
+                                                        <td>
+                                                            <a href="view-user-details.php">
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-head me-2">
+                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                alt="user" class="avatar-img">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <span class="d-block text-high-em">Huma
+                                                                            Therman</span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>8745632190</td>
+                                                        <td>emily.johnson@example.com</td>
+                                                        <td>6</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+
+                                                                    <a href="manage-properties.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                                        title=""
+                                                                        data-bs-original-title="View Property Details"><span
+                                                                            class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="hugeicons:property-view">
+                                                                                </iconify-icon>
+                                                                            </span></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="view-user-details.php">
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-head me-2">
+                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                alt="user" class="avatar-img">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <span class="d-block text-high-em">Morgan
+                                                                            Freeman</span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>9876543210</td>
+                                                        <td>john.doe@example.com</td>
+                                                        <td>3</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+
+                                                                    <a href="manage-properties.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                                        title=""
+                                                                        data-bs-original-title="View Property Details"><span
+                                                                            class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="hugeicons:property-view">
+                                                                                </iconify-icon>
+                                                                            </span></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="even">
+                                                        <td>
+                                                            <a href="view-user-details.php">
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-head me-2">
+                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                alt="user" class="avatar-img">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <span class="d-block text-high-em">Tom
+                                                                            Cruz</span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>9234567890</td>
+                                                        <td>michael.brown@example.com</td>
+                                                        <td>8</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+
+                                                                    <a href="manage-properties.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                                        title=""
+                                                                        data-bs-original-title="View Property Details"><span
+                                                                            class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="hugeicons:property-view">
+                                                                                </iconify-icon>
+                                                                            </span></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="view-user-details.php">
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-head me-2">
+                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                alt="user" class="avatar-img">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <span class="d-block text-high-em">Winston
+                                                                            Churchil</span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>8547986201</td>
+                                                        <td>olivia.smith@example.com</td>
+                                                        <td>4</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+
+                                                                    <a href="manage-properties.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                                        title=""
+                                                                        data-bs-original-title="View Property Details"><span
+                                                                            class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="hugeicons:property-view">
+                                                                                </iconify-icon>
+                                                                            </span></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
-                            <div class="canvasFooterContainer">
-                                <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
-                                    data-bs-dismiss="offcanvas">Cancel</button>
-                                <button type="submit"
-                                    class="canvasSubmit_button commonCanvas_buttonFooter">Save</button>
-                            </div>
+
                         </div>
                     </form>
 
@@ -587,6 +1398,911 @@
     <!-- /Page Body -->
 
 </div>
+
+<!-- Schedule Inspection modal-->
+<div id="property_inspection_modal" class="modal customwizard_formStyle sm_modalCustom fade" tabindex="-1" role="dialog"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <form action="" method="post" id="wizardForm">
+            <div class="modal-content">
+
+                <div class="ModalheaderArea">
+                    <h5 class="mb-4">Schedule Inspection</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="ScheduleInspection_addWrap">
+                        <div class="stepheadingheader">
+                            <div class="steptitleIcon">
+                                <iconify-icon icon="carbon:inspection"></iconify-icon>
+                            </div>
+                            <h1>What property inspection are you scheduling?</h2>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label class="form-label">Inspection Title</label>
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="form-label">Property</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option value="" selected disable readonly>
+                                            Select an Option</option>
+                                        <option value="Westlands Dental Studio, Front Street, Lanchester">
+                                            Westlands Dental Studio, Front Street,
+                                            Lanchester</option>
+                                        <option value="Sunset Boulevard, Los Angeles, California">
+                                            Sunset Boulevard, Los Angeles, California
+                                        </option>
+                                        <option value="Marvel Avenue, Brooklyn, New York">
+                                            Marvel Avenue, Brooklyn, New York
+                                        </option>
+                                        <option value="Forest Gump Road, Greenbow, Alabama">
+                                            Forest Gump Road, Greenbow, Alabama</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="form-label">Unit Type</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option value="" selected disable readonly>
+                                            Select an Option</option>
+                                        <option value="Studio">Studio</option>
+                                        <option value="Annex ">Annex </option>
+                                        <option value="Room">Room</option>
+                                        <option value="Basement Studios">Basement
+                                            Studios</option>
+                                        <option value="Flat">Flat</option>
+                                        <option value="Cottage">Cottage</option>
+                                        <option value="Annex Flat 1">Annex Flat 1
+                                        </option>
+                                        <option value="Bedroom">Bedroom</option>
+                                        <option value="Annex Studio">Annex Studio
+                                        </option>
+                                        <option value="Bedrooms 1">Bedrooms 1</option>
+                                        <option value="Bedrooms 2">Bedrooms 2</option>
+                                        <option value="Bedrooms 3">Bedrooms 3</option>
+                                        <option value="Bedrooms 4">Bedrooms 4</option>
+                                        <option value="Bedrooms 5">Bedrooms 5</option>
+                                        <option value="Bedrooms 6">Bedrooms 6</option>
+                                        <option value="Bedrooms 7">Bedrooms 7</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="form-label">Area</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option value="" selected disable readonly>
+                                            Select an Option</option>
+                                        <option value="Sunderland">Sunderland</option>
+                                        <option value="Bedlington">Bedlington</option>
+                                        <option value="Newcastle upon Tyne">Newcastle
+                                            upon Tyne</option>
+                                        <option value="Durham">Durham</option>
+                                        <option value="Lanchester">Lanchester</option>
+                                        <option value="Newcastle Upon Tyne ">Newcastle
+                                            Upon Tyne </option>
+                                        <option value="Ponteland">Ponteland</option>
+                                        <option value="Newcastle Upon Tyne">Newcastle
+                                            Upon Tyne</option>
+                                        <option value="Jesmond">Jesmond</option>
+                                        <option value="London">London</option>
+                                        <option value="West One">West One</option>
+                                        <option value="Newcastle">Newcastle</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Assigned to Staff</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option disabled="" selected="" value="">Please Select...</option>
+                                        <option value="1">Danial Craig</option>
+                                        <option value="2">Emily Blunt</option>
+                                        <option value="3">John Doe</option>
+                                        <option value="4">Sophia Turner</option>
+                                        <option value="5">Michael Jordan</option>
+                                        <option value="6">Olivia Smith</option>
+
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-label">How often</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option value="" selected disable readonly>
+                                            Select an Option</option>
+                                        <option value="One off">One off</option>
+                                        <option value="Every day">Every day</option>
+                                        <option value="Every Weekday">Every Weekday</option>
+                                        <option value="Every week">Every week</option>
+                                        <option value="Every month">Every month</option>
+                                        <option value="Every year">Every year</option>
+                                        <option value="Every Quater">Every Quater</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Date From</label>
+                                    <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+                                        value="01/06/2024" readonly="readonly">
+                                    <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
+                                    </iconify-icon>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Date To</label>
+                                    <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+                                        value="01/06/2024" readonly="readonly">
+                                    <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
+                                    </iconify-icon>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Start Time</label>
+                                    <input type="text" name="time" value="" class="form-control time__pickers"
+                                        id="timepicker" placeholder="Select Time" required="" readonly="">
+                                    <iconify-icon icon="lucide:clock-2" class="dateinput_icon"></iconify-icon>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">End Time</label>
+                                    <input type="text" name="time" value="" class="form-control time__pickers"
+                                        id="timepicker" placeholder="Select Time" required="" readonly="">
+                                    <iconify-icon icon="lucide:clock-2" class="dateinput_icon"></iconify-icon>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 customTile_field" style="display:none;">
+                                <div class="form-group">
+                                    <label class="form-label">Add Duration (in Min)</label>
+                                    <input id="timeInput" class="form-control" type="text" value="">
+                                    <div id="timeOutput"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="form-navigation canvasFooterContainer CustomModal_footer taskadd_footer">
+
+                    <div class="eventSubmit_container">
+
+                        <button type="submit" class="submitButton canvasSubmit_button commonCanvas_buttonFooter"
+                            style="display: inline-block;">Submit</button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+<!-- Schedule  Inspection modal end-->
+
+<!--Edit  Schedule Inspection modal-->
+<div id="Edit_property_inspection_modal" class="modal customwizard_formStyle sm_modalCustom fade" tabindex="-1"
+    role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <form action="" method="post" id="wizardForm">
+            <div class="modal-content">
+
+                <div class="ModalheaderArea">
+                    <h5 class="mb-4">Edit Inspection</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="ScheduleInspection_addWrap">
+                        <div class="stepheadingheader">
+                            <div class="steptitleIcon">
+                                <iconify-icon icon="carbon:inspection"></iconify-icon>
+                            </div>
+                            <h1>Modify the property inspection schedule</h2>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label class="form-label">Inspection Title</label>
+                                    <input class="form-control" type="text" value="23 Rosewood Avenue">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="form-label">Property</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option value="" disable readonly>
+                                            Select an Option</option>
+                                        <option value="Westlands Dental Studio, Front Street, Lanchester" selected>
+                                            Westlands Dental Studio, Front Street,
+                                            Lanchester</option>
+                                        <option value="Sunset Boulevard, Los Angeles, California">
+                                            Sunset Boulevard, Los Angeles, California
+                                        </option>
+                                        <option value="Marvel Avenue, Brooklyn, New York">
+                                            Marvel Avenue, Brooklyn, New York
+                                        </option>
+                                        <option value="Forest Gump Road, Greenbow, Alabama">
+                                            Forest Gump Road, Greenbow, Alabama</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="form-label">Unit Type</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option value="" disable readonly>
+                                            Select an Option</option>
+                                        <option value="Studio">Studio</option>
+                                        <option value="Annex" selected>Annex </option>
+                                        <option value="Room">Room</option>
+                                        <option value="Basement Studios">Basement
+                                            Studios</option>
+                                        <option value="Flat">Flat</option>
+                                        <option value="Cottage">Cottage</option>
+                                        <option value="Annex Flat 1">Annex Flat 1
+                                        </option>
+                                        <option value="Bedroom">Bedroom</option>
+                                        <option value="Annex Studio">Annex Studio
+                                        </option>
+                                        <option value="Bedrooms 1">Bedrooms 1</option>
+                                        <option value="Bedrooms 2">Bedrooms 2</option>
+                                        <option value="Bedrooms 3">Bedrooms 3</option>
+                                        <option value="Bedrooms 4">Bedrooms 4</option>
+                                        <option value="Bedrooms 5">Bedrooms 5</option>
+                                        <option value="Bedrooms 6">Bedrooms 6</option>
+                                        <option value="Bedrooms 7">Bedrooms 7</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="form-label">Area</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option value="" disable readonly>
+                                            Select an Option</option>
+                                        <option value="Sunderland">Sunderland</option>
+                                        <option value="Bedlington">Bedlington</option>
+                                        <option value="Newcastle upon Tyne" selected>Newcastle
+                                            upon Tyne</option>
+                                        <option value="Durham">Durham</option>
+                                        <option value="Lanchester">Lanchester</option>
+                                        <option value="Newcastle Upon Tyne ">Newcastle
+                                            Upon Tyne </option>
+                                        <option value="Ponteland">Ponteland</option>
+                                        <option value="Newcastle Upon Tyne">Newcastle
+                                            Upon Tyne</option>
+                                        <option value="Jesmond">Jesmond</option>
+                                        <option value="London">London</option>
+                                        <option value="West One">West One</option>
+                                        <option value="Newcastle">Newcastle</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Assigned to Staff</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option disabled="" value="">Please Select...</option>
+                                        <option value="1">Danial Craig</option>
+                                        <option value="2" selected>Emily Blunt</option>
+                                        <option value="3">John Doe</option>
+                                        <option value="4">Sophia Turner</option>
+                                        <option value="5">Michael Jordan</option>
+                                        <option value="6">Olivia Smith</option>
+
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-label">How often</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option value="" disable readonly>
+                                            Select an Option</option>
+                                        <option value="One off">One off</option>
+                                        <option value="Every day">Every day</option>
+                                        <option value="Every Weekday">Every Weekday</option>
+                                        <option value="Every week">Every week</option>
+                                        <option value="Every month" selected>Every month</option>
+                                        <option value="Every year">Every year</option>
+                                        <option value="Every Quater">Every Quater</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Date From</label>
+                                    <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+                                        value="01/06/2024" readonly="readonly">
+                                    <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
+                                    </iconify-icon>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Date To</label>
+                                    <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+                                        value="01/06/2024" readonly="readonly">
+                                    <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
+                                    </iconify-icon>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Start Time</label>
+                                    <input type="text" name="time" value="" class="form-control time__pickers"
+                                        id="timepicker" placeholder="Select Time" required="" readonly="">
+                                    <iconify-icon icon="lucide:clock-2" class="dateinput_icon"></iconify-icon>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">End Time</label>
+                                    <input type="text" name="time" value="" class="form-control time__pickers"
+                                        id="timepicker" placeholder="Select Time" required="" readonly="">
+                                    <iconify-icon icon="lucide:clock-2" class="dateinput_icon"></iconify-icon>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 customTile_field" style="display:none;">
+                                <div class="form-group">
+                                    <label class="form-label">Add Duration (in Min)</label>
+                                    <input id="timeInput" class="form-control" type="text" value="">
+                                    <div id="timeOutput"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="form-navigation canvasFooterContainer CustomModal_footer taskadd_footer">
+
+                    <div class="eventSubmit_container">
+
+                        <button type="submit" class="submitButton canvasSubmit_button commonCanvas_buttonFooter"
+                            style="display: inline-block;">Submit</button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+<!-- Edit Schedule  Inspection modal end-->
+
+<!-- Add inspection timings Modal start -->
+<div class="offcanvas offcanvas-bottom custombottm_offcanvasStyle" tabindex="-1" id="addinventorymodal"
+    aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header custom-canvas-header">
+        <div class="canvas-header-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                class="ct-icon" style="min-width: 20px; min-height: 20px; color: var(--ct-gray-6);" data-testid="icon">
+                <path
+                    d="M7.3 22.5C6.8 22.5 6.375 22.325 6.025 21.975C5.675 21.625 5.5 21.2 5.5 20.7V3.3C5.5 2.8 5.675 2.375 6.025 2.025C6.375 1.675 6.8 1.5 7.3 1.5H16.7C17.2 1.5 17.625 1.675 17.975 2.025C18.325 2.375 18.5 2.8 18.5 3.3V20.7C18.5 21.2 18.325 21.625 17.975 21.975C17.625 22.325 17.2 22.5 16.7 22.5H7.3ZM7 18.25H17V5.75H7V18.25ZM7 19.75V20.7C7 20.7667 7.03333 20.8333 7.1 20.9C7.16667 20.9667 7.23333 21 7.3 21H16.7C16.7667 21 16.8333 20.9667 16.9 20.9C16.9667 20.8333 17 20.7667 17 20.7V19.75H7ZM7 4.25H17V3.3C17 3.23333 16.9667 3.16667 16.9 3.1C16.8333 3.03333 16.7667 3 16.7 3H7.3C7.23333 3 7.16667 3.03333 7.1 3.1C7.03333 3.16667 7 3.23333 7 3.3V4.25ZM7 3V4.25V3ZM7 21V19.75V21Z"
+                    fill="currentColor"></path>
+            </svg>
+            Add Inspection Timings
+        </div>
+        <div class="closeCanvasContainer">
+            <button type="button" class="canvascloseButton" data-bs-dismiss="offcanvas" aria-label="Close">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    class="ct-icon" style="min-width: 20px; min-height: 20px; color: var(--ct-white);"
+                    data-testid="icon">
+                    <path
+                        d="M11.375 14.5C11.5583 14.6833 11.7667 14.775 12 14.775C12.2333 14.775 12.4417 14.6833 12.625 14.5L15.625 11.525C15.7583 11.3917 15.8207 11.2167 15.812 11C15.804 10.7833 15.7333 10.6083 15.6 10.475C15.45 10.325 15.275 10.25 15.075 10.25C14.875 10.25 14.7 10.325 14.55 10.475L12 13.025L9.425 10.45C9.29167 10.3167 9.11667 10.254 8.9 10.262C8.68333 10.2707 8.50833 10.3417 8.375 10.475C8.225 10.625 8.15 10.8 8.15 11C8.15 11.2 8.225 11.375 8.375 11.525L11.375 14.5ZM12 21.5C10.6833 21.5 9.446 21.25 8.288 20.75C7.12933 20.25 6.125 19.575 5.275 18.725C4.425 17.875 3.75 16.8707 3.25 15.712C2.75 14.554 2.5 13.3167 2.5 12C2.5 10.6833 2.75 9.44567 3.25 8.287C3.75 7.129 4.425 6.125 5.275 5.275C6.125 4.425 7.12933 3.75 8.288 3.25C9.446 2.75 10.6833 2.5 12 2.5C13.3167 2.5 14.5543 2.75 15.713 3.25C16.871 3.75 17.875 4.425 18.725 5.275C19.575 6.125 20.25 7.129 20.75 8.287C21.25 9.44567 21.5 10.6833 21.5 12C21.5 13.3167 21.25 14.554 20.75 15.712C20.25 16.8707 19.575 17.875 18.725 18.725C17.875 19.575 16.871 20.25 15.713 20.75C14.5543 21.25 13.3167 21.5 12 21.5ZM12 20C14.2167 20 16.1043 19.221 17.663 17.663C19.221 16.1043 20 14.2167 20 12C20 9.78333 19.221 7.89567 17.663 6.337C16.1043 4.779 14.2167 4 12 4C9.78333 4 7.896 4.779 6.338 6.337C4.77933 7.89567 4 9.78333 4 12C4 14.2167 4.77933 16.1043 6.338 17.663C7.896 19.221 9.78333 20 12 20Z"
+                        fill="currentColor"></path>
+                </svg>Close
+            </button>
+        </div>
+
+    </div>
+    <div class="Canvas_ct_divider"></div>
+    <form class="" action="add-new-property.php">
+        <div class="offcanvas-body">
+
+            <div class="addingForm_Container smallformcontainer">
+
+                <div class="formstartcontainer mt-5">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label class="form-label">Property </label>
+                                <select name="" id="" class="form-control select2">
+                                    <option value="" selected disable readonly>
+                                        Select an Option</option>
+                                    <option value="23 St Bedes Terrace">23 St Bedes
+                                        Terrace</option>
+                                    <option value="6 Mowbray Close">6 Mowbray Close
+                                    </option>
+                                    <option value="9 Mowbray Close">9 Mowbray Close
+                                    </option>
+                                    <option value="45 Ormonde Street">45 Ormonde
+                                        Street</option>
+                                    <option value="43 Fordland Place">43 Fordland
+                                        Place</option>
+                                    <option value="1-4 Thornhill Crescent">1-4
+                                        Thornhill Crescent</option>
+                                    <option value="13 Glassey Terrace">13 Glassey
+                                        Terrace</option>
+                                    <option value="4 Glassey Terrace">4 Glassey
+                                        Terrace</option>
+                                    <option value="226-228 Hylton Road">226-228
+                                        Hylton Road</option>
+                                    <option value="55 Arbroath Road">55 Arbroath
+                                        Road</option>
+                                    <option value="61 Hall Farm Road">61 Hall Farm
+                                        Road</option>
+                                    <option value="27 Hall Farm Road">27 Hall Farm
+                                        Road</option>
+                                    <option value="27 Appleby Square">27 Appleby
+                                        Square</option>
+                                    <option value="16 Ardrossan Road">16 Ardrossan
+                                        Road</option>
+                                    <option value="1 Harvest Close">1 Harvest Close
+                                    </option>
+                                    <option value="19 Linacre Close">19 Linacre
+                                        Close</option>
+                                    <option value="7 The Leazes">7 The Leazes
+                                    </option>
+                                    <option value="3 Valiant Way">3 Valiant Way
+                                    </option>
+                                    <option value="26 Manor House">26 Manor House
+                                    </option>
+                                    <option value="57 Forsyth Road">57 Forsyth Road
+                                    </option>
+                                    <option value="35 Glenthorn Road">35 Glenthorn
+                                        Road</option>
+                                    <option value="23 Claremont Road">23 Claremont
+                                        Road</option>
+                                    <option value="125 Croydon Road">125 Croydon
+                                        Road</option>
+                                    <option value="131 Croydon Road">131 Croydon
+                                        Road</option>
+                                    <option value="1-7 Union Street">1-7 Union
+                                        Street</option>
+                                    <option value="1 Kingswood Drive">1 Kingswood
+                                        Drive</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-12">
+                            <div id="UnitTimeContainer">
+                                <div class="UnitTimeBox">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Property Unit Name</label>
+                                                <select name="" class="form-control select2">
+                                                    <option value="" selected disable readonly>Select an Option</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Start Time</label>
+                                                <input type="text" name="time" value=""
+                                                    class="form-control time__pickers" id="timepicker"
+                                                    placeholder="Select Time" required="" readonly="">
+                                                <iconify-icon icon="lucide:clock-2" class="dateinput_icon">
+                                                </iconify-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Add more button -->
+                        <div class="col-lg-12">
+                            <div class="addMoreInven_btn">
+                                <button type="button" class="btnaddMoreicon badge badge-soft-success"
+                                    id="addMoreButton">
+                                    <iconify-icon icon="material-symbols-light:library-add-outline"></iconify-icon> Add
+                                    More
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="canvasFooterContainer">
+            <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
+                data-bs-dismiss="offcanvas">Cancel</button>
+            <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter">Submit</button>
+        </div>
+    </form>
+</div>
+<!-- Add inspection timings modal end -->
+
+<!-- Edit inspection timings offcanvas -->
+<div class="offcanvas offcanvas-bottom custombottm_offcanvasStyle" tabindex="-1" id="Editinventorymodal"
+    aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header custom-canvas-header">
+        <div class="canvas-header-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                class="ct-icon" style="min-width: 20px; min-height: 20px; color: var(--ct-gray-6);" data-testid="icon">
+                <path
+                    d="M7.3 22.5C6.8 22.5 6.375 22.325 6.025 21.975C5.675 21.625 5.5 21.2 5.5 20.7V3.3C5.5 2.8 5.675 2.375 6.025 2.025C6.375 1.675 6.8 1.5 7.3 1.5H16.7C17.2 1.5 17.625 1.675 17.975 2.025C18.325 2.375 18.5 2.8 18.5 3.3V20.7C18.5 21.2 18.325 21.625 17.975 21.975C17.625 22.325 17.2 22.5 16.7 22.5H7.3ZM7 18.25H17V5.75H7V18.25ZM7 19.75V20.7C7 20.7667 7.03333 20.8333 7.1 20.9C7.16667 20.9667 7.23333 21 7.3 21H16.7C16.7667 21 16.8333 20.9667 16.9 20.9C16.9667 20.8333 17 20.7667 17 20.7V19.75H7ZM7 4.25H17V3.3C17 3.23333 16.9667 3.16667 16.9 3.1C16.8333 3.03333 16.7667 3 16.7 3H7.3C7.23333 3 7.16667 3.03333 7.1 3.1C7.03333 3.16667 7 3.23333 7 3.3V4.25ZM7 3V4.25V3ZM7 21V19.75V21Z"
+                    fill="currentColor"></path>
+            </svg>
+            Edit Inspection Timings
+        </div>
+        <div class="closeCanvasContainer">
+            <button type="button" class="canvascloseButton" data-bs-dismiss="offcanvas" aria-label="Close">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    class="ct-icon" style="min-width: 20px; min-height: 20px; color: var(--ct-white);"
+                    data-testid="icon">
+                    <path
+                        d="M11.375 14.5C11.5583 14.6833 11.7667 14.775 12 14.775C12.2333 14.775 12.4417 14.6833 12.625 14.5L15.625 11.525C15.7583 11.3917 15.8207 11.2167 15.812 11C15.804 10.7833 15.7333 10.6083 15.6 10.475C15.45 10.325 15.275 10.25 15.075 10.25C14.875 10.25 14.7 10.325 14.55 10.475L12 13.025L9.425 10.45C9.29167 10.3167 9.11667 10.254 8.9 10.262C8.68333 10.2707 8.50833 10.3417 8.375 10.475C8.225 10.625 8.15 10.8 8.15 11C8.15 11.2 8.225 11.375 8.375 11.525L11.375 14.5ZM12 21.5C10.6833 21.5 9.446 21.25 8.288 20.75C7.12933 20.25 6.125 19.575 5.275 18.725C4.425 17.875 3.75 16.8707 3.25 15.712C2.75 14.554 2.5 13.3167 2.5 12C2.5 10.6833 2.75 9.44567 3.25 8.287C3.75 7.129 4.425 6.125 5.275 5.275C6.125 4.425 7.12933 3.75 8.288 3.25C9.446 2.75 10.6833 2.5 12 2.5C13.3167 2.5 14.5543 2.75 15.713 3.25C16.871 3.75 17.875 4.425 18.725 5.275C19.575 6.125 20.25 7.129 20.75 8.287C21.25 9.44567 21.5 10.6833 21.5 12C21.5 13.3167 21.25 14.554 20.75 15.712C20.25 16.8707 19.575 17.875 18.725 18.725C17.875 19.575 16.871 20.25 15.713 20.75C14.5543 21.25 13.3167 21.5 12 21.5ZM12 20C14.2167 20 16.1043 19.221 17.663 17.663C19.221 16.1043 20 14.2167 20 12C20 9.78333 19.221 7.89567 17.663 6.337C16.1043 4.779 14.2167 4 12 4C9.78333 4 7.896 4.779 6.338 6.337C4.77933 7.89567 4 9.78333 4 12C4 14.2167 4.77933 16.1043 6.338 17.663C7.896 19.221 9.78333 20 12 20Z"
+                        fill="currentColor"></path>
+                </svg>Close
+            </button>
+        </div>
+
+    </div>
+    <div class="Canvas_ct_divider"></div>
+    <form class="" action="add-new-property.php">
+        <div class="offcanvas-body">
+
+            <div class="addingForm_Container smallformcontainer">
+
+                <div class="formstartcontainer mt-5">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label class="form-label">Property </label>
+                                <select name="" id="" class="form-control select2">
+                                    <option value="" selected disable readonly>
+                                        Select an Option</option>
+                                    <option value="23 St Bedes Terrace">23 St Bedes
+                                        Terrace</option>
+                                    <option value="6 Mowbray Close">6 Mowbray Close
+                                    </option>
+                                    <option value="9 Mowbray Close">9 Mowbray Close
+                                    </option>
+                                    <option value="45 Ormonde Street">45 Ormonde
+                                        Street</option>
+                                    <option value="43 Fordland Place">43 Fordland
+                                        Place</option>
+                                    <option value="1-4 Thornhill Crescent">1-4
+                                        Thornhill Crescent</option>
+                                    <option value="13 Glassey Terrace">13 Glassey
+                                        Terrace</option>
+                                    <option value="4 Glassey Terrace">4 Glassey
+                                        Terrace</option>
+                                    <option value="226-228 Hylton Road">226-228
+                                        Hylton Road</option>
+                                    <option value="55 Arbroath Road">55 Arbroath
+                                        Road</option>
+                                    <option value="61 Hall Farm Road">61 Hall Farm
+                                        Road</option>
+                                    <option value="27 Hall Farm Road">27 Hall Farm
+                                        Road</option>
+                                    <option value="27 Appleby Square">27 Appleby
+                                        Square</option>
+                                    <option value="16 Ardrossan Road">16 Ardrossan
+                                        Road</option>
+                                    <option value="1 Harvest Close">1 Harvest Close
+                                    </option>
+                                    <option value="19 Linacre Close">19 Linacre
+                                        Close</option>
+                                    <option value="7 The Leazes">7 The Leazes
+                                    </option>
+                                    <option value="3 Valiant Way">3 Valiant Way
+                                    </option>
+                                    <option value="26 Manor House">26 Manor House
+                                    </option>
+                                    <option value="57 Forsyth Road">57 Forsyth Road
+                                    </option>
+                                    <option value="35 Glenthorn Road">35 Glenthorn
+                                        Road</option>
+                                    <option value="23 Claremont Road">23 Claremont
+                                        Road</option>
+                                    <option value="125 Croydon Road">125 Croydon
+                                        Road</option>
+                                    <option value="131 Croydon Road">131 Croydon
+                                        Road</option>
+                                    <option value="1-7 Union Street">1-7 Union
+                                        Street</option>
+                                    <option value="1 Kingswood Drive">1 Kingswood
+                                        Drive</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-12">
+                            <div id="EditUnitTimeContainer">
+                                <!-- Default UnitTimeBox 1 -->
+                                <div class="UnitTimeBox" id="UnitTimeBox_1">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Property Unit Name</label>
+                                                <select name="" class="form-control select2">
+                                                    <option value="" selected disable readonly>Select an Option</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Start Time</label>
+                                                <input type="text" name="time" value="10:00 AM"
+                                                    class="form-control time__pickers" placeholder="Select Time"
+                                                    required="" readonly="">
+                                                <iconify-icon icon="lucide:clock-2" class="dateinput_icon">
+                                                </iconify-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-danger removeTime">
+                                        <iconify-icon icon="fluent:delete-16-regular"></iconify-icon>
+                                    </button>
+                                </div>
+
+                                <!-- Default UnitTimeBox 2 -->
+                                <div class="UnitTimeBox" id="UnitTimeBox_2">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Property Unit Name</label>
+                                                <select name="" class="form-control select2">
+                                                    <option value="" selected disable readonly>Select an Option</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Start Time</label>
+                                                <input type="text" name="time" value="11:30 AM"
+                                                    class="form-control time__pickers" placeholder="Select Time"
+                                                    required="" readonly="">
+                                                <iconify-icon icon="lucide:clock-2" class="dateinput_icon">
+                                                </iconify-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-danger removeTime">
+                                        <iconify-icon icon="fluent:delete-16-regular"></iconify-icon>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Add more button -->
+                        <div class="col-lg-12">
+                            <div class="addMoreInven_btn">
+                                <button type="button" class="btnaddMoreicon badge badge-soft-success"
+                                    id="addEditMoreButton">
+                                    <iconify-icon icon="material-symbols-light:library-add-outline"></iconify-icon> Add
+                                    More
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="canvasFooterContainer">
+            <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
+                data-bs-dismiss="offcanvas">Cancel</button>
+            <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter">Submit</button>
+        </div>
+    </form>
+</div>
+<!-- Edit inspection timings  modal end -->
+
+<!-- Add property modal-->
+<div id="Addproperty__modal" class="modal customwizard_formStyle sm_modalCustom fade" tabindex="-1" role="dialog"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <form action="manage-property-development.php" method="post" id="addpropertyModal">
+            <div class="modal-content">
+
+                <div class="ModalheaderArea">
+                    <h5 class="mb-4">Add Properties</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="AddpropertforClient_mdWrap">
+                        <div class="stepheadingheader">
+                            <div class="steptitleIcon">
+                                <iconify-icon icon="ph:building"></iconify-icon>
+                            </div>
+                            <h1>Select a client and enter the number of properties to add</h2>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-label">Select Client</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option disabled="" selected="" value="">Please Select...</option>
+                                        <option value="1">Danial Craig</option>
+                                        <option value="2">Emily Blunt</option>
+                                        <option value="3">John Doe</option>
+                                        <option value="4">Sophia Turner</option>
+                                        <option value="5">Michael Jordan</option>
+                                        <option value="6">Olivia Smith</option>
+
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label class="form-label">Number of Properties you want to add</label>
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="form-navigation canvasFooterContainer CustomModal_footer taskadd_footer">
+
+                    <div class="eventSubmit_container">
+                        <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
+                            data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="submitButton canvasSubmit_button commonCanvas_buttonFooter"
+                            style="display: inline-block;">Submit</button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+<!-- Add property modal end-->
+
+<!-- Aadd floor modal-->
+<div id="floorAdd__modal" class="modal customwizard_formStyle sm_modalCustom fade" tabindex="-1" role="dialog"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <form action="manage-property-development.php" method="" id="addpropertyModal">
+            <div class="modal-content">
+
+                <div class="ModalheaderArea">
+                    <h5 class="mb-4 modaltitlewith_icon">
+                        <iconify-icon icon="ph:building"></iconify-icon> Add Floors
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="AddpropertforClient_mdWrap">
+                        <div class="stepheadingheader">
+                            <h1>Please enter the number of floors you want to create for this Property</h2>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label class="form-label">Enter Floor Count</label>
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="form-navigation canvasFooterContainer CustomModal_footer taskadd_footer">
+
+                    <div class="eventSubmit_container">
+                        <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
+                            data-bs-dismiss="modal">Close</button>
+                        <button type="button" id="floorctrate_button"
+                            class="submitButton  canvasSubmit_button commonCanvas_buttonFooter"
+                            style="display: inline-block;">Submit</button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+<!-- add floor modal end-->
 
 <?php include('footer.php') ?>
 
@@ -611,30 +2327,48 @@
 
 <!-- add property unit table js -->
 <script>
-    $(document).ready(function() {
-        // Function to add a new row to the table
+    function initializeUnitTable(containerId) {
+        var $container = $("#" + containerId);
+
         function addRow(unitType, unitName, level, parentRow) {
-            var table = $("#folderTable tbody");
+            var table = $container.find("table tbody");
             var newRow = $("<tr></tr>");
-            // Add indentation based on the level of nesting
-            var indent = '&nbsp;'.repeat(level * 4);
-            // Div element for the unit type
-            var unitTypeDiv = $("<div>" + indent + '<input type="text" class="sustomaddonInput" value="' +
-                unitType + '" />' + "</div>");
-            var cell1 = $("<td></td>").append(unitTypeDiv);
-            // Div element for the unit name
-            var unitNameDiv = $("<div>" + indent + '<input type="text" class="sustomaddonInput" value="' +
-                unitName + '" />' + "</div>");
+            // Calculate dynamic padding for the tree view
+            var padding = 20 * level; // Each level increases padding by 20px
+            // Create the first cell with the unit type and apply dynamic padding
+            var unitTypeDiv = $('<div><input type="text" class="sustomaddonInput" value="' +
+                unitType + '" /></div>');
+            var cell1 = $("<td></td>").append(unitTypeDiv).css("padding-left", padding + "px");
+            // Create the second cell with the unit name
+            var unitNameDiv = $('<div><input type="text" class="sustomaddonInput form-control" value="' +
+                unitName + '" /></div>');
             var cell2 = $("<td></td>").append(unitNameDiv);
-            // Always include remove button for each row
-            var cell3 = $(
-                '<td><div class="actionapndButton_container"><button class="removeBtn cmntabapndBtn customtablecreation_remove" type="button"><iconify-icon icon="fluent:delete-16-regular"></iconify-icon> Remove</button>  <button class="addBtn cmntabapndBtn customtablecreation_Add" type="button"><iconify-icon icon="fluent:add-12-regular"></iconify-icon> Add Sub unit</button></div></td>'
-            );
-            newRow.append(cell1);
-            newRow.append(cell2);
-            newRow.append(cell3);
+            // Create the additional fields
+            var cell3 = $("<td></td>").append(
+                '<input type="text" class="sustomaddonInput form-control" placeholder="Access Code" />');
+            var cell4 = $("<td></td>").append(
+                '<input type="text" class="sustomaddonInput form-control" placeholder="Office Key Label" />');
+            var cell5 = $("<td></td>").append(
+                '<input type="text" class="sustomaddonInput form-control" placeholder="Master Key Code" />');
+            var cell6 = $("<td></td>").append(
+                '<input type="text" class="sustomaddonInput form-control" placeholder="Alarm Code" />');
+            // Create the action buttons cell
+            var cell7 = $(`
+                <td>
+                    <div class="actionapndButton_container">
+                        <button class="removeBtn cmntabapndBtn customtablecreation_remove" type="button">
+                            <iconify-icon icon="fluent:delete-16-regular"></iconify-icon> Remove
+                        </button>  
+                        <button class="addBtn cmntabapndBtn customtablecreation_Add" type="button">
+                            <iconify-icon icon="fluent:add-12-regular"></iconify-icon> Add Sub unit
+                        </button>
+                    </div>
+                </td>
+            `);
+            // Append all cells to the new row
+            newRow.append(cell1, cell2, cell3, cell4, cell5, cell6, cell7);
             // Add event listener for the remove button
-            cell3.find(".removeBtn").click(function() {
+            cell7.find(".removeBtn").click(function() {
                 Swal.fire({
                     title: 'Confirmation',
                     text: "Are you sure you want to delete this " + unitType.toLowerCase() +
@@ -646,7 +2380,6 @@
                     confirmButtonText: 'Yes, delete it!'
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        // Remove all child rows recursively
                         var parent = $(this).closest("tr");
                         var childRows = parent.nextUntil(":not(.child)");
                         childRows.remove();
@@ -655,19 +2388,19 @@
                             'Deleted!',
                             'Your ' + unitType.toLowerCase() + ' has been deleted.',
                             'success'
-                        )
+                        );
                     }
-                })
+                });
             });
             // Add event listener for the add subunit button
-            cell3.find(".addBtn").click(function() {
+            cell7.find(".addBtn").click(function() {
                 var parent = $(this).closest("tr");
                 addRow("Sub Unit", "Sub Unit Name", level + 1, parent);
             });
+            // Add the row as a child or to the main table
             if (parentRow) {
                 newRow.addClass("child");
                 if (!parentRow.hasClass("main-parent")) {
-                    // Add class to the main parent row
                     parentRow.addClass("main-parent");
                 }
                 parentRow.after(newRow);
@@ -676,120 +2409,314 @@
             }
         }
         // Add event listener for the add folder button
-        $("#addFolderBtn").click(function() {
+        $container.find(".addFolderBtn").click(function() {
             addRow("Unit Type", "Unit Name", 0);
         });
+    }
+    // Initialize each container
+    $(document).ready(function() {
+        initializeUnitTable("unitContainer1");
+        initializeUnitTable("unitContainer2");
+        initializeUnitTable("unitContainer3");
+        initializeUnitTable("unitContainer4");
+        initializeUnitTable("unitContainer5");
+        initializeUnitTable("unitContainer6");
+        // Add more calls for other containers as needed
     });
 </script>
 <!-- add property unit table js end-->
 
-<!-- Edit property unit table js -->
+<!-- add budget fields and edit budget title js start and also have some style for this -->
+<!-- add budget fields and edit budget title js start and also have some style for this -->
 <script>
-    $(document).ready(function() {
-        // Function to add a new row to the table
-        function addRow(unitType, unitName, level, parentRow) {
-            var table = $("#folderTable2 tbody");
-            var newRow = $("<tr></tr>");
-            // Add indentation based on the level of nesting
-            var indent = '&nbsp;'.repeat(level * 4);
-            // Div element for the unit type
-            var unitTypeDiv = $("<div>" + indent + '<input type="text" class="sustomaddonInput" value="' +
-                unitType + '" />' + "</div>");
-            var cell1 = $("<td></td>").append(unitTypeDiv);
-            // Div element for the unit name
-            var unitNameDiv = $("<div>" + indent + '<input type="text" class="sustomaddonInput" value="' +
-                unitName + '" />' + "</div>");
-            var cell2 = $("<td></td>").append(unitNameDiv);
-            // Always include remove button for each row
-            var cell3 = $(
-                '<td><div class="actionapndButton_container"><button class="removeBtn cmntabapndBtn customtablecreation_remove" type="button"><iconify-icon icon="fluent:delete-16-regular"></iconify-icon> Remove</button>  <button class="addBtn cmntabapndBtn customtablecreation_Add" type="button"><iconify-icon icon="fluent:add-12-regular"></iconify-icon> Add Sub unit</button></div></td>'
-            );
-            newRow.append(cell1);
-            newRow.append(cell2);
-            newRow.append(cell3);
-            // Add event listener for the remove button
-            cell3.find(".removeBtn").click(function() {
-                Swal.fire({
-                    title: 'Confirmation',
-                    text: "Are you sure you want to delete this " + unitType.toLowerCase() +
-                        " and all its subunits?",
-                    icon: 'warning',
-                    showCancelButton: true,
-                    confirmButtonColor: '#3085d6',
-                    cancelButtonColor: '#d33',
-                    confirmButtonText: 'Yes, delete it!'
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        // Remove all child rows recursively
-                        var parent = $(this).closest("tr");
-                        var childRows = parent.nextUntil(":not(.child)");
-                        childRows.remove();
-                        parent.remove();
-                        Swal.fire(
-                            'Deleted!',
-                            'Your ' + unitType.toLowerCase() + ' has been deleted.',
-                            'success'
-                        )
-                    }
-                })
+    document.addEventListener("DOMContentLoaded", function() {
+        // Function to initialize functionality for a single budget section
+        function initializeBudgetSection(section) {
+            const title = section.querySelector(".budget-title");
+            const editTitleIcon = section.querySelector(".edit-title-icon");
+            const editTitleContainer = section.querySelector(".edit-title-container");
+            const editTitleInput = section.querySelector(".edit-title-input");
+            const saveTitleButton = section.querySelector(".save-title-button");
+            const addFieldButton = section.querySelector(".add-field-button");
+            const budgetFieldsContainer = section.querySelector(".budget-fields-container");
+            // Enable title editing
+            editTitleIcon.addEventListener("click", function() {
+                title.style.display = "none";
+                editTitleContainer.style.display = "block";
+                editTitleInput.value = title.textContent.trim(); // Set input value to the current title
             });
-            // Add event listener for the add subunit button
-            cell3.find(".addBtn").click(function() {
-                var parent = $(this).closest("tr");
-                addRow("Sub Unit", "Sub Unit Name", level + 1, parent);
+            // Save the updated title
+            saveTitleButton.addEventListener("click", function() {
+                const newTitle = editTitleInput.value;
+                title.innerHTML = `${newTitle} 
+                <span class="edit-title-icon" style="cursor: pointer;">
+                    <iconify-icon icon="fluent:edit-16-regular"></iconify-icon>
+                </span>`;
+                title.style.display = "block";
+                editTitleContainer.style.display = "none";
+                // Reinitialize the edit icon for the updated title
+                const newEditTitleIcon = title.querySelector(".edit-title-icon");
+                newEditTitleIcon.addEventListener("click", function() {
+                    title.style.display = "none";
+                    editTitleContainer.style.display = "block";
+                    editTitleInput.value = newTitle;
+                });
             });
-            if (parentRow) {
-                newRow.addClass("child");
-                if (!parentRow.hasClass("main-parent")) {
-                    // Add class to the main parent row
-                    parentRow.addClass("main-parent");
-                }
-                parentRow.after(newRow);
-            } else {
-                table.append(newRow);
-            }
+            // Add a new field
+            addFieldButton.addEventListener("click", function() {
+                const newField = document.createElement("div");
+                newField.className = "col-lg-3 budget-field";
+                newField.innerHTML = `
+                <div class="form-group">
+                    <label contenteditable="true" class="form-label">New Budget</label>
+                    <input type="text" class="form-control" placeholder="">
+                </div>
+            `;
+                budgetFieldsContainer.appendChild(newField);
+            });
         }
-        // Add event listener for the add folder button
-        $("#addFolderBtn2").click(function() {
-            addRow("Unit Type", "Unit Name", 0);
+        // Initialize all budget sections on the page
+        const budgetSections = document.querySelectorAll(".AddProperty_Budget");
+        budgetSections.forEach(function(section) {
+            initializeBudgetSection(section);
         });
     });
 </script>
-<!-- edit property unit table js end-->
 
-<!-- property type custom add and reflect on select2 -->
-<script>
-    $(document).ready(function() {
-        $('#addPropertyTypeButton').on('click', function() {
-            $('#newPropertyTypeDiv').toggleClass('hiddentype');
-        });
-        $('#savePropertyTypeButton').on('click', function() {
-            var newPropertyType = $('#newPropertyType').val().trim();
-            if (newPropertyType !== "") {
-                var newOption = new Option(newPropertyType, newPropertyType, true, true);
-                $('#propertyType').prepend(newOption).trigger('change');
-                $('#newPropertyTypeDiv').addClass('hiddentype');
-                $('#newPropertyType').val('');
-            }
-        });
-    });
-</script>
-<!-- property type custom add and reflect on select2 -->
-
-<!-- style for submit form action container dont remove this -->
 <style>
-    .canvasFooterContainer {
-        position: fixed !important;
-        width: 100% !important;
-        height: 70px;
-        margin-left: -70px;
+    #edit-title-container {
+        margin-top: 10px;
     }
 
-    .hk-wrapper[data-layout="vertical"][data-layout-style="default"] .canvasFooterContainer {
-        position: fixed !important;
-        width: 100% !important;
-        height: 70px;
-        margin-left: -270px;
+    [contenteditable="true"] {
+        border: 1px dashed #ccc;
+        padding: 2px;
+    }
+
+    [contenteditable="true"]:focus {
+        outline: none;
+        border-color: #007bff;
     }
 </style>
-<!-- end -->
+
+<!-- add budget fields and edit budget title js start and also have some style for this  end -->
+
+
+
+
+<!-- schedule add button show only when schedule tab is active -->
+<script>
+    // for schedule inspection tab
+    $(document).ready(function() {
+        // Monitor changes for active class on the <li> element
+        $('a[href="#ScheduleInspection"]').on('shown.bs.tab', function() {
+            // Remove the 'hidden' class to show the button when the tab is active
+            $("#scheduleInspectionBtn").removeClass("hidden");
+            $("#AddInspectionTimings").addClass("hidden");
+        });
+        $('a[href="#ScheduleInspection"]').on('hidden.bs.tab', function() {
+            // Add the 'hidden' class to hide the button when the tab is inactive
+            $("#scheduleInspectionBtn").addClass("hidden");
+            $("#AddInspectionTimings").addClass("hidden");
+        });
+    });
+    // for schedule inspection tab end 
+</script>
+
+<script>
+    // for Add timing Inspection Timings
+    $(document).ready(function() {
+        // Monitor changes for active class on the <li> element
+        $('a[href="#AddTimings_inspections"]').on('shown.bs.tab', function() {
+            // Remove the 'hidden' class to show the button when the tab is active
+            $("#AddInspectionTimings").removeClass("hidden");
+        });
+        $('a[href="#AddTimings_inspections"]').on('hidden.bs.tab', function() {
+            // Add the 'hidden' class to hide the button when the tab is inactive
+            $("#AddInspectionTimings").addClass("hidden");
+        });
+    });
+</script>
+<!-- Add timing add button show only when schedule tab is active end-->
+
+<!--  add property button tab button hide show based on active add development tab -->
+<script>
+    // for add property button 
+    $(document).ready(function() {
+        // Monitor changes for active class on the <li> element
+        $('a[href="#AddDevelopmenttb"]').on('shown.bs.tab', function() {
+            // Remove the 'hidden' class to show the button when the tab is active
+            $("#Addproperty_development").removeClass("hidden");
+        });
+        $('a[href="#AddDevelopmenttb"]').on('hidden.bs.tab', function() {
+            // Add the 'hidden' class to hide the button when the tab is inactive
+            $("#Addproperty_development").addClass("hidden");
+        });
+    });
+</script>
+<!--  add property button tab button hide show based on active add development tab -->
+
+<!-- Add inspection timings js Start -->
+<script>
+    $(document).ready(function() {
+        // Initialize Select2 for existing elements
+        $(".select2").select2();
+        // Initialize mdtimepicker for existing elements
+        $(".time__pickers").mdtimepicker();
+        // Add more UnitTimeBox
+        $("#addMoreButton").click(function() {
+            const newUnitTimeBox = `
+            <div class="UnitTimeBox">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label class="form-label">Property Unit Name</label>
+                            <select name="" class="form-control select2">
+                                <option value="" selected disable readonly>Select an Option</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Start Time</label>
+                            <input type="text" name="time" value="" class="form-control time__pickers" placeholder="Select Time" required="" readonly="">
+                            <iconify-icon icon="lucide:clock-2" class="dateinput_icon"></iconify-icon>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-danger removeTime">
+                     <iconify-icon icon="fluent:delete-16-regular"></iconify-icon>
+                </button>
+            </div>`;
+            // Append the new UnitTimeBox
+            $("#UnitTimeContainer").append(newUnitTimeBox);
+            // Reinitialize Select2 for new elements
+            $(".select2").select2();
+            // Reinitialize mdtimepicker for new elements
+            $(".time__pickers").mdtimepicker();
+        });
+        // Remove UnitTimeBox
+        $(document).on("click", ".removeTime", function() {
+            $(this).closest(".UnitTimeBox").remove();
+        });
+    });
+</script>
+<!-- Add inspection timings js End -->
+
+<!-- Edit inspection timings js start -->
+<script>
+    $(document).ready(function() {
+        // Initialize Select2 for default and new elements
+        $("#EditUnitTimeContainer .select2").select2();
+        // Initialize mdtimepicker for default and new elements
+        $("#EditUnitTimeContainer .time__pickers").mdtimepicker();
+        // Add more UnitTimeBox for editing
+        $("#addEditMoreButton").click(function() {
+            // Generate a unique ID for the new UnitTimeBox
+            const uniqueId = `UnitTimeBox_${Date.now()}`;
+            const newUnitTimeBox = `
+            <div class="UnitTimeBox" id="${uniqueId}">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label class="form-label">Property Unit Name</label>
+                            <select name="" class="form-control select2">
+                                <option value="" selected disable readonly>Select an Option</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Start Time</label>
+                            <input type="text" name="time" value="" class="form-control time__pickers" placeholder="Select Time" required="" readonly="">
+                            <iconify-icon icon="lucide:clock-2" class="dateinput_icon"></iconify-icon>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-danger removeTime">
+                      <iconify-icon icon="fluent:delete-16-regular"></iconify-icon>
+                </button>
+            </div>`;
+            // Append the new UnitTimeBox
+            $("#EditUnitTimeContainer").append(newUnitTimeBox);
+            // Reinitialize Select2 for the new elements
+            $(`#${uniqueId} .select2`).select2();
+            // Reinitialize mdtimepicker for the new elements
+            $(`#${uniqueId} .time__pickers`).mdtimepicker();
+        });
+        // Remove UnitTimeBox
+        $(document).on("click", "#EditUnitTimeContainer .removeTime", function() {
+            $(this).closest(".UnitTimeBox").remove();
+        });
+    });
+</script>
+<!-- Edit inspection timings js end -->
+
+
+<!-- property details property type custom option selection js start -->
+<script>
+$(document).ready(function () {
+    $('.newPropertyTypeDiv').hide();
+
+    $('.property-type-select').on('change', function () {
+        const newPropertyTypeDiv = $(this).closest('.col-md-3').next('.newPropertyTypeDiv');
+
+        if ($(this).val() === 'Other') {
+            newPropertyTypeDiv.show();
+        } else {
+            newPropertyTypeDiv.hide();
+        }
+    });
+});
+</script>
+<!-- property details property type custom option selection js end -->
+
+<!--  floor create confirmationa lert -->
+<script>
+    document.getElementById('floorctrate_button').addEventListener('click', function() {
+        const floorCountInput = document.querySelector('#floorAdd__modal input.form-control');
+        const floorCount = floorCountInput.value.trim();
+        if (floorCount && !isNaN(floorCount) && Number(floorCount) > 0) {
+       
+            Swal.fire({
+                title: 'Floor Created Successfully!',
+                text: `${floorCount} floor(s) created successfully.`,
+                icon: 'success',
+                confirmButtonText: "Close",
+                timer: 3000,
+                timerProgressBar: true,
+                showConfirmButton: true,
+                customClass: {
+                    confirmButton: "my-ok-button"
+                },
+                willClose: () => {
+                    window.location.href = 'add-new-property.php';
+                }
+            });
+        } else {
+            Swal.fire({
+                title: 'Invalid Input!',
+                text: 'Please enter a valid number of floors.',
+                icon: 'error',
+                confirmButtonText: "Close",
+                timer: 3000,
+                customClass: {
+                    confirmButton: "my-ok-button" 
+                },
+                timerProgressBar: true,
+                showConfirmButton: true
+            });
+        }
+    });
+</script>
+<!-- floor create confirmationa lert -->

@@ -31,8 +31,9 @@
                             </div>
                             <div class=" ms-3">
 
-                                    <a href="property-details.php"
-                                    class="btn btn-sm cmnbackbtn btn-outline-secondary "><iconify-icon icon="line-md:list-3" ></iconify-icon> Back</a>
+                                <a href="property-details.php" class="btn btn-sm cmnbackbtn btn-outline-secondary ">
+                                    <iconify-icon icon="line-md:list-3"></iconify-icon> Back
+                                </a>
 
                             </div>
                         </div>
@@ -129,7 +130,7 @@
                                                     </div>
                                                     <div class="card-body custombodyPadding">
                                                         <div class="d-flex text-center inspectionpropert_details">
-                                                       
+
                                                             <div class="flex-1 border-end CustomFlex_style">
                                                                 <div>
                                                                     <span class="d-block fs-4 text-dark mb-1">
@@ -162,81 +163,185 @@
                                                         <div class="contact-list-view">
 
                                                             <table
-                                                                class="table common-datatable withoutActionTR nowrap w-100 ">
+                                                                class="table common-datatable withoutActionTR nowrap w-100">
                                                                 <thead>
                                                                     <tr>
-
-                                                                        <th>Item</th>
                                                                         <th>Location</th>
+                                                                        <th>Items</th>
                                                                         <th>Status</th>
-                                                                        <th>Uploded Pictures</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
                                                                     <tr>
+                                                                        <td>
+                                                                            <div class="inspectionwith360view">
+                                                                                <div class="nameofinspe_location">
+                                                                                    Bathroom</div>
+                                                                                <button type="button" class="view-360-btn lightbox-trigger360" data-panorama="dist/img/newimages/inspectionitems/bathroom.jpg">
+                                                                                
+                                                                                    <iconify-icon
+                                                                                        icon="solar:eye-broken">
+                                                                                    </iconify-icon> View 360 Image
+                                                                                </button>
+                                                                            </div>
 
-                                                                        <td>
-                                                                            Tiles - Wall/Floor
                                                                         </td>
-                                                                        <td>Bathroom</td>
-                                                                        <td>Checked - Working</td>
                                                                         <td>
-                                                                            <div class="uplodedinspection_pictures">
+                                                                            <div class="multipleinspectItems_wrap">
+                                                                            <div class="inspection_multiitems">
+                                                                                <div class="inepect_iteamName">Faucet:
+                                                                                </div>
+                                                                                <div class="uplodedinspection_pictures">
                                                                                 <div class="inspPicture_item">
-                                                                                    <img src="dist/img/interests/interest-6.png"
-                                                                                        class="lightbox-trigger" alt="">
+                                                                                    <img src="dist/img/newimages/inspectionitems/Faucet2.jpg" class="lightbox-trigger" alt="">
                                                                                 </div>
                                                                                 <div class="inspPicture_item">
-                                                                                    <img src="dist/img/interests/interest-6.png"
-                                                                                        class="lightbox-trigger" alt="">
+                                                                                    <img src="dist/img/newimages/inspectionitems/Faucet3.jpg" class="lightbox-trigger" alt="">
                                                                                 </div>
+                                                                            </div>
+                                                                            </div>
+                                                                          
+                                                                            <div class="inspection_multiitems">
+                                                                                <div class="inepect_iteamName">Paint:
+                                                                                </div>
+                                                                                <div class="uplodedinspection_pictures">
+                                                                                <div class="inspPicture_item">
+                                                                                    <img src="dist/img/newimages/inspectionitems/Paint.jpg" class="lightbox-trigger" alt="">
+                                                                                </div>
+                                                                                <div class="inspPicture_item">
+                                                                                    <img src="dist/img/newimages/inspectionitems/paint2.webp" class="lightbox-trigger" alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                            </div>
+                                                                            </div>
+                                                                            
+                                                                        </td>
+                                                                        <td>
+                                                                            <div>
+                                                                                <strong>Faucet:</strong> Checked - No
+                                                                                Leaks
+                                                                            </div>
+                                                                            <br>
+                                                                            <div>
+                                                                                <strong>Paint:</strong> Checked - Good
+                                                                                Condition
                                                                             </div>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td>Paint - Interior</td>
-                                                                        <td>Living Room</td>
-                                                                        <td>Checked - Good Condition</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Doorknob</td>
-                                                                        <td>Bedroom</td>
-                                                                        <td>Checked - Functional</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Light Fixture</td>
-                                                                        <td>Kitchen</td>
-                                                                        <td>Checked - Working Properly</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Faucet</td>
-                                                                        <td>Bathroom</td>
-                                                                        <td>Checked - No Leaks</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Window - Frame</td>
-                                                                        <td>Living Room</td>
-                                                                        <td>Checked - Secure</td>
                                                                         <td>
-                                                                            <div class="uplodedinspection_pictures">
+                                                                            <div class="inspectionwith360view">
+                                                                                <div class="nameofinspe_location">Living
+                                                                                    Room</div>
+                                                                                    <button type="button" class="view-360-btn lightbox-trigger360" data-panorama="dist/img/newimages/inspectionitems/Living-Room.jpg">
+                                                                                
+                                                                                <iconify-icon
+                                                                                    icon="solar:eye-broken">
+                                                                                </iconify-icon> View 360 Image
+                                                                            </button>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="multipleinspectItems_wrap">
+                                                                            <div class="inspection_multiitems">
+                                                                                <div class="inepect_iteamName">Window
+                                                                                    Frame:</div>
+                                                                                    <div class="uplodedinspection_pictures">
                                                                                 <div class="inspPicture_item">
-                                                                                    <img src="dist/img/interests/interest-8.png"
-                                                                                        class="lightbox-trigger" alt="">
+                                                                                    <img src="dist/img/newimages/inspectionitems/Window-Frame.jpg" class="lightbox-trigger" alt="">
                                                                                 </div>
                                                                                 <div class="inspPicture_item">
-                                                                                    <img src="dist/img/interests/interest-8.png"
-                                                                                        class="lightbox-trigger" alt="">
+                                                                                    <img src="dist/img/newimages/inspectionitems/Window-Frame2.jpg" class="lightbox-trigger" alt="">
                                                                                 </div>
+                                                                            </div>
+                                                                            </div>
+                                                                         
+                                                                            <div class="inspection_multiitems">
+                                                                                <div class="inepect_iteamName">Paint:
+                                                                                </div>
+                                                                                <div class="uplodedinspection_pictures">
+                                                                                <div class="inspPicture_item">
+                                                                                    <img src="dist/img/newimages/inspectionitems/Paint.jpg" class="lightbox-trigger" alt="">
+                                                                                </div>
+                                                                                <div class="inspPicture_item">
+                                                                                    <img src="dist/img/newimages/inspectionitems/paint2.webp" class="lightbox-trigger" alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                            </div>
+                                                                            </div>
+                                                                            
+                                                                        </td>
+                                                                        <td>
+                                                                            <div>
+                                                                                <strong>Window Frame:</strong> Checked -
+                                                                                Good Condition
+                                                                            </div>
+                                                                            <br>
+                                                                            <div>
+                                                                                <strong>Paint:</strong> Checked - No
+                                                                                Damage
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="inspectionwith360view">
+                                                                                <div class="nameofinspe_location">
+                                                                                    Kitchen</div>
+                                                                                    <button type="button" class="view-360-btn lightbox-trigger360" data-panorama="dist/img/newimages/inspectionitems/kitchen.jpg">
+                                                                                
+                                                                                <iconify-icon
+                                                                                    icon="solar:eye-broken">
+                                                                                </iconify-icon> View 360 Image
+                                                                            </button>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="multipleinspectItems_wrap">
+                                                                            <div class="inspection_multiitems">
+                                                                                <div class="inepect_iteamName">Cabinets:
+                                                                                </div>
+                                                                                <div class="uplodedinspection_pictures">
+                                                                                <div class="inspPicture_item">
+                                                                                    <img src="dist/img/newimages/inspectionitems/Cabinets.jpg" class="lightbox-trigger" alt="">
+                                                                                </div>
+                                                                                <div class="inspPicture_item">
+                                                                                    <img src="dist/img/newimages/inspectionitems/Cabinets2.jpg" class="lightbox-trigger" alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                            </div>
+                                                                        
+                                                                            <div class="inspection_multiitems">
+                                                                                <div class="inepect_iteamName">Lighting:
+                                                                                </div>
+                                                                                <div class="uplodedinspection_pictures">
+                                                                                <div class="inspPicture_item">
+                                                                                    <img src="dist/img/newimages/inspectionitems/roombulb.png" class="lightbox-trigger" alt="">
+                                                                                </div>
+                                                                                <div class="inspPicture_item">
+                                                                                    <img src="dist/img/newimages/inspectionitems/lighting2.jpg" class="lightbox-trigger" alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                            </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div>
+                                                                                <strong>Cabinets:</strong> Checked -
+                                                                                Functional
+                                                                            </div>
+                                                                            <br>
+                                                                            <div>
+                                                                                <strong>Lighting:</strong> Checked -
+                                                                                Working Properly
                                                                             </div>
                                                                         </td>
                                                                     </tr>
 
                                                                 </tbody>
                                                             </table>
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -266,6 +371,26 @@
 
                                                         </div>
                                                     </div>
+                                                    <div class="card-footer">
+                                                        <div class="Signature_timestemp">
+                                                            <div class="enquiryRight_header_data TaskAction_wrapper">
+                                                                <div class="enquiryDate dueDate_container">
+                                                                    <iconify-icon icon="ion:calendar-outline">
+                                                                    </iconify-icon>
+                                                                    <div class="duedatelabel">Date & Time : </div> Nov
+                                                                    20,
+                                                                    2024 15:45
+                                                                </div>
+                                                                <div class="IPAddress_wrap">
+                                                                    <div class="IPlAbel">
+                                                                        IP Address :
+                                                                    </div>
+                                                                    <div class="IPAddress">192.168.1.1</div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -279,12 +404,16 @@
                                                             <img src="dist/img/newimages/downloadreport.png"
                                                                 class="lightbox-trigger" alt="">
                                                             <a href="##">
-                                                            <div class="alert alert-primary alert-wth-icon fade show mb-4"
-                                                                role="alert">
-                                                                <span class="alert-icon-wrap"><span
-                                                                        class="feather-icon"><iconify-icon icon="solar:file-download-broken"></iconify-icon></span></span>
-                                                                Download Report
-                                                            </div>
+                                                                <div class="alert alert-primary alert-wth-icon fade show mb-4"
+                                                                    role="alert">
+                                                                    <span class="alert-icon-wrap"><span
+                                                                            class="feather-icon">
+                                                                            <iconify-icon
+                                                                                icon="solar:file-download-broken">
+                                                                            </iconify-icon>
+                                                                        </span></span>
+                                                                    Download Report
+                                                                </div>
                                                             </a>
                                                         </div>
                                                     </div>
@@ -308,24 +437,19 @@
 </div>
 <!-- /Page Body -->
 
-<?php include('footer.php') ?>
+<!-- 360 image Modal for Photo Sphere Viewer -->
+<div id="viewer-modal">
+    <button class="close-btn" id="close-viewer">Close</button>
+    <button class="prev-btn" id="prev-image">
+        <iconify-icon icon="majesticons:arrow-left-line"></iconify-icon>
+    </button>
+    <button class="next-btn" id="next-image">
+        <iconify-icon icon="majesticons:arrow-right-line"></iconify-icon>
+    </button>
+    <div id="viewer"></div>
+</div>
 
-<!-- tabs scroll js start-->
-<script>
-    $(document).ready(function() {
-        $('.next').click(function() {
-            $('.nav-tabs').animate({
-                scrollLeft: '+=100'
-            }, 300);
-        });
-        $('.prev').click(function() {
-            $('.nav-tabs').animate({
-                scrollLeft: '-=100'
-            }, 300);
-        });
-    });
-</script>
-<!-- tabs scroll js end-->
+<?php include('footer.php') ?>
 
 <!-- inspection image view js -->
 <div id="lightbox" class="lightbox">
@@ -363,3 +487,80 @@
     });
 </script>
 <!-- inspection image view js end-->
+
+<!-- 360 image view  js start -->
+<!-- Photo Sphere Viewer styles -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css" />
+<script type="importmap">
+    {
+            "imports": {
+                "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.module.js",
+                "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js"
+            }
+        }
+    </script>
+    
+<script type="module">
+    import { Viewer } from '@photo-sphere-viewer/core';
+        let viewer = null;
+        const images = Array.from(document.querySelectorAll('.lightbox-trigger360')).map(button => button.dataset.panorama);
+        let currentIndex = 0;
+
+        // Function to open the viewer
+        function openViewer(index) {
+            const modal = document.getElementById('viewer-modal');
+            modal.style.display = 'flex';
+            currentIndex = index;
+
+            if (!viewer) {
+                viewer = new Viewer({
+                    container: document.getElementById('viewer'),
+                    panorama: images[currentIndex],
+                });
+            } else {
+                viewer.setPanorama(images[currentIndex]);
+            }
+        }
+
+        // Function to close the viewer
+        function closeViewer() {
+            document.getElementById('viewer-modal').style.display = 'none';
+        }
+
+        // Function to show the previous image
+        // function showPreviousImage() {
+        //     if (currentIndex > 0) {
+        //         currentIndex--;
+        //     } else {
+        //         currentIndex = images.length - 1; // Loop to last image
+        //     }
+        //     viewer.setPanorama(images[currentIndex]);
+        // }
+
+        // Function to show the next image
+        // function showNextImage() {
+        //     if (currentIndex < images.length - 1) {
+        //         currentIndex++;
+        //     } else {
+        //         currentIndex = 0; // Loop to first image
+        //     }
+        //     viewer.setPanorama(images[currentIndex]);
+        // }
+
+        // Attach event listeners
+        document.querySelectorAll('.lightbox-trigger360').forEach((item, index) => {
+            item.addEventListener('click', () => openViewer(index));
+        });
+
+        document.getElementById('close-viewer').addEventListener('click', closeViewer);
+        document.getElementById('prev-image').addEventListener('click', showPreviousImage);
+        document.getElementById('next-image').addEventListener('click', showNextImage);
+
+        // Close modal when clicking outside the viewer
+        document.getElementById('viewer-modal').addEventListener('click', (event) => {
+            if (event.target.id === 'viewer-modal') {
+                closeViewer();
+            }
+        });
+    </script>
+<!-- 360 image view  js end -->

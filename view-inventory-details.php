@@ -31,7 +31,7 @@
                             </div>
                             <div class=" ms-3">
 
-                                <a href="inventories.php" class="btn btn-sm cmnbackbtn btn-outline-secondary ">
+                                <a href="inspection-inventory.php" class="btn btn-sm cmnbackbtn btn-outline-secondary ">
                                     <iconify-icon icon="line-md:list-3"></iconify-icon> Back
                                 </a>
 
@@ -116,9 +116,9 @@
                                                                         <th>Location</th>
                                                                         <th>Quantity</th>
                                                                         <th>Checks</th>
-                                                                        <th>Full</th>
+                                                                        <!-- <th>Full</th>
                                                                         <th>Incremental</th>
-                                                                        <th>Shared</th>
+                                                                        <th>Shared</th> -->
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -155,7 +155,7 @@
                                                                                 </button>
                                                                             </div>
                                                                         </td>
-                                                                        <td>
+                                                                        <!-- <td>
                                                                             <div class="d-flex align-items-center">
                                                                                 <span class="form-check mb-0"><input
                                                                                         type="checkbox"
@@ -187,7 +187,7 @@
                                                                                         for="chk_sel_3"></label></span><span
                                                                                     class="contact-star"></span>
                                                                             </div>
-                                                                        </td>
+                                                                        </td> -->
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
@@ -219,7 +219,7 @@
                                                                                 </button>
                                                                             </div>
                                                                         </td>
-                                                                        <td>
+                                                                        <!-- <td>
                                                                             <div class="d-flex align-items-center">
                                                                                 <span class="form-check mb-0"><input
                                                                                         type="checkbox"
@@ -251,7 +251,7 @@
                                                                                         for="chk_sel_6"></label></span><span
                                                                                     class="contact-star"></span>
                                                                             </div>
-                                                                        </td>
+                                                                        </td> -->
                                                                     </tr>
 
                                                                     <tr>
@@ -284,7 +284,7 @@
                                                                                 </button>
                                                                             </div>
                                                                         </td>
-                                                                        <td>
+                                                                        <!-- <td>
                                                                             <div class="d-flex align-items-center">
                                                                                 <span class="form-check mb-0"><input
                                                                                         type="checkbox"
@@ -316,7 +316,7 @@
                                                                                         for="chk_sel_9"></label></span><span
                                                                                     class="contact-star"></span>
                                                                             </div>
-                                                                        </td>
+                                                                        </td> -->
                                                                     </tr>
 
                                                                     <tr>
@@ -349,7 +349,7 @@
                                                                                 </button>
                                                                             </div>
                                                                         </td>
-                                                                        <td>
+                                                                        <!-- <td>
                                                                             <div class="d-flex align-items-center">
                                                                                 <span class="form-check mb-0"><input
                                                                                         type="checkbox"
@@ -381,7 +381,7 @@
                                                                                         for="chk_sel_12"></label></span><span
                                                                                     class="contact-star"></span>
                                                                             </div>
-                                                                        </td>
+                                                                        </td> -->
                                                                     </tr>
 
                                                                 </tbody>

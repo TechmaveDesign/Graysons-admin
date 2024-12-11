@@ -727,7 +727,7 @@ div.dt-buttons {
 	text-align: center;
 	z-index: 1;
 	background: #fff;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 20px;
 	font-weight: 700;
 	text-align: left !important;
@@ -735,8 +735,8 @@ div.dt-buttons {
 	color: #262a2e;
 	margin-top: 30px;
 	background: #f6f7f7;
-	padding: 18px 20px;
-	border-radius: 12px;
+	padding: 13px 20px;
+	border-radius: 6px;
 	margin-bottom: 30px;
 	display: flex;
 	align-items: center;
@@ -784,7 +784,7 @@ div.dt-buttons {
 }
 .sweetaleart_description {
 	font-size: 16px;
-	padding: 0px 68px;
+	padding: 0px 30px;
 	line-height: 25px;
 }
 .swal2-html-container .align-items-center {
@@ -1028,6 +1028,7 @@ div.dt-buttons {
 }
 .RightTabinr_container {
 	display: flex;
+	align-items: center;
 }
 .sperarationProfile_heading{
 	font-size: 18px;
@@ -1382,8 +1383,8 @@ table.dataTable td {
 	padding: 10px !important;
 }
 .uplodedinspection_pictures img{
-	width: 40px;
-	height: 40px;
+	width: 30px;
+  height: 30px;
 	object-fit: cover;
 	border-radius: 4px;
 	cursor: pointer;
@@ -1566,7 +1567,9 @@ table.dataTable td {
 }
 .customtablecreation_Add{
 	background: #ebfcf5;
-  color: #00ab66;
+	color: #00ab66;
+	display: flex !important;
+	white-space: nowrap;
 }
 .actionapndButton_container .cmntabapndBtn{
 	display: flex;
@@ -1580,9 +1583,7 @@ table.dataTable td {
 	display: flex;
 	align-items: center;
 }
-#folderTable {
-	border: 1px solid #ebeded;
-}
+
 .addFolderBtn {
 	background: #009b84;
 	margin-bottom: 20px;
@@ -1665,11 +1666,11 @@ table.dataTable td {
 
 .addnewPaymentButton {
 	background: #3db482 !important;
-	color: #fff;
-	padding: 7px 20px;
-	border-radius: 4px;
-	border: none;
-	font-size: 15px;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
 }
 .invoiceSummary_title{
 	color: #131313 !important;
@@ -2626,7 +2627,7 @@ margin-right: 5px;
 #addFolderBtn {
 	display: flex !important;
 	align-items: center;
-	margin-bottom: 20px;
+	margin-bottom: 0px !important;
 	padding: 5px 15px !important;
 	font-weight: normal;
 	background: #ebeef7;
@@ -3067,11 +3068,13 @@ div.dt-container div.dt-search input {
 	justify-content: center;
 	border: none;
 	outline: none;
-	padding: 10px;
-	border-radius: 5px;
+	padding: 6px 10px !important;
+	border-radius: 5px !important;
+	background: #3db88b !important;
+	color: #fff !important;
 }
 .btnaddMoreicon iconify-icon{
-	font-size: 23px;
+	font-size: 18px;
 	margin-right: 5px;
 }
 .addMoreInven_btn {
@@ -3266,6 +3269,11 @@ div.dt-container div.dt-search input {
 .sidecolor_checkincheckout .svg-icon > iconify-icon{
 	background-color: #532990 !important;
 	color: white !important;
+}
+
+.sidecolor_webmanage .svg-icon > iconify-icon{
+	background-color: #27bc7d !important;
+  color: #fff !important;
 }
 
 .hk-wrapper[data-layout="vertical"] .hk-menu .menu-content-wrap .menu-group .navbar-nav > .nav-item.active > .nav-link {
@@ -5271,7 +5279,7 @@ body{
 
 .table  td {
 	font-size: 13px !important;
-	padding: 5px 20px !important;
+	padding: 5px 20px ;
 	font-weight: 500;
 	color: #292929 !important;
 }
@@ -5292,13 +5300,14 @@ body{
 	box-shadow: none;
 }
 #doneBtn {
-	padding: 2px 17px;
-	font-weight: 600;
-	font-size: 13px;
-	display: flex;
-	align-items: center;
-	background: #16a085;
-	border-color: #16a085;
+	padding: 5px 17px;
+  font-weight: 500;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  background: #16a085;
+  border-color: #16a085;
+  border-radius: 4px;
 }
 #doneBtn:hover {
 	border:1px solid #16a085 !important;
@@ -5339,7 +5348,7 @@ body{
 	margin-top: 30px !important;
 }
 .contractform_mainContainer {
-	width: 70%;
+	width: 90%;
 	margin: 0 auto;
 	margin-top: 40px !important;
 	padding-bottom: 40px;
@@ -5464,7 +5473,7 @@ body{
   font-weight: normal;
   border-top-left-radius: 0px !important;
   border-bottom-left-radius: 0px !important;
-  padding: 7px 15px;
+  padding: 7.2px 15px;
 }
 #newPropertyType {
 	border-top-right-radius: 0px !important;
@@ -5944,6 +5953,12 @@ margin-right: 4px;
 .stepheadingheader h1{
 	font-size: 17px;
 	margin-bottom: 0px;
+	display: flex;
+  align-items: center;
+}
+.stepheadingheader h1 .JobId{
+	margin-left: 5px;
+	font-size: 16px;
 }
 .steptitleIcon {
 	width: 30px;
@@ -6514,6 +6529,7 @@ margin-right: 10px;
 }
 .Swal_CustomTitle {
 	font-size: 21px;
+	margin-bottom: 5px;
 }
 .form-group {
 	position: relative;
@@ -7953,7 +7969,7 @@ margin-top: 0px;
     width: 400%;
     height: 400%;
     left: 0;
-    background: linear-gradient(-45deg, #ffc800, #ff02f0, #8930fd, #49ccf9);
+    background: linear-gradient(-45deg, #ffc800, #e3c108, #8930fd, #49ccf9);
     background-size: 100% 100%;
     z-index: 0;
     pointer-events: none;
@@ -8129,7 +8145,985 @@ margin-top: 0px;
 	margin-top: 20px;
 }
 
+.ActionBtnInnertabs_properties {
+	text-align: right;
+	display: flex;
+	justify-content: end;
+	margin-bottom: 20px;
+}
+.innertabscenter_action_Footer{
+	position: relative !important;
+}
 
+.ScheduleInspection_addWrap {
+	padding: 20px;
+	height: 500px;
+	overflow-y: scroll;
+	scrollbar-width: thin;
+}
+
+.ScheduleAddBtnfor_property.hidden {
+    display: none !important;
+}
+
+.AddInspection_timings__property.hidden {
+    display: none !important;
+}
+
+
+/* 360 deg image viewer modal style start */
+#viewer-modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 9999;
+	justify-content: center;
+	align-items: center;
+}
+#viewer {
+	width: 90%;
+	height: 80%;
+}
+#viewer-modal .prev-btn,
+#viewer-modal .next-btn {
+	position: absolute;
+background: #fff;
+color: black;
+border: none;
+border-radius: 50px;
+padding: 10px 15px;
+font-size: 22px;
+cursor: pointer;
+transition: background 0.3s ease;
+z-index: 10000;
+width: 40px;
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#viewer-modal .close-btn {
+	position: absolute;
+background: transparent;
+color: white;
+border: none;
+border-radius: 5px;
+padding: 0px;
+font-size: 16px;
+cursor: pointer;
+transition: background 0.3s ease;
+z-index: 10000;
+}
+#viewer-modal .close-btn {
+	top: 20px;
+	right: 20px;
+}
+#viewer-modal .prev-btn {
+	top: 50%;
+	left: 20px;
+	transform: translateY(-50%);
+}
+#viewer-modal  .next-btn {
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+}
+#viewer-modal  .prev-btn:hover,
+#viewer-modal  .next-btn:hover {
+	background: #ffd01a;
+}
+
+.inspPicture_item img {
+	transition: transform 0.3s;
+}
+.inspPicture_item img:hover {
+	transform: scale(1.1);
+}
+/* 360 deg image viewer modal style end */
+
+
+.TicketDetails_info_title{
+	font-size: 15px;
+    font-weight: 500;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #656f7d;
+	margin-bottom: 6px;
+}
+
+
+.ticketdetailinfo_data .badge{
+border-radius: 5px;
+background-color: #f0f1f3 !important;
+color: #161616 !important;
+  margin: 0px !important;
+  font-size: 13px !important;
+}
+
+.Expenses_summary_section {
+	margin: 0px;
+}
+
+.RequiredField_badge{
+	color: red;
+	font-size: 15px;
+}
+.row.new-location-row {
+	padding-right: 0px;
+}
+.flex_columnRight .form-group {
+	text-align: right;
+	display: flex;
+	justify-content: flex-end;
+}
+.delete-location.dltappendlocation_btn {
+	position: relative;
+	top: 25px;
+	background: #ff000012;
+	color: red;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 12px;
+}
+
+.nodata {
+	height: 356px;
+	position: relative;
+	text-align: center;
+}
+.nodataImg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+}
+.nodataImg img {
+	width: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.SurveyInnerBox {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+.SurveyInnerBox h6 {
+	border: 1px solid #ececec;
+	width: 50%;
+	padding: 10px;
+}.LocationDetailMaterial {
+	margin-top: 10px;
+}
+.LocationDetailMaterial .table {
+	border: 1px solid #ececec;
+}
+.Addedproductes_listing .accordion-button:not(.collapsed) {
+	color: #070707;
+	background-color: #eceef100;
+	box-shadow: none;
+	border-bottom: 1px solid #d6d6d6;
+}
+.Addedproductes_listing .accordion .accordion-button:not(.collapsed)::after {
+	background: none;
+	color: rgb(0, 0, 0);
+}
+
+
+.AdeddProduct_header {
+	background-color: rgb(234, 236, 249);
+	display: flex;
+	width: 100%;
+	padding: 12px 20px;
+	margin-bottom: 20px;
+}
+
+.ReportTitle {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.ReportTitle h3 {
+	font-size: 13pt;
+	text-align: left;
+	font-weight: bold;
+	text-decoration: none;
+	font-style: normal;
+	font-family: Roboto, "Noto Sans JP", Harmattan, "Noto Sans SC", "Noto Sans KR";
+	color: rgb(6, 11, 51);
+	outline: 0px;
+	margin-bottom: 0px;
+}
+
+.ReportTitle .isAnswer {
+	font-size: 11pt;
+	font-weight: normal;
+	font-family: Roboto, "Noto Sans JP", Harmattan, "Noto Sans SC", "Noto Sans KR";
+	text-align: left;
+	font-style: normal;
+	text-decoration: none;
+	color: rgb(76, 81, 99);
+}
+.mtprdct_right{
+	display: flex;
+	align-items: center;
+}
+
+.mtprdct_lest .media-head {
+	margin-right: 5px;
+}
+
+.MtProduct_title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding-left: 30px;
+}
+
+.materialpr_name{
+	display: flex;
+	align-items: center;
+}
+.materialprdtName_wrap label {
+	margin-bottom: 0px !important;
+	margin-right: 5px;
+}
+.materialpr_name iconify-icon {
+	margin-right: 4px;
+	color: #121313;
+}
+.mtprdct_lest {
+	width: 50%;
+}
+.prproduct_location_property {
+	font-size: 12px;
+	width: 100%;
+	color: #686784;
+}
+
+.Addedproductes_listing .accordion .accordion-button::after {
+	top: 50%;
+  left: 4%;
+  color: rgba(38, 42, 46, 0.3);
+  right: auto;
+  transform: translate(-50% , -50%);
+}
+
+#AddmeterialProduct_submit {
+	background: #0cb06b;
+	color: #fff;
+}
+
+.enquirydetail_bottom_tabs{
+	padding: 0px !important;
+}
+.enquirydetail_bottom_tabs ul{
+	padding: 0px !important;
+	margin: 0px !important;
+	width: 100%;
+}
+.enquirydetail_bottom_tabs ul li a{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.enQID_container button span iconify-icon{
+	margin: 0px !important;
+}
+
+.Copyidbutton_wrap button {
+	background: #3262bf;
+	border: none;
+	color: #fff;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	padding: 5.5px 9px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+	font-size: 13px;
+}
+.Calendaraddnote_btnWrap{
+	text-align: right;
+	margin-top: 20px;
+}
+.AddNoteEnuSection{
+	width: 100%;
+}
+.notesSendBy {
+	display: flex;
+	align-items: center;
+}
+.NoteTag {
+	display: flex;
+	align-items: center;
+	color: #27bc7d;
+	font-size: 12px;
+	background: #eaf8f2ab;
+	padding: 4px 12px;
+	border-radius: 5px;
+}
+.NoteTag iconify-icon{
+	margin-right: 4px;
+	font-size: 14px;
+}
+.notehead_withTag{
+	justify-content: space-between;
+}
+
+.offcnForm_withouttitle{
+	margin-top: 20px;
+}
+
+.JobIdIcon{
+	width: 40px;
+	height: 40px;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #d6ddf5;
+}
+.JobIdIcon iconify-icon{
+	font-size: 18px;
+	color: #000;
+}
+
+.tableselect_data{
+	margin-bottom: 0px !important;
+}
+.Quotationamout_data {
+	width: 15%;
+}
+.Quotationamout_data input{
+	width: 100px;
+}
+
+.tableAddDoc_button{
+	border: 1px dashed #27bc7d;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+	background: whitesmoke;
+	font-size: 18px;
+}
+.quotationInnertb_tabs {
+	width: 30% !important;
+	margin-bottom: 20px !important;
+	margin: 0 auto;
+}
+.Quotation_docImage  {
+	text-align: center;
+}
+.Quotation_docImage img {
+	width: 25%;
+	margin: 0 auto;
+	opacity: 1;
+  filter: grayscale(100%);
+}
+
+.Downloadquote_doc_button {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin: 20px 0px 40px 0px;
+}
+
+.Downloadquote_doc_button a span{
+	display: flex;
+	align-items: center;
+}
+.Downloadquote_doc_button a iconify-icon{
+	margin-right:5px;
+	font-size:20px;
+}
+.innertabbt_submit_action{
+	position: relative !important;
+	width: 100% !important;
+}
+
+.nobtPadding{
+	padding-bottom: 0px !important;
+}
+
+.inspectionwith360view{
+	display: flex;
+	align-items: center;
+}
+.inspection_multiitems{
+	display: flex;
+	align-items: center;
+}
+
+.inepect_iteamName {
+	margin-right: 6px;
+  min-width: 50px;
+  max-width: 200px;
+}
+
+.view-360-btn {
+	padding: 4px 10px;
+	background: #efeff5;
+	color: #151515;
+	border: none;
+	margin-left: 10px;
+	font-size: 12px;
+	border-radius: 4px !important;
+	display: flex;
+  align-items: center;
+}
+
+.view-360-btn iconify-icon{
+	font-size: 15px;
+	margin-right: 3px;
+}
+
+.multipleinspectItems_wrap .inspection_multiitems:nth-child(1) {
+	margin-bottom: 10px;
+  }
+
+
+.detailrowoneTd{
+	padding: 0px !important;
+}
+#detailrowoneTd{
+	padding: 0px !important;
+}
+
+.bedroomComment {
+    width: 100%; /* Set the width to 50% */
+    word-wrap: break-word; /* Ensure long words break to the next line */
+    word-break: break-word; /* Break words if necessary */
+    white-space: normal; /* Allow content to wrap */
+}
+.btn.toggle-info {
+	width: 40px;
+	height: 40px;
+	border-radius: 50px;
+	background: #ececf5;
+	font-size: 20px;
+	margin: 5px 0px;
+	color: #000;
+}
+.btn.toggle-info:hover {
+	width: 40px;
+	height: 40px;
+	border-radius: 50px;
+	background: #fcb608;
+	font-size: 20px;
+	margin: 5px 0px;
+	color: #fff;
+}
+
+.QuotationSignature img{
+	width: 100%;
+}
+
+.commonUpdateButton.Raises_DepositeInvoise_btn {
+	font-size: 14px !important;
+	border-radius: 3px;
+	background: #0eb37b;
+}
+.commonUpdateButton.sendQuotationbtn {
+	font-size: 14px !important;
+	border-radius: 3px;
+	background: #0e6db3;
+}
+
+
+.FormSubmit_fix_container.priceBOX .taskTotal {
+	margin-bottom: 0px !important;
+	margin-right: 20px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.receiptImg img {
+	width: 70px;
+	border-radius: 4px;
+}
+.checkboxTask {
+	padding-left: 12px;
+}
+.taskAccordion .accordion-button {
+	padding: 8px 15px 8px 8px;
+}
+.taskBlex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 97%;
+}
+.taskHeader {
+	display: flex;
+}
+.taskBlex h6 {
+	margin-bottom: 0px;
+}
+
+
+.taskAccordion .accordion-button {
+	background: transparent !important;
+}
+
+.completedrtask_headeract .form-group{
+margin-bottom: 0px !important;
+}
+.allSelect.checkboxTask {
+	margin-right: 20px;
+}
+
+#requesttemprary_Pass{
+	font-size: 14px !important;
+	border-radius: 3px;
+	background: #0eb37b;
+	border: none !important;
+	margin-right: 6px;
+	margin-left: 10px;
+}
+#requestchange_Pass{
+	font-size: 14px !important;
+	border-radius: 3px;
+	background: #0e6db3;
+	border: none !important;
+}
+
+.managepassword_action_right {
+	display: flex;
+	align-items: center;
+}
+
+
+.swal2-styled.swal2-cancel {
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	border: 0;
+	border-radius: .25em;
+	background: initial;
+	background-color: initial;
+	background-color: #f7f7f7;
+	color: #242424;
+	font-size: 14px !important;
+}
+.swal2-cancel.swal2-styled:hover {
+	border: 0;
+	border-radius: .25em;
+	background: initial;
+	background-color: initial;
+	background-color: #f7f7f7;
+	color: #242424;
+	font-size: 14px !important;
+}
+#swal2-title {
+	font-size: 21px;
+}
+.swal2-icon.swal2-warning {
+	margin-top: 10px;
+}
+.swal2-icon.swal2-success {
+	margin-top: 10px;
+}
+
+.swal2-actions {
+	width: 100%;
+  }
+  .swal2-confirm.my-ok-button.swal2-styled{
+	width: 100% !important;
+	background: #f2f2fa !important;
+	color: #000;
+}
+.prioritystatus{
+	display: flex;
+	align-items: center;
+}
+.prioritystatus .dot-label1 {
+	border-radius: 50px;
+	display: block;
+	height: 10px;
+	width: 10px;
+	margin-right: 0.5rem;
+	margin-top: 0px !important;
+}
+.highpriority_badge{
+	background: rgb(3, 189, 113);
+}
+.highPriority .priorityStatus_text{
+color: rgb(3, 189, 113);
+}
+
+.lowPriority .lowpriority_badge{
+	background: #ecba14;
+}
+.lowPriority  .priorityStatus_text{
+	color: #ecba14;
+}
+
+.MediumPriority .Mediumpriority_badge{
+	background: rgb(40, 138, 249);
+}
+.MediumPriority  .priorityStatus_text {
+	color:  rgb(40, 138, 249);
+}
+.tickets_cardsnumber .icon1 {
+	border-radius: 7px;
+	color: #fff;
+	font-size: 24px;
+	height: 55px;
+	line-height: 57px;
+	text-align: center;
+	width: 55px;
+}
+.tickets_cardsnumber .bg-primary-transparent {
+	background: rgba(51,102,255,.1);
+	color: #36f !important;
+}
+.tickets_cardsnumber .bg-secondary-transparent {
+	background: rgba(254,127,0,.1);
+	color: #fe7f00 !important;
+}
+.tickets_cardsnumber .bg-success-transparent {
+	background: rgba(13,205,148,.1);
+	color: #0dcd94 !important;
+}
+.priorityTitle {
+	color: #000;
+	font-size: 17px;
+	font-weight: 500;
+}
+
+.prioritycardwrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.text-mediumpriority{
+	color: #36f ;
+}
+
+.cardiconBGColor_emergency {
+	background: #f84f4f !important;
+	color: #fff;
+}
+.tickets_cardsnumber {
+	margin-bottom: 10px;
+}
+.swal2-icon.swal2-error.swal2-icon-show {
+	margin-top: 10px !important;
+}
+.swalalert_custom_icon img {
+	width: 45%;
+	margin: 10px 0px;
+}
+
+#JobID_specific{
+	background: #50c37d !important;
+	color: #fff !important;
+	display: flex;
+	align-items: center;
+}
+#JobID_specific iconify-icon{
+	margin-right: 4px;
+  font-size: 15px;
+  position: relative;
+  top: -1px;
+}
+.morethenone_properties_wrap{
+	display: flex;
+	align-items: center;
+}
+.multinotesTabs {
+	width: 41% !important;
+	margin-bottom: 20px !important;
+	margin-top: 10px !important;
+}
+.singlesectionTitle h2 {
+	font-size: 20px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+.singlesectionTitleSM {
+	margin-top: 18px;
+	margin-bottom: 13px;
+}
+.singlesectionTitleSM h2{
+	font-size: 18px;
+}
+.IconBoxTiles {
+	width: 35px;
+	height: 35px;
+	border-radius: 50px;
+	background-color: rgb(242, 242, 247);
+	color: rgb(30, 30, 30);
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.dashtileFlexWrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.dashtileLink .tiledashTitle{
+	color: gray;
+}
+#MakeEnquiry_confirmation{
+	margin-left: 20px;
+}
+#MakeEnquiry_confirmation iconify-icon{
+margin-right: 3px !important;
+font-size: 18px;
+}
+.CustomselectallContainer input {
+	margin-top: 0px;
+}
+.addmorevisitSchedule_forthesame{
+	text-align: right;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.addmorevisitSchedule_forthesame button {
+	background: transparent;
+	border: none;
+	padding: 0px;
+	font-size: 13px;
+	display: flex;
+	align-items: center;
+	color: #0cb06b;
+}
+
+.addmorevisitSchedule_forthesame button iconify-icon{
+	margin-right: 4px;
+}
+
+.LastLogintimeTitle {
+	display: flex;
+	align-items: center;
+}
+
+.LastLogintimeTitle iconify-icon {
+	margin-right: 4px;
+	font-size: 17px;
+	position: relative;
+	top: 1px;
+}
+.currentLoginTime {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+#lastLogin {
+	font-size: 20px;
+	font-weight: 500;
+	text-align: right;
+}
+.AddpropertforClient_mdWrap{
+	padding: 20px;
+}
+
+
+.budget-title{
+	font-size: 18px;
+	margin-bottom: 0px;
+}
+
+.budget-title iconify-icon{
+	margin-left: 3px;
+	font-size: 15px;
+}
+
+ 
+.add-field-button{
+	border: none;
+	padding: 0px;
+	background: transparent;
+	color: #00ab66;
+	display: flex;
+	align-items: center;
+	font-size: 13px;
+  font-weight: 500;
+}
+
+.add-field-button iconify-icon{
+	margin-right: 2px;
+  font-size: 17px;
+}
+
+.custom-floor-tabs .nav-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 10px 20px;
+	transition: all 0.3s ease;
+	position: relative;
+	color: #333;
+  }
+  
+  .custom-floor-tabs .nav-link i {
+	font-size: 1.2rem;
+  }
+  
+  .custom-floor-tabs .nav-link.active {
+	background-color: #f4f1ff;
+	border-color: #673ab7;
+	color: #0cb06b;
+  }
+  
+  .custom-floor-tabs .nav-link .checkmark {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	color: #0cb06b;
+	display: none;
+  }
+  #FloorInrTabs li button {
+	display: flex;
+	flex-direction: column;
+}  
+#FloorInrTabs li button.active {
+	background: transparent !important;
+	color: #0cb06b;
+	border-color: #0cb06b !important;
+}
+.addFloorsForpr{
+	display: flex !important;
+  align-items: center;
+  margin-bottom: 0px !important;
+  padding: 5px 15px !important;
+  font-weight: normal;
+  background: #198fe5;
+  color: #fff !important;
+  font-size: 14px !important;
+  border-radius: 4px;
+}
+.modaltitlewith_icon{
+	display: flex;
+	align-items: center;
+}
+.modaltitlewith_icon iconify-icon{
+	margin-right: 4px;
+}
+
+
+#propertylistingTabs  li button iconify-icon{
+	margin-right: 4px;
+}
+
+.docfilterbutton {
+	text-align: right;
+	display: flex;
+	justify-content: space-between;
+	align-items: center !important;
+	margin-bottom: 20px;
+	padding-bottom: 0px;
+	/* border-bottom: 1px dashed #869caf; */
+	background-color: #c2d0e147;
+	align-items: center !important;
+	padding: 10px 20px;
+	border-radius: 6px;
+}
+
+.voidBtn {
+	display: flex !important;
+  font-size: 13px !important;
+}
+
+.voidBtn iconify-icon{
+	font-size: 13px !important;
+	color: red;
+}
+
+.btn.btn-icon[class*="voidBtn"].btn-flush-dark.flush-soft-hover::before{
+	display: none !important;
+
+}
+.VoidStatus_TB h6 {
+	display: flex;
+	align-items: center;
+	margin-bottom:0px;
+}
+.VoidStatus_TB h6 iconify-icon{
+	margin-right:4px;
+	position: relative;
+	top: 0px;
+}
+
+.flexHeader_between{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.invoiceCheckbox_nomrbt .form-group{
+	margin-bottom: 0px;
+}
+
+.invoiceFlex_header{
+	display: flex;
+	align-items: center;
+}
+
+.invoiceFlex_header .form-label{
+	margin-right: 5px;
+}
+
+.depositeamount_col{
+	margin-right: 10px;
+}
+.flex_containerCmn.scheduleviewungmd_rviewall {
+	background: #f2f1f7cf;
+	padding: 8px 15px;
+	border-radius: 5px;
+}
+.scheduleviewungmd_rviewall h2{
+	font-size: 18px;
+	margin-bottom: 0px !important;
+}
+
+.withoutlabel_field_align{
+	margin-top: 25px;
+}
+
+.sharedropdown_intext{
+	font-size: 15px !important;
+	color: #000 !important;
+	display: flex !important;
+  align-items: center;
+}
+.sharedropdown_intext iconify-icon{
+	margin-right: 5px;
+}
+.propertyShare_icons {
+	padding: 2px 10px;
+}
+
+.propertycountand_share {
+	display: flex;
+	align-items: center;
+}
+.sharepropertyWrap {
+	margin-left: 10px;
+}
 
 /* Media query for mobile screens */
 @media (max-width: 768px) {

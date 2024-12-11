@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="col-lg-12">
+        <div class="mainuserFilesds_tabpaneContainer">
+            <div class="docfilterbutton">
+                <h2 class="tabinnerTitle">Add New Note</h2>
+
+            </div>
+
+            <div class="AddNoteEnuSection" id="AddNote1">
+                <div class="form-group">
+                    <label class="form-label">Note header</label>
+                    <input class="form-control note-title"
+                        type="text" placeholder="Add Title">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Add Comment</label>
+                    <textarea class="form-control note-comment"
+                        rows="5"></textarea>
+                </div>
+
+                <div class="NoteAction_container">
+                    <div class="sendEnquiryNote_container">
+                        <div class="addto_todolist">
+                            <div class="form-check">
+                                <input type="checkbox"
+                                    class="form-check-input customCheckList-todo">
+                                <label class="form-check-label">Add
+                                    to ToDo List <span
+                                        class="done-strikethrough"></span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="sendEnquiryNote_container setAlert_container">
+                        <div class="addto_todolist">
+                            <div class="form-check">
+                                <input type="checkbox"
+                                    class="form-check-input setAlertInput">
+                                <label class="form-check-label">Set
+                                    As Alert <span
+                                        class="done-strikethrough"></span></label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="Showing_departmentand_users"
+                    style="display: none;">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="form-label">Select
+                                    Department</label>
+                                <select
+                                    class="form-control select2 select-department">
+                                    <option disabled selected
+                                        value="">Please Select...
+                                    </option>
+                                    <option
+                                        value="Account Department">
+                                        Account Department</option>
+                                    <option value="HR Department">HR
+                                        Department</option>
+                                    <option
+                                        value="Contract Department">
+                                        Contract Department</option>
+                                    <option
+                                        value="Lettings Department">
+                                        Lettings Department</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="form-label">Select
+                                    Users</label>
+                                <select
+                                    class="form-control select2 select-user">
+                                    <option disabled selected
+                                        value="">Please Select...
+                                    </option>
+                                    <option value="John Doe">John
+                                        Doe</option>
+                                    <option value="Jane Smith">Jane
+                                        Smith</option>
+                                    <option value="Alice Johnson">
+                                        Alice Johnson</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="form-label">Select Due
+                                    Date</label>
+                                <input
+                                    class="form-control customdataPicker"
+                                    type="text" name="" value=""
+                                    placeholder="Due Date" />
+                                <iconify-icon
+                                    icon="ion:calendar-outline"
+                                    class="dateinput_icon">
+                                </iconify-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="savechangesformContainer">
+                <button type="button"
+                    class="sendBtn_common_main addenun_noteBtn send-note">Send
+                    Note</button>
+            </div>
+        </div>
+    </div>
+
+<!-- --------------------------------------------------------- 
+ assign note task to department from the left side under note js Functionality to 
+  hide the assign selection option  start
+  -------------------------------------------------------->
+
+  <script>
+    $(document).ready(function() {
+        // Toggle the visibility of Showing_departmentand_users based on the checkbox
+        $(document).on('change', '.customCheckList-todo', function() {
+            const container = $(this).closest('.AddNoteEnuSection');
+            if ($(this).is(':checked')) {
+                container.find('.Showing_departmentand_users').slideDown(); // Show the section
+            } else {
+                container.find('.Showing_departmentand_users').slideUp(); // Hide the section
+            }
+        });
+        // Handle the Send Note button click
+        $(document).on('click', '.send-note', function() {
+            const container = $(this).closest('.AddNoteEnuSection');
+            const selectedDepartment = container.find('.select-department').val();
+            const selectedUser = container.find('.select-user').val();
+            if (selectedDepartment && selectedUser) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Note Sent!',
+                    text: `Note sent to ${selectedDepartment} and ${selectedUser}.`
+                });
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Missing Information',
+                    text: 'Please select both a department and a user.'
+                });
+            }
+        });
+        // Handle Set Alert confirmation
+        $(document).on('change', '.setAlertInput', function() {
+            const checkbox = $(this);
+            if (checkbox.is(':checked')) {
+                Swal.fire({
+                    html: `
+                    <div style="text-align: center;">
+                        <div class="swalalert_custom_icon">
+                            <iconify-icon icon="hugeicons:alert-01"></iconify-icon>
+                        </div>
+                        <h2 class="Swal_CustomTitle">Are You Sure You Want to Set This Note as an Alert?</h2>
+                    </div>`,
+                    showCancelButton: true,
+                    confirmButtonText: 'Yes, set it!',
+                    cancelButtonText: 'No, cancel!',
+                    reverseButtons: true,
+                    customClass: {
+                        confirmButton: 'btn btn-success',
+                        cancelButton: 'btn btn-danger'
+                    }
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Swal.fire({
+                            title: 'Alert Set!',
+                            text: 'The note has been successfully set as an alert.',
+                            icon: 'success'
+                        });
+                    } else if (result.isDismissed) {
+                        checkbox.prop('checked',
+                            false); // Uncheck the checkbox if the user cancels
+                    }
+                });
+            }
+        });
+    });
+</script>
+
+<!-- --------------------------------------------------------- 
+ assign note task to department from the left side under note js Functionality to 
+  hide the assign selection option  end
+  -------------------------------------------------------->
+
+</body>
+</html>

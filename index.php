@@ -10,6 +10,17 @@
 					<p>Welcome back to your Admin Panel, where every detail of your operations awaits your command.</p>
 				</div>
 
+				<div class="hometoprightTExt">
+				<div class="currentLoginTime">
+										<div class="LastLogintimeTitle">
+										<iconify-icon icon="hugeicons:clock-05"></iconify-icon>
+											<span class="badge-label d-inline-block">Last Login Time</span>
+										</div>
+										<span
+												id="lastLogin"></span>
+									</div>
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -20,119 +31,8 @@
 		<div class="tab-content">
 			<div class="tab-pane fade show active" id="tab_block_1">
 				<div class="row">
-					<div class="col-xxl-9 col-lg-8 col-md-7 mb-md-4 mb-3">
-						<!-- <div class="card card-border mb-4 quickaccessTiles">
-							<div class="card-header card-header-action">
-								<h6>Quick Access</h6>
-
-							</div>
-							<div class="card-body">
-								<div class="wrap">
-
-									<div class="metro-big chat">
-										<div class="icon-chat">
-											<iconify-icon icon="solar:user-broken"></iconify-icon>
-										</div>
-										<span class="label bottom">All Users</span>
-									</div>
-									<div class="metro-big calendar">
-										<div class="icon-calendar">
-											<iconify-icon icon="clarity:building-line"></iconify-icon>
-										</div>
-										<span class="label bottom">All Properties</span>
-									</div>
-									<div class="metro-small store">
-										<div class="icon-store">
-											<iconify-icon icon="material-symbols:tenancy-outline"></iconify-icon>
-										</div>
-										<span class="label bottom"> Tenancies</span>
-									</div>
-									<div class="metro-big ie">
-										<div class="icon-ie">
-											<iconify-icon icon="ion:calendar-outline"></iconify-icon>
-										</div>
-										<span class="label bottom">Events</span>
-									</div>
-									<div class="metro-small people last">
-										<div class="icon-people">
-											<iconify-icon icon="material-symbols:inventory-rounded"></iconify-icon>
-										</div>
-										<span class="label bottom">
-											Inventory</span>
-									</div>
-									<div class="metro-small chrome">
-										<div class="icon-chrome">
-											<iconify-icon icon="ph:users"></iconify-icon>
-										</div>
-										<span class="label bottom">
-											Merchants</span>
-									</div>
-									<div class="metro-big photo">
-
-										<div class="icon-chrome">
-											<iconify-icon icon="hugeicons:user-account"></iconify-icon>
-										</div>
-										<span class="label bottom">Landlords</span>
-									</div>
-									<div class="metro-big video">
-										<div class="icon-video">
-											<iconify-icon icon="hugeicons:invoice-01"></iconify-icon>
-										</div>
-										<span class="label bottom">
-											Invoices</span>
-									</div>
-									<div class="metro-big music">
-										<div class="icon-music">
-											<iconify-icon icon="iconoir:laptop-issue"></iconify-icon>
-										</div>
-										<span class="label bottom">
-											Issues</span>
-									</div>
-									<div class="metro-small games last">
-										<div class="icon-games">
-											<iconify-icon icon="streamline:payment-cash-out-3"></iconify-icon>
-										</div>
-										<span class="label bottom">
-											Payments</span>
-									</div>
-									<div class="metro-small twitter">
-										<div class="icon-twitter">
-											<iconify-icon icon="flowbite:sale-percent-outline"></iconify-icon>
-										</div>
-										<span class="label bottom">
-											Offers</span>
-									</div>
-									<div class="metro-small gp">
-										<div class="icon-gp">
-											<iconify-icon icon="hugeicons:profile-02"></iconify-icon>
-										</div>
-										<span class="label bottom">
-											Profile </span>
-									</div>
-									<div class="metro-small fb">
-										<div class="icon-fb">
-											<iconify-icon icon="hugeicons:profile-02"></iconify-icon>
-										</div>
-										<span class="label bottom">
-											Reports</span>
-									</div>
-									<div class="metro-small cnn">
-										<div class="icon-cnn">
-											<iconify-icon icon="fluent:person-support-32-regular"></iconify-icon>
-										</div>
-										<span class="label bottom">
-											Support</span>
-									</div>
-									<div class="metro-big ps">
-										<div class="icon-ps">
-											<iconify-icon icon="solar:documents-minimalistic-linear"></iconify-icon>
-										</div>
-										<span class="label bottom">Documents</span>
-									</div>
-
-								</div>
-							</div>
-						</div> -->
+					<div class="col-xxl-12 col-lg-12 col-md-12 mb-md-4 mb-3">
+						
 
 						<div class="card card-border mb-0 ">
 							<div class="card-header card-header-action">
@@ -678,7 +578,7 @@
 							</div>
 						</div> -->
 
-						<div class="card card-border mb-0 ">
+						<!-- <div class="card card-border mb-0 ">
 							<div class="card-header card-header-action">
 								<h6>Returning Customers</h6>
 
@@ -710,19 +610,11 @@
 
 									
 
-									<div class="currentLoginTime">
-										<span class="d-block badge-status lh-1">
-											<span
-												class="badge bg-primary badge-indicator badge-indicator-nobdr d-inline-block"></span>
-											<span class="badge-label d-inline-block">Last Login Time</span>
-										</span>
-										<span class="d-block text-dark fs-5 fw-medium mb-0 mt-1"><span
-												id="lastLogin"></span></span>
-									</div>
+									
 							
 								</div>
 							</div>
-						</div>
+						</div> -->
 
 						
 					</div>
@@ -854,3 +746,42 @@
 </script>
 
 <!-- todo add js end -->
+
+
+<!-- last login time js start -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Function to fetch last login time from server or local storage
+        function fetchLastLoginTime() {
+            // Simulating fetching last login time from server
+            // In real-world scenario, replace this with actual fetching logic
+            return new Promise(function(resolve, reject) {
+                // Simulated AJAX call
+                setTimeout(function() {
+                    // Sample last login time (you should replace this with actual fetching logic)
+                    var currentTime = new Date();
+                    var lastLoginTime = formatTime(currentTime);
+                    resolve(lastLoginTime);
+                }, 1000); // Simulating delay of 1 second
+            });
+        }
+        // Format time
+        function formatTime(date) {
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+            return `${hours}:${minutes}:${seconds}`;
+        }
+        // Update last login time
+        function updateLastLoginTime() {
+            fetchLastLoginTime().then(function(lastLoginTime) {
+                document.getElementById("lastLogin").innerText = lastLoginTime;
+            });
+        }
+        // Initial update
+        updateLastLoginTime();
+        // Update last login time every 1 second
+        setInterval(updateLastLoginTime, 1000); // Update every 1 second
+    });
+</script>
+<!-- end -->

@@ -127,16 +127,15 @@
                                                                             <input type="text" id="myID"
                                                                                 value="86cvr79t2"
                                                                                 class="idDataBtn enqID_copyInput"
-                                                                                readonly><button
-                                                                                id="success_notification"
-                                                                                class="copyidBtn_custom"><span>
-                                                                                    <iconify-icon
-                                                                                        icon="solar:copy-line-duotone">
-                                                                                    </iconify-icon>
-                                                                                </span></button>
+                                                                                readonly>
                                                                             <div id="alertPlaceholder">
                                                                             </div>
 
+                                                                        </div>
+                                                                        <div class="Copyidbutton_wrap">
+                                                                            <button id="success_notification"
+                                                                                class="copyidBtn_custom">Copy
+                                                                                ID</button>
                                                                         </div>
                                                                     </div>
 
@@ -909,9 +908,66 @@
                                                                                         <div
                                                                                             class="selectedPropertyfor_tenant_section">
                                                                                             <h2>Selected Properties</h2>
+                                                                                            <div class="propertycountand_share">
                                                                                             <div id="selectedCount"
-                                                                                                class="mb-2"></div>
+                                                                                                class=""></div>
+                                                                                                <div class="sharepropertyWrap">
+                                                                                        <button id="doneBtn"
+                                                                                            type="button"
+                                                                                            class="btn btn-success hiddenelements dropdown-toggle no-caret"
+                                                                                            aria-expanded="false"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            href="#">Send Suggested
+                                                                                            Properties</button>
+                                                                                        <div
+                                                                                            class="dropdown-menu dropdown-menu-icon-text dropdown-menu-end spipeline-dropdown">
+                                                                                            <h6
+                                                                                                class="dropdown-header sharedropdown_intext">
+                                                                                                <iconify-icon icon="lineicons:share-1"></iconify-icon>  Share Via</h6>
+
+                                                                                            <div id="social_profile"
+                                                                                                class="propertyShare_icons">
+                                                                                                <ul
+                                                                                                        class="hk-list hk-list-sm">
+                                                                                                        <li>
+                                                                                                            <button
+                                                                                                                class="btn btn-icon btn-rounded btn-primary"><span
+                                                                                                                    class="icon"><i
+                                                                                                                        class="fab fa-behance"></i></span></button>
+                                                                                                        </li>
+                                                                                                        <li>
+                                                                                                            <button
+                                                                                                                class="btn btn-icon btn-rounded btn-warning"><span
+                                                                                                                    class="icon"><i
+                                                                                                                        class="fab fa-google-drive"></i></span></button>
+                                                                                                        </li>
+                                                                                                        <li>
+                                                                                                            <button
+                                                                                                                class="btn btn-icon btn-rounded btn-info"><span
+                                                                                                                    class="icon"><i
+                                                                                                                        class="fab fa-dropbox"></i></span></button>
+                                                                                                        </li>
+                                                                                                        <li>
+                                                                                                            <button
+                                                                                                                class="btn btn-icon btn-rounded btn-dark"><span
+                                                                                                                    class="icon"><i
+                                                                                                                        class="fab fa-github"></i></span></button>
+                                                                                                        </li>
+                                                                                                        <li>
+                                                                                                            <button
+                                                                                                                class="btn btn-icon btn-rounded btn-danger"><span
+                                                                                                                    class="icon"><i
+                                                                                                                        class="fab fa-google"></i></span></button>
+                                                                                                        </li>
+                                                                                                    </ul>
+                                                                                            </div>
+
                                                                                         </div>
+                                                                                        </div>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                        
 
                                                                                         <div
                                                                                             class="selected_property_mainContainer">
@@ -955,9 +1011,7 @@
                                                                                                 </tbody>
                                                                                             </table>
                                                                                         </div>
-                                                                                        <button id="doneBtn"
-                                                                                            type="button"
-                                                                                            class="btn btn-success hiddenelements">Done</button>
+
                                                                                     </div>
 
                                                                                 </div>
@@ -1059,56 +1113,67 @@
                                                                 </div>
 
                                                                 <div class="pastHistoryand_actibities">
-                                                                    <ul
-                                                                        class="nav nav-justified nav-light nav-tabs custominner_tbEntTabs nav-segmented-tabs active-theme mt-4">
-                                                                        <li class="nav-item">
-                                                                            <a class="nav-link active"
-                                                                                data-bs-toggle="tab"
-                                                                                href="#tab_checklist">
-                                                                                <span class="nav-link-text">Manage
-                                                                                    Status</span>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li class="nav-item">
-                                                                            <a class="nav-link" data-bs-toggle="tab"
-                                                                                href="#tab_comments">
-                                                                                <span
-                                                                                    class="nav-link-text badge-on-text">All
-                                                                                    Notes</span>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li class="nav-item">
-                                                                            <a class="nav-link" data-bs-toggle="tab"
-                                                                                href="#tab_files">
-                                                                                <span
-                                                                                    class="nav-link-text badge-on-text">History</span>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li class="nav-item">
-                                                                            <a class="nav-link" data-bs-toggle="tab"
-                                                                                href="#tab_activity">
-                                                                                <span
-                                                                                    class="nav-link-text badge-on-text">Activity</span>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li class="nav-item">
-                                                                            <a class="nav-link" data-bs-toggle="tab"
-                                                                                href="#Tenant_Questionnaire">
-                                                                                <span
-                                                                                    class="nav-link-text badge-on-text">
-                                                                                    Questionnaire</span>
-                                                                            </a>
-                                                                        </li>
+                                                                    <div
+                                                                        class="scrollTabContainerMAin enquirydetail_bottom_tabs">
+                                                                        <!-- <button class="scroll-btn prev" type="button">
+                                                    <iconify-icon icon="tabler:arrow-left"></iconify-icon>
+                                                </button> -->
+                                                                        <ul id="scrolableTabs"
+                                                                            class="nav nav-tabs nav-line nav-icon nav-light ">
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link active"
+                                                                                    data-bs-toggle="tab"
+                                                                                    href="#tab_checklist">
+                                                                                    <span class="nav-link-text">Manage
+                                                                                        Status</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" data-bs-toggle="tab"
+                                                                                    href="#tab_comments">
+                                                                                    <span
+                                                                                        class="nav-link-text badge-on-text">All
+                                                                                        Notes</span>
+                                                                                </a>
+                                                                            </li>
 
-                                                                        <li class="nav-item">
-                                                                            <a class="nav-link" data-bs-toggle="tab"
-                                                                                href="#viewhistorydetailed_tab">
-                                                                                <span
-                                                                                    class="nav-link-text badge-on-text">
-                                                                                    Appointment  History</span>
-                                                                            </a>
-                                                                        </li>
-                                                                    </ul>
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" data-bs-toggle="tab"
+                                                                                    href="#Tenant_Questionnaire">
+                                                                                    <span
+                                                                                        class="nav-link-text badge-on-text">
+                                                                                        Questionnaire</span>
+                                                                                </a>
+                                                                            </li>
+
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" data-bs-toggle="tab"
+                                                                                    href="#viewhistorydetailed_tab">
+                                                                                    <span
+                                                                                        class="nav-link-text badge-on-text">
+                                                                                        Appointment History</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" data-bs-toggle="tab"
+                                                                                    href="#tab_files">
+                                                                                    <span
+                                                                                        class="nav-link-text badge-on-text">History</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" data-bs-toggle="tab"
+                                                                                    href="#tab_activity">
+                                                                                    <span
+                                                                                        class="nav-link-text badge-on-text">Activity</span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <!-- <button class="scroll-btn next" type="button">
+                                                    <iconify-icon icon="tabler:arrow-right"></iconify-icon>
+                                                </button> -->
+                                                                    </div>
+
                                                                     <div class="tab-content enquiryTabsContent">
                                                                         <div class="tab-pane fade show active"
                                                                             id="tab_checklist">
@@ -1195,306 +1260,986 @@
 
                                                                         </div>
                                                                         <div class="tab-pane fade" id="tab_comments">
-                                                                            <div
-                                                                                class="d-flex align-items-center justify-content-between mb-2">
-                                                                                <h2> All Notes</h2>
-                                                                                <a href="#AddNote"
-                                                                                    class="btn btn-xs btn-icon btn-rounded btn-light"
-                                                                                    data-bs-toggle="tooltip"
-                                                                                    data-bs-placement="top" title=""
-                                                                                    data-bs-original-title="Add Note"><span
-                                                                                        class="icon"><span
-                                                                                            class="feather-icon"><svg
-                                                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                                                width="24" height="24"
-                                                                                                viewBox="0 0 24 24"
-                                                                                                fill="none"
-                                                                                                stroke="currentColor"
-                                                                                                stroke-width="2"
-                                                                                                stroke-linecap="round"
-                                                                                                stroke-linejoin="round"
-                                                                                                class="feather feather-plus">
-                                                                                                <line x1="12" y1="5"
-                                                                                                    x2="12" y2="19">
-                                                                                                </line>
-                                                                                                <line x1="5" y1="12"
-                                                                                                    x2="19" y2="12">
-                                                                                                </line>
-                                                                                            </svg></span></span></a>
-                                                                            </div>
-                                                                            <div class="comment-block">
 
+                                                                            <div class="row">
+
+                                                                                <ul
+                                                                                    class="nav applicant_activiti_inrTabs  nav-justified nav-light nav-tabs nav-segmented-tabs active-theme  ">
+
+                                                                                    <li class="nav-item">
+                                                                                        <a class="nav-link active"
+                                                                                            data-bs-toggle="tab"
+                                                                                            href="#General_Notes">
+                                                                                            <span
+                                                                                                class="nav-link-text badge-on-text">General
+                                                                                                Notes
+                                                                                            </span>
+                                                                                        </a>
+                                                                                    </li>
+
+                                                                                    <li class="nav-item">
+                                                                                        <a class="nav-link"
+                                                                                            data-bs-toggle="tab"
+                                                                                            href="#Medical_notes">
+                                                                                            <span
+                                                                                                class="nav-link-text badge-on-text">Medical
+                                                                                                Notes</span>
+                                                                                        </a>
+                                                                                    </li>
+
+                                                                                    <li class="nav-item">
+                                                                                        <a class="nav-link"
+                                                                                            data-bs-toggle="tab"
+                                                                                            href="#Emergency_notes">
+                                                                                            <span
+                                                                                                class="nav-link-text badge-on-text">Emergency
+                                                                                                Notes</span>
+                                                                                        </a>
+                                                                                    </li>
+
+                                                                                </ul>
                                                                                 <div
-                                                                                    class="card card-border note-block">
-                                                                                    <div class="card-body">
+                                                                                    class="tab-content tasktab_content notpMargin_tab  nobtPadding">
 
+                                                                                    <div class="tab-pane fade show active"
+                                                                                        id="General_Notes">
                                                                                         <div
-                                                                                            class="media align-items-center">
-                                                                                            <div class="media-head">
-                                                                                                <div
-                                                                                                    class="avatar avatar-xs avatar-rounded">
-                                                                                                    <img src="dist/img/newimages/users/userdummy.png"
-                                                                                                        alt="user"
-                                                                                                        class="avatar-img">
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="media-body">
-                                                                                                <div
-                                                                                                    class="noteAuthor_title">
-                                                                                                    Martin Luther</div>
-                                                                                                <div class="NoteTiming">
-                                                                                                    9 Apr, 20, 7:14 AM
-                                                                                                </div>
-                                                                                            </div>
+                                                                                            class="singlesectionTitleSM">
+                                                                                            <h2>General Notes</h2>
                                                                                         </div>
-                                                                                        <p class="NoteDescription">@<a
-                                                                                                href="#"
-                                                                                                class="fw-medium">Charlie
-                                                                                                Darvin</a> Tenant was
-                                                                                            very interested in the
-                                                                                            property, appreciating the
-                                                                                            layout and natural light.
-                                                                                            They need two bedrooms, a
-                                                                                            workspace, and a parking
-                                                                                            spot. They have a small dog
-                                                                                            and prefer to move in by the
-                                                                                            end of next month. Awaiting
-                                                                                            their decision by the end of
-                                                                                            the week.</p>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div
-                                                                                    class="card card-border note-block ">
-                                                                                    <div class="card-body">
 
-                                                                                        <div
-                                                                                            class="media align-items-center">
-                                                                                            <div class="media-head">
-                                                                                                <div
-                                                                                                    class="avatar avatar-xs avatar-rounded">
-                                                                                                    <img src="dist/img/newimages/users/userdummy.png"
-                                                                                                        alt="user"
-                                                                                                        class="avatar-img">
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="media-body">
-                                                                                                <div
-                                                                                                    class="noteAuthor_title">
-                                                                                                    Katherine Jones
-                                                                                                </div>
-                                                                                                <div class="NoteTiming">
-                                                                                                    8 Apr, 20, 5:30 PM
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <p class="NoteDescription">@<a
-                                                                                                href="#"
-                                                                                                class="fw-medium">Martin
-                                                                                                Luther</a> Viscosity
-                                                                                            ratio for "Appear view" link
-                                                                                            text is 3.7:1 which is less
-                                                                                        </p>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="separator separator-light">
-                                                                                </div>
+                                                                                        <div class="comment-block">
 
-                                                                                <div class="AddNoteEnuSection"
-                                                                                    id="AddNote">
-                                                                                    <div class="form-group">
-                                                                                        <label class="form-label">Note
-                                                                                            header</label>
-                                                                                        <input class="form-control"
-                                                                                            type="text" name=""
-                                                                                            placeholder="Add Title">
-                                                                                    </div>
+                                                                                            <div
+                                                                                                class="card card-border note-block">
+                                                                                                <div class="card-body">
 
-                                                                                    <div class="form-group">
-                                                                                        <label class="form-label">Add
-                                                                                            Note</label>
-                                                                                        <textarea class="form-control"
-                                                                                            rows="5"></textarea>
-                                                                                    </div>
-                                                                                    <div class="NoteAction_container">
-                                                                                        <div
-                                                                                            class="sendEnquiryNote_container">
-                                                                                            <div class="addto_todolist">
-                                                                                                <div class="form-check">
-                                                                                                    <input
-                                                                                                        type="checkbox"
-                                                                                                        class="form-check-input"
-                                                                                                        id="customCheckList-todo">
-                                                                                                    <label
-                                                                                                        class="form-check-label"
-                                                                                                        for="customCheckList-todo">
-                                                                                                        Add to ToDo List
-                                                                                                        <span
-                                                                                                            class="done-strikethrough"></span>
-                                                                                                    </label>
+                                                                                                    <div
+                                                                                                        class="media align-items-center notehead_withTag">
+                                                                                                        <div
+                                                                                                            class="notesSendBy">
+                                                                                                            <div
+                                                                                                                class="media-head">
+                                                                                                                <div
+                                                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                                        alt="user"
+                                                                                                                        class="avatar-img">
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div
+                                                                                                                class="media-body">
+                                                                                                                <div
+                                                                                                                    class="noteAuthor_title">
+                                                                                                                    Martin
+                                                                                                                    Luther
+                                                                                                                </div>
+                                                                                                                <div
+                                                                                                                    class="NoteTiming">
+                                                                                                                    9
+                                                                                                                    Apr,
+                                                                                                                    20,
+                                                                                                                    7:14
+                                                                                                                    AM
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="NoteTag">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:tag-line-duotone">
+                                                                                                            </iconify-icon>
+                                                                                                            Viewing
+                                                                                                            Note
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <p
+                                                                                                        class="NoteDescription">
+                                                                                                        @<a href="#"
+                                                                                                            class="fw-medium">Charlie
+                                                                                                            Darvin</a>
+                                                                                                        Tenant was
+                                                                                                        very interested
+                                                                                                        in the
+                                                                                                        property,
+                                                                                                        appreciating the
+                                                                                                        layout and
+                                                                                                        natural light.
+                                                                                                        They need two
+                                                                                                        bedrooms, a
+                                                                                                        workspace, and a
+                                                                                                        parking
+                                                                                                        spot. They have
+                                                                                                        a small dog
+                                                                                                        and prefer to
+                                                                                                        move in by the
+                                                                                                        end of next
+                                                                                                        month. Awaiting
+                                                                                                        their decision
+                                                                                                        by the end of
+                                                                                                        the week.</p>
                                                                                                 </div>
                                                                                             </div>
-                                                                                        </div>
-                                                                                        <div
-                                                                                            class="sendEnquiryNote_container setAlert_container">
-                                                                                            <div class="addto_todolist">
-                                                                                                <div class="form-check">
-                                                                                                    <input
-                                                                                                        type="checkbox"
-                                                                                                        class="form-check-input setAlertInput">
-                                                                                                    <label
-                                                                                                        class="form-check-label"
-                                                                                                        for="customCheckList-todo">
-                                                                                                        Set As Alert
-                                                                                                        <span
-                                                                                                            class="done-strikethrough"></span>
-                                                                                                    </label>
+                                                                                            <div
+                                                                                                class="card card-border note-block ">
+                                                                                                <div class="card-body">
+
+                                                                                                    <div
+                                                                                                        class="media align-items-center notehead_withTag">
+                                                                                                        <div
+                                                                                                            class="notesSendBy">
+                                                                                                            <div
+                                                                                                                class="media-head">
+                                                                                                                <div
+                                                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                                        alt="user"
+                                                                                                                        class="avatar-img">
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div
+                                                                                                                class="media-body">
+                                                                                                                <div
+                                                                                                                    class="noteAuthor_title">
+                                                                                                                    Katherine
+                                                                                                                    Jones
+                                                                                                                </div>
+                                                                                                                <div
+                                                                                                                    class="NoteTiming">
+                                                                                                                    8
+                                                                                                                    Apr,
+                                                                                                                    20,
+                                                                                                                    5:30
+                                                                                                                    PM
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+
+                                                                                                        <div
+                                                                                                            class="NoteTag">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:tag-line-duotone">
+                                                                                                            </iconify-icon>
+                                                                                                            Viewing
+                                                                                                            Note
+                                                                                                        </div>
+
+                                                                                                    </div>
+                                                                                                    <p
+                                                                                                        class="NoteDescription">
+                                                                                                        @<a href="#"
+                                                                                                            class="fw-medium">Martin
+                                                                                                            Luther</a>
+                                                                                                        Viscosity
+                                                                                                        ratio for
+                                                                                                        "Appear view"
+                                                                                                        link
+                                                                                                        text is 3.7:1
+                                                                                                        which is less
+                                                                                                    </p>
                                                                                                 </div>
                                                                                             </div>
-                                                                                        </div>
-                                                                                        <div
-                                                                                            class="form-group inpicon_without_label CsMl-10">
-                                                                                            <input
-                                                                                                class="form-control customdataPicker"
-                                                                                                type="text" name=""
-                                                                                                value=""
-                                                                                                placeholder="Due Date" />
-                                                                                            <iconify-icon
-                                                                                                icon="ion:calendar-outline"
-                                                                                                class="dateinput_icon">
-                                                                                            </iconify-icon>
-                                                                                        </div>
-                                                                                    </div>
+                                                                                            <div
+                                                                                                class="separator separator-light">
+                                                                                            </div>
 
-                                                                                    <div class="Showing_departmentand_users"
-                                                                                        style="display: none;">
-                                                                                        <div class="row">
-                                                                                            <div class="col-md-6">
+                                                                                            <div class="AddNoteEnuSection"
+                                                                                                id="AddNote1">
                                                                                                 <div class="form-group">
                                                                                                     <label
-                                                                                                        class="form-label">Select
-                                                                                                        Department</label>
-                                                                                                    <select
-                                                                                                        class="form-control select2"
-                                                                                                        id="selectDepartment">
-                                                                                                        <option disabled
-                                                                                                            selected
-                                                                                                            value="">
-                                                                                                            Please
-                                                                                                            Select...
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Account Department">
-                                                                                                            Account
-                                                                                                            Department
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="HR Department">
-                                                                                                            HR
-                                                                                                            Department
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Contract Department">
-                                                                                                            Contract
-                                                                                                            Department
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Lettings Department">
-                                                                                                            Lettings
-                                                                                                            Department
-                                                                                                        </option>
-                                                                                                    </select>
+                                                                                                        class="form-label">Note
+                                                                                                        header</label>
+                                                                                                    <input
+                                                                                                        class="form-control note-title"
+                                                                                                        type="text"
+                                                                                                        placeholder="Add Title">
                                                                                                 </div>
-                                                                                            </div>
-                                                                                            <div class="col-md-6">
+
                                                                                                 <div class="form-group">
                                                                                                     <label
-                                                                                                        class="form-label">Select
-                                                                                                        Users</label>
-                                                                                                    <select
-                                                                                                        class="form-control select2"
-                                                                                                        id="selectUser">
-                                                                                                        <option disabled
-                                                                                                            selected
-                                                                                                            value="">
-                                                                                                            Please
-                                                                                                            Select...
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="John Doe">
-                                                                                                            John Doe
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Jane Smith">
-                                                                                                            Jane Smith
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Alice Johnson">
-                                                                                                            Alice
-                                                                                                            Johnson
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Robert Brown">
-                                                                                                            Robert Brown
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Michael Williams">
-                                                                                                            Michael
-                                                                                                            Williams
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Emily Davis">
-                                                                                                            Emily Davis
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="David Wilson">
-                                                                                                            David Wilson
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Sophia Martinez">
-                                                                                                            Sophia
-                                                                                                            Martinez
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="James Anderson">
-                                                                                                            James
-                                                                                                            Anderson
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Olivia Taylor">
-                                                                                                            Olivia
-                                                                                                            Taylor
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Chris Thomas">
-                                                                                                            Chris Thomas
-                                                                                                        </option>
-                                                                                                        <option
-                                                                                                            value="Emma Harris">
-                                                                                                            Emma Harris
-                                                                                                        </option>
-                                                                                                    </select>
+                                                                                                        class="form-label">Add
+                                                                                                        Comment</label>
+                                                                                                    <textarea
+                                                                                                        class="form-control note-comment"
+                                                                                                        rows="5"></textarea>
+                                                                                                </div>
+
+                                                                                                <div
+                                                                                                    class="NoteAction_container">
+                                                                                                    <div
+                                                                                                        class="sendEnquiryNote_container">
+                                                                                                        <div
+                                                                                                            class="addto_todolist">
+                                                                                                            <div
+                                                                                                                class="form-check">
+                                                                                                                <input
+                                                                                                                    type="checkbox"
+                                                                                                                    class="form-check-input customCheckList-todo">
+                                                                                                                <label
+                                                                                                                    class="form-check-label">Add
+                                                                                                                    to
+                                                                                                                    ToDo
+                                                                                                                    List
+                                                                                                                    <span
+                                                                                                                        class="done-strikethrough"></span></label>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="sendEnquiryNote_container setAlert_container">
+                                                                                                        <div
+                                                                                                            class="addto_todolist">
+                                                                                                            <div
+                                                                                                                class="form-check">
+                                                                                                                <input
+                                                                                                                    type="checkbox"
+                                                                                                                    class="form-check-input setAlertInput">
+                                                                                                                <label
+                                                                                                                    class="form-check-label">Set
+                                                                                                                    As
+                                                                                                                    Alert
+                                                                                                                    <span
+                                                                                                                        class="done-strikethrough"></span></label>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+
+                                                                                                </div>
+
+                                                                                                <div class="Showing_departmentand_users"
+                                                                                                    style="display: none;">
+                                                                                                    <div class="row">
+                                                                                                        <div
+                                                                                                            class="col-md-4">
+                                                                                                            <div
+                                                                                                                class="form-group">
+                                                                                                                <label
+                                                                                                                    class="form-label">Select
+                                                                                                                    Department</label>
+                                                                                                                <select
+                                                                                                                    class="form-control select2 select-department">
+                                                                                                                    <option
+                                                                                                                        disabled
+                                                                                                                        selected
+                                                                                                                        value="">
+                                                                                                                        Please
+                                                                                                                        Select...
+                                                                                                                    </option>
+                                                                                                                    <option
+                                                                                                                        value="Account Department">
+                                                                                                                        Account
+                                                                                                                        Department
+                                                                                                                    </option>
+                                                                                                                    <option
+                                                                                                                        value="HR Department">
+                                                                                                                        HR
+                                                                                                                        Department
+                                                                                                                    </option>
+                                                                                                                    <option
+                                                                                                                        value="Contract Department">
+                                                                                                                        Contract
+                                                                                                                        Department
+                                                                                                                    </option>
+                                                                                                                    <option
+                                                                                                                        value="Lettings Department">
+                                                                                                                        Lettings
+                                                                                                                        Department
+                                                                                                                    </option>
+                                                                                                                </select>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="col-md-4">
+                                                                                                            <div
+                                                                                                                class="form-group">
+                                                                                                                <label
+                                                                                                                    class="form-label">Select
+                                                                                                                    Users</label>
+                                                                                                                <select
+                                                                                                                    class="form-control select2 select-user">
+                                                                                                                    <option
+                                                                                                                        disabled
+                                                                                                                        selected
+                                                                                                                        value="">
+                                                                                                                        Please
+                                                                                                                        Select...
+                                                                                                                    </option>
+                                                                                                                    <option
+                                                                                                                        value="John Doe">
+                                                                                                                        John
+                                                                                                                        Doe
+                                                                                                                    </option>
+                                                                                                                    <option
+                                                                                                                        value="Jane Smith">
+                                                                                                                        Jane
+                                                                                                                        Smith
+                                                                                                                    </option>
+                                                                                                                    <option
+                                                                                                                        value="Alice Johnson">
+                                                                                                                        Alice
+                                                                                                                        Johnson
+                                                                                                                    </option>
+                                                                                                                </select>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="col-lg-4">
+                                                                                                            <div
+                                                                                                                class="form-group">
+                                                                                                                <label
+                                                                                                                    class="form-label">Select
+                                                                                                                    Due
+                                                                                                                    Date</label>
+                                                                                                                <input
+                                                                                                                    class="form-control customdataPicker"
+                                                                                                                    type="text"
+                                                                                                                    name=""
+                                                                                                                    value=""
+                                                                                                                    placeholder="Due Date" />
+                                                                                                                <iconify-icon
+                                                                                                                    icon="ion:calendar-outline"
+                                                                                                                    class="dateinput_icon">
+                                                                                                                </iconify-icon>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="submitnote_container">
+                                                                                                    <button
+                                                                                                        type="button"
+                                                                                                        class="sendBtn_common_main addenun_noteBtn send-note">Save</button>
                                                                                                 </div>
                                                                                             </div>
-                                                                                        </div>
-                                                                                    </div>
 
-                                                                                    <div class="submitnote_container">
-                                                                                        <button id="sendBtn2"
-                                                                                            type="button"
-                                                                                            class="sendBtn_common_main addenun_noteBtn">
-                                                                                            <iconify-icon
-                                                                                                icon="mynaui:send">
-                                                                                            </iconify-icon>
-                                                                                            Send Note
-                                                                                        </button>
-                                                                                    </div>
-                                                                                </div>
-
-                                                                                <!-- <div class="AssignTasks_container">
+                                                                                            <!-- <div class="AssignTasks_container">
                                                                                     <h2>Add Task</h2>
                                                                                 </div> -->
 
+                                                                                        </div>
+
+                                                                                    </div>
+
+                                                                                    <div class="tab-pane fade"
+                                                                                        id="Medical_notes">
+
+                                                                                        <div
+                                                                                            class="singlesectionTitleSM">
+                                                                                            <h2>Medical Notes</h2>
+                                                                                        </div>
+                                                                                        <div class="task-detail-body ">
+                                                                                            <div class="row">
+
+                                                                                                <div
+                                                                                                    class="contractNotes">
+
+                                                                                                    <div
+                                                                                                        class="comment-block">
+
+                                                                                                        <div
+                                                                                                            class="card card-border note-block">
+                                                                                                            <div
+                                                                                                                class="card-body">
+
+                                                                                                                <div
+                                                                                                                    class="media align-items-center">
+                                                                                                                    <div
+                                                                                                                        class="media-head">
+                                                                                                                        <div
+                                                                                                                            class="avatar avatar-xs avatar-rounded">
+                                                                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                                                alt="user"
+                                                                                                                                class="avatar-img">
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div
+                                                                                                                        class="media-body">
+                                                                                                                        <div
+                                                                                                                            class="noteAuthor_title">
+                                                                                                                            Martin
+                                                                                                                            Luther
+                                                                                                                        </div>
+                                                                                                                        <div
+                                                                                                                            class="NoteTiming">
+                                                                                                                            9
+                                                                                                                            Apr,
+                                                                                                                            20,
+                                                                                                                            7:14
+                                                                                                                            AM
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <p
+                                                                                                                    class="NoteDescription">
+                                                                                                                    @<a href="#"
+                                                                                                                        class="fw-medium">Charlie
+                                                                                                                        Darvin</a>
+                                                                                                                    Tenant
+                                                                                                                    was
+                                                                                                                    very
+                                                                                                                    interested
+                                                                                                                    in
+                                                                                                                    the
+                                                                                                                    property,
+                                                                                                                    appreciating
+                                                                                                                    the
+                                                                                                                    layout
+                                                                                                                    and
+                                                                                                                    natural
+                                                                                                                    light.
+                                                                                                                    They
+                                                                                                                    need
+                                                                                                                    two
+                                                                                                                    bedrooms,
+                                                                                                                    a
+                                                                                                                    workspace,
+                                                                                                                    and
+                                                                                                                    a
+                                                                                                                    parking
+                                                                                                                    spot.
+                                                                                                                    They
+                                                                                                                    have
+                                                                                                                    a
+                                                                                                                    small
+                                                                                                                    dog
+                                                                                                                    and
+                                                                                                                    prefer
+                                                                                                                    to
+                                                                                                                    move
+                                                                                                                    in
+                                                                                                                    by
+                                                                                                                    the
+                                                                                                                    end
+                                                                                                                    of
+                                                                                                                    next
+                                                                                                                    month.
+                                                                                                                    Awaiting
+                                                                                                                    their
+                                                                                                                    decision
+                                                                                                                    by
+                                                                                                                    the
+                                                                                                                    end
+                                                                                                                    of
+                                                                                                                    the
+                                                                                                                    week.
+                                                                                                                </p>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="card card-border note-block ">
+                                                                                                            <div
+                                                                                                                class="card-body">
+
+                                                                                                                <div
+                                                                                                                    class="media align-items-center">
+                                                                                                                    <div
+                                                                                                                        class="media-head">
+                                                                                                                        <div
+                                                                                                                            class="avatar avatar-xs avatar-rounded">
+                                                                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                                                alt="user"
+                                                                                                                                class="avatar-img">
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div
+                                                                                                                        class="media-body">
+                                                                                                                        <div
+                                                                                                                            class="noteAuthor_title">
+                                                                                                                            Katherine
+                                                                                                                            Jones
+                                                                                                                        </div>
+                                                                                                                        <div
+                                                                                                                            class="NoteTiming">
+                                                                                                                            8
+                                                                                                                            Apr,
+                                                                                                                            20,
+                                                                                                                            5:30
+                                                                                                                            PM
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <p
+                                                                                                                    class="NoteDescription">
+                                                                                                                    @<a href="#"
+                                                                                                                        class="fw-medium">Martin
+                                                                                                                        Luther</a>
+                                                                                                                    Viscosity
+                                                                                                                    ratio
+                                                                                                                    for
+                                                                                                                    "Appear
+                                                                                                                    view"
+                                                                                                                    link
+                                                                                                                    text
+                                                                                                                    is
+                                                                                                                    3.7:1
+                                                                                                                    which
+                                                                                                                    is
+                                                                                                                    less
+                                                                                                                </p>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="separator separator-light">
+                                                                                                        </div>
+
+                                                                                                        <div class="AddNoteEnuSection"
+                                                                                                            id="AddNote">
+                                                                                                            <div
+                                                                                                                class="form-group">
+                                                                                                                <label
+                                                                                                                    class="form-label">Note
+                                                                                                                    header</label>
+                                                                                                                <input
+                                                                                                                    class="form-control"
+                                                                                                                    type="text"
+                                                                                                                    name=""
+                                                                                                                    placeholder="Add Title">
+                                                                                                            </div>
+
+                                                                                                            <div
+                                                                                                                class="form-group">
+                                                                                                                <label
+                                                                                                                    class="form-label">Add
+                                                                                                                    Notes</label>
+                                                                                                                <textarea
+                                                                                                                    class="form-control"
+                                                                                                                    rows="5"></textarea>
+                                                                                                            </div>
+                                                                                                            <div
+                                                                                                                class="NoteAction_container">
+                                                                                                                <div
+                                                                                                                    class="sendEnquiryNote_container">
+                                                                                                                    <div
+                                                                                                                        class="addto_todolist">
+                                                                                                                        <div
+                                                                                                                            class="form-check">
+                                                                                                                            <input
+                                                                                                                                type="checkbox"
+                                                                                                                                class="form-check-input customCheckList-todo"
+                                                                                                                                id="customCheckList-todo">
+                                                                                                                            <label
+                                                                                                                                class="form-check-label"
+                                                                                                                                for="customCheckList-todo2">
+                                                                                                                                Add
+                                                                                                                                to
+                                                                                                                                ToDo
+                                                                                                                                List
+                                                                                                                                <span
+                                                                                                                                    class="done-strikethrough"></span>
+                                                                                                                            </label>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <!-- <div
+                                                                            class="sendEnquiryNote_container setAlert_container">
+                                                                            <div class="addto_todolist">
+                                                                                <div class="form-check">
+                                                                                    <input type="checkbox"
+                                                                                        class="form-check-input setAlertInput">
+                                                                                    <label class="form-check-label"
+                                                                                        for="customCheckList-todo">
+                                                                                        Set As Alert
+                                                                                        <span
+                                                                                            class="done-strikethrough"></span>
+                                                                                    </label>
+                                                                                </div>
                                                                             </div>
+                                                                        </div> -->
+
+                                                                                                            </div>
+
+                                                                                                            <div class="Showing_departmentand_users"
+                                                                                                                style="display: none;">
+                                                                                                                <div
+                                                                                                                    class="row">
+                                                                                                                    <div
+                                                                                                                        class="col-md-4">
+                                                                                                                        <div
+                                                                                                                            class="form-group">
+                                                                                                                            <label
+                                                                                                                                class="form-label">Select
+                                                                                                                                Department</label>
+                                                                                                                            <select
+                                                                                                                                class="form-control select2"
+                                                                                                                                id="selectDepartment2">
+                                                                                                                                <option
+                                                                                                                                    disabled
+                                                                                                                                    selected
+                                                                                                                                    value="">
+                                                                                                                                    Please
+                                                                                                                                    Select...
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Account Department">
+                                                                                                                                    Account
+                                                                                                                                    Department
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="HR Department">
+                                                                                                                                    HR
+                                                                                                                                    Department
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Contract Department">
+                                                                                                                                    Contract
+                                                                                                                                    Department
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Lettings Department">
+                                                                                                                                    Lettings
+                                                                                                                                    Department
+                                                                                                                                </option>
+                                                                                                                            </select>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div
+                                                                                                                        class="col-md-4">
+                                                                                                                        <div
+                                                                                                                            class="form-group">
+                                                                                                                            <label
+                                                                                                                                class="form-label">Select
+                                                                                                                                Users</label>
+                                                                                                                            <select
+                                                                                                                                class="form-control select2"
+                                                                                                                                id="selectUser2">
+                                                                                                                                <option
+                                                                                                                                    disabled
+                                                                                                                                    selected
+                                                                                                                                    value="">
+                                                                                                                                    Please
+                                                                                                                                    Select...
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="John Doe">
+                                                                                                                                    John
+                                                                                                                                    Doe
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Jane Smith">
+                                                                                                                                    Jane
+                                                                                                                                    Smith
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Alice Johnson">
+                                                                                                                                    Alice
+                                                                                                                                    Johnson
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Robert Brown">
+                                                                                                                                    Robert
+                                                                                                                                    Brown
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Michael Williams">
+                                                                                                                                    Michael
+                                                                                                                                    Williams
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Emily Davis">
+                                                                                                                                    Emily
+                                                                                                                                    Davis
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="David Wilson">
+                                                                                                                                    David
+                                                                                                                                    Wilson
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Sophia Martinez">
+                                                                                                                                    Sophia
+                                                                                                                                    Martinez
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="James Anderson">
+                                                                                                                                    James
+                                                                                                                                    Anderson
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Olivia Taylor">
+                                                                                                                                    Olivia
+                                                                                                                                    Taylor
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Chris Thomas">
+                                                                                                                                    Chris
+                                                                                                                                    Thomas
+                                                                                                                                </option>
+                                                                                                                                <option
+                                                                                                                                    value="Emma Harris">
+                                                                                                                                    Emma
+                                                                                                                                    Harris
+                                                                                                                                </option>
+                                                                                                                            </select>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div
+                                                                                                                        class="col-lg-4">
+                                                                                                                        <div
+                                                                                                                            class="form-group">
+                                                                                                                            <label
+                                                                                                                                class="form-label">Select
+                                                                                                                                Due
+                                                                                                                                Date</label>
+                                                                                                                            <input
+                                                                                                                                class="form-control customdataPicker"
+                                                                                                                                type="text"
+                                                                                                                                name=""
+                                                                                                                                value=""
+                                                                                                                                placeholder="Due Date" />
+                                                                                                                            <iconify-icon
+                                                                                                                                icon="ion:calendar-outline"
+                                                                                                                                class="dateinput_icon">
+                                                                                                                            </iconify-icon>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div
+                                                                                                                class="submitnote_container">
+                                                                                                                <button
+                                                                                                                    type="button"
+                                                                                                                    class="sendBtn_common_main addenun_noteBtn send-note">Save</button>
+                                                                                                            </div>
+                                                                                                        </div>
+
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="tab-pane fade"
+                                                                                        id="Emergency_notes">
+                                                                                        <div
+                                                                                            class="singlesectionTitleSM">
+                                                                                            <h2>Emergency Notes</h2>
+                                                                                        </div>
+                                                                                        <div class="AddNoteEnuSection">
+                                                                                            <div class="form-group">
+                                                                                                <label
+                                                                                                    class="form-label">Note
+                                                                                                    header</label>
+                                                                                                <input
+                                                                                                    class="form-control"
+                                                                                                    type="text" name=""
+                                                                                                    placeholder="Add Title">
+                                                                                            </div>
+
+                                                                                            <div class="form-group">
+                                                                                                <label
+                                                                                                    class="form-label">Add
+                                                                                                    Comment</label>
+                                                                                                <textarea
+                                                                                                    class="form-control"
+                                                                                                    rows="5"></textarea>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="NoteAction_container">
+                                                                                                <div
+                                                                                                    class="sendEnquiryNote_container">
+                                                                                                    <div
+                                                                                                        class="addto_todolist">
+                                                                                                        <div
+                                                                                                            class="form-check">
+                                                                                                            <input
+                                                                                                                type="checkbox"
+                                                                                                                class="form-check-input customCheckList-todo"
+                                                                                                                id="customCheckList-todo">
+                                                                                                            <label
+                                                                                                                class="form-check-label"
+                                                                                                                for="customCheckList-todo">
+                                                                                                                Add to
+                                                                                                                ToDo
+                                                                                                                List
+                                                                                                                <span
+                                                                                                                    class="done-strikethrough"></span>
+                                                                                                            </label>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="sendEnquiryNote_container setAlert_container">
+                                                                                                    <div
+                                                                                                        class="addto_todolist">
+                                                                                                        <div
+                                                                                                            class="form-check">
+                                                                                                            <input
+                                                                                                                type="checkbox"
+                                                                                                                class="form-check-input setAlertInput">
+                                                                                                            <label
+                                                                                                                class="form-check-label"
+                                                                                                                for="customCheckList-todo">
+                                                                                                                Set As
+                                                                                                                Alert
+                                                                                                                <span
+                                                                                                                    class="done-strikethrough"></span>
+                                                                                                            </label>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                            </div>
+
+                                                                                            <div class="Showing_departmentand_users"
+                                                                                                style="display: none;">
+                                                                                                <div class="row">
+                                                                                                    <div
+                                                                                                        class="col-md-4">
+                                                                                                        <div
+                                                                                                            class="form-group">
+                                                                                                            <label
+                                                                                                                class="form-label">Select
+                                                                                                                Department</label>
+                                                                                                            <select
+                                                                                                                class="form-control select2"
+                                                                                                                id="selectDepartment">
+                                                                                                                <option
+                                                                                                                    disabled
+                                                                                                                    selected
+                                                                                                                    value="">
+                                                                                                                    Please
+                                                                                                                    Select...
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Account Department">
+                                                                                                                    Account
+                                                                                                                    Department
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="HR Department">
+                                                                                                                    HR
+                                                                                                                    Department
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Contract Department">
+                                                                                                                    Contract
+                                                                                                                    Department
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Lettings Department">
+                                                                                                                    Lettings
+                                                                                                                    Department
+                                                                                                                </option>
+                                                                                                            </select>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="col-md-4">
+                                                                                                        <div
+                                                                                                            class="form-group">
+                                                                                                            <label
+                                                                                                                class="form-label">Select
+                                                                                                                Users</label>
+                                                                                                            <select
+                                                                                                                class="form-control select2"
+                                                                                                                id="selectUser">
+                                                                                                                <option
+                                                                                                                    disabled
+                                                                                                                    selected
+                                                                                                                    value="">
+                                                                                                                    Please
+                                                                                                                    Select...
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="John Doe">
+                                                                                                                    John
+                                                                                                                    Doe
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Jane Smith">
+                                                                                                                    Jane
+                                                                                                                    Smith
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Alice Johnson">
+                                                                                                                    Alice
+                                                                                                                    Johnson
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Robert Brown">
+                                                                                                                    Robert
+                                                                                                                    Brown
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Michael Williams">
+                                                                                                                    Michael
+                                                                                                                    Williams
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Emily Davis">
+                                                                                                                    Emily
+                                                                                                                    Davis
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="David Wilson">
+                                                                                                                    David
+                                                                                                                    Wilson
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Sophia Martinez">
+                                                                                                                    Sophia
+                                                                                                                    Martinez
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="James Anderson">
+                                                                                                                    James
+                                                                                                                    Anderson
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Olivia Taylor">
+                                                                                                                    Olivia
+                                                                                                                    Taylor
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Chris Thomas">
+                                                                                                                    Chris
+                                                                                                                    Thomas
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    value="Emma Harris">
+                                                                                                                    Emma
+                                                                                                                    Harris
+                                                                                                                </option>
+                                                                                                            </select>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="col-lg-4">
+                                                                                                        <div
+                                                                                                            class="form-group">
+                                                                                                            <label
+                                                                                                                class="form-label">Select
+                                                                                                                Due
+                                                                                                                Date</label>
+                                                                                                            <input
+                                                                                                                class="form-control customdataPicker"
+                                                                                                                type="text"
+                                                                                                                name=""
+                                                                                                                value=""
+                                                                                                                placeholder="Due Date" />
+                                                                                                            <iconify-icon
+                                                                                                                icon="ion:calendar-outline"
+                                                                                                                class="dateinput_icon">
+                                                                                                            </iconify-icon>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="submitnote_container">
+                                                                                            <button type="button"
+                                                                                                class="sendBtn_common_main addenun_noteBtn send-note">Save</button>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+
                                                                         </div>
                                                                         <div class="tab-pane fade" id="tab_files">
                                                                             <div
@@ -2474,89 +3219,86 @@
                                                                                 <h2> Appointment History</h2>
                                                                             </div>
                                                                             <table class="table  w-100">
-                                                                                        <thead>
-                                                                                            <tr>
-                                                                                                <th><input
-                                                                                                        type="checkbox"
-                                                                                                        class="form-check-input"
-                                                                                                        readonly checked
-                                                                                                        disabled></th>
-                                                                                                <th>Property Name</th>
-                                                                                                <th>Date & Time</th>
-                                                                                                <th>Status</th>
-                                                                                            </tr>
-                                                                                        </thead>
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td><input
-                                                                                                        type="checkbox"
-                                                                                                        class=" form-check-input"
-                                                                                                        readonly checked
-                                                                                                        disabled></td>
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th><input type="checkbox"
+                                                                                                class="form-check-input"
+                                                                                                readonly checked
+                                                                                                disabled></th>
+                                                                                        <th>Property Name</th>
+                                                                                        <th>Date & Time</th>
+                                                                                        <th>Status</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td><input type="checkbox"
+                                                                                                class=" form-check-input"
+                                                                                                readonly checked
+                                                                                                disabled></td>
 
-                                                                                                <td>
-                                                                                                    <a
-                                                                                                        href="property-details.php">
-                                                                                                        <div
-                                                                                                            class="LongMesage_container">
-                                                                                                            <input
-                                                                                                                class="refuge-collection-input tableLongMessage_Input"
-                                                                                                                value="Attention all tenants: The maintenance crew will be performing routine inspections tomorrow. Please ensure that your units are accessible. Thank you for your cooperation."></input>
-                                                                                                            <button
-                                                                                                                class="view-btn tablemessageview_btn"
-                                                                                                                type="button"
-                                                                                                                data-bs-toggle="tooltip"
-                                                                                                                data-bs-placement="top"
-                                                                                                                aria-label="Click to view"
-                                                                                                                data-bs-original-title="Click to view Full Message">
-                                                                                                                <i
-                                                                                                                    class="bi bi-eye"></i>
-                                                                                                            </button>
-                                                                                                        </div>
-                                                                                                    </a>
-                                                                                                </td>
-                                                                                                <td>05/22/2024 / 5:22 PM
-                                                                                                </td>
-                                                                                                <td><span
-                                                                                                        class="badge bg-success">Viewed</span>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td><input
-                                                                                                        type="checkbox"
-                                                                                                        class=" form-check-input"
-                                                                                                        readonly checked
-                                                                                                        disabled></td>
-                                                                                                <td>
-                                                                                                    <a
-                                                                                                        href="property-details.php">
-                                                                                                        <div
-                                                                                                            class="LongMesage_container">
-                                                                                                            <input
-                                                                                                                class="refuge-collection-input tableLongMessage_Input"
-                                                                                                                value="3 and 3A - Apperley Road, Stocksfield, Northumerland"></input>
-                                                                                                            <button
-                                                                                                                class="view-btn tablemessageview_btn"
-                                                                                                                type="button"
-                                                                                                                data-bs-toggle="tooltip"
-                                                                                                                data-bs-placement="top"
-                                                                                                                aria-label="Click to view"
-                                                                                                                data-bs-original-title="Click to view Full Message">
-                                                                                                                <i
-                                                                                                                    class="bi bi-eye"></i>
-                                                                                                            </button>
-                                                                                                        </div>
-                                                                                                    </a>
-                                                                                                </td>
-                                                                                                <td>05/22/2024 / 5:22 PM
-                                                                                                </td>
-                                                                                                <td><span
-                                                                                                        class="badge bg-success">Viewed</span>
-                                                                                                </td>
-                                                                                            </tr>
+                                                                                        <td>
+                                                                                            <a
+                                                                                                href="property-details.php">
+                                                                                                <div
+                                                                                                    class="LongMesage_container">
+                                                                                                    <input
+                                                                                                        class="refuge-collection-input tableLongMessage_Input"
+                                                                                                        value="Attention all tenants: The maintenance crew will be performing routine inspections tomorrow. Please ensure that your units are accessible. Thank you for your cooperation."></input>
+                                                                                                    <button
+                                                                                                        class="view-btn tablemessageview_btn"
+                                                                                                        type="button"
+                                                                                                        data-bs-toggle="tooltip"
+                                                                                                        data-bs-placement="top"
+                                                                                                        aria-label="Click to view"
+                                                                                                        data-bs-original-title="Click to view Full Message">
+                                                                                                        <i
+                                                                                                            class="bi bi-eye"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </a>
+                                                                                        </td>
+                                                                                        <td>05/22/2024 / 5:22 PM
+                                                                                        </td>
+                                                                                        <td><span
+                                                                                                class="badge bg-success">Viewed</span>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><input type="checkbox"
+                                                                                                class=" form-check-input"
+                                                                                                readonly checked
+                                                                                                disabled></td>
+                                                                                        <td>
+                                                                                            <a
+                                                                                                href="property-details.php">
+                                                                                                <div
+                                                                                                    class="LongMesage_container">
+                                                                                                    <input
+                                                                                                        class="refuge-collection-input tableLongMessage_Input"
+                                                                                                        value="3 and 3A - Apperley Road, Stocksfield, Northumerland"></input>
+                                                                                                    <button
+                                                                                                        class="view-btn tablemessageview_btn"
+                                                                                                        type="button"
+                                                                                                        data-bs-toggle="tooltip"
+                                                                                                        data-bs-placement="top"
+                                                                                                        aria-label="Click to view"
+                                                                                                        data-bs-original-title="Click to view Full Message">
+                                                                                                        <i
+                                                                                                            class="bi bi-eye"></i>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                            </a>
+                                                                                        </td>
+                                                                                        <td>05/22/2024 / 5:22 PM
+                                                                                        </td>
+                                                                                        <td><span
+                                                                                                class="badge bg-success">Viewed</span>
+                                                                                        </td>
+                                                                                    </tr>
 
-                                                                                        </tbody>
-                                                                                    </table>
+                                                                                </tbody>
+                                                                            </table>
 
                                                                         </div>
 
@@ -2848,202 +3590,225 @@
     <div class="Canvas_ct_divider"></div>
     <form class="" action="Enquiry-details.php" method="POST">
         <div class="offcanvas-body">
-            
 
             <div class="addingForm_Container_fullwidth ">
-          
+
                 <div class="formstartcontainer">
-                <div class="row">
-    <div class="col-lg-12 calendarToggleWrap">
-        <button id="toggleCalendar" type="button" class="btn btn-primary"><iconify-icon icon="solar:minimize-broken"></iconify-icon> Minimize Calendar</button>
-    </div>
-</div>
+                    <div class="row">
+                        <div class="col-lg-12 calendarToggleWrap">
+                            <button id="toggleCalendar" type="button" class="btn btn-primary">
+                                <iconify-icon icon="solar:minimize-broken"></iconify-icon> Minimize Calendar
+                            </button>
+                        </div>
+                    </div>
                     <div class="row calendar-row">
                         <div class="col-lg-12">
-                        <div class="calendarapp-wrap">
+                            <div class="calendarapp-wrap">
 
-<div class="calendarapp-content">
-    <div id="defaultshowcalendar"></div>
-</div>
+                                <div class="calendarapp-content">
+                                    <div id="defaultshowcalendar"></div>
+                                </div>
 
-</div>
+                            </div>
                         </div>
-                        
-                        
+
                     </div>
 
                     <div class="schedulViewing_wrapss">
                         <div class="row">
-                        <div class="col-lg-6">
-                            <div class="leftViewSchedule_frmDetails">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label class="form-label">Viewing Date</label>
-                                            <input class="form-control customdataPicker flatpickr-input" type="text"
-                                                name="" placeholder="Select Date" readonly="readonly">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label class="form-label">Viewing Start Time</label>
-                                            <div class="form-group form-icon bookingtimeinp">
-                                                <input type="text" name="time" value=""
-                                                    class="form-control time__pickers" id="timepicker"
-                                                    placeholder="Select Time" required="" readonly="">
+                            <div class="col-lg-6">
+                                <div class="leftViewSchedule_frmDetails">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="form-label">Viewing Date</label>
+                                                <input class="form-control customdataPicker flatpickr-input" type="text"
+                                                    name="" placeholder="Select Date" readonly="readonly">
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label class="form-label">Viewing End Time</label>
-                                            <div class="form-group form-icon bookingtimeinp">
-                                                <input type="text" name="time" value=""
-                                                    class="form-control time__pickers" id="timepicker"
-                                                    placeholder="Select Time" required="" readonly="">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12">
-                                        <div class="legendColor_information form-group">
-                                            <label class="form-label">Property Seperation By: </label>
-                                            <div class="colorlegendsitems">
-                                                <div class="legend-item">
-                                                    <div class="legend-color suggested"></div>
-                                                    <h1>Suggested Properties</h1>
-                                                </div>
-                                                <div class="legend-item">
-                                                    <div class="legend-color viewed"></div>
-                                                    <h1>Viewed Properties</h1>
-                                                </div>
-                                                <div class="legend-item">
-                                                    <div class="legend-color all"></div>
-                                                    <h1>All Properties</h1>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="form-label">Viewing Start Time</label>
+                                                <div class="form-group form-icon bookingtimeinp">
+                                                    <input type="text" name="time" value=""
+                                                        class="form-control time__pickers" id="timepicker"
+                                                        placeholder="Select Time" required="" readonly="">
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="col-lg-12">
-                                        <div class="form-group propertyMultiselect_container">
-                                            <label class="form-label">Selected Properties</label>
-                                            <select id="property-select" class="form-control select2-properties"
-                                                multiple="multiple">
-                                                <option data-category="suggested" selected="selected">Elmwood Cottage
-                                                </option>
-                                                <option data-category="viewed">Rosewood Gardens</option>
-                                                <option data-category="suggested" selected="selected">Ivy Court
-                                                    Apartments</option>
-                                                <option data-category="all">Oakridge Manor</option>
-                                                <option data-category="viewed">Rosewood Gardens</option>
-                                                <option data-category="suggested" selected="selected">The Meadows
-                                                </option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Select Staff For Property Viewing</label>
-                                            <select class="form-control select2">
-                                                <option disabled selected value="">Please Select...</option>
-                                                <option value="John Doe">John Doe</option>
-                                                <option value="Jane Smith">Jane Smith</option>
-                                                <option value="Alice Johnson">Alice Johnson</option>
-                                                <option value="Robert Brown">Robert Brown</option>
-                                                <option value="Michael Williams">Michael Williams</option>
-                                                <option value="Emily Davis">Emily Davis</option>
-                                                <option value="David Wilson">David Wilson</option>
-                                                <option value="Sophia Martinez">Sophia Martinez</option>
-                                                <option value="James Anderson">James Anderson</option>
-                                                <option value="Olivia Taylor">Olivia Taylor</option>
-                                                <option value="Chris Thomas">Chris Thomas</option>
-                                                <option value="Emma Harris">Emma Harris</option>
-                                            </select>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <div class="form-label-group">
-                                                <label>Comment</label>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="form-label">Viewing End Time</label>
+                                                <div class="form-group form-icon bookingtimeinp">
+                                                    <input type="text" name="time" value=""
+                                                        class="form-control time__pickers" id="timepicker"
+                                                        placeholder="Select Time" required="" readonly="">
+                                                </div>
                                             </div>
-                                            <textarea class="form-control" rows="4"
-                                                placeholder="Write here..."></textarea>
                                         </div>
-                                    </div>
 
-                                </div>
-                            </div>
+                                        <div class="col-lg-12">
+                                            <div class="legendColor_information form-group">
+                                                <label class="form-label">Property Seperation By: </label>
+                                                <div class="colorlegendsitems">
+                                                    <div class="legend-item">
+                                                        <div class="legend-color suggested"></div>
+                                                        <h1>Suggested Properties</h1>
+                                                    </div>
+                                                    <div class="legend-item">
+                                                        <div class="legend-color viewed"></div>
+                                                        <h1>Viewed Properties</h1>
+                                                    </div>
+                                                    <div class="legend-item">
+                                                        <div class="legend-color all"></div>
+                                                        <h1>All Properties</h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group propertyMultiselect_container">
+                                                <label class="form-label">Selected Properties</label>
+                                                <select id="property-select" class="form-control select2-properties"
+                                                    multiple="multiple">
+                                                    <option data-category="suggested" selected="selected">Elmwood
+                                                        Cottage
+                                                    </option>
+                                                    <option data-category="viewed">Rosewood Gardens</option>
+                                                    <option data-category="suggested" selected="selected">Ivy Court
+                                                        Apartments</option>
+                                                    <option data-category="all">Oakridge Manor</option>
+                                                    <option data-category="viewed">Rosewood Gardens</option>
+                                                    <option data-category="suggested" selected="selected">The Meadows
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
 
-                        <div class="col-lg-6">
-                            <div class="viewedHistory_modalcard">
-                                <div class="card card-border">
-                                    <div class="card-header">
-                                        <h2>Viewed Properties</h2>
-                                    </div>
-                                    <div class="card-body">
-                                        <table class="table  w-100">
-                                            <thead>
-                                                <tr>
-                                                    <th><input type="checkbox" class="form-check-input" readonly=""
-                                                            checked="" disabled=""></th>
-                                                    <th>Property Name</th>
-                                                    <th>Status</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><input type="checkbox" class=" form-check-input" readonly=""
-                                                            checked="" disabled=""></td>
-                                                    <td>
-                                                        <a href="property-details.php">
-                                                            <div class="LongMesage_container">
-                                                                <input
-                                                                    class="refuge-collection-input tableLongMessage_Input"
-                                                                    value="Attention all tenants: The maintenance crew will be performing routine inspections tomorrow. Please ensure that your units are accessible. Thank you for your cooperation.">
-                                                                <button class="view-btn tablemessageview_btn"
-                                                                    type="button" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top" aria-label="Click to view"
-                                                                    data-bs-original-title="Click to view Full Message">
-                                                                    <i class="bi bi-eye"></i>
-                                                                </button>
-                                                            </div>
-                                                        </a>
-                                                    </td>
-                                                    <td><span class="badge bg-success">Viewed</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><input type="checkbox" class=" form-check-input" readonly=""
-                                                            checked="" disabled=""></td>
-                                                    <td>
-                                                        <a href="property-details.php">
-                                                            <div class="LongMesage_container">
-                                                                <input
-                                                                    class="refuge-collection-input tableLongMessage_Input"
-                                                                    value="3 and 3A - Apperley Road, Stocksfield, Northumerland">
-                                                                <button class="view-btn tablemessageview_btn"
-                                                                    type="button" data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top" aria-label="Click to view"
-                                                                    data-bs-original-title="Click to view Full Message">
-                                                                    <i class="bi bi-eye"></i>
-                                                                </button>
-                                                            </div>
-                                                        </a>
-                                                    </td>
-                                                    <td><span class="badge bg-success">Viewed</span></td>
-                                                </tr>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Select Staff For Property Viewing</label>
+                                                <select class="form-control select2">
+                                                    <option disabled selected value="">Please Select...</option>
+                                                    <option value="John Doe">John Doe</option>
+                                                    <option value="Jane Smith">Jane Smith</option>
+                                                    <option value="Alice Johnson">Alice Johnson</option>
+                                                    <option value="Robert Brown">Robert Brown</option>
+                                                    <option value="Michael Williams">Michael Williams</option>
+                                                    <option value="Emily Davis">Emily Davis</option>
+                                                    <option value="David Wilson">David Wilson</option>
+                                                    <option value="Sophia Martinez">Sophia Martinez</option>
+                                                    <option value="James Anderson">James Anderson</option>
+                                                    <option value="Olivia Taylor">Olivia Taylor</option>
+                                                    <option value="Chris Thomas">Chris Thomas</option>
+                                                    <option value="Emma Harris">Emma Harris</option>
+                                                </select>
 
-                                            </tbody>
-                                        </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <div class="form-label-group">
+                                                    <label>Comment</label>
+                                                </div>
+                                                <textarea class="form-control" rows="4"
+                                                    placeholder="Write here..."></textarea>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
+
                             </div>
-                        </div>
+
+                            <div class="col-lg-6">
+                                <div class="viewedHistory_modalcard">
+                                    <div class="flex_containerCmn scheduleviewungmd_rviewall">
+                                        <h2>Available Properties</h2>
+                                        <div class="rightpropertyheader_actions">
+                                            <div id="send_property_to_tent" class="hiddenelements">
+                                                <button id="sendBtn" type="button" class="sendBtn_common_main">
+                                                    <img src="dist/img/newimages/AI-default.51bec1607029ffbd.svg"
+                                                        alt="">
+                                                    Add Properties
+                                                </button>
+                                            </div>
+                                            <div class="scheduleViewing">
+                                                <a href="property-availability.php" target="_blank"
+                                                    class="scheduleViewingBtn viewallbtn_right">
+                                                    <iconify-icon icon="bytesize:eye">
+                                                    </iconify-icon>
+                                                    View All
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card card-border">
+                                        <div class="card-header">
+                                            <h2>Viewed Properties</h2>
+                                        </div>
+                                        <div class="card-body">
+                                            <table class="table  w-100">
+                                                <thead>
+                                                    <tr>
+                                                        <th><input type="checkbox" class="form-check-input" readonly=""
+                                                                checked="" disabled=""></th>
+                                                        <th>Property Name</th>
+                                                        <th>Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><input type="checkbox" class=" form-check-input" readonly=""
+                                                                checked="" disabled=""></td>
+                                                        <td>
+                                                            <a href="property-details.php">
+                                                                <div class="LongMesage_container">
+                                                                    <input
+                                                                        class="refuge-collection-input tableLongMessage_Input"
+                                                                        value="Attention all tenants: The maintenance crew will be performing routine inspections tomorrow. Please ensure that your units are accessible. Thank you for your cooperation.">
+                                                                    <button class="view-btn tablemessageview_btn"
+                                                                        type="button" data-bs-toggle="tooltip"
+                                                                        data-bs-placement="top"
+                                                                        aria-label="Click to view"
+                                                                        data-bs-original-title="Click to view Full Message">
+                                                                        <i class="bi bi-eye"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td><span class="badge bg-success">Viewed</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input type="checkbox" class=" form-check-input" readonly=""
+                                                                checked="" disabled=""></td>
+                                                        <td>
+                                                            <a href="property-details.php">
+                                                                <div class="LongMesage_container">
+                                                                    <input
+                                                                        class="refuge-collection-input tableLongMessage_Input"
+                                                                        value="3 and 3A - Apperley Road, Stocksfield, Northumerland">
+                                                                    <button class="view-btn tablemessageview_btn"
+                                                                        type="button" data-bs-toggle="tooltip"
+                                                                        data-bs-placement="top"
+                                                                        aria-label="Click to view"
+                                                                        data-bs-original-title="Click to view Full Message">
+                                                                        <i class="bi bi-eye"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td><span class="badge bg-success">Viewed</span></td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -3230,11 +3995,14 @@
                                         data-feather="clock"></i></span></span>
                             <span class="event-time"></span>
                         </li>
-                        <li class="staff_propertyattendingList" data-bs-toggle="modal" data-bs-target="#staffallviewing_modal">
+                        <li class="staff_propertyattendingList" data-bs-toggle="modal"
+                            data-bs-target="#staffallviewing_modal">
                             <span class="ev-icon-wrap"><span class="feather-icon"><i
                                         data-feather="user"></i></span></span>
                             <span class="event-staff"></span>
-                            <div class="viewallscheduels_btn"><iconify-icon icon="hugeicons:eye"></iconify-icon> View All Schedules</div>
+                            <div class="viewallscheduels_btn">
+                                <iconify-icon icon="hugeicons:eye"></iconify-icon> View All Schedules
+                            </div>
                         </li>
                         <li>
                             <span class="ev-icon-wrap"><span class="feather-icon"><i
@@ -3258,6 +4026,82 @@
                                     rows="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque excepturi perferendis labore nesciunt, rerum sint!</textarea>
                             </div>
 
+                        </li>
+
+                        <li>
+                            <div class="AddNoteEnuSection" id="AddNote2">
+                                <div class="form-group">
+                                    <label class="form-label">Note header</label>
+                                    <input class="form-control note-title" type="text" placeholder="Add Title">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">Add Comment</label>
+                                    <textarea class="form-control note-comment" rows="5"></textarea>
+                                </div>
+
+                                <div class="NoteAction_container">
+                                    <div class="sendEnquiryNote_container">
+                                        <div class="addto_todolist">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input customCheckList-todo">
+                                                <label class="form-check-label">Add to ToDo List <span
+                                                        class="done-strikethrough"></span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sendEnquiryNote_container setAlert_container">
+                                        <div class="addto_todolist">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input setAlertInput">
+                                                <label class="form-check-label">Set As Alert <span
+                                                        class="done-strikethrough"></span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="Showing_departmentand_users" style="display: none;">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Select Department</label>
+                                                <select class="form-control select2 select-department">
+                                                    <option disabled selected value="">Please Select...</option>
+                                                    <option value="Account Department">Account Department</option>
+                                                    <option value="HR Department">HR Department</option>
+                                                    <option value="Contract Department">Contract Department</option>
+                                                    <option value="Lettings Department">Lettings Department</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Select Users</label>
+                                                <select class="form-control select2 select-user">
+                                                    <option disabled selected value="">Please Select...</option>
+                                                    <option value="John Doe">John Doe</option>
+                                                    <option value="Jane Smith">Jane Smith</option>
+                                                    <option value="Alice Johnson">Alice Johnson</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Select Due Date</label>
+                                                <input class="form-control customdataPicker" type="text" name=""
+                                                    value="" placeholder="Due Date" />
+                                                <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
+                                                </iconify-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Calendaraddnote_btnWrap">
+                                    <button type="button" class="sendBtn_common_main addenun_noteBtn send-note">Send
+                                        Note</button>
+                                </div>
+                            </div>
                         </li>
 
                     </ul>
@@ -3730,88 +4574,113 @@
 
                     <div class="PropertiesAttending_list">
                         <ul>
-                        <li>
-                               <div class="NameofPRoperty_viewing">
-                               <span class="ev-icon-wrap"><span class="feather-icon"><svg
-                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-map-pin">
-                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                            <circle cx="12" cy="10" r="3"></circle>
-                                        </svg></span></span>
-                                <span class="event-location"><a
-                                        href="https://www.techmavedesigns.com/Design/graysons-properties-adminpanel">https://www.techmavedesigns.com/Design/graysons-properties-adminpanel</a></span>
-                               </div>
-                           
+                            <li>
+                                <div class="NameofPRoperty_viewing">
+                                    <span class="ev-icon-wrap"><span class="feather-icon"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-map-pin">
+                                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                <circle cx="12" cy="10" r="3"></circle>
+                                            </svg></span></span>
+                                    <span class="event-location"><a
+                                            href="https://www.techmavedesigns.com/Design/graysons-properties-adminpanel">https://www.techmavedesigns.com/Design/graysons-properties-adminpanel</a></span>
+                                </div>
 
-                               <div class="Moreproperty_staffviewing">
-                               <div class="ViewingEnqID">
-                               <span><iconify-icon icon="hugeicons:user-id-verification"></iconify-icon> Enquiry ID :</span> <div class="EnqViewID">86cvr79t2</div> 
-                               </div>
-                           <div class="VieeingDateandTime">
-                            <div class="DateofViewing datetimeofviewingProperty"><iconify-icon icon="clarity:date-line"></iconify-icon> Nov 04, 2024 </div>
-                            <div class="TimeofViewing datetimeofviewingProperty"><iconify-icon icon="subway:time-2" ></iconify-icon>Start Time: 9:30 AM End Time: 8:00 PM</div>
-                           </div>
-                               </div>
-                                    </li>
-                                    <li>
-                               <div class="NameofPRoperty_viewing">
-                               <span class="ev-icon-wrap"><span class="feather-icon"><svg
-                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-map-pin">
-                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                            <circle cx="12" cy="10" r="3"></circle>
-                                        </svg></span></span>
-                                <span class="event-location"><a
-                                        href="https://www.techmavedesigns.com/Design/graysons-properties-adminpanel">https://www.techmavedesigns.com/Design/graysons-properties-adminpanel</a></span>
-                               </div>
-                           
+                                <div class="Moreproperty_staffviewing">
+                                    <div class="ViewingEnqID">
+                                        <span>
+                                            <iconify-icon icon="hugeicons:user-id-verification"></iconify-icon> Enquiry
+                                            ID :
+                                        </span>
+                                        <div class="EnqViewID">86cvr79t2</div>
+                                    </div>
+                                    <div class="VieeingDateandTime">
+                                        <div class="DateofViewing datetimeofviewingProperty">
+                                            <iconify-icon icon="clarity:date-line"></iconify-icon> Nov 04, 2024
+                                        </div>
+                                        <div class="TimeofViewing datetimeofviewingProperty">
+                                            <iconify-icon icon="subway:time-2"></iconify-icon>Start Time: 9:30 AM End
+                                            Time: 8:00 PM
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="NameofPRoperty_viewing">
+                                    <span class="ev-icon-wrap"><span class="feather-icon"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-map-pin">
+                                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                <circle cx="12" cy="10" r="3"></circle>
+                                            </svg></span></span>
+                                    <span class="event-location"><a
+                                            href="https://www.techmavedesigns.com/Design/graysons-properties-adminpanel">https://www.techmavedesigns.com/Design/graysons-properties-adminpanel</a></span>
+                                </div>
 
-                               <div class="Moreproperty_staffviewing">
-                               <div class="ViewingEnqID">
-                               <span><iconify-icon icon="hugeicons:user-id-verification"></iconify-icon> Enquiry ID :</span> <div class="EnqViewID">86cvr79t2</div> 
-                               </div>
-                           <div class="VieeingDateandTime">
-                            <div class="DateofViewing datetimeofviewingProperty"><iconify-icon icon="clarity:date-line"></iconify-icon> Nov 04, 2024 </div>
-                            <div class="TimeofViewing datetimeofviewingProperty"><iconify-icon icon="subway:time-2" ></iconify-icon>Start Time: 9:30 AM End Time: 8:00 PM</div>
-                           </div>
-                               </div>
-                                    </li>
-                                    <li>
-                               <div class="NameofPRoperty_viewing">
-                               <span class="ev-icon-wrap"><span class="feather-icon"><svg
-                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-map-pin">
-                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                            <circle cx="12" cy="10" r="3"></circle>
-                                        </svg></span></span>
-                                <span class="event-location"><a
-                                        href="https://www.techmavedesigns.com/Design/graysons-properties-adminpanel">https://www.techmavedesigns.com/Design/graysons-properties-adminpanel</a></span>
-                               </div>
-                           
+                                <div class="Moreproperty_staffviewing">
+                                    <div class="ViewingEnqID">
+                                        <span>
+                                            <iconify-icon icon="hugeicons:user-id-verification"></iconify-icon> Enquiry
+                                            ID :
+                                        </span>
+                                        <div class="EnqViewID">86cvr79t2</div>
+                                    </div>
+                                    <div class="VieeingDateandTime">
+                                        <div class="DateofViewing datetimeofviewingProperty">
+                                            <iconify-icon icon="clarity:date-line"></iconify-icon> Nov 04, 2024
+                                        </div>
+                                        <div class="TimeofViewing datetimeofviewingProperty">
+                                            <iconify-icon icon="subway:time-2"></iconify-icon>Start Time: 9:30 AM End
+                                            Time: 8:00 PM
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="NameofPRoperty_viewing">
+                                    <span class="ev-icon-wrap"><span class="feather-icon"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-map-pin">
+                                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                <circle cx="12" cy="10" r="3"></circle>
+                                            </svg></span></span>
+                                    <span class="event-location"><a
+                                            href="https://www.techmavedesigns.com/Design/graysons-properties-adminpanel">https://www.techmavedesigns.com/Design/graysons-properties-adminpanel</a></span>
+                                </div>
 
-                               <div class="Moreproperty_staffviewing">
-                               <div class="ViewingEnqID">
-                               <span><iconify-icon icon="hugeicons:user-id-verification"></iconify-icon> Enquiry ID :</span> <div class="EnqViewID">86cvr79t2</div> 
-                               </div>
-                           <div class="VieeingDateandTime">
-                            <div class="DateofViewing datetimeofviewingProperty"><iconify-icon icon="clarity:date-line"></iconify-icon> Nov 04, 2024 </div>
-                            <div class="TimeofViewing datetimeofviewingProperty"><iconify-icon icon="subway:time-2" ></iconify-icon>Start Time: 9:30 AM End Time: 8:00 PM</div>
-                           </div>
-                               </div>
-                                    </li>
+                                <div class="Moreproperty_staffviewing">
+                                    <div class="ViewingEnqID">
+                                        <span>
+                                            <iconify-icon icon="hugeicons:user-id-verification"></iconify-icon> Enquiry
+                                            ID :
+                                        </span>
+                                        <div class="EnqViewID">86cvr79t2</div>
+                                    </div>
+                                    <div class="VieeingDateandTime">
+                                        <div class="DateofViewing datetimeofviewingProperty">
+                                            <iconify-icon icon="clarity:date-line"></iconify-icon> Nov 04, 2024
+                                        </div>
+                                        <div class="TimeofViewing datetimeofviewingProperty">
+                                            <iconify-icon icon="subway:time-2"></iconify-icon>Start Time: 9:30 AM End
+                                            Time: 8:00 PM
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
 
                 </div>
                 <div class="canvasFooterContainer">
-            <button type="button" class="canvascancel_button commonCanvas_buttonFooter" data-bs-dismiss="modal">Close</button>
-        </div>
+                    <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
+                        data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
         </form>
     </div>
@@ -3851,15 +4720,6 @@
 </script>
 
 <!--  done button text change on click js -->
-<script>
-    document.getElementById('doneBtn').addEventListener('click', function() {
-        const acceptBtn = document.getElementById('doneBtn');
-        // Change button text to "Accepted" with a check icon
-        acceptBtn.innerHTML = 'Done <iconify-icon icon="lets-icons:check-fill"></iconify-icon>';
-        // Add the accepted class to change background color
-        acceptBtn.classList.add('Enquiryaccepted');
-    });
-</script>
 
 <!-- input lenthy content show js -->
 <script>
@@ -3926,7 +4786,6 @@
     }
 </script>
 <!-- available propert table -->
-
 
 <!-- property select and add functionality start -->
 <script>
@@ -4005,40 +4864,40 @@
             updateDoneButtonVisibility();
         });
         // Functionality for the "Done" button
-        doneBtn.addEventListener('click', function() {
-            const selectedCount = selectedDataTable.querySelectorAll('.rowCheckboxSelected:checked')
-                .length;
-            Swal.fire({
-                icon: 'question',
-                title: 'Send Properties',
-                text: `You have selected ${selectedCount} properties. Do you want to send these to the tenant?`,
-                showCancelButton: true,
-                confirmButtonText: 'Yes',
-                cancelButtonText: 'No'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    const selectedProperties = [];
-                    const selectedCheckboxes = selectedDataTable.querySelectorAll(
-                        '.rowCheckboxSelected:checked');
-                    selectedCheckboxes.forEach(checkbox => {
-                        const row = checkbox.closest('tr');
-                        selectedProperties.push({
-                            address: row.children[1].innerText,
-                            area: row.children[2].innerText,
-                            availableRooms: row.children[3].innerText
-                        });
-                    });
-                    localStorage.setItem('selectedProperties', JSON.stringify(
-                        selectedProperties));
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Sent!',
-                        text: `Selected properties have been sent to the tenant.`,
-                        confirmButtonText: 'OK'
-                    });
-                }
-            });
-        });
+        // doneBtn.addEventListener('click', function() {
+        //     const selectedCount = selectedDataTable.querySelectorAll('.rowCheckboxSelected:checked')
+        //         .length;
+        //     Swal.fire({
+        //         icon: 'question',
+        //         title: 'Send Properties',
+        //         text: `You have selected ${selectedCount} properties. Do you want to send these to the tenant?`,
+        //         showCancelButton: true,
+        //         confirmButtonText: 'Yes',
+        //         cancelButtonText: 'No'
+        //     }).then((result) => {
+        //         if (result.isConfirmed) {
+        //             const selectedProperties = [];
+        //             const selectedCheckboxes = selectedDataTable.querySelectorAll(
+        //                 '.rowCheckboxSelected:checked');
+        //             selectedCheckboxes.forEach(checkbox => {
+        //                 const row = checkbox.closest('tr');
+        //                 selectedProperties.push({
+        //                     address: row.children[1].innerText,
+        //                     area: row.children[2].innerText,
+        //                     availableRooms: row.children[3].innerText
+        //                 });
+        //             });
+        //             localStorage.setItem('selectedProperties', JSON.stringify(
+        //                 selectedProperties));
+        //             Swal.fire({
+        //                 icon: 'success',
+        //                 title: 'Sent!',
+        //                 text: `Selected properties have been sent to the tenant.`,
+        //                 confirmButtonText: 'OK'
+        //             });
+        //         }
+        //     });
+        // });
     });
 </script>
 
@@ -4104,17 +4963,19 @@
 <script>
     $(document).ready(function() {
         // Toggle the visibility of Showing_departmentand_users based on the checkbox
-        $('#customCheckList-todo').change(function() {
+        $(document).on('change', '.customCheckList-todo', function() {
+            const container = $(this).closest('.AddNoteEnuSection');
             if ($(this).is(':checked')) {
-                $('.Showing_departmentand_users').slideDown(); // Show the section
+                container.find('.Showing_departmentand_users').slideDown(); // Show the section
             } else {
-                $('.Showing_departmentand_users').slideUp(); // Hide the section
+                container.find('.Showing_departmentand_users').slideUp(); // Hide the section
             }
         });
         // Handle the Send Note button click
-        $('#sendBtn2').click(function() {
-            var selectedDepartment = $('#selectDepartment').val();
-            var selectedUser = $('#selectUser').val();
+        $(document).on('click', '.send-note', function() {
+            const container = $(this).closest('.AddNoteEnuSection');
+            const selectedDepartment = container.find('.select-department').val();
+            const selectedUser = container.find('.select-user').val();
             if (selectedDepartment && selectedUser) {
                 Swal.fire({
                     icon: 'success',
@@ -4126,6 +4987,40 @@
                     icon: 'error',
                     title: 'Missing Information',
                     text: 'Please select both a department and a user.'
+                });
+            }
+        });
+        // Handle Set Alert confirmation
+        $(document).on('change', '.setAlertInput', function() {
+            const checkbox = $(this);
+            if (checkbox.is(':checked')) {
+                Swal.fire({
+                    html: `
+                    <div style="text-align: center;">
+                        <div class="swalalert_custom_icon">
+                            <iconify-icon icon="hugeicons:alert-01"></iconify-icon>
+                        </div>
+                        <h2 class="Swal_CustomTitle">Are You Sure You Want to Set This Note as an Alert?</h2>
+                    </div>`,
+                    showCancelButton: true,
+                    confirmButtonText: 'Yes, set it!',
+                    cancelButtonText: 'No, cancel!',
+                    reverseButtons: true,
+                    customClass: {
+                        confirmButton: 'btn btn-success',
+                        cancelButton: 'btn btn-danger'
+                    }
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Swal.fire({
+                            title: 'Alert Set!',
+                            text: 'The note has been successfully set as an alert.',
+                            icon: 'success'
+                        });
+                    } else if (result.isDismissed) {
+                        checkbox.prop('checked',
+                            false); // Uncheck the checkbox if the user cancels
+                    }
                 });
             }
         });
@@ -4201,49 +5096,6 @@
 </script>
 <!-- end -->
 
-<!-- ****************************
-  Note set as alert confirmation popup js start
-****************************** -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const checkbox = document.querySelector('.setAlertInput');
-        checkbox.addEventListener('change', function() {
-            if (this.checked) {
-                Swal.fire({
-                    html: `
-                    <div style="text-align: center;">
-                        <div class="swalalert_custom_icon">
-                            <iconify-icon icon="hugeicons:alert-01"></iconify-icon>
-                        </div>
-                        <h2 class="Swal_CustomTitle">Are You Sure You Want to Set This Note as an Alert?</h2>
-                    </div>`,
-                    showCancelButton: true,
-                    confirmButtonText: 'Yes, set it!',
-                    cancelButtonText: 'No, cancel!',
-                    reverseButtons: true,
-                    customClass: {
-                        confirmButton: 'btn btn-success',
-                        cancelButton: 'btn btn-danger'
-                    }
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        Swal.fire({
-                            title: 'Alert Set!',
-                            text: 'The note has been successfully set as an alert.',
-                            icon: 'success'
-                        });
-                    } else if (result.isDismissed) {
-                        checkbox.checked = false; // Uncheck the checkbox if the user cancels
-                    }
-                });
-            }
-        });
-    });
-</script>
-<!-- ****************************
-  Note set as alert confirmation popup js end
-****************************** -->
-
 <!-- department calendar select 2 (dont remove this select2 function this is only for department filter) -->
 <script>
     $("#department_select").select2({
@@ -4265,28 +5117,42 @@
 </script>
 <!-- open double offcanvas form the schedule viewing to open calendar off canvas  overlap js end-->
 
-
 <!-- hide show calendar for schedule viewing  -->
- <script>
- $(document).ready(function () {
-    $('#toggleCalendar').click(function () {
-        const $calendarRow = $('.calendar-row');
-
-        if ($calendarRow.hasClass('minimizing') || $calendarRow.css('opacity') == '0') {
-            // Restore the calendar
-            $calendarRow.removeClass('minimizing').addClass('maximizing');
-
-            // Update button text
-            $(this).html('<iconify-icon icon="solar:minimize-broken"></iconify-icon> Minimize Calendar');
-        } else {
-            // Minimize the calendar
-            $calendarRow.removeClass('maximizing').addClass('minimizing');
-
-            // Update button text
-            $(this).html('<iconify-icon icon="solar:maximize-broken" style="color: black"></iconify-icon> Show Calendar');
-        }
+<script>
+    $(document).ready(function() {
+        $('#toggleCalendar').click(function() {
+            const $calendarRow = $('.calendar-row');
+            if ($calendarRow.hasClass('minimizing') || $calendarRow.css('opacity') == '0') {
+                // Restore the calendar
+                $calendarRow.removeClass('minimizing').addClass('maximizing');
+                // Update button text
+                $(this).html(
+                    '<iconify-icon icon="solar:minimize-broken"></iconify-icon> Minimize Calendar');
+            } else {
+                // Minimize the calendar
+                $calendarRow.removeClass('maximizing').addClass('minimizing');
+                // Update button text
+                $(this).html(
+                    '<iconify-icon icon="solar:maximize-broken" style="color: black"></iconify-icon> Show Calendar'
+                );
+            }
+        });
     });
-});
+</script>
 
-
- </script>
+<!-- tabs scroll js start-->
+<script>
+    $(document).ready(function() {
+        $('.next').click(function() {
+            $('.nav-tabs').animate({
+                scrollLeft: '+=100'
+            }, 300);
+        });
+        $('.prev').click(function() {
+            $('.nav-tabs').animate({
+                scrollLeft: '-=100'
+            }, 300);
+        });
+    });
+</script>
+<!-- tabs scroll js end-->

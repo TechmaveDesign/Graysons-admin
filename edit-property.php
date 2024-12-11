@@ -234,7 +234,7 @@
                                 </div>
                             </div>
 
-                            <div class="fullwidthDesktopTabs MobileScrollShow">
+                            <div class="fullwidthDesktopTabs MobileScrollShow" id="nopaddingTop">
                             
 
                                 <ul class="nav nav-tabs nav-line nav-icon fullwidthCustom_tabsUL nav-light">
@@ -453,6 +453,60 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+
+                                                            <div class="AddProperty_Budget">
+                                                                            <div class="tabtable_tbHeading">
+                                                                                <h1>Add Budgets</h1>
+                                                                            </div>
+                                                                            <div class="row">
+
+                                                                                <div class="col-lg-3">
+                                                                                    <div class="form-group">
+                                                                                        <label
+                                                                                            for="exampleFormControlInput1"
+                                                                                            class="form-label">Compliances
+                                                                                            Budget</label>
+                                                                                        <input type="text"
+                                                                                            class="form-control" id=""
+                                                                                            vlaue="" placeholder="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-lg-3">
+                                                                                    <div class="form-group">
+                                                                                        <label
+                                                                                            for="exampleFormControlInput1"
+                                                                                            class="form-label">Compliances
+                                                                                            Budget</label>
+                                                                                        <input type="text"
+                                                                                            class="form-control" id=""
+                                                                                            vlaue="" placeholder="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-lg-3">
+                                                                                    <div class="form-group">
+                                                                                        <label
+                                                                                            for="exampleFormControlInput1"
+                                                                                            class="form-label">Labour
+                                                                                            Budget</label>
+                                                                                        <input type="text"
+                                                                                            class="form-control" id=""
+                                                                                            vlaue="" placeholder="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-lg-3">
+                                                                                    <div class="form-group">
+                                                                                        <label
+                                                                                            for="exampleFormControlInput1"
+                                                                                            class="form-label">Material
+                                                                                            Budget</label>
+                                                                                        <input type="text"
+                                                                                            class="form-control" id=""
+                                                                                            vlaue="" placeholder="">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
 
                                                             <div class="SubuNitAddContainer">
                                                                 <div class="container mt-5">

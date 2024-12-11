@@ -71,9 +71,17 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " data-bs-toggle="tab" href="#AddDevelopmenttb">
+                            <a class="nav-link " data-bs-toggle="tab" href="#ContractsStatuses">
                                 <div class="d-flex align-items-center">
                                     <span class="nav-link-text">Contract Statuses</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " data-bs-toggle="tab" href="#ParkingContracts">
+                                <div class="d-flex align-items-center">
+                                    <span class="nav-link-text">Parking Contracts</span>
                                 </div>
                             </a>
                         </li>
@@ -543,7 +551,7 @@
 
                                 </div>
 
-                                <div class="tab-pane fade" id="AddDevelopmenttb">
+                                <div class="tab-pane fade" id="ContractsStatuses">
                                     <div class="contact-list-view">
                                     <div class="tabtable_tbHeading">
                                             <h1>Contract Statuses</h1>
@@ -623,6 +631,368 @@
                                                                                 </iconify-icon>
                                                                             </span></span><span
                                                                             class="btn-text">Generate Contract
+                                                                        </span></span></a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <a href="view-user-details.php">
+                                                            <div class="media align-items-center">
+                                                                <div class="media-head me-2">
+                                                                    <div class="avatar avatar-xs avatar-rounded">
+                                                                        <img src="dist/img/newimages/users/userdummy.png"
+                                                                            alt="user" class="avatar-img">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="media-body">
+                                                                    <span class="d-block text-high-em">Jane Doe</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="property-details.php">
+                                                            <div class="LongMesage_container">
+                                                                <input
+                                                                    class="refuge-collection-input tableLongMessage_Input"
+                                                                    value="1234 Elm Street, Springfield, USA">
+                                                                <button class="view-btn tablemessageview_btn"
+                                                                    type="button" data-bs-toggle="tooltip"
+                                                                    data-bs-placement="top" aria-label="Click to view"
+                                                                    data-bs-original-title="Click to view Full Message">
+                                                                    <i class="bi bi-eye"></i> Read More
+                                                                </button>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>15/05/2024 10:30</td>
+                                                    <td>17/05/2024 09:00</td>
+                                                    <td>17/09/2024 </td>
+                                                    <td>19/10/2024 </td>
+                                                    <td><span class="badge bg-info">Application Received</span></td>
+                                                    <td>23/05/2024</td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center ActionDropdown">
+                                                            <div class="d-flex">
+                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                    href="view-contract-details.php">
+                                                                    <span class="icon"><span class="feather-icon">
+                                                                            <iconify-icon icon="teenyicons:eye-outline">
+                                                                            </iconify-icon>
+                                                                        </span></span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <a href="view-user-details.php">
+                                                            <div class="media align-items-center">
+                                                                <div class="media-head me-2">
+                                                                    <div class="avatar avatar-xs avatar-rounded">
+                                                                        <img src="dist/img/newimages/users/userdummy.png"
+                                                                            alt="user" class="avatar-img">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="media-body">
+                                                                    <span class="d-block text-high-em">John Smith</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="property-details.php">
+                                                            <div class="LongMesage_container">
+                                                                <input
+                                                                    class="refuge-collection-input tableLongMessage_Input"
+                                                                    value="5678 Oak Avenue, Rivertown, USA">
+                                                                <button class="view-btn tablemessageview_btn"
+                                                                    type="button" data-bs-toggle="tooltip"
+                                                                    data-bs-placement="top" aria-label="Click to view"
+                                                                    data-bs-original-title="Click to view Full Message">
+                                                                    <i class="bi bi-eye"></i> Read More
+                                                                </button>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>16/05/2024 12:45</td>
+                                                    <td>18/05/2024 11:30</td>
+                                                    <td>17/09/2024 </td>
+                                                    <td>19/10/2024 </td>
+                                                    <td>
+                                                        <span class="badge bg-warning">Reference Check issued</span>
+                                                    </td>
+                                                    <td>24/05/2024</td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center ActionDropdown">
+                                                            <div class="d-flex">
+                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                    href="view-contract-details.php">
+                                                                    <span class="icon"><span class="feather-icon">
+                                                                            <iconify-icon icon="teenyicons:eye-outline">
+                                                                            </iconify-icon>
+                                                                        </span></span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <a href="view-user-details.php">
+                                                            <div class="media align-items-center">
+                                                                <div class="media-head me-2">
+                                                                    <div class="avatar avatar-xs avatar-rounded">
+                                                                        <img src="dist/img/newimages/users/userdummy.png"
+                                                                            alt="user" class="avatar-img">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="media-body">
+                                                                    <span class="d-block text-high-em">Alice
+                                                                        Johnson</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="property-details.php">
+                                                            <div class="LongMesage_container">
+                                                                <input
+                                                                    class="refuge-collection-input tableLongMessage_Input"
+                                                                    value="9101 Maple Lane, Lakeside, USA">
+                                                                <button class="view-btn tablemessageview_btn"
+                                                                    type="button" data-bs-toggle="tooltip"
+                                                                    data-bs-placement="top" aria-label="Click to view"
+                                                                    data-bs-original-title="Click to view Full Message">
+                                                                    <i class="bi bi-eye"></i> Read More
+                                                                </button>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>14/05/2024 15:20</td>
+                                                    <td>16/05/2024 19:00</td>
+                                                    <td>17/09/2024 </td>
+                                                    <td>19/10/2024 </td>
+                                                    <td>
+                                                        <span class="badge bgadpastevent">Awaiting Details</span>
+                                                    </td>
+                                                    <td>22/05/2024</td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center ActionDropdown">
+                                                            <div class="d-flex">
+                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                    href="view-contract-details.php">
+                                                                    <span class="icon"><span class="feather-icon">
+                                                                            <iconify-icon icon="teenyicons:eye-outline">
+                                                                            </iconify-icon>
+                                                                        </span></span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <a href="view-user-details.php">
+                                                            <div class="media align-items-center">
+                                                                <div class="media-head me-2">
+                                                                    <div class="avatar avatar-xs avatar-rounded">
+                                                                        <img src="dist/img/newimages/users/userdummy.png"
+                                                                            alt="user" class="avatar-img">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="media-body">
+                                                                    <span class="d-block text-high-em">Alice
+                                                                        Johnson</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="property-details.php">
+                                                            <div class="LongMesage_container">
+                                                                <input
+                                                                    class="refuge-collection-input tableLongMessage_Input"
+                                                                    value="9101 Maple Lane, Lakeside, USA">
+                                                                <button class="view-btn tablemessageview_btn"
+                                                                    type="button" data-bs-toggle="tooltip"
+                                                                    data-bs-placement="top" aria-label="Click to view"
+                                                                    data-bs-original-title="Click to view Full Message">
+                                                                    <i class="bi bi-eye"></i> Read More
+                                                                </button>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>18/05/2024 15:20</td>
+                                                    <td>24/05/2024 19:00</td>
+                                                    <td>17/09/2024 </td>
+                                                    <td>19/10/2024 </td>
+                                                    <td>
+                                                        <span class="badge bgadjustment">Awaiting Room
+                                                            Allowcation</span>
+                                                    </td>
+                                                    <td>29/05/2024</td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center ActionDropdown">
+                                                            <div class="d-flex">
+                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                    href="view-contract-details.php">
+                                                                    <span class="icon"><span class="feather-icon">
+                                                                            <iconify-icon icon="teenyicons:eye-outline">
+                                                                            </iconify-icon>
+                                                                        </span></span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <a href="view-user-details.php">
+                                                            <div class="media align-items-center">
+                                                                <div class="media-head me-2">
+                                                                    <div class="avatar avatar-xs avatar-rounded">
+                                                                        <img src="dist/img/newimages/users/userdummy.png"
+                                                                            alt="user" class="avatar-img">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="media-body">
+                                                                    <span class="d-block text-high-em">Alice
+                                                                        Johnson</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="property-details.php">
+                                                            <div class="LongMesage_container">
+                                                                <input
+                                                                    class="refuge-collection-input tableLongMessage_Input"
+                                                                    value="9101 Maple Lane, Lakeside, USA">
+                                                                <button class="view-btn tablemessageview_btn"
+                                                                    type="button" data-bs-toggle="tooltip"
+                                                                    data-bs-placement="top" aria-label="Click to view"
+                                                                    data-bs-original-title="Click to view Full Message">
+                                                                    <i class="bi bi-eye"></i> Read More
+                                                                </button>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>18/05/2024 15:20</td>
+                                                    <td>24/05/2024 19:00</td>
+                                                    <td>17/09/2024 </td>
+                                                    <td>19/10/2024 </td>
+                                                    <td>
+                                                        <span class="badge bg-secondary">Awaiting Tenancy Setup </span>
+                                                    </td>
+                                                    <td>29/05/2024</td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center ActionDropdown">
+                                                            <div class="d-flex">
+                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                    href="view-contract-details.php">
+                                                                    <span class="icon"><span class="feather-icon">
+                                                                            <iconify-icon icon="teenyicons:eye-outline">
+                                                                            </iconify-icon>
+                                                                        </span></span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="ParkingContracts">
+                                    <div class="contact-list-view">
+                                    <div class="tabtable_tbHeading">
+                                            <h1>Parking Contracts</h1>
+                                        </div>
+                                        <table class="table common-datatable nowrap w-100 ">
+                                            <thead>
+                                                <tr>
+
+                                                    <th>Name </th>
+                                                    <th>Property</th>
+                                                    <th>Start Date</th>
+                                                    <th>End Date</th>
+                                                    <th>Action By</th>
+                                                    <th>Completed By</th>
+                                                    <th>Status</th>
+                                                    <th>last Updated</th>
+                                                    <th>Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <a href="view-user-details.php">
+                                                            <div class="media align-items-center">
+                                                                <div class="media-head me-2">
+                                                                    <div class="avatar avatar-xs avatar-rounded">
+                                                                        <img src="dist/img/newimages/users/userdummy.png"
+                                                                            alt="user" class="avatar-img">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="media-body">
+                                                                    <span class="d-block text-high-em">Charlie
+                                                                        Chaplin</span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="property-details.php">
+                                                            <div class="LongMesage_container">
+                                                                <input
+                                                                    class="refuge-collection-input tableLongMessage_Input"
+                                                                    value="Attention all tenants: The maintenance crew will be performing routine inspections tomorrow. Please ensure that your units are accessible. Thank you for your cooperation."></input>
+                                                                <button class="view-btn tablemessageview_btn"
+                                                                    type="button" data-bs-toggle="tooltip"
+                                                                    data-bs-placement="top" aria-label="Click to view"
+                                                                    data-bs-original-title="Click to view Full Message">
+                                                                    <i class="bi bi-eye"></i> Read More
+                                                                </button>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>17/05/2024 02:57</td>
+                                                    <td>19/05/2024 16:00</td>
+                                                    <td>17/09/2024 </td>
+                                                    <td>19/10/2024 </td>
+                                                    <td>
+                                                        <span class="badge badge-soft-success  my-1  me-2">Ready For
+                                                            Contract</span>
+                                                    </td>
+                                                    <td>26/05/2024</td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center ActionDropdown">
+                                                            <div class="d-flex">
+
+                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                    href="view-contract-details.php">
+                                                                    <span class="icon"><span class="feather-icon">
+                                                                            <iconify-icon icon="teenyicons:eye-outline">
+                                                                            </iconify-icon>
+                                                                        </span></span>
+                                                                </a>
+                                                                <a href="generate-parking-contract.php"
+                                                                    class="btn btn-sm commonAddnewButton generateContarct_btn btn-primary ms-3"><span><span
+                                                                            class="icon"><span class="feather-icon">
+                                                                                <iconify-icon icon="eva:plus-fill">
+                                                                                </iconify-icon>
+                                                                            </span></span><span
+                                                                            class="btn-text">Generate Parking Contract
                                                                         </span></span></a>
                                                             </div>
                                                         </div>

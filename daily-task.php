@@ -262,6 +262,7 @@
 									<thead>
 										<tr>
 											<th>Date</th>
+											<th>Priority</th>
 											<th>Task Assigned</th>
 											<th>Department</th>
 											<th>Assigned User</th>
@@ -274,6 +275,13 @@
 									<tbody>
 										<tr>
 											<td>10/09/2024</td>
+											<td>
+                                                            <div class="prioritystatus lowPriority">
+                                                                <span
+                                                                    class="lowpriority_badge custom_mr_2 dot-label1"></span>
+                                                                <span class="priorityStatus_text">Low Priority </span>
+                                                            </div>
+                                                        </td>
 											<td>Review Contract Draft</td>
 											<td>lettings Department</td>
 											<td>John Doe</td>
@@ -298,6 +306,13 @@
 										</tr>
 										<tr>
 											<td>09/09/2024</td>
+											<td>
+                                                            <div class="prioritystatus lowPriority">
+                                                                <span
+                                                                    class="lowpriority_badge custom_mr_2 dot-label1"></span>
+                                                                <span class="priorityStatus_text">Low Priority </span>
+                                                            </div>
+                                                        </td>
 											<td>Follow Up on Client Enquiry</td>
 											<td>Sales</td>
 											<td>Jane Smith</td>
@@ -322,6 +337,14 @@
 										</tr>
 										<tr>
 											<td>08/09/2024</td>
+											<td>
+                                                            <div class="prioritystatus MediumPriority">
+                                                                <span
+                                                                    class="Mediumpriority_badge custom_mr_2 dot-label1"></span>
+                                                                <span class="priorityStatus_text">Medium Priority
+                                                                </span>
+                                                            </div>
+                                                        </td>
 											<td>Prepare New Contract</td>
 											<td>lettings Department</td>
 											<td>Sam Wilson</td>
@@ -346,6 +369,13 @@
 										</tr>
 										<tr>
 											<td>07/09/2024</td>
+											<td>
+                                                            <div class="prioritystatus highPriority">
+                                                                <span
+                                                                    class="highpriority_badge custom_mr_2 dot-label1"></span>
+                                                                <span class="priorityStatus_text">High Priority </span>
+                                                            </div>
+                                                        </td>
 											<td>Respond to Client Enquiry</td>
 											<td>Customer Support</td>
 											<td>Mary Johnson</td>
@@ -370,6 +400,14 @@
 										</tr>
 										<tr>
 											<td>07/09/2024</td>
+											<td>
+                                                            <div class="prioritystatus MediumPriority">
+                                                                <span
+                                                                    class="Mediumpriority_badge custom_mr_2 dot-label1"></span>
+                                                                <span class="priorityStatus_text">Medium Priority
+                                                                </span>
+                                                            </div>
+                                                        </td>
 											<td>Renew Existing Contract</td>
 											<td>lettings Department</td>
 											<td>Alex Brown</td>
@@ -484,6 +522,18 @@
 
 									<div class="col-lg-12">
     <div class="form-group">
+        <label class="form-label">Task Priority</label>
+        <select name="" class="form-control select2">
+            <option value=""selected>Select an Option</option>
+            <option value="High Priority"> High Priority </option>
+            <option value="Low Priority">Low Priority</option>
+            <option value="Medium Priority ">Medium Priority </option>
+        </select>
+    </div>
+</div>
+
+									<div class="col-lg-12">
+    <div class="form-group">
         <label class="form-label">Duration</label>
         <select name="" id="durationSelect" class="form-control select2">
             <option value="" selected disabled readonly>Select an Option</option>
@@ -494,6 +544,8 @@
         </select>
     </div>
 </div>
+
+
 
 <div class="col-sm-12 customTile_field" style="display:none;">
 <div class="form-group">

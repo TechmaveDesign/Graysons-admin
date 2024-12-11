@@ -85,9 +85,25 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#ticketQuotation">
+                                            <div class="d-flex align-items-center">
+                                                <span class="nav-link-text">Quotation</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
                                         <a class="nav-link" data-bs-toggle="tab" href="#AssignMaterial">
                                             <div class="d-flex align-items-center">
                                                 <span class="nav-link-text">Assign Material</span>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#completedtasks">
+                                            <div class="d-flex align-items-center">
+                                                <span class="nav-link-text">Completed Tasks</span>
 
                                             </div>
                                         </a>
@@ -111,6 +127,14 @@
                                         <a class="nav-link" data-bs-toggle="tab" href="#Expenses">
                                             <div class="d-flex align-items-center">
                                                 <span class="nav-link-text">Expenses</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#InventoryRequests ">
+                                            <div class="d-flex align-items-center">
+                                                <span class="nav-link-text">Inventory Requests </span>
+
                                             </div>
                                         </a>
                                     </li>
@@ -149,8 +173,10 @@
                                                             </div>
                                                             <div class="media-body">
                                                                 <div class="fw-medium text-dark">Reported By</div>
-                                                                <div class="fs-7"><span class="userTypeStaff">Staff</span> - <a href="view-user-details.php">Clews Abbie</a> ,
-                                                                         @ 11/04/2024 00:04</div>
+                                                                <div class="fs-7"><span
+                                                                        class="userTypeStaff">Staff</span> - <a
+                                                                        href="view-user-details.php">Clews Abbie</a> ,
+                                                                    @ 11/04/2024 00:04</div>
                                                             </div>
                                                         </div>
 
@@ -175,31 +201,76 @@
                                                     <div class="card-body custombodyPadding">
                                                         <div class="d-flex text-center inspectionpropert_details">
                                                             <div class="flex-1 border-end CustomFlex_style">
-                                                                <div>
-                                                                    <span class="d-block fs-5 text-dark mb-1">
+                                                                <div class="ticInfo_Item">
+                                                                    <span class="d-block TicketDetails_info_title">
                                                                         Ticket ID</span>
-                                                                    <span class="d-block text-capitalize "> <span
+                                                                    <span
+                                                                        class="d-block text-capitalize ticketdetailinfo_data">
+                                                                        <span
                                                                             class="badge badge-soft-success  my-1  me-2">115326</span></span>
                                                                 </div>
                                                             </div>
                                                             <div class="flex-1 border-end CustomFlex_style">
-                                                                <div>
-                                                                    <span class="d-block fs-5 text-dark mb-1">
+                                                                <div class="ticInfo_Item">
+                                                                    <span class="d-block TicketDetails_info_title">
+                                                                        Ticket Category</span>
+                                                                    <span
+                                                                        class="d-block text-capitalize ticketdetailinfo_data">
+                                                                        <span
+                                                                            class="badge badge-soft-success  my-1  me-2">Kitchen</span></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-1 border-end CustomFlex_style">
+                                                                <div class="ticInfo_Item">
+                                                                    <span class="d-block TicketDetails_info_title">
                                                                         Type</span>
-                                                                    <span class="d-block text-capitalize "> <span
+                                                                    <span
+                                                                        class="d-block text-capitalize ticketdetailinfo_data">
+                                                                        <span
                                                                             class="badge badge-soft-success  my-1  me-2">Lighting</span></span>
                                                                 </div>
                                                             </div>
+                                                            <div class="flex-1 border-end CustomFlex_style">
+                                                                <div class="ticInfo_Item">
+                                                                    <span class="d-block TicketDetails_info_title">
+                                                                        Location</span>
+                                                                    <span
+                                                                        class="d-block text-capitalize ticketdetailinfo_data">
+                                                                        <span
+                                                                            class="badge badge-soft-success  my-1  me-2">Flat
+                                                                            5D</span></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-1 border-end CustomFlex_style">
+                                                                <div class="ticInfo_Item">
+                                                                    <span class="d-block TicketDetails_info_title">
+                                                                        Area</span>
+                                                                    <span
+                                                                        class="d-block text-capitalize ticketdetailinfo_data">
+                                                                        <span
+                                                                            class="badge badge-soft-success  my-1  me-2">Bedroom</span></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-1 border-end CustomFlex_style">
+                                                                <div class="ticInfo_Item">
+                                                                    <span class="d-block TicketDetails_info_title">
+                                                                        Expected Due Date</span>
+                                                                    <span
+                                                                        class="d-block text-capitalize ticketdetailinfo_data">
+                                                                        <span
+                                                                            class="badge badge-soft-success  my-1  me-2">15 Dec, 2024</span></span>
+                                                                </div>
+                                                            </div>
                                                             <div class="flex-1 CustomFlex_style ">
-                                                                <div>
-                                                                    <div class="d-block fs-5 text-dark mb-1 ">Property
+                                                                <div class="ticInfo_Item">
+                                                                    <div class="d-block TicketDetails_info_title ">
+                                                                        Property
                                                                     </div>
                                                                     <div
                                                                         class="d-block text-capitalize fs-7 propertyUrlStyle">
                                                                         <a href="property.php" target="_blank">Bedroom 3
                                                                             133, Flat 3 (Floor 1, No3), City
-                                                                            View@Phoenix House, 1-7 Union Street,
-                                                                            Sunderland</a></div>
+                                                                            View@Phoenix House</a></div>
                                                                 </div>
                                                             </div>
 
@@ -707,69 +778,443 @@
                                             </div>
                                         </div>
 
-
                                         <div class="tab-pane fade" id="CreateTask">
                                             <div class="fullwidthTabInner_content_container">
-                                            <div class="row ">
-                                                <div class="col-lg-8 mx-auto">
-                                                <div class="card">
-                                                    <div class="card-body">
-                                                        <div class="row">
-                                                            <div class="col-lg-12">
-                                                                <h1 class="secTitle">Create Task</h1>
-                                                            </div>
-                                                    
-                                                            </div>
-                                                         
-                                                            
-                                                            <div class="col-lg-12 px-0">
-                                                            <div class="taskContainer1">
-                                                                <!-- The default taskBox will be added by jQuery -->
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-12">
-                                                            <div class="addTaskBox text-end">
-                                                                <a href="#" class="addTaskBtn" id="addTaskBtn1" data-target-container=".taskContainer1">+ Add Task</a>
-                                                            </div>
-                                                        </div>
+                                                <div class="row ">
+                                                    <div class="col-lg-12">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12">
+                                                                        <h1 class="secTitle">Create Task</h1>
+                                                                    </div>
 
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        </div>
-                                                        <div class="FormSubmit_fix_container">
-                                                            <div class="buttonsHJI">
-                                                                <a href="ticket-detail.php">
-                                                                    <button type="button" class="btn btn-primary commonUpdateButton">
-                                                                    <iconify-icon icon="lucide:save"></iconify-icon> Save Task
-                                                                    </button>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <button type="button" class="btn commonCancleButton">
-                                                                        Cancel
-                                                                    </button>
-                                                                </a>
+                                                                </div>
+
+                                                                <div class="col-lg-12 px-0">
+                                                                    <div class="taskContainer1">
+                                                                        <!-- The default taskBox will be added by jQuery -->
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12">
+                                                                    <div class="addTaskBox text-end">
+                                                                        <a href="#" class="addTaskBtn" id="addTaskBtn1"
+                                                                            data-target-container=".taskContainer1">+
+                                                                            Add Task</a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="FormSubmit_fix_container">
+                                                                <div class="buttonsHJI">
+                                                                    <a href="ticket-detail.php">
+                                                                        <button type="button"
+                                                                            class="btn btn-primary commonUpdateButton">
+                                                                            <iconify-icon icon="lucide:save">
+                                                                            </iconify-icon> Save Task
+                                                                        </button>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <button type="button"
+                                                                            class="btn commonCancleButton">
+                                                                            Cancel
+                                                                        </button>
+                                                                    </a>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                          
+
                                             </div>
 
                                         </div>
 
+                                        <div class="tab-pane fade" id="ticketQuotation">
+                                            <div class="fullwidthTabInner_content_container">
+                                                <div class="row ">
+                                                    <div class="col-lg-8">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12">
+
+                                                                        <div class="docfilterbutton">
+                                                                            <h2 class="tabinnerTitle">Create Quotation
+                                                                            </h2>
+                                                                            <div class="RightTabinr_container">
+                                                                                <span class="badge bg-success">Sent
+                                                                                    Quotation</span>
+
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="col-lg-12">
+                                                                        <div class="row align-items-center">
+
+                                                                            <div class="col-md-4">
+                                                                                <div class="form-group">
+                                                                                    <label for="" class="form-label">
+                                                                                        Select Term & condition</label>
+                                                                                    <select name="" id=""
+                                                                                        class="form-control select2">
+                                                                                        <option value="" disable
+                                                                                            readonly selected>
+                                                                                            Salect an Option</option>
+                                                                                        <option value="Term Condtion 1">
+                                                                                            Term Condtion 1 </option>
+
+                                                                                        <option value="Term Condtion 2">
+                                                                                            Term Condtion 2</option>
+
+                                                                                        <option value="Term Condtion 3">
+                                                                                            Term Condtion 3
+                                                                                        </option>
+
+                                                                                    </select>
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                            <div class="col-lg-2">
+                                                                                <div class="form-group">
+                                                                                    <label
+                                                                                        for="exampleFormControlInput1"
+                                                                                        class="form-label">Overall
+                                                                                        Amount</label>
+                                                                                    <input type="text"
+                                                                                        class="form-control"
+                                                                                        value="£500">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-6">
+                                                                            <div class="form-check form-check-sm">
+                                                    <input type="checkbox" class="form-check-input" id="customChecks1">
+                                                    <label class="form-check-label" for="customChecks1">If you want
+                                                                                        to add price on the task basis
+                                                                                        please check</label>
+                                                </div>
+
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-lg-12">
+                                                                        <div class="taskAppend">
+                                                                            <div class="taskHeaderBHI">
+                                                                                <h6>Task</h6>
+                                                                                <a href="#" class="editbtn">
+                                                                                    <iconify-icon
+                                                                                        icon="akar-icons:edit">
+                                                                                    </iconify-icon>
+                                                                                </a>
+                                                                                <!-- Remove button is not included here -->
+                                                                            </div>
+                                                                            <div class="taskLHI">
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-6 pr-0">
+                                                                                        <div class="form-group mb-0">
+                                                                                            <label for="taskInput"
+                                                                                                class="form-label">Task
+                                                                                                Title</label>
+                                                                                            <input type="text"
+                                                                                                class="form-control taskInput"
+                                                                                                value="" placeholder="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-3 pr-0">
+                                                                                        <div class="form-group mb-0">
+                                                                                            <label for="priceInput"
+                                                                                                class="form-label">Allocated
+                                                                                                Date &amp; Time</label>
+                                                                                            <input type="text"
+                                                                                                class="form-control priceInput"
+                                                                                                value="" placeholder="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-3">
+                                                                                        <div class="form-group mb-0">
+                                                                                            <label for="priceInput"
+                                                                                                class="form-label">Price</label>
+                                                                                            <input type="text"
+                                                                                                class="form-control priceInput"
+                                                                                                value="" placeholder="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-12">
+
+                                                                                        <div class="d-flex">
+                                                                                            <div class="imgCont">
+                                                                                                <div
+                                                                                                    class="flex items-center gap-2">
+
+                                                                                                    <img src="assets/images/img-1.jpg"
+                                                                                                        alt="">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="imgCont">
+                                                                                                <div
+                                                                                                    class="flex items-center gap-2">
+
+                                                                                                    <img src="assets/images/img-2.jpg"
+                                                                                                        alt="">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="taskAppend">
+                                                                            <div class="taskHeaderBHI">
+                                                                                <h6>Task</h6>
+                                                                                <a href="#" class="editbtn">
+                                                                                    <iconify-icon
+                                                                                        icon="akar-icons:edit">
+                                                                                    </iconify-icon>
+                                                                                </a>
+                                                                                <!-- Remove button is not included here -->
+                                                                            </div>
+                                                                            <div class="taskLHI">
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-6 pr-0">
+                                                                                        <div class="form-group mb-0">
+                                                                                            <label for="taskInput"
+                                                                                                class="form-label">Task
+                                                                                                Title</label>
+                                                                                            <input type="text"
+                                                                                                class="form-control taskInput"
+                                                                                                value="" placeholder="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-3 pr-0">
+                                                                                        <div class="form-group mb-0">
+                                                                                            <label for="priceInput"
+                                                                                                class="form-label">Allocated
+                                                                                                Date &amp; Time</label>
+                                                                                            <input type="text"
+                                                                                                class="form-control priceInput"
+                                                                                                value="" placeholder="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-3">
+                                                                                        <div class="form-group mb-0">
+                                                                                            <label for="priceInput"
+                                                                                                class="form-label">Price</label>
+                                                                                            <input type="text"
+                                                                                                class="form-control priceInput"
+                                                                                                value="" placeholder="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-12">
+
+                                                                                        <div class="d-flex">
+                                                                                            <div class="imgCont">
+                                                                                                <div
+                                                                                                    class="flex items-center gap-2">
+
+                                                                                                    <img src="assets/images/img-1.jpg"
+                                                                                                        alt="">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="imgCont">
+                                                                                                <div
+                                                                                                    class="flex items-center gap-2">
+
+                                                                                                    <img src="assets/images/img-2.jpg"
+                                                                                                        alt="">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="taskAppend">
+                                                                            <div class="taskHeaderBHI">
+                                                                                <h6>Task</h6>
+                                                                                <a href="#" class="editbtn">
+                                                                                    <iconify-icon
+                                                                                        icon="akar-icons:edit">
+                                                                                    </iconify-icon>
+                                                                                </a>
+                                                                                <!-- Remove button is not included here -->
+                                                                            </div>
+                                                                            <div class="taskLHI">
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-6 pr-0">
+                                                                                        <div class="form-group mb-0">
+                                                                                            <label for="taskInput"
+                                                                                                class="form-label">Task
+                                                                                                Title</label>
+                                                                                            <input type="text"
+                                                                                                class="form-control taskInput"
+                                                                                                value="" placeholder="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-3 pr-0">
+                                                                                        <div class="form-group mb-0">
+                                                                                            <label for="priceInput"
+                                                                                                class="form-label">Allocated
+                                                                                                Date &amp; Time</label>
+                                                                                            <input type="text"
+                                                                                                class="form-control priceInput"
+                                                                                                value="" placeholder="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-3">
+                                                                                        <div class="form-group mb-0">
+                                                                                            <label for="priceInput"
+                                                                                                class="form-label">Price</label>
+                                                                                            <input type="text"
+                                                                                                class="form-control priceInput"
+                                                                                                value="" placeholder="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-12">
+
+                                                                                        <div class="d-flex">
+                                                                                            <div class="imgCont">
+                                                                                                <div
+                                                                                                    class="flex items-center gap-2">
+
+                                                                                                    <img src="assets/images/img-1.jpg"
+                                                                                                        alt="">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="imgCont">
+                                                                                                <div
+                                                                                                    class="flex items-center gap-2">
+
+                                                                                                    <img src="assets/images/img-2.jpg"
+                                                                                                        alt="">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- <div class="col-lg-12">
+                                    <div class="addTaskBox text-end">
+                                        <a href="#" class="addTaskBtn" id="addTaskBtn2" data-target-container=".taskContainer2">+ Add Task</a>
+                                    </div>
+                                </div> -->
+
+                                                                </div>
+                                                                <!-- <div class="FormSubmit_fix_container priceBOX">
+                                    <h5 class="taskTotal">Total Price : $ 120</h5>
+                                    <div class="buttonsHJI">
+                                    <a href="ticket-detail.php">
+                                    <button type="button" class="btn btn-primary commonUpdateButton">
+                                    <iconify-icon icon="tabler:send"></iconify-icon> Send Quotation
+                                    </button>
+                                </a>
+
+                            <a href="#">
+                                <button type="button" class="btn commonCancleButton">
+                                    Cancel
+                                </button>
+                            </a>
+                                    </div>
+                              
+
+                    </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <!-- <div class="col-lg-12">
+                                    <div class="form-group">
+                                            <label for="exampleFormControlInput1" class="form-label">Staff Availability </label>
+                                            <select class="form-input border-slate-200 dark:border-zink-500 focus:outline-none focus:border-custom-500 disabled:bg-slate-100 dark:disabled:bg-zink-600 disabled:border-slate-300 dark:disabled:border-zink-500 dark:disabled:text-zink-200 disabled:text-slate-500 dark:text-zink-100 dark:bg-zink-700 dark:focus:border-custom-800 placeholder:text-slate-400 dark:placeholder:text-zink-200" data-choices name="choices-single-default" id="choices-single-default">
+                                                <option value="Choice 2">Jhon Weassly</option>
+                                                <option value="Choice 3">Tom Crush</option>
+                                                <option value="Choice 4">Denny Paul</option>
+                                            </select>
+                                        </div>
+                                    </div> -->
+                                                                    <div class="col-lg-12">
+                                                                        <div class="card">
+                                                                            <div class="card-header">
+                                                                            <div class="signatureUser_name">Signature </div>
+                                                                            </div>
+                                                                            <div class="card-body">
+                                                                            <div class="QuotationSignature">
+                                                                                <img src="dist/img/newimages/signature-images/1.jpg" alt="">
+                                                                                
+                                                                            </div>
+                                                                            </div>
+                                                                            <div class="card-footer">
+                                                                            <div class="Signature_timestemp">
+                                                            <div class="enquiryRight_header_data TaskAction_wrapper">
+                                                                <div class="enquiryDate dueDate_container">
+                                                                    <iconify-icon icon="ion:calendar-outline">
+                                                                    </iconify-icon>
+                                                                    <div class="duedatelabel">Date &amp; Time : </div> Nov
+                                                                    20, 2024 15:45
+                                                                </div>
+                                                            
+
+                                                            </div>
+                                                        </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="FormSubmit_fix_container priceBOX">
+                                                        <h5 class="taskTotal">Total Price : £ 120</h5>
+                                                        <div class="buttonsHJI">
+                                                            <!-- <a href="ticket-detail.php">
+                                    <button type="button" class="btn btn-primary commonUpdateButton">
+                                    <iconify-icon icon="tabler:send"></iconify-icon> Send Quotation to Account
+                                    </button>
+                                </a> -->
+                                                            <a href="#">
+                                                                <button type="button"
+                                                                    class="btn btn-primary commonUpdateButton Raises_DepositeInvoise_btn">
+                                                                    <iconify-icon icon="tabler:send"></iconify-icon>
+                                                                    Raise Deposite Invoice
+                                                                </button>
+                                                                <button type="button"
+                                                                    class="btn btn-primary commonUpdateButton sendQuotationbtn">
+                                                                    <iconify-icon icon="tabler:send"></iconify-icon>
+                                                                    Send Quotation to client
+                                                                </button>
+                                                            </a>
+
+                                                            <!-- <a href="tickets.php">
+                                                                <button type="button" class="btn commonCancleButton">
+                                                                    Cancel
+                                                                </button>
+                                                            </a> -->
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
 
                                         <div class="tab-pane fade" id="AssignMaterial">
                                             <div class="fullwidthTabInner_content_container">
-                                                
-                                                    <div class="card">
-                                                       <div class="card-body">
-                                                       <div class="contact-list-view">
-                                                            <table class="table common-datatable nowrap w-100 assignMaterial">
+
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="contact-list-view">
+                                                            <table
+                                                                class="table common-datatable nowrap w-100 assignMaterial">
                                                                 <thead>
                                                                     <tr>
                                                                         <th>Assigned / Requested by</th>
@@ -777,28 +1222,35 @@
                                                                         <th>Qty</th>
                                                                         <th>Status</th>
                                                                         <th>Date</th>
-                                                                       
+
                                                                     </tr>
-                                                                    </thead>
-                                                                    <tbody>
+                                                                </thead>
+                                                                <tbody>
                                                                     <tr>
                                                                         <td>
                                                                             <a href="view-user-details.php">
                                                                                 <div class="media align-items-center">
                                                                                     <div class="media-head me-2">
-                                                                                        <div class="avatar avatar-xs avatar-rounded">
-                                                                                            <img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+                                                                                        <div
+                                                                                            class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="avatar-img">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="media-body">
-                                                                                        <span class="d-block text-high-em">Charlie Chaplin</span>
+                                                                                        <span
+                                                                                            class="d-block text-high-em">Charlie
+                                                                                            Chaplin</span>
                                                                                     </div>
                                                                                 </div>
                                                                             </a>
                                                                         </td>
                                                                         <td>Ac PCB</td>
                                                                         <td>5</td>
-                                                                        <td><span class="badge bg-success">Assigned</span></td>
+                                                                        <td><span
+                                                                                class="badge bg-success">Assigned</span>
+                                                                        </td>
                                                                         <td>24 Nov, 2024</td>
                                                                     </tr>
                                                                     <!-- Dynamically generated rows -->
@@ -807,19 +1259,25 @@
                                                                             <a href="view-user-details.php">
                                                                                 <div class="media align-items-center">
                                                                                     <div class="media-head me-2">
-                                                                                        <div class="avatar avatar-xs avatar-rounded">
-                                                                                            <img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+                                                                                        <div
+                                                                                            class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="avatar-img">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="media-body">
-                                                                                        <span class="d-block text-high-em">John Doe</span>
+                                                                                        <span
+                                                                                            class="d-block text-high-em">John
+                                                                                            Doe</span>
                                                                                     </div>
                                                                                 </div>
                                                                             </a>
                                                                         </td>
                                                                         <td>Energy-Saving LED Bulb 12W</td>
                                                                         <td>2</td>
-                                                                        <td><span class="badge bg-info">Requested</span></td>
+                                                                        <td><span class="badge bg-info">Requested</span>
+                                                                        </td>
                                                                         <td>20 Nov, 2024</td>
                                                                     </tr>
                                                                     <tr>
@@ -827,19 +1285,26 @@
                                                                             <a href="view-user-details.php">
                                                                                 <div class="media align-items-center">
                                                                                     <div class="media-head me-2">
-                                                                                        <div class="avatar avatar-xs avatar-rounded">
-                                                                                            <img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+                                                                                        <div
+                                                                                            class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="avatar-img">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="media-body">
-                                                                                        <span class="d-block text-high-em">Jane Smith</span>
+                                                                                        <span
+                                                                                            class="d-block text-high-em">Jane
+                                                                                            Smith</span>
                                                                                     </div>
                                                                                 </div>
                                                                             </a>
                                                                         </td>
                                                                         <td>Heavy-Duty Copper Wire Cable 100m</td>
                                                                         <td>1</td>
-                                                                        <td><span class="badge bg-success">Assigned</span></td>
+                                                                        <td><span
+                                                                                class="badge bg-success">Assigned</span>
+                                                                        </td>
                                                                         <td>21 Nov, 2024</td>
                                                                     </tr>
                                                                     <tr>
@@ -847,19 +1312,25 @@
                                                                             <a href="view-user-details.php">
                                                                                 <div class="media align-items-center">
                                                                                     <div class="media-head me-2">
-                                                                                        <div class="avatar avatar-xs avatar-rounded">
-                                                                                            <img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+                                                                                        <div
+                                                                                            class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="avatar-img">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="media-body">
-                                                                                        <span class="d-block text-high-em">Emily Davis</span>
+                                                                                        <span
+                                                                                            class="d-block text-high-em">Emily
+                                                                                            Davis</span>
                                                                                     </div>
                                                                                 </div>
                                                                             </a>
                                                                         </td>
                                                                         <td>Hinge</td>
                                                                         <td>4</td>
-                                                                        <td><span class="badge bg-info">Requested</span></td>
+                                                                        <td><span class="badge bg-info">Requested</span>
+                                                                        </td>
                                                                         <td>14 Nov, 2024</td>
                                                                     </tr>
                                                                     <tr>
@@ -867,19 +1338,26 @@
                                                                             <a href="view-user-details.php">
                                                                                 <div class="media align-items-center">
                                                                                     <div class="media-head me-2">
-                                                                                        <div class="avatar avatar-xs avatar-rounded">
-                                                                                            <img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+                                                                                        <div
+                                                                                            class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="avatar-img">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="media-body">
-                                                                                        <span class="d-block text-high-em">Robert Brown</span>
+                                                                                        <span
+                                                                                            class="d-block text-high-em">Robert
+                                                                                            Brown</span>
                                                                                     </div>
                                                                                 </div>
                                                                             </a>
                                                                         </td>
                                                                         <td>LED Bulb</td>
                                                                         <td>3</td>
-                                                                        <td><span class="badge bg-success">Assigned</span></td>
+                                                                        <td><span
+                                                                                class="badge bg-success">Assigned</span>
+                                                                        </td>
                                                                         <td>15 Nov, 2024</td>
                                                                     </tr>
                                                                     <tr>
@@ -887,46 +1365,682 @@
                                                                             <a href="view-user-details.php">
                                                                                 <div class="media align-items-center">
                                                                                     <div class="media-head me-2">
-                                                                                        <div class="avatar avatar-xs avatar-rounded">
-                                                                                            <img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+                                                                                        <div
+                                                                                            class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="avatar-img">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="media-body">
-                                                                                        <span class="d-block text-high-em">Sophia Lee</span>
+                                                                                        <span
+                                                                                            class="d-block text-high-em">Sophia
+                                                                                            Lee</span>
                                                                                     </div>
                                                                                 </div>
                                                                             </a>
                                                                         </td>
                                                                         <td>Heating</td>
                                                                         <td>5</td>
-                                                                        <td><span class="badge bg-info">Requested</span></td>
+                                                                        <td><span class="badge bg-info">Requested</span>
+                                                                        </td>
                                                                         <td>19 Nov, 2024</td>
                                                                     </tr>
-                                                                    
 
                                                                 </tbody>
                                                             </table>
-                                                            </div>
-                                                               
+                                                        </div>
 
-                                                          
-                                                         </div>
+                                                    </div>
 
-                                                   </div>
                                                 </div>
-                                          
+                                                
+                                            </div>
 
                                         </div>
 
+                                        <div class="tab-pane fade" id="completedtasks">
+                                            <div class="fullwidthTabInner_content_container">
+
+                                          
+                          <div class="card">
+                              <div class="card-body">
+                                  <div class="row">
+                                  <!-- <div class="col-lg-12">
+                                      <h1 class="secTitle titleBtn">Ticket All History List </h1>
+                                  </div> -->
+                                  <div class="col-lg-12">
+
+                                  <div class="docfilterbutton completedrtask_headeract">
+                                                    <h2 class="tabinnerTitle">All Task List  </h2>
+                                                    <div class="RightTabinr_container">
+                                                    <div class="allSelect flex items-center gap-2 checkboxTask">
+                                                <input id="allSelectCheck" class="" type="checkbox" value="">
+                                                <label for="allSelectCheck" class="align-middle">All Select</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <!-- <label for="exampleFormControlInput1" class="form-label">Client Name</label> -->
+                                                <select class="form-input select2" id="choices-single-default">
+                                                    <option value="Select">--Status--</option>
+                                                    <option value="In Progress">In Progress</option>
+                                                    <option value="Done">Done</option>
+                                                    <option value="Approved">Approved</option>
+                                                </select>
+                                            </div>
+                                                    </div>
+                                                </div>
 
 
+                                      
+                                  </div>
+                                  <div class="col-lg-12">
+                                  <div class="accordion taskAccordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header taskHeader" id="headingOne">
+                                        <div class="flex items-center gap-2 checkboxTask">
+                                            <input id="checkboxOutline8" class="" type="checkbox" value="">
+                                            <label for="checkboxOutline8" class="align-middle"></label>
+                                        </div>
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                         <div class="taskBlex">
+                                         <h6>Water Leakage from Ceiling</h6>
+                                         <span class="badge badge-soft-warning my-1 me-2">In progress</span>
+                                         </div>
+                                       
+                                        </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        <ul class="issueHistoryList">
+
+                                                                    <li>
+                                                                        <label for="" class="form-label historyLabel ">Before Images & video
+                                                                            : </label>
+                                                                       
+                                                        <div class="multiImageSlider slider">
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock12.jpg">
+                                                                    <img src="dist/img/issue-images/mock12.jpg"
+                                                                        alt="Image 1">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock5.jpg">
+                                                                    <img src="dist/img/issue-images/mock5.jpg"
+                                                                        alt="Image 2">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock6.jpg">
+                                                                    <img src="dist/img/issue-images/mock6.jpg"
+                                                                        alt="Image 3">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock7.jpg">
+                                                                    <img src="dist/img/issue-images/mock7.jpg"
+                                                                        alt="Image 4">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock8.jpg">
+                                                                    <img src="dist/img/issue-images/mock8.jpg"
+                                                                        alt="Image 5">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock9.jpg">
+                                                                    <img src="dist/img/issue-images/mock9.jpg"
+                                                                        alt="Image 6">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock10.jpg">
+                                                                    <img src="dist/img/issue-images/mock10.jpg"
+                                                                        alt="Image 7">
+                                                                </a>
+                                                            </div>
+
+                                                            <!-- Add more slides as needed -->
+                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label for="" class="form-label historyLabel ">After Images & video
+                                                                            : </label>
+                                                                            <div class="multiImageSlider slider">
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock12.jpg">
+                                                                    <img src="dist/img/issue-images/mock12.jpg"
+                                                                        alt="Image 1">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock5.jpg">
+                                                                    <img src="dist/img/issue-images/mock5.jpg"
+                                                                        alt="Image 2">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock6.jpg">
+                                                                    <img src="dist/img/issue-images/mock6.jpg"
+                                                                        alt="Image 3">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock7.jpg">
+                                                                    <img src="dist/img/issue-images/mock7.jpg"
+                                                                        alt="Image 4">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock8.jpg">
+                                                                    <img src="dist/img/issue-images/mock8.jpg"
+                                                                        alt="Image 5">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock9.jpg">
+                                                                    <img src="dist/img/issue-images/mock9.jpg"
+                                                                        alt="Image 6">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock10.jpg">
+                                                                    <img src="dist/img/issue-images/mock10.jpg"
+                                                                        alt="Image 7">
+                                                                </a>
+                                                            </div>
+
+                                                            <!-- Add more slides as needed -->
+                                                        </div>
+                                                                    </li>
+                                                                    <li><label for="" class="form-label historyLabel">Added
+                                                                            Notes : </label>
+                                                                        <ol class="commentpointslist">
+                                                                            <li>The tiles are missing under the shower
+                                                                                tray, some of the tiles are in the
+                                                                                bathroom.</li>
+                                                                            <li>The sink is clogged, the water drains
+                                                                                poorly, I wanted to clear it, but I
+                                                                                can't unscrew the plug.</li>
+                                                                        </ol>
+
+                                                                        <p>The tiles under the shower tray might have
+                                                                            been displaced due to water damage.
+                                                                            Recommend thorough inspection and
+                                                                            replacement.</p>
+                                                                    </li>
+                                                                </ul>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header taskHeader" id="headingTwo">
+                                        <div class="flex items-center gap-2 checkboxTask">
+                                            <input id="checkboxOutline9" class="size-4 cursor-pointer bg-white border border-slate-200 checked:bg-none dark:bg-zink-700 dark:border-zink-500 rounded-sm appearance-none arrow-none relative after:absolute after:content-['\eb7b'] after:top-0 after:left-0 after:font-remix after:leading-none after:opacity-0 checked:after:opacity-100 after:text-orange-500 checked:border-orange-500 dark:after:text-orange-500 dark:checked:border-orange-800" type="checkbox" value="">
+                                            <label for="checkboxOutline9" class="align-middle"></label>
+                                        </div>
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                           <div class="taskBlex">
+                                           <h6>Ac Repair</h6>
+                                           <span class="badge badge-soft-success my-1 me-2">Done</span>
+                                           </div>
+                                          
+                                        </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        <ul class="issueHistoryList">
+                                        <li>
+                                                                        <label for="" class="form-label historyLabel ">Before Images & video
+                                                                            : </label>
+                                                                            <div class="multiImageSlider slider">
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock12.jpg">
+                                                                    <img src="dist/img/issue-images/mock12.jpg"
+                                                                        alt="Image 1">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock5.jpg">
+                                                                    <img src="dist/img/issue-images/mock5.jpg"
+                                                                        alt="Image 2">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock6.jpg">
+                                                                    <img src="dist/img/issue-images/mock6.jpg"
+                                                                        alt="Image 3">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock7.jpg">
+                                                                    <img src="dist/img/issue-images/mock7.jpg"
+                                                                        alt="Image 4">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock8.jpg">
+                                                                    <img src="dist/img/issue-images/mock8.jpg"
+                                                                        alt="Image 5">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock9.jpg">
+                                                                    <img src="dist/img/issue-images/mock9.jpg"
+                                                                        alt="Image 6">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock10.jpg">
+                                                                    <img src="dist/img/issue-images/mock10.jpg"
+                                                                        alt="Image 7">
+                                                                </a>
+                                                            </div>
+
+                                                            <!-- Add more slides as needed -->
+                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <label for="" class="form-label historyLabel ">After Images & video
+                                                                            : </label>
+                                                                            <div class="multiImageSlider slider">
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock12.jpg">
+                                                                    <img src="dist/img/issue-images/mock12.jpg"
+                                                                        alt="Image 1">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock5.jpg">
+                                                                    <img src="dist/img/issue-images/mock5.jpg"
+                                                                        alt="Image 2">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock6.jpg">
+                                                                    <img src="dist/img/issue-images/mock6.jpg"
+                                                                        alt="Image 3">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock7.jpg">
+                                                                    <img src="dist/img/issue-images/mock7.jpg"
+                                                                        alt="Image 4">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock8.jpg">
+                                                                    <img src="dist/img/issue-images/mock8.jpg"
+                                                                        alt="Image 5">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock9.jpg">
+                                                                    <img src="dist/img/issue-images/mock9.jpg"
+                                                                        alt="Image 6">
+                                                                </a>
+                                                            </div>
+                                                            <div class="galleryImage col">
+                                                                <a class="card card-border" data-fancybox="gallery"
+                                                                    href="dist/img/issue-images/mock10.jpg">
+                                                                    <img src="dist/img/issue-images/mock10.jpg"
+                                                                        alt="Image 7">
+                                                                </a>
+                                                            </div>
+
+                                                            <!-- Add more slides as needed -->
+                                                        </div>
+                                                                    </li>
+                                                                    <li><label for="" class="form-label historyLabel">Added
+                                                                            Notes : </label>
+                                                                        <ol class="commentpointslist">
+                                                                            <li>The tiles are missing under the shower
+                                                                                tray, some of the tiles are in the
+                                                                                bathroom.</li>
+                                                                            <li>The sink is clogged, the water drains
+                                                                                poorly, I wanted to clear it, but I
+                                                                                can't unscrew the plug.</li>
+                                                                        </ol>
+
+                                                                        <p>The tiles under the shower tray might have
+                                                                            been displaced due to water damage.
+                                                                            Recommend thorough inspection and
+                                                                            replacement.</p>
+                                                                    </li>
+
+                                                                </ul>
+                                        </div>
+                                        </div>
+                                    </div>
+                                
+                                    </div>
+
+                                  </div>
+                                     
+                                  </div>
+                                 
+                              </div>
+                          </div>
 
 
+                                            <div class="card card-border mb-lg-4 mb-3">
+                                                    <div class="card-header card-header-action">
+                                                        
+                                                    <h5>Material detail</h5>
+
+                                                        <!-- <div class="cardRightDetail_boxContainer">
+                                                            <div class="flexcheckColumn">
+                                                                <div class="form-group">
+                                                                    <div class="form-check customformchec_kInpdisabled">
+                                                                        <input type="checkbox" class="form-check-input" id="customCheckList6" disabled="">
+                                                                        <label class="form-check-label" for="customCheckList6">
+                                                                            Requested presence during maintenance
+                                                                            <span class="done-strikethrough"></span>
+                                                                        </label>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+
+                                                    </div>
+                                                    <div class="card-body custombodyPadding">
+                                                        <div class="d-flex text-center inspectionpropert_details">
+                                                            <div class="flex-1 border-end CustomFlex_style">
+                                                                <div class="ticInfo_Item">
+                                                                    <span class="d-block TicketDetails_info_title">
+                                                                    Supplier Name</span>
+                                                                    <span class="d-block text-capitalize ticketdetailinfo_data">
+                                                                        <span class="badge badge-soft-success  my-1  me-2">Romi</span></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-1 border-end CustomFlex_style">
+                                                                <div class="ticInfo_Item">
+                                                                    <span class="d-block TicketDetails_info_title">
+                                                                    Receipt No.</span>
+                                                                    <span class="d-block text-capitalize ticketdetailinfo_data">
+                                                                        <span class="badge badge-soft-success  my-1  me-2"> #4567 </span></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-1 border-end CustomFlex_style">
+                                                                <div class="ticInfo_Item">
+                                                                    <span class="d-block TicketDetails_info_title">
+                                                                    Receipt Image</span>
+                                                                    <span class="d-block text-capitalize ticketdetailinfo_data">
+                                                                    <a class="receiptImg" data-fancybox="gallery" href="dist/img/newimages/inspectionitems/Faucet2.jpg">
+                                                                    <img src="dist/img/newimages/inspectionitems/Faucet2.jpg" alt="Image 5">
+                                                                </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="flex-1 border-end CustomFlex_style">
+                                                                <div class="ticInfo_Item">
+                                                                    <span class="d-block TicketDetails_info_title">
+                                                                    Total Cost</span>
+                                                                    <span class="d-block text-capitalize ticketdetailinfo_data">
+                                                                        <span class="badge badge-soft-success  my-1  me-2"> $08.00</span></span>
+                                                                </div>
+                                                            </div>
+                                                            
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="contact-list-view">
+                                                            <table
+                                                                class="table common-datatable nowrap w-100 assignMaterial">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Material</th>
+                                                                        <th>Quantity </th>
+                                                                        <th>Price</th>
+
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                            <tr>
+                                                                <td>Screw</td>
+                                                                <td>2</td>
+                                                                <td>$ 1</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Screw Driver</td>
+                                                                <td>2</td>
+                                                                <td>$ 1</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>retractation</td>
+                                                                <td>6</td>
+                                                                <td>$ 6</td>
+                                                            </tr>   
+                                                         </tbody>
+                                                            </table>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                    <div class="card">
+                                                    <div class="card-header">
+                                                        <div class="card-title customcardTitle">
+                                                            <h6>Comments</h6>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="card-body">
+
+                                                        <div class="commentReplyContainer">
+                                                            <ul id="dummy_avatar"
+                                                                class="list-unstyled chat-single-list">
+                                                                <li class="media received">
+                                                                    <div class="avatar avatar-xs avatar-rounded">
+                                                                        <img src="dist/img/newimages/users/userdummy.png"
+                                                                            alt="user" class="avatar-img">
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <div class="msg-box">
+                                                                            <div>
+                                                                                <p>Hi, I noticed some water leakage in
+                                                                                    the ceiling of my bedroom. It's been
+                                                                                    happening for a few days now, and
+                                                                                    I'm worried it might cause damage to
+                                                                                    the property. Can you please send
+                                                                                    someone to inspect and fix it as
+                                                                                    soon as possible?</p>
+                                                                                <div class="replyUserAuthor">
+                                                                                    <a href="view-user-details.php">Danial
+                                                                                        Craig</a>
+                                                                                    <div class="commentdateandtime">
+                                                                                        11/04/2024 00:04</div>
+                                                                                    <div
+                                                                                        class="comment_visibilityStatus">
+                                                                                        Status: <span
+                                                                                            class="badge badge-soft-success  my-1  me-2">Everyone</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="media sent">
+                                                                    <div class="media-body">
+                                                                        <div class="msg-box">
+                                                                            <div>
+                                                                                <p>Thank you for bringing this to our
+                                                                                    attention. We apologize for any
+                                                                                    inconvenience caused by the water
+                                                                                    leakage in your bedroom. Our
+                                                                                    maintenance team will be dispatched
+                                                                                    immediately to inspect the issue and
+                                                                                    take appropriate action to resolve
+                                                                                    it promptly. Your safety and comfort
+                                                                                    are our top priorities, and we
+                                                                                    appreciate your patience as we work
+                                                                                    to address this matter.</p>
+                                                                                <div class="replyUserAuthor">
+                                                                                    <a href="view-user-details.php">Morgan
+                                                                                        Freeman</a>
+                                                                                    <div class="commentdateandtime">
+                                                                                        11/04/2024 00:04</div>
+                                                                                    <div
+                                                                                        class="comment_visibilityStatus">
+                                                                                        Status: <span
+                                                                                            class="badge badge-soft-success  my-1  me-2">Staff
+                                                                                            Only </span></div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li class="media sent">
+                                                                    <div class="media-body">
+                                                                        <div class="msg-box">
+                                                                            <div>
+                                                                                <p>We'll send someone ASAP to fix it.
+                                                                                    Thanks for letting us know.</p>
+                                                                                <div class="replyUserAuthor">
+                                                                                    <a href="view-user-details.php">Morgan
+                                                                                        Freeman</a>
+                                                                                    <div class="commentdateandtime">
+                                                                                        11/04/2024 00:04</div>
+                                                                                    <div
+                                                                                        class="comment_visibilityStatus">
+                                                                                        Status: <span
+                                                                                            class="badge badge-soft-success  my-1  me-2">Staff
+                                                                                            Only </span></div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="media received">
+                                                                    <div class="avatar avatar-xs avatar-rounded">
+                                                                        <img src="dist/img/newimages/users/userdummy.png"
+                                                                            alt="user" class="avatar-img">
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <div class="msg-box">
+                                                                            <div>
+                                                                                <p>Thanks</p>
+                                                                                <div class="replyUserAuthor">
+                                                                                    <a href="view-user-details.php">Danial
+                                                                                        Craig</a>
+                                                                                    <div class="commentdateandtime">
+                                                                                        11/04/2024 00:04</div>
+                                                                                    <div
+                                                                                        class="comment_visibilityStatus">
+                                                                                        Status: <span
+                                                                                            class="badge badge-soft-success  my-1  me-2">Everyone</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+
+                                                        </div>
+                                                    </div>
+                                                    <footer class="chat-footer">
+
+                                                        <div class="row">
+                                                            <div class="col-lg-9">
+                                                                <div class="input-group mt-4">
+                                                                    <span class="input-affix-wrapper">
+                                                                        <input type="text" id="input_msg_send_chatapp"
+                                                                            name="send-msg"
+                                                                            class="input-msg-send form-control rounded-input"
+                                                                            placeholder="Type your message...">
+                                                                        <span class="input-suffix">
+                                                                            <button
+                                                                                class="btn btn-icon btn-flush-primary btn-rounded btn-send">
+                                                                                <span class="icon"><span
+                                                                                        class="feather-icon">
+                                                                                        <iconify-icon
+                                                                                            icon="radix-icons:arrow-right">
+                                                                                        </iconify-icon>
+                                                                                    </span></span>
+                                                                            </button>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <div class="form-group  formgroup_marginNone">
+                                                                    <label class="form-label">Visibility</label>
+                                                                    <select name="" id="" class="form-control select2">
+                                                                        <option disabled="" selected="" value="">Please
+                                                                            Select...</option>
+                                                                        <option value="1">Everyone</option>
+                                                                        <option value="2">Staff Only</option>
+                                                                        <option value="3">Landlord</option>
+                                                                        <option value="4">Tenant</option>
+
+                                                                    </select>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </footer>
+                                                </div>
+                                                    </div>
+
+                                                    <div class="savechangesformContainer">
+                                                <button type="submit" class="buttonInfOUpdate">
+                                                    <iconify-icon icon="fluent:save-32-regular">
+                                                    </iconify-icon>
+                                                    Save Changes
+                                                </button>
+                                            </div>
 
 
+                                                </div>
+                                            </div>
 
-
-
+                                        </div>
 
                                         <div class="tab-pane fade" id="TimeLog">
                                             <div class="fullwidthTabInner_content_container">
@@ -967,24 +2081,27 @@
                                                                 </thead>
                                                                 <tbody>
                                                                     <tr>
-                                                                    <td>
+                                                                        <td>
                                                                             <a href="view-user-details.php">
                                                                                 <div class="media align-items-center">
                                                                                     <div class="media-head me-2">
-                                                                                        <div class="avatar avatar-xs avatar-rounded">
-                                                                                            <img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+                                                                                        <div
+                                                                                            class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="avatar-img">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="media-body">
-                                                                                        <span class="d-block text-high-em">Charlie
+                                                                                        <span
+                                                                                            class="d-block text-high-em">Charlie
                                                                                             Chaplin</span>
                                                                                     </div>
                                                                                 </div>
                                                                             </a>
                                                                         </td>
                                                                         <td>08/05/2024 18:56</td>
-                                                                       
-                                                                       
+
                                                                         <td>
                                                                             <div class="LongMesage_container">
                                                                                 <input
@@ -1002,7 +2119,7 @@
                                                                             </div>
                                                                         </td>
                                                                         <td>08/05/2024 21:30</td>
-                                                                     
+
                                                                         <td>
                                                                             <div class="LongMesage_container">
                                                                                 <input
@@ -1589,6 +2706,7 @@
                                         </div>
 
                                         <div class="tab-pane fade" id="Expenses">
+
                                             <div class="fullwidthTabInner_content_container">
                                                 <div class="docFilterContainer">
                                                     <div class="docfilterbutton">
@@ -1598,7 +2716,7 @@
                                                             <button
                                                                 class="btn btn-sm addiconiButton commonAddnewButton btn-primary ms-3"
                                                                 type="button" data-bs-toggle="offcanvas"
-                                                                data-bs-target="#addtimelog"
+                                                                data-bs-target="#AddExpenses"
                                                                 aria-controls="offcanvasExample">
                                                                 <iconify-icon icon="lets-icons:add-round">
                                                                 </iconify-icon> Add Expenses
@@ -1607,74 +2725,380 @@
                                                     </div>
 
                                                 </div>
+
+                                                <div class="Count_Numbers_container Expenses_summary_section">
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <div class="card card-border spipeline-card">
+                                                                <div class="card-body">
+
+                                                                    <div class="media">
+                                                                        <div class="media-head">
+                                                                            <div
+                                                                                class="avatar avatar-logo avatar-rounded">
+                                                                                <span
+                                                                                    class="initial-wrap cardiconBGColor_1">
+                                                                                    <iconify-icon
+                                                                                        icon="solar:hand-money-broken">
+                                                                                    </iconify-icon>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <div class="Cardcount-name">Total for
+                                                                                Landlord</div>
+                                                                            <div class="NumberCountCard">£1082</div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <div class="card card-border spipeline-card">
+                                                                <div class="card-body">
+
+                                                                    <div class="media">
+                                                                        <div class="media-head">
+                                                                            <div
+                                                                                class="avatar avatar-logo avatar-rounded">
+                                                                                <span
+                                                                                    class="initial-wrap cardiconBGColor_2">
+                                                                                    <iconify-icon
+                                                                                        icon="solar:hand-money-broken">
+                                                                                    </iconify-icon>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <div class="Cardcount-name">Total for Tenant
+                                                                            </div>
+                                                                            <div class="NumberCountCard">£1014</div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <div class="card card-border spipeline-card">
+                                                                <div class="card-body">
+
+                                                                    <div class="media">
+                                                                        <div class="media-head">
+                                                                            <div
+                                                                                class="avatar avatar-logo avatar-rounded">
+                                                                                <span
+                                                                                    class="initial-wrap cardiconBGColor_3">
+                                                                                    <iconify-icon
+                                                                                        icon="solar:hand-money-broken">
+                                                                                    </iconify-icon>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <div class="Cardcount-name">Total for Agency
+                                                                            </div>
+                                                                            <div class="NumberCountCard">£800 </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
                                                 <div class="card">
                                                     <div class="card-body">
                                                         <div class="contact-list-view">
 
-                                                            <table class="table common-datatable  nowrap w-100 ">
+                                                            <table class="table common-datatable nowrap w-100">
                                                                 <thead>
                                                                     <tr>
-
-                                                                        <th>Name</th>
-                                                                        <th>Start</th>
-                                                                        <th>End</th>
-                                                                        <th>Comment</th>
+                                                                        <th>Type</th>
+                                                                        <th>Description</th>
+                                                                        <th>Start Time</th>
+                                                                        <th>End Time</th>
+                                                                        <th>Duration/Amount</th>
+                                                                        <th>Assigned To</th>
                                                                         <th>Actions</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
+                                                                    <!-- Mileage Log Row 1 -->
                                                                     <tr>
-
-                                                                        <td>
-                                                                            Bathroom > Routine Cleaning
-                                                                        </td>
-                                                                        <td>08/05/2024 18:56</td>
-                                                                        <td>08/05/2024 21:30</td>
-                                                                        <td>
-                                                                            <div class="LongMesage_container">
-                                                                                <input
-                                                                                    class="refuge-collection-input  tableLongMessage_Input"
-                                                                                    value="Was told to raise an issue to support the possibility of a rent extension. Attached is a screenshot of an email from SFE to show I will get the funding on the 15th. If you need any other photos (from the actual account online) please let me know!">
-
-                                                                                </input>
-                                                                                <button
-                                                                                    class="view-btn tablemessageview_btn"
-                                                                                    type="button"
-                                                                                    data-bs-toggle="tooltip"
-                                                                                    data-bs-placement="top"
-                                                                                    aria-label="Click to view"
-                                                                                    data-bs-original-title="Click to view Full Message">
-                                                                                    <i class="bi bi-eye"></i> Read More
-                                                                                </button>
-                                                                            </div>
-                                                                        </td>
+                                                                        <td>Mileage Log</td>
+                                                                        <td>Kitchen 206 → Flat A</td>
+                                                                        <td>08/05/2024 10:00</td>
+                                                                        <td>08/05/2024 11:00</td>
+                                                                        <td>10 miles</td>
+                                                                        <td>Landlord</td>
                                                                         <td>
                                                                             <div
                                                                                 class="d-flex align-items-center ActionDropdown">
-                                                                                <div class="d-flex">
-                                                                                    <button
-                                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                        type="button"
-                                                                                        data-bs-toggle="offcanvas"
-                                                                                        data-bs-target="#Edittimelog"
-                                                                                        aria-controls="offcanvasExample"><span
-                                                                                            class="icon"><span
-                                                                                                class="feather-icon">
-                                                                                                <iconify-icon
-                                                                                                    icon="fluent:edit-16-regular">
-                                                                                                </iconify-icon>
-                                                                                            </span></span></button>
-
-                                                                                </div>
-
+                                                                                <button
+                                                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="offcanvas"
+                                                                                    data-bs-target="#EditExpenses"
+                                                                                    aria-controls="offcanvasExample">
+                                                                                    <span class="icon">
+                                                                                        <iconify-icon
+                                                                                            icon="fluent:edit-16-regular">
+                                                                                        </iconify-icon>
+                                                                                    </span>
+                                                                                </button>
+                                                                                <button
+                                                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                                    type="button">
+                                                                                    <span class="icon">
+                                                                                        <iconify-icon
+                                                                                            icon="fluent:delete-16-regular">
+                                                                                        </iconify-icon>
+                                                                                    </span>
+                                                                                </button>
                                                                             </div>
                                                                         </td>
                                                                     </tr>
 
+                                                                    <!-- Mileage Log Row 2 -->
+                                                                    <tr>
+                                                                        <td>Mileage Log</td>
+                                                                        <td>Flat A → Flat B</td>
+                                                                        <td>08/05/2024 12:00</td>
+                                                                        <td>08/05/2024 13:00</td>
+                                                                        <td>15 miles</td>
+                                                                        <td>Tenant</td>
+                                                                        <td>
+                                                                            <div
+                                                                                class="d-flex align-items-center ActionDropdown">
+                                                                                <button
+                                                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="offcanvas"
+                                                                                    data-bs-target="#EditExpenses"
+                                                                                    aria-controls="offcanvasExample">
+                                                                                    <span class="icon">
+                                                                                        <iconify-icon
+                                                                                            icon="fluent:edit-16-regular">
+                                                                                        </iconify-icon>
+                                                                                    </span>
+                                                                                </button>
+                                                                                <button
+                                                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                                    type="button">
+                                                                                    <span class="icon">
+                                                                                        <iconify-icon
+                                                                                            icon="fluent:delete-16-regular">
+                                                                                        </iconify-icon>
+                                                                                    </span>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <!-- Mileage Log Row 3 -->
+                                                                    <tr>
+                                                                        <td>Mileage Log</td>
+                                                                        <td>Flat B → Kitchen 206</td>
+                                                                        <td>08/05/2024 14:00</td>
+                                                                        <td>08/05/2024 15:00</td>
+                                                                        <td>8 miles</td>
+                                                                        <td>Agency</td>
+                                                                        <td>
+                                                                            <div
+                                                                                class="d-flex align-items-center ActionDropdown">
+                                                                                <button
+                                                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="offcanvas"
+                                                                                    data-bs-target="#EditExpenses"
+                                                                                    aria-controls="offcanvasExample">
+                                                                                    <span class="icon">
+                                                                                        <iconify-icon
+                                                                                            icon="fluent:edit-16-regular">
+                                                                                        </iconify-icon>
+                                                                                    </span>
+                                                                                </button>
+                                                                                <button
+                                                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                                    type="button">
+                                                                                    <span class="icon">
+                                                                                        <iconify-icon
+                                                                                            icon="fluent:delete-16-regular">
+                                                                                        </iconify-icon>
+                                                                                    </span>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <!-- Time Log Row 1 -->
+                                                                    <tr>
+                                                                        <td>Time Log</td>
+                                                                        <td>Cleaning Task</td>
+                                                                        <td>08/05/2024 16:00</td>
+                                                                        <td>08/05/2024 18:00</td>
+                                                                        <td>2 hours</td>
+                                                                        <td>Tenant</td>
+                                                                        <td>
+                                                                            <div
+                                                                                class="d-flex align-items-center ActionDropdown">
+                                                                                <button
+                                                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="offcanvas"
+                                                                                    data-bs-target="#EditExpenses"
+                                                                                    aria-controls="offcanvasExample">
+                                                                                    <span class="icon">
+                                                                                        <iconify-icon
+                                                                                            icon="fluent:edit-16-regular">
+                                                                                        </iconify-icon>
+                                                                                    </span>
+                                                                                </button>
+                                                                                <button
+                                                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                                    type="button">
+                                                                                    <span class="icon">
+                                                                                        <iconify-icon
+                                                                                            icon="fluent:delete-16-regular">
+                                                                                        </iconify-icon>
+                                                                                    </span>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <!-- Time Log Row 2 -->
+                                                                    <tr>
+                                                                        <td>Time Log</td>
+                                                                        <td>Inspection Task</td>
+                                                                        <td>08/05/2024 18:30</td>
+                                                                        <td>08/05/2024 20:00</td>
+                                                                        <td>1.5 hours</td>
+                                                                        <td>Landlord</td>
+                                                                        <td>
+                                                                            <div
+                                                                                class="d-flex align-items-center ActionDropdown">
+                                                                                <button
+                                                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="offcanvas"
+                                                                                    data-bs-target="#EditExpenses"
+                                                                                    aria-controls="offcanvasExample">
+                                                                                    <span class="icon">
+                                                                                        <iconify-icon
+                                                                                            icon="fluent:edit-16-regular">
+                                                                                        </iconify-icon>
+                                                                                    </span>
+                                                                                </button>
+                                                                                <button
+                                                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                                    type="button">
+                                                                                    <span class="icon">
+                                                                                        <iconify-icon
+                                                                                            icon="fluent:delete-16-regular">
+                                                                                        </iconify-icon>
+                                                                                    </span>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <!-- Receipt -->
+                                                                    <tr>
+                                                                        <td>Receipt</td>
+                                                                        <td>Cleaning Supplies</td>
+                                                                        <td>08/05/2024 09:00</td>
+                                                                        <td>08/05/2024 09:05</td>
+                                                                        <td>$25</td>
+                                                                        <td>Agency</td>
+                                                                        <td>
+                                                                            <div
+                                                                                class="d-flex align-items-center ActionDropdown">
+                                                                                <button
+                                                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="offcanvas"
+                                                                                    data-bs-target="#ViewReceipt"
+                                                                                    aria-controls="offcanvasExample">
+                                                                                    <span class="icon">
+                                                                                        <iconify-icon
+                                                                                            icon="fluent:eye-16-regular">
+                                                                                        </iconify-icon>
+                                                                                    </span>
+                                                                                </button>
+                                                                                <button
+                                                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                                    type="button">
+                                                                                    <span class="icon">
+                                                                                        <iconify-icon
+                                                                                            icon="fluent:delete-16-regular">
+                                                                                        </iconify-icon>
+                                                                                    </span>
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
                                                                 </tbody>
                                                             </table>
+
                                                         </div>
                                                     </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="tab-pane fade" id="InventoryRequests">
+                                            <div class="fullwidthTabInner_content_container">
+
+                                                <div class="contact-list-view">
+
+                                                    <table class="table common-datatable nowrap w-100 ">
+                                                        <thead>
+                                                            <tr>
+
+                                                                <th>Staff Name </th>
+                                                                <th>Product Name</th>
+                                                                <th>Quantity</th>
+                                                                <th>Status</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+
+                                                                <td>
+                                                                    <a href="view-user-details.php">
+                                                                        <div class="media align-items-center">
+                                                                            <div class="media-head me-2">
+                                                                                <div
+                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user" class="avatar-img">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <span
+                                                                                    class="d-block text-high-em">Charlie
+                                                                                    Chaplin</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td>
+                                                                    Ac PCB
+                                                                </td>
+                                                                <td> 10</td>
+                                                                <td><span class="badge bg-info">Awaiting for
+                                                                        inventory</span></td>
+
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                             </div>
 
@@ -2135,8 +3559,6 @@
 
                                         </div>
 
-                                       
-
                                     </div>
 
                                 </div>
@@ -2187,8 +3609,7 @@
                         <div class="col-lg-12">
                             <div class="row">
 
-                            
-                            <div class="col-md-4">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Start Date</label>
                                         <input class="form-control customdataPicker flatpickr-input" type="text" name=""
@@ -2319,7 +3740,8 @@
                                 <div class="col-lg-4">
                                     <div class="form-group">
                                         <label class="form-label">Starting Address</label>
-                                        <input class="form-control" type="text" name="" value="Kitchen 206, Flat 12 (Floor 3, No12), Sea View@Oceanic Towers">
+                                        <input class="form-control" type="text" name=""
+                                            value="Kitchen 206, Flat 12 (Floor 3, No12), Sea View@Oceanic Towers">
                                     </div>
                                 </div>
 
@@ -2344,7 +3766,8 @@
                                 <div class="col-lg-4">
                                     <div class="form-group">
                                         <label class="form-label">End Address</label>
-                                        <input class="form-control" type="text" name="" value="Kitchen 206, Flat 12 (Floor 3, No12), Sea View@Oceanic Towers">
+                                        <input class="form-control" type="text" name=""
+                                            value="Kitchen 206, Flat 12 (Floor 3, No12), Sea View@Oceanic Towers">
                                     </div>
                                 </div>
 
@@ -2353,7 +3776,8 @@
                                         <div class="form-label-group">
                                             <label>Comment</label>
                                         </div>
-                                        <textarea class="form-control" rows="4" placeholder="Write here...">Was told to raise an issue to support the possibility of a rent extension. Attached is a screenshot of an email from SFE to show I will get the funding on the 15th. If you need any other photos (from the actual account online) please let me know!</textarea>
+                                        <textarea class="form-control" rows="4"
+                                            placeholder="Write here...">Was told to raise an issue to support the possibility of a rent extension. Attached is a screenshot of an email from SFE to show I will get the funding on the 15th. If you need any other photos (from the actual account online) please let me know!</textarea>
                                     </div>
                                 </div>
 
@@ -2374,6 +3798,447 @@
     </form>
 </div>
 <!-- edit timelog end -->
+
+<!-- add Expenses offcanvas -->
+<div class="offcanvas offcanvas-bottom custombottm_offcanvasStyle" tabindex="-1" id="AddExpenses"
+    aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header custom-canvas-header">
+        <div class="canvas-header-title">
+            <iconify-icon icon="line-md:document-remove" width="1.2em" height="1.2em"></iconify-icon>
+            Add Expenses
+        </div>
+        <div class="closeCanvasContainer">
+            <button type="button" class="canvascloseButton" data-bs-dismiss="offcanvas" aria-label="Close">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    class="ct-icon" style="min-width: 20px; min-height: 20px; color: var(--ct-white);"
+                    data-testid="icon">
+                    <path
+                        d="M11.375 14.5C11.5583 14.6833 11.7667 14.775 12 14.775C12.2333 14.775 12.4417 14.6833 12.625 14.5L15.625 11.525C15.7583 11.3917 15.8207 11.2167 15.812 11C15.804 10.7833 15.7333 10.6083 15.6 10.475C15.45 10.325 15.275 10.25 15.075 10.25C14.875 10.25 14.7 10.325 14.55 10.475L12 13.025L9.425 10.45C9.29167 10.3167 9.11667 10.254 8.9 10.262C8.68333 10.2707 8.50833 10.3417 8.375 10.475C8.225 10.625 8.15 10.8 8.15 11C8.15 11.2 8.225 11.375 8.375 11.525L11.375 14.5ZM12 21.5C10.6833 21.5 9.446 21.25 8.288 20.75C7.12933 20.25 6.125 19.575 5.275 18.725C4.425 17.875 3.75 16.8707 3.25 15.712C2.75 14.554 2.5 13.3167 2.5 12C2.5 10.6833 2.75 9.44567 3.25 8.287C3.75 7.129 4.425 6.125 5.275 5.275C6.125 4.425 7.12933 3.75 8.288 3.25C9.446 2.75 10.6833 2.5 12 2.5C13.3167 2.5 14.5543 2.75 15.713 3.25C16.871 3.75 17.875 4.425 18.725 5.275C19.575 6.125 20.25 7.129 20.75 8.287C21.25 9.44567 21.5 10.6833 21.5 12C21.5 13.3167 21.25 14.554 20.75 15.712C20.25 16.8707 19.575 17.875 18.725 18.725C17.875 19.575 16.871 20.25 15.713 20.75C14.5543 21.25 13.3167 21.5 12 21.5ZM12 20C14.2167 20 16.1043 19.221 17.663 17.663C19.221 16.1043 20 14.2167 20 12C20 9.78333 19.221 7.89567 17.663 6.337C16.1043 4.779 14.2167 4 12 4C9.78333 4 7.896 4.779 6.338 6.337C4.77933 7.89567 4 9.78333 4 12C4 14.2167 4.77933 16.1043 6.338 17.663C7.896 19.221 9.78333 20 12 20Z"
+                        fill="currentColor"></path>
+                </svg>Close
+            </button>
+        </div>
+
+    </div>
+    <div class="Canvas_ct_divider"></div>
+    <form class="" action="view-ticket.php" method="POST">
+        <div class="offcanvas-body">
+
+            <div class="addingForm_Container">
+                <div class="add-users-modal-body-table-header text-headline-6">Add New Expenses </div>
+
+                <div class="formstartcontainer">
+                    <div class="row">
+
+                        <!-- Expense Type -->
+
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label class="form-label" for="expenseType">Expense Type</label>
+                                <select name="" id="expenseType" class="form-control select2">
+                                    <option value="" disable readonly>
+                                        Select an Option</option>
+                                    <option value="Mileage Log">Mileage Log</option>
+                                    <option value="Time Log">Time Log</option>
+                                    <option value="Receipt">Receipt</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Mileage Log Fields -->
+                        <div id="mileageLogFields" class="d-none">
+                            <div class="row">
+
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label class="form-label">Starting point</label>
+                                        <input class="form-control" type="text" name="" placeholder="">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group canvas_inputwith_Icon">
+                                        <label class="form-label">Date</label>
+                                        <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+                                            placeholder="Select Date" readonly="readonly">
+                                        <iconify-icon icon="fluent:calendar-ltr-32-regular"></iconify-icon>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group canvas_inputwith_Icon">
+                                        <label class="form-label">Starting Time</label>
+                                        <input type="text" name="time" value="" class="form-control time__pickers"
+                                            id="timepicker" placeholder="Select Time" required="" readonly="">
+                                        <iconify-icon icon="hugeicons:time-quarter"></iconify-icon>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group ">
+                                        <label class="form-label">Starting Milleage</label>
+                                        <input class="form-control" type="text" name="" placeholder="">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label class="form-label">End point</label>
+                                        <input class="form-control" type="text" name="" placeholder="">
+
+                                    </div>
+
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group canvas_inputwith_Icon">
+                                        <label class="form-label">Date</label>
+                                        <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+                                            placeholder="Select Date" readonly="readonly">
+                                        <iconify-icon icon="fluent:calendar-ltr-32-regular"></iconify-icon>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group canvas_inputwith_Icon">
+                                        <label class="form-label">End Time</label>
+                                        <input type="text" name="time" value="" class="form-control time__pickers"
+                                            id="timepicker" placeholder="Select Time" required="" readonly="">
+                                        <iconify-icon icon="hugeicons:time-quarter"></iconify-icon>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group ">
+                                        <label class="form-label">End Milleage</label>
+                                        <input class="form-control" type="text" name="" placeholder="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Time Log Fields -->
+                        <div id="timeLogFields" class="d-none">
+                            <div class="row">
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-label">Start Date</label>
+                                        <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+                                            placeholder="Select Date" readonly="readonly">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-label">Starting Time</label>
+                                        <div class="form-group form-icon bookingtimeinp">
+                                            <input type="text" name="time" value="" class="form-control time__pickers"
+                                                id="timepicker" placeholder="Select Time" required="" readonly="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label class="form-label">Starting Address</label>
+                                        <input class="form-control" type="text" name="" placeholder="">
+                                    </div>
+                                </div> -->
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-label">End Date</label>
+                                        <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+                                            placeholder="Select Date" readonly="readonly">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-label">End Time</label>
+                                        <div class="form-group form-icon bookingtimeinp">
+                                            <input type="text" name="time" value="" class="form-control time__pickers"
+                                                id="timepicker" placeholder="Select Time" required="" readonly="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label class="form-label">End Address</label>
+                                        <input class="form-control" type="text" name="" placeholder="">
+                                    </div>
+                                </div> -->
+
+                            </div>
+
+                        </div>
+
+                        <!-- Receipt Fields -->
+                        <div id="receiptFields" class="d-none">
+                            <div class="mb-3">
+                                <label for="expenseAmount" class="form-label">Amount</label>
+                                <input type="text" class="form-control" id="expenseAmount" placeholder="Enter Amount">
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="form-label">Upload Receipt</label>
+                                    <input type="file" class="filepond" id="imageInput" name="imageInput" multiple
+                                        data-max-file-size="3MB" data-max-files="5">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Common Fields -->
+                        <div class="mb-3">
+                            <label for="chargeTo" class="form-label">Charge To</label>
+                            <select class="form-select select2" id="chargeTo" required>
+                                <option value="" disabled selected>Select Who to Charge</option>
+                                <option value="Landlord">Landlord</option>
+                                <option value="Tenant">Tenant</option>
+                                <option value="Agency">Agency</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <div class="form-label-group">
+                                    <label>Comment</label>
+                                </div>
+                                <textarea class="form-control" rows="4" placeholder="Write here..."></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="canvasFooterContainer">
+            <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
+                data-bs-dismiss="offcanvas">Cancel</button>
+            <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter">Submit</button>
+        </div>
+    </form>
+</div>
+<!-- add Expenses end -->
+
+<!-- Edit Expenses Offcanvas -->
+<div class="offcanvas offcanvas-bottom custombottm_offcanvasStyle" tabindex="-1" id="EditExpenses"
+    aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header custom-canvas-header">
+        <div class="canvas-header-title">
+            <iconify-icon icon="line-md:document-remove" width="1.2em" height="1.2em"></iconify-icon>
+            Edit Expenses
+        </div>
+        <div class="closeCanvasContainer">
+            <button type="button" class="canvascloseButton" data-bs-dismiss="offcanvas" aria-label="Close">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    class="ct-icon" style="min-width: 20px; min-height: 20px; color: var(--ct-white);"
+                    data-testid="icon">
+                    <path
+                        d="M11.375 14.5C11.5583 14.6833 11.7667 14.775 12 14.775C12.2333 14.775 12.4417 14.6833 12.625 14.5L15.625 11.525C15.7583 11.3917 15.8207 11.2167 15.812 11C15.804 10.7833 15.7333 10.6083 15.6 10.475C15.45 10.325 15.275 10.25 15.075 10.25C14.875 10.25 14.7 10.325 14.55 10.475L12 13.025L9.425 10.45C9.29167 10.3167 9.11667 10.254 8.9 10.262C8.68333 10.2707 8.50833 10.3417 8.375 10.475C8.225 10.625 8.15 10.8 8.15 11C8.15 11.2 8.225 11.375 8.375 11.525L11.375 14.5ZM12 21.5C10.6833 21.5 9.446 21.25 8.288 20.75C7.12933 20.25 6.125 19.575 5.275 18.725C4.425 17.875 3.75 16.8707 3.25 15.712C2.75 14.554 2.5 13.3167 2.5 12C2.5 10.6833 2.75 9.44567 3.25 8.287C3.75 7.129 4.425 6.125 5.275 5.275C6.125 4.425 7.12933 3.75 8.288 3.25C9.446 2.75 10.6833 2.5 12 2.5C13.3167 2.5 14.5543 2.75 15.713 3.25C16.871 3.75 17.875 4.425 18.725 5.275C19.575 6.125 20.25 7.129 20.75 8.287C21.25 9.44567 21.5 10.6833 21.5 12C21.5 13.3167 21.25 14.554 20.75 15.712C20.25 16.8707 19.575 17.875 18.725 18.725C17.875 19.575 16.871 20.25 15.713 20.75C14.5543 21.25 13.3167 21.5 12 21.5ZM12 20C14.2167 20 16.1043 19.221 17.663 17.663C19.221 16.1043 20 14.2167 20 12C20 9.78333 19.221 7.89567 17.663 6.337C16.1043 4.779 14.2167 4 12 4C9.78333 4 7.896 4.779 6.338 6.337C4.77933 7.89567 4 9.78333 4 12C4 14.2167 4.77933 16.1043 6.338 17.663C7.896 19.221 9.78333 20 12 20Z"
+                        fill="currentColor"></path>
+                </svg>Close
+            </button>
+        </div>
+    </div>
+    <div class="Canvas_ct_divider"></div>
+    <form class="" action="view-ticket.php" method="POST">
+        <div class="offcanvas-body">
+            <!-- Add similar content as in the Add Expenses modal, but ensure the fields are populated dynamically with edit data -->
+            <div class="addingForm_Container">
+                <div class="add-users-modal-body-table-header text-headline-6">Edit Expense </div>
+
+                <div class="formstartcontainer">
+                    <div class="row">
+                        <!-- Expense Type -->
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label class="form-label" for="editExpenseType">Expense Type</label>
+                                <select name="" id="editExpenseType" class="form-control select2">
+                                    <option value="" disabled>Select an Option</option>
+                                    <option value="Mileage Log">Mileage Log</option>
+                                    <option value="Time Log">Time Log</option>
+                                    <option value="Receipt">Receipt</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Mileage Log Fields -->
+                        <div id="mileageLogFields_edit" class="d-none">
+                            <div class="row">
+
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label class="form-label">Starting point</label>
+                                        <input class="form-control" type="text" name="" placeholder="">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group canvas_inputwith_Icon">
+                                        <label class="form-label">Date</label>
+                                        <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+                                            placeholder="Select Date" readonly="readonly">
+                                        <iconify-icon icon="fluent:calendar-ltr-32-regular"></iconify-icon>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group canvas_inputwith_Icon">
+                                        <label class="form-label">Starting Time</label>
+                                        <input type="text" name="time" value="" class="form-control time__pickers"
+                                            id="timepicker" placeholder="Select Time" required="" readonly="">
+                                        <iconify-icon icon="hugeicons:time-quarter"></iconify-icon>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group ">
+                                        <label class="form-label">Starting Milleage</label>
+                                        <input class="form-control" type="text" name="" placeholder="">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label class="form-label">End point</label>
+                                        <input class="form-control" type="text" name="" placeholder="">
+
+                                    </div>
+
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group canvas_inputwith_Icon">
+                                        <label class="form-label">Date</label>
+                                        <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+                                            placeholder="Select Date" readonly="readonly">
+                                        <iconify-icon icon="fluent:calendar-ltr-32-regular"></iconify-icon>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group canvas_inputwith_Icon">
+                                        <label class="form-label">End Time</label>
+                                        <input type="text" name="time" value="" class="form-control time__pickers"
+                                            id="timepicker" placeholder="Select Time" required="" readonly="">
+                                        <iconify-icon icon="hugeicons:time-quarter"></iconify-icon>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group ">
+                                        <label class="form-label">End Milleage</label>
+                                        <input class="form-control" type="text" name="" placeholder="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Time Log Fields -->
+                        <div id="timeLogFields_edit" class="d-none">
+                            <div class="row">
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-label">Start Date</label>
+                                        <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+                                            placeholder="Select Date" readonly="readonly">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-label">Starting Time</label>
+                                        <div class="form-group form-icon bookingtimeinp">
+                                            <input type="text" name="time" value="" class="form-control time__pickers"
+                                                id="timepicker" placeholder="Select Time" required="" readonly="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label class="form-label">Starting Address</label>
+                                        <input class="form-control" type="text" name="" placeholder="">
+                                    </div>
+                                </div> -->
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-label">End Date</label>
+                                        <input class="form-control customdataPicker flatpickr-input" type="text" name=""
+                                            placeholder="Select Date" readonly="readonly">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label class="form-label">End Time</label>
+                                        <div class="form-group form-icon bookingtimeinp">
+                                            <input type="text" name="time" value="" class="form-control time__pickers"
+                                                id="timepicker" placeholder="Select Time" required="" readonly="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label class="form-label">End Address</label>
+                                        <input class="form-control" type="text" name="" placeholder="">
+                                    </div>
+                                </div> -->
+
+                            </div>
+
+                        </div>
+
+                        <!-- Receipt Fields -->
+                        <div id="receiptFields_edit" class="d-none">
+                            <div class="mb-3">
+                                <label for="expenseAmount" class="form-label">Amount</label>
+                                <input type="text" class="form-control" id="expenseAmount" placeholder="Enter Amount">
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="form-label">Upload Receipt</label>
+                                    <input type="file" class="filepond" id="imageInput2" name="imageInput" multiple
+                                        data-max-file-size="3MB" data-max-files="5">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Common Fields -->
+                        <div class="mb-3">
+                            <label for="chargeTo" class="form-label">Charge To</label>
+                            <select class="form-select select2" id="chargeTo" required>
+                                <option value="" disabled selected>Select Who to Charge</option>
+                                <option value="Landlord">Landlord</option>
+                                <option value="Tenant">Tenant</option>
+                                <option value="Agency">Agency</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <div class="form-label-group">
+                                    <label>Comment</label>
+                                </div>
+                                <textarea class="form-control" rows="4" placeholder="Write here..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="canvasFooterContainer">
+            <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
+                data-bs-dismiss="offcanvas">Cancel</button>
+            <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter">Submit</button>
+        </div>
+    </form>
+</div>
+<!-- Edit Expenses end -->
 
 <!-- create appoinment calendar form offcanvas -->
 <div class="offcanvas offcanvas-bottom custombottm_offcanvasStyle" tabindex="-1" id="CreateAppoinment"
@@ -3167,7 +5032,7 @@
                         <div class="col-lg-12">
                             <div class="row">
 
-                            <div class="col-lg-3">
+                                <div class="col-lg-3">
                                     <div class="form-group">
                                         <label class="form-label">Starting point</label>
                                         <input class="form-control" type="text" name="" placeholder="">
@@ -3490,11 +5355,21 @@
             // instead of a settings object
         ]
     });
+    // Refresh slick slider when accordion is shown
+    $('#collapseOne').on('shown.bs.collapse', function () {
+            $('.slider').slick('setPosition');
+        });
+
+        $('#collapseTwo').on('shown.bs.collapse', function () {
+            $('.slider').slick('setPosition');
+        });
+
+        $('#collapseThree').on('shown.bs.collapse', function () {
+            $('.slider').slick('setPosition');
+        });
 </script>
 
 <!-- slick  slider for multple images end -->
-
-
 
 <!-- Fullcalendar JS -->
 <script src="vendors/fullcalendar/index.global.min.js"></script>
@@ -3503,12 +5378,10 @@
 <!-- Bootstrap Notify JS -->
 <script src="dist/js/bootstrap-notify.min.js"></script>
 
-
-
 <script>
-$(document).ready(function() {
-    function createTaskBox(container) {
-        const newTaskBox = `
+    $(document).ready(function() {
+        function createTaskBox(container) {
+            const newTaskBox = `
         <div class="col-lg-12 taskBox px-0">
             <div class="taskAppend">
                 <div class="taskHeaderBHI">
@@ -3558,40 +5431,34 @@ $(document).ready(function() {
                 </div>
             </div>
         </div>`;
+            $(container).append(newTaskBox);
+            initializeTaskBoxEvents($(container).find('.taskBox').last());
+        }
 
-        $(container).append(newTaskBox);
-        initializeTaskBoxEvents($(container).find('.taskBox').last());
-    }
-
-    function initializeTaskBoxEvents(taskBox) {
-        const checkboxOutline = taskBox.find('.setAlertInput');
-        const imagesBox = taskBox.find('.imagesbox');
-
-        checkboxOutline.on('change', function() {
-            if (this.checked) {
-                imagesBox.slideDown(); // Smooth animation
-            } else {
-                imagesBox.slideUp();
-            }
-        });
-
-        taskBox.find('.imgCont img').on('click', function() {
-            const checkbox = $(this).prev('input[type="checkbox"]');
-            checkbox.prop('checked', !checkbox.prop('checked'));
-            $(this).css('border-color', checkbox.prop('checked') ? '#f90' : 'transparent');
-        });
-
-        taskBox.find('.imgCont input[type="checkbox"]').on('change', function() {
-            const img = $(this).next('img');
-            img.css('border-color', $(this).prop('checked') ? '#f90' : 'transparent');
-        });
-
-        taskBox.find('.removeTaskBtn').on('click', function() {
-            $(this).closest('.taskBox').remove();
-        });
-    }
-
-    const defaultTaskBox = `
+        function initializeTaskBoxEvents(taskBox) {
+            const checkboxOutline = taskBox.find('.setAlertInput');
+            const imagesBox = taskBox.find('.imagesbox');
+            checkboxOutline.on('change', function() {
+                if (this.checked) {
+                    imagesBox.slideDown(); // Smooth animation
+                } else {
+                    imagesBox.slideUp();
+                }
+            });
+            taskBox.find('.imgCont img').on('click', function() {
+                const checkbox = $(this).prev('input[type="checkbox"]');
+                checkbox.prop('checked', !checkbox.prop('checked'));
+                $(this).css('border-color', checkbox.prop('checked') ? '#f90' : 'transparent');
+            });
+            taskBox.find('.imgCont input[type="checkbox"]').on('change', function() {
+                const img = $(this).next('img');
+                img.css('border-color', $(this).prop('checked') ? '#f90' : 'transparent');
+            });
+            taskBox.find('.removeTaskBtn').on('click', function() {
+                $(this).closest('.taskBox').remove();
+            });
+        }
+        const defaultTaskBox = `
     <div class="col-lg-12 taskBox px-0">
         <div class="taskAppend">
             <div class="taskHeaderBHI">
@@ -3639,66 +5506,245 @@ $(document).ready(function() {
             </div>
         </div>
     </div>`;
-
-    $('.taskContainer1').append(defaultTaskBox);
-    initializeTaskBoxEvents($('.taskBox'));
-
-    $('.addTaskBtn').on('click', function(event) {
-        event.preventDefault();
-        const containerSelector = $(this).data('target-container');
-        createTaskBox(containerSelector);
+        $('.taskContainer1').append(defaultTaskBox);
+        initializeTaskBoxEvents($('.taskBox'));
+        $('.addTaskBtn').on('click', function(event) {
+            event.preventDefault();
+            const containerSelector = $(this).data('target-container');
+            createTaskBox(containerSelector);
+        });
     });
-});
 </script>
 <script>
-    (function () {
-  const quantityContainer = document.querySelector(".quantity");
-  const minusBtn = quantityContainer.querySelector(".minus");
-  const plusBtn = quantityContainer.querySelector(".plus");
-  const inputBox = quantityContainer.querySelector(".input-box");
+    (function() {
+        const quantityContainer = document.querySelector(".quantity");
+        const minusBtn = quantityContainer.querySelector(".minus");
+        const plusBtn = quantityContainer.querySelector(".plus");
+        const inputBox = quantityContainer.querySelector(".input-box");
+        updateButtonStates();
+        quantityContainer.addEventListener("click", handleButtonClick);
+        inputBox.addEventListener("input", handleQuantityChange);
 
-  updateButtonStates();
+        function updateButtonStates() {
+            const value = parseInt(inputBox.value);
+            minusBtn.disabled = value <= 1;
+            plusBtn.disabled = value >= parseInt(inputBox.max);
+        }
 
-  quantityContainer.addEventListener("click", handleButtonClick);
-  inputBox.addEventListener("input", handleQuantityChange);
+        function handleButtonClick(event) {
+            if (event.target.classList.contains("minus")) {
+                decreaseValue();
+            } else if (event.target.classList.contains("plus")) {
+                increaseValue();
+            }
+        }
 
-  function updateButtonStates() {
-    const value = parseInt(inputBox.value);
-    minusBtn.disabled = value <= 1;
-    plusBtn.disabled = value >= parseInt(inputBox.max);
-  }
+        function decreaseValue() {
+            let value = parseInt(inputBox.value);
+            value = isNaN(value) ? 1 : Math.max(value - 1, 1);
+            inputBox.value = value;
+            updateButtonStates();
+            handleQuantityChange();
+        }
 
-  function handleButtonClick(event) {
-    if (event.target.classList.contains("minus")) {
-      decreaseValue();
-    } else if (event.target.classList.contains("plus")) {
-      increaseValue();
-    }
-  }
+        function increaseValue() {
+            let value = parseInt(inputBox.value);
+            value = isNaN(value) ? 1 : Math.min(value + 1, parseInt(inputBox.max));
+            inputBox.value = value;
+            updateButtonStates();
+            handleQuantityChange();
+        }
 
-  function decreaseValue() {
-    let value = parseInt(inputBox.value);
-    value = isNaN(value) ? 1 : Math.max(value - 1, 1);
-    inputBox.value = value;
-    updateButtonStates();
-    handleQuantityChange();
-  }
-
-  function increaseValue() {
-    let value = parseInt(inputBox.value);
-    value = isNaN(value) ? 1 : Math.min(value + 1, parseInt(inputBox.max));
-    inputBox.value = value;
-    updateButtonStates();
-    handleQuantityChange();
-  }
-
-  function handleQuantityChange() {
-    let value = parseInt(inputBox.value);
-    value = isNaN(value) ? 1 : value;
-
-    // Execute your code here based on the updated quantity value
-    console.log("Quantity changed:", value);
-  }
-})();
-
+        function handleQuantityChange() {
+            let value = parseInt(inputBox.value);
+            value = isNaN(value) ? 1 : value;
+            // Execute your code here based on the updated quantity value
+            console.log("Quantity changed:", value);
+        }
+    })();
 </script>
+
+<!-- add Expenses modal fileds based on charge to -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Get references to the dropdown and the field groups
+        const expenseTypeSelect = $('#expenseType'); // Using jQuery for Select2
+        const mileageLogFields = document.getElementById("mileageLogFields");
+        const timeLogFields = document.getElementById("timeLogFields");
+        const receiptFields = document.getElementById("receiptFields");
+        // Listen to the 'select2:select' event for the Select2 dropdown
+        expenseTypeSelect.on('select2:select', function(e) {
+            // Hide all fields by default
+            mileageLogFields.classList.add("d-none");
+            timeLogFields.classList.add("d-none");
+            receiptFields.classList.add("d-none");
+            // Show the fields based on the selected value
+            const selectedValue = e.params.data.id; // Get the selected value
+            if (selectedValue === "Mileage Log") {
+                mileageLogFields.classList.remove("d-none");
+            } else if (selectedValue === "Time Log") {
+                timeLogFields.classList.remove("d-none");
+            } else if (selectedValue === "Receipt") {
+                receiptFields.classList.remove("d-none");
+            }
+        });
+        // Reset the fields when the offcanvas is hidden
+        const offcanvasElement = document.getElementById("AddExpenses");
+        offcanvasElement.addEventListener("hidden.bs.offcanvas", function() {
+            expenseTypeSelect.val(null).trigger('change'); // Reset the Select2 dropdown
+            mileageLogFields.classList.add("d-none");
+            timeLogFields.classList.add("d-none");
+            receiptFields.classList.add("d-none");
+        });
+    });
+</script>
+<!-- end -->
+
+<!-- edit expenses js start -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Get references to the dropdown and the field groups for the Edit canvas
+        const expenseTypeSelectEdit = $('#editExpenseType'); // Using jQuery for Select2 (Edit Expenses)
+        const mileageLogFields = document.getElementById("mileageLogFields_edit");
+        const timeLogFields = document.getElementById("timeLogFields_edit");
+        const receiptFields = document.getElementById("receiptFields_edit");
+        // Listen to the 'select2:select' event for the Select2 dropdown in Edit Expenses
+        expenseTypeSelectEdit.on('select2:select', function(e) {
+            // Hide all fields by default
+            mileageLogFields.classList.add("d-none");
+            timeLogFields.classList.add("d-none");
+            receiptFields.classList.add("d-none");
+            // Show the fields based on the selected value
+            const selectedValue = e.params.data.id; // Get the selected value
+            if (selectedValue === "Mileage Log") {
+                mileageLogFields.classList.remove("d-none");
+            } else if (selectedValue === "Time Log") {
+                timeLogFields.classList.remove("d-none");
+            } else if (selectedValue === "Receipt") {
+                receiptFields.classList.remove("d-none");
+            }
+        });
+        // Reset the fields when the offcanvas is hidden for Edit Expenses
+        const offcanvasElementEdit = document.getElementById("EditExpenses");
+        offcanvasElementEdit.addEventListener("hidden.bs.offcanvas", function() {
+            expenseTypeSelectEdit.val(null).trigger('change'); // Reset the Select2 dropdown
+            mileageLogFields.classList.add("d-none");
+            timeLogFields.classList.add("d-none");
+            receiptFields.classList.add("d-none");
+        });
+    });
+</script>
+<!-- end -->
+
+<!-- multiple video File Uploader js -->
+<!-- NOTE: Dont add this code in footer section -->
+<!-- filepond for videos uploader -->
+<link href="dist/customplugins/file-uploader/filepond.css" rel="stylesheet">
+<link href="dist/customplugins/file-uploader/filepond-plugin-media-preview.min.css" rel="stylesheet">
+<script src="dist/customplugins/file-uploader/filepond.js"></script>
+<script src="dist/customplugins/file-uploader/filepond-plugin-file-validate-type.js"></script>
+<script src="dist/customplugins/file-uploader/filepond-plugin-media-preview.min.js"></script>
+<script src="dist/customplugins/file-uploader/lg-video.min.js"></script>
+<!-- filepond for images uploader -->
+<link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
+<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+<script src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.js"></script>
+
+<!-- filepod image uploader start-->
+<script>
+    // Register the plugins
+    FilePond.registerPlugin(
+        FilePondPluginImagePreview,
+        FilePondPluginFileValidateSize,
+        FilePondPluginFileValidateType
+    );
+    // Turn all file input elements into ponds
+    FilePond.create(document.querySelector('#imageInput'), {
+        acceptedFileTypes: ['image/*'],
+        labelIdle: 'Drag & Drop your images or <span class="filepond--label-action">Browse</span>',
+        server: {
+            // configure your server endpoints here
+            url: '/upload',
+            process: {
+                url: './process',
+                method: 'POST',
+                headers: {
+                    'x-customheader': 'Hello World'
+                },
+                withCredentials: false,
+                onload: (response) => response.key,
+                onerror: (response) => response.data,
+                ondata: (formData) => {
+                    formData.append('Hello', 'World');
+                    return formData;
+                }
+            },
+            revert: './revert'
+        }
+    });
+</script>
+
+<!-- for two time uses -->
+<script>
+    // Register the plugins
+    FilePond.registerPlugin(
+        FilePondPluginImagePreview,
+        FilePondPluginFileValidateSize,
+        FilePondPluginFileValidateType
+    );
+    // Turn all file input elements into ponds
+    FilePond.create(document.querySelector('#imageInput2'), {
+        acceptedFileTypes: ['image/*'],
+        labelIdle: 'Drag & Drop your images or <span class="filepond--label-action">Browse</span>',
+        server: {
+            // configure your server endpoints here
+            url: '/upload',
+            process: {
+                url: './process',
+                method: 'POST',
+                headers: {
+                    'x-customheader': 'Hello World'
+                },
+                withCredentials: false,
+                onload: (response) => response.key,
+                onerror: (response) => response.data,
+                ondata: (formData) => {
+                    formData.append('Hello', 'World');
+                    return formData;
+                }
+            },
+            revert: './revert'
+        }
+    });
+</script>
+<!-- filepod image uploader end-->
+
+
+<!-- Task All Selcte checkbox js -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const allSelectCheck = document.getElementById('allSelectCheck');
+        const taskCheckboxes = document.querySelectorAll('.taskHeader input[type="checkbox"]');
+
+        allSelectCheck.addEventListener('change', function() {
+            taskCheckboxes.forEach(checkbox => {
+                checkbox.checked = allSelectCheck.checked;
+            });
+        });
+
+        taskCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                if (!checkbox.checked) {
+                    allSelectCheck.checked = false;
+                } else {
+                    const allChecked = Array.from(taskCheckboxes).every(chk => chk.checked);
+                    allSelectCheck.checked = allChecked;
+                }
+            });
+        });
+    });
+</script>
+
+
+
+

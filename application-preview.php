@@ -1074,8 +1074,7 @@
                                                                                                 pattern="\d*" value=""
                                                                                                 placeholder=" "
                                                                                                 autocomplete="nope"
-                                                                                                 max="10"
-                                                                                                tabindex="0" />
+                                                                                                max="10" tabindex="0" />
                                                                                             <small
                                                                                                 class="pn-input__error">
                                                                                                 This is not a valid
@@ -1169,8 +1168,7 @@
                                                                                                 pattern="\d*" value=""
                                                                                                 placeholder=" "
                                                                                                 autocomplete="nope"
-                                                                                                 max="10"
-                                                                                                tabindex="0" />
+                                                                                                max="10" tabindex="0" />
                                                                                             <small
                                                                                                 class="pn-input__error">
                                                                                                 This is not a valid
@@ -3960,39 +3958,35 @@
                                                     <header class="task-header taskheader_noPadding">
                                                         <div class="d-flex align-items-center">
 
-                                                        <div class="enquiryID_container noBtStat_margin">
-                                                                        <div class="EnquiryID">
-                                                                            Application Status
-                                                                        </div>
-                                                                        <div class="IDButton">
-                                                                            <div class="dropdown statusChange_dropdown">
-                                                                                <button
-                                                                                    class=" bg-success dropdown-toggle"
-                                                                                    type="button"
-                                                                                    id="dropdownMenuButton"
-                                                                                    data-bs-toggle="dropdown"
-                                                                                    aria-expanded="false">
-                                                                                    Change Status <iconify-icon
-                                                                                        icon="iconamoon:arrow-down-2">
-                                                                                    </iconify-icon>
-                                                                                </button>
-                                                                                <ul class="dropdown-menu"
-                                                                                    aria-labelledby="dropdownMenuButton">
-                                                                                    <li><a class="dropdown-item"
-                                                                                            href="#"
-                                                                                            data-color="bg-success">Application Received
-                                                                                        </a></li>
-                                                                                    <li><a class="dropdown-item"
-                                                                                            href="#"
-                                                                                            data-color="bg-warning">Awaiting Details</a></li>
-                                                                                   
-                                                                                </ul>
-                                                                            </div>
+                                                            <div class="enquiryID_container noBtStat_margin">
+                                                                <div class="EnquiryID">
+                                                                    Application Status
+                                                                </div>
+                                                                <div class="IDButton">
+                                                                    <div class="dropdown statusChange_dropdown">
+                                                                        <button class=" bg-success dropdown-toggle"
+                                                                            type="button" id="dropdownMenuButton"
+                                                                            data-bs-toggle="dropdown"
+                                                                            aria-expanded="false">
+                                                                            Change Status <iconify-icon
+                                                                                icon="iconamoon:arrow-down-2">
+                                                                            </iconify-icon>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu"
+                                                                            aria-labelledby="dropdownMenuButton">
+                                                                            <li><a class="dropdown-item" href="#"
+                                                                                    data-color="bg-success">Application
+                                                                                    Received
+                                                                                </a></li>
+                                                                            <li><a class="dropdown-item" href="#"
+                                                                                    data-color="bg-warning">Awaiting
+                                                                                    Details</a></li>
 
-                                                                        </div>
+                                                                        </ul>
                                                                     </div>
-                                                        
-                                                           
+
+                                                                </div>
+                                                            </div>
 
                                                         </div>
 
@@ -4000,17 +3994,18 @@
                                                             <div class="enquiryDate dueDate_container">
                                                                 <iconify-icon icon="ion:calendar-outline">
                                                                 </iconify-icon>
-                                                                <div class="duedatelabel">Last Updated on : </div> Nov 20, 2024
+                                                                <div class="duedatelabel">Last Updated on : </div> Nov
+                                                                20, 2024
                                                             </div>
                                                             <div class="enquiryID_container">
                                                                 <div class="EnquiryID">
                                                                     Current Status
                                                                 </div>
                                                                 <div class="IDButton appoinment_confirmed">
-                                                                    <button type="button" class="SourceDataBtn"> Application Received 
+                                                                    <button type="button" class="SourceDataBtn">
+                                                                        Application Received
                                                                     </button></div>
                                                             </div>
-                                                          
 
                                                         </div>
 
@@ -4018,7 +4013,7 @@
 
                                                     <div class="task-detail-body applicationActiviti_Notes">
                                                         <div class="row">
-                                                          
+
                                                             <ul
                                                                 class="nav applicant_activiti_inrTabs  nav-justified nav-light nav-tabs nav-segmented-tabs active-theme TaskDetails_tabs ">
 
@@ -4171,7 +4166,7 @@
                                                                             <div class="Showing_departmentand_users"
                                                                                 style="display: none;">
                                                                                 <div class="row">
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-4">
                                                                                         <div class="form-group">
                                                                                             <label
                                                                                                 class="form-label">Select
@@ -4207,7 +4202,7 @@
                                                                                             </select>
                                                                                         </div>
                                                                                     </div>
-                                                                                    <div class="col-md-6">
+                                                                                    <div class="col-md-4">
                                                                                         <div class="form-group">
                                                                                             <label
                                                                                                 class="form-label">Select
@@ -4276,6 +4271,22 @@
                                                                                             </select>
                                                                                         </div>
                                                                                     </div>
+                                                                                    <div class="col-lg-4">
+                                                                                        <div class="form-group">
+                                                                                            <label
+                                                                                                class="form-label">Select
+                                                                                                Due Date</label>
+                                                                                            <input
+                                                                                                class="form-control customdataPicker"
+                                                                                                type="text" name=""
+                                                                                                value=""
+                                                                                                placeholder="Due Date" />
+                                                                                            <iconify-icon
+                                                                                                icon="ion:calendar-outline"
+                                                                                                class="dateinput_icon">
+                                                                                            </iconify-icon>
+                                                                                        </div>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
 
@@ -4289,128 +4300,534 @@
                                                                         <div class="title title-lg mb-0"><span>Latest
                                                                                 activity</span></div>
                                                                     </div>
-                                                                    <div class="collapse-simple">
-                                                                        <div class="card">
-                                                                            <div class="card-header">
-                                                                                <a role="button"
-                                                                                    data-bs-toggle="collapse"
-                                                                                    href="#activity_1"
-                                                                                    aria-expanded="true">Today</a>
-                                                                            </div>
-                                                                            <div id="activity_1" class="collapse show">
-                                                                                <div class="card-body">
-                                                                                    <ul
-                                                                                        class="activity-list list-group list-group-flush">
-                                                                                        <li class="list-group-item">
-                                                                                            <div class="media">
-                                                                                                <div class="media-head">
+                                                                    <div class="card">
+                                                                        <div class="card-body">
+                                                                            <div class="contact-list-view">
+
+                                                                                <table
+                                                                                    class="table common-datatable nowrap w-100 tbWithout_action">
+                                                                                    <thead>
+                                                                                        <tr>
+
+                                                                                            <th>User Name</th>
+                                                                                            <th>Department</th>
+                                                                                            <th>Activity Date & Time
+                                                                                            </th>
+                                                                                            <th>Activity</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+
+                                                                                            <td>
+                                                                                                <a
+                                                                                                    href="view-user-details.php">
                                                                                                     <div
-                                                                                                        class="avatar avatar-xs avatar-primary avatar-rounded">
-                                                                                                        <span
-                                                                                                            class="initial-wrap">H</span>
+                                                                                                        class="media align-items-center">
+                                                                                                        <div
+                                                                                                            class="media-head me-2">
+                                                                                                            <div
+                                                                                                                class="avatar avatar-xs avatar-rounded">
+                                                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                                    alt="user"
+                                                                                                                    class="avatar-img">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="media-body">
+                                                                                                            <span
+                                                                                                                class="d-block text-high-em">Morgan
+                                                                                                                Freeman</span>
+                                                                                                        </div>
                                                                                                     </div>
-                                                                                                </div>
-                                                                                                <div class="media-body">
-                                                                                                    <p><span
-                                                                                                            class="text-dark">John</span>
-                                                                                                        on
-                                                                                                        Documentation
-                                                                                                        link is working
-                                                                                                        now
-                                                                                                    </p>
+                                                                                                </a>
+                                                                                            </td>
+                                                                                            <td class="">Finance</td>
+                                                                                            <td>18/06/2024 12:00</td>
+                                                                                            <td>
+                                                                                                <div
+                                                                                                    class="activity-list contractHistory_activity_data">
                                                                                                     <div
-                                                                                                        class="last-activity-time">
-                                                                                                        Oct 15,
-                                                                                                        2021,
-                                                                                                        12:34 PM</div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </li>
-                                                                                        <li class="list-group-item">
-                                                                                            <div class="media">
-                                                                                                <div class="media-head">
-                                                                                                    <div
-                                                                                                        class="avatar avatar-xs avatar-rounded">
-                                                                                                        <img src="dist/img/avatar2.jpg"
-                                                                                                            alt="user"
-                                                                                                            class="avatar-img">
+                                                                                                        class="list-group-item">
+                                                                                                        <div
+                                                                                                            class="media">
+
+                                                                                                            <div
+                                                                                                                class="media-body">
+                                                                                                                <p>Tenant
+                                                                                                                    <a href="#"
+                                                                                                                        class="link-url"><u>Rohit
+                                                                                                                            Jain</u></a>
+                                                                                                                    changed
+                                                                                                                    their
+                                                                                                                    Bank
+                                                                                                                    Account
+                                                                                                                    Number.
+                                                                                                                </p>
+                                                                                                                <div
+                                                                                                                    class="last-activity-time">
+                                                                                                                    Oct
+                                                                                                                    15,
+                                                                                                                    2021,
+                                                                                                                    12:34
+                                                                                                                    PM
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
                                                                                                     </div>
+
                                                                                                 </div>
-                                                                                                <div class="media-body">
-                                                                                                    <p><span
-                                                                                                            class="text-dark">Morgan
-                                                                                                            Fregman</span>
-                                                                                                        completed client
-                                                                                                        conversion of
-                                                                                                    </p>
+                                                                                            </td>
+
+                                                                                        </tr>
+                                                                                        <tr>
+
+                                                                                            <td>
+                                                                                                <a
+                                                                                                    href="view-user-details.php">
                                                                                                     <div
-                                                                                                        class="last-activity-time">
-                                                                                                        Sep 16,
-                                                                                                        2021,
-                                                                                                        4:54 PM</div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </li>
-                                                                                        <li class="list-group-item">
-                                                                                            <div class="media">
-                                                                                                <div class="media-head">
-                                                                                                    <div
-                                                                                                        class="avatar avatar-xs avatar-rounded">
-                                                                                                        <img src="dist/img/avatar13.jpg"
-                                                                                                            alt="user"
-                                                                                                            class="avatar-img">
+                                                                                                        class="media align-items-center">
+                                                                                                        <div
+                                                                                                            class="media-head me-2">
+                                                                                                            <div
+                                                                                                                class="avatar avatar-xs avatar-rounded">
+                                                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                                    alt="user"
+                                                                                                                    class="avatar-img">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="media-body">
+                                                                                                            <span
+                                                                                                                class="d-block text-high-em">Huma
+                                                                                                                Therman</span>
+                                                                                                        </div>
                                                                                                     </div>
-                                                                                                </div>
-                                                                                                <div class="media-body">
-                                                                                                    <p><span
-                                                                                                            class="text-dark">Jimmy
-                                                                                                            Carry</span>
-                                                                                                        completed side
-                                                                                                        bar menu
-                                                                                                        on
-                                                                                                        <a href="##"
-                                                                                                            class="link-default"><u>Graysons</u></a>
-                                                                                                    </p>
+                                                                                                </a>
+                                                                                            </td>
+                                                                                            <td class="">Lettings</td>
+                                                                                            <td>15/03/2023 16:40</td>
+                                                                                            <td>
+                                                                                                <div
+                                                                                                    class="activity-list contractHistory_activity_data">
                                                                                                     <div
-                                                                                                        class="last-activity-time">
-                                                                                                        Sep 10,
-                                                                                                        2021,
-                                                                                                        10:13 AM</div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </li>
-                                                                                        <li class="list-group-item">
-                                                                                            <div class="media">
-                                                                                                <div class="media-head">
-                                                                                                    <div
-                                                                                                        class="avatar avatar-xs avatar-rounded">
-                                                                                                        <img src="dist/img/avatar7.jpg"
-                                                                                                            alt="user"
-                                                                                                            class="avatar-img">
+                                                                                                        class="list-group-item">
+                                                                                                        <div
+                                                                                                            class="media">
+
+                                                                                                            <div
+                                                                                                                class="media-body">
+                                                                                                                <p>Request
+                                                                                                                    to
+                                                                                                                    change
+                                                                                                                    Guranter
+                                                                                                                    home
+                                                                                                                    Address
+                                                                                                                    for
+                                                                                                                    <a href="#"
+                                                                                                                        class="link-url"><u>Rohit
+                                                                                                                            Jain</u></a>.
+                                                                                                                </p>
+                                                                                                                <div
+                                                                                                                    class="last-activity-time">
+                                                                                                                    Oct
+                                                                                                                    15,
+                                                                                                                    2021,
+                                                                                                                    12:34
+                                                                                                                    PM
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
                                                                                                     </div>
+
                                                                                                 </div>
-                                                                                                <div class="media-body">
-                                                                                                    <p><span
-                                                                                                            class="text-dark">Charlie
-                                                                                                            Chaplin</span>
-                                                                                                        deleted empty
-                                                                                                        cards
-                                                                                                        on <a href="#"
-                                                                                                            class="link-default"><u>completed</u></a>
-                                                                                                    </p>
+                                                                                            </td>
+
+                                                                                        </tr>
+                                                                                        <tr>
+
+                                                                                            <td>
+                                                                                                <a
+                                                                                                    href="view-user-details.php">
                                                                                                     <div
-                                                                                                        class="last-activity-time">
-                                                                                                        Sep 10,
-                                                                                                        2021,
-                                                                                                        10:13 AM</div>
+                                                                                                        class="media align-items-center">
+                                                                                                        <div
+                                                                                                            class="media-head me-2">
+                                                                                                            <div
+                                                                                                                class="avatar avatar-xs avatar-rounded">
+                                                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                                    alt="user"
+                                                                                                                    class="avatar-img">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="media-body">
+                                                                                                            <span
+                                                                                                                class="d-block text-high-em">Charlie
+                                                                                                                Chaplin</span>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </a>
+                                                                                            </td>
+                                                                                            <td class="">Lettings</td>
+                                                                                            <td>10/02/2024 15:15</td>
+                                                                                            <td>
+                                                                                                <div
+                                                                                                    class="activity-list contractHistory_activity_data">
+                                                                                                    <div
+                                                                                                        class="list-group-item">
+                                                                                                        <div
+                                                                                                            class="media">
+
+                                                                                                            <div
+                                                                                                                class="media-body">
+                                                                                                                <p>Request
+                                                                                                                    to
+                                                                                                                    change
+                                                                                                                    Guranter
+                                                                                                                    home
+                                                                                                                    Address
+                                                                                                                    for
+                                                                                                                    <a href="#"
+                                                                                                                        class="link-url"><u>Rohit
+                                                                                                                            Jain</u></a>.
+                                                                                                                </p>
+                                                                                                                <div
+                                                                                                                    class="last-activity-time">
+                                                                                                                    Oct
+                                                                                                                    15,
+                                                                                                                    2021,
+                                                                                                                    12:34
+                                                                                                                    PM
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+
                                                                                                 </div>
-                                                                                            </div>
-                                                                                        </li>
-                                                                                    </ul>
-                                                                                </div>
+                                                                                            </td>
+
+                                                                                        </tr>
+
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <a
+                                                                                                    href="view-user-details.php">
+                                                                                                    <div
+                                                                                                        class="media align-items-center">
+                                                                                                        <div
+                                                                                                            class="media-head me-2">
+                                                                                                            <div
+                                                                                                                class="avatar avatar-xs avatar-rounded">
+                                                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                                    alt="user"
+                                                                                                                    class="avatar-img">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="media-body">
+                                                                                                            <span
+                                                                                                                class="d-block text-high-em">Emma
+                                                                                                                Watson</span>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </a>
+                                                                                            </td>
+                                                                                            <td class="">Marketing</td>
+                                                                                            <td>25/08/2023 09:30</td>
+                                                                                            <td>
+                                                                                                <div
+                                                                                                    class="activity-list contractHistory_activity_data">
+                                                                                                    <div
+                                                                                                        class="list-group-item">
+                                                                                                        <div
+                                                                                                            class="media">
+
+                                                                                                            <div
+                                                                                                                class="media-body">
+                                                                                                                <p>Request
+                                                                                                                    to
+                                                                                                                    change
+                                                                                                                    Guranter
+                                                                                                                    home
+                                                                                                                    Address
+                                                                                                                    for
+                                                                                                                    <a href="#"
+                                                                                                                        class="link-url"><u>Rohit
+                                                                                                                            Jain</u></a>.
+                                                                                                                </p>
+                                                                                                                <div
+                                                                                                                    class="last-activity-time">
+                                                                                                                    Oct
+                                                                                                                    15,
+                                                                                                                    2021,
+                                                                                                                    12:34
+                                                                                                                    PM
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+
+                                                                                                </div>
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <a
+                                                                                                    href="view-user-details.php">
+                                                                                                    <div
+                                                                                                        class="media align-items-center">
+                                                                                                        <div
+                                                                                                            class="media-head me-2">
+                                                                                                            <div
+                                                                                                                class="avatar avatar-xs avatar-rounded">
+                                                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                                    alt="user"
+                                                                                                                    class="avatar-img">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="media-body">
+                                                                                                            <span
+                                                                                                                class="d-block text-high-em">Robert
+                                                                                                                Downey
+                                                                                                                Jr.</span>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </a>
+                                                                                            </td>
+                                                                                            <td class="">IT Support</td>
+                                                                                            <td>30/01/2024 14:45</td>
+                                                                                            <td>
+                                                                                                <div
+                                                                                                    class="activity-list contractHistory_activity_data">
+                                                                                                    <div
+                                                                                                        class="list-group-item">
+                                                                                                        <div
+                                                                                                            class="media">
+
+                                                                                                            <div
+                                                                                                                class="media-body">
+                                                                                                                <p>Request
+                                                                                                                    to
+                                                                                                                    change
+                                                                                                                    Guranter
+                                                                                                                    home
+                                                                                                                    Address
+                                                                                                                    for
+                                                                                                                    <a href="#"
+                                                                                                                        class="link-url"><u>Rohit
+                                                                                                                            Jain</u></a>.
+                                                                                                                </p>
+                                                                                                                <div
+                                                                                                                    class="last-activity-time">
+                                                                                                                    Oct
+                                                                                                                    15,
+                                                                                                                    2021,
+                                                                                                                    12:34
+                                                                                                                    PM
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+
+                                                                                                </div>
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <a
+                                                                                                    href="view-user-details.php">
+                                                                                                    <div
+                                                                                                        class="media align-items-center">
+                                                                                                        <div
+                                                                                                            class="media-head me-2">
+                                                                                                            <div
+                                                                                                                class="avatar avatar-xs avatar-rounded">
+                                                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                                    alt="user"
+                                                                                                                    class="avatar-img">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="media-body">
+                                                                                                            <span
+                                                                                                                class="d-block text-high-em">Scarlett
+                                                                                                                Johansson</span>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </a>
+                                                                                            </td>
+                                                                                            <td class="">HR</td>
+                                                                                            <td>22/11/2023 11:10</td>
+                                                                                            <td>
+                                                                                                <div
+                                                                                                    class="activity-list contractHistory_activity_data">
+                                                                                                    <div
+                                                                                                        class="list-group-item">
+                                                                                                        <div
+                                                                                                            class="media">
+
+                                                                                                            <div
+                                                                                                                class="media-body">
+                                                                                                                <p>Request
+                                                                                                                    to
+                                                                                                                    change
+                                                                                                                    Guranter
+                                                                                                                    home
+                                                                                                                    Address
+                                                                                                                    for
+                                                                                                                    <a href="#"
+                                                                                                                        class="link-url"><u>Rohit
+                                                                                                                            Jain</u></a>.
+                                                                                                                </p>
+                                                                                                                <div
+                                                                                                                    class="last-activity-time">
+                                                                                                                    Oct
+                                                                                                                    15,
+                                                                                                                    2021,
+                                                                                                                    12:34
+                                                                                                                    PM
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+
+                                                                                                </div>
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <a
+                                                                                                    href="view-user-details.php">
+                                                                                                    <div
+                                                                                                        class="media align-items-center">
+                                                                                                        <div
+                                                                                                            class="media-head me-2">
+                                                                                                            <div
+                                                                                                                class="avatar avatar-xs avatar-rounded">
+                                                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                                    alt="user"
+                                                                                                                    class="avatar-img">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="media-body">
+                                                                                                            <span
+                                                                                                                class="d-block text-high-em">Chris
+                                                                                                                Hemsworth</span>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </a>
+                                                                                            </td>
+                                                                                            <td class="">Operations</td>
+                                                                                            <td>08/09/2024 13:50</td>
+                                                                                            <td>
+                                                                                                <div
+                                                                                                    class="activity-list contractHistory_activity_data">
+                                                                                                    <div
+                                                                                                        class="list-group-item">
+                                                                                                        <div
+                                                                                                            class="media">
+
+                                                                                                            <div
+                                                                                                                class="media-body">
+                                                                                                                <p>Request
+                                                                                                                    to
+                                                                                                                    correct
+                                                                                                                    Address
+                                                                                                                    Details
+                                                                                                                    for
+                                                                                                                    <a href="#"
+                                                                                                                        class="link-url"><u>Rohit
+                                                                                                                            Jain</u></a>.
+                                                                                                                </p>
+                                                                                                                <div
+                                                                                                                    class="last-activity-time">
+                                                                                                                    Oct
+                                                                                                                    15,
+                                                                                                                    2021,
+                                                                                                                    12:34
+                                                                                                                    PM
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+
+                                                                                                </div>
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                <a
+                                                                                                    href="view-user-details.php">
+                                                                                                    <div
+                                                                                                        class="media align-items-center">
+                                                                                                        <div
+                                                                                                            class="media-head me-2">
+                                                                                                            <div
+                                                                                                                class="avatar avatar-xs avatar-rounded">
+                                                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                                    alt="user"
+                                                                                                                    class="avatar-img">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="media-body">
+                                                                                                            <span
+                                                                                                                class="d-block text-high-em">Jennifer
+                                                                                                                Lawrence</span>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </a>
+                                                                                            </td>
+                                                                                            <td class="">Sales</td>
+                                                                                            <td>05/07/2023 17:20</td>
+                                                                                            <td>
+                                                                                                <div
+                                                                                                    class="activity-list contractHistory_activity_data">
+                                                                                                    <div
+                                                                                                        class="list-group-item">
+                                                                                                        <div
+                                                                                                            class="media">
+
+                                                                                                            <div
+                                                                                                                class="media-body">
+                                                                                                                <p>Request
+                                                                                                                    to
+                                                                                                                    update
+                                                                                                                    Phone
+                                                                                                                    Number
+                                                                                                                    for
+                                                                                                                    <a href="#"
+                                                                                                                        class="link-url"><u>Rohit
+                                                                                                                            Jain</u></a>.
+                                                                                                                </p>
+                                                                                                                <div
+                                                                                                                    class="last-activity-time">
+                                                                                                                    Oct
+                                                                                                                    15,
+                                                                                                                    2021,
+                                                                                                                    12:34
+                                                                                                                    PM
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+
+                                                                                                </div>
+                                                                                            </td>
+                                                                                        </tr>
+
+                                                                                    </tbody>
+                                                                                </table>
+
                                                                             </div>
                                                                         </div>
-                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -4870,195 +5287,193 @@ JavaScript to dynamically populate the year options end
     });
 </script>
 
+<!-- don't Remove this scripts these all Required Scripts for this page  -->
+<!-- Repeater JS -->
+<script src="vendors/jquery.repeater/jquery.repeater.min.js"></script>
+<!-- Drag JS -->
+<script src="vendors/dragula/dist/dragula.min.js"></script>
+<script src="dist/js/todo-data.js"></script>
 
-  <!-- don't Remove this scripts these all Required Scripts for this page  -->
-    <!-- Repeater JS -->
-    <script src="vendors/jquery.repeater/jquery.repeater.min.js"></script>
-    <!-- Drag JS -->
-    <script src="vendors/dragula/dist/dragula.min.js"></script>
-    <script src="dist/js/todo-data.js"></script>
+<script>
+    $(".department_select").select2({
+        placeholder: "Select a Department"
+    })
+    $(".DepartmentUser_select").select2({
+        placeholder: "Select a User"
+    })
+</script>
 
-    <script>
-        $(".department_select").select2({
-            placeholder: "Select a Department"
-        })
-        $(".DepartmentUser_select").select2({
-            placeholder: "Select a User"
-        })
-    </script>
-
-    <!-- --------------------------------------------------------- 
+<!-- --------------------------------------------------------- 
  assign note task to department from the left side under note js Functionality to 
   hide the assign selection option  start
   -------------------------------------------------------->
 
-    <script>
-        $(document).ready(function() {
-            // Toggle the visibility of Showing_departmentand_users based on the checkbox
-            $('#customCheckList-todo').change(function() {
-                if ($(this).is(':checked')) {
-                    $('.Showing_departmentand_users').slideDown(); // Show the section
-                } else {
-                    $('.Showing_departmentand_users').slideUp(); // Hide the section
-                }
-            });
-            // Handle the Send Note button click
-            $('#sendBtn2').click(function() {
-                var selectedDepartment = $('#selectDepartment').val();
-                var selectedUser = $('#selectUser').val();
-                if (selectedDepartment && selectedUser) {
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Note Sent!',
-                        text: `Note sent to ${selectedDepartment} and ${selectedUser}.`
-                    });
-                } else {
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Missing Information',
-                        text: 'Please select both a department and a user.'
-                    });
-                }
-            });
+<script>
+    $(document).ready(function() {
+        // Toggle the visibility of Showing_departmentand_users based on the checkbox
+        $('#customCheckList-todo').change(function() {
+            if ($(this).is(':checked')) {
+                $('.Showing_departmentand_users').slideDown(); // Show the section
+            } else {
+                $('.Showing_departmentand_users').slideUp(); // Hide the section
+            }
         });
-    </script>
+        // Handle the Send Note button click
+        $('#sendBtn2').click(function() {
+            var selectedDepartment = $('#selectDepartment').val();
+            var selectedUser = $('#selectUser').val();
+            if (selectedDepartment && selectedUser) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Note Sent!',
+                    text: `Note sent to ${selectedDepartment} and ${selectedUser}.`
+                });
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Missing Information',
+                    text: 'Please select both a department and a user.'
+                });
+            }
+        });
+    });
+</script>
 
-    <!-- --------------------------------------------------------- 
+<!-- --------------------------------------------------------- 
  assign note task to department from the left side under note js Functionality to 
   hide the assign selection option  end
   -------------------------------------------------------->
 
-    <!-- ****************************
+<!-- ****************************
   Note set as alert confirmation popup js start
 ****************************** -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const checkbox = document.querySelector('.setAlertInput');
-            checkbox.addEventListener('change', function() {
-                if (this.checked) {
-                    Swal.fire({
-                        html: `
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const checkbox = document.querySelector('.setAlertInput');
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                Swal.fire({
+                    html: `
                     <div style="text-align: center;">
                         <div class="swalalert_custom_icon">
                             <iconify-icon icon="hugeicons:alert-01"></iconify-icon>
                         </div>
                         <h2 class="Swal_CustomTitle">Are You Sure You Want to Set This Note as an Alert?</h2>
                     </div>`,
-                        showCancelButton: true,
-                        confirmButtonText: 'Yes, set it!',
-                        cancelButtonText: 'No, cancel!',
-                        reverseButtons: true,
-                        customClass: {
-                            confirmButton: 'btn btn-success',
-                            cancelButton: 'btn btn-danger'
-                        }
-                    }).then((result) => {
-                        if (result.isConfirmed) {
-                            Swal.fire({
-                                title: 'Alert Set!',
-                                text: 'The note has been successfully set as an alert.',
-                                icon: 'success'
-                            });
-                        } else if (result.isDismissed) {
-                            checkbox.checked =
+                    showCancelButton: true,
+                    confirmButtonText: 'Yes, set it!',
+                    cancelButtonText: 'No, cancel!',
+                    reverseButtons: true,
+                    customClass: {
+                        confirmButton: 'btn btn-success',
+                        cancelButton: 'btn btn-danger'
+                    }
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Swal.fire({
+                            title: 'Alert Set!',
+                            text: 'The note has been successfully set as an alert.',
+                            icon: 'success'
+                        });
+                    } else if (result.isDismissed) {
+                        checkbox.checked =
                             false; // Uncheck the checkbox if the user cancels
-                        }
-                    });
-                }
-            });
+                    }
+                });
+            }
         });
-    </script>
-    <!-- ****************************
+    });
+</script>
+<!-- ****************************
   Note set as alert confirmation popup js end
 ****************************** -->
 
-    <!-- custom task duration  field functionality js -->
-    <script>
-        $(document).ready(function() {
-            // Initialize Select2
-            $('#durationSelect').select2({
-                minimumResultsForSearch: Infinity // This disables the search box if you don't need it
-            });
-            // Hide custom field by default
-            $('.customTile_field').hide();
-            // Show/hide custom field based on selected option
-            $('#durationSelect').on('change', function() {
-                if ($(this).val() === 'Custom') {
-                    $('.customTile_field').show();
-                } else {
-                    $('.customTile_field').hide();
-                }
-            });
+<!-- custom task duration  field functionality js -->
+<script>
+    $(document).ready(function() {
+        // Initialize Select2
+        $('#durationSelect').select2({
+            minimumResultsForSearch: Infinity // This disables the search box if you don't need it
         });
-    </script>
-    <!-- custom task duration  field functionality js end-->
-
-    <!--  custom field numver validation and time calculation js -->
-    <script>
-        $(document).ready(function() {
-            // Restrict input to digits only
-            $('#timeInput').on('input', function() {
-                this.value = this.value.replace(/[^0-9]/g, ''); // Only allow numbers
-                var minutes = parseInt(this.value) || 0; // Convert to integer or default to 0 if empty
-                var hours = Math.floor(minutes / 60); // Calculate hours
-                var remainingMinutes = minutes % 60; // Calculate remaining minutes
-                // Display the result in "X hr Y min" format
-                if (minutes > 0) {
-                    var timeFormatted = (hours > 0 ? hours + " hr " : "") + (remainingMinutes > 0 ?
-                        remainingMinutes + " min" : "");
-                    $('#timeOutput').text(timeFormatted);
-                } else {
-                    $('#timeOutput').text(''); // Clear the output if input is empty
-                }
-            });
-        });
-    </script>
-    <!--  custom field numver validation and time calculation js end-->
-
-    <!-- validation alert for the assign task to other staff -->
-    <script>
-        // Function to check if department and user are selected
-        function checkSelections() {
-            const department = $('#department_select').val(); // Get value from select2
-            const user = $('#DepartmentUser_select').val(); // Get value from select2
-            const assignButton = document.querySelector('.AssignButton');
-            // Enable the button if both department and user are selected
-            if (department && user) {
-                assignButton.disabled = false;
+        // Hide custom field by default
+        $('.customTile_field').hide();
+        // Show/hide custom field based on selected option
+        $('#durationSelect').on('change', function() {
+            if ($(this).val() === 'Custom') {
+                $('.customTile_field').show();
             } else {
-                assignButton.disabled = true;
+                $('.customTile_field').hide();
             }
-        }
-        // Listen for changes in the Select2 fields
-        $('#department_select').on('change', checkSelections);
-        $('#DepartmentUser_select').on('change', checkSelections);
-        // Handle the click event for the Assign button
-        document.querySelector('.AssignButton').addEventListener('click', function() {
-            const selectedUser = $('#DepartmentUser_select').find('option:selected')
-        .text(); // Get selected user text
-            Swal.fire({
-                title: 'Are you sure?',
-                text: `Do you want to assign this task to ${selectedUser}?`,
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Yes, assign it!'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    Swal.fire(
-                        'Assigned!',
-                        `Task has been assigned to ${selectedUser}.`,
-                        'success'
-                    );
-                }
-            });
         });
-    </script>
-    <!-- validation alert for the assign task to other staff end-->
+    });
+</script>
+<!-- custom task duration  field functionality js end-->
 
+<!--  custom field numver validation and time calculation js -->
+<script>
+    $(document).ready(function() {
+        // Restrict input to digits only
+        $('#timeInput').on('input', function() {
+            this.value = this.value.replace(/[^0-9]/g, ''); // Only allow numbers
+            var minutes = parseInt(this.value) || 0; // Convert to integer or default to 0 if empty
+            var hours = Math.floor(minutes / 60); // Calculate hours
+            var remainingMinutes = minutes % 60; // Calculate remaining minutes
+            // Display the result in "X hr Y min" format
+            if (minutes > 0) {
+                var timeFormatted = (hours > 0 ? hours + " hr " : "") + (remainingMinutes > 0 ?
+                    remainingMinutes + " min" : "");
+                $('#timeOutput').text(timeFormatted);
+            } else {
+                $('#timeOutput').text(''); // Clear the output if input is empty
+            }
+        });
+    });
+</script>
+<!--  custom field numver validation and time calculation js end-->
 
-    <!-- custom enquiry dropdown starts changebale js -->
+<!-- validation alert for the assign task to other staff -->
+<script>
+    // Function to check if department and user are selected
+    function checkSelections() {
+        const department = $('#department_select').val(); // Get value from select2
+        const user = $('#DepartmentUser_select').val(); // Get value from select2
+        const assignButton = document.querySelector('.AssignButton');
+        // Enable the button if both department and user are selected
+        if (department && user) {
+            assignButton.disabled = false;
+        } else {
+            assignButton.disabled = true;
+        }
+    }
+    // Listen for changes in the Select2 fields
+    $('#department_select').on('change', checkSelections);
+    $('#DepartmentUser_select').on('change', checkSelections);
+    // Handle the click event for the Assign button
+    document.querySelector('.AssignButton').addEventListener('click', function() {
+        const selectedUser = $('#DepartmentUser_select').find('option:selected')
+            .text(); // Get selected user text
+        Swal.fire({
+            title: 'Are you sure?',
+            text: `Do you want to assign this task to ${selectedUser}?`,
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, assign it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Assigned!',
+                    `Task has been assigned to ${selectedUser}.`,
+                    'success'
+                );
+            }
+        });
+    });
+</script>
+<!-- validation alert for the assign task to other staff end-->
+
+<!-- custom enquiry dropdown starts changebale js -->
 <script>
     document.querySelectorAll('.statusChange_dropdown .dropdown-item').forEach(item => {
         item.addEventListener('click', function(e) {
