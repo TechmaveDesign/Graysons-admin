@@ -620,7 +620,7 @@
 						</div>
 						<ul class="navbar-nav flex-column">
 							<li class="nav-item">
-								<a class="nav-link sidecoloruser" href="users.php">
+								<a class="nav-link sidecoloruser" href="staff-users.php">
 									<span class="nav-icon-wrap">
 										<span class="svg-icon">
 											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"

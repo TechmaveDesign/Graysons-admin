@@ -908,9 +908,66 @@
                                                                                         <div
                                                                                             class="selectedPropertyfor_tenant_section">
                                                                                             <h2>Selected Properties</h2>
+                                                                                            <div class="propertycountand_share">
                                                                                             <div id="selectedCount"
-                                                                                                class="mb-2"></div>
+                                                                                                class=""></div>
+                                                                                                <div class="sharepropertyWrap">
+                                                                                        <button id="doneBtn"
+                                                                                            type="button"
+                                                                                            class="btn btn-success hiddenelements dropdown-toggle no-caret"
+                                                                                            aria-expanded="false"
+                                                                                            data-bs-toggle="dropdown"
+                                                                                            href="#">Send Suggested
+                                                                                            Properties</button>
+                                                                                        <div
+                                                                                            class="dropdown-menu dropdown-menu-icon-text dropdown-menu-end spipeline-dropdown">
+                                                                                            <h6
+                                                                                                class="dropdown-header sharedropdown_intext">
+                                                                                                <iconify-icon icon="lineicons:share-1"></iconify-icon>  Share Via</h6>
+
+                                                                                            <div id="social_profile"
+                                                                                                class="propertyShare_icons">
+                                                                                                <ul
+                                                                                                        class="hk-list hk-list-sm">
+                                                                                                        <li>
+                                                                                                            <button
+                                                                                                                class="btn btn-icon btn-rounded btn-primary"><span
+                                                                                                                    class="icon"><i
+                                                                                                                        class="fab fa-behance"></i></span></button>
+                                                                                                        </li>
+                                                                                                        <li>
+                                                                                                            <button
+                                                                                                                class="btn btn-icon btn-rounded btn-warning"><span
+                                                                                                                    class="icon"><i
+                                                                                                                        class="fab fa-google-drive"></i></span></button>
+                                                                                                        </li>
+                                                                                                        <li>
+                                                                                                            <button
+                                                                                                                class="btn btn-icon btn-rounded btn-info"><span
+                                                                                                                    class="icon"><i
+                                                                                                                        class="fab fa-dropbox"></i></span></button>
+                                                                                                        </li>
+                                                                                                        <li>
+                                                                                                            <button
+                                                                                                                class="btn btn-icon btn-rounded btn-dark"><span
+                                                                                                                    class="icon"><i
+                                                                                                                        class="fab fa-github"></i></span></button>
+                                                                                                        </li>
+                                                                                                        <li>
+                                                                                                            <button
+                                                                                                                class="btn btn-icon btn-rounded btn-danger"><span
+                                                                                                                    class="icon"><i
+                                                                                                                        class="fab fa-google"></i></span></button>
+                                                                                                        </li>
+                                                                                                    </ul>
+                                                                                            </div>
+
                                                                                         </div>
+                                                                                        </div>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                        
 
                                                                                         <div
                                                                                             class="selected_property_mainContainer">
@@ -954,9 +1011,7 @@
                                                                                                 </tbody>
                                                                                             </table>
                                                                                         </div>
-                                                                                        <button id="doneBtn"
-                                                                                            type="button"
-                                                                                            class="btn btn-success hiddenelements">Done</button>
+
                                                                                     </div>
 
                                                                                 </div>
@@ -1081,20 +1136,7 @@
                                                                                         Notes</span>
                                                                                 </a>
                                                                             </li>
-                                                                            <li class="nav-item">
-                                                                                <a class="nav-link" data-bs-toggle="tab"
-                                                                                    href="#tab_files">
-                                                                                    <span
-                                                                                        class="nav-link-text badge-on-text">History</span>
-                                                                                </a>
-                                                                            </li>
-                                                                            <li class="nav-item">
-                                                                                <a class="nav-link" data-bs-toggle="tab"
-                                                                                    href="#tab_activity">
-                                                                                    <span
-                                                                                        class="nav-link-text badge-on-text">Activity</span>
-                                                                                </a>
-                                                                            </li>
+
                                                                             <li class="nav-item">
                                                                                 <a class="nav-link" data-bs-toggle="tab"
                                                                                     href="#Tenant_Questionnaire">
@@ -1110,6 +1152,20 @@
                                                                                     <span
                                                                                         class="nav-link-text badge-on-text">
                                                                                         Appointment History</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" data-bs-toggle="tab"
+                                                                                    href="#tab_files">
+                                                                                    <span
+                                                                                        class="nav-link-text badge-on-text">History</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="nav-item">
+                                                                                <a class="nav-link" data-bs-toggle="tab"
+                                                                                    href="#tab_activity">
+                                                                                    <span
+                                                                                        class="nav-link-text badge-on-text">Activity</span>
                                                                                 </a>
                                                                             </li>
                                                                         </ul>
@@ -3669,24 +3725,26 @@
 
                             <div class="col-lg-6">
                                 <div class="viewedHistory_modalcard">
-                                <div class="flex_containerCmn scheduleviewungmd_rviewall">
-                                                                    <h2>Available Properties</h2>
-                                                                    <div class="rightpropertyheader_actions">
-                                                                        <div id="send_property_to_tent" class="hiddenelements">
-                                                                            <button id="sendBtn" type="button" class="sendBtn_common_main">
-                                                                                <img src="dist/img/newimages/AI-default.51bec1607029ffbd.svg" alt="">
-                                                                                Add Properties
-                                                                            </button>
-                                                                        </div>
-                                                                        <div class="scheduleViewing">
-                                                                            <a href="property-availability.php" target="_blank" class="scheduleViewingBtn viewallbtn_right">
-                                                                                <iconify-icon icon="bytesize:eye">
-                                                                                </iconify-icon>
-                                                                                View All
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
+                                    <div class="flex_containerCmn scheduleviewungmd_rviewall">
+                                        <h2>Available Properties</h2>
+                                        <div class="rightpropertyheader_actions">
+                                            <div id="send_property_to_tent" class="hiddenelements">
+                                                <button id="sendBtn" type="button" class="sendBtn_common_main">
+                                                    <img src="dist/img/newimages/AI-default.51bec1607029ffbd.svg"
+                                                        alt="">
+                                                    Add Properties
+                                                </button>
+                                            </div>
+                                            <div class="scheduleViewing">
+                                                <a href="property-availability.php" target="_blank"
+                                                    class="scheduleViewingBtn viewallbtn_right">
+                                                    <iconify-icon icon="bytesize:eye">
+                                                    </iconify-icon>
+                                                    View All
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="card card-border">
                                         <div class="card-header">
                                             <h2>Viewed Properties</h2>
@@ -4662,15 +4720,6 @@
 </script>
 
 <!--  done button text change on click js -->
-<script>
-    document.getElementById('doneBtn').addEventListener('click', function() {
-        const acceptBtn = document.getElementById('doneBtn');
-        // Change button text to "Accepted" with a check icon
-        acceptBtn.innerHTML = 'Done <iconify-icon icon="lets-icons:check-fill"></iconify-icon>';
-        // Add the accepted class to change background color
-        acceptBtn.classList.add('Enquiryaccepted');
-    });
-</script>
 
 <!-- input lenthy content show js -->
 <script>
@@ -4815,40 +4864,40 @@
             updateDoneButtonVisibility();
         });
         // Functionality for the "Done" button
-        doneBtn.addEventListener('click', function() {
-            const selectedCount = selectedDataTable.querySelectorAll('.rowCheckboxSelected:checked')
-                .length;
-            Swal.fire({
-                icon: 'question',
-                title: 'Send Properties',
-                text: `You have selected ${selectedCount} properties. Do you want to send these to the tenant?`,
-                showCancelButton: true,
-                confirmButtonText: 'Yes',
-                cancelButtonText: 'No'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    const selectedProperties = [];
-                    const selectedCheckboxes = selectedDataTable.querySelectorAll(
-                        '.rowCheckboxSelected:checked');
-                    selectedCheckboxes.forEach(checkbox => {
-                        const row = checkbox.closest('tr');
-                        selectedProperties.push({
-                            address: row.children[1].innerText,
-                            area: row.children[2].innerText,
-                            availableRooms: row.children[3].innerText
-                        });
-                    });
-                    localStorage.setItem('selectedProperties', JSON.stringify(
-                        selectedProperties));
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Sent!',
-                        text: `Selected properties have been sent to the tenant.`,
-                        confirmButtonText: 'OK'
-                    });
-                }
-            });
-        });
+        // doneBtn.addEventListener('click', function() {
+        //     const selectedCount = selectedDataTable.querySelectorAll('.rowCheckboxSelected:checked')
+        //         .length;
+        //     Swal.fire({
+        //         icon: 'question',
+        //         title: 'Send Properties',
+        //         text: `You have selected ${selectedCount} properties. Do you want to send these to the tenant?`,
+        //         showCancelButton: true,
+        //         confirmButtonText: 'Yes',
+        //         cancelButtonText: 'No'
+        //     }).then((result) => {
+        //         if (result.isConfirmed) {
+        //             const selectedProperties = [];
+        //             const selectedCheckboxes = selectedDataTable.querySelectorAll(
+        //                 '.rowCheckboxSelected:checked');
+        //             selectedCheckboxes.forEach(checkbox => {
+        //                 const row = checkbox.closest('tr');
+        //                 selectedProperties.push({
+        //                     address: row.children[1].innerText,
+        //                     area: row.children[2].innerText,
+        //                     availableRooms: row.children[3].innerText
+        //                 });
+        //             });
+        //             localStorage.setItem('selectedProperties', JSON.stringify(
+        //                 selectedProperties));
+        //             Swal.fire({
+        //                 icon: 'success',
+        //                 title: 'Sent!',
+        //                 text: `Selected properties have been sent to the tenant.`,
+        //                 confirmButtonText: 'OK'
+        //             });
+        //         }
+        //     });
+        // });
     });
 </script>
 

@@ -29,7 +29,7 @@
                         <div class="d-flex align-items-center">
                             <div class="dropdown">
                                 <a class="contactapp-title link-dark" href="#" role="button">
-                                    <h1>Staff Users</h1>
+                                    <h1>Tenant Users</h1>
                                 </a>
 
                             </div>
@@ -224,7 +224,7 @@
                                                             <td class="">morgan@jampack.com</td>
                                                             <td>+145 52 5689</td>
 
-                                                            <td>Staff</td>
+                                                            <td>Tenant</td>
                                                             <td>13 Jan, 2020</td>
 
                                                             <td><span
@@ -275,7 +275,7 @@
                                                             <td class="">huma@clariesup.au</td>
                                                             <td>+234 48 2365</td>
 
-                                                            <td>Staff</td>
+                                                            <td>Tenant</td>
                                                             <td>13 Jan, 2020</td>
                                                             <td><span
                                                                     class="badge badge-soft-success  my-1  me-2">Active</span>
@@ -323,7 +323,7 @@
                                                             <td class="">charlie@leernoca.monster</td>
                                                             <td>+741 56 7896</td>
 
-                                                            <td>Staff</td>
+                                                            <td>Tenant</td>
                                                             <td>13 Jan, 2019</td>
                                                             <td><span
                                                                     class="badge badge-soft-success  my-1  me-2">Active</span>
@@ -371,7 +371,7 @@
                                                             </td>
                                                             <td class="">winston@worthniza.ga</td>
                                                             <td>+145 52 5463</td>
-                                                            <td>Staff</td>
+                                                            <td>Tenant</td>
                                                             <td>13 Jan, 2020</td>
                                                             <td><span
                                                                     class="badge badge-soft-success  my-1  me-2">Active</span>
