@@ -1276,22 +1276,7 @@
 
 																</li>
 
-																<li class="nav-item">
-																	<a class="nav-link sidecolor_material"
-																		href="material-stock.php">
-																		<span class="nav-icon-wrap">
-																			<span class="svg-icon">
-																				<iconify-icon icon="vaadin:stock">
-																				</iconify-icon>
-																			</span>
-																		</span>
-																		<span class="nav-link-text">Material
-																			Stock</span>
-																	</a>
-																	<i
-																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
-
-																</li>
+																
 																<li class="nav-item">
 																	<a class="nav-link sidecolor_checkincheckout"
 																		href="CheckIn.php">
@@ -1328,21 +1313,38 @@
 																class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 
 														</li>
+
 														<li class="nav-item">
 															<a class="nav-link sidecolor_Procurement custompadding_megamenu"
-																href="##">
-																<span class="nav-icon-wrap position-relative">
-
+																href="javascript:void(0);" data-bs-toggle="collapse"
+																data-bs-target="#Procurement">
+																<span class="nav-icon-wrap">
 																	<span class="svg-icon">
 																	<iconify-icon icon="bx:purchase-tag"></iconify-icon>
 																	</span>
 																</span>
 																<span class="nav-link-text">Procurement</span>
 															</a>
-															<i
-																class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+															
+															<ul id="Procurement"
+																class="nav flex-column collapse  nav-children">
+																<li class="nav-item">
+																	<a class="nav-link sidecolor_material"
+																		href="material-stock.php">
+																		<span class="nav-icon-wrap">
+																			<span class="svg-icon">
+																				<iconify-icon icon="vaadin:stock">
+																				</iconify-icon>
+																			</span>
+																		</span>
+																		<span class="nav-link-text">Material
+																			Stock</span>
+																	</a>
+																	<i
+																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 
-														</li>
+																</li>
+														
 													</ul>
 												</li>
 											</ul>
