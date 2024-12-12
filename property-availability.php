@@ -214,18 +214,25 @@
                                                             </div>
                                                             <div class="col-lg-3">
                                                                 <div class="form-group">
-                                                                    <label class="form-label">Filter By Flat</label>
+                                                                    <label class="form-label">Filter by Property
+                                                                        Type</label>
                                                                     <select name="" id="" class="form-control select2">
                                                                         <option value="" selected disable readonly>
                                                                             Select an Option</option>
-                                                                        <option
-                                                                            value="FLAT 1 ( 3 Bedroom Apartment Student )">
-                                                                            FLAT 1 ( 3 Bedroom Apartment Student )</option>
-                                                                        <option
-                                                                            value="FLAT 2 ( 3 Bedroom Apartment Professionals)">
-                                                                            FLAT 2 ( 3 Bedroom Apartment Professionals)
+                                                                        <option value="Studio"> Studio
                                                                         </option>
-                                                                        
+                                                                        <option value="1 Bedroom Apartment">
+                                                                            1 Bedroom Apartment
+                                                                        </option>
+                                                                        <option value="2 Bedroom Apartment">
+                                                                            2 Bedroom Apartment
+                                                                        </option>
+                                                                        <option value="2 Bedroom Apartment">
+                                                                            3 Bedroom Apartment
+                                                                        </option>
+                                                                        <option value="Residential">
+                                                                            Residential
+                                                                        </option>
 
                                                                     </select>
 
@@ -235,26 +242,87 @@
 
                                                             <div class="col-lg-3">
                                                                 <div class="form-group">
-                                                                    <label class="form-label">Filter By Bedroom</label>
+                                                                    <label class="form-label">Filter by Tags</label>
+                                                                    <div
+                                                                        class="dropdown filterdropDownCustom available-users-dropdown-wrapper">
+                                                                        <button
+                                                                            class="dropbtn dropdown-toggle dropmenuBtn"
+                                                                            type="button" data-bs-toggle="dropdown"
+                                                                            aria-expanded="false">
+                                                                            <span class="selected-count">Select
+                                                                                Tags</span>
+                                                                            <iconify-icon
+                                                                                icon="ic:round-keyboard-arrow-down">
+                                                                            </iconify-icon>
+                                                                        </button>
+                                                                        <div
+                                                                            class="dropdown-menu customdropdownmenu_style available-users-dropdown">
+                                                                            <div class="filTerSearchMain">
+                                                                                <input type="text"
+                                                                                    class="filterclSearch available-users-search"
+                                                                                    placeholder="Search tags...">
+                                                                                <iconify-icon
+                                                                                    icon="basil:search-outline">
+                                                                                </iconify-icon>
+                                                                            </div>
+                                                                            <div class="sellallitemsMain">
+                                                                                <div class="CustomselectallContainer">
+                                                                                    <input type="checkbox"
+                                                                                        class="select-all-available-users form-check-input">
+                                                                                    Select All
+                                                                                </div>
+                                                                                <div class="clDivider_full"></div>
+                                                                            </div>
+                                                                            <div class="Customdrpitems_container">
+                                                                                <div class="mainoptionContainer">
+                                                                                    <div class="dropfilter_options">
+                                                                                        <input type="checkbox"
+                                                                                            class="individual-option form-check-input">
+                                                                                        Female Only
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="mainoptionContainer">
+                                                                                    <div class="dropfilter_options">
+                                                                                        <input type="checkbox"
+                                                                                            class="individual-option form-check-input">
+                                                                                        Student
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="mainoptionContainer">
+                                                                                    <div class="dropfilter_options">
+                                                                                        <input type="checkbox"
+                                                                                            class="individual-option form-check-input">
+                                                                                        Professional
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <p class="no-data" style="display: none;">No
+                                                                                data found</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-lg-3">
+                                                                <div class="form-group">
+                                                                    <label class="form-label">Filter by room
+                                                                        type</label>
                                                                     <select name="" id="" class="form-control select2">
                                                                         <option value="" selected disable readonly>
                                                                             Select an Option</option>
-                                                                        <option
-                                                                            value="Bedroom A">
+                                                                        <option value="Bedroom A">
                                                                             Bedroom A</option>
-                                                                        <option
-                                                                            value="Bedroom B">
+                                                                        <option value="Bedroom B">
                                                                             Bedroom B
                                                                         </option>
-                                                                        <option
-                                                                            value="Bedroom C">
+                                                                        <option value="Bedroom C">
                                                                             Bedroom C</option>
-                                                                        <option
-                                                                            value="Bedroom D">
+                                                                        <option value="Bedroom D">
                                                                             Bedroom D
                                                                         </option>
-                                                                        <option
-                                                                            value="Bedroom E">
+                                                                        <option value="Bedroom E">
                                                                             Bedroom E
                                                                         </option>
 
@@ -272,8 +340,6 @@
 
                                                                 </div>
                                                             </div>
-
-                                                            
 
                                                             <div class="col-lg-2">
                                                                 <div class="form-group">
@@ -316,8 +382,6 @@
                                                                 </div>
                                                             </div>
 
-                                                            
-
                                                             <div class="col-lg-2">
                                                                 <div class="form-group">
                                                                     <label class="form-label">Include Contracts</label>
@@ -340,8 +404,8 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-auto flexcheckColumn">
-                                                                <div class="form-group">
-                                                                    
+                                                                <div class="form-group withoutlabel_field_align">
+
                                                                     <div class="form-check">
                                                                         <input type="checkbox" class="form-check-input"
                                                                             id="customCheckList6">
@@ -472,7 +536,7 @@
 
                                         </tr>
                                         <tr>
-                                            
+
                                             <td>
                                                 <a href="property-details.php">
                                                     <div class="LongMesage_container">
@@ -538,7 +602,7 @@
 
                                         </tr>
                                         <tr>
-                                            
+
                                             <td>
                                                 <a href="property-details.php">
                                                     <div class="LongMesage_container">
@@ -603,7 +667,6 @@
                                             </td>
 
                                         </tr>
-
 
                                         <tr>
                                             <td>
@@ -671,7 +734,7 @@
 
                                         </tr>
                                         <tr>
-                                            
+
                                             <td>
                                                 <a href="property-details.php">
                                                     <div class="LongMesage_container">
@@ -737,7 +800,7 @@
 
                                         </tr>
                                         <tr>
-                                            
+
                                             <td>
                                                 <a href="property-details.php">
                                                     <div class="LongMesage_container">
@@ -804,7 +867,7 @@
                                         </tr>
 
                                         <tr>
-                                            
+
                                             <td>
                                                 <a href="property-details.php">
                                                     <div class="LongMesage_container">
@@ -870,7 +933,7 @@
 
                                         </tr>
                                         <tr>
-                                            
+
                                             <td>
                                                 <a href="property-details.php">
                                                     <div class="LongMesage_container">
@@ -937,7 +1000,7 @@
                                         </tr>
 
                                         <tr>
-                                            
+
                                             <td>
                                                 <a href="property-details.php">
                                                     <div class="LongMesage_container">
@@ -1003,7 +1066,7 @@
 
                                         </tr>
                                         <tr>
-                                            
+
                                             <td>
                                                 <a href="property-details.php">
                                                     <div class="LongMesage_container">
@@ -1070,7 +1133,7 @@
                                         </tr>
 
                                         <tr>
-                                            
+
                                             <td>
                                                 <a href="property-details.php">
                                                     <div class="LongMesage_container">
@@ -1211,44 +1274,110 @@
 </script>
 
 <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
         // Initialize DataTable
         let table = $(".common-datatable").DataTable();
-
         // Create an object to group rows by Flat and Floor
         let flatFloorGroups = {};
-
         // Use DataTables API to iterate through each row
-        table.rows().every(function () {
+        table.rows().every(function() {
             let row = this.node(); // Get the actual DOM row
             let flatValue = $(row).find("td:nth-child(1)").text().trim(); // Get Flat column value
             let floorValue = $(row).find("td:nth-child(3)").text().trim(); // Get Floor column value
-
             // Create a unique key for each Flat-Floor combination
             let flatFloorKey = `${flatValue}_${floorValue}`;
-
             // Group rows by Flat-Floor combination
             if (!flatFloorGroups[flatFloorKey]) {
                 flatFloorGroups[flatFloorKey] = [];
             }
             flatFloorGroups[flatFloorKey].push($(row)); // Store the entire row (<tr>)
         });
-
         // Define colors for alternating groups
         let colors = ["#f8d7da", "#d4edda", "#fff3cd", "#d1ecf1"];
         let colorIndex = 0;
-
         // Apply colors to grouped rows
-        $.each(flatFloorGroups, function (flatFloorKey, rows) {
+        $.each(flatFloorGroups, function(flatFloorKey, rows) {
             // Assign a color from the palette
             let currentColor = colors[colorIndex % colors.length];
             colorIndex++;
-
             // Apply the background color to all <td> elements in the group
-            rows.forEach(function (row) {
+            rows.forEach(function(row) {
                 row.find("td").css("background-color", currentColor);
             });
         });
     });
 </script>
+<!-- end -->
 
+
+<!-- custom multiple select js start -->
+<script>
+   $(document).ready(function () {
+    // Update the count of selected options
+    function updateSelectedCount(dropdownWrapper) {
+        const selectedCount = dropdownWrapper.find(".individual-option:checked").length;
+        const selectedCountElement = dropdownWrapper.find(".selected-count");
+
+        if (selectedCount === 0) {
+            selectedCountElement.text("Select Location");
+        } else if (selectedCount === 1) {
+            selectedCountElement.text("1 selected");
+        } else {
+            selectedCountElement.text(`${selectedCount} selected`);
+        }
+    }
+
+    // Handle Select All checkbox
+    $(".select-all-available-users").on("change", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        const isChecked = $(this).prop("checked");
+        dropdownWrapper.find(".individual-option").prop("checked", isChecked);
+        updateSelectedCount(dropdownWrapper);
+    });
+
+    // Handle individual option selection
+    $(".individual-option").on("change", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        const totalOptions = dropdownWrapper.find(".individual-option").length;
+        const selectedOptions = dropdownWrapper.find(".individual-option:checked").length;
+
+        // Toggle the Select All checkbox
+        dropdownWrapper.find(".select-all-available-users").prop("checked", totalOptions === selectedOptions);
+
+        updateSelectedCount(dropdownWrapper);
+    });
+
+    // Reset Filter button
+    $(".reset-filter").on("click", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        dropdownWrapper.find(".individual-option").prop("checked", false);
+        dropdownWrapper.find(".select-all-available-users").prop("checked", false);
+        updateSelectedCount(dropdownWrapper);
+    });
+
+    // Apply Filter button
+    $(".apply-filter").on("click", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        const selectedItems = dropdownWrapper.find(".individual-option:checked").map(function () {
+            return $(this).parent().text().trim();
+        }).get();
+        console.log("Selected Items:", selectedItems);
+    });
+
+    // Filter search functionality
+    $(".available-users-search").on("keyup", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        const searchTerm = $(this).val().toLowerCase();
+        const options = dropdownWrapper.find(".mainoptionContainer");
+
+        options.filter(function () {
+            $(this).toggle($(this).text().toLowerCase().includes(searchTerm));
+        });
+
+        const noDataMessage = dropdownWrapper.find(".no-data");
+        noDataMessage.toggle(options.filter(":visible").length === 0);
+    });
+});
+
+</script>
+<!-- end -->

@@ -743,14 +743,7 @@
 																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 																</li>
 
-																<li class="nav-item">
-																	<a class="nav-link "
-																		href="tenancy-dashboard-panel.php">
-																		<span class="nav-link-text">Tenancy Dashboard</span>
-																	</a>
-																	<i
-																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
-																</li>
+																
 
 																<li class="nav-item">
 																	<a class="nav-link "
@@ -1185,6 +1178,24 @@
 																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 
 																</li>
+
+																<li class="nav-item">
+																	<a class="nav-link sidecolor_tenancydash"
+																		href="tenancy-dashboard-panel.php">
+																		<span class="nav-icon-wrap">
+																			<span class="svg-icon">
+																			<iconify-icon icon="radix-icons:dashboard"></iconify-icon>
+																			</span>
+																		</span>
+																		<span class="nav-link-text">Tenancy Dashboard</span>
+																	</a>
+																	<i
+																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+
+																</li>
+
+																
+
 																<li class="nav-item">
 																	<a class="nav-link sidecolor_Tenancies"
 																		href="tenancies.php">

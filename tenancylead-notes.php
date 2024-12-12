@@ -14,6 +14,24 @@
     }
 </style>
 
+<style>
+    /* Default style for the button */
+    .buttonInfOUpdate {
+        
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    /* Disabled button style */
+    .buttonInfOUpdate:disabled, .disabled-button[disabled] {
+        background-color: #c0c0c052;
+  color: #3f4245;
+        cursor: not-allowed; /* Show 'not-allowed' cursor */
+    }
+</style>
+
 <div class="container-xxl">
     <!-- Page Body -->
     <div class="hk-pg-body py-0">
@@ -30,8 +48,7 @@
 
                             </div>
                             <div class=" ms-3">
-                                <a href="tenancy-renewal.php"
-                                    class="btn btn-sm cmnbackbtn btn-outline-secondary ">
+                                <a href="tenancy-renewal.php" class="btn btn-sm cmnbackbtn btn-outline-secondary ">
                                     <iconify-icon icon="line-md:list-3"></iconify-icon> Back
                                 </a>
 
@@ -39,24 +56,37 @@
                         </div>
                         <div class="contact-options-wrap">
 
-                            <div class="cardRightDetail_boxContainer">
-                                                            <div class="flexcheckColumn">
-                                                                <div class="form-group">
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                                        <label class="form-check-label" for="gridCheck">
-                                                                        Renewing
-                                                                        </label>
-                                                                    </div>
+                        <div class="cardRightDetail_boxContainer">
+    <div class="flexcheckColumn">
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Renewing this Property
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
 
-                                                                </div>
-                                                            </div>
-                                                        </div>
+<button type="button" class="buttonInfOUpdate commonUpdateButton"
+    id="MakeEnquiry_confirmation" disabled>
+    <iconify-icon icon="fluent:person-support-32-regular"></iconify-icon>
+    Proceed with this Renewal
+</button>
 
-                            <button type="button" class="buttonInfOUpdate commonUpdateButton " id="MakeEnquiry_confirmation">
-                            <iconify-icon icon="fluent:person-support-32-regular"></iconify-icon>
-                            Proceed this Renewal
+                            <button type="button" class="buttonInfOUpdate commonUpdateButton  brightgreenbutton"
+                                id="raiseEnquiryBtn" >
+                                <iconify-icon icon="hugeicons:folder-move-to"></iconify-icon>
+                                Raise Enquiry
                             </button>
+
+                            <button type="button" class="buttonInfOUpdate commonUpdateButton navybluebtn"
+                                id="movetoarchivebtn">
+                                <iconify-icon icon="solar:archive-line-duotone"></iconify-icon>
+                                Move to Archive
+                            </button>
+
                             <a id="refreshButton"
                                 class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover no-caret d-sm-inline-block d-none"
                                 href="##" data-bs-toggle="tooltip" data-placement="top" title=""
@@ -96,23 +126,7 @@
                                             </div>
                                         </a>
                                     </li>
-                                    <!-- <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" href="#Guarantor">
-                                            <div class="d-flex align-items-center">
-                                                <span class="nav-link-text">Guarantor</span>
 
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" href="#Documents">
-                                            <div class="d-flex align-items-center">
-                                                <span class="nav-link-text">Tenancy Documents</span>
-
-                                            </div>
-                                        </a>
-                                    </li> -->
                                     <li class="nav-item">
                                         <a class="nav-link" data-bs-toggle="tab" href="#History">
                                             <div class="d-flex align-items-center">
@@ -130,8 +144,6 @@
                                             </div>
                                         </a>
                                     </li>
-
-                                  
 
                                 </ul>
                                 <button class="scroll-btn next" type="button">
@@ -155,9 +167,8 @@
 
                                                                 <div class="form-group">
                                                                     <label class="form-label">Tenant</label>
-                                                                    <a href="view-user-details.php">
-                                                                        <input type="text" class="form-control" id=""
-                                                                            value="Morgan Freeman" readonly=""> </a>
+                                                                    <input type="text" class="form-control" id=""
+                                                                        value="Morgan Freeman" readonly="" disabled>
                                                                 </div>
 
                                                             </div>
@@ -168,7 +179,8 @@
                                                                     <div class="input-group">
                                                                         <input type="text"
                                                                             class="form-control refuge-collection-input"
-                                                                            value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House, 1-7 Union Street, Sunderland">
+                                                                            value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House, 1-7 Union Street, Sunderland"
+                                                                            readonly>
                                                                         <button
                                                                             class="btn btn-outline-secondary view-btn inputadonButton"
                                                                             type="button" data-bs-toggle="tooltip"
@@ -183,7 +195,7 @@
                                                                 <div class="form-group">
                                                                     <label for="" class="form-label">Type</label>
                                                                     <input type="text" class="form-control" id=""
-                                                                        value="Student" readonly disabled>
+                                                                        value="Student">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-3">
@@ -191,7 +203,8 @@
                                                                     <label for="" class="form-label">Start Date</label>
                                                                     <input type="text"
                                                                         class="form-control customdataPicker flatpickr-input"
-                                                                        value="May, 22 2024 " readonly="readonly">
+                                                                        value="May, 22 2024 " readonly="readonly"
+                                                                        disabled>
                                                                 </div>
                                                             </div>
 
@@ -201,7 +214,8 @@
                                                                         Date</label>
                                                                     <input type="text"
                                                                         class="form-control customdataPicker flatpickr-input"
-                                                                        value="May, 22 2024 " readonly="readonly">
+                                                                        value="May, 22 2024 " readonly="readonly"
+                                                                        disabled>
                                                                 </div>
                                                             </div>
 
@@ -211,7 +225,8 @@
                                                                         Date</label>
                                                                     <input type="text"
                                                                         class="form-control customdataPicker flatpickr-input"
-                                                                        value="May, 22 2024 " readonly="readonly">
+                                                                        value="May, 22 2024 " readonly="readonly"
+                                                                        disabled>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-3">
@@ -219,7 +234,8 @@
                                                                     <label for="" class="form-label">End Date</label>
                                                                     <input type="text"
                                                                         class="form-control customdataPicker flatpickr-input"
-                                                                        value="May, 22 2024 " readonly="readonly">
+                                                                        value="May, 22 2024 " readonly="readonly"
+                                                                        disabled>
                                                                 </div>
                                                             </div>
 
@@ -227,7 +243,7 @@
                                                                 <div class="form-group">
                                                                     <label for="" class="form-label">Keys Issued</label>
                                                                     <input type="text" class="form-control" id=""
-                                                                        value="0">
+                                                                        value="0" readonly="readonly" disabled>
                                                                 </div>
                                                             </div>
 
@@ -235,8 +251,9 @@
                                                                 <div class="form-group">
                                                                     <label for="" class="form-label"> Parking Permit
                                                                         Status</label>
-                                                                    <select name="" id="" class="form-control select2">
-                                                                        <option value="" disable readonly selected>
+                                                                    <select name="" id=""
+                                                                        class="form-control select2 disabledSelect">
+                                                                        <option value="">
                                                                             Salect an Option</option>
                                                                         <option value="1">Not Requested</option>
                                                                         <option value="2">Requested</option>
@@ -255,7 +272,7 @@
                                                                     <label for="" class="form-label">Parking
                                                                         Permit</label>
                                                                     <input type="text" class="form-control" id=""
-                                                                        value="">
+                                                                        value="" readonly="readonly" disabled>
                                                                 </div>
                                                             </div>
 
@@ -263,7 +280,8 @@
                                                                 <div class="form-group">
                                                                     <label for="" class="form-label"> Council Tax
                                                                         Type</label>
-                                                                    <select name="" id="" class="form-control select2">
+                                                                    <select name="" id=""
+                                                                        class="form-control select2 disabledSelect">
                                                                         <option value="" disable readonly selected>
                                                                             Salect an Option</option>
                                                                         <option value="1">Full Time Student</option>
@@ -279,7 +297,8 @@
                                                                 <div class="form-group">
                                                                     <label for="" class="form-label"> Council Tax
                                                                         Status</label>
-                                                                    <select name="" id="" class="form-control select2">
+                                                                    <select name="" id=""
+                                                                        class="form-control select2 disabledSelect">
                                                                         <option value="" disable readonly selected>
                                                                             Salect an Option</option>
                                                                         <option value="1">Tenant Responsible</option>
@@ -344,8 +363,219 @@
                                                     Save Changes
                                                 </button>
                                             </div>
+
+                                            <div class="card suggestedprop_card">
+                                                <div class="card-body">
+                                                <div id="" class="tenancylead_suggestedprop">
+                                                <div class="selectedPropertyfor_tenant_section">
+                                                    <h2>Suggested Properties</h2>
+                                                    <div class="propertycountand_share">
+
+                                                        <div class="flexcheckColumn">
+                                                            <div class="form-group">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="schedulecheck">
+                                                                    <label class="form-check-label" for="schedulecheck">
+                                                                        Do you want to schedule Viewing for this tenant
+                                                                    </label>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="selected_property_mainContainer">
+                                                    <table id="selectedDataTable" class="table common-datatable w-100">
+                                                        <thead>
+
+                                                            <tr>
+                                                                <th><input type="checkbox" class="form-check-input"
+                                                                        id="selectAll2">
+                                                                </th>
+                                                                <th>Property
+                                                                    Type</th>
+                                                                <th colspan="3">
+                                                                    Weekly
+                                                                    Pricing</th>
+                                                                <th>Address</th>
+                                                                <th>Area</th>
+                                                                <th>Available
+                                                                    Rooms</th>
+                                                            </tr>
+                                                            <tr class="extraTBOption_th">
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>Rent</th>
+                                                                <th>Council Tax
+                                                                </th>
+                                                                <th>Utilities
+                                                                </th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                            </tr>
+
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+
+                                                                <td><input type="checkbox"
+                                                                        class="rowCheckboxSelected form-check-input">
+                                                                </td>
+                                                                <td class="sorting_1">Apartment 2C</td>
+                                                                <td class="dt-type-numeric">$200</td>
+                                                                <td class="dt-type-numeric">$50</td>
+                                                                <td class="dt-type-numeric">$30</td>
+                                                                <td>
+                                                                    <a href="property-details.php">
+                                                                        <div class="LongMesage_container">
+                                                                            <input
+                                                                                class="refuge-collection-input tableLongMessage_Input"
+                                                                                value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House, 1-7 Union Street, Sunderland">
+                                                                            <button
+                                                                                class="view-btn tablemessageview_btn"
+                                                                                type="button" data-bs-toggle="tooltip"
+                                                                                data-bs-placement="top"
+                                                                                aria-label="Click to view"
+                                                                                data-bs-original-title="Click to view Full Message">
+                                                                                <i class="bi bi-eye"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td>Liverpool</td>
+                                                                <td>4/4</td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td><input type="checkbox"
+                                                                        class="rowCheckboxSelected form-check-input">
+                                                                </td>
+                                                                <td class="sorting_1"> Apartment 3B</td>
+                                                                <td class="dt-type-numeric">$200</td>
+                                                                <td class="dt-type-numeric">$50</td>
+                                                                <td class="dt-type-numeric">$30</td>
+                                                                <td>
+                                                                    <a href="property-details.php">
+                                                                        <div class="LongMesage_container">
+                                                                            <input
+                                                                                class="refuge-collection-input tableLongMessage_Input"
+                                                                                value="3 and 3A - Apperley Road, Stocksfield, Northumerland">
+                                                                            <button
+                                                                                class="view-btn tablemessageview_btn"
+                                                                                type="button" data-bs-toggle="tooltip"
+                                                                                data-bs-placement="top"
+                                                                                aria-label="Click to view"
+                                                                                data-bs-original-title="Click to view Full Message">
+                                                                                <i class="bi bi-eye"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td>Bristol</td>
+                                                                <td>2/2</td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td><input type="checkbox"
+                                                                        class="rowCheckboxSelected form-check-input">
+                                                                </td>
+                                                                <td class="sorting_1">Flat 1</td>
+                                                                <td class="dt-type-numeric">$200</td>
+                                                                <td class="dt-type-numeric">$50</td>
+                                                                <td class="dt-type-numeric">$30</td>
+                                                                <td>
+                                                                    <a href="property-details.php">
+                                                                        <div class="LongMesage_container">
+                                                                            <input
+                                                                                class="refuge-collection-input tableLongMessage_Input"
+                                                                                value="West One, Asama Court,Newcastle Business Park, Newcastle upon Tyne">
+                                                                            <button
+                                                                                class="view-btn tablemessageview_btn"
+                                                                                type="button" data-bs-toggle="tooltip"
+                                                                                data-bs-placement="top"
+                                                                                aria-label="Click to view"
+                                                                                data-bs-original-title="Click to view Full Message">
+                                                                                <i class="bi bi-eye"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td>Manchester</td>
+                                                                <td>3/3</td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td><input type="checkbox"
+                                                                        class="rowCheckboxSelected form-check-input">
+                                                                </td>
+                                                                <td class="sorting_1"> Flat 2A</td>
+                                                                <td class="dt-type-numeric">$200</td>
+                                                                <td class="dt-type-numeric">$50</td>
+                                                                <td class="dt-type-numeric">$30</td>
+                                                                <td>
+                                                                    <a href="property-details.php">
+                                                                        <div class="LongMesage_container">
+                                                                            <input
+                                                                                class="refuge-collection-input tableLongMessage_Input"
+                                                                                value="West One, Asama Court,Newcastle Business Park, Newcastle upon Tyne">
+                                                                            <button
+                                                                                class="view-btn tablemessageview_btn"
+                                                                                type="button" data-bs-toggle="tooltip"
+                                                                                data-bs-placement="top"
+                                                                                aria-label="Click to view"
+                                                                                data-bs-original-title="Click to view Full Message">
+                                                                                <i class="bi bi-eye"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td>Leeds</td>
+                                                                <td>2/2</td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td><input type="checkbox"
+                                                                        class="rowCheckboxSelected form-check-input">
+                                                                </td>
+                                                                <td class="sorting_1"> Flat 5D</td>
+                                                                <td class="dt-type-numeric">$200</td>
+                                                                <td class="dt-type-numeric">$50</td>
+                                                                <td class="dt-type-numeric">$30</td>
+                                                                <td>
+                                                                    <a href="property-details.php">
+                                                                        <div class="LongMesage_container">
+                                                                            <input
+                                                                                class="refuge-collection-input tableLongMessage_Input"
+                                                                                value="Attention all tenants: The maintenance crew will be performing routine inspections tomorrow. Please ensure that your units are accessible. Thank you for your cooperation.">
+                                                                            <button
+                                                                                class="view-btn tablemessageview_btn"
+                                                                                type="button" data-bs-toggle="tooltip"
+                                                                                data-bs-placement="top"
+                                                                                aria-label="Click to view"
+                                                                                data-bs-original-title="Click to view Full Message">
+                                                                                <i class="bi bi-eye"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </a>
+                                                                </td>
+                                                                <td>Sunderland</td>
+                                                                <td>4/4</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                            </div>
+                                                </div>
+                                            </div>
+
+                                            
                                         </div>
-                        
 
                                         <div class="tab-pane fade" id="Notes">
                                             <div class="fullwidthTabInner_content_container">
@@ -1400,7 +1630,6 @@
 
                                         </div>
 
-                                        
                                     </div>
                                 </div>
                             </div>
@@ -1572,16 +1801,15 @@
         confirmButton: 'my-custom-confirm-button', // Custom class for the confirm button
         cancelButton: 'my-custom-cancel-button' // Custom class for the cancel button
     };
-
     // Add event listener for the Make Enquiry button
-    document.getElementById("MakeEnquiry_confirmation").addEventListener("click", function () {
+    document.getElementById("MakeEnquiry_confirmation").addEventListener("click", function() {
         Swal.fire({
             title: 'Are you sure?',
             text: 'Do you want to proceed with this Renewal',
             icon: 'question',
             showCancelButton: true,
-            confirmButtonText: 'Yes, proceed',
-            cancelButtonText: 'Reject',
+            confirmButtonText: 'Yes',
+            cancelButtonText: 'No',
             customClass: swalCustomClasses
         }).then((result) => {
             if (result.isConfirmed) {
@@ -1595,3 +1823,208 @@
     });
 </script>
 <!-- tenency renewal change request confirmation alert  end-->
+
+<script>
+    // Initialize Select2
+    $('.disabledSelect').select2();
+    // Disable the Select2 dropdown
+    $('.disabledSelect').prop('disabled', true);
+</script>
+
+
+<!-- raise enquiry button , select property and checkbox select for schedule button functionality start -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const raiseEnquiryButton = document.getElementById('raiseeqnuirybtn');
+        const rowCheckboxes = document.querySelectorAll('.rowCheckboxSelected');
+        const selectAllCheckbox = document.getElementById('selectAll2');
+        // Function to get selected properties
+        function getSelectedProperties() {
+            const selectedProperties = [];
+            rowCheckboxes.forEach((checkbox) => {
+                if (checkbox.checked) {
+                    const propertyName = checkbox.closest('tr').querySelector('td:nth-child(2)')
+                        .textContent.trim();
+                    selectedProperties.push(propertyName);
+                }
+            });
+            return selectedProperties;
+        }
+        // Event listener for 'Select All' checkbox
+        selectAllCheckbox.addEventListener('change', function() {
+            const isChecked = selectAllCheckbox.checked;
+            rowCheckboxes.forEach((checkbox) => {
+                checkbox.checked = isChecked;
+            });
+        });
+        // Event listener for 'Raise Enquiry' button
+        raiseEnquiryButton.addEventListener('click', function() {
+            const selectedProperties = getSelectedProperties();
+            if (selectedProperties.length === 0) {
+                // Show error if no property is selected
+                Swal.fire({
+                    icon: 'error',
+                    title: 'No property selected',
+                    text: 'Please select at least one property from the suggested properties.',
+                });
+            } else {
+                // Show success message with timer and redirect
+                let timerInterval;
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Redirecting to Enquiry Details...',
+                    html: `
+                    The following properties have been pushed for enquiry:
+                    <ul>${selectedProperties.map((prop) => `<li>${prop}</li>`).join('')}</ul>
+                    <br>
+                    Redirecting in <b id="timer">10</b> seconds...
+                    <div class="progress" style="height: 5px;">
+                        <div id="progressBar" class="progress-bar bg-success" role="progressbar" style="width: 0%;"></div>
+                    </div>
+                `,
+                    timer: 10000, // 10 seconds
+                    didOpen: () => {
+                        const timerElement = document.getElementById('timer');
+                        const progressBar = document.getElementById('progressBar');
+                        let timeLeft = 10;
+                        timerInterval = setInterval(() => {
+                            timeLeft--;
+                            timerElement.textContent = timeLeft;
+                            progressBar.style.width = `${(10 - timeLeft) * 10}%`;
+                        }, 1000);
+                    },
+                    willClose: () => {
+                        clearInterval(timerInterval);
+                    },
+                    allowOutsideClick: false,
+                    showConfirmButton: false,
+                }).then(() => {
+                    window.location.href = 'Enquiry-details.php'; // Redirect after timer ends
+                });
+            }
+        });
+    });
+</script>
+
+<script>
+    // DOM Elements
+    const checkbox = document.getElementById('schedulecheck');
+    const raiseEnquiryBtn = document.getElementById('raiseEnquiry');
+    const propertyCheckboxes = document.querySelectorAll('.rowCheckboxSelected');
+
+    // Function to check conditions and enable/disable the button
+    function updateButtonState() {
+        const isAnyPropertySelected = Array.from(propertyCheckboxes).some(cb => cb.checked);
+        const isScheduleChecked = checkbox.checked;
+
+        // Enable the button only if both conditions are met
+        raiseEnquiryBtn.disabled = !(isAnyPropertySelected && isScheduleChecked);
+    }
+
+    // Add event listeners
+    checkbox.addEventListener('change', updateButtonState);
+    propertyCheckboxes.forEach(cb => cb.addEventListener('change', updateButtonState));
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const scheduleCheck = document.getElementById("schedulecheck");
+        const raiseEnquiryBtn = document.getElementById("raiseEnquiryBtn");
+        const propertyCheckboxes = document.querySelectorAll(".rowCheckboxSelected");
+
+        raiseEnquiryBtn.addEventListener("click", function () {
+            // Check if any property is selected
+            const isPropertySelected = Array.from(propertyCheckboxes).some(checkbox => checkbox.checked);
+
+            if (!isPropertySelected) {
+                // No property selected
+                Swal.fire({
+                    title: "Alert",
+                    text: "Please select a property to proceed for enquiry.",
+                    icon: "warning",
+                    confirmButtonText: "OK",
+                });
+                return;
+            }
+
+            if (!scheduleCheck.checked) {
+                // Properties selected, but schedule checkbox not checked
+                Swal.fire({
+                    title: "Alert",
+                    text: "Please check the 'Do you want to schedule Viewing for this tenant' option.",
+                    icon: "warning",
+                    confirmButtonText: "OK",
+                });
+                return;
+            }
+
+            // Both property and schedule checkbox are valid
+            Swal.fire({
+                title: "Success",
+                text: "Enquiry raised successfully!",
+                icon: "success",
+                timer: 5000, // 5 seconds
+                timerProgressBar: true,
+                confirmButtonText: "OK",
+                allowOutsideClick: false,
+                willClose: () => {
+                    // Redirect after timer finishes
+                    window.location.href = "Enquiry-details.php";
+                },
+            });
+        });
+    });
+</script>
+
+<!-- raise enquiry button , select property and checkbox select for schedule button functionality end -->
+
+<!-- alert for the archive this renewal functionality start -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const moveToArchiveBtn = document.getElementById("movetoarchivebtn");
+
+        moveToArchiveBtn.addEventListener("click", function () {
+            Swal.fire({
+                title: "Archive Confirmation",
+                text: "Do you want to archive this tenancy renewal?",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonText: "Yes, Archive",
+                cancelButtonText: "Cancel",
+                timer: 5000, // Auto close in 5 seconds
+                timerProgressBar: true,
+                allowOutsideClick: false,
+                reverseButtons: true, // Swaps confirm and cancel button positions
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire({
+                        title: "Archived!",
+                        text: "Tenancy renewal has been archived successfully.",
+                        icon: "success",
+                        timer: 3000, // Auto close in 3 seconds
+                        timerProgressBar: true,
+                        allowOutsideClick: false,
+                        willClose: () => {
+                            // Redirect after the success message
+                            window.location.href = "archived-tenancy-renewal.php";
+                        }
+                    });
+                }
+            });
+        });
+    });
+</script>
+<!-- alert for the archive this renewal functionality end -->
+
+
+<!-- proceed button inabled disabled -->
+<script>
+    // Get references to the checkbox and button
+    const gridCheck = document.getElementById("gridCheck");
+    const makeEnquiryBtn = document.getElementById("MakeEnquiry_confirmation");
+
+    // Add an event listener to toggle the button's disabled state
+    gridCheck.addEventListener("change", function () {
+        makeEnquiryBtn.disabled = !this.checked;
+    });
+</script>

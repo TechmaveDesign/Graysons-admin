@@ -3135,6 +3135,11 @@ div.dt-container div.dt-search input {
   color: #fff !important;
 }
 
+.sidecolor_tenancydash  .svg-icon > iconify-icon{
+	background-color: #4382ff !important;
+  color: #fff !important;
+}
+
 .sidecolor_Procurement .svg-icon > iconify-icon{
 	background-color: #FF9843 !important;
   color: #fff !important;
@@ -9148,6 +9153,73 @@ font-size: 18px;
 	background-color: #FBB70B;
 	border-color: #FBB70B !important;
   }
+
+  .enqsetting_inrHeader .tabinnerTitle {
+	font-size: 19px;
+	margin-bottom: 25px;
+	display: flex;
+	align-items: center;
+	font-family: "Roboto", serif;
+	font-weight: 500;
+	color: #3d3d56;
+	margin-top: 10px;
+  }
+
+  .enqsetting_inrHeader .tabinnerTitle iconify-icon{
+	margin-right: 7px;
+  }
+
+  .moduleinableddisabled_item{
+	padding: 15px !important;
+  }
+
+  .brightgreenbutton{
+	font-size: 14px !important;
+  border-radius: 3px;
+  background: #0eb37b !important;
+  border: none !important;
+  margin-right: 6px;
+  margin-left: 10px;
+  padding: 5px 15px;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  }
+
+  .brightgreenbutton iconify-icon {
+	margin-right: 5px;
+	font-size: 14px !important;
+}
+
+.navybluebtn{
+	font-size: 14px !important;
+  border-radius: 3px;
+  background: #0e6db3 !important;
+  border: none !important;
+  padding: 5px 15px;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.navybluebtn iconify-icon {
+	margin-right: 5px;
+	font-size: 14px !important;
+}
+
+.tenancylead_suggestedprop h2 {
+	font-size: 1.125rem;
+	font-weight: 500;
+	line-height: 1.5;
+	color: #2a2e34;
+}
+.suggestedprop_card{
+	margin-top: 20px;
+}
 
 
 /* Media query for mobile screens */
