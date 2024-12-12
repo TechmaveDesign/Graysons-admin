@@ -194,7 +194,7 @@
                                                                 </label>
                                                             </div>
                                                         </td>
-                                                        <td><a href="view-ticket.php" class="text-high-em">#2072</a>
+                                                        <td><a href="ticket-invoice-detail.php" class="text-high-em">#2072</a>
                                                         </td>
                                                         <td>Routine Cleaning</td>
                                                         <td>Tiger Nixion</td>
@@ -248,7 +248,7 @@
                                                             <div class="d-flex align-items-center ActionDropdown">
                                                                 <div class="d-flex">
 
-                                                                    <a href="view-ticket.php"
+                                                                    <a href="ticket-invoice-detail.php"
                                                                         class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                         data-bs-toggle="tooltip" data-placement="top"
                                                                         title=""
@@ -290,7 +290,7 @@
                                                                 </label>
                                                             </div>
                                                         </td>
-                                                        <td><a href="view-ticket.php" class="text-high-em">#2073</a>
+                                                        <td><a href="ticket-invoice-detail.php" class="text-high-em">#2073</a>
                                                         </td>
                                                         <td>Routine Cleaning</td>
                                                         <td>Hania Nixion</td>
@@ -343,7 +343,7 @@
                                                             <div class="d-flex align-items-center ActionDropdown">
                                                                 <div class="d-flex">
 
-                                                                    <a href="view-ticket.php"
+                                                                    <a href="ticket-invoice-detail.php"
                                                                         class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                         data-bs-toggle="tooltip" data-placement="top"
                                                                         title=""
@@ -386,7 +386,7 @@
                                                                 </label>
                                                             </div>
                                                         </td>
-                                                        <td><a href="view-ticket.php" class="text-high-em">#2074</a>
+                                                        <td><a href="ticket-invoice-detail.php" class="text-high-em">#2074</a>
                                                         </td>
                                                         <td>Emergency Repair</td>
                                                         <td>Hamza</td>
@@ -438,7 +438,7 @@
                                                             <div class="d-flex align-items-center ActionDropdown">
                                                                 <div class="d-flex">
 
-                                                                    <a href="view-ticket.php"
+                                                                    <a href="ticket-invoice-detail.php"
                                                                         class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                         data-bs-toggle="tooltip" data-placement="top"
                                                                         title=""
@@ -480,7 +480,7 @@
                                                                 </label>
                                                             </div>
                                                         </td>
-                                                        <td><a href="view-ticket.php" class="text-high-em">#2075</a>
+                                                        <td><a href="ticket-invoice-detail.php" class="text-high-em">#2075</a>
                                                         </td>
                                                         <td>Emergency Repair</td>
                                                         <td>Jimmy</td>
@@ -533,7 +533,7 @@
                                                             <div class="d-flex align-items-center ActionDropdown">
                                                                 <div class="d-flex">
 
-                                                                    <a href="view-ticket.php"
+                                                                    <a href="ticket-invoice-detail.php"
                                                                         class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                         data-bs-toggle="tooltip" data-placement="top"
                                                                         title=""
@@ -575,7 +575,7 @@
                                                                 </label>
                                                             </div>
                                                         </td>
-                                                        <td><a href="view-ticket.php" class="text-high-em">#2076</a>
+                                                        <td><a href="ticket-invoice-detail.php" class="text-high-em">#2076</a>
                                                         </td>
                                                         <td>Emergency Repair</td>
                                                         <td>Popaye</td>
@@ -627,7 +627,7 @@
                                                             <div class="d-flex align-items-center ActionDropdown">
                                                                 <div class="d-flex">
 
-                                                                    <a href="view-ticket.php"
+                                                                    <a href="ticket-invoice-detail.php"
                                                                         class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                         data-bs-toggle="tooltip" data-placement="top"
                                                                         title=""
@@ -676,16 +676,6 @@
                                     <table class="table common-datatable nowrap w-100 ">
                                         <thead>
                                             <tr>
-                                                <th>
-
-                                                    <div class="form-check">
-                                                        <input class="form-check-input selectAll"
-                                                            type="checkbox" id="selectAll">
-                                                        <label class="form-check-label" for="checkboxOutline1">
-                                                        </label>
-                                                    </div>
-
-                                                </th>
                                                 <th>Ticket Id</th>
                                                 <th>Title</th>
                                                 <th>Landlord Name</th>
@@ -699,15 +689,8 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input row-checkbox"
-                                                            type="checkbox" id="gridCheck">
-                                                        <label class="form-check-label" for="gridCheck">
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="view-ticket.php" class="text-high-em">#2072</a>
+                                                
+                                                <td><a href="ticket-invoice-detail.php" class="text-high-em">#2072</a>
                                                 </td>
                                                 <td>Routine Cleaning</td>
                                                 <td>Tiger Nixion</td>
@@ -761,7 +744,7 @@
                                                     <div class="d-flex align-items-center ActionDropdown">
                                                         <div class="d-flex">
 
-                                                            <a href="view-ticket.php"
+                                                            <a href="ticket-invoice-detail.php"
                                                                 class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                 data-bs-toggle="tooltip" data-placement="top"
                                                                 title=""
@@ -795,15 +778,8 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input row-checkbox"
-                                                            type="checkbox" id="gridCheck">
-                                                        <label class="form-check-label" for="gridCheck">
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="view-ticket.php" class="text-high-em">#2073</a>
+                                              
+                                                <td><a href="ticket-invoice-detail.php" class="text-high-em">#2073</a>
                                                 </td>
                                                 <td>Routine Cleaning</td>
                                                 <td>Hania Nixion</td>
@@ -856,7 +832,7 @@
                                                     <div class="d-flex align-items-center ActionDropdown">
                                                         <div class="d-flex">
 
-                                                            <a href="view-ticket.php"
+                                                            <a href="ticket-invoice-detail.php"
                                                                 class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                 data-bs-toggle="tooltip" data-placement="top"
                                                                 title=""
@@ -891,15 +867,8 @@
                                             </tr>
 
                                             <tr>
-                                                <td>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input row-checkbox"
-                                                            type="checkbox" id="gridCheck">
-                                                        <label class="form-check-label" for="gridCheck">
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="view-ticket.php" class="text-high-em">#2074</a>
+                                                
+                                                <td><a href="ticket-invoice-detail.php" class="text-high-em">#2074</a>
                                                 </td>
                                                 <td>Emergency Repair</td>
                                                 <td>Hamza</td>
@@ -951,7 +920,7 @@
                                                     <div class="d-flex align-items-center ActionDropdown">
                                                         <div class="d-flex">
 
-                                                            <a href="view-ticket.php"
+                                                            <a href="ticket-invoice-detail.php"
                                                                 class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                 data-bs-toggle="tooltip" data-placement="top"
                                                                 title=""
@@ -985,15 +954,8 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input row-checkbox"
-                                                            type="checkbox" id="gridCheck">
-                                                        <label class="form-check-label" for="gridCheck">
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="view-ticket.php" class="text-high-em">#2075</a>
+                                              
+                                                <td><a href="ticket-invoice-detail.php" class="text-high-em">#2075</a>
                                                 </td>
                                                 <td>Emergency Repair</td>
                                                 <td>Jimmy</td>
@@ -1046,7 +1008,7 @@
                                                     <div class="d-flex align-items-center ActionDropdown">
                                                         <div class="d-flex">
 
-                                                            <a href="view-ticket.php"
+                                                            <a href="ticket-invoice-detail.php"
                                                                 class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                 data-bs-toggle="tooltip" data-placement="top"
                                                                 title=""
@@ -1080,15 +1042,8 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input row-checkbox"
-                                                            type="checkbox" id="gridCheck">
-                                                        <label class="form-check-label" for="gridCheck">
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td><a href="view-ticket.php" class="text-high-em">#2076</a>
+                                            
+                                                <td><a href="ticket-invoice-detail.php" class="text-high-em">#2076</a>
                                                 </td>
                                                 <td>Emergency Repair</td>
                                                 <td>Popaye</td>
@@ -1141,7 +1096,7 @@
                                                     <div class="d-flex align-items-center ActionDropdown">
                                                         <div class="d-flex">
 
-                                                            <a href="view-ticket.php"
+                                                            <a href="ticket-invoice-detail.php"
                                                                 class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                 data-bs-toggle="tooltip" data-placement="top"
                                                                 title=""
