@@ -178,7 +178,9 @@
                                                             <th>Type</th>
                                                             <th>Tenancy Start Date</th>
                                                             <th>Tenancy End Date</th>
-                                                            <th>Amount</th>
+                                                            <th>Rent (Per Week)</th>
+                                                            <th>Term Length</th>
+                                                            <th>Installments</th>
                                                             <!-- <th>Status</th> -->
                                                             <th>Action</th>
                                                     </tr>
@@ -227,7 +229,9 @@
                                                             <td>Student</td>
                                                             <td>23/04/2023</td>
                                                             <td>08/12/2024</td>
-                                                            <td>£229.69</td>
+                                                            <td>£120.69</td>
+                                                            <td>120</td>
+                                                            <td>7</td>
                                                             <!-- <td>
                                                             <div class="overdueStatus">
                                                                     <div class="leftSideStatus">
@@ -245,11 +249,11 @@
                                                                 <div class="d-flex align-items-center ActionDropdown">
                                                                     <div class="d-flex">
 
-                                                                        <a href="tenancy.php"
+                                                                        <a href="payment-information.php"
                                                                             class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View Tenant Details"><span
+                                                                            data-bs-original-title="View Payment Details"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><svg
                                                                                         xmlns="http://www.w3.org/2000/svg"
@@ -325,6 +329,8 @@
                                                             <td>23/04/2023</td>
                                                             <td>08/12/2024</td>
                                                             <td>£9.69</td>
+                                                            <td>99</td>
+                                                            <td>5</td>
                                                               <!-- <td>
                                                             <div class="overdueStatus">
                                                                     <div class="leftSideStatus">
@@ -341,11 +347,11 @@
                                                                 <div class="d-flex align-items-center ActionDropdown">
                                                                     <div class="d-flex">
 
-                                                                        <a href="tenancy.php"
+                                                                        <a href="payment-information.php"
                                                                             class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View Tenant Details"><span
+                                                                            data-bs-original-title="View Payment Details"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><svg
                                                                                         xmlns="http://www.w3.org/2000/svg"
@@ -420,6 +426,8 @@
                                                             <td>23/04/2023</td>
                                                             <td>08/12/2024</td>
                                                             <td>£10.69</td>
+                                                            <td>125</td>
+                                                            <td>7</td>
                                                               <!-- <td>
                                                             <div class="overdueStatus">
                                                                     <div class="leftSideStatus">
@@ -436,11 +444,11 @@
                                                                 <div class="d-flex align-items-center ActionDropdown">
                                                                     <div class="d-flex">
 
-                                                                        <a href="tenancy.php"
+                                                                        <a href="payment-information.php"
                                                                             class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View Tenant Details"><span
+                                                                            data-bs-original-title="View Payment Details"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><svg
                                                                                         xmlns="http://www.w3.org/2000/svg"
@@ -515,6 +523,8 @@
                                                             <td>23/04/2023</td>
                                                             <td>08/12/2024</td>
                                                             <td>£6.69</td>
+                                                            <td>69</td>
+                                                            <td>3</td>
                                                               <!-- <td>
                                                             <div class="overdueStatus">
                                                                     <div class="leftSideStatus">
@@ -531,11 +541,11 @@
                                                                 <div class="d-flex align-items-center ActionDropdown">
                                                                     <div class="d-flex">
 
-                                                                        <a href="tenancy.php"
+                                                                        <a href="payment-information.php"
                                                                             class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View Tenant Details"><span
+                                                                            data-bs-original-title="View Payment Details"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><svg
                                                                                         xmlns="http://www.w3.org/2000/svg"
@@ -574,423 +584,7 @@
 
                                 </div>
 
-                                <div class="tab-pane fade" id="TenantInv">
-                                <div class="fullwidthTabInner_content_container">
-                                        <div class="contact-list-view">
-
-                                            <table class="table common-datatable nowrap w-100 ">
-                                                <thead>
-                                                    <tr>
-                                                        <th>
-
-                                                            <div class="form-check">
-                                                                <input class="form-check-input selectAll"
-                                                                    type="checkbox" id="selectAll">
-                                                                <label class="form-check-label" for="checkboxOutline1">
-                                                                </label>
-                                                            </div>
-
-                                                        </th>
-                                                            <th>Tenant Name</th>
-                                                            <th>Property</th>
-                                                            <th>Type</th>
-                                                            <th>Tenancy Start Date</th>
-                                                            <th>Tenancy End Date</th>
-                                                            <th>Amount</th>
-                                                            <!-- <th>Status</th> -->
-                                                            <th>Action</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input class="form-check-input row-checkbox"
-                                                                    type="checkbox" id="gridCheck">
-                                                                <label class="form-check-label" for="gridCheck">
-                                                                </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                                <a href="view-user-details.php">
-                                                                    <div class="media align-items-center">
-                                                                        <div class="media-head me-2">
-                                                                            <div
-                                                                                class="avatar avatar-xs avatar-rounded">
-                                                                                <img src="dist/img/newimages/users/userdummy.png"
-                                                                                    alt="user" class="avatar-img">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="media-body">
-                                                                            <span class="d-block text-high-em">Charlie
-                                                                                Chaplin</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </a>
-                                                            </td>
-
-                                                            <td>
-                                                                <div class="LongMesage_container"
-                                                                    style="position: relative;">
-                                                                    <input
-                                                                        class="refuge-collection-input tableLongMessage_Input"
-                                                                        value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House">
-                                                                    <button class="view-btn tablemessageview_btn"
-                                                                        type="button">
-                                                                        <i class="fa-regular fa-eye"></i>
-                                                                    </button>
-                                                                    <div class="custom-tooltip"></div>
-                                                                </div>
-                                                            </td>
-                                                            <td>Student</td>
-                                                            <td>23/04/2023</td>
-                                                            <td>08/12/2024</td>
-                                                            <td>£229.69</td>
-                                                            <!-- <td>
-                                                            <div class="overdueStatus">
-                                                                    <div class="leftSideStatus">
-                                                                        <iconify-icon icon="gg:check-o" class="PaidIcon"></iconify-icon>
-
-                                                                    </div>
-                                                                    <div class="rightSideStatus">
-                                                                        <h6>Paid</h6>
-                                                                        
-                                                                    </div>
-                                                                </div>
-                                                            </td> -->
-                                                            <td>
-
-                                                                <div class="d-flex align-items-center ActionDropdown">
-                                                                    <div class="d-flex">
-
-                                                                        <a href="tenancy.php"
-                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                            data-bs-toggle="tooltip"
-                                                                            data-placement="top" title=""
-                                                                            data-bs-original-title="View Tenant Details"><span
-                                                                                class="icon"><span
-                                                                                    class="feather-icon"><svg
-                                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                                        width="24" height="24"
-                                                                                        viewBox="0 0 24 24" fill="none"
-                                                                                        stroke="currentColor"
-                                                                                        stroke-width="2"
-                                                                                        stroke-linecap="round"
-                                                                                        stroke-linejoin="round"
-                                                                                        class="feather feather-eye">
-                                                                                        <path
-                                                                                            d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
-                                                                                        </path>
-                                                                                        <circle cx="12" cy="12" r="3">
-                                                                                        </circle>
-                                                                                    </svg></span></span></a>
-                                                                                    <div class="voidBox">
-                                                                        <a href="#" class="voidBtn"
-                                                                            data-bs-toggle="tooltip"
-                                                                            data-bs-placement="top"
-                                                                            title="No need to generate invoice">
-                                                                            <iconify-icon icon="tabler:ban">
-                                                                            </iconify-icon> Void
-                                                                        </a>
-                                                                    </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input class="form-check-input row-checkbox"
-                                                                    type="checkbox" id="gridCheck">
-                                                                <label class="form-check-label" for="gridCheck">
-                                                                </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                                <a href="view-user-details.php">
-                                                                    <div class="media align-items-center">
-                                                                        <div class="media-head me-2">
-                                                                            <div
-                                                                                class="avatar avatar-xs avatar-rounded">
-                                                                                <img src="dist/img/newimages/users/userdummy.png"
-                                                                                    alt="user" class="avatar-img">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="media-body">
-                                                                            <span class="d-block text-high-em">Huma
-                                                                                Therman</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </a>
-                                                            </td>
-
-                                                            <td>
-                                                                <div class="LongMesage_container"
-                                                                    style="position: relative;">
-                                                                    <input
-                                                                        class="refuge-collection-input tableLongMessage_Input"
-                                                                        value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House">
-                                                                    <button class="view-btn tablemessageview_btn"
-                                                                        type="button">
-                                                                        <i class="fa-regular fa-eye"></i>
-                                                                    </button>
-                                                                    <div class="custom-tooltip"></div>
-                                                                </div>
-                                                            </td>
-                                                            <td>Student</td>
-                                                            <td>23/04/2023</td>
-                                                            <td>08/12/2024</td>
-                                                            <td>£9.69</td>
-                                                              <!-- <td>
-                                                            <div class="overdueStatus">
-                                                                    <div class="leftSideStatus">
-                                                                        <iconify-icon icon="gg:check-o" class="PaidIcon"></iconify-icon>
-
-                                                                    </div>
-                                                                    <div class="rightSideStatus">
-                                                                        <h6>Paid</h6>
-                                                                        
-                                                                    </div>
-                                                                </div>
-                                                            </td> -->
-                                                            <td>
-                                                                <div class="d-flex align-items-center ActionDropdown">
-                                                                    <div class="d-flex">
-
-                                                                        <a href="tenancy.php"
-                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                            data-bs-toggle="tooltip"
-                                                                            data-placement="top" title=""
-                                                                            data-bs-original-title="View Tenant Details"><span
-                                                                                class="icon"><span
-                                                                                    class="feather-icon"><svg
-                                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                                        width="24" height="24"
-                                                                                        viewBox="0 0 24 24" fill="none"
-                                                                                        stroke="currentColor"
-                                                                                        stroke-width="2"
-                                                                                        stroke-linecap="round"
-                                                                                        stroke-linejoin="round"
-                                                                                        class="feather feather-eye">
-                                                                                        <path
-                                                                                            d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
-                                                                                        </path>
-                                                                                        <circle cx="12" cy="12" r="3">
-                                                                                        </circle>
-                                                                                    </svg></span></span></a>
-                                                                                    <div class="voidBox">
-                                                                        <a href="#" class="voidBtn"
-                                                                            data-bs-toggle="tooltip"
-                                                                            data-bs-placement="top"
-                                                                            title="No need to generate invoice">
-                                                                            <iconify-icon icon="tabler:ban">
-                                                                            </iconify-icon> Void
-                                                                        </a>
-                                                                    </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input class="form-check-input row-checkbox"
-                                                                    type="checkbox" id="gridCheck">
-                                                                <label class="form-check-label" for="gridCheck">
-                                                                </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                                <a href="view-user-details.php">
-                                                                    <div class="media align-items-center">
-                                                                        <div class="media-head me-2">
-                                                                            <div
-                                                                                class="avatar avatar-xs avatar-rounded">
-                                                                                <img src="dist/img/newimages/users/userdummy.png"
-                                                                                    alt="user" class="avatar-img">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="media-body">
-                                                                            <span class="d-block text-high-em">Morgan
-                                                                                Freeman</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </a>
-                                                            </td>
-
-                                                            <td>
-                                                                <div class="LongMesage_container"
-                                                                    style="position: relative;">
-                                                                    <input
-                                                                        class="refuge-collection-input tableLongMessage_Input"
-                                                                        value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House">
-                                                                    <button class="view-btn tablemessageview_btn"
-                                                                        type="button">
-                                                                        <i class="fa-regular fa-eye"></i>
-                                                                    </button>
-                                                                    <div class="custom-tooltip"></div>
-                                                                </div>
-                                                            </td>
-                                                            <td>Student</td>
-                                                            <td>23/04/2023</td>
-                                                            <td>08/12/2024</td>
-                                                            <td>£10.69</td>
-                                                              <!-- <td>
-                                                            <div class="overdueStatus">
-                                                                    <div class="leftSideStatus">
-                                                                        <iconify-icon icon="gg:check-o" class="PaidIcon"></iconify-icon>
-
-                                                                    </div>
-                                                                    <div class="rightSideStatus">
-                                                                        <h6>Paid</h6>
-                                                                        
-                                                                    </div>
-                                                                </div>
-                                                            </td> -->
-                                                            <td>
-                                                                <div class="d-flex align-items-center ActionDropdown">
-                                                                    <div class="d-flex">
-
-                                                                        <a href="tenancy.php"
-                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                            data-bs-toggle="tooltip"
-                                                                            data-placement="top" title=""
-                                                                            data-bs-original-title="View Tenant Details"><span
-                                                                                class="icon"><span
-                                                                                    class="feather-icon"><svg
-                                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                                        width="24" height="24"
-                                                                                        viewBox="0 0 24 24" fill="none"
-                                                                                        stroke="currentColor"
-                                                                                        stroke-width="2"
-                                                                                        stroke-linecap="round"
-                                                                                        stroke-linejoin="round"
-                                                                                        class="feather feather-eye">
-                                                                                        <path
-                                                                                            d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
-                                                                                        </path>
-                                                                                        <circle cx="12" cy="12" r="3">
-                                                                                        </circle>
-                                                                                    </svg></span></span></a>
-                                                                                    <div class="voidBox">
-                                                                        <a href="#" class="voidBtn"
-                                                                            data-bs-toggle="tooltip"
-                                                                            data-bs-placement="top"
-                                                                            title="No need to generate invoice">
-                                                                            <iconify-icon icon="tabler:ban">
-                                                                            </iconify-icon> Void
-                                                                        </a>
-                                                                    </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input class="form-check-input row-checkbox"
-                                                                    type="checkbox" id="gridCheck">
-                                                                <label class="form-check-label" for="gridCheck">
-                                                                </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                                <a href="view-user-details.php">
-                                                                    <div class="media align-items-center">
-                                                                        <div class="media-head me-2">
-                                                                            <div
-                                                                                class="avatar avatar-xs avatar-rounded">
-                                                                                <img src="dist/img/newimages/users/userdummy.png"
-                                                                                    alt="user" class="avatar-img">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="media-body">
-                                                                            <span class="d-block text-high-em">Tom
-                                                                                Cruz</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </a>
-                                                            </td>
-
-                                                            <td>
-                                                                <div class="LongMesage_container"
-                                                                    style="position: relative;">
-                                                                    <input
-                                                                        class="refuge-collection-input tableLongMessage_Input"
-                                                                        value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House">
-                                                                    <button class="view-btn tablemessageview_btn"
-                                                                        type="button">
-                                                                        <i class="fa-regular fa-eye"></i>
-                                                                    </button>
-                                                                    <div class="custom-tooltip"></div>
-                                                                </div>
-                                                            </td>
-                                                            <td>Student</td>
-                                                            <td>23/04/2023</td>
-                                                            <td>08/12/2024</td>
-                                                            <td>£6.69</td>
-                                                              <!-- <td>
-                                                            <div class="overdueStatus">
-                                                                    <div class="leftSideStatus">
-                                                                        <iconify-icon icon="gg:check-o" class="PaidIcon"></iconify-icon>
-
-                                                                    </div>
-                                                                    <div class="rightSideStatus">
-                                                                        <h6>Paid</h6>
-                                                                        
-                                                                    </div>
-                                                                </div>
-                                                            </td> -->
-                                                            <td>
-                                                                <div class="d-flex align-items-center ActionDropdown">
-                                                                    <div class="d-flex">
-
-                                                                        <a href="tenancy.php"
-                                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                            data-bs-toggle="tooltip"
-                                                                            data-placement="top" title=""
-                                                                            data-bs-original-title="View Tenant Details"><span
-                                                                                class="icon"><span
-                                                                                    class="feather-icon"><svg
-                                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                                        width="24" height="24"
-                                                                                        viewBox="0 0 24 24" fill="none"
-                                                                                        stroke="currentColor"
-                                                                                        stroke-width="2"
-                                                                                        stroke-linecap="round"
-                                                                                        stroke-linejoin="round"
-                                                                                        class="feather feather-eye">
-                                                                                        <path
-                                                                                            d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
-                                                                                        </path>
-                                                                                        <circle cx="12" cy="12" r="3">
-                                                                                        </circle>
-                                                                                    </svg></span></span></a>
-                                                                                    <div class="voidBox">
-                                                                        <a href="#" class="voidBtn"
-                                                                            data-bs-toggle="tooltip"
-                                                                            data-bs-placement="top"
-                                                                            title="No need to generate invoice">
-                                                                            <iconify-icon icon="tabler:ban">
-                                                                            </iconify-icon> Void
-                                                                        </a>
-                                                                    </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-
-                                </div>
+                                
                                 <div class="tab-pane fade" id="supplierInv">
                                 <div class="fullwidthTabInner_content_container">
                                         <div class="contact-list-view">
@@ -1004,7 +598,9 @@
                                                             <th>Type</th>
                                                             <th>Tenancy Start Date</th>
                                                             <th>Tenancy End Date</th>
-                                                            <th>Amount</th>
+                                                            <th>Rent (Per Week)</th>
+                                                            <th>Term Length</th>
+                                                            <th>Installments</th>
                                                             <!-- <th>Status</th> -->
                                                             <th>Action</th>
                                                     </tr>
@@ -1047,6 +643,8 @@
                                                             <td>23/04/2023</td>
                                                             <td>08/12/2024</td>
                                                             <td>£229.69</td>
+                                                            <td>130</td>
+                                                            <td>7</td>
                                                             <!-- <td>
                                                             <div class="overdueStatus">
                                                                     <div class="leftSideStatus">
@@ -1064,11 +662,11 @@
                                                                 <div class="d-flex align-items-center ActionDropdown">
                                                                     <div class="d-flex">
 
-                                                                        <a href="tenancy.php"
+                                                                        <a href="payment-information.php"
                                                                             class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View Tenant Details"><span
+                                                                            data-bs-original-title="View Payment Details"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><svg
                                                                                         xmlns="http://www.w3.org/2000/svg"
@@ -1137,6 +735,8 @@
                                                             <td>23/04/2023</td>
                                                             <td>08/12/2024</td>
                                                             <td>£9.69</td>
+                                                            <td>80</td>
+                                                            <td>4</td>
                                                               <!-- <td>
                                                             <div class="overdueStatus">
                                                                     <div class="leftSideStatus">
@@ -1153,11 +753,11 @@
                                                                 <div class="d-flex align-items-center ActionDropdown">
                                                                     <div class="d-flex">
 
-                                                                        <a href="tenancy.php"
+                                                                        <a href="payment-information.php"
                                                                             class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View Tenant Details"><span
+                                                                            data-bs-original-title="View Payment Details"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><svg
                                                                                         xmlns="http://www.w3.org/2000/svg"
@@ -1225,6 +825,8 @@
                                                             <td>23/04/2023</td>
                                                             <td>08/12/2024</td>
                                                             <td>£10.69</td>
+                                                            <td>80</td>
+                                                            <td>4</td>
                                                               <!-- <td>
                                                             <div class="overdueStatus">
                                                                     <div class="leftSideStatus">
@@ -1241,11 +843,11 @@
                                                                 <div class="d-flex align-items-center ActionDropdown">
                                                                     <div class="d-flex">
 
-                                                                        <a href="tenancy.php"
+                                                                        <a href="payment-information.php"
                                                                             class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View Tenant Details"><span
+                                                                            data-bs-original-title="View Payment Details"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><svg
                                                                                         xmlns="http://www.w3.org/2000/svg"
@@ -1312,7 +914,9 @@
                                                             <td>Student</td>
                                                             <td>23/04/2023</td>
                                                             <td>08/12/2024</td>
-                                                            <td>£6.69</td>
+                                                            <td>£150.69</td>
+                                                            <td>120</td>
+                                                            <td>6</td>
                                                               <!-- <td>
                                                             <div class="overdueStatus">
                                                                     <div class="leftSideStatus">
@@ -1329,11 +933,11 @@
                                                                 <div class="d-flex align-items-center ActionDropdown">
                                                                     <div class="d-flex">
 
-                                                                        <a href="tenancy.php"
+                                                                        <a href="payment-information.php"
                                                                             class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View Tenant Details"><span
+                                                                            data-bs-original-title="View Payment Details"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><svg
                                                                                         xmlns="http://www.w3.org/2000/svg"

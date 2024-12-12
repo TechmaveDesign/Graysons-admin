@@ -72,7 +72,7 @@
                         <div class="d-flex align-items-center">
                             <div class="dropdown">
                                 <a class="contactapp-title link-dark" href="#" role="button">
-                                    <h1>All Millage Invoice</h1>
+                                    <h1>All Time Log Invoice</h1>
                                 </a>
 
                             </div>
@@ -180,7 +180,7 @@
                                             <th>Invoice No.</th>
                                             <th>Staff Name</th>
                                             <th>Date Range</th>
-                                            <th>Total Millage</th>
+                                            <th>Total Hour</th>
                                             <th>Amount</th>
                                             <th>Status</th>
                                             <th>Action</th>
@@ -201,7 +201,7 @@
                                           <td>
                                             24 June, 2024 - 24 July, 2024
                                           </td>
-                                          <td>50 Miles</td>
+                                          <td>50 Min</td>
                                           <td>£22.69</td>
                                          
                                           <td>
@@ -220,7 +220,7 @@
                                           <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="time-log-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>
@@ -250,7 +250,7 @@
                                                 <td>IN0023</td>
                                                 <td>Jane Doe</td>
                                                 <td>15 May, 2024 - 12 June, 2024</td>
-                                                <td>70 Miles</td>
+                                                <td>70 Min</td>
                                                 <td>£30.50</td>
                                                 <td>
                                                 <div class="overdueStatus">
@@ -267,7 +267,7 @@
                                                 <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="time-log-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>
@@ -297,7 +297,7 @@
                                                 <td>IN0024</td>
                                                 <td>Michael Smith</td>
                                                 <td>01 July, 2024 - 26 July, 2024</td>
-                                                <td>90 Miles</td>
+                                                <td>90 Min</td>
                                                 <td>£15.00</td>
                                                 <td>
                                                 <div class="overdueStatus">
@@ -317,7 +317,7 @@
                                                 <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="time-log-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>
@@ -347,7 +347,7 @@
                                                 <td>IN0025</td>
                                                 <td>Emily Clark</td>
                                                 <td>27 July, 2024 - 27 Aug, 2024</td>
-                                                <td>100 Miles</td>
+                                                <td>100 Min</td>
                                                 <td>£27.75</td>
                                                 <td>
                                                 <div class="overdueStatus">
@@ -364,7 +364,7 @@
                                                 <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="time-log-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>
@@ -394,7 +394,7 @@
                                                 <td>IN0026</td>
                                                 <td>Chris Johnson</td>
                                                 <td>28 April, 2024 - 28 May, 2024</td>
-                                                <td>200 Miles</td>
+                                                <td>200 Min</td>
                                                 <td>£18.20</td>
                                                 <td>
                                                 <div class="overdueStatus">
@@ -411,7 +411,7 @@
                                                 <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="time-log-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>
@@ -441,7 +441,7 @@
                                                 <td>IN0027</td>
                                                 <td>Lisa Wong</td>
                                                 <td>29 June, 2024 - 29 July, 2024</td>
-                                                <td>300 Miles</td>
+                                                <td>300 Min</td>
                                                 <td>£19.99</td>
                                                 <td>
                                                 <div class="overdueStatus">
@@ -459,7 +459,7 @@
                                                 <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="time-log-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>
@@ -489,7 +489,7 @@
                                                 <td>IN0028</td>
                                                 <td>David Brown</td>
                                                 <td>30 June, 2024 - 30 July, 2024</td>
-                                                <td>150 Miles</td>
+                                                <td>150 Min</td>
                                                 <td>£20.45</td>
                                                 <td>
                                                 <div class="overdueStatus">
@@ -506,7 +506,7 @@
                                                 <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="time-log-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>
@@ -536,7 +536,7 @@
                                                 <td>IN0029</td>
                                                 <td>Sarah Green</td>
                                                 <td>01 July, 2024 - 01 August, 2024</td>
-                                                <td>160 Miles</td>
+                                                <td>160 Min</td>
                                                 <td>£10.00</td>
                                                 <td>
                                                 <div class="overdueStatus">
@@ -556,7 +556,7 @@
                                                 <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="time-log-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>
@@ -596,7 +596,7 @@
                                             <th>Invoice No.</th>
                                             <th>Staff Name</th>
                                             <th>Date Range</th>
-                                            <th>Total Millage</th>
+                                            <th>Total Hour</th>
                                             <th>Amount</th>
                                             <th>Status</th>
                                             <th>Action</th>
@@ -631,7 +631,7 @@
                                           <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="time-log-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>
@@ -655,7 +655,7 @@
                                                 <td>IN0023</td>
                                                 <td>Jane Doe</td>
                                                 <td>15 May, 2024 - 12 June, 2024</td>
-                                                <td>160 Miles</td>
+                                                <td>160 Min</td>
                                                 <td>£30.50</td>
                                                 <td>
                                                 <div class="overdueStatus">
@@ -674,7 +674,7 @@
                                                 <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="time-log-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>
@@ -698,7 +698,7 @@
                                                 <td>IN0024</td>
                                                 <td>Michael Smith</td>
                                                 <td>01 July, 2024 - 26 July, 2024</td>
-                                                <td>135 Miles</td>
+                                                <td>135 Min</td>
                                                 <td>£15.00</td>
                                                 <td>
                                                 <div class="overdueStatus">
@@ -717,7 +717,7 @@
                                                 <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="time-log-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>
@@ -741,7 +741,7 @@
                                                 <td>IN0025</td>
                                                 <td>Emily Clark</td>
                                                 <td>27 July, 2024 - 27 Aug, 2024</td>
-                                                <td>179 Miles</td>
+                                                <td>179 Min</td>
                                                 <td>£27.75</td>
                                                 <td>
                                                 <div class="overdueStatus">
@@ -760,7 +760,7 @@
                                                 <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="time-log-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>
@@ -784,7 +784,7 @@
                                                 <td>IN0026</td>
                                                 <td>Chris Johnson</td>
                                                 <td>28 April, 2024 - 28 May, 2024</td>
-                                                <td>58 Miles</td>
+                                                <td>58 Min</td>
                                                 <td>£18.20</td>
                                                 <td>
                                                 <div class="overdueStatus">
@@ -804,7 +804,7 @@
                                                 <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="time-log-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>
@@ -828,7 +828,7 @@
                                                 <td>IN0027</td>
                                                 <td>Lisa Wong</td>
                                                 <td>29 June, 2024 - 29 July, 2024</td>
-                                                <td>356 Miles</td>
+                                                <td>356 Min</td>
                                                 <td>£19.99</td>
                                                 <td>
                                                 <div class="overdueStatus">
@@ -847,7 +847,7 @@
                                                 <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="time-log-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>
@@ -871,7 +871,7 @@
                                                 <td>IN0028</td>
                                                 <td>David Brown</td>
                                                 <td>30 June, 2024 - 30 July, 2024</td>
-                                                <td>129 Miles</td>
+                                                <td>129 Min</td>
                                                 <td>£20.45</td>
                                                 <td>
                                                 <div class="overdueStatus">
@@ -890,7 +890,7 @@
                                                 <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="time-log-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>
@@ -914,7 +914,7 @@
                                                 <td>IN0029</td>
                                                 <td>Sarah Green</td>
                                                 <td>01 July, 2024 - 01 August, 2024</td>
-                                                <td>50 Miles</td>
+                                                <td>50 Min</td>
                                                 <td>£10.00</td>
                                                 <td>
                                                 <div class="overdueStatus">
@@ -934,7 +934,7 @@
                                                 <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="time-log-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>

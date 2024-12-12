@@ -31,16 +31,17 @@
 			<a href="all-millage-invoices.php" class="nav-link" data-key="view-mileage-logs"><span
 					class="nav-link-text">Millage Invoices</span></a>
 		</li>
+			<li class="nav-item">
+			<a href="all-time-log-invoices.php" class="nav-link" data-key="view-mileage-logs"><span
+					class="nav-link-text">Time Log Invoices</span></a>
+		</li>
 		<li class="nav-item">
-			<a href="#" class="nav-link" data-key="view-mileage-logs"><span
+			<a href="all-supplier-invoice.php" class="nav-link" data-key="view-mileage-logs"><span
 					class="nav-link-text">Supplier Invoices</span></a>
 		</li>
+	
 		<li class="nav-item">
-			<a href="#" class="nav-link" data-key="view-mileage-logs"><span
-					class="nav-link-text">Inventory Invoices</span></a>
-		</li>
-		<li class="nav-item">
-			<a href="#" class="nav-link" data-key="view-mileage-logs"><span
+			<a href="all-tenancy-invoice.php" class="nav-link" data-key="view-mileage-logs"><span
 					class="nav-link-text">Tenancy Invoices</span></a>
 		</li>
 	</ul>

@@ -72,7 +72,7 @@
                         <div class="d-flex align-items-center">
                             <div class="dropdown">
                                 <a class="contactapp-title link-dark" href="#" role="button">
-                                    <h1>All Millage Invoice</h1>
+                                    <h1>All Supplier Invoice</h1>
                                 </a>
 
                             </div>
@@ -178,10 +178,13 @@
                                                 
                                             </th>
                                             <th>Invoice No.</th>
-                                            <th>Staff Name</th>
-                                            <th>Date Range</th>
-                                            <th>Total Millage</th>
+                                            <th>Supplier</th>
+                                            <th>Product Details</th>
+                                            <th>Total Qty.</th>
+                                            <th>Price</th>
                                             <th>Amount</th>
+                                            <th>Date</th>
+                                            
                                             <th>Status</th>
                                             <th>Action</th>
                                         </tr>
@@ -195,32 +198,30 @@
                                             </label>
                                         </div>
                                             </td>
-                                            <td>IN0022</td>
-                                          
-                                          <td>Jhon Winny</td>
-                                          <td>
-                                            24 June, 2024 - 24 July, 2024
-                                          </td>
-                                          <td>50 Miles</td>
-                                          <td>£22.69</td>
-                                         
-                                          <td>
-                                          <div class="overdueStatus">
-                                                  <div class="leftSideStatus">
-                                                      <!-- <iconify-icon icon="quill:send" class="sentIcon"></iconify-icon> -->
-                                                      <iconify-icon icon="simple-icons:quickbooks" class="sentIcon quickbook"></iconify-icon>
-                                                      <!-- <iconify-icon icon="ic:sharp-access-time" class="sentIcon"></iconify-icon> -->
-                                                  </div>
-                                                  <div class="rightSideStatus">
-                                                      <h6>Sent to quick book </h6>
-                                                      <p>Sent 12 june, 2024</p>
-                                                  </div>
-                                              </div>
-                                          </td>
+                                            <td> <a href="inventory-invoice-detail.php">IN0022</a></td>
+                                            <td><a href="##" class="highlightLink">Christopher Taylor</a></td>
+                                            <td>Ac PCB</td>
+                                            <td>10</td>
+                                            <td>$20.00</td>
+                                            <td>$200.00</td>
+                                            <td>2024-07-01</td>
+                                            
+                                            <td>
+                                            <div class="overdueStatus">
+                                                    <div class="leftSideStatus">
+                                                        <iconify-icon icon="gg:check-o" class="PaidIcon"></iconify-icon>
+
+                                                    </div>
+                                                    <div class="rightSideStatus">
+                                                        <h6>Paid</h6>
+                                                        <!-- <p>Sent 12 june, 2024</p> -->
+                                                    </div>
+                                                </div>
+                                            </td>
                                           <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="inventory-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>
@@ -247,27 +248,31 @@
                                             </label>
                                         </div>
                                             </td>
-                                                <td>IN0023</td>
-                                                <td>Jane Doe</td>
-                                                <td>15 May, 2024 - 12 June, 2024</td>
-                                                <td>70 Miles</td>
-                                                <td>£30.50</td>
-                                                <td>
-                                                <div class="overdueStatus">
+                                            <td><a href="inventory-invoice-detail.php">IN0023</a></td>
+                                            <td><a href="##" class="highlightLink">David Brown</a></td>
+                                                <td>Ac Motor</td>
+                                            <td>15</td>
+                                            <td>$30.00</td>
+                                            <td>$450.00</td>
+                                            <td>2024-07-02</td>
+                                            
+                                            <td>
+                                            <div class="overdueStatus">
                                                     <div class="leftSideStatus">
-                                                        <iconify-icon icon="gg:check-o" class="PaidIcon"></iconify-icon>
-
+                                                        <!-- <iconify-icon icon="quill:send" class="sentIcon"></iconify-icon> -->
+                                                        <iconify-icon icon="simple-icons:quickbooks" class="sentIcon quickbook"></iconify-icon>
+                                                        <!-- <iconify-icon icon="ic:sharp-access-time" class="sentIcon"></iconify-icon> -->
                                                     </div>
                                                     <div class="rightSideStatus">
-                                                        <h6>Paid</h6>
-                                                        <!-- <p>Sent 12 june, 2024</p> -->
+                                                        <h6>Sent to quick book </h6>
+                                                        <p>Sent 12 june, 2024</p>
                                                     </div>
                                                 </div>
-                                                </td>
+                                            </td>
                                                 <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="inventory-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>
@@ -294,13 +299,16 @@
                                             </label>
                                         </div>
                                             </td>
-                                                <td>IN0024</td>
-                                                <td>Michael Smith</td>
-                                                <td>01 July, 2024 - 26 July, 2024</td>
-                                                <td>90 Miles</td>
-                                                <td>£15.00</td>
-                                                <td>
-                                                <div class="overdueStatus">
+                                            <td><a href="inventory-invoice-detail.php">IN0024</a></td>
+                                                <td><a href="##" class="highlightLink">Emily Davis</a></td>
+                                                <td>Heat Exchanger</td>
+                                            <td>12</td>
+                                            <td>$40.00</td>
+                                            <td>$480.00</td>
+                                            <td>2024-07-04</td>
+                                           
+                                            <td>
+                                            <div class="overdueStatus">
                                                     <div class="leftSideStatus">
                                                         <!-- <iconify-icon icon="gg:check-o" class="PaidIcon"></iconify-icon> -->
                                                         <!-- <iconify-icon icon="pajamas:task-done" class="closedIcon">
@@ -313,11 +321,11 @@
                                                         <!-- <p>Sent 12 june, 2024</p> -->
                                                     </div>
                                                 </div>
-                                                </td>
+                                            </td>
                                                 <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="inventory-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>
@@ -335,7 +343,6 @@
                                                 </div>
                                             </td>
                                             </tr>
-
                                             <tr>
                                             <td>
                                             <div class="form-check">
@@ -344,202 +351,16 @@
                                             </label>
                                         </div>
                                             </td>
-                                                <td>IN0025</td>
-                                                <td>Emily Clark</td>
-                                                <td>27 July, 2024 - 27 Aug, 2024</td>
-                                                <td>100 Miles</td>
-                                                <td>£27.75</td>
-                                                <td>
-                                                <div class="overdueStatus">
-                                                    <div class="leftSideStatus">
-                                                        <iconify-icon icon="gg:check-o" class="PaidIcon"></iconify-icon>
-
-                                                    </div>
-                                                    <div class="rightSideStatus">
-                                                        <h6>Paid</h6>
-                                                        <!-- <p>Sent 12 june, 2024</p> -->
-                                                    </div>
-                                                </div>
-                                                </td>
-                                                <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
-                                                                    <iconify-icon icon="fluent:edit-16-regular">
-                                                                    </iconify-icon>
-                                                                </span></span></a>
-                                                                <div class="voidBox">
-                                                                <a href="#" class="voidBtn"
-                                                                    data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top"
-                                                                    title="No need to generate invoice">
-                                                                    <iconify-icon icon="tabler:ban">
-                                                                    </iconify-icon> Void
-                                                                </a>
-                                                            </div>
-                                                       
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            </tr>
-
-                                            <tr>
+                                            <td><a href="inventory-invoice-detail.php">IN0025</a></td>
+                                                <td><a href="##" class="highlightLink">Jimmy Shergil</a></td>
+                                                <td>Heat Exchanger</td>
+                                            <td>06</td>
+                                            <td>$40.00</td>
+                                            <td>$480.00</td>
+                                            <td>2024-07-04</td>
+                                           
                                             <td>
-                                            <div class="form-check">
-                                            <input class="form-check-input row-checkbox" type="checkbox" id="gridCheck">
-                                            <label class="form-check-label" for="gridCheck">
-                                            </label>
-                                        </div>
-                                            </td>
-                                                <td>IN0026</td>
-                                                <td>Chris Johnson</td>
-                                                <td>28 April, 2024 - 28 May, 2024</td>
-                                                <td>200 Miles</td>
-                                                <td>£18.20</td>
-                                                <td>
-                                                <div class="overdueStatus">
-                                                    <div class="leftSideStatus">
-                                                        <iconify-icon icon="gg:check-o" class="PaidIcon"></iconify-icon>
-
-                                                    </div>
-                                                    <div class="rightSideStatus">
-                                                        <h6>Paid</h6>
-                                                        <!-- <p>Sent 12 june, 2024</p> -->
-                                                    </div>
-                                                </div>
-                                                </td>
-                                                <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
-                                                                    <iconify-icon icon="fluent:edit-16-regular">
-                                                                    </iconify-icon>
-                                                                </span></span></a>
-                                                                <div class="voidBox">
-                                                                <a href="#" class="voidBtn"
-                                                                    data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top"
-                                                                    title="No need to generate invoice">
-                                                                    <iconify-icon icon="tabler:ban">
-                                                                    </iconify-icon> Void
-                                                                </a>
-                                                            </div>
-                                                       
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            </tr>
-
-                                            <tr>
-                                            <td>
-                                            <div class="form-check">
-                                            <input class="form-check-input row-checkbox" type="checkbox" id="gridCheck">
-                                            <label class="form-check-label" for="gridCheck">
-                                            </label>
-                                        </div>
-                                            </td>
-                                                <td>IN0027</td>
-                                                <td>Lisa Wong</td>
-                                                <td>29 June, 2024 - 29 July, 2024</td>
-                                                <td>300 Miles</td>
-                                                <td>£19.99</td>
-                                                <td>
-                                                <div class="overdueStatus">
-                                                    <div class="leftSideStatus">
-                                                        <!-- <iconify-icon icon="quill:send" class="sentIcon"></iconify-icon> -->
-                                                        <iconify-icon icon="simple-icons:quickbooks" class="sentIcon quickbook"></iconify-icon>
-                                                        <!-- <iconify-icon icon="ic:sharp-access-time" class="sentIcon"></iconify-icon> -->
-                                                    </div>
-                                                    <div class="rightSideStatus">
-                                                        <h6>Sent to quick book </h6>
-                                                        <p>Sent 12 june, 2024</p>
-                                                    </div>
-                                                </div>
-                                                </td>
-                                                <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
-                                                                    <iconify-icon icon="fluent:edit-16-regular">
-                                                                    </iconify-icon>
-                                                                </span></span></a>
-                                                                <div class="voidBox">
-                                                                <a href="#" class="voidBtn"
-                                                                    data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top"
-                                                                    title="No need to generate invoice">
-                                                                    <iconify-icon icon="tabler:ban">
-                                                                    </iconify-icon> Void
-                                                                </a>
-                                                            </div>
-                                                       
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            </tr>
-
-                                            <tr>
-                                            <td>
-                                            <div class="form-check">
-                                            <input class="form-check-input row-checkbox" type="checkbox" id="gridCheck">
-                                            <label class="form-check-label" for="gridCheck">
-                                            </label>
-                                        </div>
-                                            </td>
-                                                <td>IN0028</td>
-                                                <td>David Brown</td>
-                                                <td>30 June, 2024 - 30 July, 2024</td>
-                                                <td>150 Miles</td>
-                                                <td>£20.45</td>
-                                                <td>
-                                                <div class="overdueStatus">
-                                                    <div class="leftSideStatus">
-                                                        <iconify-icon icon="gg:check-o" class="PaidIcon"></iconify-icon>
-
-                                                    </div>
-                                                    <div class="rightSideStatus">
-                                                        <h6>Paid</h6>
-                                                        <!-- <p>Sent 12 june, 2024</p> -->
-                                                    </div>
-                                                </div>
-                                                </td>
-                                                <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
-                                                                    <iconify-icon icon="fluent:edit-16-regular">
-                                                                    </iconify-icon>
-                                                                </span></span></a>
-                                                                <div class="voidBox">
-                                                                <a href="#" class="voidBtn"
-                                                                    data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top"
-                                                                    title="No need to generate invoice">
-                                                                    <iconify-icon icon="tabler:ban">
-                                                                    </iconify-icon> Void
-                                                                </a>
-                                                            </div>
-                                                       
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            </tr>
-
-                                            <tr>
-                                            <td>
-                                            <div class="form-check">
-                                            <input class="form-check-input row-checkbox" type="checkbox" id="gridCheck">
-                                            <label class="form-check-label" for="gridCheck">
-                                            </label>
-                                        </div>
-                                            </td>
-                                                <td>IN0029</td>
-                                                <td>Sarah Green</td>
-                                                <td>01 July, 2024 - 01 August, 2024</td>
-                                                <td>160 Miles</td>
-                                                <td>£10.00</td>
-                                                <td>
-                                                <div class="overdueStatus">
+                                            <div class="overdueStatus">
                                                         <div class="leftSideStatus">
                                                             <!-- <iconify-icon icon="gg:check-o" class="PaidIcon"></iconify-icon> -->
                                                             <iconify-icon icon="pajamas:task-done"
@@ -551,12 +372,11 @@
                                                             <p>Sent 12 june, 2024</p>
                                                         </div>
                                                     </div>
-                                                </td>
-                                              
+                                            </td>
                                                 <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="inventory-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>
@@ -573,9 +393,9 @@
                                                     </div>
                                                 </div>
                                             </td>
-
-
                                             </tr>
+
+                                          
                                        
                                     </tbody>
                                 </table>
@@ -592,12 +412,15 @@
                                 <table class="table common-datatable nowrap w-100 ">
                                 <thead>
                                         <tr>
-                                            
+                                       
                                             <th>Invoice No.</th>
-                                            <th>Staff Name</th>
-                                            <th>Date Range</th>
-                                            <th>Total Millage</th>
+                                            <th>Supplier</th>
+                                            <th>Product Details</th>
+                                            <th>Total Qty.</th>
+                                            <th>Price</th>
                                             <th>Amount</th>
+                                            <th>Date</th>
+                                            
                                             <th>Status</th>
                                             <th>Action</th>
                                         </tr>
@@ -605,17 +428,16 @@
                                     <tbody>
                                         <tr>
                                            
-                                            <td>IN0022</td>
-                                          
-                                          <td>Jhon Winny</td>
-                                          <td>
-                                            24 June, 2024 - 24 July, 2024
-                                          </td>
-                                          <td>50 Miles</td>
-                                          <td>£22.69</td>
-                                         
-                                          <td>
-                                          <div class="overdueStatus">
+                                            <td> <a href="inventory-invoice-detail.php">IN0022</a></td>
+                                            <td><a href="##" class="highlightLink">Christopher Taylor</a></td>
+                                            <td>Ac PCB</td>
+                                            <td>10</td>
+                                            <td>$20.00</td>
+                                            <td>$200.00</td>
+                                            <td>2024-07-01</td>
+                                            
+                                            <td>
+                                            <div class="overdueStatus">
                                                         <div class="leftSideStatus">
                                                             <!-- <iconify-icon icon="gg:check-o" class="PaidIcon"></iconify-icon> -->
                                                             <iconify-icon icon="pajamas:task-done"
@@ -627,11 +449,12 @@
                                                             <p>Sent 12 june, 2024</p>
                                                         </div>
                                                     </div>
-                                          </td>
+                                                </div>
+                                            </td>
                                           <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="inventory-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>
@@ -652,13 +475,16 @@
 
                                         <tr>
                                        
-                                                <td>IN0023</td>
-                                                <td>Jane Doe</td>
-                                                <td>15 May, 2024 - 12 June, 2024</td>
-                                                <td>160 Miles</td>
-                                                <td>£30.50</td>
-                                                <td>
-                                                <div class="overdueStatus">
+                                            <td><a href="inventory-invoice-detail.php">IN0023</a></td>
+                                            <td><a href="##" class="highlightLink">David Brown</a></td>
+                                                <td>Ac Motor</td>
+                                            <td>15</td>
+                                            <td>$30.00</td>
+                                            <td>$450.00</td>
+                                            <td>2024-07-02</td>
+                                            
+                                            <td>
+                                            <div class="overdueStatus">
                                                         <div class="leftSideStatus">
                                                             <!-- <iconify-icon icon="gg:check-o" class="PaidIcon"></iconify-icon> -->
                                                             <iconify-icon icon="pajamas:task-done"
@@ -670,11 +496,11 @@
                                                             <p>Sent 12 june, 2024</p>
                                                         </div>
                                                     </div>
-                                                </td>
+                                            </td>
                                                 <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="inventory-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>
@@ -694,14 +520,17 @@
                                             </tr>
 
                                             <tr>
+                                        
+                                            <td><a href="inventory-invoice-detail.php">IN0024</a></td>
+                                                <td><a href="##" class="highlightLink">Emily Davis</a></td>
+                                                <td>Heat Exchanger</td>
+                                            <td>12</td>
+                                            <td>$40.00</td>
+                                            <td>$480.00</td>
+                                            <td>2024-07-04</td>
                                            
-                                                <td>IN0024</td>
-                                                <td>Michael Smith</td>
-                                                <td>01 July, 2024 - 26 July, 2024</td>
-                                                <td>135 Miles</td>
-                                                <td>£15.00</td>
-                                                <td>
-                                                <div class="overdueStatus">
+                                            <td>
+                                            <div class="overdueStatus">
                                                         <div class="leftSideStatus">
                                                             <!-- <iconify-icon icon="gg:check-o" class="PaidIcon"></iconify-icon> -->
                                                             <iconify-icon icon="pajamas:task-done"
@@ -713,11 +542,11 @@
                                                             <p>Sent 12 june, 2024</p>
                                                         </div>
                                                     </div>
-                                                </td>
+                                            </td>
                                                 <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="inventory-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>
@@ -735,59 +564,18 @@
                                                 </div>
                                             </td>
                                             </tr>
-
                                             <tr>
-                                            
-                                                <td>IN0025</td>
-                                                <td>Emily Clark</td>
-                                                <td>27 July, 2024 - 27 Aug, 2024</td>
-                                                <td>179 Miles</td>
-                                                <td>£27.75</td>
-                                                <td>
-                                                <div class="overdueStatus">
-                                                        <div class="leftSideStatus">
-                                                            <!-- <iconify-icon icon="gg:check-o" class="PaidIcon"></iconify-icon> -->
-                                                            <iconify-icon icon="pajamas:task-done"
-                                                                class="closedIcon">
-                                                            </iconify-icon>
-                                                        </div>
-                                                        <div class="rightSideStatus">
-                                                            <h6>Approved & Sent to Account</h6>
-                                                            <p>Sent 12 june, 2024</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
-                                                                    <iconify-icon icon="fluent:edit-16-regular">
-                                                                    </iconify-icon>
-                                                                </span></span></a>
-                                                                <div class="voidBox">
-                                                                <a href="#" class="voidBtn clicked"
-                                                                    data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top"
-                                                                    title="No need to generate invoice">
-                                                                    <iconify-icon icon="tabler:ban">
-                                                                    </iconify-icon> Void
-                                                                </a>
-                                                            </div>
-                                                       
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            </tr>
-
-                                            <tr>
+                                       
+                                            <td><a href="inventory-invoice-detail.php">IN0025</a></td>
+                                                <td><a href="##" class="highlightLink">Jimmy Shergil</a></td>
+                                                <td>Heat Exchanger</td>
+                                            <td>06</td>
+                                            <td>$40.00</td>
+                                            <td>$480.00</td>
+                                            <td>2024-07-04</td>
                                            
-                                                <td>IN0026</td>
-                                                <td>Chris Johnson</td>
-                                                <td>28 April, 2024 - 28 May, 2024</td>
-                                                <td>58 Miles</td>
-                                                <td>£18.20</td>
-                                                <td>
-                                                <div class="overdueStatus">
+                                            <td>
+                                            <div class="overdueStatus">
                                                         <div class="leftSideStatus">
                                                             <!-- <iconify-icon icon="gg:check-o" class="PaidIcon"></iconify-icon> -->
                                                             <iconify-icon icon="pajamas:task-done"
@@ -799,12 +587,11 @@
                                                             <p>Sent 12 june, 2024</p>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                </td>
+                                            </td>
                                                 <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
+                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="inventory-invoice-detail.php"><span class="icon"><span class="feather-icon">
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></a>
@@ -823,137 +610,7 @@
                                             </td>
                                             </tr>
 
-                                            <tr>
-                                            
-                                                <td>IN0027</td>
-                                                <td>Lisa Wong</td>
-                                                <td>29 June, 2024 - 29 July, 2024</td>
-                                                <td>356 Miles</td>
-                                                <td>£19.99</td>
-                                                <td>
-                                                <div class="overdueStatus">
-                                                        <div class="leftSideStatus">
-                                                            <!-- <iconify-icon icon="gg:check-o" class="PaidIcon"></iconify-icon> -->
-                                                            <iconify-icon icon="pajamas:task-done"
-                                                                class="closedIcon">
-                                                            </iconify-icon>
-                                                        </div>
-                                                        <div class="rightSideStatus">
-                                                            <h6>Approved & Sent to Account</h6>
-                                                            <p>Sent 12 june, 2024</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
-                                                                    <iconify-icon icon="fluent:edit-16-regular">
-                                                                    </iconify-icon>
-                                                                </span></span></a>
-                                                                <div class="voidBox">
-                                                                <a href="#" class="voidBtn clicked"
-                                                                    data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top"
-                                                                    title="No need to generate invoice">
-                                                                    <iconify-icon icon="tabler:ban">
-                                                                    </iconify-icon> Void
-                                                                </a>
-                                                            </div>
-                                                       
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            </tr>
-
-                                            <tr>
-                                            
-                                                <td>IN0028</td>
-                                                <td>David Brown</td>
-                                                <td>30 June, 2024 - 30 July, 2024</td>
-                                                <td>129 Miles</td>
-                                                <td>£20.45</td>
-                                                <td>
-                                                <div class="overdueStatus">
-                                                        <div class="leftSideStatus">
-                                                            <!-- <iconify-icon icon="gg:check-o" class="PaidIcon"></iconify-icon> -->
-                                                            <iconify-icon icon="pajamas:task-done"
-                                                                class="closedIcon">
-                                                            </iconify-icon>
-                                                        </div>
-                                                        <div class="rightSideStatus">
-                                                            <h6>Approved & Sent to Account</h6>
-                                                            <p>Sent 12 june, 2024</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
-                                                                    <iconify-icon icon="fluent:edit-16-regular">
-                                                                    </iconify-icon>
-                                                                </span></span></a>
-                                                                <div class="voidBox">
-                                                                <a href="#" class="voidBtn clicked"
-                                                                    data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top"
-                                                                    title="No need to generate invoice">
-                                                                    <iconify-icon icon="tabler:ban">
-                                                                    </iconify-icon> Void
-                                                                </a>
-                                                            </div>
-                                                       
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            </tr>
-
-                                            <tr>
-                                            
-                                                <td>IN0029</td>
-                                                <td>Sarah Green</td>
-                                                <td>01 July, 2024 - 01 August, 2024</td>
-                                                <td>50 Miles</td>
-                                                <td>£10.00</td>
-                                                <td>
-                                                <div class="overdueStatus">
-                                                        <div class="leftSideStatus">
-                                                            <!-- <iconify-icon icon="gg:check-o" class="PaidIcon"></iconify-icon> -->
-                                                            <iconify-icon icon="pajamas:task-done"
-                                                                class="closedIcon">
-                                                            </iconify-icon>
-                                                        </div>
-                                                        <div class="rightSideStatus">
-                                                            <h6>Approved & Sent to Account</h6>
-                                                            <p>Sent 12 june, 2024</p>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                              
-                                                <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover " href="millage-invoice-detail.php"><span class="icon"><span class="feather-icon">
-                                                                    <iconify-icon icon="fluent:edit-16-regular">
-                                                                    </iconify-icon>
-                                                                </span></span></a>
-                                                                <div class="voidBox">
-                                                                <a href="#" class="voidBtn clicked"
-                                                                    data-bs-toggle="tooltip"
-                                                                    data-bs-placement="top"
-                                                                    title="No need to generate invoice">
-                                                                    <iconify-icon icon="tabler:ban">
-                                                                    </iconify-icon> Void
-                                                                </a>
-                                                            </div>
-                                                       
-                                                    </div>
-                                                </div>
-                                            </td>
-
-
-                                            </tr>
+                                          
                                        
                                     </tbody>
                                 </table>

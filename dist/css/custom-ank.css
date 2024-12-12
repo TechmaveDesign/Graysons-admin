@@ -154,3 +154,12 @@
 .voidBtn.clicked iconify-icon {
     color: #ffffff;
 }
+input.tableInput {
+    border: none;
+    display: block;
+    width: 50px;
+}
+.discription {
+    width: 380px;
+    white-space: normal !important;
+}
