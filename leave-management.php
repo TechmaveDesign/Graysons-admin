@@ -19,8 +19,8 @@
     <!-- Page Body -->
     <div class="hk-pg-body py-0">
         <div class="contactapp-wrap">
-         <!-- sub menu header -->
-<?php include('headers/hrheader.php') ?>
+            <!-- sub menu header -->
+            <?php include('headers/hrheader.php') ?>
             <div class="contactapp-content">
                 <div class="contactapp-detail-wrap">
                     <header class="contact-header">
@@ -39,6 +39,15 @@
                             </div>
                         </div>
                         <div class="contact-options-wrap">
+                        <div class="statuschange_milage_select">
+                                <select name="" id="" class="form-control select2" data-placeholder="Change Status">
+                                    <option disabled="" selected="" value="">Change Status</option>
+                                    <option value="Choice 2">Pending</option>
+                                    <option value="Choice 3">Approved</option>
+                                    <option value="Choice 4">Paid</option>
+
+                                </select>
+                            </div>
                             <button id="toggleButton" type="button"
                                 class="btn  btn-flush-dark flush-soft-hover fIlterCmnButton"><span class="icon"><span
                                         class="feather-icon"><i data-feather="list"></i></span></span>Filter</button>
@@ -80,87 +89,94 @@
                                                     <div class="col-lg-12">
                                                         <div class="row gx-3">
 
-                                                        <div class="col-md-2">
-                                    <div class="form-group">
-                                        <label class="form-label">User Name</label>
-                                        <select name="" id="" class="form-control select2">
-                                            <option disabled="" selected="" value="">Please Select...</option>
-                                            <option value="1">Danial Craig</option>
-        <option value="2">Emily Blunt</option>
-        <option value="3">John Doe</option>
-        <option value="4">Sophia Turner</option>
-        <option value="5">Michael Jordan</option>
-        <option value="6">Olivia Smith</option>
+                                                            <div class="col-md-2">
+                                                                <div class="form-group">
+                                                                    <label class="form-label">User Name</label>
+                                                                    <select name="" id="" class="form-control select2">
+                                                                        <option disabled="" selected="" value="">Please
+                                                                            Select...</option>
+                                                                        <option value="1">Danial Craig</option>
+                                                                        <option value="2">Emily Blunt</option>
+                                                                        <option value="3">John Doe</option>
+                                                                        <option value="4">Sophia Turner</option>
+                                                                        <option value="5">Michael Jordan</option>
+                                                                        <option value="6">Olivia Smith</option>
 
-                                        </select>
+                                                                    </select>
 
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="form-group">
-                                        <label class="form-label">Time Off Type</label>
-                                        <select name="" id="" class="form-control select2">
-                                            <option disabled="" selected="" value="">Please Select...</option>
-                                            
-                        <option value="1">Annual Leave</option>
-                        <option value="2">Unpaid Leave</option>
-                        <option value="3">Sick Leave</option>
-                        <option value="4">Maternity Leave</option>
-                        <option value="5">Parental Leave</option>
-                        <option value="6">Compassionate Leave</option>
-                        <option value="7">Emergency Leave</option>
-                        <option value="8">Haj Leave</option>
-                                        </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="form-group">
+                                                                    <label class="form-label">Time Off Type</label>
+                                                                    <select name="" id="" class="form-control select2">
+                                                                        <option disabled="" selected="" value="">Please
+                                                                            Select...</option>
 
-                                    </div>
-                                </div>
+                                                                        <option value="1">Annual Leave</option>
+                                                                        <option value="2">Unpaid Leave</option>
+                                                                        <option value="3">Sick Leave</option>
+                                                                        <option value="4">Maternity Leave</option>
+                                                                        <option value="5">Parental Leave</option>
+                                                                        <option value="6">Compassionate Leave</option>
+                                                                        <option value="7">Emergency Leave</option>
+                                                                        <option value="8">Haj Leave</option>
+                                                                    </select>
 
-                                <div class="col-md-2">
-                                    <div class="form-group">
-                                        <label class="form-label">Department</label>
-                                        <select name="" id="" class="form-control select2">
-                                            <option disabled="" selected="" value="">Please Select...</option>
-                                            
-                        <option value="1">Account</option>
-                        <option value="2">Compliances Ticket </option>
-                        <option value="3">General</option>
-                        <option value="4">Maintenance</option>
-                                        </select>
+                                                                </div>
+                                                            </div>
 
-                                    </div>
-                                </div>
+                                                            <div class="col-md-2">
+                                                                <div class="form-group">
+                                                                    <label class="form-label">Department</label>
+                                                                    <select name="" id="" class="form-control select2">
+                                                                        <option disabled="" selected="" value="">Please
+                                                                            Select...</option>
 
-                                
+                                                                        <option value="1">Account</option>
+                                                                        <option value="2">Compliances Ticket </option>
+                                                                        <option value="3">General</option>
+                                                                        <option value="4">Maintenance</option>
+                                                                    </select>
 
-                                <div class="col-md-2">
-                                    <div class="form-group">
-                                        <label class="form-label">Time Off From</label>
-                                        <input class="form-control customdataPicker flatpickr-input" type="text" name=""
-                                            placeholder="Select Date" readonly="readonly">
-                                    </div>
-                                </div>
+                                                                </div>
+                                                            </div>
 
-                                <div class="col-md-2">
-                                    <div class="form-group">
-                                        <label class="form-label">Time Off To</label>
-                                        <input class="form-control customdataPicker flatpickr-input" type="text" name=""
-                                            placeholder="Select Date" readonly="readonly">
-                                    </div>
-                                </div>
-                                <div class="col-auto">
-                                                        <div class="form-group">
-                                                            <label class="form-label">&nbsp;</label>
-                                                            <button type="button" class="btn btn-block btn-primary ">
-                                                                <iconify-icon icon="mage:filter"></iconify-icon> Filter
-                                                            </button>
-                                                        </div>
-                                                    </div>
+                                                            <div class="col-md-2">
+                                                                <div class="form-group">
+                                                                    <label class="form-label">Time Off From</label>
+                                                                    <input
+                                                                        class="form-control customdataPicker flatpickr-input"
+                                                                        type="text" name="" placeholder="Select Date"
+                                                                        readonly="readonly">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-2">
+                                                                <div class="form-group">
+                                                                    <label class="form-label">Time Off To</label>
+                                                                    <input
+                                                                        class="form-control customdataPicker flatpickr-input"
+                                                                        type="text" name="" placeholder="Select Date"
+                                                                        readonly="readonly">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="form-group">
+                                                                    <label class="form-label">&nbsp;</label>
+                                                                    <button type="button"
+                                                                        class="btn btn-block btn-primary ">
+                                                                        <iconify-icon icon="mage:filter"></iconify-icon>
+                                                                        Filter
+                                                                    </button>
+                                                                </div>
+                                                            </div>
 
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                           
+
                                         </div>
                                     </form>
                                 </div>
@@ -170,7 +186,13 @@
                                 <table class="table common-datatable nowrap w-100 ">
                                     <thead>
                                         <tr>
-
+                                            <th>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="selectAllTb">
+                                                    <label class="form-check-label" for="">
+                                                    </label>
+                                                </div>
+                                            </th>
                                             <th>User Name</th>
                                             <th>Department</th>
                                             <th>Apply Date</th>
@@ -188,6 +210,10 @@
                                     <tbody>
                                         <tr>
                                             <td>
+                                                <input type="checkbox"
+                                                    class="form-check-input inpTH_custom  rowCheckbox">
+                                            </td>
+                                            <td>
                                                 <a href="view-user-details.php" class="namelinkURl">Danial Craig</a>
                                             </td>
                                             <td>
@@ -199,7 +225,7 @@
                                                 <button class="btn btn-danger reject-btn">Reject</button>
                                             </td>
                                             <td><span class="badge bg-success">Approved</span></td>
-                                      
+
                                             <td>1</td>
                                             <td>17-07-2024</td>
                                             <td>21-07-2024 </td>
@@ -231,132 +257,211 @@
                                                                     <iconify-icon icon="fluent:edit-16-regular">
                                                                     </iconify-icon>
                                                                 </span></span></button>
+                                                        <button
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                            type="button" data-bs-toggle="offcanvas"
+                                                            data-bs-target="#logDetailModal"
+                                                            aria-controls="offcanvasExample">
+                                                            <span class="icon"><span class="feather-icon">
+                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                    </iconify-icon>
+                                                                </span></span>
+                                                        </button>
 
                                                     </div>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
-    <td>
-        <a href="view-user-details.php" class="namelinkURl">Emily Blunt</a>
-    </td>
-    <td>
-    Compliances Ticket
-    </td>
-    <td>22-06-2024</td>
-    <td>
-        <button class="btn btn-success approve-btn">Approve</button>
-        <button class="btn btn-danger reject-btn">Reject</button>
-    </td>
-    <td><span class="badge bg-warning">Pending</span></td>
+                                            <td>
+                                                <input type="checkbox"
+                                                    class="form-check-input inpTH_custom  rowCheckbox">
+                                            </td>
+                                            <td>
+                                                <a href="view-user-details.php" class="namelinkURl">Emily Blunt</a>
+                                            </td>
+                                            <td>
+                                                Compliances Ticket
+                                            </td>
+                                            <td>22-06-2024</td>
+                                            <td>
+                                                <button class="btn btn-success approve-btn">Approve</button>
+                                                <button class="btn btn-danger reject-btn">Reject</button>
+                                            </td>
+                                            <td><span class="badge bg-warning">Pending</span></td>
 
-    <td>2</td>
-    <td>24-06-2024</td>
-    <td>29-06-2024</td>
-    <td>Personal</td>
-    <td>
-        <a href="##">
-            <div class="LongMesage_container">
-                <input class="refuge-collection-input tableLongMessage_Input" value="Attending a family wedding.">
-                <button class="view-btn tablemessageview_btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Click to view" data-bs-original-title="Click to view Full Message">
-                    <i class="bi bi-eye"></i>
-                </button>
-            </div>
-        </a>
-    </td>
-    <td>17</td>
-    <td>
-        <div class="d-flex align-items-center ActionDropdown">
-            <div class="d-flex">
-                <button class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" type="button" data-bs-toggle="offcanvas" data-bs-target="#Edittimelog" aria-controls="offcanvasExample"><span class="icon"><span class="feather-icon">
-                            <iconify-icon icon="fluent:edit-16-regular">
-                            </iconify-icon>
-                        </span></span></button>
-            </div>
-        </div>
-    </td>
-</tr>
-<tr>
-    <td>
-        <a href="view-user-details.php" class="namelinkURl">John Doe</a>
-    </td>
-    <td>
-    General
-    </td>
-    <td>10-03-2024</td>
-    <td>
-        <button class="btn btn-success approve-btn">Approve</button>
-        <button class="btn btn-danger reject-btn">Reject</button>
-    </td>
-    <td><span class="badge bg-danger">Rejected</span></td>
+                                            <td>2</td>
+                                            <td>24-06-2024</td>
+                                            <td>29-06-2024</td>
+                                            <td>Personal</td>
+                                            <td>
+                                                <a href="##">
+                                                    <div class="LongMesage_container">
+                                                        <input class="refuge-collection-input tableLongMessage_Input"
+                                                            value="Attending a family wedding.">
+                                                        <button class="view-btn tablemessageview_btn" type="button"
+                                                            data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            aria-label="Click to view"
+                                                            data-bs-original-title="Click to view Full Message">
+                                                            <i class="bi bi-eye"></i>
+                                                        </button>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td>17</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+                                                        <button
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                            type="button" data-bs-toggle="offcanvas"
+                                                            data-bs-target="#Edittimelog"
+                                                            aria-controls="offcanvasExample"><span class="icon"><span
+                                                                    class="feather-icon">
+                                                                    <iconify-icon icon="fluent:edit-16-regular">
+                                                                    </iconify-icon>
+                                                                </span></span></button>
+                                                        <button
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                            type="button" data-bs-toggle="offcanvas"
+                                                            data-bs-target="#logDetailModal"
+                                                            aria-controls="offcanvasExample">
+                                                            <span class="icon"><span class="feather-icon">
+                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                    </iconify-icon>
+                                                                </span></span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox"
+                                                    class="form-check-input inpTH_custom  rowCheckbox">
+                                            </td>
+                                            <td>
+                                                <a href="view-user-details.php" class="namelinkURl">John Doe</a>
+                                            </td>
+                                            <td>
+                                                General
+                                            </td>
+                                            <td>10-03-2024</td>
+                                            <td>
+                                                <button class="btn btn-success approve-btn">Approve</button>
+                                                <button class="btn btn-danger reject-btn">Reject</button>
+                                            </td>
+                                            <td><span class="badge bg-danger">Rejected</span></td>
 
-    <td>3</td>
-    <td>15-03-2024</td>
-    <td>22-03-2024</td>
-    <td>Vacation</td>
-    <td>
-        <a href="##">
-            <div class="LongMesage_container">
-                <input class="refuge-collection-input tableLongMessage_Input" value="Planned vacation with family.">
-                <button class="view-btn tablemessageview_btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Click to view" data-bs-original-title="Click to view Full Message">
-                    <i class="bi bi-eye"></i>
-                </button>
-            </div>
-        </a>
-    </td>
-    <td>6</td>
-    <td>
-        <div class="d-flex align-items-center ActionDropdown">
-            <div class="d-flex">
-                <button class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" type="button" data-bs-toggle="offcanvas" data-bs-target="#Edittimelog" aria-controls="offcanvasExample"><span class="icon"><span class="feather-icon">
-                            <iconify-icon icon="fluent:edit-16-regular">
-                            </iconify-icon>
-                        </span></span></button>
-            </div>
-        </div>
-    </td>
-</tr>
+                                            <td>3</td>
+                                            <td>15-03-2024</td>
+                                            <td>22-03-2024</td>
+                                            <td>Vacation</td>
+                                            <td>
+                                                <a href="##">
+                                                    <div class="LongMesage_container">
+                                                        <input class="refuge-collection-input tableLongMessage_Input"
+                                                            value="Planned vacation with family.">
+                                                        <button class="view-btn tablemessageview_btn" type="button"
+                                                            data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            aria-label="Click to view"
+                                                            data-bs-original-title="Click to view Full Message">
+                                                            <i class="bi bi-eye"></i>
+                                                        </button>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td>6</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+                                                        <button
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                            type="button" data-bs-toggle="offcanvas"
+                                                            data-bs-target="#Edittimelog"
+                                                            aria-controls="offcanvasExample"><span class="icon"><span
+                                                                    class="feather-icon">
+                                                                    <iconify-icon icon="fluent:edit-16-regular">
+                                                                    </iconify-icon>
+                                                                </span></span></button>
+                                                        <button
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                            type="button" data-bs-toggle="offcanvas"
+                                                            data-bs-target="#logDetailModal"
+                                                            aria-controls="offcanvasExample">
+                                                            <span class="icon"><span class="feather-icon">
+                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                    </iconify-icon>
+                                                                </span></span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
 
-<tr>
-    <td>
-        <a href="view-user-details.php" class="namelinkURl">Sophia Turner</a>
-    </td>
-    <td>
-    Maintenance
-    </td>
-    <td>05-11-2024</td>
-    <td>
-        <button class="btn btn-success approve-btn">Approve</button>
-        <button class="btn btn-danger reject-btn">Reject</button>
-    </td>
-    <td><span class="badge bg-success">Approved</span></td>
-   
-    <td>1</td>
-    <td>10-11-2024</td>
-    <td>14-11-2024</td>
-    <td>Medical</td>
-    <td>
-        <a href="##">
-            <div class="LongMesage_container">
-                <input class="refuge-collection-input tableLongMessage_Input" value="Doctor advised rest due to illness.">
-                <button class="view-btn tablemessageview_btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Click to view" data-bs-original-title="Click to view Full Message">
-                    <i class="bi bi-eye"></i>
-                </button>
-            </div>
-        </a>
-    </td>
-    <td>22</td>
-    <td>
-        <div class="d-flex align-items-center ActionDropdown">
-            <div class="d-flex">
-                <button class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" type="button" data-bs-toggle="offcanvas" data-bs-target="#Edittimelog" aria-controls="offcanvasExample"><span class="icon"><span class="feather-icon">
-                            <iconify-icon icon="fluent:edit-16-regular">
-                            </iconify-icon>
-                        </span></span></button>
-            </div>
-        </div>
-    </td>
-</tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox"
+                                                    class="form-check-input inpTH_custom  rowCheckbox">
+                                            </td>
+                                            <td>
+                                                <a href="view-user-details.php" class="namelinkURl">Sophia Turner</a>
+                                            </td>
+                                            <td>
+                                                Maintenance
+                                            </td>
+                                            <td>05-11-2024</td>
+                                            <td>
+                                                <button class="btn btn-success approve-btn">Approve</button>
+                                                <button class="btn btn-danger reject-btn">Reject</button>
+                                            </td>
+                                            <td><span class="badge bg-success">Approved</span></td>
+
+                                            <td>1</td>
+                                            <td>10-11-2024</td>
+                                            <td>14-11-2024</td>
+                                            <td>Medical</td>
+                                            <td>
+                                                <a href="##">
+                                                    <div class="LongMesage_container">
+                                                        <input class="refuge-collection-input tableLongMessage_Input"
+                                                            value="Doctor advised rest due to illness.">
+                                                        <button class="view-btn tablemessageview_btn" type="button"
+                                                            data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            aria-label="Click to view"
+                                                            data-bs-original-title="Click to view Full Message">
+                                                            <i class="bi bi-eye"></i>
+                                                        </button>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td>22</td>
+                                            <td>
+                                                <div class="d-flex align-items-center ActionDropdown">
+                                                    <div class="d-flex">
+                                                        <button
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                            type="button" data-bs-toggle="offcanvas"
+                                                            data-bs-target="#Edittimelog"
+                                                            aria-controls="offcanvasExample"><span class="icon"><span
+                                                                    class="feather-icon">
+                                                                    <iconify-icon icon="fluent:edit-16-regular">
+                                                                    </iconify-icon>
+                                                                </span></span></button>
+                                                        <button
+                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                            type="button" data-bs-toggle="offcanvas"
+                                                            data-bs-target="#logDetailModal"
+                                                            aria-controls="offcanvasExample">
+                                                            <span class="icon"><span class="feather-icon">
+                                                                    <iconify-icon icon="teenyicons:eye-outline">
+                                                                    </iconify-icon>
+                                                                </span></span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -376,7 +481,7 @@
     <div class="offcanvas-header custom-canvas-header">
         <div class="canvas-header-title">
             <iconify-icon icon="material-symbols:event-upcoming-outline" width="1.2em" height="1.2em"></iconify-icon>
-             New Time Off Entry
+            New Time Off Entry
         </div>
         <div class="closeCanvasContainer">
             <button type="button" class="canvascloseButton" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -402,11 +507,11 @@
                         <div class="col-lg-12">
                             <div class="row">
 
-                            <div class="col-md-4">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">User ID</label>
-                                        <input class="form-control" type="text" name=""
-                                            placeholder="Enter User ID" readonly="readonly">
+                                        <input class="form-control" type="text" name="" placeholder="Enter User ID"
+                                            readonly="readonly">
                                     </div>
                                 </div>
 
@@ -416,11 +521,11 @@
                                         <select name="" id="" class="form-control select2">
                                             <option disabled="" selected="" value="">Please Select...</option>
                                             <option value="1">Danial Craig</option>
-        <option value="2">Emily Blunt</option>
-        <option value="3">John Doe</option>
-        <option value="4">Sophia Turner</option>
-        <option value="5">Michael Jordan</option>
-        <option value="6">Olivia Smith</option>
+                                            <option value="2">Emily Blunt</option>
+                                            <option value="3">John Doe</option>
+                                            <option value="4">Sophia Turner</option>
+                                            <option value="5">Michael Jordan</option>
+                                            <option value="6">Olivia Smith</option>
 
                                         </select>
 
@@ -431,15 +536,15 @@
                                         <label class="form-label">Time Off Type</label>
                                         <select name="" id="" class="form-control select2">
                                             <option disabled="" selected="" value="">Please Select...</option>
-                                            
-                        <option value="1">Annual Leave</option>
-                        <option value="2">Unpaid Leave</option>
-                        <option value="3">Sick Leave</option>
-                        <option value="4">Maternity Leave</option>
-                        <option value="5">Parental Leave</option>
-                        <option value="6">Compassionate Leave</option>
-                        <option value="7">Emergency Leave</option>
-                        <option value="8">Haj Leave</option>
+
+                                            <option value="1">Annual Leave</option>
+                                            <option value="2">Unpaid Leave</option>
+                                            <option value="3">Sick Leave</option>
+                                            <option value="4">Maternity Leave</option>
+                                            <option value="5">Parental Leave</option>
+                                            <option value="6">Compassionate Leave</option>
+                                            <option value="7">Emergency Leave</option>
+                                            <option value="8">Haj Leave</option>
                                         </select>
 
                                     </div>
@@ -450,17 +555,15 @@
                                         <label class="form-label">Department</label>
                                         <select name="" id="" class="form-control select2">
                                             <option disabled="" selected="" value="">Please Select...</option>
-                                            
-                        <option value="1">Account</option>
-                        <option value="2">Compliances Ticket </option>
-                        <option value="3">General</option>
-                        <option value="4">Maintenance</option>
+
+                                            <option value="1">Account</option>
+                                            <option value="2">Compliances Ticket </option>
+                                            <option value="3">General</option>
+                                            <option value="4">Maintenance</option>
                                         </select>
 
                                     </div>
                                 </div>
-
-                                
 
                                 <div class="col-md-4">
                                     <div class="form-group">
@@ -477,8 +580,6 @@
                                             placeholder="Select Date" readonly="readonly">
                                     </div>
                                 </div>
-
-
 
                                 <div class="col-lg-12">
                                     <div class="form-group">
@@ -535,15 +636,15 @@
             <div class="addingForm_Container smallformcontainer">
                 <div class="add-users-modal-body-table-header text-headline-6">Edit This Time Off</div>
                 <div class="formstartcontainer">
-                <div class="row">
+                    <div class="row">
                         <div class="col-lg-12">
                             <div class="row">
 
-                            <div class="col-md-4">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">User ID</label>
-                                        <input class="form-control" type="text" name=""
-                                            placeholder="Enter User ID" readonly="readonly">
+                                        <input class="form-control" type="text" name="" placeholder="Enter User ID"
+                                            readonly="readonly">
                                     </div>
                                 </div>
 
@@ -553,11 +654,11 @@
                                         <select name="" id="" class="form-control select2">
                                             <option disabled="" selected="" value="">Please Select...</option>
                                             <option value="1">Danial Craig</option>
-        <option value="2">Emily Blunt</option>
-        <option value="3">John Doe</option>
-        <option value="4">Sophia Turner</option>
-        <option value="5">Michael Jordan</option>
-        <option value="6">Olivia Smith</option>
+                                            <option value="2">Emily Blunt</option>
+                                            <option value="3">John Doe</option>
+                                            <option value="4">Sophia Turner</option>
+                                            <option value="5">Michael Jordan</option>
+                                            <option value="6">Olivia Smith</option>
 
                                         </select>
 
@@ -568,15 +669,15 @@
                                         <label class="form-label">Time Off Type</label>
                                         <select name="" id="" class="form-control select2">
                                             <option disabled="" selected="" value="">Please Select...</option>
-                                            
-                        <option value="1">Annual Leave</option>
-                        <option value="2">Unpaid Leave</option>
-                        <option value="3">Sick Leave</option>
-                        <option value="4">Maternity Leave</option>
-                        <option value="5">Parental Leave</option>
-                        <option value="6">Compassionate Leave</option>
-                        <option value="7">Emergency Leave</option>
-                        <option value="8">Haj Leave</option>
+
+                                            <option value="1">Annual Leave</option>
+                                            <option value="2">Unpaid Leave</option>
+                                            <option value="3">Sick Leave</option>
+                                            <option value="4">Maternity Leave</option>
+                                            <option value="5">Parental Leave</option>
+                                            <option value="6">Compassionate Leave</option>
+                                            <option value="7">Emergency Leave</option>
+                                            <option value="8">Haj Leave</option>
                                         </select>
 
                                     </div>
@@ -587,17 +688,15 @@
                                         <label class="form-label">Department</label>
                                         <select name="" id="" class="form-control select2">
                                             <option disabled="" selected="" value="">Please Select...</option>
-                                            
-                        <option value="1">Account</option>
-                        <option value="2">Compliances Ticket </option>
-                        <option value="3">General</option>
-                        <option value="4">Maintenance</option>
+
+                                            <option value="1">Account</option>
+                                            <option value="2">Compliances Ticket </option>
+                                            <option value="3">General</option>
+                                            <option value="4">Maintenance</option>
                                         </select>
 
                                     </div>
                                 </div>
-
-                                
 
                                 <div class="col-md-4">
                                     <div class="form-group">
@@ -614,8 +713,6 @@
                                             placeholder="Select Date" readonly="readonly">
                                     </div>
                                 </div>
-
-
 
                                 <div class="col-lg-12">
                                     <div class="form-group">
@@ -643,6 +740,138 @@
     </form>
 </div>
 <!-- add Event offcanvas modal end -->
+
+<!--Offcanvas Wrapper-->
+<div class="offcanvas timelogHRHUBModal rightOffcanvas offcanvas-end" tabindex="-1" id="logDetailModal"
+    aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+        <div class="canvas-header-title">
+            <iconify-icon icon="fluent:comment-text-24-regular"></iconify-icon>
+            Add Comments
+        </div>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <div class="rightcanvas_Container">
+            <form action="leave-management.php">
+
+                <div class="comment-block">
+
+                    <div class="card card-border note-block">
+                        <div class="card-body">
+
+                            <div class="media align-items-center notehead_withTag">
+                                <div class="notesSendBy">
+                                    <div class="media-head">
+                                        <div class="avatar avatar-xs avatar-rounded">
+                                            <img src="dist/img/newimages/users/userdummy.png" alt="user"
+                                                class="avatar-img">
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="noteAuthor_title">
+                                            Martin
+                                            Luther
+                                        </div>
+                                        <div class="NoteTiming">
+                                            9
+                                            Apr,
+                                            20,
+                                            7:14
+                                            AM
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <p class="NoteDescription">
+                                @<a href="#" class="fw-medium">Charlie
+                                    Darvin</a>
+                                Tenant was
+                                very interested
+                                in the
+                                property,
+                                appreciating the
+                                layout and
+                                natural light.
+                                They need two
+                                bedrooms, a
+                                workspace, and a
+                                parking
+                                spot. They have
+                                a small dog
+                                and prefer to
+                                move in by the
+                                end of next
+                                month. Awaiting
+                                their decision
+                                by the end of
+                                the week.</p>
+                        </div>
+                    </div>
+                    <div class="card card-border note-block ">
+                        <div class="card-body">
+
+                            <div class="media align-items-center notehead_withTag">
+                                <div class="notesSendBy">
+                                    <div class="media-head">
+                                        <div class="avatar avatar-xs avatar-rounded">
+                                            <img src="dist/img/newimages/users/userdummy.png" alt="user"
+                                                class="avatar-img">
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="noteAuthor_title">
+                                            Katherine
+                                            Jones
+                                        </div>
+                                        <div class="NoteTiming">
+                                            8
+                                            Apr,
+                                            20,
+                                            5:30
+                                            PM
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <p class="NoteDescription">
+                                @<a href="#" class="fw-medium">Martin
+                                    Luther</a>
+                                Viscosity
+                                ratio for
+                                "Appear view"
+                                link
+                                text is 3.7:1
+                                which is less
+                            </p>
+                        </div>
+                    </div>
+                    <div class="separator separator-light">
+                    </div>
+
+                    <div class="AddNoteEnuSection" id="">
+
+                        <div class="form-group">
+                            <label class="form-label">Add
+                                Comment</label>
+                            <textarea class="form-control note-comment" rows="5"></textarea>
+                        </div>
+
+                        <div class="submitnote_container">
+                            <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter">Submit</button>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+<!--/ Offcanvas Wrapper-->
 
 <?php include('footer.php') ?>
 
@@ -730,3 +959,27 @@
     });
 </script>
 <!-- filters show hide script end-->
+
+<!-- table data select functionality -->
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const selectAllCheckbox = document.getElementById('selectAllTb');
+        const rowCheckboxes = document.querySelectorAll('.rowCheckbox');
+        selectAllCheckbox.addEventListener('change', function() {
+            rowCheckboxes.forEach(checkbox => {
+                checkbox.checked = this.checked;
+            });
+        });
+        rowCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                if (!this.checked) {
+                    selectAllCheckbox.checked = false;
+                } else if (document.querySelectorAll('.rowCheckbox:checked').length ===
+                    rowCheckboxes.length) {
+                    selectAllCheckbox.checked = true;
+                }
+            });
+        });
+    });
+</script>
+<!-- end -->

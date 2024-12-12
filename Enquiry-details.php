@@ -908,66 +908,81 @@
                                                                                         <div
                                                                                             class="selectedPropertyfor_tenant_section">
                                                                                             <h2>Selected Properties</h2>
-                                                                                            <div class="propertycountand_share">
-                                                                                            <div id="selectedCount"
-                                                                                                class=""></div>
-                                                                                                <div class="sharepropertyWrap">
-                                                                                        <button id="doneBtn"
-                                                                                            type="button"
-                                                                                            class="btn btn-success hiddenelements dropdown-toggle no-caret"
-                                                                                            aria-expanded="false"
-                                                                                            data-bs-toggle="dropdown"
-                                                                                            href="#">Send Suggested
-                                                                                            Properties</button>
-                                                                                        <div
-                                                                                            class="dropdown-menu dropdown-menu-icon-text dropdown-menu-end spipeline-dropdown">
-                                                                                            <h6
-                                                                                                class="dropdown-header sharedropdown_intext">
-                                                                                                <iconify-icon icon="lineicons:share-1"></iconify-icon>  Share Via</h6>
+                                                                                            <div
+                                                                                                class="propertycountand_share">
+                                                                                                <div id="selectedCount"
+                                                                                                    class=""></div>
+                                                                                                <div
+                                                                                                    class="sharepropertyWrap">
+                                                                                                    <button id="doneBtn"
+                                                                                                        type="button"
+                                                                                                        class="btn btn-success hiddenelements dropdown-toggle no-caret"
+                                                                                                        aria-expanded="false"
+                                                                                                        data-bs-toggle="dropdown"
+                                                                                                        href="#">Share
+                                                                                                        Suggested
+                                                                                                        Properties</button>
+                                                                                                    <div
+                                                                                                        class="dropdown-menu dropdown-menu-icon-text dropdown-menu-end spipeline-dropdown">
+                                                                                                        <h6
+                                                                                                            class="dropdown-header sharedropdown_intext">
+                                                                                                            <iconify-icon
+                                                                                                                icon="lineicons:share-1">
+                                                                                                            </iconify-icon>
+                                                                                                            Share Via
+                                                                                                        </h6>
 
-                                                                                            <div id="social_profile"
-                                                                                                class="propertyShare_icons">
-                                                                                                <ul
-                                                                                                        class="hk-list hk-list-sm">
-                                                                                                        <li>
-                                                                                                            <button
-                                                                                                                class="btn btn-icon btn-rounded btn-primary"><span
-                                                                                                                    class="icon"><i
-                                                                                                                        class="fab fa-behance"></i></span></button>
-                                                                                                        </li>
-                                                                                                        <li>
-                                                                                                            <button
-                                                                                                                class="btn btn-icon btn-rounded btn-warning"><span
-                                                                                                                    class="icon"><i
-                                                                                                                        class="fab fa-google-drive"></i></span></button>
-                                                                                                        </li>
-                                                                                                        <li>
-                                                                                                            <button
-                                                                                                                class="btn btn-icon btn-rounded btn-info"><span
-                                                                                                                    class="icon"><i
-                                                                                                                        class="fab fa-dropbox"></i></span></button>
-                                                                                                        </li>
-                                                                                                        <li>
-                                                                                                            <button
-                                                                                                                class="btn btn-icon btn-rounded btn-dark"><span
-                                                                                                                    class="icon"><i
-                                                                                                                        class="fab fa-github"></i></span></button>
-                                                                                                        </li>
-                                                                                                        <li>
-                                                                                                            <button
-                                                                                                                class="btn btn-icon btn-rounded btn-danger"><span
-                                                                                                                    class="icon"><i
-                                                                                                                        class="fab fa-google"></i></span></button>
-                                                                                                        </li>
-                                                                                                    </ul>
+                                                                                                        <div id="social_profile"
+                                                                                                            class="propertyShare_icons">
+                                                                                                            <ul
+                                                                                                                class="hk-list hk-list-sm">
+                                                                                                                <li>
+                                                                                                                    <a href="https://mail.google.com"
+                                                                                                                        target="_blank"
+                                                                                                                        class="btn btn-icon btn-rounded sharecmniconbg"><span
+                                                                                                                            class="icon">
+                                                                                                                            <iconify-icon
+                                                                                                                                icon="logos:google-gmail"
+                                                                                                                                width="20"
+                                                                                                                                height="20">
+                                                                                                                            </iconify-icon>
+                                                                                                                        </span></a>
+                                                                                                                </li>
+                                                                                                                <li>
+                                                                                                                    <a href="sms:+1234567890?body=Your%20message%20goes%20here"
+                                                                                                                        class="btn btn-icon btn-rounded sharecmniconbg messageiconcolor">
+                                                                                                                        <span
+                                                                                                                            class="icon">
+                                                                                                                            <iconify-icon
+                                                                                                                                icon="flowbite:messages-outline"
+                                                                                                                                width="20"
+                                                                                                                                height="20">
+                                                                                                                            </iconify-icon>
+                                                                                                                        </span>
+                                                                                                                    </a>
+
+                                                                                                                </li>
+                                                                                                                <li>
+                                                                                                                    <a href="https://www.whatsapp.com/"
+                                                                                                                        target="_blank"
+                                                                                                                        class="btn btn-icon btn-rounded sharecmniconbg"><span
+                                                                                                                            class="icon">
+                                                                                                                            <iconify-icon
+                                                                                                                                icon="logos:whatsapp-icon"
+                                                                                                                                width="20"
+                                                                                                                                height="20">
+                                                                                                                            </iconify-icon>
+                                                                                                                        </span></a>
+                                                                                                                </li>
+
+                                                                                                            </ul>
+                                                                                                        </div>
+
+                                                                                                    </div>
+                                                                                                </div>
                                                                                             </div>
 
                                                                                         </div>
-                                                                                        </div>
-                                                                                            </div>
-
-                                                                                        </div>
-                                                                                        
 
                                                                                         <div
                                                                                             class="selected_property_mainContainer">

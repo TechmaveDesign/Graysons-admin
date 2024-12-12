@@ -5154,7 +5154,7 @@
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label class="form-label">Payment Plan Type</label>
-                                            <select name="" id="paymentFrequency" class="form-control select2">
+                                            <select name="" id="paymentFrequencyfor_permit" class="form-control select2">
                                                 <option disabled="" selected="" value="">Please Select...</option>
                                                 <option value="monthly">Monthly</option>
                                                 <option value="weekly">Weekly</option>
@@ -5700,6 +5700,24 @@
     });
 </script>
 <!-- add tenancy  modal form payment options hide show based on selected payment plan type end-->
+
+<!-- parking permit weekmonth payment js -->
+<script>
+    $(document).ready(function() {
+        // Hide both payment options by default
+        $('.payment_opt').hide();
+        $('#paymentFrequencyfor_permit').on('change', function() {
+            var selectedValue = $(this).val();
+            $('.payment_opt').hide(); // Hide all payment options
+            if (selectedValue === 'monthly') {
+                $('.monthyPayment_opt').show();
+            } else if (selectedValue === 'weekly') {
+                $('.WeeklyPayment_opt').show();
+            }
+        });
+    });
+</script>
+
 
 <!-- add tenancy modal payment plan alert message  -->
 <script>

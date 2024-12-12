@@ -18,6 +18,14 @@
             padding-left: 0px !important;
         }
     }
+
+  .departmentfilter_container  .select2-container {
+	width: 200px !important;
+}
+
+#departmentfilter_container{
+    margin-right:10px !important;
+}
 </style>
 
 <div class="container-xxl">
@@ -49,8 +57,8 @@
                                 data-bs-original-title="Refresh"><span class="icon"><span class="feather-icon"><i
                                             data-feather="refresh-cw"></i></span></span></a>
 
-                            <div class="departmentfilter_container">
-                                <select name="" id="" class="form-control departmentselect_filter Departmentselect2">
+                            <div class="departmentfilter_container" id="departmentfilter_container">
+                                <select name="" id="departmentselect_filter" class="form-control departmentselect_filter ">
                                     <option value="" selected readonly>
                                         Select Department</option>
                                     <option value="Account">Account</option>
@@ -58,6 +66,18 @@
                                     <option value="Inventory Department">Inventory Department</option>
                                 </select>
                             </div>
+
+                            <select name="user" id="DepartmentUser_select" class="form-control">
+                        <option value="" selected disabled>Select a User</option>
+                        <option value="user1">John Doe</option>
+                        <option value="user2">Jane Smith</option>
+                        <option value="user3">Michael Johnson</option>
+                        <option value="user4">Emily Davis</option>
+                        <option value="user5">Chris Brown</option>
+                        <option value="user6">Jessica Williams</option>
+                        <option value="user7">David Miller</option>
+                        <option value="user8">Sophia Wilson</option>
+                    </select>
 
                             <div class="v-separator d-lg-block d-none"></div>
 
@@ -542,11 +562,16 @@
 <script src="dist/js/bootstrap-notify.min.js"></script>
 
 <!-- department calendar select 2 (dont remove this select2 function this is only for department filter) -->
+
 <script>
-    $(".Departmentselect2").select2({
-        placeholder: "Select Department"
+    $("#departmentselect_filter").select2({
+        placeholder: "Select a Department"
+    })
+    $("#DepartmentUser_select").select2({
+        placeholder: "Select a User"
     })
 </script>
+<!-- end -->
 
 <!-- add note js start -->
 <script>

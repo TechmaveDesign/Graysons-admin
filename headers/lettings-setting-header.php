@@ -6,12 +6,12 @@
 <ul class="nav flex-column">
 
 <li class="nav-item ">
-    <a href="inspection.php" class="nav-link" data-key="inspections"><span
+    <a href="enquiry-settings.php" class="nav-link" data-key="inspections"><span
             class="nav-link-text">Enquiry Settings</span></a>
 </li>
 
 <li class="nav-item">
-    <a href="javascript:void(0);" class="nav-link" data-key="view-inventories"><span
+    <a href="contract-settings.php" class="nav-link" data-key="view-inventories"><span
             class="nav-link-text">Contract Settings</span></a>
 </li>
 
