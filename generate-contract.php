@@ -75,7 +75,7 @@
                         <ul class="nav nav-justified nav-light nav-tabs nav-segmented-tabs active-theme mx-auto ">
                             <li class="nav-item">
                                 <a class="nav-link active" data-bs-toggle="tab" href="#tab_boards">
-                                    <span class="nav-link-text">General Contract</span>
+                                    <span class="nav-link-text">General Information</span>
                                 </a>
                             </li>
                             <li class="nav-item">
