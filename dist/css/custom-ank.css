@@ -163,3 +163,36 @@ input.tableInput {
     width: 380px;
     white-space: normal !important;
 }
+.refundBtn {
+    font-weight: 600;
+    text-decoration: underline;
+    color: #2196F3;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+.refundBtn iconify-icon {
+    padding: 5px;
+    border: 1px solid #2196F3;
+    border-radius: 50px;
+    background: aliceblue;
+}
+.refundBtn:hover{
+    color: #FCB608; 
+}
+.refundBtn:hover iconify-icon {
+    border: 1px solid #FCB608;
+    background: #fcb6080d;
+}
+.RefundHeader {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+.canvasSubmit_button {
+    background: #0cb06b;
+    color: #fff;
+    display: inline-flex !important;
+    align-items: center;
+    gap: 5px;
+}
