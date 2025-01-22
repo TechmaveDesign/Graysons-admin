@@ -10,10 +10,10 @@
             class="nav-link-text">View Tenancies</span></a>
 </li>
 
-<li class="nav-item">
+<!-- <li class="nav-item">
     <a href="tenancy-dashboard.php" class="nav-link" data-key="view-inventories"><span
             class="nav-link-text">Tenancy Dashboard</span></a>
-</li>
+</li> -->
 
 <li class="nav-item">
     <a href="deposits.php" class="nav-link"

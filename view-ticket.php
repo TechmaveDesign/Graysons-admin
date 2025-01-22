@@ -133,7 +133,7 @@
                                     <li class="nav-item">
                                         <a class="nav-link" data-bs-toggle="tab" href="#InventoryRequests ">
                                             <div class="d-flex align-items-center">
-                                                <span class="nav-link-text">Inventory Requests </span>
+                                                <span class="nav-link-text">Material Purchase Requests </span>
 
                                             </div>
                                         </a>
@@ -258,7 +258,8 @@
                                                                     <span
                                                                         class="d-block text-capitalize ticketdetailinfo_data">
                                                                         <span
-                                                                            class="badge badge-soft-success  my-1  me-2">15 Dec, 2024</span></span>
+                                                                            class="badge badge-soft-success  my-1  me-2">15
+                                                                            Dec, 2024</span></span>
                                                                 </div>
                                                             </div>
                                                             <div class="flex-1 CustomFlex_style ">
@@ -284,7 +285,7 @@
                                                     <div class="card-body">
                                                         <div class="row">
 
-                                                            <div class="col-md-6">
+                                                            <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label for="" class="form-label"> Status</label>
                                                                     <select name="" id="" class="form-control select2">
@@ -347,7 +348,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-6">
+                                                            <div class="col-md-4">
                                                                 <div class="form-group">
                                                                     <label for="" class="form-label"> Assigned
                                                                         To</label>
@@ -358,6 +359,108 @@
                                                                         <option value="2">Properties, Graysons </option>
                                                                         <option value="3">Avi</option>
                                                                         <option value="4" selected>Rohit</option>
+                                                                    </select>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <label for="" class="form-label">Change Ticket
+                                                                        Type</label>
+                                                                    <select name="" id="" class="form-control select2">
+                                                                        <option value="" disable readonly selected>
+                                                                            Salect an Option</option>
+                                                                            <option value="1141">Bathroom</option>
+                                            <option value="1147">Bedroom</option>
+                                            <option value="1151">Dining Room</option>
+                                            <option value="1154">Kitchen</option>
+                                            <option value="1161">Living Room</option>
+                                            <option value="1165">Lighting</option>
+                                            <option value="1169">Flooring</option>
+                                            <option value="1170">Interior Walls</option>
+                                            <option value="1171">Alarms</option>
+                                            <option value="1175">Fire</option>
+                                            <option value="1176">Leak</option>
+                                            <option value="1177">Heating</option>
+                                            <option value="1178">Exterior</option>
+                                            <option value="1182">Roof</option>
+                                            <option value="1183">Windows</option>
+                                            <option value="1186">Doors</option>
+                                            <option value="1189">Utilities &amp; Services</option>
+                                            <option value="1194">Pests/Vermin</option>
+                                            <option value="1198">Shared/Communal Facilities</option>
+                                            <option value="1203">Other</option>
+                                            <option value="1210">Boiler</option>
+                                            <option value="1242">Fire Extinguisher</option>
+                                            <option value="1244">Heatworx</option>
+                                            <option value="1248">ILS (Ian Smith)</option>
+                                            <option value="1255">Kevin (Electrician)</option>
+                                            <option value="1267">Garry (Electrician)</option>
+                                            <option value="1273">UK Lifts</option>
+                                            <option value="1274">MacDonald Martin</option>
+                                            <option value="1279">GEMS (Peter Goldwater)</option>
+                                            <option value="1282">TLJ</option>
+                                            <option value="1283">Kwik Flow</option>
+                                            <option value="1290">Rafal Jeske</option>
+                                            <option value="1295">Emergency Call Out</option>
+                                            <option value="1296">Ashbrooke Audio Visual</option>
+                                            <option value="1298">Computers/Printers</option>
+                                            <option value="1299">Lights</option>
+                                            <option value="1300">Routine Cleaning</option>
+                                            <option value="1302">Property Inspection</option>
+                                            <option value="1303">Portable Heaters</option>
+                                            <option value="1307">Hot Water</option>
+                                            <option value="1308">Service Report Recommendations</option>
+                                            <option value="1309">Routine Fire Alarm Testing</option>
+                                            <option value="1310">Routine Emergency Light Testing</option>
+                                            <option value="1311">Legionella Test</option>
+                                            <option value="1312">Fire Extinguinsher Check</option>
+                                            <option value="1315">CG Plumbing and Heating</option>
+                                            <option value="1316">Check Out Appointment</option>
+                                            <option value="1317">Check-In Appointment</option>
+                                            <option value="1318">Furniture Renewal</option>
+                                            <option value="1319">Tenant Lock Out</option>
+                                            <option value="1320">Air BND</option>
+                                            <option value="1321">Viewing</option>
+                                            <option value="1322">Welcome Letter</option>
+                                            <option value="1323">Expansion Vessel Inspection</option>
+                                            <option value="1324">Late Payment Charge</option>
+                                            <option value="1325">Rent</option>
+                                            <option value="1326">General Enquiries</option>
+                                            <option value="1327">Cancellation of Tenancy Contract</option>
+                                            <option value="1328">Marketing</option>
+                                            <option value="1329">Emergency Call Out</option>
+                                            <option value="1330">Student Exemption Certificates</option>
+                                            <option value="1331">New Tenant</option>
+                                            <option value="1332">Dental</option>
+                                            <option value="1333">Council Tax</option>
+                                            <option value="1338">Corridors</option>
+                                            <option value="1339">PCC Room</option>
+                                            <option value="1350">Office Time </option>
+                                            <option value="1351">Staff Holidays </option>
+                                            <option value="1352">Laundry Credit Cards</option>
+                                            <option value="1353">Unable to Clean</option>
+                                            <option value="1354">Tenancy Renewal</option>
+                                            <option value="1356">Monthly Washing Machine Clean</option>
+                                            <option value="1357">Order Cleaning Products</option>
+                                            <option value="1359">Require Vacuum</option>
+                                            <option value="1360">Post Tenancy Key Return</option>
+                                            <option value="1361">Self Isolation</option>
+                                            <option value="1365">Presentation Room Leazes Terraces Reservation</option>
+                                            <option value="1371">PAT Testing</option>
+                                            <option value="1373">Overtime Claim Back</option>
+                                            <option value="1374">Sick Leave</option>
+                                            <option value="1375">Guest Overnight Stay</option>
+                                            <option value="1376">Green Push Button</option>
+                                            <option value="1379">End of Term Departure</option>
+                                            <option value="1380">Emergency On Call</option>
+                                            <option value="1381">Lock Laundry room between 10-12PM</option>
+                                            <option value="1382">Jopling House Communal Rooms</option>
+                                            <option value="1412">Mental Wellbeing &amp; Counselling</option>
+                                            <option value="1415">Order Building Materials</option>
+                                            <option value="1416">Cleaning Stock List</option>
+                                            <option value="1417">Laundry Coins</option>
                                                                     </select>
                                                                 </div>
 
@@ -889,14 +992,16 @@
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-lg-6">
-                                                                            <div class="form-check form-check-sm">
-                                                    <input type="checkbox" class="form-check-input" id="customChecks1">
-                                                    <label class="form-check-label" for="customChecks1">If you want
+                                                                                <div class="form-check form-check-sm">
+                                                                                    <input type="checkbox"
+                                                                                        class="form-check-input"
+                                                                                        id="customChecks1">
+                                                                                    <label class="form-check-label"
+                                                                                        for="customChecks1">If you want
                                                                                         to add price on the task basis
                                                                                         please check</label>
-                                                </div>
+                                                                                </div>
 
-                                                                                
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1143,30 +1248,36 @@
                                                                     <div class="col-lg-12">
                                                                         <div class="card">
                                                                             <div class="card-header">
-                                                                            <div class="signatureUser_name">Signature </div>
+                                                                                <div class="signatureUser_name">
+                                                                                    Signature </div>
                                                                             </div>
                                                                             <div class="card-body">
-                                                                            <div class="QuotationSignature">
-                                                                                <img src="dist/img/newimages/signature-images/1.jpg" alt="">
-                                                                                
-                                                                            </div>
+                                                                                <div class="QuotationSignature">
+                                                                                    <img src="dist/img/newimages/signature-images/1.jpg"
+                                                                                        alt="">
+
+                                                                                </div>
                                                                             </div>
                                                                             <div class="card-footer">
-                                                                            <div class="Signature_timestemp">
-                                                            <div class="enquiryRight_header_data TaskAction_wrapper">
-                                                                <div class="enquiryDate dueDate_container">
-                                                                    <iconify-icon icon="ion:calendar-outline">
-                                                                    </iconify-icon>
-                                                                    <div class="duedatelabel">Date &amp; Time : </div> Nov
-                                                                    20, 2024 15:45
-                                                                </div>
-                                                            
+                                                                                <div class="Signature_timestemp">
+                                                                                    <div
+                                                                                        class="enquiryRight_header_data TaskAction_wrapper">
+                                                                                        <div
+                                                                                            class="enquiryDate dueDate_container">
+                                                                                            <iconify-icon
+                                                                                                icon="ion:calendar-outline">
+                                                                                            </iconify-icon>
+                                                                                            <div class="duedatelabel">
+                                                                                                Date &amp; Time : </div>
+                                                                                            Nov
+                                                                                            20, 2024 15:45
+                                                                                        </div>
 
-                                                            </div>
-                                                        </div>
+                                                                                    </div>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
-                                                                        
+
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1209,7 +1320,19 @@
 
                                         <div class="tab-pane fade" id="AssignMaterial">
                                             <div class="fullwidthTabInner_content_container">
+                                            <div class="docFilterContainer">
+                                                    <div class="docfilterbutton">
+                                                        <h2 class="tabinnerTitle">Assign Material </h2>
+                                                        <div class="RightTabinr_container">
 
+                                                            <button class="btn btn-sm addiconiButton commonAddnewButton btn-primary ms-3" type="button" data-bs-toggle="modal" data-bs-target="#property_inspection_modal">
+                                                                <iconify-icon icon="lets-icons:add-round">
+                                                                </iconify-icon> Add Material
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
                                                 <div class="card">
                                                     <div class="card-body">
                                                         <div class="contact-list-view">
@@ -1217,7 +1340,7 @@
                                                                 class="table common-datatable nowrap w-100 assignMaterial">
                                                                 <thead>
                                                                     <tr>
-                                                                        <th>Assigned / Requested by</th>
+                                                                        <th>Supplier Name</th>
                                                                         <th>Product Name </th>
                                                                         <th>Qty</th>
                                                                         <th>Status</th>
@@ -1276,7 +1399,9 @@
                                                                         </td>
                                                                         <td>Energy-Saving LED Bulb 12W</td>
                                                                         <td>2</td>
-                                                                        <td><span class="badge bg-info">Requested</span>
+                                                                        <td><span
+                                                                                class="badge bg-success">Assigned</span>
+                                                                        </td>
                                                                         </td>
                                                                         <td>20 Nov, 2024</td>
                                                                     </tr>
@@ -1329,7 +1454,9 @@
                                                                         </td>
                                                                         <td>Hinge</td>
                                                                         <td>4</td>
-                                                                        <td><span class="badge bg-info">Requested</span>
+                                                                        <td><span
+                                                                                class="badge bg-success">Assigned</span>
+                                                                        </td>
                                                                         </td>
                                                                         <td>14 Nov, 2024</td>
                                                                     </tr>
@@ -1382,7 +1509,9 @@
                                                                         </td>
                                                                         <td>Heating</td>
                                                                         <td>5</td>
-                                                                        <td><span class="badge bg-info">Requested</span>
+                                                                        <td><span
+                                                                                class="badge bg-success">Assigned</span>
+                                                                        </td>
                                                                         </td>
                                                                         <td>19 Nov, 2024</td>
                                                                     </tr>
@@ -1394,7 +1523,7 @@
                                                     </div>
 
                                                 </div>
-                                                
+
                                             </div>
 
                                         </div>
@@ -1402,359 +1531,475 @@
                                         <div class="tab-pane fade" id="completedtasks">
                                             <div class="fullwidthTabInner_content_container">
 
-                                          
-                          <div class="card">
-                              <div class="card-body">
-                                  <div class="row">
-                                  <!-- <div class="col-lg-12">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <!-- <div class="col-lg-12">
                                       <h1 class="secTitle titleBtn">Ticket All History List </h1>
                                   </div> -->
-                                  <div class="col-lg-12">
+                                                            <div class="col-lg-12">
 
-                                  <div class="docfilterbutton completedrtask_headeract">
-                                                    <h2 class="tabinnerTitle">All Task List  </h2>
-                                                    <div class="RightTabinr_container">
-                                                    <div class="allSelect flex items-center gap-2 checkboxTask">
-                                                <input id="allSelectCheck" class="" type="checkbox" value="">
-                                                <label for="allSelectCheck" class="align-middle">All Select</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <!-- <label for="exampleFormControlInput1" class="form-label">Client Name</label> -->
-                                                <select class="form-input select2" id="choices-single-default">
-                                                    <option value="Select">--Status--</option>
-                                                    <option value="In Progress">In Progress</option>
-                                                    <option value="Done">Done</option>
-                                                    <option value="Approved">Approved</option>
-                                                </select>
-                                            </div>
+                                                                <div class="docfilterbutton completedrtask_headeract">
+                                                                    <h2 class="tabinnerTitle">All Task List </h2>
+                                                                    <div class="RightTabinr_container">
+                                                                        <div
+                                                                            class="allSelect flex items-center gap-2 checkboxTask">
+                                                                            <input id="allSelectCheck" class=""
+                                                                                type="checkbox" value="">
+                                                                            <label for="allSelectCheck"
+                                                                                class="align-middle">All Select</label>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <!-- <label for="exampleFormControlInput1" class="form-label">Client Name</label> -->
+                                                                            <select class="form-input select2"
+                                                                                id="choices-single-default">
+                                                                                <option value="Select">--Status--
+                                                                                </option>
+                                                                                <option value="In Progress">In Progress
+                                                                                </option>
+                                                                                <option value="Done">Done</option>
+                                                                                <option value="Approved">Approved
+                                                                                </option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="col-lg-12">
+                                                                <div class="accordion taskAccordion"
+                                                                    id="accordionExample">
+                                                                    <div class="accordion-item">
+                                                                        <h2 class="accordion-header taskHeader"
+                                                                            id="headingOne">
+                                                                            <div
+                                                                                class="flex items-center gap-2 checkboxTask">
+                                                                                <input id="checkboxOutline8" class=""
+                                                                                    type="checkbox" value="">
+                                                                                <label for="checkboxOutline8"
+                                                                                    class="align-middle"></label>
+                                                                            </div>
+                                                                            <button class="accordion-button collapsed"
+                                                                                type="button" data-bs-toggle="collapse"
+                                                                                data-bs-target="#collapseOne"
+                                                                                aria-expanded="false"
+                                                                                aria-controls="collapseOne">
+                                                                                <div class="taskBlex">
+                                                                                    <h6>Water Leakage from Ceiling</h6>
+                                                                                    <span
+                                                                                        class="badge badge-soft-warning my-1 me-2">In
+                                                                                        progress</span>
+                                                                                </div>
+
+                                                                            </button>
+                                                                        </h2>
+                                                                        <div id="collapseOne"
+                                                                            class="accordion-collapse collapse"
+                                                                            aria-labelledby="headingOne"
+                                                                            data-bs-parent="#accordionExample">
+                                                                            <div class="accordion-body">
+                                                                                <ul class="issueHistoryList">
+
+                                                                                    <li>
+                                                                                        <label for=""
+                                                                                            class="form-label historyLabel ">Before
+                                                                                            Images & video
+                                                                                            : </label>
+
+                                                                                        <div
+                                                                                            class="multiImageSlider slider">
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock12.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock12.jpg"
+                                                                                                        alt="Image 1">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock5.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock5.jpg"
+                                                                                                        alt="Image 2">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock6.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock6.jpg"
+                                                                                                        alt="Image 3">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock7.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock7.jpg"
+                                                                                                        alt="Image 4">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock8.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock8.jpg"
+                                                                                                        alt="Image 5">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock9.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock9.jpg"
+                                                                                                        alt="Image 6">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock10.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock10.jpg"
+                                                                                                        alt="Image 7">
+                                                                                                </a>
+                                                                                            </div>
+
+                                                                                            <!-- Add more slides as needed -->
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <label for=""
+                                                                                            class="form-label historyLabel ">After
+                                                                                            Images & video
+                                                                                            : </label>
+                                                                                        <div
+                                                                                            class="multiImageSlider slider">
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock12.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock12.jpg"
+                                                                                                        alt="Image 1">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock5.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock5.jpg"
+                                                                                                        alt="Image 2">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock6.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock6.jpg"
+                                                                                                        alt="Image 3">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock7.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock7.jpg"
+                                                                                                        alt="Image 4">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock8.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock8.jpg"
+                                                                                                        alt="Image 5">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock9.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock9.jpg"
+                                                                                                        alt="Image 6">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock10.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock10.jpg"
+                                                                                                        alt="Image 7">
+                                                                                                </a>
+                                                                                            </div>
+
+                                                                                            <!-- Add more slides as needed -->
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li><label for=""
+                                                                                            class="form-label historyLabel">Added
+                                                                                            Notes : </label>
+                                                                                        <ol class="commentpointslist">
+                                                                                            <li>The tiles are missing
+                                                                                                under the shower
+                                                                                                tray, some of the tiles
+                                                                                                are in the
+                                                                                                bathroom.</li>
+                                                                                            <li>The sink is clogged, the
+                                                                                                water drains
+                                                                                                poorly, I wanted to
+                                                                                                clear it, but I
+                                                                                                can't unscrew the plug.
+                                                                                            </li>
+                                                                                        </ol>
+
+                                                                                        <p>The tiles under the shower
+                                                                                            tray might have
+                                                                                            been displaced due to water
+                                                                                            damage.
+                                                                                            Recommend thorough
+                                                                                            inspection and
+                                                                                            replacement.</p>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="accordion-item">
+                                                                        <h2 class="accordion-header taskHeader"
+                                                                            id="headingTwo">
+                                                                            <div
+                                                                                class="flex items-center gap-2 checkboxTask">
+                                                                                <input id="checkboxOutline9"
+                                                                                    class="size-4 cursor-pointer bg-white border border-slate-200 checked:bg-none dark:bg-zink-700 dark:border-zink-500 rounded-sm appearance-none arrow-none relative after:absolute after:content-['\eb7b'] after:top-0 after:left-0 after:font-remix after:leading-none after:opacity-0 checked:after:opacity-100 after:text-orange-500 checked:border-orange-500 dark:after:text-orange-500 dark:checked:border-orange-800"
+                                                                                    type="checkbox" value="">
+                                                                                <label for="checkboxOutline9"
+                                                                                    class="align-middle"></label>
+                                                                            </div>
+                                                                            <button class="accordion-button collapsed"
+                                                                                type="button" data-bs-toggle="collapse"
+                                                                                data-bs-target="#collapseTwo"
+                                                                                aria-expanded="false"
+                                                                                aria-controls="collapseTwo">
+                                                                                <div class="taskBlex">
+                                                                                    <h6>Ac Repair</h6>
+                                                                                    <span
+                                                                                        class="badge badge-soft-success my-1 me-2">Done</span>
+                                                                                </div>
+
+                                                                            </button>
+                                                                        </h2>
+                                                                        <div id="collapseTwo"
+                                                                            class="accordion-collapse collapse"
+                                                                            aria-labelledby="headingTwo"
+                                                                            data-bs-parent="#accordionExample">
+                                                                            <div class="accordion-body">
+                                                                                <ul class="issueHistoryList">
+                                                                                    <li>
+                                                                                        <label for=""
+                                                                                            class="form-label historyLabel ">Before
+                                                                                            Images & video
+                                                                                            : </label>
+                                                                                        <div
+                                                                                            class="multiImageSlider slider">
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock12.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock12.jpg"
+                                                                                                        alt="Image 1">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock5.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock5.jpg"
+                                                                                                        alt="Image 2">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock6.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock6.jpg"
+                                                                                                        alt="Image 3">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock7.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock7.jpg"
+                                                                                                        alt="Image 4">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock8.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock8.jpg"
+                                                                                                        alt="Image 5">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock9.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock9.jpg"
+                                                                                                        alt="Image 6">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock10.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock10.jpg"
+                                                                                                        alt="Image 7">
+                                                                                                </a>
+                                                                                            </div>
+
+                                                                                            <!-- Add more slides as needed -->
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <label for=""
+                                                                                            class="form-label historyLabel ">After
+                                                                                            Images & video
+                                                                                            : </label>
+                                                                                        <div
+                                                                                            class="multiImageSlider slider">
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock12.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock12.jpg"
+                                                                                                        alt="Image 1">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock5.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock5.jpg"
+                                                                                                        alt="Image 2">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock6.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock6.jpg"
+                                                                                                        alt="Image 3">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock7.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock7.jpg"
+                                                                                                        alt="Image 4">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock8.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock8.jpg"
+                                                                                                        alt="Image 5">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock9.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock9.jpg"
+                                                                                                        alt="Image 6">
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="galleryImage col">
+                                                                                                <a class="card card-border"
+                                                                                                    data-fancybox="gallery"
+                                                                                                    href="dist/img/issue-images/mock10.jpg">
+                                                                                                    <img src="dist/img/issue-images/mock10.jpg"
+                                                                                                        alt="Image 7">
+                                                                                                </a>
+                                                                                            </div>
+
+                                                                                            <!-- Add more slides as needed -->
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li><label for=""
+                                                                                            class="form-label historyLabel">Added
+                                                                                            Notes : </label>
+                                                                                        <ol class="commentpointslist">
+                                                                                            <li>The tiles are missing
+                                                                                                under the shower
+                                                                                                tray, some of the tiles
+                                                                                                are in the
+                                                                                                bathroom.</li>
+                                                                                            <li>The sink is clogged, the
+                                                                                                water drains
+                                                                                                poorly, I wanted to
+                                                                                                clear it, but I
+                                                                                                can't unscrew the plug.
+                                                                                            </li>
+                                                                                        </ol>
+
+                                                                                        <p>The tiles under the shower
+                                                                                            tray might have
+                                                                                            been displaced due to water
+                                                                                            damage.
+                                                                                            Recommend thorough
+                                                                                            inspection and
+                                                                                            replacement.</p>
+                                                                                    </li>
+
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
                                                     </div>
                                                 </div>
 
-
-                                      
-                                  </div>
-                                  <div class="col-lg-12">
-                                  <div class="accordion taskAccordion" id="accordionExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header taskHeader" id="headingOne">
-                                        <div class="flex items-center gap-2 checkboxTask">
-                                            <input id="checkboxOutline8" class="" type="checkbox" value="">
-                                            <label for="checkboxOutline8" class="align-middle"></label>
-                                        </div>
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                         <div class="taskBlex">
-                                         <h6>Water Leakage from Ceiling</h6>
-                                         <span class="badge badge-soft-warning my-1 me-2">In progress</span>
-                                         </div>
-                                       
-                                        </button>
-                                        </h2>
-                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                        <ul class="issueHistoryList">
-
-                                                                    <li>
-                                                                        <label for="" class="form-label historyLabel ">Before Images & video
-                                                                            : </label>
-                                                                       
-                                                        <div class="multiImageSlider slider">
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock12.jpg">
-                                                                    <img src="dist/img/issue-images/mock12.jpg"
-                                                                        alt="Image 1">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock5.jpg">
-                                                                    <img src="dist/img/issue-images/mock5.jpg"
-                                                                        alt="Image 2">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock6.jpg">
-                                                                    <img src="dist/img/issue-images/mock6.jpg"
-                                                                        alt="Image 3">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock7.jpg">
-                                                                    <img src="dist/img/issue-images/mock7.jpg"
-                                                                        alt="Image 4">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock8.jpg">
-                                                                    <img src="dist/img/issue-images/mock8.jpg"
-                                                                        alt="Image 5">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock9.jpg">
-                                                                    <img src="dist/img/issue-images/mock9.jpg"
-                                                                        alt="Image 6">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock10.jpg">
-                                                                    <img src="dist/img/issue-images/mock10.jpg"
-                                                                        alt="Image 7">
-                                                                </a>
-                                                            </div>
-
-                                                            <!-- Add more slides as needed -->
-                                                        </div>
-                                                                    </li>
-                                                                    <li>
-                                                                        <label for="" class="form-label historyLabel ">After Images & video
-                                                                            : </label>
-                                                                            <div class="multiImageSlider slider">
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock12.jpg">
-                                                                    <img src="dist/img/issue-images/mock12.jpg"
-                                                                        alt="Image 1">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock5.jpg">
-                                                                    <img src="dist/img/issue-images/mock5.jpg"
-                                                                        alt="Image 2">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock6.jpg">
-                                                                    <img src="dist/img/issue-images/mock6.jpg"
-                                                                        alt="Image 3">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock7.jpg">
-                                                                    <img src="dist/img/issue-images/mock7.jpg"
-                                                                        alt="Image 4">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock8.jpg">
-                                                                    <img src="dist/img/issue-images/mock8.jpg"
-                                                                        alt="Image 5">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock9.jpg">
-                                                                    <img src="dist/img/issue-images/mock9.jpg"
-                                                                        alt="Image 6">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock10.jpg">
-                                                                    <img src="dist/img/issue-images/mock10.jpg"
-                                                                        alt="Image 7">
-                                                                </a>
-                                                            </div>
-
-                                                            <!-- Add more slides as needed -->
-                                                        </div>
-                                                                    </li>
-                                                                    <li><label for="" class="form-label historyLabel">Added
-                                                                            Notes : </label>
-                                                                        <ol class="commentpointslist">
-                                                                            <li>The tiles are missing under the shower
-                                                                                tray, some of the tiles are in the
-                                                                                bathroom.</li>
-                                                                            <li>The sink is clogged, the water drains
-                                                                                poorly, I wanted to clear it, but I
-                                                                                can't unscrew the plug.</li>
-                                                                        </ol>
-
-                                                                        <p>The tiles under the shower tray might have
-                                                                            been displaced due to water damage.
-                                                                            Recommend thorough inspection and
-                                                                            replacement.</p>
-                                                                    </li>
-                                                                </ul>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header taskHeader" id="headingTwo">
-                                        <div class="flex items-center gap-2 checkboxTask">
-                                            <input id="checkboxOutline9" class="size-4 cursor-pointer bg-white border border-slate-200 checked:bg-none dark:bg-zink-700 dark:border-zink-500 rounded-sm appearance-none arrow-none relative after:absolute after:content-['\eb7b'] after:top-0 after:left-0 after:font-remix after:leading-none after:opacity-0 checked:after:opacity-100 after:text-orange-500 checked:border-orange-500 dark:after:text-orange-500 dark:checked:border-orange-800" type="checkbox" value="">
-                                            <label for="checkboxOutline9" class="align-middle"></label>
-                                        </div>
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                           <div class="taskBlex">
-                                           <h6>Ac Repair</h6>
-                                           <span class="badge badge-soft-success my-1 me-2">Done</span>
-                                           </div>
-                                          
-                                        </button>
-                                        </h2>
-                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                        <ul class="issueHistoryList">
-                                        <li>
-                                                                        <label for="" class="form-label historyLabel ">Before Images & video
-                                                                            : </label>
-                                                                            <div class="multiImageSlider slider">
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock12.jpg">
-                                                                    <img src="dist/img/issue-images/mock12.jpg"
-                                                                        alt="Image 1">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock5.jpg">
-                                                                    <img src="dist/img/issue-images/mock5.jpg"
-                                                                        alt="Image 2">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock6.jpg">
-                                                                    <img src="dist/img/issue-images/mock6.jpg"
-                                                                        alt="Image 3">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock7.jpg">
-                                                                    <img src="dist/img/issue-images/mock7.jpg"
-                                                                        alt="Image 4">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock8.jpg">
-                                                                    <img src="dist/img/issue-images/mock8.jpg"
-                                                                        alt="Image 5">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock9.jpg">
-                                                                    <img src="dist/img/issue-images/mock9.jpg"
-                                                                        alt="Image 6">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock10.jpg">
-                                                                    <img src="dist/img/issue-images/mock10.jpg"
-                                                                        alt="Image 7">
-                                                                </a>
-                                                            </div>
-
-                                                            <!-- Add more slides as needed -->
-                                                        </div>
-                                                                    </li>
-                                                                    <li>
-                                                                        <label for="" class="form-label historyLabel ">After Images & video
-                                                                            : </label>
-                                                                            <div class="multiImageSlider slider">
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock12.jpg">
-                                                                    <img src="dist/img/issue-images/mock12.jpg"
-                                                                        alt="Image 1">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock5.jpg">
-                                                                    <img src="dist/img/issue-images/mock5.jpg"
-                                                                        alt="Image 2">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock6.jpg">
-                                                                    <img src="dist/img/issue-images/mock6.jpg"
-                                                                        alt="Image 3">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock7.jpg">
-                                                                    <img src="dist/img/issue-images/mock7.jpg"
-                                                                        alt="Image 4">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock8.jpg">
-                                                                    <img src="dist/img/issue-images/mock8.jpg"
-                                                                        alt="Image 5">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock9.jpg">
-                                                                    <img src="dist/img/issue-images/mock9.jpg"
-                                                                        alt="Image 6">
-                                                                </a>
-                                                            </div>
-                                                            <div class="galleryImage col">
-                                                                <a class="card card-border" data-fancybox="gallery"
-                                                                    href="dist/img/issue-images/mock10.jpg">
-                                                                    <img src="dist/img/issue-images/mock10.jpg"
-                                                                        alt="Image 7">
-                                                                </a>
-                                                            </div>
-
-                                                            <!-- Add more slides as needed -->
-                                                        </div>
-                                                                    </li>
-                                                                    <li><label for="" class="form-label historyLabel">Added
-                                                                            Notes : </label>
-                                                                        <ol class="commentpointslist">
-                                                                            <li>The tiles are missing under the shower
-                                                                                tray, some of the tiles are in the
-                                                                                bathroom.</li>
-                                                                            <li>The sink is clogged, the water drains
-                                                                                poorly, I wanted to clear it, but I
-                                                                                can't unscrew the plug.</li>
-                                                                        </ol>
-
-                                                                        <p>The tiles under the shower tray might have
-                                                                            been displaced due to water damage.
-                                                                            Recommend thorough inspection and
-                                                                            replacement.</p>
-                                                                    </li>
-
-                                                                </ul>
-                                        </div>
-                                        </div>
-                                    </div>
-                                
-                                    </div>
-
-                                  </div>
-                                     
-                                  </div>
-                                 
-                              </div>
-                          </div>
-
-
-                                            <div class="card card-border mb-lg-4 mb-3">
+                                                <div class="card card-border mb-lg-4 mb-3">
                                                     <div class="card-header card-header-action">
-                                                        
-                                                    <h5>Material detail</h5>
+
+                                                        <h5>Material detail</h5>
 
                                                         <!-- <div class="cardRightDetail_boxContainer">
                                                             <div class="flexcheckColumn">
@@ -1777,39 +2022,49 @@
                                                             <div class="flex-1 border-end CustomFlex_style">
                                                                 <div class="ticInfo_Item">
                                                                     <span class="d-block TicketDetails_info_title">
-                                                                    Supplier Name</span>
-                                                                    <span class="d-block text-capitalize ticketdetailinfo_data">
-                                                                        <span class="badge badge-soft-success  my-1  me-2">Romi</span></span>
+                                                                        Supplier Name</span>
+                                                                    <span
+                                                                        class="d-block text-capitalize ticketdetailinfo_data">
+                                                                        <span
+                                                                            class="badge badge-soft-success  my-1  me-2">Romi</span></span>
                                                                 </div>
                                                             </div>
                                                             <div class="flex-1 border-end CustomFlex_style">
                                                                 <div class="ticInfo_Item">
                                                                     <span class="d-block TicketDetails_info_title">
-                                                                    Receipt No.</span>
-                                                                    <span class="d-block text-capitalize ticketdetailinfo_data">
-                                                                        <span class="badge badge-soft-success  my-1  me-2"> #4567 </span></span>
+                                                                        Receipt No.</span>
+                                                                    <span
+                                                                        class="d-block text-capitalize ticketdetailinfo_data">
+                                                                        <span
+                                                                            class="badge badge-soft-success  my-1  me-2">
+                                                                            #4567 </span></span>
                                                                 </div>
                                                             </div>
                                                             <div class="flex-1 border-end CustomFlex_style">
                                                                 <div class="ticInfo_Item">
                                                                     <span class="d-block TicketDetails_info_title">
-                                                                    Receipt Image</span>
-                                                                    <span class="d-block text-capitalize ticketdetailinfo_data">
-                                                                    <a class="receiptImg" data-fancybox="gallery" href="dist/img/newimages/inspectionitems/Faucet2.jpg">
-                                                                    <img src="dist/img/newimages/inspectionitems/Faucet2.jpg" alt="Image 5">
-                                                                </a>
+                                                                        Receipt Image</span>
+                                                                    <span
+                                                                        class="d-block text-capitalize ticketdetailinfo_data">
+                                                                        <a class="receiptImg" data-fancybox="gallery"
+                                                                            href="dist/img/newimages/inspectionitems/Faucet2.jpg">
+                                                                            <img src="dist/img/newimages/inspectionitems/Faucet2.jpg"
+                                                                                alt="Image 5">
+                                                                        </a>
                                                                 </div>
                                                             </div>
 
                                                             <div class="flex-1 border-end CustomFlex_style">
                                                                 <div class="ticInfo_Item">
                                                                     <span class="d-block TicketDetails_info_title">
-                                                                    Total Cost</span>
-                                                                    <span class="d-block text-capitalize ticketdetailinfo_data">
-                                                                        <span class="badge badge-soft-success  my-1  me-2"> $08.00</span></span>
+                                                                        Total Cost</span>
+                                                                    <span
+                                                                        class="d-block text-capitalize ticketdetailinfo_data">
+                                                                        <span
+                                                                            class="badge badge-soft-success  my-1  me-2">
+                                                                            $08.00</span></span>
                                                                 </div>
                                                             </div>
-                                                            
 
                                                         </div>
                                                     </div>
@@ -1830,22 +2085,22 @@
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
-                                                            <tr>
-                                                                <td>Screw</td>
-                                                                <td>2</td>
-                                                                <td>$ 1</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Screw Driver</td>
-                                                                <td>2</td>
-                                                                <td>$ 1</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>retractation</td>
-                                                                <td>6</td>
-                                                                <td>$ 6</td>
-                                                            </tr>   
-                                                         </tbody>
+                                                                    <tr>
+                                                                        <td>Screw</td>
+                                                                        <td>2</td>
+                                                                        <td>$ 1</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Screw Driver</td>
+                                                                        <td>2</td>
+                                                                        <td>$ 1</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>retractation</td>
+                                                                        <td>6</td>
+                                                                        <td>$ 6</td>
+                                                                    </tr>
+                                                                </tbody>
                                                             </table>
                                                         </div>
 
@@ -1855,187 +2110,216 @@
 
                                                 <div class="row">
                                                     <div class="col-lg-12">
-                                                    <div class="card">
-                                                    <div class="card-header">
-                                                        <div class="card-title customcardTitle">
-                                                            <h6>Comments</h6>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="card-body">
-
-                                                        <div class="commentReplyContainer">
-                                                            <ul id="dummy_avatar"
-                                                                class="list-unstyled chat-single-list">
-                                                                <li class="media received">
-                                                                    <div class="avatar avatar-xs avatar-rounded">
-                                                                        <img src="dist/img/newimages/users/userdummy.png"
-                                                                            alt="user" class="avatar-img">
-                                                                    </div>
-                                                                    <div class="media-body">
-                                                                        <div class="msg-box">
-                                                                            <div>
-                                                                                <p>Hi, I noticed some water leakage in
-                                                                                    the ceiling of my bedroom. It's been
-                                                                                    happening for a few days now, and
-                                                                                    I'm worried it might cause damage to
-                                                                                    the property. Can you please send
-                                                                                    someone to inspect and fix it as
-                                                                                    soon as possible?</p>
-                                                                                <div class="replyUserAuthor">
-                                                                                    <a href="view-user-details.php">Danial
-                                                                                        Craig</a>
-                                                                                    <div class="commentdateandtime">
-                                                                                        11/04/2024 00:04</div>
-                                                                                    <div
-                                                                                        class="comment_visibilityStatus">
-                                                                                        Status: <span
-                                                                                            class="badge badge-soft-success  my-1  me-2">Everyone</span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
-
-                                                                    </div>
-                                                                </li>
-
-                                                                <li class="media sent">
-                                                                    <div class="media-body">
-                                                                        <div class="msg-box">
-                                                                            <div>
-                                                                                <p>Thank you for bringing this to our
-                                                                                    attention. We apologize for any
-                                                                                    inconvenience caused by the water
-                                                                                    leakage in your bedroom. Our
-                                                                                    maintenance team will be dispatched
-                                                                                    immediately to inspect the issue and
-                                                                                    take appropriate action to resolve
-                                                                                    it promptly. Your safety and comfort
-                                                                                    are our top priorities, and we
-                                                                                    appreciate your patience as we work
-                                                                                    to address this matter.</p>
-                                                                                <div class="replyUserAuthor">
-                                                                                    <a href="view-user-details.php">Morgan
-                                                                                        Freeman</a>
-                                                                                    <div class="commentdateandtime">
-                                                                                        11/04/2024 00:04</div>
-                                                                                    <div
-                                                                                        class="comment_visibilityStatus">
-                                                                                        Status: <span
-                                                                                            class="badge badge-soft-success  my-1  me-2">Staff
-                                                                                            Only </span></div>
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
-                                                                    </div>
-                                                                </li>
-
-                                                                <li class="media sent">
-                                                                    <div class="media-body">
-                                                                        <div class="msg-box">
-                                                                            <div>
-                                                                                <p>We'll send someone ASAP to fix it.
-                                                                                    Thanks for letting us know.</p>
-                                                                                <div class="replyUserAuthor">
-                                                                                    <a href="view-user-details.php">Morgan
-                                                                                        Freeman</a>
-                                                                                    <div class="commentdateandtime">
-                                                                                        11/04/2024 00:04</div>
-                                                                                    <div
-                                                                                        class="comment_visibilityStatus">
-                                                                                        Status: <span
-                                                                                            class="badge badge-soft-success  my-1  me-2">Staff
-                                                                                            Only </span></div>
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
-                                                                    </div>
-                                                                </li>
-                                                                <li class="media received">
-                                                                    <div class="avatar avatar-xs avatar-rounded">
-                                                                        <img src="dist/img/newimages/users/userdummy.png"
-                                                                            alt="user" class="avatar-img">
-                                                                    </div>
-                                                                    <div class="media-body">
-                                                                        <div class="msg-box">
-                                                                            <div>
-                                                                                <p>Thanks</p>
-                                                                                <div class="replyUserAuthor">
-                                                                                    <a href="view-user-details.php">Danial
-                                                                                        Craig</a>
-                                                                                    <div class="commentdateandtime">
-                                                                                        11/04/2024 00:04</div>
-                                                                                    <div
-                                                                                        class="comment_visibilityStatus">
-                                                                                        Status: <span
-                                                                                            class="badge badge-soft-success  my-1  me-2">Everyone</span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
-                                                                    </div>
-                                                                </li>
-                                                            </ul>
-
-                                                        </div>
-                                                    </div>
-                                                    <footer class="chat-footer">
-
-                                                        <div class="row">
-                                                            <div class="col-lg-9">
-                                                                <div class="input-group mt-4">
-                                                                    <span class="input-affix-wrapper">
-                                                                        <input type="text" id="input_msg_send_chatapp"
-                                                                            name="send-msg"
-                                                                            class="input-msg-send form-control rounded-input"
-                                                                            placeholder="Type your message...">
-                                                                        <span class="input-suffix">
-                                                                            <button
-                                                                                class="btn btn-icon btn-flush-primary btn-rounded btn-send">
-                                                                                <span class="icon"><span
-                                                                                        class="feather-icon">
-                                                                                        <iconify-icon
-                                                                                            icon="radix-icons:arrow-right">
-                                                                                        </iconify-icon>
-                                                                                    </span></span>
-                                                                            </button>
-                                                                        </span>
-                                                                    </span>
+                                                        <div class="card">
+                                                            <div class="card-header">
+                                                                <div class="card-title customcardTitle">
+                                                                    <h6>Comments</h6>
                                                                 </div>
-                                                            </div>
-                                                            <div class="col-lg-3">
-                                                                <div class="form-group  formgroup_marginNone">
-                                                                    <label class="form-label">Visibility</label>
-                                                                    <select name="" id="" class="form-control select2">
-                                                                        <option disabled="" selected="" value="">Please
-                                                                            Select...</option>
-                                                                        <option value="1">Everyone</option>
-                                                                        <option value="2">Staff Only</option>
-                                                                        <option value="3">Landlord</option>
-                                                                        <option value="4">Tenant</option>
 
-                                                                    </select>
+                                                            </div>
+                                                            <div class="card-body">
+
+                                                                <div class="commentReplyContainer">
+                                                                    <ul id="dummy_avatar"
+                                                                        class="list-unstyled chat-single-list">
+                                                                        <li class="media received">
+                                                                            <div
+                                                                                class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <div class="msg-box">
+                                                                                    <div>
+                                                                                        <p>Hi, I noticed some water
+                                                                                            leakage in
+                                                                                            the ceiling of my bedroom.
+                                                                                            It's been
+                                                                                            happening for a few days
+                                                                                            now, and
+                                                                                            I'm worried it might cause
+                                                                                            damage to
+                                                                                            the property. Can you please
+                                                                                            send
+                                                                                            someone to inspect and fix
+                                                                                            it as
+                                                                                            soon as possible?</p>
+                                                                                        <div class="replyUserAuthor">
+                                                                                            <a
+                                                                                                href="view-user-details.php">Danial
+                                                                                                Craig</a>
+                                                                                            <div
+                                                                                                class="commentdateandtime">
+                                                                                                11/04/2024 00:04</div>
+                                                                                            <div
+                                                                                                class="comment_visibilityStatus">
+                                                                                                Status: <span
+                                                                                                    class="badge badge-soft-success  my-1  me-2">Everyone</span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </li>
+
+                                                                        <li class="media sent">
+                                                                            <div class="media-body">
+                                                                                <div class="msg-box">
+                                                                                    <div>
+                                                                                        <p>Thank you for bringing this
+                                                                                            to our
+                                                                                            attention. We apologize for
+                                                                                            any
+                                                                                            inconvenience caused by the
+                                                                                            water
+                                                                                            leakage in your bedroom. Our
+                                                                                            maintenance team will be
+                                                                                            dispatched
+                                                                                            immediately to inspect the
+                                                                                            issue and
+                                                                                            take appropriate action to
+                                                                                            resolve
+                                                                                            it promptly. Your safety and
+                                                                                            comfort
+                                                                                            are our top priorities, and
+                                                                                            we
+                                                                                            appreciate your patience as
+                                                                                            we work
+                                                                                            to address this matter.</p>
+                                                                                        <div class="replyUserAuthor">
+                                                                                            <a
+                                                                                                href="view-user-details.php">Morgan
+                                                                                                Freeman</a>
+                                                                                            <div
+                                                                                                class="commentdateandtime">
+                                                                                                11/04/2024 00:04</div>
+                                                                                            <div
+                                                                                                class="comment_visibilityStatus">
+                                                                                                Status: <span
+                                                                                                    class="badge badge-soft-success  my-1  me-2">Staff
+                                                                                                    Only </span></div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+
+                                                                        <li class="media sent">
+                                                                            <div class="media-body">
+                                                                                <div class="msg-box">
+                                                                                    <div>
+                                                                                        <p>We'll send someone ASAP to
+                                                                                            fix it.
+                                                                                            Thanks for letting us know.
+                                                                                        </p>
+                                                                                        <div class="replyUserAuthor">
+                                                                                            <a
+                                                                                                href="view-user-details.php">Morgan
+                                                                                                Freeman</a>
+                                                                                            <div
+                                                                                                class="commentdateandtime">
+                                                                                                11/04/2024 00:04</div>
+                                                                                            <div
+                                                                                                class="comment_visibilityStatus">
+                                                                                                Status: <span
+                                                                                                    class="badge badge-soft-success  my-1  me-2">Staff
+                                                                                                    Only </span></div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="media received">
+                                                                            <div
+                                                                                class="avatar avatar-xs avatar-rounded">
+                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                    alt="user" class="avatar-img">
+                                                                            </div>
+                                                                            <div class="media-body">
+                                                                                <div class="msg-box">
+                                                                                    <div>
+                                                                                        <p>Thanks</p>
+                                                                                        <div class="replyUserAuthor">
+                                                                                            <a
+                                                                                                href="view-user-details.php">Danial
+                                                                                                Craig</a>
+                                                                                            <div
+                                                                                                class="commentdateandtime">
+                                                                                                11/04/2024 00:04</div>
+                                                                                            <div
+                                                                                                class="comment_visibilityStatus">
+                                                                                                Status: <span
+                                                                                                    class="badge badge-soft-success  my-1  me-2">Everyone</span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
 
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                            <footer class="chat-footer">
 
-                                                    </footer>
-                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-lg-9">
+                                                                        <div class="input-group mt-4">
+                                                                            <span class="input-affix-wrapper">
+                                                                                <input type="text"
+                                                                                    id="input_msg_send_chatapp"
+                                                                                    name="send-msg"
+                                                                                    class="input-msg-send form-control rounded-input"
+                                                                                    placeholder="Type your message...">
+                                                                                <span class="input-suffix">
+                                                                                    <button
+                                                                                        class="btn btn-icon btn-flush-primary btn-rounded btn-send">
+                                                                                        <span class="icon"><span
+                                                                                                class="feather-icon">
+                                                                                                <iconify-icon
+                                                                                                    icon="radix-icons:arrow-right">
+                                                                                                </iconify-icon>
+                                                                                            </span></span>
+                                                                                    </button>
+                                                                                </span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3">
+                                                                        <div class="form-group  formgroup_marginNone">
+                                                                            <label class="form-label">Visibility</label>
+                                                                            <select name="" id=""
+                                                                                class="form-control select2">
+                                                                                <option disabled="" selected=""
+                                                                                    value="">Please
+                                                                                    Select...</option>
+                                                                                <option value="1">Everyone</option>
+                                                                                <option value="2">Staff Only</option>
+                                                                                <option value="3">Landlord</option>
+                                                                                <option value="4">Tenant</option>
+
+                                                                            </select>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </footer>
+                                                        </div>
                                                     </div>
 
                                                     <div class="savechangesformContainer">
-                                                <button type="submit" class="buttonInfOUpdate">
-                                                    <iconify-icon icon="fluent:save-32-regular">
-                                                    </iconify-icon>
-                                                    Save Changes
-                                                </button>
-                                            </div>
-
+                                                        <button type="submit" class="buttonInfOUpdate">
+                                                            <iconify-icon icon="fluent:save-32-regular">
+                                                            </iconify-icon>
+                                                            Save Changes
+                                                        </button>
+                                                    </div>
 
                                                 </div>
                                             </div>
@@ -5266,6 +5550,91 @@
 </div>
 <!--/ Offcanvas Wrapper-->
 
+<!-- add material modal -->
+<div id="property_inspection_modal" class="modal customwizard_formStyle sm_modalCustom fade" tabindex="-1" role="dialog"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <form action="" method="post" id="wizardForm">
+            <div class="modal-content">
+
+                <div class="ModalheaderArea">
+                    <h5 class="mb-4">Add Material</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="materialaddmodal_wrap">
+                        <div class="stepheadingheader">
+                            <div class="steptitleIcon">
+                                <iconify-icon icon="carbon:inspection"></iconify-icon>
+                            </div>
+                            <h1>What materials are you adding?</h2>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-label">Supplier</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option disabled="" selected="" value="">Please Select...</option>
+                                        <option value="1">Danial Craig</option>
+                                        <option value="2">Emily Blunt</option>
+                                        <option value="3">John Doe</option>
+                                        <option value="4">Sophia Turner</option>
+                                        <option value="5">Michael Jordan</option>
+                                        <option value="6">Olivia Smith</option>
+
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Product</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option disabled="" selected="" value="">Please Select...</option>
+                                        <option value="Ac Motor">Ac Motor</option>
+                                        <option value="Compressor">Compressor</option>
+                                        <option value="Air Filter">Air Filter</option>
+                                        <option value="Brake Pads">Brake Pads</option>
+
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Product Qty. <span class="RequiredField_badge">*</span></label>
+                                        <input class="form-control" type="number" name="" placeholder="">
+                                    </div>
+                                </div>
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <div class="form-navigation canvasFooterContainer CustomModal_footer taskadd_footer">
+
+                    <div class="eventSubmit_container">
+                    <button type="button" class="canvascancel_button commonCanvas_buttonFooter" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="submitButton canvasSubmit_button commonCanvas_buttonFooter"
+                            style="display: inline-block;">Submit</button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+<!-- add material popup -->
+
 <?php include('footer.php') ?>
 
 <!-- input lenthy content show js -->
@@ -5356,17 +5725,15 @@
         ]
     });
     // Refresh slick slider when accordion is shown
-    $('#collapseOne').on('shown.bs.collapse', function () {
-            $('.slider').slick('setPosition');
-        });
-
-        $('#collapseTwo').on('shown.bs.collapse', function () {
-            $('.slider').slick('setPosition');
-        });
-
-        $('#collapseThree').on('shown.bs.collapse', function () {
-            $('.slider').slick('setPosition');
-        });
+    $('#collapseOne').on('shown.bs.collapse', function() {
+        $('.slider').slick('setPosition');
+    });
+    $('#collapseTwo').on('shown.bs.collapse', function() {
+        $('.slider').slick('setPosition');
+    });
+    $('#collapseThree').on('shown.bs.collapse', function() {
+        $('.slider').slick('setPosition');
+    });
 </script>
 
 <!-- slick  slider for multple images end -->
@@ -5719,19 +6086,16 @@
 </script>
 <!-- filepod image uploader end-->
 
-
 <!-- Task All Selcte checkbox js -->
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const allSelectCheck = document.getElementById('allSelectCheck');
         const taskCheckboxes = document.querySelectorAll('.taskHeader input[type="checkbox"]');
-
         allSelectCheck.addEventListener('change', function() {
             taskCheckboxes.forEach(checkbox => {
                 checkbox.checked = allSelectCheck.checked;
             });
         });
-
         taskCheckboxes.forEach(checkbox => {
             checkbox.addEventListener('change', function() {
                 if (!checkbox.checked) {
@@ -5744,7 +6108,3 @@
         });
     });
 </script>
-
-
-
-

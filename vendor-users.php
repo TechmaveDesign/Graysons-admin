@@ -55,7 +55,7 @@
                                 <a class="dropdown-item" href="#">Import</a>
                             </div>
                             <button class="btn btn-sm commonAddnewButton btn-primary ms-3" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasBottom" aria-controls="offcanvasExample"><span><span
+                                data-bs-target="#addVendorcanvas" aria-controls="offcanvasExample"><span><span
                                         class="icon"><span class="feather-icon"><svg xmlns="http://www.w3.org/2000/svg"
                                                 width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -63,7 +63,7 @@
                                                 <line x1="12" y1="5" x2="12" y2="19"></line>
                                                 <line x1="5" y1="12" x2="19" y2="12"></line>
                                             </svg></span></span><span class="btn-text">Add new
-                                        User</span></span></button>
+                                        Vendor</span></span></button>
 
                             <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover hk-navbar-togglable d-sm-inline-block d-none"
                                 href="#" data-bs-toggle="tooltip" data-placement="top" title=""
@@ -938,18 +938,13 @@
 <!-- /Page Body -->
 </div>
 
-<!-- add user offcanvas -->
-<div class="offcanvas offcanvas-bottom custombottm_offcanvasStyle" tabindex="-1" id="offcanvasBottom"
+<!-- add Vendor offcanvas -->
+<div class="offcanvas offcanvas-bottom custombottm_offcanvasStyle" tabindex="-1" id="addVendorcanvas"
     aria-labelledby="offcanvasTopLabel">
     <div class="offcanvas-header custom-canvas-header">
         <div class="canvas-header-title">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                class="ct-icon" style="min-width: 20px; min-height: 20px; color: var(--ct-gray-6);" data-testid="icon">
-                <path
-                    d="M7.3 22.5C6.8 22.5 6.375 22.325 6.025 21.975C5.675 21.625 5.5 21.2 5.5 20.7V3.3C5.5 2.8 5.675 2.375 6.025 2.025C6.375 1.675 6.8 1.5 7.3 1.5H16.7C17.2 1.5 17.625 1.675 17.975 2.025C18.325 2.375 18.5 2.8 18.5 3.3V20.7C18.5 21.2 18.325 21.625 17.975 21.975C17.625 22.325 17.2 22.5 16.7 22.5H7.3ZM7 18.25H17V5.75H7V18.25ZM7 19.75V20.7C7 20.7667 7.03333 20.8333 7.1 20.9C7.16667 20.9667 7.23333 21 7.3 21H16.7C16.7667 21 16.8333 20.9667 16.9 20.9C16.9667 20.8333 17 20.7667 17 20.7V19.75H7ZM7 4.25H17V3.3C17 3.23333 16.9667 3.16667 16.9 3.1C16.8333 3.03333 16.7667 3 16.7 3H7.3C7.23333 3 7.16667 3.03333 7.1 3.1C7.03333 3.16667 7 3.23333 7 3.3V4.25ZM7 3V4.25V3ZM7 21V19.75V21Z"
-                    fill="currentColor"></path>
-            </svg>
-            Add New User
+            <iconify-icon icon="si:user-duotone"></iconify-icon>
+            Add New Vendor
         </div>
         <div class="closeCanvasContainer">
             <button type="button" class="canvascloseButton" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -965,199 +960,173 @@
 
     </div>
     <div class="Canvas_ct_divider"></div>
-    <form class="" action="users.php">
+    <form class="" action="vendor-users.php">
         <div class="offcanvas-body">
 
             <div class="addingForm_Container">
-                <div class="add-users-modal-body-table-header text-headline-6">Add New User to System</div>
+                <div class="add-users-modal-body-table-header text-headline-6">Add Vendor Details</div>
 
                 <div class="formstartcontainer">
                     <div class="row">
-                        <div class="col-lg-9">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label class="form-label">Title</label>
-                                        <input type="text" class="form-control" id="Title">
-                                    </div>
 
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="firstname" class="form-label">First Name</label>
-                                        <input type="text" class="form-control" id="firstname">
-                                    </div>
-
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="Middle" class="form-label">Middle Name</label>
-                                        <input type="text" class="form-control" id="Middle">
-                                    </div>
-
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="Surname" class="form-label">Surname</label>
-                                        <input type="text" class="form-control" id="Surname">
-                                    </div>
-
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="Email" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="Email">
-                                    </div>
-
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="Contact" class="form-label"> Contact Number</label>
-                                        <input type="phone" class="form-control" id="Contact">
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="Contact" class="form-label"> Alt Contact Number</label>
-                                        <input type="phone" class="form-control" id="Contact">
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label class="form-label">Date of Birth</label>
-                                        <input class="form-control customdataPicker" type="text" name=""
-                                            placeholder="" />
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="addressline1" class="form-label"> Address Line 1</label>
-                                        <input type="text" class="form-control" id="addressline1">
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="addressline2" class="form-label"> Address Line 2</label>
-                                        <input type="text" class="form-control" id="addressline2">
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="Town/City" class="form-label"> Town/City</label>
-                                        <input type="text" class="form-control" id="Town/City">
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="County" class="form-label"> County</label>
-                                        <input type="text" class="form-control" id="County">
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="Postcode" class="form-label"> Postcode</label>
-                                        <input type="text" class="form-control" id="Postcode">
-                                    </div>
-
-                                </div>
-
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                                            <label class="form-check-label" for="gridCheck">
-                                                Check me out
-                                            </label>
-                                        </div>
-
-                                    </div>
-                                </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label for="vendorName" class="form-label">Vendor Name <span
+                                        class="RequiredField_badge">*</span></label>
+                                <input type="text" class="form-control" id="vendorName" placeholder="Enter vendor name">
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label class="form-label">Department</label>
-                                    <select name="" id="" class="form-control select2">
-                                        <option disabled="" selected="" value="">Please Select...</option>
 
-                                        <option value="1">Account</option>
-                                        <option value="2">Compliances Ticket </option>
-                                        <option value="3">General</option>
-                                        <option value="4">Maintenance</option>
-                                    </select>
-
-                                </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label for="vendorEmail" class="form-label">Email Address <span
+                                        class="RequiredField_badge">*</span></label>
+                                <input type="email" class="form-control" id="vendorEmail"
+                                    placeholder="Enter email address">
                             </div>
+                        </div>
 
-                            <div class="RoleAddContiner">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h2>Assign Role</h2>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="form-label">Contact
+                                    Number</label>
+                                <div class="pn-select" id="js_pn-select" style="--prefix-length: 2">
+                                    <!-- Selected prefix -->
+                                    <button class="pn-selected-prefix" aria-label="Select phonenumber prefix"
+                                        id="js_trigger-dropdown" tabindex="1">
+                                        <img class="pn-selected-prefix__flag" id="js_selected-flag"
+                                            src="https://flagpedia.net/data/flags/icon/36x27/nl.png" />
+                                        <!-- prettier-ignore -->
+                                        <svg class="pn-selected-prefix__icon" xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#081626"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="6 9 12 15 18 9" />
+                                        </svg>
+                                    </button>
+                                    <!-- Phone number input -->
+                                    <div class="pn-input">
+                                        <div class="pn-input__container">
+                                            <input class="pn-input__prefix" value="+31" type="text"
+                                                name="phonenumber-prefix" id="js_number-prefix" tabindex="-1" />
+                                            <input class="pn-input__phonenumber" id="js_input-phonenumber" type="tel"
+                                                name="phonenumber" pattern="\d*" value="" placeholder=" "
+                                                autocomplete="nope" max="10" tabindex="0" />
+                                            <small class="pn-input__error">
+                                                This is not a valid
+                                                phone number
+                                            </small>
+                                        </div>
                                     </div>
-
-                                    <div class="card-body">
-                                        <div class="RolesListContainer">
-                                            <div class="dropdown-item flexdropItem">
-                                                <div class="d-flex align-items-center">
-                                                    <span class="form-check mb-0"><input type="checkbox"
-                                                            class="form-check-input " id="chk_sel_3"><label
-                                                            class="form-check-label"
-                                                            for="chk_sel_3"></label></span><span
-                                                        class="contact-star"></span>
-                                                </div>
-                                                Tenant
-                                            </div>
-
-                                            <div class="dropdown-item flexdropItem">
-                                                <div class="d-flex align-items-center">
-                                                    <span class="form-check mb-0"><input type="checkbox"
-                                                            class="form-check-input " id="chk_sel_3"><label
-                                                            class="form-check-label"
-                                                            for="chk_sel_3"></label></span><span
-                                                        class="contact-star"></span>
-                                                </div>
-                                                Landlord
-                                            </div>
-                                            <div class="dropdown-item flexdropItem">
-                                                <div class="d-flex align-items-center">
-                                                    <span class="form-check mb-0"><input type="checkbox"
-                                                            class="form-check-input " id="chk_sel_3"><label
-                                                            class="form-check-label"
-                                                            for="chk_sel_3"></label></span><span
-                                                        class="contact-star"></span>
-                                                </div>
-                                                Staff User
-                                            </div>
-                                            <div class="dropdown-item flexdropItem">
-                                                <div class="d-flex align-items-center">
-                                                    <span class="form-check mb-0"><input type="checkbox"
-                                                            class="form-check-input " id="chk_sel_3"><label
-                                                            class="form-check-label"
-                                                            for="chk_sel_3"></label></span><span
-                                                        class="contact-star"></span>
-                                                </div>
-                                                System User
-                                            </div>
-
+                                    <!-- Dropdown -->
+                                    <div class="pn-dropdown" id="js_dropdown">
+                                        <div class="pn-search">
+                                            <!-- prettier-ignore -->
+                                            <svg class="pn-search__icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                                height="24" viewBox="0 0 24 24" fill="none" stroke="#103155"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="11" cy="11" r="8">
+                                                </circle>
+                                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                            </svg>
+                                            <input placeholder="Search for countries" class="pn-search__input search"
+                                                type="search" id="js_search-input" autocomplete="nope" />
+                                        </div>
+                                        <!-- Country list -->
+                                        <ul class="pn-list list" id="js_list"></ul>
+                                        <div class="pn-list-item pn-list-item--no-results" style="display: none"
+                                            id="js_no-results-found">
+                                            No results found
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="Contact" class="form-label"> Alt Contact Number</label>
+                                <input type="phone" class="form-control" id="Contact">
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="addressline1" class="form-label"> Address Line 1 <span
+                                        class="RequiredField_badge">*</span></label>
+                                <input type="text" class="form-control" id="addressline1">
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="addressline2" class="form-label"> Address Line 2</label>
+                                <input type="text" class="form-control" id="addressline2">
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="Town/City" class="form-label"> Town/City <span
+                                        class="RequiredField_badge">*</span></label>
+                                <input type="text" class="form-control" id="Town/City">
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="County" class="form-label"> Country <span
+                                        class="RequiredField_badge">*</span></label>
+                                <input type="text" class="form-control" id="County">
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="Postcode" class="form-label"> Postcode <span
+                                        class="RequiredField_badge">*</span></label>
+                                <input type="text" class="form-control" id="Postcode">
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="vendorCategory" class="form-label">Category <span
+                                        class="RequiredField_badge">*</span></label>
+                                <select class="form-control vendor-category-select select2" required>
+                                    <option value="" disabled>Select category</option>
+                                    <option value="Electrical Services">Electrical Services</option>
+                                    <option value="Plumbing Services">Plumbing Services</option>
+                                    <option value="Catering Services">Catering Services</option>
+                                    <option value="Cleaning Services">Cleaning Services</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4 other-category-div" style="display: none;">
+                            <div class="form-group">
+                                <label for="otherCategoryInput" class="form-label">Other Category</label>
+                                <input type="text" class="form-control other-category-input"
+                                    placeholder="Enter other category">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="vendorServiceArea" class="form-label">Service Area <span
+                                        class="RequiredField_badge">*</span></label>
+                                <input type="text" class="form-control" id="vendorServiceArea"
+                                    placeholder="Enter service area" required>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -1171,7 +1140,7 @@
         </div>
     </form>
 </div>
-<!-- add user offcanvas modal end -->
+<!-- add Vendor end -->
 
 <?php include('footer.php') ?>
 
@@ -1242,3 +1211,34 @@
     });
 </script>
 <!-- user Delete alert end-->
+
+<!-- add vendor modal > other category option functionality js start -->
+<script>
+    $(document).ready(function() {
+        // Initialize Select2 for all category dropdowns
+        $('.vendor-category-select').select2();
+        // Listen for the change event on any Select2 dropdown with the `vendor-category-select` class
+        $(document).on('change', '.vendor-category-select', function() {
+            const $parentForm = $(this).closest('form'); // Find the parent form of the dropdown
+            const selectedValue = $(this).val();
+            // Find the corresponding "Other Category" input field within the same form
+            const $otherCategoryDiv = $parentForm.find('.other-category-div');
+            const $otherCategoryInput = $parentForm.find('.other-category-input');
+            if (selectedValue === 'Other') {
+                $otherCategoryDiv.show(); // Show the "Other Category" input field
+                $otherCategoryInput.attr('required', 'required'); // Make it required
+            } else {
+                $otherCategoryDiv.hide(); // Hide the "Other Category" input field
+                $otherCategoryInput.removeAttr('required'); // Remove the required attribute
+                $otherCategoryInput.val(''); // Clear the input value
+            }
+        });
+    });
+</script>
+<!-- end -->
+
+<!-- phone number with country code custom code js and css -->
+<link rel="stylesheet" href="dist/customplugins/phonecountry/phone-with-country.css">
+<script src="dist/customplugins/phonecountry/list.min.js"></script>
+<script src="dist/customplugins/phonecountry/phone-with-country.js"></script>
+<!-- phone number with country code custom code js and css end-->

@@ -63,7 +63,7 @@
                                                 <line x1="12" y1="5" x2="12" y2="19"></line>
                                                 <line x1="5" y1="12" x2="19" y2="12"></line>
                                             </svg></span></span><span class="btn-text">Add new
-                                        User</span></span></button>
+                                        Landlord</span></span></button>
 
                             <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover hk-navbar-togglable d-sm-inline-block d-none"
                                 href="#" data-bs-toggle="tooltip" data-placement="top" title=""
@@ -969,11 +969,11 @@
         <div class="offcanvas-body">
 
             <div class="addingForm_Container">
-                <div class="add-users-modal-body-table-header text-headline-6">Add New User to System</div>
+                <div class="add-users-modal-body-table-header text-headline-6">Add New landlord User to the System</div>
 
                 <div class="formstartcontainer">
                     <div class="row">
-                        <div class="col-lg-9">
+                        <div class="col-lg-12">
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="form-group">
@@ -1051,6 +1051,14 @@
                                 </div>
 
                                 <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label class="form-label">Country</label>
+                                            <select class="form-control select2 countrySelect">
+                                                <option disabled selected value="">Please Select...</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="Town/City" class="form-label"> Town/City</label>
                                         <input type="text" class="form-control" id="Town/City">
@@ -1058,13 +1066,7 @@
 
                                 </div>
 
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="County" class="form-label"> County</label>
-                                        <input type="text" class="form-control" id="County">
-                                    </div>
-
-                                </div>
+                               
 
                                 <div class="col-md-3">
                                     <div class="form-group">
@@ -1074,90 +1076,10 @@
 
                                 </div>
 
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                                            <label class="form-check-label" for="gridCheck">
-                                                Check me out
-                                            </label>
-                                        </div>
-
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label class="form-label">Department</label>
-                                    <select name="" id="" class="form-control select2">
-                                        <option disabled="" selected="" value="">Please Select...</option>
-
-                                        <option value="1">Account</option>
-                                        <option value="2">Compliances Ticket </option>
-                                        <option value="3">General</option>
-                                        <option value="4">Maintenance</option>
-                                    </select>
-
-                                </div>
-                            </div>
-
-                            <div class="RoleAddContiner">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h2>Assign Role</h2>
-                                    </div>
-
-                                    <div class="card-body">
-                                        <div class="RolesListContainer">
-                                            <div class="dropdown-item flexdropItem">
-                                                <div class="d-flex align-items-center">
-                                                    <span class="form-check mb-0"><input type="checkbox"
-                                                            class="form-check-input " id="chk_sel_3"><label
-                                                            class="form-check-label"
-                                                            for="chk_sel_3"></label></span><span
-                                                        class="contact-star"></span>
-                                                </div>
-                                                Tenant
-                                            </div>
-
-                                            <div class="dropdown-item flexdropItem">
-                                                <div class="d-flex align-items-center">
-                                                    <span class="form-check mb-0"><input type="checkbox"
-                                                            class="form-check-input " id="chk_sel_3"><label
-                                                            class="form-check-label"
-                                                            for="chk_sel_3"></label></span><span
-                                                        class="contact-star"></span>
-                                                </div>
-                                                Landlord
-                                            </div>
-                                            <div class="dropdown-item flexdropItem">
-                                                <div class="d-flex align-items-center">
-                                                    <span class="form-check mb-0"><input type="checkbox"
-                                                            class="form-check-input " id="chk_sel_3"><label
-                                                            class="form-check-label"
-                                                            for="chk_sel_3"></label></span><span
-                                                        class="contact-star"></span>
-                                                </div>
-                                                Staff User
-                                            </div>
-                                            <div class="dropdown-item flexdropItem">
-                                                <div class="d-flex align-items-center">
-                                                    <span class="form-check mb-0"><input type="checkbox"
-                                                            class="form-check-input " id="chk_sel_3"><label
-                                                            class="form-check-label"
-                                                            for="chk_sel_3"></label></span><span
-                                                        class="contact-star"></span>
-                                                </div>
-                                                System User
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -1242,3 +1164,74 @@
     });
 </script>
 <!-- user Delete alert end-->
+
+<!-- genareta MPIN and hide show functionality start -->
+<script>
+    function validateMPIN(input) {
+    // Ensure only numeric values are entered
+    input.value = input.value.replace(/\D/g, '');
+
+    // Restrict to 4 digits
+    if (input.value.length > 4) {
+        input.value = input.value.slice(0, 4);
+    }
+}
+
+function toggleMPINVisibility() {
+    const mpinInput = document.getElementById('mpin');
+    const toggleIcon = document.querySelector('.toggle-passwordmpin');
+
+    if (mpinInput.type === 'password') {
+        mpinInput.type = 'text';
+        toggleIcon.classList.remove('fa-eye');
+        toggleIcon.classList.add('fa-eye-slash');
+    } else {
+        mpinInput.type = 'password';
+        toggleIcon.classList.remove('fa-eye-slash');
+        toggleIcon.classList.add('fa-eye');
+    }
+}
+
+ </script>
+ <!-- genarete MPIN and hide show functionality end -->
+
+ <!-- form country option dynamic using Json  -->
+<script>
+    $(document).ready(function() {
+        // Initialize select2
+        $('.countrySelect').select2({
+            placeholder: "Please Select...",
+            allowClear: true
+        });
+        // Fetch country data from the API
+        $.ajax({
+            url: 'all-countries.json', // API URL to get all countries
+            method: 'GET',
+            dataType: 'json',
+            success: function(response) {
+                var $select = $('.countrySelect');
+                $select.empty(); // Clear existing options
+                $select.append(
+                    '<option disabled selected value="">Please Select...</option>'
+                ); // Add placeholder option
+                // Iterate over the response data and populate options
+                $.each(response, function(index, country) {
+                    var countryName = country.name.common; // Access the common name
+                    var countryCode = country.cca2; // Access the country code (2-letter)
+                    // Check if countryName and countryCode are not undefined
+                    if (countryName && countryCode) {
+                        // Add each country as an option in the select
+                        $select.append('<option value="' + countryCode + '">' +
+                            countryName + '</option>');
+                    }
+                });
+                // Reinitialize Select2 to apply new options
+                $('.countrySelect').select2();
+            },
+            error: function(xhr, status, error) {
+                console.error('Failed to fetch country data:', error);
+            }
+        });
+    });
+</script>
+<!-- form country option dynamic using Json  -->

@@ -62,8 +62,15 @@
                                                 stroke-linejoin="round" class="feather feather-plus">
                                                 <line x1="12" y1="5" x2="12" y2="19"></line>
                                                 <line x1="5" y1="12" x2="19" y2="12"></line>
-                                            </svg></span></span><span class="btn-text">Add new
-                                        User</span></span></button>
+                                            </svg></span></span><span class="btn-text">Add New Staff
+                                    </span>
+                                </span>
+                            </button>
+
+                            <div class="curtommodern_tooltip" style=""
+                                data-tippy-content="Click to add a new user to the system.">
+                                <iconify-icon icon="stash:question" width="24" height="24"></iconify-icon>
+                            </div>
 
                             <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover hk-navbar-togglable d-sm-inline-block d-none"
                                 href="#" data-bs-toggle="tooltip" data-placement="top" title=""
@@ -969,7 +976,7 @@
         <div class="offcanvas-body">
 
             <div class="addingForm_Container">
-                <div class="add-users-modal-body-table-header text-headline-6">Add New User to System</div>
+                <div class="add-users-modal-body-table-header text-headline-6">Add New Staff User to System</div>
 
                 <div class="formstartcontainer">
                     <div class="row">
@@ -1049,7 +1056,14 @@
                                     </div>
 
                                 </div>
-
+                                <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label class="form-label">Country</label>
+                                            <select class="form-control select2 countrySelect">
+                                                <option disabled selected value="">Please Select...</option>
+                                            </select>
+                                        </div>
+                                    </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
                                         <label for="Town/City" class="form-label"> Town/City</label>
@@ -1058,13 +1072,7 @@
 
                                 </div>
 
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="County" class="form-label"> County</label>
-                                        <input type="text" class="form-control" id="County">
-                                    </div>
-
-                                </div>
+                               
 
                                 <div class="col-md-3">
                                     <div class="form-group">
@@ -1074,89 +1082,118 @@
 
                                 </div>
 
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                                            <label class="form-check-label" for="gridCheck">
-                                                Check me out
-                                            </label>
-                                        </div>
+                                
 
-                                    </div>
-                                </div>
                             </div>
+
+
                         </div>
                         <div class="col-lg-3">
+
+                        <div class="col-lg-12">
+        <div class="form-group">
+            <label class="form-label">All Department</label>
+            <div class="dropdown filterdropDownCustom available-users-dropdown-wrapper" >
+                <button class="dropbtn dropdown-toggle dropmenuBtn" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="selected-count">Select Departments</span>
+                    <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
+                </button>
+                <div
+                    class="dropdown-menu customdropdownmenu_style available-users-dropdown">
+                    <div class="filTerSearchMain">
+                        <input type="text" class="filterclSearch available-users-search"
+                            placeholder="Search Department...">
+                        <iconify-icon icon="basil:search-outline"></iconify-icon>
+                    </div>
+                    <div class="sellallitemsMain">
+                        <div class="CustomselectallContainer">
+                            <input type="checkbox"
+                                class="select-all-available-users form-check-input">
+                            Select All
+                        </div>
+                        <div class="clDivider_full"></div>
+                    </div>
+                    <div class="Customdrpitems_container">
+                        <div class="mainoptionContainer">
+                            <div class="dropfilter_options">
+                                <input type="checkbox"
+                                    class="individual-option form-check-input"> Lettings
+                            </div>
+                        </div>
+                        <div class="mainoptionContainer">
+                            <div class="dropfilter_options">
+                                <input type="checkbox"
+                                    class="individual-option form-check-input">
+                              HR Hub
+                            </div>
+                        </div>
+                        <div class="mainoptionContainer">
+                            <div class="dropfilter_options">
+                                <input type="checkbox"
+                                    class="individual-option form-check-input">
+                                Accounts
+                            </div>
+                        </div>
+                        <div class="mainoptionContainer">
+                            <div class="dropfilter_options">
+                                <input type="checkbox"
+                                    class="individual-option form-check-input">
+                                Manage Properties
+                            </div>
+                        </div>
+                        <div class="mainoptionContainer">
+                            <div class="dropfilter_options">
+                                <input type="checkbox"
+                                    class="individual-option form-check-input">
+                                Compliance
+                            </div>
+                        </div>
+                        <div class="mainoptionContainer">
+                            <div class="dropfilter_options">
+                                <input type="checkbox"
+                                    class="individual-option form-check-input">
+                                Procurement
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="no-data" style="display: none;">No data found</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="form-label">Department</label>
+                                    <label class="form-label">Access</label>
                                     <select name="" id="" class="form-control select2">
                                         <option disabled="" selected="" value="">Please Select...</option>
 
-                                        <option value="1">Account</option>
-                                        <option value="2">Compliances Ticket </option>
-                                        <option value="3">General</option>
-                                        <option value="4">Maintenance</option>
+                                        <option value="App">App</option>
+                                        <option value="System">System </option>
+                                        <option value="Both">Both</option>
                                     </select>
 
                                 </div>
                             </div>
 
-                            <div class="RoleAddContiner">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h2>Assign Role</h2>
-                                    </div>
+                            
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-label">Assign Role</label>
+                                    <select name="" id="" class="form-control select2">
+                                        <option disabled="" selected="" value="">Please Select...</option>
+                                        <option value="Tenant">Tenant</option>
+                                        <option value="Landlord">Landlord </option>
+                                        <option value="Staff User">Staff User</option>
+                                        <option value="System User">System User</option>
+                                    </select>
 
-                                    <div class="card-body">
-                                        <div class="RolesListContainer">
-                                            <div class="dropdown-item flexdropItem">
-                                                <div class="d-flex align-items-center">
-                                                    <span class="form-check mb-0"><input type="checkbox"
-                                                            class="form-check-input " id="chk_sel_3"><label
-                                                            class="form-check-label"
-                                                            for="chk_sel_3"></label></span><span
-                                                        class="contact-star"></span>
-                                                </div>
-                                                Tenant
-                                            </div>
-
-                                            <div class="dropdown-item flexdropItem">
-                                                <div class="d-flex align-items-center">
-                                                    <span class="form-check mb-0"><input type="checkbox"
-                                                            class="form-check-input " id="chk_sel_3"><label
-                                                            class="form-check-label"
-                                                            for="chk_sel_3"></label></span><span
-                                                        class="contact-star"></span>
-                                                </div>
-                                                Landlord
-                                            </div>
-                                            <div class="dropdown-item flexdropItem">
-                                                <div class="d-flex align-items-center">
-                                                    <span class="form-check mb-0"><input type="checkbox"
-                                                            class="form-check-input " id="chk_sel_3"><label
-                                                            class="form-check-label"
-                                                            for="chk_sel_3"></label></span><span
-                                                        class="contact-star"></span>
-                                                </div>
-                                                Staff User
-                                            </div>
-                                            <div class="dropdown-item flexdropItem">
-                                                <div class="d-flex align-items-center">
-                                                    <span class="form-check mb-0"><input type="checkbox"
-                                                            class="form-check-input " id="chk_sel_3"><label
-                                                            class="form-check-label"
-                                                            for="chk_sel_3"></label></span><span
-                                                        class="contact-star"></span>
-                                                </div>
-                                                System User
-                                            </div>
-
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
+
+                            
                         </div>
                     </div>
                 </div>
@@ -1242,3 +1279,118 @@
     });
 </script>
 <!-- user Delete alert end-->
+
+
+
+ <!-- form country option dynamic using Json  -->
+<script>
+    $(document).ready(function() {
+        // Initialize select2
+        $('.countrySelect').select2({
+            placeholder: "Please Select...",
+            allowClear: true
+        });
+        // Fetch country data from the API
+        $.ajax({
+            url: 'all-countries.json', // API URL to get all countries
+            method: 'GET',
+            dataType: 'json',
+            success: function(response) {
+                var $select = $('.countrySelect');
+                $select.empty(); // Clear existing options
+                $select.append(
+                    '<option disabled selected value="">Please Select...</option>'
+                ); // Add placeholder option
+                // Iterate over the response data and populate options
+                $.each(response, function(index, country) {
+                    var countryName = country.name.common; // Access the common name
+                    var countryCode = country.cca2; // Access the country code (2-letter)
+                    // Check if countryName and countryCode are not undefined
+                    if (countryName && countryCode) {
+                        // Add each country as an option in the select
+                        $select.append('<option value="' + countryCode + '">' +
+                            countryName + '</option>');
+                    }
+                });
+                // Reinitialize Select2 to apply new options
+                $('.countrySelect').select2();
+            },
+            error: function(xhr, status, error) {
+                console.error('Failed to fetch country data:', error);
+            }
+        });
+    });
+</script>
+<!-- form country option dynamic using Json  -->
+
+<!-- custom multiple select js start -->
+<script>
+        $(document).ready(function () {
+         // Update the count of selected options
+         function updateSelectedCount(dropdownWrapper) {
+             const selectedCount = dropdownWrapper.find(".individual-option:checked").length;
+             const selectedCountElement = dropdownWrapper.find(".selected-count");
+     
+             if (selectedCount === 0) {
+                 selectedCountElement.text("Select Location");
+             } else if (selectedCount === 1) {
+                 selectedCountElement.text("1 selected");
+             } else {
+                 selectedCountElement.text(`${selectedCount} selected`);
+             }
+         }
+     
+         // Handle Select All checkbox
+         $(".select-all-available-users").on("change", function () {
+             const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+             const isChecked = $(this).prop("checked");
+             dropdownWrapper.find(".individual-option").prop("checked", isChecked);
+             updateSelectedCount(dropdownWrapper);
+         });
+     
+         // Handle individual option selection
+         $(".individual-option").on("change", function () {
+             const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+             const totalOptions = dropdownWrapper.find(".individual-option").length;
+             const selectedOptions = dropdownWrapper.find(".individual-option:checked").length;
+     
+             // Toggle the Select All checkbox
+             dropdownWrapper.find(".select-all-available-users").prop("checked", totalOptions === selectedOptions);
+     
+             updateSelectedCount(dropdownWrapper);
+         });
+     
+         // Reset Filter button
+         $(".reset-filter").on("click", function () {
+             const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+             dropdownWrapper.find(".individual-option").prop("checked", false);
+             dropdownWrapper.find(".select-all-available-users").prop("checked", false);
+             updateSelectedCount(dropdownWrapper);
+         });
+     
+         // Apply Filter button
+         $(".apply-filter").on("click", function () {
+             const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+             const selectedItems = dropdownWrapper.find(".individual-option:checked").map(function () {
+                 return $(this).parent().text().trim();
+             }).get();
+             console.log("Selected Items:", selectedItems);
+         });
+     
+         // Filter search functionality
+         $(".available-users-search").on("keyup", function () {
+             const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+             const searchTerm = $(this).val().toLowerCase();
+             const options = dropdownWrapper.find(".mainoptionContainer");
+     
+             options.filter(function () {
+                 $(this).toggle($(this).text().toLowerCase().includes(searchTerm));
+             });
+     
+             const noDataMessage = dropdownWrapper.find(".no-data");
+             noDataMessage.toggle(options.filter(":visible").length === 0);
+         });
+     });
+     
+     </script>
+<!-- end -->

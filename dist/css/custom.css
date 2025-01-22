@@ -69,7 +69,6 @@
 	padding: 10px 20px;
 	border-radius: 4px;
 	margin: 0px 4px;
-	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	cursor: pointer;
 }
 .enquiryDahsboard_table{
@@ -534,6 +533,8 @@ div.dt-buttons {
 .exportdropdown_menu {
 	padding: 7px 10px !important;
 	border: 1px solid #e1e1e1 !important;
+	width: 100px;
+	min-width: 100px !important;
 }
 
 .columnvisible_dropdownmenus{
@@ -817,17 +818,17 @@ div.dt-buttons {
 	justify-content: flex-end;
 }
 
-.buttonInfOUpdate{
+.buttonInfOUpdate {
 	outline: none;
 	color: #fff;
-  background-color: #00717a;
-  border-color: #00717a;
-  font-size: 1rem;
-  padding: 0.375rem 1rem;
-  border-width: 1px;
-  border-radius: 0.375rem;
-  display: flex;
-  align-items: center;
+	background-color: #00717a;
+	border-color: #00717a;
+	font-size: 13px;
+	padding: 5px 12px;
+	border-width: 1px;
+	border-radius: 0.375rem;
+	display: flex;
+	align-items: center;
 }
 .buttonInfOUpdate iconify-icon{
 	margin-right: 5px;
@@ -2629,9 +2630,9 @@ margin-right: 5px;
 	align-items: center;
 	margin-bottom: 0px !important;
 	padding: 5px 15px !important;
-	font-weight: normal;
-	background: #ebeef7;
-	color: #000 !important;
+	font-weight: 500;
+	background: #ebeef700;
+	color: #405e97 !important;
 	font-size: 14px !important;
 }
 #addFolderBtn iconify-icon{
@@ -3037,7 +3038,7 @@ div.dt-container div.dt-search input {
 }
 .nav-tabs.nav-line > .nav-item > .nav-link {
 	font-weight: normal !important;
-	font-size: 15px !important;
+	font-size: 14px !important;
 }
 
 .hk-wrapper[data-layout="vertical"][data-layout-style="collapsed"][data-hover="active"] .hk-menu:hover .menu-header > span .navbar-brand .brand-img:last-child {
@@ -3140,6 +3141,11 @@ div.dt-container div.dt-search input {
   color: #fff !important;
 }
 
+.sidecolorcleaning_rotas .svg-icon > iconify-icon{
+	background-color: #ff7858 !important;
+	color: #fff !important;
+}
+
 .sidecolor_Procurement .svg-icon > iconify-icon{
 	background-color: #FF9843 !important;
   color: #fff !important;
@@ -3215,7 +3221,7 @@ div.dt-container div.dt-search input {
     color: white !important; /* Ensures text is readable */
 }
 .sidecolor_Allproperties .svg-icon > svg{
-	background-color: #FCB608 !important;
+	background-color: #45D !important;
 	color: white !important;
 }
 
@@ -3756,6 +3762,7 @@ margin-right: 5px;
 	border-radius: 50px;
 	font-weight: 500;
 	padding: 6px 12px;
+	width: 110px !important;
 }
 
 #columnDropdown:focus {
@@ -4013,7 +4020,7 @@ margin-right: 20px;
 
 .filterdropDownCustom .dropbtn {
 padding: 9px 15px !important;
-  height: 42px;
+height: 37px;
 border-radius: 8px;
 position: relative;
 display: flex;
@@ -7863,10 +7870,12 @@ margin-top: 0px;
 }
 .viewallscheduels_btn {
 	font-size: 13px;
-	margin-left: 15px;
-	color: #00ab66;
-	display: flex;
-	align-items: center;
+  margin-left: 0px;
+  color: #00ab66;
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+  cursor: pointer;
 }
 
 .viewallscheduels_btn iconify-icon{
@@ -8792,11 +8801,13 @@ color: rgb(3, 189, 113);
 .tickets_cardsnumber .icon1 {
 	border-radius: 7px;
 	color: #fff;
-	font-size: 24px;
-	height: 55px;
-	line-height: 57px;
-	text-align: center;
-	width: 55px;
+	font-size: 20px;
+  height: 45px;
+  text-align: center;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .tickets_cardsnumber .bg-primary-transparent {
 	background: rgba(51,102,255,.1);
@@ -8951,7 +8962,7 @@ font-size: 18px;
 
 
 .budget-title{
-	font-size: 18px;
+	font-size: 15px;
 	margin-bottom: 0px;
 }
 
@@ -9048,9 +9059,9 @@ font-size: 18px;
 	margin-bottom: 20px;
 	padding-bottom: 0px;
 	/* border-bottom: 1px dashed #869caf; */
-	background-color: #c2d0e147;
+	background-color: #c2d0e124;
 	align-items: center !important;
-	padding: 10px 20px;
+	padding: 7px 20px;
 	border-radius: 6px;
 }
 
@@ -9221,6 +9232,584 @@ font-size: 18px;
 	margin-top: 20px;
 }
 
+.removeTime {
+	padding: 0 !important;
+	background: #ff000000 !important;
+	border: none !important;
+	color: #ff0000 !important;
+	display: flex !important;
+	position: absolute;
+	top: 0px;
+	right: -45px;
+	font-size: 18px !important;
+	color: #ff0909 !important;
+}
+
+.ticketsTabs .nav-link.active .numberCount {
+	padding: 2px 5px;
+	background: #4CAF50;
+	color: #ffffff;
+	border-radius: 3px;
+	font-size: 11px;
+	display: flex;
+	margin-left: 10px;
+}
+
+.numberCount {
+	padding: 2px 5px;
+	color: #000;
+	border-radius: 3px;
+	font-size: 11px;
+	display: flex;
+	margin-left: 10px;
+}
+
+.ticketsTabs .nav-link.active {
+	background: #f6f6f6;
+	font-weight: 600;
+	border-radius: 4px !important;
+	border: 1px solid #ececec !important;
+}
+.ticketsTabs {
+	background: transparent !important;
+	padding: 2px 0px !important;
+  border: none !important;
+  margin: 0px 10px !important;
+  overflow-x: auto !important;
+  scroll-behavior: smooth !important;
+  scrollbar-width: none !important;
+}
+
+.ticketsTabs .nav-link.active::after {
+	display: none;
+}
+.ticketsTabs .nav-item > .nav-link.active {
+	color: #161616 !important;
+}
+.ticketsTabs .nav-item > .nav-link {
+	border: 1px solid #ececec !important;
+	margin-right: 10px;
+	border-radius: 4px !important;
+}
+
+.noflpt_top{
+	padding-top: 0px !important;
+}
+.ticketsMainTabs{
+	border-bottom: 0px !important;
+	margin-bottom: 20px;
+	padding: 0px;
+}
+.ticketsMainTabs .scroll-btn {
+	border-radius: 50px;
+	background: #FBB606;
+	outline: none;
+	border: none;
+	color: #121111;
+	line-height: 0px;
+	padding: 6px;
+	background-color: #f0f0f0;
+	border: none;
+	cursor: pointer;
+	font-size: 21px;
+	width: 45px;
+	height: 52px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px !important;
+}
+.contact-toolbar-right .dt-info{
+	display: none !important;
+}
+
+
+/* dashboard tasks style */
+
+.notes-dash .notes-top-head {
+	border-bottom: 1px solid #dbe0e6;
+  }
+  .notes-top-head h5 {
+	font-size: 18px;
+	font-weight: 500;
+	color: #092C4C;
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+  }
+  .notes-top-head-submenu .nav.todo-inbox button.todo-inbox svg {
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+}
+.notes-top-head-submenu .nav.todo-inbox button.todo-inbox span {
+	display: flex;
+	width: 20px;
+	height: 20px;
+	padding: 0px 3px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 12px;
+	background: #FF9F43;
+	color: #ffffff;
+}
+.notes-top-head-submenu .nav.todo-inbox button.todo-inbox {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	padding: 10px;
+	font-size: 15px;
+	font-weight: 500;
+	color: #5B6670;
+	margin-bottom: 0;
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+	border-radius: 10px;
+}
+.notes-top-head-submenu .nav.todo-inbox button.todo-inbox.active {
+	border-radius: 10px;
+	background: #F0F1F8;
+	padding: 10px;
+	color: #010101;
+}
+.notes-top-head h5 svg {
+	width: 19px;
+	height: 19px;
+	margin-right: 6px;
+	color: #5B6670;
+}
+.notes-dash .notes-top-head-submenu {
+	padding: 15px 0;
+	border-bottom: 1px solid #dbe0e6;
+}
+
+.notes-dash .content-submenu-tag {
+	margin-top: 15px;
+	padding: 10px;
+}
+.notes-dash .content-submenu-tag h6 {
+	font-size: 16px;
+	font-weight: 600;
+	color: #092C4C;
+}
+.notes-dash .content-submenu-tag ul.tags-list {
+	margin-bottom: 24px;
+}
+.notes-dash .content-submenu-tag ul {
+	padding: 10px 0;
+}
+.notes-dash .content-submenu-tag ul li {
+	font-size: 15px;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+}
+.notes-dash .content-submenu-tag ul li.personal a {
+	color: #288EC7;
+	display: flex;
+	align-items: center;
+}
+.notes-dash .content-submenu-tag ul li.personal span {
+	margin-right: 8px;
+}
+.notes-dash .content-submenu-tag ul li.personal span i {
+	transform: rotate(45deg);
+	font-size: 10px;
+}
+.notes-dash .content-submenu-tag ul li.social a {
+	color: #FF9900;
+	display: flex;
+	align-items: center;
+}
+.notes-dash .content-submenu-tag ul li.public a {
+	color: #A02F7A;
+	display: flex;
+	align-items: center;
+}
+.notes-dash .content-submenu-tag ul li.work a {
+	color: #28C76F;
+	display: flex;
+	align-items: center;
+}
+.notes-dash .content-submenu-tag ul li.social span i {
+	transform: rotate(45deg);
+	font-size: 10px;
+}
+.notes-dash .content-submenu-tag ul li.public span i {
+	transform: rotate(45deg);
+	font-size: 10px;
+}
+.notes-dash .content-submenu-tag ul li.work span i {
+	transform: rotate(45deg);
+	font-size: 10px;
+}
+.notes-dash .content-submenu-tag ul li + li {
+	margin-top: 10px;
+}
+.notes-dash .content-submenu-tag ul li span {
+	margin-right: 8px;
+}
+
+.notes-dash .content-submenu-tag h6 {
+	font-size: 16px;
+	font-weight: 500;
+	color: #092C4C;
+	text-align:left;
+}
+.todo-toolbar {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: space-between;
+  }
+
+.dashboardTodo_panel  .advance-list {
+	padding-left: 0;
+	margin-bottom: 0px;
+}
+.righhtDashTodoLists {
+	padding-right: 20px;
+}
+.todo-today-header {
+	display: flex;
+	align-items: center;
+  }
+
+  .todo-today-header span {
+	margin-right: 5px;
+	display: flex;
+	align-items: center;
+  }
+  .todo-today-header h3 {
+	font-size: 16px;
+	font-weight: 600;
+	color: #092C4C;
+	margin-bottom: 0;
+	margin-right: 5px;
+  }
+  .todo-today-header h6 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 18px;
+	height: 18px;
+	background-color: #FF9F43;
+	border-radius: 50px;
+	color: #ffffff;
+	font-size: 10px;
+	font-weight: 600;
+	margin-bottom: 0;
+	margin-left: 8px;
+  }
+  .todo-today-header span {
+	margin-right: 5px;
+	display: flex;
+	align-items: center;
+  }
+
+ .todo-today-header span iconify-icon{
+	font-size: 16px;
+	color: #5B6670;
+ }
+
+ .todo-today-header h5{
+	font-weight: normal;
+	font-size: 16px;
+ }
+ .notes-dash .content-submenu-tag ul li.medium a {
+	color: #7367F0;
+	display: flex;
+	align-items: center;
+}
+.notes-dash .content-submenu-tag ul li.high a {
+	color: #FF0000;
+	display: flex;
+	align-items: center;
+}
+.notes-dash .content-submenu-tag ul li.low a {
+	color: #FF9900;
+	display: flex;
+	align-items: center;
+}
+.notes-dash .content-submenu-tag ul li span i {
+	transform: rotate(45deg);
+	font-size: 10px;
+}
+.priority-list {
+	margin-bottom: 0px;
+}
+
+#dashtasklefttabs li a::after{
+	display: none;
+}
+.dashtaskcmntTab_inrtitle {
+	margin: 24px 0px 16px 0px;
+}
+.DashTBTaskNote_buttoncntr{
+	margin-top: 20px;
+}
+
+.CmnTAskdate_header{
+	display: flex;
+  align-items: center;
+}
+.CmnTAskdate_header span {
+	margin-right: 5px;
+	display: flex;
+	align-items: center;
+}
+
+.CmnTAskdate_header span iconify-icon {
+	font-size: 16px;
+	color: #5B6670;
+}
+.CmnTAskdate_header h5 {
+	font-size: 18px;
+  font-weight: 500;
+}
+.CmnTAskdate_header h6 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 18px;
+	height: 18px;
+	
+	border-radius: 50px;
+	font-size: 10px;
+	font-weight: 600;
+	margin-bottom: 0;
+	margin-left: 8px;
+}
+.dashtoolleft {
+	display: flex;
+	align-items: center;
+	width: 40%;
+}
+.dashtoolleft button{
+	margin-right: 10px;
+}
+.dashtaskTolbar{
+	margin-bottom: 0px !important;
+	margin-top: 20px;
+}
+
+.dashtodoleft_controlpanel{
+	box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 3px, rgba(0, 0, 0, 0) 0px 1px 2px !important;
+  margin: 20px;
+  margin-right: 0px;
+}
+#v-pills-tabContent {
+	height: 800px;
+	overflow-y: scroll;
+	scrollbar-width: thin;
+	overflow-x: hidden;
+}
+
+.TododashManage.notes-dash {
+	height: 500px;
+	overflow-y: scroll;
+}
+
+.enqfrm_fieldwithout_label{
+	margin-top: 35px;
+}
+.nav-segmented-tabs > .nav-item > .nav-link {
+	font-size: 14px;
+}
+
+.scheduledprop_listing_wrap{
+	display: flex;
+	flex-direction: column;
+}
+.propertylistingfor_viewing {
+	display: flex;
+	align-items: center;
+}
+
+.hk-wrapper[data-layout="vertical"] .hk-menu .menu-content-wrap .menu-group .navbar-nav .nav-item .nav-link[data-bs-toggle="collapse"]::after {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg) ;
+}
+
+
+/* custom modern tolltip style for the buttons and checkbox */
+/* Custom Tooltip Background Color */
+.tippy-box {
+	background-color: #4CAF50; /* Change this color */
+	color: white; /* Text color */
+	border-radius: 5px; /* Optional: adds rounded corners */
+  }
+
+  .tippy-arrow {
+	color: #4CAF50; /* Match arrow color with tooltip background */
+  }
+  .curtommodern_tooltip{
+	padding: 0px 10px;
+	font-size: 14px;
+  }
+
+  .crdpropertfooter{
+	display: flex;
+	justify-content: flex-end;
+  }
+  .card-header.flexheaderLeftWrap {
+	background: #f8f9fb !important;
+}
+.prodocs_innertabs{
+	margin-top: 20px;
+}
+.archivedBtn {
+	display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 6px 16px;
+  border: 1px solid #b1b2cf;
+  border-radius: 5px;
+  color: #2c2e31;
+}
+.archivedBtn iconify-icon{
+	font-size: 18px;
+}
+#archivedBtnTU:hover {
+	background: #298dff;
+	color: #fff !important;
+	border-color: #298dff;
+}
+
+.toggle-passwordmpin {
+	position: absolute;
+	top: 70%;
+	right: 10px;
+	transform: translateY(-50%);
+	cursor: pointer;
+	color: #6c757d;
+}
+
+.toggle-passwordmpin:hover {
+    color: #000;
+}
+#mpin-container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	gap: 10px;
+}
+.mpin-input {
+	width: 50px;
+	height: 50px;
+}
+.swaliconifyicon_mpin{
+	font-size: 38px;
+}
+.tickets_cardsnumber .card-body {
+	padding: 6px 18px !important;
+}
+
+.todayyesterday_tick{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-top: 5px;
+}
+.NumberCountCard_title{
+	font-size: 14px;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+.numberoftickets{
+	color: #00ab66;
+  margin-left: 4px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.Count_Numbers_container .media .media-head {
+	margin-right: 0px !important;
+}
+.tickettopcard_icon .initial-wrap {
+	width: 40px !important;
+	height: 40px;
+	background: #f7f7f8 !important;
+	display: inline-flex;
+	color: #000 !important;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+}
+
+.initial-wrap.stale_icBG {
+	background: #5c00ff0d !important;
+}
+.initial-wrap.overdue_icBG {
+	background: #00b7ff0d !important;
+}
+.initial-wrap.emergency_icBG {
+	background: #ff00000d !important;
+}
+.initial-wrap.completed_icBG {
+	background: #00ff100d !important;
+}
+.initial-wrap.progress_icBG {
+	background: #ffcb000d !important;
+}
+.initial-wrap.assigned_icBG {
+	background: #224fff0d !important;
+}
+.Count_Numbers_container .spipeline-card .card-body {
+	padding: 8px 15px;
+}
+
+.sidecolor_tenancysetup .svg-icon > iconify-icon{
+	background-color: #636BCE;
+  color: #fff !important;
+}
+.sidecolor_tenancyrenew .svg-icon > iconify-icon{
+	background-color: #A463CE;
+  color: #fff !important;
+}
+
+.sidecolor_pravaible .svg-icon > iconify-icon{
+	background-color: #CEAC63;
+  color: #fff !important;
+}
+.sidecolor_lettingsetting .svg-icon > iconify-icon{
+	background-color: #63CE89;
+  color: #fff !important;
+}
+.sidecolor_lettingadmin .svg-icon > iconify-icon{
+	background-color: #CE6363;
+  color: #fff !important;
+}
+.sidecolor_calendar .svg-icon > iconify-icon{
+	background-color: #63B8CE;
+  color: #fff !important;
+}
+.sidecolor_enqviewing .svg-icon > iconify-icon{
+	background-color: #8B63CE;
+  color: #fff !important;
+}
+#btnproperty_archived{
+	margin-right: 10px !important;
+}
+.ticketpriority_card_leftcn h3 {
+	font-size: 20px;
+}
+.materialaddmodal_wrap{
+	padding: 20px;
+}
 
 /* Media query for mobile screens */
 @media (max-width: 768px) {

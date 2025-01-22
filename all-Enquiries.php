@@ -109,7 +109,15 @@
                                     <a class="dropdown-item" href="#">Last 24 hour</a>
                                     <a class="dropdown-item" href="#">Past Week</a>
                                     <a class="dropdown-item" href="#">Last 30 Days</a>
-
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <div class="form-group">
+                                            <label class="form-label">Date Range</label>
+                                            <input class="form-control" type="text" name="daterange"
+                                                value="01/01/2018 - 01/15/2018" />
+                                            <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
+                                            </iconify-icon>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             <button id="toggleButton" type="button"
@@ -131,7 +139,8 @@
                                                 class="feather feather-plus">
                                                 <line x1="12" y1="5" x2="12" y2="19"></line>
                                                 <line x1="5" y1="12" x2="19" y2="12"></line>
-                                            </svg></span></span><span class="btn-text">Add New Enquiry</span></span></button>
+                                            </svg></span></span><span class="btn-text">Add New
+                                        Enquiry</span></span></button>
 
                             <!-- <button class="ApplicationFrm_button" data-bs-toggle="offcanvas"
                                 data-bs-target="#ApplicationForm" aria-controls="offcanvasExample">
@@ -151,89 +160,86 @@
                     </header>
 
                     <div class="fullwidthDesktopTabs MobileScrollShow" id="nopaddingTop">
-                                <button class="scroll-btn prev" type="button">
-                                    <iconify-icon icon="tabler:arrow-left"></iconify-icon>
-                                </button>
+                        <button class="scroll-btn prev" type="button">
+                            <iconify-icon icon="tabler:arrow-left"></iconify-icon>
+                        </button>
 
-                                <ul class="nav nav-tabs nav-line nav-icon fullwidthCustom_tabsUL nav-light">
+                        <ul class="nav nav-tabs nav-line nav-icon fullwidthCustom_tabsUL nav-light">
 
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#allEnquiry">
+                                    <div class="d-flex align-items-center">
+                                        <span class="nav-link-text">All Enquries</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " data-bs-toggle="tab" href="#openEnquiry">
+                                    <div class="d-flex align-items-center">
+                                        <span class="nav-link-text">Open Enquries</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#processingEnquiry">
+                                    <div class="d-flex align-items-center">
+                                        <span class="nav-link-text">Enquiry in Process</span>
 
-                                <li class="nav-item">
-                                        <a class="nav-link active" data-bs-toggle="tab" href="#allEnquiry">
-                                            <div class="d-flex align-items-center">
-                                                <span class="nav-link-text">All Enquries</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link " data-bs-toggle="tab" href="#openEnquiry">
-                                            <div class="d-flex align-items-center">
-                                                <span class="nav-link-text">Open Enquries</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" href="#processingEnquiry">
-                                            <div class="d-flex align-items-center">
-                                                <span class="nav-link-text">Enquiry in Process</span>
+                                    </div>
+                                </a>
+                            </li>
 
-                                            </div>
-                                        </a>
-                                    </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#Enquiry_followup1">
+                                    <div class="d-flex align-items-center">
+                                        <span class="nav-link-text">Enquiry Follow up 1</span>
 
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" href="#Enquiry_followup1">
-                                            <div class="d-flex align-items-center">
-                                                <span class="nav-link-text">Enquiry Follow up 1</span>
+                                    </div>
+                                </a>
+                            </li>
 
-                                            </div>
-                                        </a>
-                                    </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#Enquiry_followup2">
+                                    <div class="d-flex align-items-center">
+                                        <span class="nav-link-text">Enquiry Follow up 2</span>
 
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" href="#Enquiry_followup2">
-                                            <div class="d-flex align-items-center">
-                                                <span class="nav-link-text">Enquiry Follow up 2</span>
+                                    </div>
+                                </a>
+                            </li>
 
-                                            </div>
-                                        </a>
-                                    </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#Enquiry_FinalFollowUp">
+                                    <div class="d-flex align-items-center">
+                                        <span class="nav-link-text">Final Follow up </span>
 
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" href="#Enquiry_FinalFollowUp">
-                                            <div class="d-flex align-items-center">
-                                                <span class="nav-link-text">Final Follow up </span>
+                                    </div>
+                                </a>
+                            </li>
 
-                                            </div>
-                                        </a>
-                                    </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#DeadLeads">
+                                    <div class="d-flex align-items-center">
+                                        <span class="nav-link-text">Dead Leads </span>
 
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" href="#DeadLeads">
-                                            <div class="d-flex align-items-center">
-                                                <span class="nav-link-text">Dead Leads </span>
+                                    </div>
+                                </a>
+                            </li>
 
-                                            </div>
-                                        </a>
-                                    </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#Enquiry_requirmentNotmet">
+                                    <div class="d-flex align-items-center">
+                                        <span class="nav-link-text">Requirements not met </span>
 
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" href="#Enquiry_requirmentNotmet">
-                                            <div class="d-flex align-items-center">
-                                                <span class="nav-link-text">Requirements not met </span>
+                                    </div>
+                                </a>
+                            </li>
 
-                                            </div>
-                                        </a>
-                                    </li>
+                        </ul>
+                        <button class="scroll-btn next" type="button">
+                            <iconify-icon icon="tabler:arrow-right"></iconify-icon>
+                        </button>
 
-                                    
-                                   
-                                </ul>
-                                <button class="scroll-btn next" type="button">
-                                    <iconify-icon icon="tabler:arrow-right"></iconify-icon>
-                                </button>
-
-                            </div>
+                    </div>
 
                     <div class="contact-body">
                         <div class="nicescroll-bar">
@@ -364,6 +370,22 @@
                                                                 </div>
                                                             </div>
 
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label class="form-label"> Bills inclusive or
+                                                                        exclusive </label>
+                                                                    <select class="form-control select2">
+                                                                        <option disabled selected value="">Please
+                                                                            Select...</option>
+                                                                        <option value="Bills Inclusive">Bills Inclusive
+                                                                        </option>
+                                                                        <option value="Bills Exclusive">Bills Exclusive
+                                                                        </option>
+                                                                    </select>
+
+                                                                </div>
+                                                            </div>
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -374,2204 +396,2409 @@
                                 </div>
                             </div>
                             <div class="tab-content">
-                            <div class="tab-pane fade show active" id="allEnquiry">
-        <div class="fullwidthTabInner_content_container">
-            <!-- <div class="docfilterbutton">
+                                <div class="tab-pane fade show active" id="allEnquiry">
+                                    <div class="fullwidthTabInner_content_container">
+                                        <!-- <div class="docfilterbutton">
                 <h2 class="tabinnerTitle">Enquiry Statuses </h2>
             </div> -->
-            <div class="contact-list-view">
+                                        <div class="contact-list-view">
 
-                        <table class="table common-datatable nowrap w-100">
-                            <thead>
-                                <tr>
-                                    <th>Enquiry ID</th>
-                                    <th>Status</th>
-                                    <th>Enquiry Date</th>
-                                    <th>Tenant</th>
-                                    <th>last Updated Date</th>
-                                    <th>Property Enquired About</th>
-                                    <th>Location</th>
-                                    <th>Apartment Size</th>
-                                    <th>Applicant Type</th>
-                                    <th>Preferred moving date</th>
-                                    <th>Weekly Budget</th>
-                                    <th>Group Size</th>
-                                    <th>Nationality</th>
-                                    <th>Night/Day Person</th>
-                                    <th>Enquiry Source</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12345</a></td>
-                                    <td><span class="badge bg-primary">Prospect Tenant</span></td>
-                                    <td>23/04/2023 </td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Morgan Freeman
-                                        </a>
-                                    </td>
-                                    <td>23/04/2023 18:18</td>
-                                    <td>3 BHK Apartment in Downtown</td>
-                                    <td>
-                                        Newcastle
-                                    </td>
-                                    <td>1 Bed Apartment</td>
-                                    <td>Student</td>
-                                    <td>15/09/2024</td>
-                                    <td>$60,000</td>
-                                    <td>3</td>
-                                    <td>International</td>
+                                            <table class="table common-datatable nowrap w-100">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Enquiry ID</th>
+                                                        <th>Status</th>
+                                                        <th>Enquiry Date</th>
+                                                        <th>Tenant</th>
+                                                        <th>last Updated Date</th>
+                                                        <th>Property Enquired About</th>
+                                                        <th>Location</th>
+                                                        <th>Apartment Size</th>
+                                                        <th>Applicant Type</th>
+                                                        <th>Preferred moving date</th>
+                                                        <th>Weekly Budget</th>
+                                                        <th>Bills Inclusive/Exclusive</th>
+                                                        <th>Group Size</th>
+                                                        <th>Nationality</th>
+                                                        <th>Night/Day Person</th>
+                                                        <th>Enquiry Source</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12345</a></td>
+                                                        <td><span class="badge bg-primary">Prospect Tenant</span></td>
+                                                        <td>23/04/2023 </td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Morgan
+                                                                Freeman
+                                                            </a>
+                                                        </td>
+                                                        <td>23/04/2023 18:18</td>
+                                                        <td>3 BHK Apartment in Downtown</td>
+                                                        <td>
+                                                            Newcastle
+                                                        </td>
+                                                        <td>1 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>15/09/2024</td>
+                                                        <td>$60,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>3</td>
+                                                        <td>International</td>
 
-                                    <td>Day</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="solar:phone-outline"></iconify-icon> Phone
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12346</a></td>
-                                    <td><span class="badge bg-warning">In Processing</span></td>
-                                    <td>15/03/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Jessica Alba
-                                        </a></td>
-                                    <td>15/03/2023 16:40</td>
-                                    <td>2 BHK Condo in Uptown</td>
-                                    <td>
-                                        Northumbria
-                                    </td>
-                                    <td>3 Bed Apartment</td>
-                                    <td>Professional</td>
-                                    <td>20/09/2024</td>
-                                    <td>$10,000</td>
-                                    <td>2</td>
-                                    <td>UK</td>
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="solar:phone-outline"></iconify-icon>
+                                                                Phone
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12346</a></td>
+                                                        <td><span class="badge bg-warning">In Processing</span></td>
+                                                        <td>15/03/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Jessica
+                                                                Alba
+                                                            </a></td>
+                                                        <td>15/03/2023 16:40</td>
+                                                        <td>2 BHK Condo in Uptown</td>
+                                                        <td>
+                                                            Northumbria
+                                                        </td>
+                                                        <td>3 Bed Apartment</td>
+                                                        <td>Professional</td>
+                                                        <td>20/09/2024</td>
+                                                        <td>$10,000</td>
+                                                        <td>Bills Exclusive</td>
+                                                        <td>2</td>
+                                                        <td>UK</td>
 
-                                    <td>Night</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="quill:mail"></iconify-icon> Email
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12347</a></td>
-                                    <td><span class="badge bg-success">Approved</span></td>
-                                    <td>01/02/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Chris Evans
-                                        </a></td>
-                                    <td>10/02/2024 15:15</td>
-                                    <td>4 BHK Villa in Suburban Heights</td>
-                                    <td>
-                                        Sunderland
-                                    </td>
-                                    <td>6 Bed Apartment</td>
-                                    <td>Student</td>
-                                    <td>22/10/2024</td>
-                                    <td>$50,000</td>
-                                    <td>4</td>
-                                    <td>Mix</td>
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12347</a></td>
+                                                        <td><span class="badge bg-success">Approved</span></td>
+                                                        <td>01/02/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Chris
+                                                                Evans
+                                                            </a></td>
+                                                        <td>10/02/2024 15:15</td>
+                                                        <td>4 BHK Villa in Suburban Heights</td>
+                                                        <td>
+                                                            Sunderland
+                                                        </td>
+                                                        <td>6 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>22/10/2024</td>
+                                                        <td>$50,000</td>
+                                                        <td>Bills Exclusive</td>
+                                                        <td>4</td>
+                                                        <td>Mix</td>
 
-                                    <td>Day</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="streamline:web"></iconify-icon> Website
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12348</a></td>
-                                    <td><span class="badge bg-secondary">Pending Further Information</span></td>
-                                    <td>10/01/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Emma Watson
-                                        </a></td>
-                                    <td>18/06/2024 12:00</td>
-                                    <td>Luxury Penthouse in City Center</td>
-                                    <td>
-                                        Durham
-                                    </td>
-                                    <td>4 Bed Apartment</td>
-                                    <td>Professional</td>
-                                    <td>05/08/2024</td>
-                                    <td>$20,000</td>
-                                    <td>1</td>
-                                    <td>UK</td>
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="streamline:web"></iconify-icon>
+                                                                Website
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12348</a></td>
+                                                        <td><span class="badge bg-secondary">Pending Further
+                                                                Information</span></td>
+                                                        <td>10/01/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Emma
+                                                                Watson
+                                                            </a></td>
+                                                        <td>18/06/2024 12:00</td>
+                                                        <td>Luxury Penthouse in City Center</td>
+                                                        <td>
+                                                            Durham
+                                                        </td>
+                                                        <td>4 Bed Apartment</td>
+                                                        <td>Professional</td>
+                                                        <td>05/08/2024</td>
+                                                        <td>$20,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>1</td>
+                                                        <td>UK</td>
 
-                                    <td>Night</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="lets-icons:user"></iconify-icon> Vendor
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12349</a></td>
-                                    <td><span class="badge bg-info">Suitable Tenant Identified</span></td>
-                                    <td>05/06/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Tom Hanks
-                                        </a></td>
-                                    <td>26/08/2024 14:28</td>
-                                    <td>2 BHK Studio Apartment in Riverside</td>
-                                    <td>
-                                        Northumbria
-                                    </td>
-                                    <td>2 Bed Apartment</td>
-                                    <td>Family</td>
-                                    <td>30/09/2024</td>
-                                    <td>$25,000</td>
-                                    <td>3</td>
-                                    <td>International</td>
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="lets-icons:user"></iconify-icon>
+                                                                Vendor
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12349</a></td>
+                                                        <td><span class="badge bg-info">Suitable Tenant
+                                                                Identified</span></td>
+                                                        <td>05/06/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Tom Hanks
+                                                            </a></td>
+                                                        <td>26/08/2024 14:28</td>
+                                                        <td>2 BHK Studio Apartment in Riverside</td>
+                                                        <td>
+                                                            Northumbria
+                                                        </td>
+                                                        <td>2 Bed Apartment</td>
+                                                        <td>Family</td>
+                                                        <td>30/09/2024</td>
+                                                        <td>$25,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>3</td>
+                                                        <td>International</td>
 
-                                    <td>Day</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="solar:phone-outline"></iconify-icon> Phone
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12350</a></td>
-                                    <td><span class="badge bg-danger">Rejected</span></td>
-                                    <td>12/04/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Scarlett Johansson
-                                        </a>
-                                    </td>
-                                    <td>12/08/2024 15:15</td>
-                                    <td>Commercial Office Space in Tech Park</td>
-                                    <td>
-                                        Newcastle
-                                    </td>
-                                    <td>5 Bed Apartment</td>
-                                    <td>Student</td>
-                                    <td>30/07/2024</td>
-                                    <td>$250,000</td>
-                                    <td>2</td>
-                                    <td>Mix</td>
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="solar:phone-outline"></iconify-icon>
+                                                                Phone
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12350</a></td>
+                                                        <td><span class="badge bg-danger">Rejected</span></td>
+                                                        <td>12/04/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Scarlett
+                                                                Johansson
+                                                            </a>
+                                                        </td>
+                                                        <td>12/08/2024 15:15</td>
+                                                        <td>Commercial Office Space in Tech Park</td>
+                                                        <td>
+                                                            Newcastle
+                                                        </td>
+                                                        <td>5 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>30/07/2024</td>
+                                                        <td>$250,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>2</td>
+                                                        <td>Mix</td>
 
-                                    <td>Night</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
                                         </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                    </div>
 
-                    </div>
-        </div>
-
-
-    </div>
-    <div class="tab-pane fade " id="openEnquiry">
-        <div class="fullwidthTabInner_content_container">
-            <!-- <div class="docfilterbutton">
+                                </div>
+                                <div class="tab-pane fade " id="openEnquiry">
+                                    <div class="fullwidthTabInner_content_container">
+                                        <!-- <div class="docfilterbutton">
                 <h2 class="tabinnerTitle">Enquiry Statuses </h2>
             </div> -->
-            <div class="contact-list-view">
+                                        <div class="contact-list-view">
 
-<table class="table common-datatable nowrap w-100">
-    <thead>
-        <tr>
-            <th>Enquiry ID</th>
-            <th>Status</th>
-            <th>Enquiry Date</th>
-            <th>Tenant</th>
-            <th>last Updated Date</th>
-            <th>Property Enquired About</th>
-            <th>Location</th>
-            <th>Apartment Size</th>
-            <th>Applicant Type</th>
-            <th>Preferred moving date</th>
-            <th>Weekly Budget</th>
-            <th>Group Size</th>
-            <th>Nationality</th>
-            <th>Night/Day Person</th>
-            <th>Enquiry Source</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><a href="Enquiry-details.php">ENQ12345</a></td>
-            <td><span class="badge bg-openEnquiry OpenEnquiry-badge ">Open Enquiry</span></td>
-            <td>23/04/2023 </td>
-            <td><a href="Enquiry-details.php" class="namelinkURl">
-                    <iconify-icon icon="noto:star"></iconify-icon> Morgan Freeman
-                </a>
-            </td>
-            <td>23/04/2023 18:18</td>
-            <td>3 BHK Apartment in Downtown</td>
-            <td>
-                Newcastle
-            </td>
-            <td>1 Bed Apartment</td>
-            <td>Student</td>
-            <td>15/09/2024</td>
-            <td>$60,000</td>
-            <td>3</td>
-            <td>International</td>
+                                            <table class="table common-datatable nowrap w-100">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Enquiry ID</th>
+                                                        <th>Status</th>
+                                                        <th>Enquiry Date</th>
+                                                        <th>Tenant</th>
+                                                        <th>last Updated Date</th>
+                                                        <th>Property Enquired About</th>
+                                                        <th>Location</th>
+                                                        <th>Apartment Size</th>
+                                                        <th>Applicant Type</th>
+                                                        <th>Preferred moving date</th>
+                                                        <th>Weekly Budget</th>
+                                                        <th>Bills Inclusive/Exclusive</th>
+                                                        <th>Group Size</th>
+                                                        <th>Nationality</th>
+                                                        <th>Night/Day Person</th>
+                                                        <th>Enquiry Source</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12345</a></td>
+                                                        <td><span class="badge bg-openEnquiry OpenEnquiry-badge ">Open
+                                                                Enquiry</span></td>
+                                                        <td>23/04/2023 </td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Morgan
+                                                                Freeman
+                                                            </a>
+                                                        </td>
+                                                        <td>23/04/2023 18:18</td>
+                                                        <td>3 BHK Apartment in Downtown</td>
+                                                        <td>
+                                                            Newcastle
+                                                        </td>
+                                                        <td>1 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>15/09/2024</td>
+                                                        <td>$60,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>3</td>
+                                                        <td>International</td>
 
-            <td>Day</td>
-            <td>
-                <div class="enquirySource">
-                    <iconify-icon icon="solar:phone-outline"></iconify-icon> Phone
-                </div>
-            </td>
-            <td>
-                <div class="d-flex align-items-center ActionDropdown">
-                    <div class="d-flex">
-                        <a href="Enquiry-details.php"
-                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                            <span class="icon"><span class="feather-icon">
-                                    <iconify-icon icon="ant-design:eye-outlined">
-                                    </iconify-icon>
-                                </span></span>
-                        </a>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td><a href="Enquiry-details.php">ENQ12346</a></td>
-            <td><span class="badge bg-openEnquiry OpenEnquiry-badge">Open Enquiry</span></td>
-            <td>15/03/2023</td>
-            <td><a href="Enquiry-details.php" class="namelinkURl">
-                    <iconify-icon icon="noto:star"></iconify-icon> Jessica Alba
-                </a></td>
-            <td>15/03/2023 16:40</td>
-            <td>2 BHK Condo in Uptown</td>
-            <td>
-                Northumbria
-            </td>
-            <td>3 Bed Apartment</td>
-            <td>Professional</td>
-            <td>20/09/2024</td>
-            <td>$10,000</td>
-            <td>2</td>
-            <td>UK</td>
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="solar:phone-outline"></iconify-icon>
+                                                                Phone
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12346</a></td>
+                                                        <td><span class="badge bg-openEnquiry OpenEnquiry-badge">Open
+                                                                Enquiry</span></td>
+                                                        <td>15/03/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Jessica
+                                                                Alba
+                                                            </a></td>
+                                                        <td>15/03/2023 16:40</td>
+                                                        <td>2 BHK Condo in Uptown</td>
+                                                        <td>
+                                                            Northumbria
+                                                        </td>
+                                                        <td>3 Bed Apartment</td>
+                                                        <td>Professional</td>
+                                                        <td>20/09/2024</td>
+                                                        <td>$10,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>2</td>
+                                                        <td>UK</td>
 
-            <td>Night</td>
-            <td>
-                <div class="enquirySource">
-                    <iconify-icon icon="quill:mail"></iconify-icon> Email
-                </div>
-            </td>
-            <td>
-                <div class="d-flex align-items-center ActionDropdown">
-                    <div class="d-flex">
-                        <a href="Enquiry-details.php"
-                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                            <span class="icon"><span class="feather-icon">
-                                    <iconify-icon icon="ant-design:eye-outlined">
-                                    </iconify-icon>
-                                </span></span>
-                        </a>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td><a href="Enquiry-details.php">ENQ12347</a></td>
-            <td><span class="badge bg-openEnquiry OpenEnquiry-badge">Open Enquiry</span></td>
-            <td>01/02/2023</td>
-            <td><a href="Enquiry-details.php" class="namelinkURl">
-                    <iconify-icon icon="noto:star"></iconify-icon> Chris Evans
-                </a></td>
-            <td>10/02/2024 15:15</td>
-            <td>4 BHK Villa in Suburban Heights</td>
-            <td>
-                Sunderland
-            </td>
-            <td>6 Bed Apartment</td>
-            <td>Student</td>
-            <td>22/10/2024</td>
-            <td>$50,000</td>
-            <td>4</td>
-            <td>Mix</td>
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12347</a></td>
+                                                        <td><span class="badge bg-openEnquiry OpenEnquiry-badge">Open
+                                                                Enquiry</span></td>
+                                                        <td>01/02/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Chris
+                                                                Evans
+                                                            </a></td>
+                                                        <td>10/02/2024 15:15</td>
+                                                        <td>4 BHK Villa in Suburban Heights</td>
+                                                        <td>
+                                                            Sunderland
+                                                        </td>
+                                                        <td>6 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>22/10/2024</td>
+                                                        <td>$50,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>4</td>
+                                                        <td>Mix</td>
 
-            <td>Day</td>
-            <td>
-                <div class="enquirySource">
-                    <iconify-icon icon="streamline:web"></iconify-icon> Website
-                </div>
-            </td>
-            <td>
-                <div class="d-flex align-items-center ActionDropdown">
-                    <div class="d-flex">
-                        <a href="Enquiry-details.php"
-                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                            <span class="icon"><span class="feather-icon">
-                                    <iconify-icon icon="ant-design:eye-outlined">
-                                    </iconify-icon>
-                                </span></span>
-                        </a>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td><a href="Enquiry-details.php">ENQ12348</a></td>
-            <td><span class="badge bg-openEnquiry OpenEnquiry-badge">Open Enquiry</span></td>
-            <td>10/01/2023</td>
-            <td><a href="Enquiry-details.php" class="namelinkURl">
-                    <iconify-icon icon="noto:star"></iconify-icon> Emma Watson
-                </a></td>
-            <td>18/06/2024 12:00</td>
-            <td>Luxury Penthouse in City Center</td>
-            <td>
-                Durham
-            </td>
-            <td>4 Bed Apartment</td>
-            <td>Professional</td>
-            <td>05/08/2024</td>
-            <td>$20,000</td>
-            <td>1</td>
-            <td>UK</td>
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="streamline:web"></iconify-icon>
+                                                                Website
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12348</a></td>
+                                                        <td><span class="badge bg-openEnquiry OpenEnquiry-badge">Open
+                                                                Enquiry</span></td>
+                                                        <td>10/01/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Emma
+                                                                Watson
+                                                            </a></td>
+                                                        <td>18/06/2024 12:00</td>
+                                                        <td>Luxury Penthouse in City Center</td>
+                                                        <td>
+                                                            Durham
+                                                        </td>
+                                                        <td>4 Bed Apartment</td>
+                                                        <td>Professional</td>
+                                                        <td>05/08/2024</td>
+                                                        <td>$20,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>1</td>
+                                                        <td>UK</td>
 
-            <td>Night</td>
-            <td>
-                <div class="enquirySource">
-                    <iconify-icon icon="lets-icons:user"></iconify-icon> Vendor
-                </div>
-            </td>
-            <td>
-                <div class="d-flex align-items-center ActionDropdown">
-                    <div class="d-flex">
-                        <a href="Enquiry-details.php"
-                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                            <span class="icon"><span class="feather-icon">
-                                    <iconify-icon icon="ant-design:eye-outlined">
-                                    </iconify-icon>
-                                </span></span>
-                        </a>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td><a href="Enquiry-details.php">ENQ12349</a></td>
-            <td><span class="badge bg-openEnquiry OpenEnquiry-badge">Open Enquiry</span></td>
-            <td>05/06/2023</td>
-            <td><a href="Enquiry-details.php" class="namelinkURl">
-                    <iconify-icon icon="noto:star"></iconify-icon> Tom Hanks
-                </a></td>
-            <td>26/08/2024 14:28</td>
-            <td>2 BHK Studio Apartment in Riverside</td>
-            <td>
-                Northumbria
-            </td>
-            <td>2 Bed Apartment</td>
-            <td>Family</td>
-            <td>30/09/2024</td>
-            <td>$25,000</td>
-            <td>3</td>
-            <td>International</td>
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="lets-icons:user"></iconify-icon>
+                                                                Vendor
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12349</a></td>
+                                                        <td><span class="badge bg-openEnquiry OpenEnquiry-badge">Open
+                                                                Enquiry</span></td>
+                                                        <td>05/06/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Tom Hanks
+                                                            </a></td>
+                                                        <td>26/08/2024 14:28</td>
+                                                        <td>2 BHK Studio Apartment in Riverside</td>
+                                                        <td>
+                                                            Northumbria
+                                                        </td>
+                                                        <td>2 Bed Apartment</td>
+                                                        <td>Family</td>
+                                                        <td>30/09/2024</td>
+                                                        <td>$25,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>3</td>
+                                                        <td>International</td>
 
-            <td>Day</td>
-            <td>
-                <div class="enquirySource">
-                    <iconify-icon icon="solar:phone-outline"></iconify-icon> Phone
-                </div>
-            </td>
-            <td>
-                <div class="d-flex align-items-center ActionDropdown">
-                    <div class="d-flex">
-                        <a href="Enquiry-details.php"
-                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                            <span class="icon"><span class="feather-icon">
-                                    <iconify-icon icon="ant-design:eye-outlined">
-                                    </iconify-icon>
-                                </span></span>
-                        </a>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td><a href="Enquiry-details.php">ENQ12350</a></td>
-            <td><span class="badge bg-openEnquiry OpenEnquiry-badge">Open Enquiry</span></td>
-            <td>12/04/2023</td>
-            <td><a href="Enquiry-details.php" class="namelinkURl">
-                    <iconify-icon icon="noto:star"></iconify-icon> Scarlett Johansson
-                </a>
-            </td>
-            <td>12/08/2024 15:15</td>
-            <td>Commercial Office Space in Tech Park</td>
-            <td>
-                Newcastle
-            </td>
-            <td>5 Bed Apartment</td>
-            <td>Student</td>
-            <td>30/07/2024</td>
-            <td>$250,000</td>
-            <td>2</td>
-            <td>Mix</td>
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="solar:phone-outline"></iconify-icon>
+                                                                Phone
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12350</a></td>
+                                                        <td><span class="badge bg-openEnquiry OpenEnquiry-badge">Open
+                                                                Enquiry</span></td>
+                                                        <td>12/04/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Scarlett
+                                                                Johansson
+                                                            </a>
+                                                        </td>
+                                                        <td>12/08/2024 15:15</td>
+                                                        <td>Commercial Office Space in Tech Park</td>
+                                                        <td>
+                                                            Newcastle
+                                                        </td>
+                                                        <td>5 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>30/07/2024</td>
+                                                        <td>$250,000</td>
+                                                        <td>Bills Exclusive</td>
+                                                        <td>2</td>
+                                                        <td>Mix</td>
 
-            <td>Night</td>
-            <td>
-                <div class="enquirySource">
-                    <iconify-icon icon="quill:mail"></iconify-icon> Email
-                </div>
-            </td>
-            <td>
-                <div class="d-flex align-items-center ActionDropdown">
-                    <div class="d-flex">
-                        <a href="Enquiry-details.php"
-                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                            <span class="icon"><span class="feather-icon">
-                                    <iconify-icon icon="ant-design:eye-outlined">
-                                    </iconify-icon>
-                                </span></span>
-                        </a>
-                    </div>
-                </div>
-            </td>
-        </tr>
-    </tbody>
-</table>
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
 
-</div>
-        </div>
+                                        </div>
+                                    </div>
 
-
-    </div>
-    <div class="tab-pane fade" id="processingEnquiry">
-    <div class="fullwidthTabInner_content_container">
-            <!-- <div class="docfilterbutton">
+                                </div>
+                                <div class="tab-pane fade" id="processingEnquiry">
+                                    <div class="fullwidthTabInner_content_container">
+                                        <!-- <div class="docfilterbutton">
                 <h2 class="tabinnerTitle">Enquiry Statuses </h2>
             </div> -->
-           
-                    <div class="contact-list-view">
 
-                        <table class="table common-datatable nowrap w-100">
-                            <thead>
-                                <tr>
-                                    <th>Enquiry ID</th>
-                                    <th>Status</th>
-                                    <th>Enquiry Date</th>
-                                    <th>Tenant</th>
-                                    <th>last Updated Date</th>
-                                    <th>Property Enquired About</th>
-                                    <th>Location</th>
-                                    <th>Apartment Size</th>
-                                    <th>Applicant Type</th>
-                                    <th>Preferred moving date</th>
-                                    <th>Weekly Budget</th>
-                                    <th>Group Size</th>
-                                    <th>Nationality</th>
-                                    <th>Night/Day Person</th>
-                                    <th>Enquiry Source</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12345</a></td>
-                                    <td><span class="badge bg-warning">In Processing</span></td>
-                                    <td>23/04/2023 </td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Morgan Freeman
-                                        </a>
-                                    </td>
-                                    <td>23/04/2023 18:18</td>
-                                    <td>3 BHK Apartment in Downtown</td>
-                                    <td>
-                                        Newcastle
-                                    </td>
-                                    <td>1 Bed Apartment</td>
-                                    <td>Student</td>
-                                    <td>15/09/2024</td>
-                                    <td>$60,000</td>
-                                    <td>3</td>
-                                    <td>International</td>
+                                        <div class="contact-list-view">
 
-                                    <td>Day</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="solar:phone-outline"></iconify-icon> Phone
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12346</a></td>
-                                    <td><span class="badge bg-warning">In Processing</span></td>
-                                    <td>15/03/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Jessica Alba
-                                        </a></td>
-                                    <td>15/03/2023 16:40</td>
-                                    <td>2 BHK Condo in Uptown</td>
-                                    <td>
-                                        Northumbria
-                                    </td>
-                                    <td>3 Bed Apartment</td>
-                                    <td>Professional</td>
-                                    <td>20/09/2024</td>
-                                    <td>$10,000</td>
-                                    <td>2</td>
-                                    <td>UK</td>
+                                            <table class="table common-datatable nowrap w-100">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Enquiry ID</th>
+                                                        <th>Status</th>
+                                                        <th>Enquiry Date</th>
+                                                        <th>Tenant</th>
+                                                        <th>last Updated Date</th>
+                                                        <th>Property Enquired About</th>
+                                                        <th>Location</th>
+                                                        <th>Apartment Size</th>
+                                                        <th>Applicant Type</th>
+                                                        <th>Preferred moving date</th>
+                                                        <th>Weekly Budget</th>
+                                                        <th>Bills Inclusive/Exclusive</th>
+                                                        <th>Group Size</th>
+                                                        <th>Nationality</th>
+                                                        <th>Night/Day Person</th>
+                                                        <th>Enquiry Source</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12345</a></td>
+                                                        <td><span class="badge bg-warning">In Processing</span></td>
+                                                        <td>23/04/2023 </td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Morgan
+                                                                Freeman
+                                                            </a>
+                                                        </td>
+                                                        <td>23/04/2023 18:18</td>
+                                                        <td>3 BHK Apartment in Downtown</td>
+                                                        <td>
+                                                            Newcastle
+                                                        </td>
+                                                        <td>1 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>15/09/2024</td>
+                                                        <td>$60,000</td>
+                                                        <td>Bills Exclusive</td>
+                                                        <td>3</td>
+                                                        <td>International</td>
 
-                                    <td>Night</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="quill:mail"></iconify-icon> Email
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12347</a></td>
-                                    <td><span class="badge bg-warning">In Processing</span></td>
-                                    <td>01/02/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Chris Evans
-                                        </a></td>
-                                    <td>10/02/2024 15:15</td>
-                                    <td>4 BHK Villa in Suburban Heights</td>
-                                    <td>
-                                        Sunderland
-                                    </td>
-                                    <td>6 Bed Apartment</td>
-                                    <td>Student</td>
-                                    <td>22/10/2024</td>
-                                    <td>$50,000</td>
-                                    <td>4</td>
-                                    <td>Mix</td>
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="solar:phone-outline"></iconify-icon>
+                                                                Phone
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12346</a></td>
+                                                        <td><span class="badge bg-warning">In Processing</span></td>
+                                                        <td>15/03/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Jessica
+                                                                Alba
+                                                            </a></td>
+                                                        <td>15/03/2023 16:40</td>
+                                                        <td>2 BHK Condo in Uptown</td>
+                                                        <td>
+                                                            Northumbria
+                                                        </td>
+                                                        <td>3 Bed Apartment</td>
+                                                        <td>Professional</td>
+                                                        <td>20/09/2024</td>
+                                                        <td>$10,000</td>
+                                                        <td>Bills Exclusive</td>
+                                                        <td>2</td>
+                                                        <td>UK</td>
 
-                                    <td>Day</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="streamline:web"></iconify-icon> Website
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12348</a></td>
-                                    <td><span class="badge bg-warning">In Processing</span></td>
-                                    <td>10/01/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Emma Watson
-                                        </a></td>
-                                    <td>18/06/2024 12:00</td>
-                                    <td>Luxury Penthouse in City Center</td>
-                                    <td>
-                                        Durham
-                                    </td>
-                                    <td>4 Bed Apartment</td>
-                                    <td>Professional</td>
-                                    <td>05/08/2024</td>
-                                    <td>$20,000</td>
-                                    <td>1</td>
-                                    <td>UK</td>
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12347</a></td>
+                                                        <td><span class="badge bg-warning">In Processing</span></td>
+                                                        <td>01/02/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Chris
+                                                                Evans
+                                                            </a></td>
+                                                        <td>10/02/2024 15:15</td>
+                                                        <td>4 BHK Villa in Suburban Heights</td>
+                                                        <td>
+                                                            Sunderland
+                                                        </td>
+                                                        <td>6 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>22/10/2024</td>
+                                                        <td>$50,000</td>
+                                                        <td>Bills Exclusive</td>
+                                                        <td>4</td>
+                                                        <td>Mix</td>
 
-                                    <td>Night</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="lets-icons:user"></iconify-icon> Vendor
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12349</a></td>
-                                    <td><span class="badge bg-warning">In Processing</span></td>
-                                    <td>05/06/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Tom Hanks
-                                        </a></td>
-                                    <td>26/08/2024 14:28</td>
-                                    <td>2 BHK Studio Apartment in Riverside</td>
-                                    <td>
-                                        Northumbria
-                                    </td>
-                                    <td>2 Bed Apartment</td>
-                                    <td>Family</td>
-                                    <td>30/09/2024</td>
-                                    <td>$25,000</td>
-                                    <td>3</td>
-                                    <td>International</td>
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="streamline:web"></iconify-icon>
+                                                                Website
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12348</a></td>
+                                                        <td><span class="badge bg-warning">In Processing</span></td>
+                                                        <td>10/01/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Emma
+                                                                Watson
+                                                            </a></td>
+                                                        <td>18/06/2024 12:00</td>
+                                                        <td>Luxury Penthouse in City Center</td>
+                                                        <td>
+                                                            Durham
+                                                        </td>
+                                                        <td>4 Bed Apartment</td>
+                                                        <td>Professional</td>
+                                                        <td>05/08/2024</td>
+                                                        <td>$20,000</td>
+                                                        <td>Bills Exclusive</td>
+                                                        <td>1</td>
+                                                        <td>UK</td>
 
-                                    <td>Day</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="solar:phone-outline"></iconify-icon> Phone
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12350</a></td>
-                                    <td><span class="badge bg-warning">In Processing</span></td>
-                                    <td>12/04/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Scarlett Johansson
-                                        </a>
-                                    </td>
-                                    <td>12/08/2024 15:15</td>
-                                    <td>Commercial Office Space in Tech Park</td>
-                                    <td>
-                                        Newcastle
-                                    </td>
-                                    <td>5 Bed Apartment</td>
-                                    <td>Student</td>
-                                    <td>30/07/2024</td>
-                                    <td>$250,000</td>
-                                    <td>2</td>
-                                    <td>Mix</td>
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="lets-icons:user"></iconify-icon>
+                                                                Vendor
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12349</a></td>
+                                                        <td><span class="badge bg-warning">In Processing</span></td>
+                                                        <td>05/06/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Tom Hanks
+                                                            </a></td>
+                                                        <td>26/08/2024 14:28</td>
+                                                        <td>2 BHK Studio Apartment in Riverside</td>
+                                                        <td>
+                                                            Northumbria
+                                                        </td>
+                                                        <td>2 Bed Apartment</td>
+                                                        <td>Family</td>
+                                                        <td>30/09/2024</td>
+                                                        <td>$25,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>3</td>
+                                                        <td>International</td>
 
-                                    <td>Night</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="solar:phone-outline"></iconify-icon>
+                                                                Phone
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12350</a></td>
+                                                        <td><span class="badge bg-warning">In Processing</span></td>
+                                                        <td>12/04/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Scarlett
+                                                                Johansson
+                                                            </a>
+                                                        </td>
+                                                        <td>12/08/2024 15:15</td>
+                                                        <td>Commercial Office Space in Tech Park</td>
+                                                        <td>
+                                                            Newcastle
+                                                        </td>
+                                                        <td>5 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>30/07/2024</td>
+                                                        <td>$250,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>2</td>
+                                                        <td>Mix</td>
+
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
                                         </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
 
-                    </div>
-                
-        </div>
+                                    </div>
 
-    </div>
+                                </div>
 
-    <div class="tab-pane fade" id="Enquiry_followup1">
-    <div class="fullwidthTabInner_content_container">
-            <!-- <div class="docfilterbutton">
+                                <div class="tab-pane fade" id="Enquiry_followup1">
+                                    <div class="fullwidthTabInner_content_container">
+                                        <!-- <div class="docfilterbutton">
                 <h2 class="tabinnerTitle">Enquiry Statuses </h2>
             </div> -->
-           
-                    <div class="contact-list-view">
 
-                        <table class="table common-datatable nowrap w-100">
-                            <thead>
-                                <tr>
-                                    <th>Enquiry ID</th>
-                                    <th>Status</th>
-                                    <th>Enquiry Date</th>
-                                    <th>Tenant</th>
-                                    <th>last Updated Date</th>
-                                    <th>Property Enquired About</th>
-                                    <th>Location</th>
-                                    <th>Apartment Size</th>
-                                    <th>Applicant Type</th>
-                                    <th>Preferred moving date</th>
-                                    <th>Weekly Budget</th>
-                                    <th>Group Size</th>
-                                    <th>Nationality</th>
-                                    <th>Night/Day Person</th>
-                                    <th>Enquiry Source</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12345</a></td>
-                                    <td><span class="badge bg-secondary">Follow up 1</span></td>
-                                    <td>23/04/2023 </td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Morgan Freeman
-                                        </a>
-                                    </td>
-                                    <td>23/04/2023 18:18</td>
-                                    <td>3 BHK Apartment in Downtown</td>
-                                    <td>
-                                        Newcastle
-                                    </td>
-                                    <td>1 Bed Apartment</td>
-                                    <td>Student</td>
-                                    <td>15/09/2024</td>
-                                    <td>$60,000</td>
-                                    <td>3</td>
-                                    <td>International</td>
+                                        <div class="contact-list-view">
 
-                                    <td>Day</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="solar:phone-outline"></iconify-icon> Phone
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12346</a></td>
-                                    <td><span class="badge bg-secondary">Follow up 1</span></td>
-                                    <td>15/03/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Jessica Alba
-                                        </a></td>
-                                    <td>15/03/2023 16:40</td>
-                                    <td>2 BHK Condo in Uptown</td>
-                                    <td>
-                                        Northumbria
-                                    </td>
-                                    <td>3 Bed Apartment</td>
-                                    <td>Professional</td>
-                                    <td>20/09/2024</td>
-                                    <td>$10,000</td>
-                                    <td>2</td>
-                                    <td>UK</td>
+                                            <table class="table common-datatable nowrap w-100">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Enquiry ID</th>
+                                                        <th>Status</th>
+                                                        <th>Enquiry Date</th>
+                                                        <th>Tenant</th>
+                                                        <th>last Updated Date</th>
+                                                        <th>Property Enquired About</th>
+                                                        <th>Location</th>
+                                                        <th>Apartment Size</th>
+                                                        <th>Applicant Type</th>
+                                                        <th>Preferred moving date</th>
+                                                        <th>Weekly Budget</th>
+                                                        <th>Bills Inclusive/Exclusive</th>
+                                                        <th>Group Size</th>
+                                                        <th>Nationality</th>
+                                                        <th>Night/Day Person</th>
+                                                        <th>Enquiry Source</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12345</a></td>
+                                                        <td><span class="badge bg-secondary">Follow up 1</span></td>
+                                                        <td>23/04/2023 </td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Morgan
+                                                                Freeman
+                                                            </a>
+                                                        </td>
+                                                        <td>23/04/2023 18:18</td>
+                                                        <td>3 BHK Apartment in Downtown</td>
+                                                        <td>
+                                                            Newcastle
+                                                        </td>
+                                                        <td>1 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>15/09/2024</td>
+                                                        <td>$60,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>3</td>
+                                                        <td>International</td>
 
-                                    <td>Night</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="quill:mail"></iconify-icon> Email
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12347</a></td>
-                                    <td><span class="badge bg-secondary">Follow up 1</span></td>
-                                    <td>01/02/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Chris Evans
-                                        </a></td>
-                                    <td>10/02/2024 15:15</td>
-                                    <td>4 BHK Villa in Suburban Heights</td>
-                                    <td>
-                                        Sunderland
-                                    </td>
-                                    <td>6 Bed Apartment</td>
-                                    <td>Student</td>
-                                    <td>22/10/2024</td>
-                                    <td>$50,000</td>
-                                    <td>4</td>
-                                    <td>Mix</td>
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="solar:phone-outline"></iconify-icon>
+                                                                Phone
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12346</a></td>
+                                                        <td><span class="badge bg-secondary">Follow up 1</span></td>
+                                                        <td>15/03/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Jessica
+                                                                Alba
+                                                            </a></td>
+                                                        <td>15/03/2023 16:40</td>
+                                                        <td>2 BHK Condo in Uptown</td>
+                                                        <td>
+                                                            Northumbria
+                                                        </td>
+                                                        <td>3 Bed Apartment</td>
+                                                        <td>Professional</td>
+                                                        <td>20/09/2024</td>
+                                                        <td>$10,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>2</td>
+                                                        <td>UK</td>
 
-                                    <td>Day</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="streamline:web"></iconify-icon> Website
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12348</a></td>
-                                    <td><span class="badge bg-secondary">Follow up 1</span></td>
-                                    <td>10/01/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Emma Watson
-                                        </a></td>
-                                    <td>18/06/2024 12:00</td>
-                                    <td>Luxury Penthouse in City Center</td>
-                                    <td>
-                                        Durham
-                                    </td>
-                                    <td>4 Bed Apartment</td>
-                                    <td>Professional</td>
-                                    <td>05/08/2024</td>
-                                    <td>$20,000</td>
-                                    <td>1</td>
-                                    <td>UK</td>
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12347</a></td>
+                                                        <td><span class="badge bg-secondary">Follow up 1</span></td>
+                                                        <td>01/02/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Chris
+                                                                Evans
+                                                            </a></td>
+                                                        <td>10/02/2024 15:15</td>
+                                                        <td>4 BHK Villa in Suburban Heights</td>
+                                                        <td>
+                                                            Sunderland
+                                                        </td>
+                                                        <td>6 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>22/10/2024</td>
+                                                        <td>$50,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>4</td>
+                                                        <td>Mix</td>
 
-                                    <td>Night</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="lets-icons:user"></iconify-icon> Vendor
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12349</a></td>
-                                    <td><span class="badge bg-secondary">Follow up 1</span></td>
-                                    <td>05/06/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Tom Hanks
-                                        </a></td>
-                                    <td>26/08/2024 14:28</td>
-                                    <td>2 BHK Studio Apartment in Riverside</td>
-                                    <td>
-                                        Northumbria
-                                    </td>
-                                    <td>2 Bed Apartment</td>
-                                    <td>Family</td>
-                                    <td>30/09/2024</td>
-                                    <td>$25,000</td>
-                                    <td>3</td>
-                                    <td>International</td>
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="streamline:web"></iconify-icon>
+                                                                Website
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12348</a></td>
+                                                        <td><span class="badge bg-secondary">Follow up 1</span></td>
+                                                        <td>10/01/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Emma
+                                                                Watson
+                                                            </a></td>
+                                                        <td>18/06/2024 12:00</td>
+                                                        <td>Luxury Penthouse in City Center</td>
+                                                        <td>
+                                                            Durham
+                                                        </td>
+                                                        <td>4 Bed Apartment</td>
+                                                        <td>Professional</td>
+                                                        <td>05/08/2024</td>
+                                                        <td>$20,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>1</td>
+                                                        <td>UK</td>
 
-                                    <td>Day</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="solar:phone-outline"></iconify-icon> Phone
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12350</a></td>
-                                    <td><span class="badge bg-secondary">Follow up 1</span></td>
-                                    <td>12/04/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Scarlett Johansson
-                                        </a>
-                                    </td>
-                                    <td>12/08/2024 15:15</td>
-                                    <td>Commercial Office Space in Tech Park</td>
-                                    <td>
-                                        Newcastle
-                                    </td>
-                                    <td>5 Bed Apartment</td>
-                                    <td>Student</td>
-                                    <td>30/07/2024</td>
-                                    <td>$250,000</td>
-                                    <td>2</td>
-                                    <td>Mix</td>
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="lets-icons:user"></iconify-icon>
+                                                                Vendor
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12349</a></td>
+                                                        <td><span class="badge bg-secondary">Follow up 1</span></td>
+                                                        <td>05/06/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Tom Hanks
+                                                            </a></td>
+                                                        <td>26/08/2024 14:28</td>
+                                                        <td>2 BHK Studio Apartment in Riverside</td>
+                                                        <td>
+                                                            Northumbria
+                                                        </td>
+                                                        <td>2 Bed Apartment</td>
+                                                        <td>Family</td>
+                                                        <td>30/09/2024</td>
+                                                        <td>$25,000</td>
+                                                        <td>Bills Exclusive</td>
+                                                        <td>3</td>
+                                                        <td>International</td>
 
-                                    <td>Night</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="solar:phone-outline"></iconify-icon>
+                                                                Phone
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12350</a></td>
+                                                        <td><span class="badge bg-secondary">Follow up 1</span></td>
+                                                        <td>12/04/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Scarlett
+                                                                Johansson
+                                                            </a>
+                                                        </td>
+                                                        <td>12/08/2024 15:15</td>
+                                                        <td>Commercial Office Space in Tech Park</td>
+                                                        <td>
+                                                            Newcastle
+                                                        </td>
+                                                        <td>5 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>30/07/2024</td>
+                                                        <td>$250,000</td>
+                                                        <td>Bills Exclusive</td>
+                                                        <td>2</td>
+                                                        <td>Mix</td>
+
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
                                         </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
 
-                    </div>
-                
-        </div>
+                                    </div>
 
-    </div>
+                                </div>
 
-    <div class="tab-pane fade" id="Enquiry_followup2">
-    <div class="fullwidthTabInner_content_container">
-            <!-- <div class="docfilterbutton">
+                                <div class="tab-pane fade" id="Enquiry_followup2">
+                                    <div class="fullwidthTabInner_content_container">
+                                        <!-- <div class="docfilterbutton">
                 <h2 class="tabinnerTitle">Enquiry Statuses </h2>
             </div> -->
-          
-                    <div class="contact-list-view">
 
-                        <table class="table common-datatable nowrap w-100">
-                            <thead>
-                                <tr>
-                                    <th>Enquiry ID</th>
-                                    <th>Status</th>
-                                    <th>Enquiry Date</th>
-                                    <th>Tenant</th>
-                                    <th>last Updated Date</th>
-                                    <th>Property Enquired About</th>
-                                    <th>Location</th>
-                                    <th>Apartment Size</th>
-                                    <th>Applicant Type</th>
-                                    <th>Preferred moving date</th>
-                                    <th>Weekly Budget</th>
-                                    <th>Group Size</th>
-                                    <th>Nationality</th>
-                                    <th>Night/Day Person</th>
-                                    <th>Enquiry Source</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12345</a></td>
-                                    <td><span class="badge bg-primary">Follow Up 2</span></td>
-                                    <td>23/04/2023 </td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Morgan Freeman
-                                        </a>
-                                    </td>
-                                    <td>23/04/2023 18:18</td>
-                                    <td>3 BHK Apartment in Downtown</td>
-                                    <td>
-                                        Newcastle
-                                    </td>
-                                    <td>1 Bed Apartment</td>
-                                    <td>Student</td>
-                                    <td>15/09/2024</td>
-                                    <td>$60,000</td>
-                                    <td>3</td>
-                                    <td>International</td>
+                                        <div class="contact-list-view">
 
-                                    <td>Day</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="solar:phone-outline"></iconify-icon> Phone
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12346</a></td>
-                                    <td><span class="badge bg-primary">Follow Up 2</span></td>
-                                    <td>15/03/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Jessica Alba
-                                        </a></td>
-                                    <td>15/03/2023 16:40</td>
-                                    <td>2 BHK Condo in Uptown</td>
-                                    <td>
-                                        Northumbria
-                                    </td>
-                                    <td>3 Bed Apartment</td>
-                                    <td>Professional</td>
-                                    <td>20/09/2024</td>
-                                    <td>$10,000</td>
-                                    <td>2</td>
-                                    <td>UK</td>
+                                            <table class="table common-datatable nowrap w-100">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Enquiry ID</th>
+                                                        <th>Status</th>
+                                                        <th>Enquiry Date</th>
+                                                        <th>Tenant</th>
+                                                        <th>last Updated Date</th>
+                                                        <th>Property Enquired About</th>
+                                                        <th>Location</th>
+                                                        <th>Apartment Size</th>
+                                                        <th>Applicant Type</th>
+                                                        <th>Preferred moving date</th>
+                                                        <th>Weekly Budget</th>
+                                                        <th>Bills Inclusive/Exclusive</th>
+                                                        <th>Group Size</th>
+                                                        <th>Nationality</th>
+                                                        <th>Night/Day Person</th>
+                                                        <th>Enquiry Source</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12345</a></td>
+                                                        <td><span class="badge bg-primary">Follow Up 2</span></td>
+                                                        <td>23/04/2023 </td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Morgan
+                                                                Freeman
+                                                            </a>
+                                                        </td>
+                                                        <td>23/04/2023 18:18</td>
+                                                        <td>3 BHK Apartment in Downtown</td>
+                                                        <td>
+                                                            Newcastle
+                                                        </td>
+                                                        <td>1 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>15/09/2024</td>
+                                                        <td>$60,000</td>
+                                                        <td>Bills Exclusive</td>
+                                                        <td>3</td>
+                                                        <td>International</td>
 
-                                    <td>Night</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="quill:mail"></iconify-icon> Email
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12347</a></td>
-                                    <td><span class="badge bg-primary">Follow Up 2</span></td>
-                                    <td>01/02/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Chris Evans
-                                        </a></td>
-                                    <td>10/02/2024 15:15</td>
-                                    <td>4 BHK Villa in Suburban Heights</td>
-                                    <td>
-                                        Sunderland
-                                    </td>
-                                    <td>6 Bed Apartment</td>
-                                    <td>Student</td>
-                                    <td>22/10/2024</td>
-                                    <td>$50,000</td>
-                                    <td>4</td>
-                                    <td>Mix</td>
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="solar:phone-outline"></iconify-icon>
+                                                                Phone
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12346</a></td>
+                                                        <td><span class="badge bg-primary">Follow Up 2</span></td>
+                                                        <td>15/03/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Jessica
+                                                                Alba
+                                                            </a></td>
+                                                        <td>15/03/2023 16:40</td>
+                                                        <td>2 BHK Condo in Uptown</td>
+                                                        <td>
+                                                            Northumbria
+                                                        </td>
+                                                        <td>3 Bed Apartment</td>
+                                                        <td>Professional</td>
+                                                        <td>20/09/2024</td>
+                                                        <td>$10,000</td>
+                                                        <td>Bills Exclusive</td>
+                                                        <td>2</td>
+                                                        <td>UK</td>
 
-                                    <td>Day</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="streamline:web"></iconify-icon> Website
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12348</a></td>
-                                    <td><span class="badge bg-primary">Follow Up 2</span></td>
-                                    <td>10/01/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Emma Watson
-                                        </a></td>
-                                    <td>18/06/2024 12:00</td>
-                                    <td>Luxury Penthouse in City Center</td>
-                                    <td>
-                                        Durham
-                                    </td>
-                                    <td>4 Bed Apartment</td>
-                                    <td>Professional</td>
-                                    <td>05/08/2024</td>
-                                    <td>$20,000</td>
-                                    <td>1</td>
-                                    <td>UK</td>
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12347</a></td>
+                                                        <td><span class="badge bg-primary">Follow Up 2</span></td>
+                                                        <td>01/02/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Chris
+                                                                Evans
+                                                            </a></td>
+                                                        <td>10/02/2024 15:15</td>
+                                                        <td>4 BHK Villa in Suburban Heights</td>
+                                                        <td>
+                                                            Sunderland
+                                                        </td>
+                                                        <td>6 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>22/10/2024</td>
+                                                        <td>$50,000</td>
+                                                        <td>Bills Exclusive</td>
+                                                        <td>4</td>
+                                                        <td>Mix</td>
 
-                                    <td>Night</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="lets-icons:user"></iconify-icon> Vendor
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12349</a></td>
-                                    <td><span class="badge bg-primary">Follow Up 2</span></td>
-                                    <td>05/06/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Tom Hanks
-                                        </a></td>
-                                    <td>26/08/2024 14:28</td>
-                                    <td>2 BHK Studio Apartment in Riverside</td>
-                                    <td>
-                                        Northumbria
-                                    </td>
-                                    <td>2 Bed Apartment</td>
-                                    <td>Family</td>
-                                    <td>30/09/2024</td>
-                                    <td>$25,000</td>
-                                    <td>3</td>
-                                    <td>International</td>
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="streamline:web"></iconify-icon>
+                                                                Website
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12348</a></td>
+                                                        <td><span class="badge bg-primary">Follow Up 2</span></td>
+                                                        <td>10/01/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Emma
+                                                                Watson
+                                                            </a></td>
+                                                        <td>18/06/2024 12:00</td>
+                                                        <td>Luxury Penthouse in City Center</td>
+                                                        <td>
+                                                            Durham
+                                                        </td>
+                                                        <td>4 Bed Apartment</td>
+                                                        <td>Professional</td>
+                                                        <td>05/08/2024</td>
+                                                        <td>$20,000</td>
+                                                        <td>Bills Exclusive</td>
+                                                        <td>1</td>
+                                                        <td>UK</td>
 
-                                    <td>Day</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="solar:phone-outline"></iconify-icon> Phone
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12350</a></td>
-                                    <td><span class="badge bg-primary">Follow Up 2</span></td>
-                                    <td>12/04/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Scarlett Johansson
-                                        </a>
-                                    </td>
-                                    <td>12/08/2024 15:15</td>
-                                    <td>Commercial Office Space in Tech Park</td>
-                                    <td>
-                                        Newcastle
-                                    </td>
-                                    <td>5 Bed Apartment</td>
-                                    <td>Student</td>
-                                    <td>30/07/2024</td>
-                                    <td>$250,000</td>
-                                    <td>2</td>
-                                    <td>Mix</td>
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="lets-icons:user"></iconify-icon>
+                                                                Vendor
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12349</a></td>
+                                                        <td><span class="badge bg-primary">Follow Up 2</span></td>
+                                                        <td>05/06/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Tom Hanks
+                                                            </a></td>
+                                                        <td>26/08/2024 14:28</td>
+                                                        <td>2 BHK Studio Apartment in Riverside</td>
+                                                        <td>
+                                                            Northumbria
+                                                        </td>
+                                                        <td>2 Bed Apartment</td>
+                                                        <td>Family</td>
+                                                        <td>30/09/2024</td>
+                                                        <td>$25,000</td>
+                                                        <td>Bills Exclusive</td>
+                                                        <td>3</td>
+                                                        <td>International</td>
 
-                                    <td>Night</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="solar:phone-outline"></iconify-icon>
+                                                                Phone
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12350</a></td>
+                                                        <td><span class="badge bg-primary">Follow Up 2</span></td>
+                                                        <td>12/04/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Scarlett
+                                                                Johansson
+                                                            </a>
+                                                        </td>
+                                                        <td>12/08/2024 15:15</td>
+                                                        <td>Commercial Office Space in Tech Park</td>
+                                                        <td>
+                                                            Newcastle
+                                                        </td>
+                                                        <td>5 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>30/07/2024</td>
+                                                        <td>$250,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>2</td>
+                                                        <td>Mix</td>
+
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
                                         </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
 
-                    </div>
-               
-        </div>
+                                    </div>
 
-    </div>
+                                </div>
 
-    <div class="tab-pane fade" id="Enquiry_FinalFollowUp">
-    <div class="fullwidthTabInner_content_container">
-            <!-- <div class="docfilterbutton">
+                                <div class="tab-pane fade" id="Enquiry_FinalFollowUp">
+                                    <div class="fullwidthTabInner_content_container">
+                                        <!-- <div class="docfilterbutton">
                 <h2 class="tabinnerTitle">Enquiry Statuses </h2>
             </div> -->
-           
-                    <div class="contact-list-view">
 
-                        <table class="table common-datatable nowrap w-100">
-                            <thead>
-                                <tr>
-                                    <th>Enquiry ID</th>
-                                    <th>Status</th>
-                                    <th>Enquiry Date</th>
-                                    <th>Tenant</th>
-                                    <th>last Updated Date</th>
-                                    <th>Property Enquired About</th>
-                                    <th>Location</th>
-                                    <th>Apartment Size</th>
-                                    <th>Applicant Type</th>
-                                    <th>Preferred moving date</th>
-                                    <th>Weekly Budget</th>
-                                    <th>Group Size</th>
-                                    <th>Nationality</th>
-                                    <th>Night/Day Person</th>
-                                    <th>Enquiry Source</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12345</a></td>
-                                    <td><span class="badge bg-info finalfollowupBadge">Final Follow Up</span></td>
-                                    <td>23/04/2023 </td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Morgan Freeman
-                                        </a>
-                                    </td>
-                                    <td>23/04/2023 18:18</td>
-                                    <td>3 BHK Apartment in Downtown</td>
-                                    <td>
-                                        Newcastle
-                                    </td>
-                                    <td>1 Bed Apartment</td>
-                                    <td>Student</td>
-                                    <td>15/09/2024</td>
-                                    <td>$60,000</td>
-                                    <td>3</td>
-                                    <td>International</td>
+                                        <div class="contact-list-view">
 
-                                    <td>Day</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="solar:phone-outline"></iconify-icon> Phone
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12346</a></td>
-                                    <td><span class="badge bg-info finalfollowupBadge">Final Follow Up</span></td>
-                                    <td>15/03/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Jessica Alba
-                                        </a></td>
-                                    <td>15/03/2023 16:40</td>
-                                    <td>2 BHK Condo in Uptown</td>
-                                    <td>
-                                        Northumbria
-                                    </td>
-                                    <td>3 Bed Apartment</td>
-                                    <td>Professional</td>
-                                    <td>20/09/2024</td>
-                                    <td>$10,000</td>
-                                    <td>2</td>
-                                    <td>UK</td>
+                                            <table class="table common-datatable nowrap w-100">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Enquiry ID</th>
+                                                        <th>Status</th>
+                                                        <th>Enquiry Date</th>
+                                                        <th>Tenant</th>
+                                                        <th>last Updated Date</th>
+                                                        <th>Property Enquired About</th>
+                                                        <th>Location</th>
+                                                        <th>Apartment Size</th>
+                                                        <th>Applicant Type</th>
+                                                        <th>Preferred moving date</th>
+                                                        <th>Weekly Budget</th>
+                                                        <th>Bills Inclusive/Exclusive</th>
+                                                        <th>Group Size</th>
+                                                        <th>Nationality</th>
+                                                        <th>Night/Day Person</th>
+                                                        <th>Enquiry Source</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12345</a></td>
+                                                        <td><span class="badge bg-info finalfollowupBadge">Final Follow
+                                                                Up</span></td>
+                                                        <td>23/04/2023 </td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Morgan
+                                                                Freeman
+                                                            </a>
+                                                        </td>
+                                                        <td>23/04/2023 18:18</td>
+                                                        <td>3 BHK Apartment in Downtown</td>
+                                                        <td>
+                                                            Newcastle
+                                                        </td>
+                                                        <td>1 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>15/09/2024</td>
+                                                        <td>$60,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>3</td>
+                                                        <td>International</td>
 
-                                    <td>Night</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="quill:mail"></iconify-icon> Email
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12347</a></td>
-                                    <td><span class="badge bg-info finalfollowupBadge">Final Follow Up</span></td>
-                                    <td>01/02/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Chris Evans
-                                        </a></td>
-                                    <td>10/02/2024 15:15</td>
-                                    <td>4 BHK Villa in Suburban Heights</td>
-                                    <td>
-                                        Sunderland
-                                    </td>
-                                    <td>6 Bed Apartment</td>
-                                    <td>Student</td>
-                                    <td>22/10/2024</td>
-                                    <td>$50,000</td>
-                                    <td>4</td>
-                                    <td>Mix</td>
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="solar:phone-outline"></iconify-icon>
+                                                                Phone
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12346</a></td>
+                                                        <td><span class="badge bg-info finalfollowupBadge">Final Follow
+                                                                Up</span></td>
+                                                        <td>15/03/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Jessica
+                                                                Alba
+                                                            </a></td>
+                                                        <td>15/03/2023 16:40</td>
+                                                        <td>2 BHK Condo in Uptown</td>
+                                                        <td>
+                                                            Northumbria
+                                                        </td>
+                                                        <td>3 Bed Apartment</td>
+                                                        <td>Professional</td>
+                                                        <td>20/09/2024</td>
+                                                        <td>$10,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>2</td>
+                                                        <td>UK</td>
 
-                                    <td>Day</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="streamline:web"></iconify-icon> Website
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12348</a></td>
-                                    <td><span class="badge bg-info finalfollowupBadge">Final Follow Up</span></td>
-                                    <td>10/01/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Emma Watson
-                                        </a></td>
-                                    <td>18/06/2024 12:00</td>
-                                    <td>Luxury Penthouse in City Center</td>
-                                    <td>
-                                        Durham
-                                    </td>
-                                    <td>4 Bed Apartment</td>
-                                    <td>Professional</td>
-                                    <td>05/08/2024</td>
-                                    <td>$20,000</td>
-                                    <td>1</td>
-                                    <td>UK</td>
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12347</a></td>
+                                                        <td><span class="badge bg-info finalfollowupBadge">Final Follow
+                                                                Up</span></td>
+                                                        <td>01/02/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Chris
+                                                                Evans
+                                                            </a></td>
+                                                        <td>10/02/2024 15:15</td>
+                                                        <td>4 BHK Villa in Suburban Heights</td>
+                                                        <td>
+                                                            Sunderland
+                                                        </td>
+                                                        <td>6 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>22/10/2024</td>
+                                                        <td>$50,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>4</td>
+                                                        <td>Mix</td>
 
-                                    <td>Night</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="lets-icons:user"></iconify-icon> Vendor
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12349</a></td>
-                                    <td><span class="badge bg-info finalfollowupBadge">Final Follow Up</span></td>
-                                    <td>05/06/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Tom Hanks
-                                        </a></td>
-                                    <td>26/08/2024 14:28</td>
-                                    <td>2 BHK Studio Apartment in Riverside</td>
-                                    <td>
-                                        Northumbria
-                                    </td>
-                                    <td>2 Bed Apartment</td>
-                                    <td>Family</td>
-                                    <td>30/09/2024</td>
-                                    <td>$25,000</td>
-                                    <td>3</td>
-                                    <td>International</td>
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="streamline:web"></iconify-icon>
+                                                                Website
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12348</a></td>
+                                                        <td><span class="badge bg-info finalfollowupBadge">Final Follow
+                                                                Up</span></td>
+                                                        <td>10/01/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Emma
+                                                                Watson
+                                                            </a></td>
+                                                        <td>18/06/2024 12:00</td>
+                                                        <td>Luxury Penthouse in City Center</td>
+                                                        <td>
+                                                            Durham
+                                                        </td>
+                                                        <td>4 Bed Apartment</td>
+                                                        <td>Professional</td>
+                                                        <td>05/08/2024</td>
+                                                        <td>$20,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>1</td>
+                                                        <td>UK</td>
 
-                                    <td>Day</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="solar:phone-outline"></iconify-icon> Phone
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12350</a></td>
-                                    <td><span class="badge bg-info finalfollowupBadge">Final Follow Up</span></td>
-                                    <td>12/04/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Scarlett Johansson
-                                        </a>
-                                    </td>
-                                    <td>12/08/2024 15:15</td>
-                                    <td>Commercial Office Space in Tech Park</td>
-                                    <td>
-                                        Newcastle
-                                    </td>
-                                    <td>5 Bed Apartment</td>
-                                    <td>Student</td>
-                                    <td>30/07/2024</td>
-                                    <td>$250,000</td>
-                                    <td>2</td>
-                                    <td>Mix</td>
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="lets-icons:user"></iconify-icon>
+                                                                Vendor
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12349</a></td>
+                                                        <td><span class="badge bg-info finalfollowupBadge">Final Follow
+                                                                Up</span></td>
+                                                        <td>05/06/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Tom Hanks
+                                                            </a></td>
+                                                        <td>26/08/2024 14:28</td>
+                                                        <td>2 BHK Studio Apartment in Riverside</td>
+                                                        <td>
+                                                            Northumbria
+                                                        </td>
+                                                        <td>2 Bed Apartment</td>
+                                                        <td>Family</td>
+                                                        <td>30/09/2024</td>
+                                                        <td>$25,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>3</td>
+                                                        <td>International</td>
 
-                                    <td>Night</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="solar:phone-outline"></iconify-icon>
+                                                                Phone
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12350</a></td>
+                                                        <td><span class="badge bg-info finalfollowupBadge">Final Follow
+                                                                Up</span></td>
+                                                        <td>12/04/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Scarlett
+                                                                Johansson
+                                                            </a>
+                                                        </td>
+                                                        <td>12/08/2024 15:15</td>
+                                                        <td>Commercial Office Space in Tech Park</td>
+                                                        <td>
+                                                            Newcastle
+                                                        </td>
+                                                        <td>5 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>30/07/2024</td>
+                                                        <td>$250,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>2</td>
+                                                        <td>Mix</td>
+
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
                                         </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
 
-                    </div>
-                
-        </div>
+                                    </div>
 
-    </div>
+                                </div>
 
-    <div class="tab-pane fade" id="DeadLeads">
-    <div class="fullwidthTabInner_content_container">
-            <!-- <div class="docfilterbutton">
+                                <div class="tab-pane fade" id="DeadLeads">
+                                    <div class="fullwidthTabInner_content_container">
+                                        <!-- <div class="docfilterbutton">
                 <h2 class="tabinnerTitle">Enquiry Statuses </h2>
             </div> -->
-           
-                    <div class="contact-list-view">
 
-                        <table class="table common-datatable nowrap w-100">
-                            <thead>
-                                <tr>
-                                    <th>Enquiry ID</th>
-                                    <th>Status</th>
-                                    <th>Enquiry Date</th>
-                                    <th>Tenant</th>
-                                    <th>last Updated Date</th>
-                                    <th>Property Enquired About</th>
-                                    <th>Location</th>
-                                    <th>Apartment Size</th>
-                                    <th>Applicant Type</th>
-                                    <th>Preferred moving date</th>
-                                    <th>Weekly Budget</th>
-                                    <th>Group Size</th>
-                                    <th>Nationality</th>
-                                    <th>Night/Day Person</th>
-                                    <th>Enquiry Source</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12345</a></td>
-                                    <td><span class="badge bg-danger Deadleads_badge">Dead Lead</span></td>
-                                    <td>23/04/2023 </td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Morgan Freeman
-                                        </a>
-                                    </td>
-                                    <td>23/04/2023 18:18</td>
-                                    <td>3 BHK Apartment in Downtown</td>
-                                    <td>
-                                        Newcastle
-                                    </td>
-                                    <td>1 Bed Apartment</td>
-                                    <td>Student</td>
-                                    <td>15/09/2024</td>
-                                    <td>$60,000</td>
-                                    <td>3</td>
-                                    <td>International</td>
+                                        <div class="contact-list-view">
 
-                                    <td>Day</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="solar:phone-outline"></iconify-icon> Phone
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12346</a></td>
-                                    <td><span class="badge bg-danger Deadleads_badge">Dead Lead</span></td>
-                                    <td>15/03/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Jessica Alba
-                                        </a></td>
-                                    <td>15/03/2023 16:40</td>
-                                    <td>2 BHK Condo in Uptown</td>
-                                    <td>
-                                        Northumbria
-                                    </td>
-                                    <td>3 Bed Apartment</td>
-                                    <td>Professional</td>
-                                    <td>20/09/2024</td>
-                                    <td>$10,000</td>
-                                    <td>2</td>
-                                    <td>UK</td>
+                                            <table class="table common-datatable nowrap w-100">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Enquiry ID</th>
+                                                        <th>Status</th>
+                                                        <th>Enquiry Date</th>
+                                                        <th>Tenant</th>
+                                                        <th>last Updated Date</th>
+                                                        <th>Property Enquired About</th>
+                                                        <th>Location</th>
+                                                        <th>Apartment Size</th>
+                                                        <th>Applicant Type</th>
+                                                        <th>Preferred moving date</th>
+                                                        <th>Weekly Budget</th>
+                                                        <th>Bills Inclusive/Exclusive</th>
+                                                        <th>Group Size</th>
+                                                        <th>Nationality</th>
+                                                        <th>Night/Day Person</th>
+                                                        <th>Enquiry Source</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12345</a></td>
+                                                        <td><span class="badge bg-danger Deadleads_badge">Dead
+                                                                Lead</span></td>
+                                                        <td>23/04/2023 </td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Morgan
+                                                                Freeman
+                                                            </a>
+                                                        </td>
+                                                        <td>23/04/2023 18:18</td>
+                                                        <td>3 BHK Apartment in Downtown</td>
+                                                        <td>
+                                                            Newcastle
+                                                        </td>
+                                                        <td>1 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>15/09/2024</td>
+                                                        <td>$60,000</td>
+                                                        <td>Bills Exclusive</td>
+                                                        <td>3</td>
+                                                        <td>International</td>
 
-                                    <td>Night</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="quill:mail"></iconify-icon> Email
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12347</a></td>
-                                    <td><span class="badge bg-danger Deadleads_badge">Dead Lead</span></td>
-                                    <td>01/02/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Chris Evans
-                                        </a></td>
-                                    <td>10/02/2024 15:15</td>
-                                    <td>4 BHK Villa in Suburban Heights</td>
-                                    <td>
-                                        Sunderland
-                                    </td>
-                                    <td>6 Bed Apartment</td>
-                                    <td>Student</td>
-                                    <td>22/10/2024</td>
-                                    <td>$50,000</td>
-                                    <td>4</td>
-                                    <td>Mix</td>
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="solar:phone-outline"></iconify-icon>
+                                                                Phone
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12346</a></td>
+                                                        <td><span class="badge bg-danger Deadleads_badge">Dead
+                                                                Lead</span></td>
+                                                        <td>15/03/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Jessica
+                                                                Alba
+                                                            </a></td>
+                                                        <td>15/03/2023 16:40</td>
+                                                        <td>2 BHK Condo in Uptown</td>
+                                                        <td>
+                                                            Northumbria
+                                                        </td>
+                                                        <td>3 Bed Apartment</td>
+                                                        <td>Professional</td>
+                                                        <td>20/09/2024</td>
+                                                        <td>$10,000</td>
+                                                        <td>Bills Exclusive</td>
+                                                        <td>2</td>
+                                                        <td>UK</td>
 
-                                    <td>Day</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="streamline:web"></iconify-icon> Website
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12348</a></td>
-                                    <td><span class="badge bg-danger Deadleads_badge">Dead Lead</span></td>
-                                    <td>10/01/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Emma Watson
-                                        </a></td>
-                                    <td>18/06/2024 12:00</td>
-                                    <td>Luxury Penthouse in City Center</td>
-                                    <td>
-                                        Durham
-                                    </td>
-                                    <td>4 Bed Apartment</td>
-                                    <td>Professional</td>
-                                    <td>05/08/2024</td>
-                                    <td>$20,000</td>
-                                    <td>1</td>
-                                    <td>UK</td>
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12347</a></td>
+                                                        <td><span class="badge bg-danger Deadleads_badge">Dead
+                                                                Lead</span></td>
+                                                        <td>01/02/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Chris
+                                                                Evans
+                                                            </a></td>
+                                                        <td>10/02/2024 15:15</td>
+                                                        <td>4 BHK Villa in Suburban Heights</td>
+                                                        <td>
+                                                            Sunderland
+                                                        </td>
+                                                        <td>6 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>22/10/2024</td>
+                                                        <td>$50,000</td>
+                                                        <td>Bills Exclusive</td>
+                                                        <td>4</td>
+                                                        <td>Mix</td>
 
-                                    <td>Night</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="lets-icons:user"></iconify-icon> Vendor
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12349</a></td>
-                                    <td><span class="badge bg-danger Deadleads_badge">Dead Lead</span></td>
-                                    <td>05/06/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Tom Hanks
-                                        </a></td>
-                                    <td>26/08/2024 14:28</td>
-                                    <td>2 BHK Studio Apartment in Riverside</td>
-                                    <td>
-                                        Northumbria
-                                    </td>
-                                    <td>2 Bed Apartment</td>
-                                    <td>Family</td>
-                                    <td>30/09/2024</td>
-                                    <td>$25,000</td>
-                                    <td>3</td>
-                                    <td>International</td>
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="streamline:web"></iconify-icon>
+                                                                Website
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12348</a></td>
+                                                        <td><span class="badge bg-danger Deadleads_badge">Dead
+                                                                Lead</span></td>
+                                                        <td>10/01/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Emma
+                                                                Watson
+                                                            </a></td>
+                                                        <td>18/06/2024 12:00</td>
+                                                        <td>Luxury Penthouse in City Center</td>
+                                                        <td>
+                                                            Durham
+                                                        </td>
+                                                        <td>4 Bed Apartment</td>
+                                                        <td>Professional</td>
+                                                        <td>05/08/2024</td>
+                                                        <td>$20,000</td>
+                                                        <td>Bills Exclusive</td>
+                                                        <td>1</td>
+                                                        <td>UK</td>
 
-                                    <td>Day</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="solar:phone-outline"></iconify-icon> Phone
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12350</a></td>
-                                    <td><span class="badge bg-danger Deadleads_badge">Dead Lead</span></td>
-                                    <td>12/04/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Scarlett Johansson
-                                        </a>
-                                    </td>
-                                    <td>12/08/2024 15:15</td>
-                                    <td>Commercial Office Space in Tech Park</td>
-                                    <td>
-                                        Newcastle
-                                    </td>
-                                    <td>5 Bed Apartment</td>
-                                    <td>Student</td>
-                                    <td>30/07/2024</td>
-                                    <td>$250,000</td>
-                                    <td>2</td>
-                                    <td>Mix</td>
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="lets-icons:user"></iconify-icon>
+                                                                Vendor
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12349</a></td>
+                                                        <td><span class="badge bg-danger Deadleads_badge">Dead
+                                                                Lead</span></td>
+                                                        <td>05/06/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Tom Hanks
+                                                            </a></td>
+                                                        <td>26/08/2024 14:28</td>
+                                                        <td>2 BHK Studio Apartment in Riverside</td>
+                                                        <td>
+                                                            Northumbria
+                                                        </td>
+                                                        <td>2 Bed Apartment</td>
+                                                        <td>Family</td>
+                                                        <td>30/09/2024</td>
+                                                        <td>$25,000</td>
+                                                        <td>Bills Exclusive</td>
+                                                        <td>3</td>
+                                                        <td>International</td>
 
-                                    <td>Night</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="solar:phone-outline"></iconify-icon>
+                                                                Phone
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12350</a></td>
+                                                        <td><span class="badge bg-danger Deadleads_badge">Dead
+                                                                Lead</span></td>
+                                                        <td>12/04/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Scarlett
+                                                                Johansson
+                                                            </a>
+                                                        </td>
+                                                        <td>12/08/2024 15:15</td>
+                                                        <td>Commercial Office Space in Tech Park</td>
+                                                        <td>
+                                                            Newcastle
+                                                        </td>
+                                                        <td>5 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>30/07/2024</td>
+                                                        <td>$250,000</td>
+                                                        <td>Bills Exclusive</td>
+                                                        <td>2</td>
+                                                        <td>Mix</td>
+
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
                                         </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
 
-                    </div>
-               
-        </div>
+                                    </div>
 
-    </div>
+                                </div>
 
-    <div class="tab-pane fade" id="Enquiry_requirmentNotmet">
-    <div class="fullwidthTabInner_content_container">
-            <!-- <div class="docfilterbutton">
+                                <div class="tab-pane fade" id="Enquiry_requirmentNotmet">
+                                    <div class="fullwidthTabInner_content_container">
+                                        <!-- <div class="docfilterbutton">
                 <h2 class="tabinnerTitle">Enquiry Statuses </h2>
             </div> -->
-          
-                    <div class="contact-list-view">
 
-                        <table class="table common-datatable nowrap w-100">
-                            <thead>
-                                <tr>
-                                    <th>Enquiry ID</th>
-                                    <th>Status</th>
-                                    <th>Enquiry Date</th>
-                                    <th>Tenant</th>
-                                    <th>last Updated Date</th>
-                                    <th>Property Enquired About</th>
-                                    <th>Location</th>
-                                    <th>Apartment Size</th>
-                                    <th>Applicant Type</th>
-                                    <th>Preferred moving date</th>
-                                    <th>Weekly Budget</th>
-                                    <th>Group Size</th>
-                                    <th>Nationality</th>
-                                    <th>Night/Day Person</th>
-                                    <th>Enquiry Source</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12345</a></td>
-                                    <td><span class="badge bg-Requirements Requirements_not_met_badge">Requirements not met</span></td>
-                                    <td>23/04/2023 </td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Morgan Freeman
-                                        </a>
-                                    </td>
-                                    <td>23/04/2023 18:18</td>
-                                    <td>3 BHK Apartment in Downtown</td>
-                                    <td>
-                                        Newcastle
-                                    </td>
-                                    <td>1 Bed Apartment</td>
-                                    <td>Student</td>
-                                    <td>15/09/2024</td>
-                                    <td>$60,000</td>
-                                    <td>3</td>
-                                    <td>International</td>
+                                        <div class="contact-list-view">
 
-                                    <td>Day</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="solar:phone-outline"></iconify-icon> Phone
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12346</a></td>
-                                    <td><span class="badge bg-Requirements Requirements_not_met_badge">Requirements not met</span></td>
-                                    <td>15/03/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Jessica Alba
-                                        </a></td>
-                                    <td>15/03/2023 16:40</td>
-                                    <td>2 BHK Condo in Uptown</td>
-                                    <td>
-                                        Northumbria
-                                    </td>
-                                    <td>3 Bed Apartment</td>
-                                    <td>Professional</td>
-                                    <td>20/09/2024</td>
-                                    <td>$10,000</td>
-                                    <td>2</td>
-                                    <td>UK</td>
+                                            <table class="table common-datatable nowrap w-100">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Enquiry ID</th>
+                                                        <th>Status</th>
+                                                        <th>Enquiry Date</th>
+                                                        <th>Tenant</th>
+                                                        <th>last Updated Date</th>
+                                                        <th>Property Enquired About</th>
+                                                        <th>Location</th>
+                                                        <th>Apartment Size</th>
+                                                        <th>Applicant Type</th>
+                                                        <th>Preferred moving date</th>
+                                                        <th>Weekly Budget</th>
+                                                        <th>Bills Inclusive/Exclusive</th>
+                                                        <th>Group Size</th>
+                                                        <th>Nationality</th>
+                                                        <th>Night/Day Person</th>
+                                                        <th>Enquiry Source</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12345</a></td>
+                                                        <td><span
+                                                                class="badge bg-Requirements Requirements_not_met_badge">Requirements
+                                                                not met</span></td>
+                                                        <td>23/04/2023 </td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Morgan
+                                                                Freeman
+                                                            </a>
+                                                        </td>
+                                                        <td>23/04/2023 18:18</td>
+                                                        <td>3 BHK Apartment in Downtown</td>
+                                                        <td>
+                                                            Newcastle
+                                                        </td>
+                                                        <td>1 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>15/09/2024</td>
+                                                        <td>$60,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>3</td>
+                                                        <td>International</td>
 
-                                    <td>Night</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="quill:mail"></iconify-icon> Email
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12347</a></td>
-                                    <td><span class="badge bg-Requirements Requirements_not_met_badge">Requirements not met</span></td>
-                                    <td>01/02/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Chris Evans
-                                        </a></td>
-                                    <td>10/02/2024 15:15</td>
-                                    <td>4 BHK Villa in Suburban Heights</td>
-                                    <td>
-                                        Sunderland
-                                    </td>
-                                    <td>6 Bed Apartment</td>
-                                    <td>Student</td>
-                                    <td>22/10/2024</td>
-                                    <td>$50,000</td>
-                                    <td>4</td>
-                                    <td>Mix</td>
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="solar:phone-outline"></iconify-icon>
+                                                                Phone
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12346</a></td>
+                                                        <td><span
+                                                                class="badge bg-Requirements Requirements_not_met_badge">Requirements
+                                                                not met</span></td>
+                                                        <td>15/03/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Jessica
+                                                                Alba
+                                                            </a></td>
+                                                        <td>15/03/2023 16:40</td>
+                                                        <td>2 BHK Condo in Uptown</td>
+                                                        <td>
+                                                            Northumbria
+                                                        </td>
+                                                        <td>3 Bed Apartment</td>
+                                                        <td>Professional</td>
+                                                        <td>20/09/2024</td>
+                                                        <td>$10,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>2</td>
+                                                        <td>UK</td>
 
-                                    <td>Day</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="streamline:web"></iconify-icon> Website
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12348</a></td>
-                                    <td><span class="badge bg-Requirements Requirements_not_met_badge">Requirements not met</span></td>
-                                    <td>10/01/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Emma Watson
-                                        </a></td>
-                                    <td>18/06/2024 12:00</td>
-                                    <td>Luxury Penthouse in City Center</td>
-                                    <td>
-                                        Durham
-                                    </td>
-                                    <td>4 Bed Apartment</td>
-                                    <td>Professional</td>
-                                    <td>05/08/2024</td>
-                                    <td>$20,000</td>
-                                    <td>1</td>
-                                    <td>UK</td>
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12347</a></td>
+                                                        <td><span
+                                                                class="badge bg-Requirements Requirements_not_met_badge">Requirements
+                                                                not met</span></td>
+                                                        <td>01/02/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Chris
+                                                                Evans
+                                                            </a></td>
+                                                        <td>10/02/2024 15:15</td>
+                                                        <td>4 BHK Villa in Suburban Heights</td>
+                                                        <td>
+                                                            Sunderland
+                                                        </td>
+                                                        <td>6 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>22/10/2024</td>
+                                                        <td>$50,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>4</td>
+                                                        <td>Mix</td>
 
-                                    <td>Night</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="lets-icons:user"></iconify-icon> Vendor
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12349</a></td>
-                                    <td><span class="badge bg-Requirements Requirements_not_met_badge">Requirements not met</span></td>
-                                    <td>05/06/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Tom Hanks
-                                        </a></td>
-                                    <td>26/08/2024 14:28</td>
-                                    <td>2 BHK Studio Apartment in Riverside</td>
-                                    <td>
-                                        Northumbria
-                                    </td>
-                                    <td>2 Bed Apartment</td>
-                                    <td>Family</td>
-                                    <td>30/09/2024</td>
-                                    <td>$25,000</td>
-                                    <td>3</td>
-                                    <td>International</td>
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="streamline:web"></iconify-icon>
+                                                                Website
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12348</a></td>
+                                                        <td><span
+                                                                class="badge bg-Requirements Requirements_not_met_badge">Requirements
+                                                                not met</span></td>
+                                                        <td>10/01/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Emma
+                                                                Watson
+                                                            </a></td>
+                                                        <td>18/06/2024 12:00</td>
+                                                        <td>Luxury Penthouse in City Center</td>
+                                                        <td>
+                                                            Durham
+                                                        </td>
+                                                        <td>4 Bed Apartment</td>
+                                                        <td>Professional</td>
+                                                        <td>05/08/2024</td>
+                                                        <td>$20,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>1</td>
+                                                        <td>UK</td>
 
-                                    <td>Day</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="solar:phone-outline"></iconify-icon> Phone
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="lets-icons:user"></iconify-icon>
+                                                                Vendor
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12349</a></td>
+                                                        <td><span
+                                                                class="badge bg-Requirements Requirements_not_met_badge">Requirements
+                                                                not met</span></td>
+                                                        <td>05/06/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Tom Hanks
+                                                            </a></td>
+                                                        <td>26/08/2024 14:28</td>
+                                                        <td>2 BHK Studio Apartment in Riverside</td>
+                                                        <td>
+                                                            Northumbria
+                                                        </td>
+                                                        <td>2 Bed Apartment</td>
+                                                        <td>Family</td>
+                                                        <td>30/09/2024</td>
+                                                        <td>$25,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>3</td>
+                                                        <td>International</td>
+
+                                                        <td>Day</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="solar:phone-outline"></iconify-icon>
+                                                                Phone
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="Enquiry-details.php">ENQ12350</a></td>
+                                                        <td><span
+                                                                class="badge bg-Requirements Requirements_not_met_badge">Requirements
+                                                                not met</span></td>
+                                                        <td>12/04/2023</td>
+                                                        <td><a href="Enquiry-details.php" class="namelinkURl">
+                                                                <iconify-icon icon="noto:star"></iconify-icon> Scarlett
+                                                                Johansson
+                                                            </a>
+                                                        </td>
+                                                        <td>12/08/2024 15:15</td>
+                                                        <td>Commercial Office Space in Tech Park</td>
+                                                        <td>
+                                                            Newcastle
+                                                        </td>
+                                                        <td>5 Bed Apartment</td>
+                                                        <td>Student</td>
+                                                        <td>30/07/2024</td>
+                                                        <td>$250,000</td>
+                                                        <td>Bills Inclusive</td>
+                                                        <td>2</td>
+                                                        <td>Mix</td>
+
+                                                        <td>Night</td>
+                                                        <td>
+                                                            <div class="enquirySource">
+                                                                <iconify-icon icon="quill:mail"></iconify-icon> Email
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="Enquiry-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                        <span class="icon"><span class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="ant-design:eye-outlined">
+                                                                                </iconify-icon>
+                                                                            </span></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
                                         </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="Enquiry-details.php">ENQ12350</a></td>
-                                    <td><span class="badge bg-Requirements Requirements_not_met_badge">Requirements not met</span></td>
-                                    <td>12/04/2023</td>
-                                    <td><a href="Enquiry-details.php" class="namelinkURl">
-                                            <iconify-icon icon="noto:star"></iconify-icon> Scarlett Johansson
-                                        </a>
-                                    </td>
-                                    <td>12/08/2024 15:15</td>
-                                    <td>Commercial Office Space in Tech Park</td>
-                                    <td>
-                                        Newcastle
-                                    </td>
-                                    <td>5 Bed Apartment</td>
-                                    <td>Student</td>
-                                    <td>30/07/2024</td>
-                                    <td>$250,000</td>
-                                    <td>2</td>
-                                    <td>Mix</td>
 
-                                    <td>Night</td>
-                                    <td>
-                                        <div class="enquirySource">
-                                            <iconify-icon icon="quill:mail"></iconify-icon> Email
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex align-items-center ActionDropdown">
-                                            <div class="d-flex">
-                                                <a href="Enquiry-details.php"
-                                                    class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                    <span class="icon"><span class="feather-icon">
-                                                            <iconify-icon icon="ant-design:eye-outlined">
-                                                            </iconify-icon>
-                                                        </span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                    </div>
 
-                    </div>
-                
-        </div>
+                                </div>
 
-    </div>
-
-
-</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2581,8 +2808,6 @@
     </div>
     <!-- /Page Body -->
 </div>
-
-
 
 <!-- Add SingleIndividial_form Enquiry modal offcanvas -->
 <div class="offcanvas offcanvas-bottom custombottm_offcanvasStyle" tabindex="-1" id="SingleIndividial_form"
@@ -2616,7 +2841,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="row">
-                            <div class="col-md-3">
+                                <div class="col-md-2">
                                     <div class="form-group">
                                         <label class="form-label">Title</label>
                                         <select class="form-control select2">
@@ -2628,6 +2853,18 @@
                                             <option value="Dr">Dr</option>
                                             <option value="Mx">Mx</option>
                                             <option value="Prof.">Prof.</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label class="form-label">Select Gender</label>
+                                        <select class="form-control select2">
+                                            <option disabled selected value="">Please Select...</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Prefer not to Say">Prefer not to Say</option>
                                         </select>
                                     </div>
 
@@ -2645,7 +2882,7 @@
                                         <input type="text" class="form-control" value="">
                                     </div>
                                 </div>
-                                <div class="col-lg-3">
+                                <div class="col-lg-2">
                                     <div class="form-group">
                                         <label class="form-label">Last Name</label>
                                         <input type="text" class="form-control" value="">
@@ -2801,10 +3038,28 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label class="form-label">Preferred date to start your tenancy</label>
-                                        <input class="form-control customdataPicker flatpickr-input" type="text" name=""
-                                            placeholder="Select Date" readonly="readonly">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Preferred date to start your tenancy</label>
+                                                <input class="form-control customdataPicker flatpickr-input" type="text"
+                                                    name="" placeholder="Select Date" readonly="readonly">
+                                                <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
+                                                </iconify-icon>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-check form-check-sm enqfrm_fieldwithout_label">
+                                                <input type="checkbox" class="form-check-input flex-check">
+                                                <label class="form-check-label">Flexible with Date</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 flexible_trigger_column" style="display: none;">
+                                            <div class="form-group">
+                                                <label class="form-label">Enter Number</label>
+                                                <input type="text" class="form-control" value="">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -2831,17 +3086,39 @@
                                 </div>
 
                                 <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label class="form-label">Are you looking for bills inclusive or bills exclusive? </label>
-                                        <select class="form-control select2">
-                                            <option disabled selected value="">Please Select...</option>
-                                            <option value="Bills Inclusive">Bills Inclusive</option>
-                                            <option value="Bills Exclusive">Bills Exclusive</option>
-                                            <option value="Bills Exclusive">Explore both options</option>
-                                        </select>
+    <div class="row">
+        <div class="col-lg-12 main-column">
+            <div class="form-group">
+                <label class="form-label">Are you looking for bills inclusive or bills exclusive?</label>
+                <select class="form-control select2 bills-option">
+                    <option disabled selected value="">Please Select...</option>
+                    <option value="Bills Inclusive">Bills Inclusive</option>
+                    <option value="Bills Exclusive">Bills Exclusive</option>
+                    <option value="Explore both options">Explore both options</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-lg-4 utilitybudgetColumn" style="display: none;">
+            <div class="form-group">
+                <label class="form-label">Utility Budget</label>
+                <select class="form-control select2">
+                    <option disabled selected value="">Please Select...</option>
+                    <option value="£5">£5</option>
+                    <option value="£10">£10</option>
+                    <option value="£15">£15</option>
+                    <option value="£20">£20</option>
+                    <option value="£25">£25</option>
+                    <option value="£30">£30</option>
+                    <option value="£35">£35</option>
+                    <option value="£40">£40</option>
+                    <option value="£45">£45</option>
+                    <option value="£50 and above">£50 and above</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
 
-                                    </div>
-                                </div>
 
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -2855,8 +3132,6 @@
 
                                     </div>
                                 </div>
-
-                                
 
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -2881,44 +3156,70 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-12">
+                                <div class="col-lg-4">
+                        <div class="form-group">
+                                            <label class="form-label">All Properties</label>
+                                            <div class="dropdown filterdropDownCustom available-users-dropdown-wrapper" >
+                                                <button class="dropbtn dropdown-toggle dropmenuBtn" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="selected-count">Select More Properties</span>
+                                                    <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
+                                                </button>
+                                                <div
+                                                    class="dropdown-menu customdropdownmenu_style available-users-dropdown">
+                                                    <div class="filTerSearchMain">
+                                                        <input type="text" class="filterclSearch available-users-search"
+                                                            placeholder="Search More Properties...">
+                                                        <iconify-icon icon="basil:search-outline"></iconify-icon>
+                                                    </div>
+                                                    <div class="sellallitemsMain">
+                                                        <div class="CustomselectallContainer">
+                                                            <input type="checkbox"
+                                                                class="select-all-available-users form-check-input">
+                                                            Select All
+                                                        </div>
+                                                        <div class="clDivider_full"></div>
+                                                    </div>
+                                                    <div class="Customdrpitems_container">
+                                                        <div class="mainoptionContainer">
+                                                            <div class="dropfilter_options">
+                                                                <input type="checkbox"
+                                                                    class="individual-option form-check-input"> Bedroom
+                                                                3 133, Flat 3 (Floor 1, No3), City View@Phoenix House
+                                                            </div>
+                                                        </div>
+                                                        <div class="mainoptionContainer">
+                                                            <div class="dropfilter_options">
+                                                                <input type="checkbox"
+                                                                    class="individual-option form-check-input">
+                                                                Bedroom 2 101, Flat 7 (Floor 2, No7), Garden
+                                                                View@Emerald Apartments
+                                                            </div>
+                                                        </div>
+                                                        <div class="mainoptionContainer">
+                                                            <div class="dropfilter_options">
+                                                                <input type="checkbox"
+                                                                    class="individual-option form-check-input">
+                                                                Lobby 002, Flat 1 (Ground Floor, No1), Street
+                                                                View@Central Plaza
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                                    <div class="form-group propertyMultiselect_container">
-                                        <label class="form-label">Properties</label>
-                                        <select class="form-control select2" multiple="multiple">
-                                            <option disabled value="">Please Select...</option>
-                                            <option value="1">Communal Area Inspection House 10</option>
-                                            <option value="2">Communal Area Inspection House 14</option>
-                                            <option value="3">Communal Area Inspection House 16</option>
-                                            <option value="4">Communal Area Inspection House 18</option>
-                                            <option value="5">Communal Area Inspection House 2</option>
-                                            <option value="6">Communal Area Inspection House 21</option>
-                                            <option value="7">Communal Area Inspection House 22</option>
-                                            <option value="8">Communal Area Inspection House 23</option>
-                                            <option value="9">Communal Area Inspection House 24</option>
-                                            <option value="10">Communal Area Inspection House 25</option>
-                                            <option value="11">Communal Area Inspection House 26</option>
-                                            <option value="12">Communal Area Inspection House 27</option>
-                                            <option value="13">Communal Area Inspection House 28</option>
-                                            <option value="14">Communal Area Inspection House 29</option>
-                                            <option value="15">Communal Area Inspection House 3</option>
-                                            <option value="16">Communal Area Inspection House 49</option>
-                                            <option value="17">Communal Area Inspection House 52</option>
-                                            <option value="18">Communal Area Inspection House 53</option>
-                                            <option value="19">Communal Area Inspection House 55</option>
-                                            <option value="20">Communal Area Inspection House 58</option>
-                                            <option value="21">Communal Area Inspection House 6</option>
-                                            <option value="22">Communal Area Inspection House 8</option>
-                                        </select>
-                                    </div>
+                                                    <p class="no-data" style="display: none;">No data found</p>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                </div>
+                        </div>
 
-                                <div class="col-lg-12">
+                                
+
+                                <div class="col-lg-4">
 
                                     <div class="form-group propertyMultiselect_container">
                                         <label class="form-label">Area</label>
-                                        <select class="form-control select2" multiple="multiple">
+                                        <select class="form-control select2">
                                             <option disabled value="">Please Select...</option>
                                             <option value="15 Stepney Lane, Newcastle upon Tyne">15 Stepney Lane,
                                                 Newcastle upon Tyne</option>
@@ -2953,7 +3254,7 @@
 
                                 </div>
 
-                                <div class="col-md-12">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Apartment Type</label>
                                         <select class="form-control select2">
@@ -2964,7 +3265,7 @@
                                             <option value="4 Bed Apartment">4 Bed Apartment</option>
                                             <option value="5 Bed Apartment">5 Bed Apartment</option>
                                             <option value="6 Bed Apartment">6 Bed Apartment</option>
-                                            
+
                                         </select>
                                     </div>
                                 </div>
@@ -3033,7 +3334,8 @@
 <!-- Add SingleIndividial_form Enquiry modal end -->
 
 <!-- Add Dual_form Enquiry modal offcanvas -->
-<div class="offcanvas offcanvas-bottom custombottm_offcanvasStyle" tabindex="-1" id="Dual_form" aria-labelledby="offcanvasLabel2">
+<div class="offcanvas offcanvas-bottom custombottm_offcanvasStyle" tabindex="-1" id="Dual_form"
+    aria-labelledby="offcanvasLabel2">
     <div class="offcanvas-header custom-canvas-header">
         <div class="canvas-header-title">
             <iconify-icon icon="akar-icons:schedule" width="1.2em" height="1.2em"></iconify-icon>
@@ -3063,7 +3365,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="row">
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                     <div class="form-group">
                                         <label class="form-label">Title</label>
                                         <select class="form-control select2">
@@ -3075,6 +3377,18 @@
                                             <option value="Dr">Dr</option>
                                             <option value="Mx">Mx</option>
                                             <option value="Prof.">Prof.</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label class="form-label">Select Gender</label>
+                                        <select class="form-control select2">
+                                            <option disabled selected value="">Please Select...</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Prefer not to Say">Prefer not to Say</option>
                                         </select>
                                     </div>
 
@@ -3092,7 +3406,7 @@
                                         <input type="text" class="form-control" value="">
                                     </div>
                                 </div>
-                                <div class="col-lg-3">
+                                <div class="col-lg-2">
                                     <div class="form-group">
                                         <label class="form-label">Last Name</label>
                                         <input type="text" class="form-control" value="">
@@ -3248,10 +3562,28 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label class="form-label">Preferred date to start your tenancy</label>
-                                        <input class="form-control customdataPicker flatpickr-input" type="text" name=""
-                                            placeholder="Select Date" readonly="readonly">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Preferred date to start your tenancy</label>
+                                                <input class="form-control customdataPicker flatpickr-input" type="text"
+                                                    name="" placeholder="Select Date" readonly="readonly">
+                                                <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
+                                                </iconify-icon>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-check form-check-sm enqfrm_fieldwithout_label">
+                                                <input type="checkbox" class="form-check-input flex-check">
+                                                <label class="form-check-label">Flexible with Date</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 flexible_trigger_column" style="display: none;">
+                                            <div class="form-group">
+                                                <label class="form-label">Enter Number</label>
+                                                <input type="text" class="form-control" value="">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -3278,17 +3610,38 @@
                                 </div>
 
                                 <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label class="form-label">Are you looking for bills inclusive or bills exclusive? </label>
-                                        <select class="form-control select2">
-                                            <option disabled selected value="">Please Select...</option>
-                                            <option value="Bills Inclusive">Bills Inclusive</option>
-                                            <option value="Bills Exclusive">Bills Exclusive</option>
-                                            <option value="Bills Exclusive">Explore both options</option>
-                                        </select>
-
-                                    </div>
-                                </div>
+    <div class="row">
+        <div class="col-lg-12 main-column">
+            <div class="form-group">
+                <label class="form-label">Are you looking for bills inclusive or bills exclusive?</label>
+                <select class="form-control select2 bills-option">
+                    <option disabled selected value="">Please Select...</option>
+                    <option value="Bills Inclusive">Bills Inclusive</option>
+                    <option value="Bills Exclusive">Bills Exclusive</option>
+                    <option value="Explore both options">Explore both options</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-lg-4 utilitybudgetColumn" style="display: none;">
+            <div class="form-group">
+                <label class="form-label">Utility Budget</label>
+                <select class="form-control select2">
+                    <option disabled selected value="">Please Select...</option>
+                    <option value="£5">£5</option>
+                    <option value="£10">£10</option>
+                    <option value="£15">£15</option>
+                    <option value="£20">£20</option>
+                    <option value="£25">£25</option>
+                    <option value="£30">£30</option>
+                    <option value="£35">£35</option>
+                    <option value="£40">£40</option>
+                    <option value="£45">£45</option>
+                    <option value="£50 and above">£50 and above</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
 
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -3303,7 +3656,6 @@
                                     </div>
                                 </div>
 
-                            
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">Enquiry Status</label>
@@ -3327,44 +3679,68 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-12">
+                                <div class="col-lg-4">
+                        <div class="form-group">
+                                            <label class="form-label">All Properties</label>
+                                            <div class="dropdown filterdropDownCustom available-users-dropdown-wrapper" >
+                                                <button class="dropbtn dropdown-toggle dropmenuBtn" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="selected-count">Select More Properties</span>
+                                                    <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
+                                                </button>
+                                                <div
+                                                    class="dropdown-menu customdropdownmenu_style available-users-dropdown">
+                                                    <div class="filTerSearchMain">
+                                                        <input type="text" class="filterclSearch available-users-search"
+                                                            placeholder="Search More Properties...">
+                                                        <iconify-icon icon="basil:search-outline"></iconify-icon>
+                                                    </div>
+                                                    <div class="sellallitemsMain">
+                                                        <div class="CustomselectallContainer">
+                                                            <input type="checkbox"
+                                                                class="select-all-available-users form-check-input">
+                                                            Select All
+                                                        </div>
+                                                        <div class="clDivider_full"></div>
+                                                    </div>
+                                                    <div class="Customdrpitems_container">
+                                                        <div class="mainoptionContainer">
+                                                            <div class="dropfilter_options">
+                                                                <input type="checkbox"
+                                                                    class="individual-option form-check-input"> Bedroom
+                                                                3 133, Flat 3 (Floor 1, No3), City View@Phoenix House
+                                                            </div>
+                                                        </div>
+                                                        <div class="mainoptionContainer">
+                                                            <div class="dropfilter_options">
+                                                                <input type="checkbox"
+                                                                    class="individual-option form-check-input">
+                                                                Bedroom 2 101, Flat 7 (Floor 2, No7), Garden
+                                                                View@Emerald Apartments
+                                                            </div>
+                                                        </div>
+                                                        <div class="mainoptionContainer">
+                                                            <div class="dropfilter_options">
+                                                                <input type="checkbox"
+                                                                    class="individual-option form-check-input">
+                                                                Lobby 002, Flat 1 (Ground Floor, No1), Street
+                                                                View@Central Plaza
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                                    <div class="form-group propertyMultiselect_container">
-                                        <label class="form-label">Properties</label>
-                                        <select class="form-control select2" multiple="multiple">
-                                            <option disabled value="">Please Select...</option>
-                                            <option value="1">Communal Area Inspection House 10</option>
-                                            <option value="2">Communal Area Inspection House 14</option>
-                                            <option value="3">Communal Area Inspection House 16</option>
-                                            <option value="4">Communal Area Inspection House 18</option>
-                                            <option value="5">Communal Area Inspection House 2</option>
-                                            <option value="6">Communal Area Inspection House 21</option>
-                                            <option value="7">Communal Area Inspection House 22</option>
-                                            <option value="8">Communal Area Inspection House 23</option>
-                                            <option value="9">Communal Area Inspection House 24</option>
-                                            <option value="10">Communal Area Inspection House 25</option>
-                                            <option value="11">Communal Area Inspection House 26</option>
-                                            <option value="12">Communal Area Inspection House 27</option>
-                                            <option value="13">Communal Area Inspection House 28</option>
-                                            <option value="14">Communal Area Inspection House 29</option>
-                                            <option value="15">Communal Area Inspection House 3</option>
-                                            <option value="16">Communal Area Inspection House 49</option>
-                                            <option value="17">Communal Area Inspection House 52</option>
-                                            <option value="18">Communal Area Inspection House 53</option>
-                                            <option value="19">Communal Area Inspection House 55</option>
-                                            <option value="20">Communal Area Inspection House 58</option>
-                                            <option value="21">Communal Area Inspection House 6</option>
-                                            <option value="22">Communal Area Inspection House 8</option>
-                                        </select>
-                                    </div>
+                                                    <p class="no-data" style="display: none;">No data found</p>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                </div>
+                        </div>
 
-                                <div class="col-lg-12">
+                                <div class="col-lg-4">
 
                                     <div class="form-group propertyMultiselect_container">
                                         <label class="form-label">Area</label>
-                                        <select class="form-control select2" multiple="multiple">
+                                        <select class="form-control select2" >
                                             <option disabled value="">Please Select...</option>
                                             <option value="15 Stepney Lane, Newcastle upon Tyne">15 Stepney Lane,
                                                 Newcastle upon Tyne</option>
@@ -3399,7 +3775,7 @@
 
                                 </div>
 
-                                <div class="col-md-12">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Apartment Type</label>
                                         <select class="form-control select2">
@@ -3410,7 +3786,7 @@
                                             <option value="4 Bed Apartment">4 Bed Apartment</option>
                                             <option value="5 Bed Apartment">5 Bed Apartment</option>
                                             <option value="6 Bed Apartment">6 Bed Apartment</option>
-                                            
+
                                         </select>
                                     </div>
                                 </div>
@@ -3479,7 +3855,8 @@
 <!-- Add Dual_form Enquiry modal end -->
 
 <!-- Add Group_form Enquiry modal offcanvas -->
-<div class="offcanvas offcanvas-bottom custombottm_offcanvasStyle" tabindex="-1" id="Group_form" aria-labelledby="offcanvasLabel3">
+<div class="offcanvas offcanvas-bottom custombottm_offcanvasStyle" tabindex="-1" id="Group_form"
+    aria-labelledby="offcanvasLabel3">
     <div class="offcanvas-header custom-canvas-header">
         <div class="canvas-header-title">
             <iconify-icon icon="akar-icons:schedule" width="1.2em" height="1.2em"></iconify-icon>
@@ -3509,7 +3886,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="row">
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                     <div class="form-group">
                                         <label class="form-label">Title</label>
                                         <select class="form-control select2">
@@ -3521,6 +3898,18 @@
                                             <option value="Dr">Dr</option>
                                             <option value="Mx">Mx</option>
                                             <option value="Prof.">Prof.</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label class="form-label">Select Gender</label>
+                                        <select class="form-control select2">
+                                            <option disabled selected value="">Please Select...</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Prefer not to Say">Prefer not to Say</option>
                                         </select>
                                     </div>
 
@@ -3538,7 +3927,7 @@
                                         <input type="text" class="form-control" value="">
                                     </div>
                                 </div>
-                                <div class="col-lg-3">
+                                <div class="col-lg-2">
                                     <div class="form-group">
                                         <label class="form-label">Last Name</label>
                                         <input type="text" class="form-control" value="">
@@ -3694,10 +4083,28 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label class="form-label">Preferred date to start your tenancy</label>
-                                        <input class="form-control customdataPicker flatpickr-input" type="text" name=""
-                                            placeholder="Select Date" readonly="readonly">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Preferred date to start your tenancy</label>
+                                                <input class="form-control customdataPicker flatpickr-input" type="text"
+                                                    name="" placeholder="Select Date" readonly="readonly">
+                                                <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
+                                                </iconify-icon>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-check form-check-sm enqfrm_fieldwithout_label">
+                                                <input type="checkbox" class="form-check-input flex-check">
+                                                <label class="form-check-label">Flexible with Date</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 flexible_trigger_column" style="display: none;">
+                                            <div class="form-group">
+                                                <label class="form-label">Enter Number</label>
+                                                <input type="text" class="form-control" value="">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -3724,17 +4131,38 @@
                                 </div>
 
                                 <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label class="form-label">Are you looking for bills inclusive or bills exclusive? </label>
-                                        <select class="form-control select2">
-                                            <option disabled selected value="">Please Select...</option>
-                                            <option value="Bills Inclusive">Bills Inclusive</option>
-                                            <option value="Bills Exclusive">Bills Exclusive</option>
-                                            <option value="Bills Exclusive">Explore both options</option>
-                                        </select>
-
-                                    </div>
-                                </div>
+    <div class="row">
+        <div class="col-lg-12 main-column">
+            <div class="form-group">
+                <label class="form-label">Are you looking for bills inclusive or bills exclusive?</label>
+                <select class="form-control select2 bills-option">
+                    <option disabled selected value="">Please Select...</option>
+                    <option value="Bills Inclusive">Bills Inclusive</option>
+                    <option value="Bills Exclusive">Bills Exclusive</option>
+                    <option value="Explore both options">Explore both options</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-lg-4 utilitybudgetColumn" style="display: none;">
+            <div class="form-group">
+                <label class="form-label">Utility Budget</label>
+                <select class="form-control select2">
+                    <option disabled selected value="">Please Select...</option>
+                    <option value="£5">£5</option>
+                    <option value="£10">£10</option>
+                    <option value="£15">£15</option>
+                    <option value="£20">£20</option>
+                    <option value="£25">£25</option>
+                    <option value="£30">£30</option>
+                    <option value="£35">£35</option>
+                    <option value="£40">£40</option>
+                    <option value="£45">£45</option>
+                    <option value="£50 and above">£50 and above</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
 
                                 <div class="col-md-4">
                                     <div class="form-group">
@@ -3792,44 +4220,70 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-12">
+                                <div class="col-lg-4">
+                        <div class="form-group">
+                                            <label class="form-label">All Properties</label>
+                                            <div class="dropdown filterdropDownCustom available-users-dropdown-wrapper" >
+                                                <button class="dropbtn dropdown-toggle dropmenuBtn" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="selected-count">Select More Properties</span>
+                                                    <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
+                                                </button>
+                                                <div
+                                                    class="dropdown-menu customdropdownmenu_style available-users-dropdown">
+                                                    <div class="filTerSearchMain">
+                                                        <input type="text" class="filterclSearch available-users-search"
+                                                            placeholder="Search More Properties...">
+                                                        <iconify-icon icon="basil:search-outline"></iconify-icon>
+                                                    </div>
+                                                    <div class="sellallitemsMain">
+                                                        <div class="CustomselectallContainer">
+                                                            <input type="checkbox"
+                                                                class="select-all-available-users form-check-input">
+                                                            Select All
+                                                        </div>
+                                                        <div class="clDivider_full"></div>
+                                                    </div>
+                                                    <div class="Customdrpitems_container">
+                                                        <div class="mainoptionContainer">
+                                                            <div class="dropfilter_options">
+                                                                <input type="checkbox"
+                                                                    class="individual-option form-check-input"> Bedroom
+                                                                3 133, Flat 3 (Floor 1, No3), City View@Phoenix House
+                                                            </div>
+                                                        </div>
+                                                        <div class="mainoptionContainer">
+                                                            <div class="dropfilter_options">
+                                                                <input type="checkbox"
+                                                                    class="individual-option form-check-input">
+                                                                Bedroom 2 101, Flat 7 (Floor 2, No7), Garden
+                                                                View@Emerald Apartments
+                                                            </div>
+                                                        </div>
+                                                        <div class="mainoptionContainer">
+                                                            <div class="dropfilter_options">
+                                                                <input type="checkbox"
+                                                                    class="individual-option form-check-input">
+                                                                Lobby 002, Flat 1 (Ground Floor, No1), Street
+                                                                View@Central Plaza
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                                    <div class="form-group propertyMultiselect_container">
-                                        <label class="form-label">Properties</label>
-                                        <select class="form-control select2" multiple="multiple">
-                                            <option disabled value="">Please Select...</option>
-                                            <option value="1">Communal Area Inspection House 10</option>
-                                            <option value="2">Communal Area Inspection House 14</option>
-                                            <option value="3">Communal Area Inspection House 16</option>
-                                            <option value="4">Communal Area Inspection House 18</option>
-                                            <option value="5">Communal Area Inspection House 2</option>
-                                            <option value="6">Communal Area Inspection House 21</option>
-                                            <option value="7">Communal Area Inspection House 22</option>
-                                            <option value="8">Communal Area Inspection House 23</option>
-                                            <option value="9">Communal Area Inspection House 24</option>
-                                            <option value="10">Communal Area Inspection House 25</option>
-                                            <option value="11">Communal Area Inspection House 26</option>
-                                            <option value="12">Communal Area Inspection House 27</option>
-                                            <option value="13">Communal Area Inspection House 28</option>
-                                            <option value="14">Communal Area Inspection House 29</option>
-                                            <option value="15">Communal Area Inspection House 3</option>
-                                            <option value="16">Communal Area Inspection House 49</option>
-                                            <option value="17">Communal Area Inspection House 52</option>
-                                            <option value="18">Communal Area Inspection House 53</option>
-                                            <option value="19">Communal Area Inspection House 55</option>
-                                            <option value="20">Communal Area Inspection House 58</option>
-                                            <option value="21">Communal Area Inspection House 6</option>
-                                            <option value="22">Communal Area Inspection House 8</option>
-                                        </select>
-                                    </div>
+                                                    <p class="no-data" style="display: none;">No data found</p>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                </div>
+                        </div>
 
-                                <div class="col-lg-12">
+                               
+
+                                <div class="col-lg-4">
 
                                     <div class="form-group propertyMultiselect_container">
                                         <label class="form-label">Area</label>
-                                        <select class="form-control select2" multiple="multiple">
+                                        <select class="form-control select2">
                                             <option disabled value="">Please Select...</option>
                                             <option value="15 Stepney Lane, Newcastle upon Tyne">15 Stepney Lane,
                                                 Newcastle upon Tyne</option>
@@ -3864,7 +4318,7 @@
 
                                 </div>
 
-                                <div class="col-md-12">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Apartment Type</label>
                                         <select class="form-control select2">
@@ -3875,7 +4329,7 @@
                                             <option value="4 Bed Apartment">4 Bed Apartment</option>
                                             <option value="5 Bed Apartment">5 Bed Apartment</option>
                                             <option value="6 Bed Apartment">6 Bed Apartment</option>
-                                            
+
                                         </select>
                                     </div>
                                 </div>
@@ -3943,90 +4397,90 @@
 </div>
 <!-- Add Group_form Enquiry modal end -->
 
-
 <div class="offcanvas offcanvas-start" tabindex="-1" id="Group_form" aria-labelledby="offcanvasLabel3">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasLabel3">Group Form</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">Content for Group</div>
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel3">Group Form</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">Content for Group</div>
 </div>
-
 
 <!-- for selection modal -->
 <div class="addEnquiry">
-  <form action="#">
-    <div class="modal fade" id="createformModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header modalheader_customStyle">
-            <h5 class="modal-title" id="exampleModalLabel">
-              <div class="modaltitle_icon">
-                <iconify-icon icon="fluent:form-multiple-48-regular"></iconify-icon>
-              </div>
-              <div class="enquiryChoose_Title">
-                Make an Enquiry For 
-                <span class="modalTitlePara">
-                  Choose the type of enquiry based on your occupancy needs: Single, Dual, or Group.
-                </span>
-              </div>
-            </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="selectedtype_container">
-              <div class="card cardforAcFire" data-bs-toggle="offcanvas" data-bs-target="#SingleIndividial_form" aria-controls="offcanvasExample" data-form-type="single">
-                <div class="card-content">
-                  <div class="formtypecard_icon">
-                  <iconify-icon icon="f7:person"></iconify-icon>
-                  </div>
-                  <h2 class="card-title">Single Individual</h2>
-                  <div class="radio-container">
-                    <input type="radio" id="radioAcFire" name="formType" value="acFire" />
-                    <label for="radioAcFire" class="radio-label"></label>
-                  </div>
-                </div>
-              </div>
+    <form action="#">
+        <div class="modal fade" id="createformModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header modalheader_customStyle">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            <div class="modaltitle_icon">
+                                <iconify-icon icon="fluent:form-multiple-48-regular"></iconify-icon>
+                            </div>
+                            <div class="enquiryChoose_Title">
+                                Make an Enquiry For
+                                <span class="modalTitlePara">
+                                    Choose the type of enquiry based on your occupancy needs: Single, Dual, or Group.
+                                </span>
+                            </div>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="selectedtype_container">
+                            <div class="card cardforAcFire" data-bs-toggle="offcanvas"
+                                data-bs-target="#SingleIndividial_form" aria-controls="offcanvasExample"
+                                data-form-type="single">
+                                <div class="card-content">
+                                    <div class="formtypecard_icon">
+                                        <iconify-icon icon="f7:person"></iconify-icon>
+                                    </div>
+                                    <h2 class="card-title">Single Individual</h2>
+                                    <div class="radio-container">
+                                        <input type="radio" id="radioAcFire" name="formType" value="acFire" />
+                                        <label for="radioAcFire" class="radio-label"></label>
+                                    </div>
+                                </div>
+                            </div>
 
-              <div class="card CardDual" data-bs-toggle="offcanvas" data-bs-target="#Dual_form" aria-controls="offcanvasExample" data-form-type="dual">
-                <div class="card-content">
-                  <div class="formtypecard_icon">
-                  <iconify-icon icon="fluent:dual-screen-arrow-right-24-regular"></iconify-icon>
-                  </div>
-                  <h2 class="card-title">Dual Occupancy</h2>
-                  <div class="radio-container">
-                    <input type="radio" id="radioFdic" name="formType" value="fdic" />
-                    <label for="radioFdic" class="radio-label"></label>
-                  </div>
-                </div>
-              </div>
+                            <div class="card CardDual" data-bs-toggle="offcanvas" data-bs-target="#Dual_form"
+                                aria-controls="offcanvasExample" data-form-type="dual">
+                                <div class="card-content">
+                                    <div class="formtypecard_icon">
+                                        <iconify-icon icon="fluent:dual-screen-arrow-right-24-regular"></iconify-icon>
+                                    </div>
+                                    <h2 class="card-title">Dual Occupancy</h2>
+                                    <div class="radio-container">
+                                        <input type="radio" id="radioFdic" name="formType" value="fdic" />
+                                        <label for="radioFdic" class="radio-label"></label>
+                                    </div>
+                                </div>
+                            </div>
 
-              <div class="card CardGroupselection" data-bs-toggle="offcanvas" data-bs-target="#Group_form" aria-controls="offcanvasExample" data-form-type="group">
-                <div class="card-content">
-                  <div class="formtypecard_icon">
-                  <iconify-icon icon="clarity:group-line"></iconify-icon>
-                  </div>
-                  <h2 class="card-title">Group</h2>
-                  <div class="radio-container">
-                    <input type="radio" id="radiogroup" name="formType" value="group" />
-                    <label for="radiogroup" class="radio-label"></label>
-                  </div>
-                </div>
-              </div>
+                            <div class="card CardGroupselection" data-bs-toggle="offcanvas" data-bs-target="#Group_form"
+                                aria-controls="offcanvasExample" data-form-type="group">
+                                <div class="card-content">
+                                    <div class="formtypecard_icon">
+                                        <iconify-icon icon="clarity:group-line"></iconify-icon>
+                                    </div>
+                                    <h2 class="card-title">Group</h2>
+                                    <div class="radio-container">
+                                        <input type="radio" id="radiogroup" name="formType" value="group" />
+                                        <label for="radiogroup" class="radio-label"></label>
+                                    </div>
+                                </div>
+                            </div>
 
-              <input type="hidden" name="selectedFormType" id="selectedFormType" required />
+                            <input type="hidden" name="selectedFormType" id="selectedFormType" required />
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </form>
+    </form>
 </div>
 
 <!-- Offcanvas elements for each card -->
-
-
- 
 
 <?php include('footer.php') ?>
 
@@ -4120,8 +4574,6 @@ Add Enquiry form dynamic data using Json start
 Add Enquiry form dynamic data using Json end
 ***************************************** -->
 
-
-
 <!-- property type custom option selection functionality -->
 <script>
     $(document).ready(function() {
@@ -4137,73 +4589,182 @@ Add Enquiry form dynamic data using Json end
 </script>
 <!-- property type custom option selection functionality end-->
 
-
 <!-- **************************
  add enquiry form option selection modal js
 ********************************* -->
 <script>
-function setWordLimit(className, wordLimit) {
-    var elements = document.querySelectorAll('.' + className);
-    elements.forEach(function(element) {
-        var text = element.innerText;
-        var words = text.split(' ');
-
-        if (words.length > wordLimit) {
-            var truncatedText = words.slice(0, wordLimit).join(' ') + '...';
-            element.innerText = truncatedText;
-        }
-    });
-}
-// Set the word limit for all paragraphs with class 'multine-ellipsis'
-setWordLimit('multine-ellipsis', 8);
+    function setWordLimit(className, wordLimit) {
+        var elements = document.querySelectorAll('.' + className);
+        elements.forEach(function(element) {
+            var text = element.innerText;
+            var words = text.split(' ');
+            if (words.length > wordLimit) {
+                var truncatedText = words.slice(0, wordLimit).join(' ') + '...';
+                element.innerText = truncatedText;
+            }
+        });
+    }
+    // Set the word limit for all paragraphs with class 'multine-ellipsis'
+    setWordLimit('multine-ellipsis', 8);
 </script>
-
 
 <!-- form type select js -->
 <script>
-$(document).ready(function() {
-  // Handle card selection
-  $('.selectedtype_container .card').on('click', function() {
-    var formType = $(this).data('form-type');
-    
-    // Mark the selected card
-    $('.selectedtype_container .card').removeClass('selected');
-    $(this).addClass('selected');
-    
-    // Check the corresponding radio button
-    $(this).find('input[type="radio"]').prop('checked', true);
-    
-    // Update the hidden input value
-    $('#selectedFormType').val(formType);
-
-    // Close the modal after selection
-    $('#createformModal').modal('hide');
-  });
-});
+    $(document).ready(function() {
+        // Handle card selection
+        $('.selectedtype_container .card').on('click', function() {
+            var formType = $(this).data('form-type');
+            // Mark the selected card
+            $('.selectedtype_container .card').removeClass('selected');
+            $(this).addClass('selected');
+            // Check the corresponding radio button
+            $(this).find('input[type="radio"]').prop('checked', true);
+            // Update the hidden input value
+            $('#selectedFormType').val(formType);
+            // Close the modal after selection
+            $('#createformModal').modal('hide');
+        });
+    });
 </script>
 
 <!-- button submit loader js start -->
- <script>
-  document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('.btnContinueProcess').forEach(function(button) {
-    button.addEventListener('click', function(event) {
-      event.preventDefault(); // Prevent default form submission or link redirection
-      
-      // Show loading dots
-      button.classList.add('btn-loading');
-      button.insertAdjacentHTML('beforeend', `
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.btnContinueProcess').forEach(function(button) {
+            button.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default form submission or link redirection
+                // Show loading dots
+                button.classList.add('btn-loading');
+                button.insertAdjacentHTML('beforeend', `
         <div class="loading-dots">
           <span></span><span></span><span></span>
         </div>
       `);
-      
+            });
+        });
     });
-  });
-});
+</script>
+<!-- button sybmit loader js end -->
 
- </script>
- <!-- button sybmit loader js end -->
-  
+<!-- enquiry form flexible date check functionality start -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Listen for changes to checkboxes with the class 'flex-check'
+        document.addEventListener('change', (event) => {
+            if (event.target.classList.contains('flex-check')) {
+                // Find the nearest '.flexible_trigger_column' within the same '.row'
+                const flexibleColumn = event.target.closest('.row').querySelector(
+                    '.flexible_trigger_column');
+                if (flexibleColumn) {
+                    // Toggle visibility of the flexible_trigger_column
+                    flexibleColumn.style.display = event.target.checked ? 'block' : 'none';
+                }
+            }
+        });
+    });
+</script>
+<!-- enquiry form flexible date check functionality end -->
+
+<!-- enquiry form bill excluive option select functionality start -->
+<!-- Include Select2 JavaScript -->
+<script>
+    // Initialize Select2 after the DOM loads
+    document.addEventListener('DOMContentLoaded', function () {
+        // Initialize all select2 elements
+        $('.select2').select2();
+
+        // Handle change events for bills-option
+        $('.bills-option').on('change', function () {
+            const parentRow = $(this).closest('.row'); // Get the parent .row
+            const utilityBudgetColumn = parentRow.find('.utilitybudgetColumn'); // Utility budget column
+            const mainColumn = parentRow.find('.main-column'); // Main column
+
+            if ($(this).val() === 'Bills Exclusive') {
+                utilityBudgetColumn.show(); // Show the utilityBudgetColumn
+                mainColumn.removeClass('col-lg-12').addClass('col-lg-8'); // Adjust column size
+            } else {
+                utilityBudgetColumn.hide(); // Hide the utilityBudgetColumn
+                mainColumn.removeClass('col-lg-8').addClass('col-lg-12'); // Adjust column size
+            }
+        });
+    });
+</script>
+
+<!-- enquiry form bill excluive option select functionality end -->
+
 <!-- **************************
  add enquiry form option selection modal js end
 ********************************* -->
+
+
+<!-- custom multiple select js start -->
+<script>
+   $(document).ready(function () {
+    // Update the count of selected options
+    function updateSelectedCount(dropdownWrapper) {
+        const selectedCount = dropdownWrapper.find(".individual-option:checked").length;
+        const selectedCountElement = dropdownWrapper.find(".selected-count");
+
+        if (selectedCount === 0) {
+            selectedCountElement.text("Select Location");
+        } else if (selectedCount === 1) {
+            selectedCountElement.text("1 selected");
+        } else {
+            selectedCountElement.text(`${selectedCount} selected`);
+        }
+    }
+
+    // Handle Select All checkbox
+    $(".select-all-available-users").on("change", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        const isChecked = $(this).prop("checked");
+        dropdownWrapper.find(".individual-option").prop("checked", isChecked);
+        updateSelectedCount(dropdownWrapper);
+    });
+
+    // Handle individual option selection
+    $(".individual-option").on("change", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        const totalOptions = dropdownWrapper.find(".individual-option").length;
+        const selectedOptions = dropdownWrapper.find(".individual-option:checked").length;
+
+        // Toggle the Select All checkbox
+        dropdownWrapper.find(".select-all-available-users").prop("checked", totalOptions === selectedOptions);
+
+        updateSelectedCount(dropdownWrapper);
+    });
+
+    // Reset Filter button
+    $(".reset-filter").on("click", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        dropdownWrapper.find(".individual-option").prop("checked", false);
+        dropdownWrapper.find(".select-all-available-users").prop("checked", false);
+        updateSelectedCount(dropdownWrapper);
+    });
+
+    // Apply Filter button
+    $(".apply-filter").on("click", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        const selectedItems = dropdownWrapper.find(".individual-option:checked").map(function () {
+            return $(this).parent().text().trim();
+        }).get();
+        console.log("Selected Items:", selectedItems);
+    });
+
+    // Filter search functionality
+    $(".available-users-search").on("keyup", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        const searchTerm = $(this).val().toLowerCase();
+        const options = dropdownWrapper.find(".mainoptionContainer");
+
+        options.filter(function () {
+            $(this).toggle($(this).text().toLowerCase().includes(searchTerm));
+        });
+
+        const noDataMessage = dropdownWrapper.find(".no-data");
+        noDataMessage.toggle(options.filter(":visible").length === 0);
+    });
+});
+
+</script>
+<!-- end -->

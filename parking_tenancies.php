@@ -238,7 +238,7 @@
                                 <table class="table common-datatable nowrap w-100 ">
                                     <thead>
                                         <tr>
-
+                                        <th>Tenant Name</th>
                                             <th>Property </th>
                                             <th>Tenancy Start Date</th>
                                             <th>Tenancy End Date</th>
@@ -253,6 +253,7 @@
                                     </thead>
                                     <tbody>
                                         <tr>
+                                        <td class="tenant-name" data-tenant-type="External Tenant">John Doe</td>
                                             <td>
                                                 <div class="LongMesage_container">
                                                     <input class="refuge-collection-input tableLongMessage_Input"
@@ -313,6 +314,7 @@
                                         </tr>
 
                                         <tr>
+                                        <td class="tenant-name" data-tenant-type="Existing Tenant">Jane Smith</td>
                                             <td>
                                                 <div class="LongMesage_container">
                                                     <input class="refuge-collection-input tableLongMessage_Input"
@@ -373,6 +375,7 @@
                                         </tr>
 
                                         <tr>
+                                        <td class="tenant-name" data-tenant-type="External Tenant">Mark Taylor</td>
                                             <td>
                                                 <div class="LongMesage_container">
                                                     <input class="refuge-collection-input tableLongMessage_Input"
@@ -433,6 +436,7 @@
                                         </tr>
 
                                         <tr>
+                                        <td class="tenant-name" data-tenant-type="Existing Tenant">Rachel Green</td>
                                             <td>
                                                 <div class="LongMesage_container">
                                                     <input class="refuge-collection-input tableLongMessage_Input"
@@ -493,6 +497,7 @@
                                         </tr>
 
                                         <tr>
+                                        <td class="tenant-name" data-tenant-type="Existing Tenant">Emily Brown</td>
                                             <td>
                                                 <div class="LongMesage_container">
                                                     <input class="refuge-collection-input tableLongMessage_Input"
@@ -905,3 +910,55 @@
     });
 </script>
 <!-- tenancy tab guranter fields hide show based on guranter required check end -->
+
+<style>
+        /* Tooltip Styling */
+        .tooltip-box {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            color: #fff;
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 12px;
+            z-index: 1000;
+        }
+        .tenant-name {
+            cursor: pointer;
+            color: #007bff;
+        }
+    </style>
+
+     
+
+<!-- hover feature that displays whether the parking is allocated to an external tenant or an existing tenant -->
+ <div id="tooltip" class="tooltip-box"></div>
+<script>
+    $(document).ready(function() {
+        const tooltip = $("#tooltip");
+
+        // Show tooltip on hover
+        $(".tenant-name").hover(
+            function(e) {
+                const tenantType = $(this).data("tenant-type");
+                tooltip.text(tenantType); // Set tooltip content
+                tooltip.css({
+                    top: e.pageY + 10 + "px",
+                    left: e.pageX + 10 + "px"
+                }).show();
+            },
+            function() {
+                tooltip.hide(); // Hide tooltip when not hovering
+            }
+        );
+
+        // Update tooltip position dynamically
+        $(".tenant-name").mousemove(function(e) {
+            tooltip.css({
+                top: e.pageY + 10 + "px",
+                left: e.pageX + 10 + "px"
+            });
+        });
+    });
+</script>
+<!-- hover feature that displays whether the parking is allocated to an external tenant or an existing tenant end-->

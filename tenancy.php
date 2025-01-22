@@ -30,7 +30,7 @@
 
                             </div>
                             <div class=" ms-3">
-                                <a href="landlord-Income Summary.php"
+                                <a href="property-details.php"
                                     class="btn btn-sm cmnbackbtn btn-outline-secondary ">
                                     <iconify-icon icon="line-md:list-3"></iconify-icon> Back
                                 </a>

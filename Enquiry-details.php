@@ -1147,7 +1147,7 @@
                                                                                 <a class="nav-link" data-bs-toggle="tab"
                                                                                     href="#tab_comments">
                                                                                     <span
-                                                                                        class="nav-link-text badge-on-text">All
+                                                                                        class="nav-link-text badge-on-text">Enquiry
                                                                                         Notes</span>
                                                                                 </a>
                                                                             </li>
@@ -1519,6 +1519,23 @@
                                                                                                         </div>
                                                                                                     </div>
 
+                                                                                                    <div
+                                                                                                        class="sendEnquiryNote_container setAlert_container">
+                                                                                                        <div
+                                                                                                            class="addto_todolist">
+                                                                                                            <div
+                                                                                                                class="form-check">
+                                                                                                                <input
+                                                                                                                    type="checkbox"
+                                                                                                                    class="form-check-input" checked>
+                                                                                                                <label
+                                                                                                                    class="form-check-label">Show under Viewing Notes
+                                                                                                                    <span
+                                                                                                                        class="done-strikethrough"></span></label>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+
                                                                                                 </div>
 
                                                                                                 <div class="Showing_departmentand_users"
@@ -1657,32 +1674,45 @@
                                                                                                                 class="card-body">
 
                                                                                                                 <div
-                                                                                                                    class="media align-items-center">
+                                                                                                                    class="media align-items-center notehead_withTag">
                                                                                                                     <div
-                                                                                                                        class="media-head">
+                                                                                                                        class="notesSendBy">
                                                                                                                         <div
-                                                                                                                            class="avatar avatar-xs avatar-rounded">
-                                                                                                                            <img src="dist/img/newimages/users/userdummy.png"
-                                                                                                                                alt="user"
-                                                                                                                                class="avatar-img">
+                                                                                                                            class="media-head">
+                                                                                                                            <div
+                                                                                                                                class="avatar avatar-xs avatar-rounded">
+                                                                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                                                    alt="user"
+                                                                                                                                    class="avatar-img">
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                        <div
+                                                                                                                            class="media-body">
+                                                                                                                            <div
+                                                                                                                                class="noteAuthor_title">
+                                                                                                                                Katherine
+                                                                                                                                Jones
+                                                                                                                            </div>
+                                                                                                                            <div
+                                                                                                                                class="NoteTiming">
+                                                                                                                                8
+                                                                                                                                Apr,
+                                                                                                                                20,
+                                                                                                                                5:30
+                                                                                                                                PM
+                                                                                                                            </div>
                                                                                                                         </div>
                                                                                                                     </div>
+
                                                                                                                     <div
-                                                                                                                        class="media-body">
-                                                                                                                        <div
-                                                                                                                            class="noteAuthor_title">
-                                                                                                                            Martin
-                                                                                                                            Luther
-                                                                                                                        </div>
-                                                                                                                        <div
-                                                                                                                            class="NoteTiming">
-                                                                                                                            9
-                                                                                                                            Apr,
-                                                                                                                            20,
-                                                                                                                            7:14
-                                                                                                                            AM
-                                                                                                                        </div>
+                                                                                                                        class="NoteTag">
+                                                                                                                        <iconify-icon
+                                                                                                                            icon="solar:tag-line-duotone">
+                                                                                                                        </iconify-icon>
+                                                                                                                        Medical
+                                                                                                                        Notes
                                                                                                                     </div>
+
                                                                                                                 </div>
                                                                                                                 <p
                                                                                                                     class="NoteDescription">
@@ -1746,32 +1776,45 @@
                                                                                                                 class="card-body">
 
                                                                                                                 <div
-                                                                                                                    class="media align-items-center">
+                                                                                                                    class="media align-items-center notehead_withTag">
                                                                                                                     <div
-                                                                                                                        class="media-head">
+                                                                                                                        class="notesSendBy">
                                                                                                                         <div
-                                                                                                                            class="avatar avatar-xs avatar-rounded">
-                                                                                                                            <img src="dist/img/newimages/users/userdummy.png"
-                                                                                                                                alt="user"
-                                                                                                                                class="avatar-img">
+                                                                                                                            class="media-head">
+                                                                                                                            <div
+                                                                                                                                class="avatar avatar-xs avatar-rounded">
+                                                                                                                                <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                                                    alt="user"
+                                                                                                                                    class="avatar-img">
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                        <div
+                                                                                                                            class="media-body">
+                                                                                                                            <div
+                                                                                                                                class="noteAuthor_title">
+                                                                                                                                Katherine
+                                                                                                                                Jones
+                                                                                                                            </div>
+                                                                                                                            <div
+                                                                                                                                class="NoteTiming">
+                                                                                                                                8
+                                                                                                                                Apr,
+                                                                                                                                20,
+                                                                                                                                5:30
+                                                                                                                                PM
+                                                                                                                            </div>
                                                                                                                         </div>
                                                                                                                     </div>
+
                                                                                                                     <div
-                                                                                                                        class="media-body">
-                                                                                                                        <div
-                                                                                                                            class="noteAuthor_title">
-                                                                                                                            Katherine
-                                                                                                                            Jones
-                                                                                                                        </div>
-                                                                                                                        <div
-                                                                                                                            class="NoteTiming">
-                                                                                                                            8
-                                                                                                                            Apr,
-                                                                                                                            20,
-                                                                                                                            5:30
-                                                                                                                            PM
-                                                                                                                        </div>
+                                                                                                                        class="NoteTag">
+                                                                                                                        <iconify-icon
+                                                                                                                            icon="solar:tag-line-duotone">
+                                                                                                                        </iconify-icon>
+                                                                                                                        Medical
+                                                                                                                        Notes
                                                                                                                     </div>
+
                                                                                                                 </div>
                                                                                                                 <p
                                                                                                                     class="NoteDescription">
@@ -2031,7 +2074,142 @@
                                                                                             class="singlesectionTitleSM">
                                                                                             <h2>Emergency Notes</h2>
                                                                                         </div>
-                                                                                        <div class="AddNoteEnuSection">
+
+                                                                                        <div class="comment-block">
+
+                                                                                            <div
+                                                                                                class="card card-border note-block">
+                                                                                                <div class="card-body">
+
+                                                                                                    <div
+                                                                                                        class="media align-items-center notehead_withTag">
+                                                                                                        <div
+                                                                                                            class="notesSendBy">
+                                                                                                            <div
+                                                                                                                class="media-head">
+                                                                                                                <div
+                                                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                                        alt="user"
+                                                                                                                        class="avatar-img">
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div
+                                                                                                                class="media-body">
+                                                                                                                <div
+                                                                                                                    class="noteAuthor_title">
+                                                                                                                    Martin
+                                                                                                                    Luther
+                                                                                                                </div>
+                                                                                                                <div
+                                                                                                                    class="NoteTiming">
+                                                                                                                    9
+                                                                                                                    Apr,
+                                                                                                                    20,
+                                                                                                                    7:14
+                                                                                                                    AM
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="NoteTag">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:tag-line-duotone">
+                                                                                                            </iconify-icon>
+                                                                                                            Emergency
+                                                                                                            Notes
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <p
+                                                                                                        class="NoteDescription">
+                                                                                                        @<a href="#"
+                                                                                                            class="fw-medium">Charlie
+                                                                                                            Darvin</a>
+                                                                                                        Tenant was
+                                                                                                        very interested
+                                                                                                        in the
+                                                                                                        property,
+                                                                                                        appreciating the
+                                                                                                        layout and
+                                                                                                        natural light.
+                                                                                                        They need two
+                                                                                                        bedrooms, a
+                                                                                                        workspace, and a
+                                                                                                        parking
+                                                                                                        spot. They have
+                                                                                                        a small dog
+                                                                                                        and prefer to
+                                                                                                        move in by the
+                                                                                                        end of next
+                                                                                                        month. Awaiting
+                                                                                                        their decision
+                                                                                                        by the end of
+                                                                                                        the week.</p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="card card-border note-block ">
+                                                                                                <div class="card-body">
+
+                                                                                                    <div
+                                                                                                        class="media align-items-center notehead_withTag">
+                                                                                                        <div
+                                                                                                            class="notesSendBy">
+                                                                                                            <div
+                                                                                                                class="media-head">
+                                                                                                                <div
+                                                                                                                    class="avatar avatar-xs avatar-rounded">
+                                                                                                                    <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                                        alt="user"
+                                                                                                                        class="avatar-img">
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div
+                                                                                                                class="media-body">
+                                                                                                                <div
+                                                                                                                    class="noteAuthor_title">
+                                                                                                                    Katherine
+                                                                                                                    Jones
+                                                                                                                </div>
+                                                                                                                <div
+                                                                                                                    class="NoteTiming">
+                                                                                                                    8
+                                                                                                                    Apr,
+                                                                                                                    20,
+                                                                                                                    5:30
+                                                                                                                    PM
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+
+                                                                                                        <div
+                                                                                                            class="NoteTag">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:tag-line-duotone">
+                                                                                                            </iconify-icon>
+                                                                                                            Emergency
+                                                                                                            Notes
+                                                                                                        </div>
+
+                                                                                                    </div>
+                                                                                                    <p
+                                                                                                        class="NoteDescription">
+                                                                                                        @<a href="#"
+                                                                                                            class="fw-medium">Martin
+                                                                                                            Luther</a>
+                                                                                                        Viscosity
+                                                                                                        ratio for
+                                                                                                        "Appear view"
+                                                                                                        link
+                                                                                                        text is 3.7:1
+                                                                                                        which is less
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                        </div>
+
+                                                                                        <!-- <div class="AddNoteEnuSection">
                                                                                             <div class="form-group">
                                                                                                 <label
                                                                                                     class="form-label">Note
@@ -2248,7 +2426,7 @@
                                                                                             class="submitnote_container">
                                                                                             <button type="button"
                                                                                                 class="sendBtn_common_main addenun_noteBtn send-note">Save</button>
-                                                                                        </div>
+                                                                                        </div> -->
                                                                                     </div>
 
                                                                                 </div>
@@ -3112,7 +3290,7 @@
                                                                             id="Tenant_Questionnaire">
                                                                             <div
                                                                                 class="d-flex align-items-center justify-content-between mb-2">
-                                                                                <h2> Tenant Questionnaire</h2>
+                                                                                <h2> Post Viewing Questionnaire</h2>
                                                                             </div>
 
                                                                             <div class="comment-block QuestionAnsBlock">
@@ -3682,9 +3860,9 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-12">
+                                        <!-- <div class="col-lg-12">
                                             <div class="form-group propertyMultiselect_container">
-                                                <label class="form-label">Selected Properties</label>
+                                                <label class="form-label">Select Properties</label>
                                                 <select id="property-select" class="form-control select2-properties"
                                                     multiple="multiple">
                                                     <option data-category="suggested" selected="selected">Elmwood
@@ -3699,7 +3877,64 @@
                                                     </option>
                                                 </select>
                                             </div>
+                                        </div> -->
+
+                                        <div class="col-lg-6">
+                        <div class="form-group">
+                                            <label class="form-label">All Properties</label>
+                                            <div class="dropdown filterdropDownCustom available-users-dropdown-wrapper" >
+                                                <button class="dropbtn dropdown-toggle dropmenuBtn" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="selected-count">Select More Properties</span>
+                                                    <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
+                                                </button>
+                                                <div
+                                                    class="dropdown-menu customdropdownmenu_style available-users-dropdown">
+                                                    <div class="filTerSearchMain">
+                                                        <input type="text" class="filterclSearch available-users-search"
+                                                            placeholder="Search More Properties...">
+                                                        <iconify-icon icon="basil:search-outline"></iconify-icon>
+                                                    </div>
+                                                    <div class="sellallitemsMain">
+                                                        <div class="CustomselectallContainer">
+                                                            <input type="checkbox"
+                                                                class="select-all-available-users form-check-input">
+                                                            Select All
+                                                        </div>
+                                                        <div class="clDivider_full"></div>
+                                                    </div>
+                                                    <div class="Customdrpitems_container">
+                                                        <div class="mainoptionContainer">
+                                                            <div class="dropfilter_options">
+                                                                <input type="checkbox"
+                                                                    class="individual-option form-check-input"> Bedroom
+                                                                3 133, Flat 3 (Floor 1, No3), City View@Phoenix House
+                                                            </div>
+                                                        </div>
+                                                        <div class="mainoptionContainer">
+                                                            <div class="dropfilter_options">
+                                                                <input type="checkbox"
+                                                                    class="individual-option form-check-input">
+                                                                Bedroom 2 101, Flat 7 (Floor 2, No7), Garden
+                                                                View@Emerald Apartments
+                                                            </div>
+                                                        </div>
+                                                        <div class="mainoptionContainer">
+                                                            <div class="dropfilter_options">
+                                                                <input type="checkbox"
+                                                                    class="individual-option form-check-input">
+                                                                Lobby 002, Flat 1 (Ground Floor, No1), Street
+                                                                View@Central Plaza
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="no-data" style="display: none;">No data found</p>
+                                                </div>
+                                            </div>
                                         </div>
+
+                        </div>
 
                                         <div class="col-md-6">
                                             <div class="form-group">
@@ -4015,14 +4250,21 @@
                             <span class="ev-icon-wrap"><span class="feather-icon"><i
                                         data-feather="user"></i></span></span>
                             <span class="event-staff"></span>
-                            <div class="viewallscheduels_btn">
-                                <iconify-icon icon="hugeicons:eye"></iconify-icon> View All Schedules
-                            </div>
+                            
                         </li>
-                        <li>
-                            <span class="ev-icon-wrap"><span class="feather-icon"><i
-                                        data-feather="map-pin"></i></span></span>
-                            <span class="event-location"></span>
+                        <li class="scheduledprop_listing_wrap" data-bs-toggle="modal"
+                        data-bs-target="#staffallviewing_modal">
+                           <div class="propertylistingfor_viewing">
+                           <span class="ev-icon-wrap"><span class="feather-icon"><i
+                                        data-feather="map-pin"></i></span>
+                                    </span>
+                                    <div class="viewallscheduels_btn">
+                                <iconify-icon icon="hugeicons:eye"></iconify-icon> View All Property Schedules
+                            </div>
+                            <!-- <span class="event-location"></span> -->
+                           </div>
+                            
+                           
                         </li>
                         <li class="calendarNotes_Wrapper">
                             <div class="form-group">
@@ -4600,7 +4842,7 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></span></span>
                                     <span class="event-location"><a
-                                            href="https://www.techmavedesigns.com/Design/graysons-properties-adminpanel">https://www.techmavedesigns.com/Design/graysons-properties-adminpanel</a></span>
+                                    href="property-details.php" target="_blank"> Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House</a></span>
                                 </div>
 
                                 <div class="Moreproperty_staffviewing">
@@ -4633,7 +4875,7 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></span></span>
                                     <span class="event-location"><a
-                                            href="https://www.techmavedesigns.com/Design/graysons-properties-adminpanel">https://www.techmavedesigns.com/Design/graysons-properties-adminpanel</a></span>
+                                    href="property-details.php" target="_blank"> Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House</a></span>
                                 </div>
 
                                 <div class="Moreproperty_staffviewing">
@@ -4666,7 +4908,7 @@
                                                 <circle cx="12" cy="10" r="3"></circle>
                                             </svg></span></span>
                                     <span class="event-location"><a
-                                            href="https://www.techmavedesigns.com/Design/graysons-properties-adminpanel">https://www.techmavedesigns.com/Design/graysons-properties-adminpanel</a></span>
+                                            href="property-details.php" target="_blank"> Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House</a></span>
                                 </div>
 
                                 <div class="Moreproperty_staffviewing">
@@ -5171,3 +5413,75 @@
     });
 </script>
 <!-- tabs scroll js end-->
+
+<!-- custom multiple select js start -->
+<script>
+   $(document).ready(function () {
+    // Update the count of selected options
+    function updateSelectedCount(dropdownWrapper) {
+        const selectedCount = dropdownWrapper.find(".individual-option:checked").length;
+        const selectedCountElement = dropdownWrapper.find(".selected-count");
+
+        if (selectedCount === 0) {
+            selectedCountElement.text("Select Location");
+        } else if (selectedCount === 1) {
+            selectedCountElement.text("1 selected");
+        } else {
+            selectedCountElement.text(`${selectedCount} selected`);
+        }
+    }
+
+    // Handle Select All checkbox
+    $(".select-all-available-users").on("change", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        const isChecked = $(this).prop("checked");
+        dropdownWrapper.find(".individual-option").prop("checked", isChecked);
+        updateSelectedCount(dropdownWrapper);
+    });
+
+    // Handle individual option selection
+    $(".individual-option").on("change", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        const totalOptions = dropdownWrapper.find(".individual-option").length;
+        const selectedOptions = dropdownWrapper.find(".individual-option:checked").length;
+
+        // Toggle the Select All checkbox
+        dropdownWrapper.find(".select-all-available-users").prop("checked", totalOptions === selectedOptions);
+
+        updateSelectedCount(dropdownWrapper);
+    });
+
+    // Reset Filter button
+    $(".reset-filter").on("click", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        dropdownWrapper.find(".individual-option").prop("checked", false);
+        dropdownWrapper.find(".select-all-available-users").prop("checked", false);
+        updateSelectedCount(dropdownWrapper);
+    });
+
+    // Apply Filter button
+    $(".apply-filter").on("click", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        const selectedItems = dropdownWrapper.find(".individual-option:checked").map(function () {
+            return $(this).parent().text().trim();
+        }).get();
+        console.log("Selected Items:", selectedItems);
+    });
+
+    // Filter search functionality
+    $(".available-users-search").on("keyup", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        const searchTerm = $(this).val().toLowerCase();
+        const options = dropdownWrapper.find(".mainoptionContainer");
+
+        options.filter(function () {
+            $(this).toggle($(this).text().toLowerCase().includes(searchTerm));
+        });
+
+        const noDataMessage = dropdownWrapper.find(".no-data");
+        noDataMessage.toggle(options.filter(":visible").length === 0);
+    });
+});
+
+</script>
+<!-- end -->

@@ -51,7 +51,7 @@
                             </div>
                             <div class=" ms-3">
 
-                                <a href="all-properties.php"
+                                <a href="marketing-settings.php"
                                     class="btn btn-sm cmnbackbtn btn-outline-secondary ">
                                     <iconify-icon icon="line-md:list-3"></iconify-icon> Back
                                 </a>

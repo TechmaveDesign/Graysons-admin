@@ -16,13 +16,12 @@
 
 <div class="container-xxl">
 
-
     <!-- Page Body -->
     <div class="hk-pg-body py-0">
         <div class="contactapp-wrap">
- <!-- sub menu header -->
- <?php include('headers/property-header.php') ?>
-                      <!-- sub menu header -->
+            <!-- sub menu header -->
+            <?php include('headers/property-header.php') ?>
+            <!-- sub menu header -->
             <div class="contactapp-content">
                 <div class="contactapp-detail-wrap">
                     <header class="contact-header">
@@ -41,6 +40,13 @@
                             </div>
                         </div>
                         <div class="contact-options-wrap">
+
+                            <div class="archived " id="btnproperty_archived">
+                                <a href="#" class="archivedBtn" id="archivedBtnTU">
+                                    <iconify-icon icon="material-symbols-light:archive-outline"></iconify-icon> Archived
+                                </a>
+                            </div>
+
                             <button id="toggleButton" type="button"
                                 class="btn  btn-flush-dark flush-soft-hover fIlterCmnButton"><span class="icon"><span
                                         class="feather-icon"><i data-feather="list"></i></span></span>Filter</button>
@@ -56,11 +62,10 @@
                                 <a class="dropdown-item" href="#">Import</a>
                             </div>
 
-                            <a class="btn btn-sm addiconiButton commonAddnewButton btn-primary ms-3" href="add-new-property.php">
+                            <a class="btn btn-sm addiconiButton commonAddnewButton btn-primary ms-3"
+                                href="add-new-property.php">
                                 <iconify-icon icon="lets-icons:add-round"></iconify-icon> Add New Property
                             </a>
-
-                          
 
                             <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover hk-navbar-togglable d-sm-inline-block d-none"
                                 href="#" data-bs-toggle="tooltip" data-placement="top" title=""
@@ -73,6 +78,31 @@
                         </div>
                         <div class=" sustomdividerLedtArrow"></div>
                     </header>
+
+                    <div class="fullwidthDesktopTabs MobileScrollShow" id="nopaddingTop">
+
+                        <ul class="nav nav-tabs nav-line nav-icon fullwidthCustom_tabsUL nav-light">
+
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#Activeproperties">
+                                    <div class="d-flex align-items-center">
+                                        <span class="nav-link-text">Active Properties</span>
+
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#archivedproperties">
+                                    <div class="d-flex align-items-center">
+                                        <span class="nav-link-text">Archived Properties</span>
+
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
                     <div class="contact-body">
                         <div class="nicescroll-bar">
                             <div class="userFilters onerowfilter" id="filterDiv" style="display: none;">
@@ -210,206 +240,635 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-xxl-3">
-                                                <div class="row justify-content-end">
-                                                    <div class="col-auto flexcheckColumn">
-                                                        <div class="form-group">
-                                                            <label class="form-label">&nbsp;</label>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input"
-                                                                    id="customCheckList6">
-                                                                <label class="form-check-label" for="customCheckList6">
-                                                                    Show Out of Service
-                                                                    <span class="done-strikethrough"></span>
-                                                                </label>
 
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        <div class="form-group">
-                                                            <label class="form-label">&nbsp;</label>
-                                                            <button type="button"
-                                                                class="btn btn-block btn-primary ">Filter
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
-                            <div class="contact-list-view">
 
-                                <table class="table common-datatable nowrap w-100 ">
-                                    <thead>
-                                        <tr>
+                            <div class="tab-content notpMargin_tab">
+                                <div class="tab-pane fade show active" id="Activeproperties">
+                                    <div class="fullwidthTabInner_content_container">
+                                        <div class="contact-list-view">
 
-                                            <th>Address </th>
-                                            <th>Area</th>
-                                            <th>Unit Type</th>
-                                            <th>Unit Name</th>
-                                            <th>Actions</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                1 Harvest Close
-                                            </td>
-                                            <td>Sunderland</td>
-                                            <td>Flat 1</td>
+                                            <table class="table common-datatable nowrap w-100 ">
+                                                <thead>
+                                                    <tr>
+                                                        <th>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="selectAllCheckbox3" value="unchecked">
+                                                                <label class="form-check-label"
+                                                                    for="selectAllCheckbox3"></label>
+                                                            </div>
+                                                        </th>
+                                                        <th>Landlord</th>
+                                                        <th>Address </th>
+                                                        <th>Area</th>
+                                                        <th>Total Properties</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="inlineCheckbox2" value="unchecked">
+                                                                <label class="form-check-label"
+                                                                    for="inlineCheckbox2"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="view-user-details.php">
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-head me-2">
+                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                alt="user" class="avatar-img">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <span class="d-block text-high-em">Charlie
+                                                                            Chaplin</span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            1 Harvest Close
+                                                        </td>
+                                                        <td>Sunderland</td>
+                                                        <td>11</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
 
-                                            <td>11</td>
-                                            <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                       
-                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="edit-property.php">
-                                                            <span class="icon">
-                                                                <iconify-icon icon="fluent:edit-16-regular">
-                                                                </iconify-icon>
-                                                            </span>
-                                                        </a>
-                                                        <a href="property-details.php"
-                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                            data-bs-toggle="tooltip" data-placement="top" title=""
-                                                            data-bs-original-title="View Property Details"
-                                                            href="property-details.php"><span class="icon"><span
-                                                                    class="feather-icon"><i
-                                                                        data-feather="eye"></i></span></span></a>
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        href="edit-property.php">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="property-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                                        title=""
+                                                                        data-bs-original-title="View Property Details"
+                                                                        href="property-details.php"><span
+                                                                            class="icon"><span class="feather-icon"><i
+                                                                                    data-feather="eye"></i></span></span></a>
 
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>23 Rosewood Avenue</td>
-                                            <td>Bristol</td>
-                                            <td>Apartment 3B</td>
-                                            <td>8</td>
-                                            <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="edit-property.php">
-                                                            <span class="icon">
-                                                                <iconify-icon icon="fluent:edit-16-regular">
-                                                                </iconify-icon>
-                                                            </span>
-                                                        </a>
-                                                        <a href="property-details.php"
-                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                            data-bs-toggle="tooltip" data-placement="top" title=""
-                                                            data-bs-original-title="View Property Details"><span
-                                                                class="icon"><span class="feather-icon"><i
-                                                                        data-feather="eye"></i></span></span></a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>17 Maple Street</td>
-                                            <td>Manchester</td>
-                                            <td>Flat 2A</td>
-                                            <td>5</td>
-                                            <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="edit-property.php">
-                                                            <span class="icon">
-                                                                <iconify-icon icon="fluent:edit-16-regular">
-                                                                </iconify-icon>
-                                                            </span>
-                                                        </a>
-                                                        <a href="property-details.php"
-                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                            data-bs-toggle="tooltip" data-placement="top" title=""
-                                                            data-bs-original-title="View Property Details"><span
-                                                                class="icon"><span class="feather-icon"><i
-                                                                        data-feather="eye"></i></span></span></a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>42 Elm Street</td>
-                                            <td>Leeds</td>
-                                            <td>House 5C</td>
-                                            <td>12</td>
-                                            <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="edit-property.php">
-                                                            <span class="icon">
-                                                                <iconify-icon icon="fluent:edit-16-regular">
-                                                                </iconify-icon>
-                                                            </span>
-                                                        </a>
-                                                        <a href="property-details.php"
-                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                            data-bs-toggle="tooltip" data-placement="top" title=""
-                                                            data-bs-original-title="View Property Details"><span
-                                                                class="icon"><span class="feather-icon"><i
-                                                                        data-feather="eye"></i></span></span></a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="inlineCheckbox2" value="unchecked">
+                                                                <label class="form-check-label"
+                                                                    for="inlineCheckbox2"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="view-user-details.php">
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-head me-2">
+                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                alt="user" class="avatar-img">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <span class="d-block text-high-em">Huma
+                                                                            Therman</span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>23 Rosewood Avenue</td>
+                                                        <td>Bristol</td>
+                                                        <td>8</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        href="edit-property.php">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="property-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                                        title=""
+                                                                        data-bs-original-title="View Property Details"><span
+                                                                            class="icon"><span class="feather-icon"><i
+                                                                                    data-feather="eye"></i></span></span></a>
 
-                                        <tr>
-                                            <td>9 Oak Lane</td>
-                                            <td>Liverpool</td>
-                                            <td>Flat 5D</td>
-                                            <td>9</td>
-                                            <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="edit-property.php">
-                                                            <span class="icon">
-                                                                <iconify-icon icon="fluent:edit-16-regular">
-                                                                </iconify-icon>
-                                                            </span>
-                                                        </a>
-                                                        <a href="property-details.php"
-                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                            data-bs-toggle="tooltip" data-placement="top" title=""
-                                                            data-bs-original-title="View Property Details"><span
-                                                                class="icon"><span class="feather-icon"><i
-                                                                        data-feather="eye"></i></span></span></a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>31 Willow Crescent</td>
-                                            <td>Newcastle</td>
-                                            <td>Apartment 2C</td>
-                                            <td>7</td>
-                                            <td>
-                                                <div class="d-flex align-items-center ActionDropdown">
-                                                    <div class="d-flex">
-                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="edit-property.php">
-                                                            <span class="icon">
-                                                                <iconify-icon icon="fluent:edit-16-regular">
-                                                                </iconify-icon>
-                                                            </span>
-                                                        </a>
-                                                        <a href="property-details.php"
-                                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                            data-bs-toggle="tooltip" data-placement="top" title=""
-                                                            data-bs-original-title="View Property Details"><span
-                                                                class="icon"><span class="feather-icon"><i
-                                                                        data-feather="eye"></i></span></span></a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="inlineCheckbox2" value="unchecked">
+                                                                <label class="form-check-label"
+                                                                    for="inlineCheckbox2"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="view-user-details.php">
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-head me-2">
+                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                alt="user" class="avatar-img">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <span class="d-block text-high-em">Morgan
+                                                                            Freeman</span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>17 Maple Street</td>
+                                                        <td>Manchester</td>
+                                                        <td>5</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        href="edit-property.php">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="property-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                                        title=""
+                                                                        data-bs-original-title="View Property Details"><span
+                                                                            class="icon"><span class="feather-icon"><i
+                                                                                    data-feather="eye"></i></span></span></a>
 
-                                    </tbody>
-                                </table>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="inlineCheckbox2" value="unchecked">
+                                                                <label class="form-check-label"
+                                                                    for="inlineCheckbox2"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="view-user-details.php">
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-head me-2">
+                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                alt="user" class="avatar-img">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <span class="d-block text-high-em">Winston
+                                                                            Churchil</span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>42 Elm Street</td>
+                                                        <td>Leeds</td>
+                                                        <td>12</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        href="edit-property.php">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="property-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                                        title=""
+                                                                        data-bs-original-title="View Property Details"><span
+                                                                            class="icon"><span class="feather-icon"><i
+                                                                                    data-feather="eye"></i></span></span></a>
+
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="inlineCheckbox2" value="unchecked">
+                                                                <label class="form-check-label"
+                                                                    for="inlineCheckbox2"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="view-user-details.php">
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-head me-2">
+                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                alt="user" class="avatar-img">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <span class="d-block text-high-em">Winston
+                                                                            Churchil</span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>9 Oak Lane</td>
+                                                        <td>Liverpool</td>
+                                                        <td>9</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        href="edit-property.php">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="property-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                                        title=""
+                                                                        data-bs-original-title="View Property Details"><span
+                                                                            class="icon"><span class="feather-icon"><i
+                                                                                    data-feather="eye"></i></span></span></a>
+
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="inlineCheckbox2" value="unchecked">
+                                                                <label class="form-check-label"
+                                                                    for="inlineCheckbox2"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="view-user-details.php">
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-head me-2">
+                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                alt="user" class="avatar-img">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <span class="d-block text-high-em">Winston
+                                                                            Churchil</span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>31 Willow Crescent</td>
+                                                        <td>Newcastle</td>
+                                                        <td>7</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        href="edit-property.php">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="property-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                                        title=""
+                                                                        data-bs-original-title="View Property Details"><span
+                                                                            class="icon"><span class="feather-icon"><i
+                                                                                    data-feather="eye"></i></span></span></a>
+
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="archivedproperties">
+                                    <div class="fullwidthTabInner_content_container">
+                                        <div class="contact-list-view">
+
+                                            <table class="table common-datatable nowrap w-100 ">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Landlord</th>
+                                                        <th>Address </th>
+                                                        <th>Area</th>
+                                                        <th>Total Properties</th>
+                                                        <th>Status</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="view-user-details.php">
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-head me-2">
+                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                alt="user" class="avatar-img">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <span class="d-block text-high-em">Charlie
+                                                                            Chaplin</span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            1 Harvest Close
+                                                        </td>
+                                                        <td>Sunderland</td>
+                                                        <td>11</td>
+                                                        <td>Archived</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        href="edit-property.php">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="property-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                                        title=""
+                                                                        data-bs-original-title="View Property Details"
+                                                                        href="property-details.php"><span
+                                                                            class="icon"><span class="feather-icon"><i
+                                                                                    data-feather="eye"></i></span></span></a>
+
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="view-user-details.php">
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-head me-2">
+                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                alt="user" class="avatar-img">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <span class="d-block text-high-em">Huma
+                                                                            Therman</span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>23 Rosewood Avenue</td>
+                                                        <td>Bristol</td>
+                                                        <td>8</td>
+                                                        <td>Archived</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        href="edit-property.php">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="property-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                                        title=""
+                                                                        data-bs-original-title="View Property Details"><span
+                                                                            class="icon"><span class="feather-icon"><i
+                                                                                    data-feather="eye"></i></span></span></a>
+
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="view-user-details.php">
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-head me-2">
+                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                alt="user" class="avatar-img">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <span class="d-block text-high-em">Morgan
+                                                                            Freeman</span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>17 Maple Street</td>
+                                                        <td>Manchester</td>
+                                                        <td>5</td>
+                                                        <td>Archived</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        href="edit-property.php">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="property-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                                        title=""
+                                                                        data-bs-original-title="View Property Details"><span
+                                                                            class="icon"><span class="feather-icon"><i
+                                                                                    data-feather="eye"></i></span></span></a>
+
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="view-user-details.php">
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-head me-2">
+                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                alt="user" class="avatar-img">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <span class="d-block text-high-em">Winston
+                                                                            Churchil</span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>42 Elm Street</td>
+                                                        <td>Leeds</td>
+                                                        <td>12</td>
+                                                        <td>Archived</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        href="edit-property.php">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="property-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                                        title=""
+                                                                        data-bs-original-title="View Property Details"><span
+                                                                            class="icon"><span class="feather-icon"><i
+                                                                                    data-feather="eye"></i></span></span></a>
+
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            <a href="view-user-details.php">
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-head me-2">
+                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                alt="user" class="avatar-img">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <span class="d-block text-high-em">Winston
+                                                                            Churchil</span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>9 Oak Lane</td>
+                                                        <td>Liverpool</td>
+                                                        <td>9</td>
+                                                        <td>Archived</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        href="edit-property.php">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="property-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                                        title=""
+                                                                        data-bs-original-title="View Property Details"><span
+                                                                            class="icon"><span class="feather-icon"><i
+                                                                                    data-feather="eye"></i></span></span></a>
+
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="view-user-details.php">
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-head me-2">
+                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                alt="user" class="avatar-img">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <span class="d-block text-high-em">Winston
+                                                                            Churchil</span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td>31 Willow Crescent</td>
+                                                        <td>Newcastle</td>
+                                                        <td>7</td>
+                                                        <td>Archived</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        href="edit-property.php">
+                                                                        <span class="icon">
+                                                                            <iconify-icon icon="fluent:edit-16-regular">
+                                                                            </iconify-icon>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a href="property-details.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        data-bs-toggle="tooltip" data-placement="top"
+                                                                        title=""
+                                                                        data-bs-original-title="View Property Details"><span
+                                                                            class="icon"><span class="feather-icon"><i
+                                                                                    data-feather="eye"></i></span></span></a>
+
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -419,7 +878,6 @@
     </div>
     <!-- /Page Body -->
 </div>
-
 
 <?php include('footer.php') ?>
 
@@ -442,15 +900,12 @@
 </script>
 <!-- filters show hide script end-->
 
-
-
 <!-- property type custom add and reflect on select2 -->
 <script>
     $(document).ready(function() {
         $('#addPropertyTypeButton').on('click', function() {
             $('#newPropertyTypeDiv').toggleClass('hiddentype');
         });
-
         $('#savePropertyTypeButton').on('click', function() {
             var newPropertyType = $('#newPropertyType').val().trim();
             if (newPropertyType !== "") {
@@ -463,3 +918,67 @@
     });
 </script>
 <!-- property type custom add and reflect on select2 -->
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const selectAllCheckbox = document.getElementById('selectAllCheckbox3');
+        const checkboxes = document.querySelectorAll('.common-datatable tbody .form-check-input');
+        const archivedBtnTU = document.getElementById('archivedBtnTU');
+        selectAllCheckbox.addEventListener('change', function() {
+            checkboxes.forEach(function(checkbox) {
+                checkbox.checked = selectAllCheckbox.checked;
+            });
+        });
+        archivedBtnTU.addEventListener('click', function(event) {
+            event.preventDefault();
+            let anyChecked = false;
+            checkboxes.forEach(function(checkbox) {
+                if (checkbox.checked) {
+                    anyChecked = true;
+                }
+            });
+            if (anyChecked) {
+                Swal.fire({
+                    title: 'Are you sure?',
+                    text: "Do you want to move this Document into the archived?",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonText: 'Yes, archive it!',
+                    cancelButtonText: 'No, cancel!',
+                    reverseButtons: true
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        checkboxes.forEach(function(checkbox) {
+                            if (checkbox.checked) {
+                                $(checkbox.closest('tr')).fadeOut(500, function() {
+                                    $(this).remove();
+                                });
+                            }
+                        });
+                        Swal.fire(
+                            'Archived!',
+                            'Your Document has been moved to archived.',
+                            'success'
+                        );
+                    } else if (
+                        result.dismiss === Swal.DismissReason.cancel
+                    ) {
+                        Swal.fire(
+                            'Cancelled',
+                            'Your Document is safe :)',
+                            'error'
+                        );
+                    }
+                });
+            } else {
+                Swal.fire(
+                    'Please select Document',
+                    'No Document selected.',
+                    'warning'
+                );
+            }
+        });
+    });
+</script>
+<!-- document archived functionality end -->

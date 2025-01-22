@@ -132,8 +132,15 @@
 </script>
 <!-- sidebar document search bar functionality js end -->
 
+<!--modern tolltip libraby Tippy.js Script -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.min.js"></script>
+  <script>
+    // Initialize Tippy.js for all elements with a data-tippy-content attribute
+    tippy('[data-tippy-content]');
+  </script>
 
-
+  <!--modern tolltip libraby Tippy.js Script -->
 
 <!-- page refresh on click refresh button  -->
 <script>
