@@ -26,7 +26,11 @@
             class="nav-link-text">Application Form</span></a>
 </li>
 
-
+<li class="nav-item">
+    <a href="property-viewing-settings.php" class="nav-link"
+        data-key="view-inventory-item-check-statuses"><span
+            class="nav-link-text">Property Viewing Settings</span></a>
+</li>
 
 </ul>
 </div>

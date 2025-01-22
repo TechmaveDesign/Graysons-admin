@@ -32,7 +32,7 @@
 			<div class="container-xxl">
 				<!-- Start Nav -->
 				<div class="nav-start-wrap">
-					<a class="navbar-brand" href="index-2.html">
+					<a class="navbar-brand" href="index.php">
 						<img class="brand-img d-inline-block" src="dist/img/newimages/logo-dark.png" alt="brand" />
 					</a>
 				</div>
@@ -64,11 +64,11 @@
 							<div class="auth-content py-md-0 py-8">
 								<div class="row">
 									<div class="col-xxl-9 col-xl-8 col-lg-11 text-center mx-auto">
-										<img src="dist/img/macaroni-logged-out.png"  class="img-fluid w-sm-40 w-50 mb-3" alt="login"/>
-										<h3 class="mb-2">Dig into festive savings, Go Premium</h3>
-										<p class="w-xxl-65 w-100 mx-auto">Save 20% on the premium membership plan by using the promo code "JAMPACK20"</p>
-										<a href="#" class="btn btn-sm btn-primary btn-uppercase mt-4">Upgrade Now</a>
-										<p class="p-xs mt-5 text-light">All illustration are powered by <a href="https://icons8.com/ouch/" target="_blank" class="text-light"><u>Icons8</u></a></p>
+										<img src="dist/img/newimages/loginimg.png"  class="img-fluid mb-3" style="width:50%;" alt="login"/>
+										<h3 class="mb-2">Welcome to the Graysons Admin Panel</h3>
+										<p class="w-xxl-65 w-100 mx-auto">Manage Staff, Landlords, Customers, and Properties Efficiently</p>
+										
+										<p class="p-xs mt-5 text-light">Powered by  <a href="https://graysonsproperties.co.uk/" target="_blank" class="text-light"><u>Graysons Properties</u></a></p>
 									</div>
 								</div>
 							</div>

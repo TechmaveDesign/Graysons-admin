@@ -11,7 +11,7 @@
 </li>
 
 <li class="nav-item ">
-    <a href="CheckIn.php" class="nav-link" data-key="inspections"><span
+    <a href="CheckIn.php" class="nav-link" data-key="checkin"><span
             class="nav-link-text">Check In</span></a>
 </li>
 
@@ -25,6 +25,20 @@
         data-key="view-inventory-item-check-statuses"><span
             class="nav-link-text">Check Out</span></a>
 </li>
+
+<li class="nav-item">
+    <a href="property-schedule-inspection.php" class="nav-link" data-key="schedule-inspections"><span
+            class="nav-link-text">Schedule Inspection</span></a>
+</li>
+
+<li class="nav-item">
+    <a href="add-inspection-timings.php" class="nav-link" data-key="add-inspection-timings"><span
+            class="nav-link-text">Schedule Inspection Timings</span></a>
+</li>
+
+
+
+
 <li class="nav-item ">
     <a href="inspection-inventory.php" class="nav-link" data-key="inspections"><span
             class="nav-link-text">Inventory Templates</span></a>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tooltip Example</title>
+  <!-- Tippy.js CSS -->
+  <link href="https://unpkg.com/tippy.js@6/dist/tippy.css" rel="stylesheet">
+
+  <style>
+    /* Custom Tooltip Background Color */
+    .tippy-box {
+      background-color: #4CAF50; /* Change this color */
+      color: white; /* Text color */
+      border-radius: 5px; /* Optional: adds rounded corners */
+    }
+
+    .tippy-arrow {
+      color: #4CAF50; /* Match arrow color with tooltip background */
+    }
+  </style>
+</head>
+<body>
+  <div style="text-align: center; margin-top: 50px;">
+    <!-- Tooltips using data-tippy-content -->
+    <div style="padding: 10px 20px; font-size: 16px;" data-tippy-content="Tooltip 1: Hello, World!">
+        <iconify-icon icon="stash:question" width="24" height="24"></iconify-icon>
+    </div>
+
+    <button style="padding: 10px 20px; font-size: 16px; margin-left: 20px;" data-tippy-content="Tooltip 2: Another message">
+      Hover Over Me 2
+    </button>
+
+    <button style="padding: 10px 20px; font-size: 16px; margin-left: 20px;" data-tippy-content="Tooltip 3: Yet another tooltip">
+      Hover Over Me 3
+    </button>
+  </div>
+
+  <!-- Tippy.js Script -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.min.js"></script>
+  <script>
+    // Initialize Tippy.js for all elements with a data-tippy-content attribute
+    tippy('[data-tippy-content]');
+  </script>
+</body>
+</html>

@@ -81,7 +81,7 @@
                         <li class="nav-item">
                             <a class="nav-link " data-bs-toggle="tab" href="#ParkingContracts">
                                 <div class="d-flex align-items-center">
-                                    <span class="nav-link-text">Parking Contracts</span>
+                                    <span class="nav-link-text">Parking License agreement</span>
                                 </div>
                             </a>
                         </li>

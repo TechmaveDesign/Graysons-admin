@@ -58,6 +58,41 @@
 						<div class=" sustomdividerLedtArrow"></div>
 					</header>
 
+					<div class="fullwidthDesktopTabs MobileScrollShow" id="nopaddingTop">
+                        <button class="scroll-btn prev" type="button">
+                            <iconify-icon icon="tabler:arrow-left"></iconify-icon>
+                        </button>
+
+                        <ul class="nav nav-tabs nav-line nav-icon fullwidthCustom_tabsUL nav-light">
+
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#Activeusers">
+                                    <div class="d-flex align-items-center">
+                                        <span class="nav-link-text">All Activity Logs</span>
+
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#Inactive_users">
+                                    <div class="d-flex align-items-center">
+                                        <span class="nav-link-text">Incomplete appointment</span>
+
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <button class="scroll-btn next" type="button">
+                            <iconify-icon icon="tabler:arrow-right"></iconify-icon>
+                        </button>
+
+                    </div>
+
+
+
 					<div class="contact-body">
 						<div class="nicescroll-bar">
 							<div class="userFilters onerowfilter longFiltersContainer" id="filterDiv"
@@ -132,194 +167,405 @@
 									</form>
 								</div>
 							</div>
-							<div class="contact-list-view">
 
-							<table class="table common-datatable nowrap w-100 tbWithout_action">
-                                    <thead>
-                                        <tr>
+							<div class="post-list propertyTabContent">
 
-                                            <th>User Name</th>
-                                            <th>Department</th>
-                                            <th>Activity Date & Time</th>
-                                            <th>Activity</th>
-                                           
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
+                                <div class="tab-content">
 
-                                            <td>
-                                                <a href="view-user-details.php">
-                                                <div class="media align-items-center">
-                                                    <div class="media-head me-2">
-                                                        <div class="avatar avatar-xs avatar-rounded">
-                                                            <img src="dist/img/newimages/users/userdummy.png" alt="user"
-                                                                class="avatar-img">
-                                                        </div>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <span class="d-block text-high-em">Morgan Freeman</span>
-                                                    </div>
-                                                </div>
-                                                </a>
-                                            </td>
-                                            <td class="">Finance</td>
-                                            <td>18/06/2024 12:00</td>
-                                            <td>moved components from all modules to in progress</td>
+                                    <div class="tab-pane fade show active" id="Activeusers">
+                                        <div class="fullwidthTabInner_content_container">
+										<div class="contact-list-view">
 
-                                            
-                                        </tr>
-                                        <tr>
+<table class="table common-datatable nowrap w-100 tbWithout_action">
+		<thead>
+			<tr>
 
-                                            <td>
-                                            <a href="view-user-details.php">
-                                                <div class="media align-items-center">
-                                                    <div class="media-head me-2">
-                                                        <div class="avatar avatar-xs avatar-rounded">
-                                                            <img src="dist/img/newimages/users/userdummy.png" alt="user"
-                                                                class="avatar-img">
-                                                        </div>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <span class="d-block text-high-em">Huma Therman</span>
-                                                    </div>
-                                                </div>
-                                                </a>
-                                            </td>
-                                            <td class="">Lettings</td>
-                                            <td>15/03/2023 16:40</td>
-                                            <td>moved components from all modules to in progress</td>
-                                            
-                                        </tr>
-                                        <tr>
+				<th>User Name</th>
+				<th>Department</th>
+				<th>Activity Date & Time</th>
+				<th>Activity</th>
+			   
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
 
-                                            <td>
-                                            <a href="view-user-details.php">
-                                                <div class="media align-items-center">
-                                                    <div class="media-head me-2">
-                                                        <div class="avatar avatar-xs avatar-rounded">
-                                                            <img src="dist/img/newimages/users/userdummy.png" alt="user"
-                                                                class="avatar-img">
-                                                        </div>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <span class="d-block text-high-em">Charlie Chaplin</span>
-                                                    </div>
-                                                </div>
-                                                </a>
-                                            </td>
-                                            <td class="">Lettings</td>
-                                            <td>10/02/2024 15:15</td>
-                                            <td>moved components from all modules to in progress</td>
-                                            
-                                        </tr>
-
-										<tr>
-    <td>
-        <a href="view-user-details.php">
-            <div class="media align-items-center">
-                <div class="media-head me-2">
-                    <div class="avatar avatar-xs avatar-rounded">
-                        <img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
-                    </div>
-                </div>
-                <div class="media-body">
-                    <span class="d-block text-high-em">Emma Watson</span>
-                </div>
-            </div>
-        </a>
-    </td>
-    <td class="">Marketing</td>
-    <td>25/08/2023 09:30</td>
-    <td>completed the final phase of the campaign</td>
-</tr>
-
-<tr>
-    <td>
-        <a href="view-user-details.php">
-            <div class="media align-items-center">
-                <div class="media-head me-2">
-                    <div class="avatar avatar-xs avatar-rounded">
-                        <img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
-                    </div>
-                </div>
-                <div class="media-body">
-                    <span class="d-block text-high-em">Robert Downey Jr.</span>
-                </div>
-            </div>
-        </a>
-    </td>
-    <td class="">IT Support</td>
-    <td>30/01/2024 14:45</td>
-    <td>updated server configurations and security protocols</td>
-</tr>
-
-<tr>
-    <td>
-        <a href="view-user-details.php">
-            <div class="media align-items-center">
-                <div class="media-head me-2">
-                    <div class="avatar avatar-xs avatar-rounded">
-                        <img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
-                    </div>
-                </div>
-                <div class="media-body">
-                    <span class="d-block text-high-em">Scarlett Johansson</span>
-                </div>
-            </div>
-        </a>
-    </td>
-    <td class="">HR</td>
-    <td>22/11/2023 11:10</td>
-    <td>conducted annual employee evaluations</td>
-</tr>
-
-<tr>
-    <td>
-        <a href="view-user-details.php">
-            <div class="media align-items-center">
-                <div class="media-head me-2">
-                    <div class="avatar avatar-xs avatar-rounded">
-                        <img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
-                    </div>
-                </div>
-                <div class="media-body">
-                    <span class="d-block text-high-em">Chris Hemsworth</span>
-                </div>
-            </div>
-        </a>
-    </td>
-    <td class="">Operations</td>
-    <td>08/09/2024 13:50</td>
-    <td>oversaw logistics for new project deployment</td>
-</tr>
-
-<tr>
-    <td>
-        <a href="view-user-details.php">
-            <div class="media align-items-center">
-                <div class="media-head me-2">
-                    <div class="avatar avatar-xs avatar-rounded">
-                        <img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
-                    </div>
-                </div>
-                <div class="media-body">
-                    <span class="d-block text-high-em">Jennifer Lawrence</span>
-                </div>
-            </div>
-        </a>
-    </td>
-    <td class="">Sales</td>
-    <td>05/07/2023 17:20</td>
-    <td>closed a major contract with a new client</td>
-</tr>
-
-                                       
-
-                                    </tbody>
-                                </table>
-
+				<td>
+					<a href="view-user-details.php">
+					<div class="media align-items-center">
+						<div class="media-head me-2">
+							<div class="avatar avatar-xs avatar-rounded">
+								<img src="dist/img/newimages/users/userdummy.png" alt="user"
+									class="avatar-img">
 							</div>
+						</div>
+						<div class="media-body">
+							<span class="d-block text-high-em">Morgan Freeman</span>
+						</div>
+					</div>
+					</a>
+				</td>
+				<td class="">Finance</td>
+				<td>18/06/2024 12:00</td>
+				<td>moved components from all modules to in progress</td>
+
+				
+			</tr>
+			<tr>
+
+				<td>
+				<a href="view-user-details.php">
+					<div class="media align-items-center">
+						<div class="media-head me-2">
+							<div class="avatar avatar-xs avatar-rounded">
+								<img src="dist/img/newimages/users/userdummy.png" alt="user"
+									class="avatar-img">
+							</div>
+						</div>
+						<div class="media-body">
+							<span class="d-block text-high-em">Huma Therman</span>
+						</div>
+					</div>
+					</a>
+				</td>
+				<td class="">Lettings</td>
+				<td>15/03/2023 16:40</td>
+				<td>moved components from all modules to in progress</td>
+				
+			</tr>
+			<tr>
+
+				<td>
+				<a href="view-user-details.php">
+					<div class="media align-items-center">
+						<div class="media-head me-2">
+							<div class="avatar avatar-xs avatar-rounded">
+								<img src="dist/img/newimages/users/userdummy.png" alt="user"
+									class="avatar-img">
+							</div>
+						</div>
+						<div class="media-body">
+							<span class="d-block text-high-em">Charlie Chaplin</span>
+						</div>
+					</div>
+					</a>
+				</td>
+				<td class="">Lettings</td>
+				<td>10/02/2024 15:15</td>
+				<td>moved components from all modules to in progress</td>
+				
+			</tr>
+
+			<tr>
+<td>
+<a href="view-user-details.php">
+<div class="media align-items-center">
+<div class="media-head me-2">
+<div class="avatar avatar-xs avatar-rounded">
+<img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+</div>
+</div>
+<div class="media-body">
+<span class="d-block text-high-em">Emma Watson</span>
+</div>
+</div>
+</a>
+</td>
+<td class="">Marketing</td>
+<td>25/08/2023 09:30</td>
+<td>completed the final phase of the campaign</td>
+</tr>
+
+<tr>
+<td>
+<a href="view-user-details.php">
+<div class="media align-items-center">
+<div class="media-head me-2">
+<div class="avatar avatar-xs avatar-rounded">
+<img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+</div>
+</div>
+<div class="media-body">
+<span class="d-block text-high-em">Robert Downey Jr.</span>
+</div>
+</div>
+</a>
+</td>
+<td class="">IT Support</td>
+<td>30/01/2024 14:45</td>
+<td>updated server configurations and security protocols</td>
+</tr>
+
+<tr>
+<td>
+<a href="view-user-details.php">
+<div class="media align-items-center">
+<div class="media-head me-2">
+<div class="avatar avatar-xs avatar-rounded">
+<img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+</div>
+</div>
+<div class="media-body">
+<span class="d-block text-high-em">Scarlett Johansson</span>
+</div>
+</div>
+</a>
+</td>
+<td class="">HR</td>
+<td>22/11/2023 11:10</td>
+<td>conducted annual employee evaluations</td>
+</tr>
+
+<tr>
+<td>
+<a href="view-user-details.php">
+<div class="media align-items-center">
+<div class="media-head me-2">
+<div class="avatar avatar-xs avatar-rounded">
+<img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+</div>
+</div>
+<div class="media-body">
+<span class="d-block text-high-em">Chris Hemsworth</span>
+</div>
+</div>
+</a>
+</td>
+<td class="">Operations</td>
+<td>08/09/2024 13:50</td>
+<td>oversaw logistics for new project deployment</td>
+</tr>
+
+<tr>
+<td>
+<a href="view-user-details.php">
+<div class="media align-items-center">
+<div class="media-head me-2">
+<div class="avatar avatar-xs avatar-rounded">
+<img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+</div>
+</div>
+<div class="media-body">
+<span class="d-block text-high-em">Jennifer Lawrence</span>
+</div>
+</div>
+</a>
+</td>
+<td class="">Sales</td>
+<td>05/07/2023 17:20</td>
+<td>closed a major contract with a new client</td>
+</tr>
+
+		   
+
+		</tbody>
+	</table>
+
+</div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="tab-pane fade" id="Inactive_users">
+                                        <div class="fullwidthTabInner_content_container">
+										<div class="contact-list-view">
+
+<table class="table common-datatable nowrap w-100 tbWithout_action">
+		<thead>
+			<tr>
+
+				<th>User Name</th>
+				<th>Department</th>
+				<th>Activity Date & Time</th>
+				<th>Activity</th>
+			   
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+
+				<td>
+					<a href="view-user-details.php">
+					<div class="media align-items-center">
+						<div class="media-head me-2">
+							<div class="avatar avatar-xs avatar-rounded">
+								<img src="dist/img/newimages/users/userdummy.png" alt="user"
+									class="avatar-img">
+							</div>
+						</div>
+						<div class="media-body">
+							<span class="d-block text-high-em">Morgan Freeman</span>
+						</div>
+					</div>
+					</a>
+				</td>
+				<td class="">Finance</td>
+				<td>18/06/2024 12:00</td>
+				<td>moved components from all modules to in progress</td>
+
+				
+			</tr>
+			<tr>
+
+				<td>
+				<a href="view-user-details.php">
+					<div class="media align-items-center">
+						<div class="media-head me-2">
+							<div class="avatar avatar-xs avatar-rounded">
+								<img src="dist/img/newimages/users/userdummy.png" alt="user"
+									class="avatar-img">
+							</div>
+						</div>
+						<div class="media-body">
+							<span class="d-block text-high-em">Huma Therman</span>
+						</div>
+					</div>
+					</a>
+				</td>
+				<td class="">Lettings</td>
+				<td>15/03/2023 16:40</td>
+				<td>moved components from all modules to in progress</td>
+				
+			</tr>
+			<tr>
+
+				<td>
+				<a href="view-user-details.php">
+					<div class="media align-items-center">
+						<div class="media-head me-2">
+							<div class="avatar avatar-xs avatar-rounded">
+								<img src="dist/img/newimages/users/userdummy.png" alt="user"
+									class="avatar-img">
+							</div>
+						</div>
+						<div class="media-body">
+							<span class="d-block text-high-em">Charlie Chaplin</span>
+						</div>
+					</div>
+					</a>
+				</td>
+				<td class="">Lettings</td>
+				<td>10/02/2024 15:15</td>
+				<td>moved components from all modules to in progress</td>
+				
+			</tr>
+
+			<tr>
+<td>
+<a href="view-user-details.php">
+<div class="media align-items-center">
+<div class="media-head me-2">
+<div class="avatar avatar-xs avatar-rounded">
+<img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+</div>
+</div>
+<div class="media-body">
+<span class="d-block text-high-em">Emma Watson</span>
+</div>
+</div>
+</a>
+</td>
+<td class="">Marketing</td>
+<td>25/08/2023 09:30</td>
+<td>completed the final phase of the campaign</td>
+</tr>
+
+<tr>
+<td>
+<a href="view-user-details.php">
+<div class="media align-items-center">
+<div class="media-head me-2">
+<div class="avatar avatar-xs avatar-rounded">
+<img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+</div>
+</div>
+<div class="media-body">
+<span class="d-block text-high-em">Robert Downey Jr.</span>
+</div>
+</div>
+</a>
+</td>
+<td class="">IT Support</td>
+<td>30/01/2024 14:45</td>
+<td>updated server configurations and security protocols</td>
+</tr>
+
+<tr>
+<td>
+<a href="view-user-details.php">
+<div class="media align-items-center">
+<div class="media-head me-2">
+<div class="avatar avatar-xs avatar-rounded">
+<img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+</div>
+</div>
+<div class="media-body">
+<span class="d-block text-high-em">Scarlett Johansson</span>
+</div>
+</div>
+</a>
+</td>
+<td class="">HR</td>
+<td>22/11/2023 11:10</td>
+<td>conducted annual employee evaluations</td>
+</tr>
+
+<tr>
+<td>
+<a href="view-user-details.php">
+<div class="media align-items-center">
+<div class="media-head me-2">
+<div class="avatar avatar-xs avatar-rounded">
+<img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+</div>
+</div>
+<div class="media-body">
+<span class="d-block text-high-em">Chris Hemsworth</span>
+</div>
+</div>
+</a>
+</td>
+<td class="">Operations</td>
+<td>08/09/2024 13:50</td>
+<td>oversaw logistics for new project deployment</td>
+</tr>
+
+<tr>
+<td>
+<a href="view-user-details.php">
+<div class="media align-items-center">
+<div class="media-head me-2">
+<div class="avatar avatar-xs avatar-rounded">
+<img src="dist/img/newimages/users/userdummy.png" alt="user" class="avatar-img">
+</div>
+</div>
+<div class="media-body">
+<span class="d-block text-high-em">Jennifer Lawrence</span>
+</div>
+</div>
+</a>
+</td>
+<td class="">Sales</td>
+<td>05/07/2023 17:20</td>
+<td>closed a major contract with a new client</td>
+</tr>
+
+		   
+
+		</tbody>
+	</table>
+
+</div>
+                                        </div>
+                                    </div>
+
+                                    
+
+                                </div>
+                            </div>
+
+
+							
 						</div>
 					</div>
 				</div>

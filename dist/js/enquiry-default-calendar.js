@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         picture: 'dist/img/avatar8.jpg',
                         staffName: 'John Doe',
                         locationName: 'Conference Hall',
-                        locationLink: 'https://www.techmavedesigns.com/Design/graysons-properties-adminpanel',
+                        locationLink: 'Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House',
                          startTime: '9:30 AM',
                          endTime: '8:00 PM'
                     }
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         picture: 'dist/img/avatar5.jpg',
                         staffName: 'Jane Smith',
                         locationName: 'Meeting Room A',
-                        locationLink: 'https://www.techmavedesigns.com/Design/graysons-properties-adminpanel',
+                        locationLink: 'Bedroom 4 133, Flat 3 (Floor 1, No3), City View@Phoenix House',
                          startTime: '9:30 AM',
             endTime: '8:00 PM'
                     }
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         picture: 'dist/img/avatar2.jpg',
                         staffName: 'Alice Johnson',
                         locationName: 'Office 204',
-                        locationLink: 'https://www.techmavedesigns.com/Design/graysons-properties-adminpanel'
+                        locationLink: 'Bedroom 1 133, Flat 3 (Floor 1, No3), City View@Phoenix House'
                     }
                 },
                 {
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         picture: 'dist/img/avatar7.jpg',
                         staffName: 'Bob Brown',
                         locationName: 'Main Hall',
-                        locationLink: 'https://www.techmavedesigns.com/Design/graysons-properties-adminpanel'
+                        locationLink: 'Bedroom 5 133, Flat 3 (Floor 1, No3), City View@Phoenix House'
                     }
                 },
                 {
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         picture: 'dist/img/avatar14.jpg',
                         staffName: 'Eve Black',
                         locationName: 'Phone Call',
-                        locationLink: 'https://www.techmavedesigns.com/Design/graysons-properties-adminpanel'
+                        locationLink: 'Bedroom 7 133, Flat 3 (Floor 1, No3), City View@Phoenix House'
                     }
                 },
                 {
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         picture: 'dist/img/avatar6.jpg',
                         staffName: 'Hank Critten',
                         locationName: 'Lobby',
-                        locationLink: 'https://www.techmavedesigns.com/Design/graysons-properties-adminpanel'
+                        locationLink: 'Bedroom 9 133, Flat 3 (Floor 1, No3), City View@Phoenix House'
                     }
                 },
                 {
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         picture: 'dist/img/avatar5.jpg',
                         staffName: 'Ivy John',
                         locationName: 'Office 201',
-                        locationLink: 'https://www.techmavedesigns.com/Design/graysons-properties-adminpanel'
+                        locationLink: 'Bedroom 10 133, Flat 3 (Floor 1, No3), City View@Phoenix House'
                     }
                 },
                 {
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         picture: 'dist/img/avatar5.jpg',
                         staffName: 'testing',
                         locationName: 'Office 201',
-                        locationLink: 'https://www.techmavedesigns.com/Design/graysons-properties-adminpanel'
+                        locationLink: 'Bedroom 11 133, Flat 3 (Floor 1, No3), City View@Phoenix House'
                     }
                 }
             ] ,
@@ -163,8 +163,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 
                 if (arg.event.extendedProps.locationLink) {
-                    // customHtml += '<div class="EventlocationUrl"><iconify-icon icon="hugeicons:location-05"></iconify-icon> ';
-                    customHtml += '<a href="' + arg.event.extendedProps.locationLink + '" class="calendarcard_details"><iconify-icon icon="solar:eye-broken"  style="color: black"></iconify-icon> View Details</a></div>';
+                    // Add redirection to property-details.php
+                    customHtml += '<a href="property-details.php" target="_blank" class="calendarcard_details"><iconify-icon icon="solar:eye-broken" style="color: black"></iconify-icon> View Details</a>';
                 } else {
                     customHtml += '<div><iconify-icon icon="hugeicons:location-05"></iconify-icon> Location details not available</div>';
                 }
@@ -193,7 +193,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
             
                 $('.event-staff').html('<div class="eventdetal_label">Staff:</div> ' + targetEvent.extendedProps.staffName);
-                $('.event-location').html('<a href="' + targetEvent.extendedProps.locationLink + '">' + targetEvent.extendedProps.locationLink + '</a>');
+                $('.event-location').on('click', function () {
+                    const locationLink = $(this).data('location-link'); // Ensure this is set when rendering the calendar event
+                    const propertyId = $(this).data('property-id'); // Or use a property ID, if available
+                
+                    if (propertyId) {
+                        // Redirect to property-details.php with the property ID
+                        window.location.href = `property-details.php?id=${propertyId}`;
+                    } else if (locationLink) {
+                        // Fallback: Use the location link if provided
+                        window.location.href = locationLink;
+                    }
+                });
             
                 // Show modal
                 $('.calendar-drawer').removeClass('d-none');
@@ -336,6 +347,8 @@ document.addEventListener('DOMContentLoaded', function () {
         //return false;
     });
 
+
+    
     
 });
 

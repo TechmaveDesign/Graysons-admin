@@ -1293,7 +1293,7 @@
             flatFloorGroups[flatFloorKey].push($(row)); // Store the entire row (<tr>)
         });
         // Define colors for alternating groups
-        let colors = ["#f8d7da", "#d4edda", "#fff3cd", "#d1ecf1"];
+        let colors = ["#FBFBFF", "#ffffff", "#fff3cd", "#d1ecf1"];
         let colorIndex = 0;
         // Apply colors to grouped rows
         $.each(flatFloorGroups, function(flatFloorKey, rows) {

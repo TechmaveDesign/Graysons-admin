@@ -12,6 +12,10 @@
             padding-left: 0px !important;
         }
     }
+
+    #floorTabContent {
+        margin-top: 30px !important;
+    }
 </style>
 
 <div class="container-xxl">
@@ -64,7 +68,7 @@
 
                     <form action="property-details.php" method="POST">
                         <div class="contact-body">
-                            <div class="fullwidthDesktopTabs MobileScrollShow">
+                            <div class="fullwidthDesktopTabs MobileScrollShow" id="nopaddingTop">
                                 <button class="scroll-btn prev" type="button">
                                     <iconify-icon icon="tabler:arrow-left"></iconify-icon>
                                 </button>
@@ -191,9 +195,9 @@
                             <div class="nicescroll-bar">
 
                                 <!-- add new content here start -->
-                                <div class="post-list propertyTabContent">
+                                <div class="post-list">
 
-                                    <div class="tab-content">
+                                    <div class="tab-content notpMargin_tab">
                                         <div class="tab-pane fade show active" id="Details">
                                             <div class="fullwidthTabInner_content_container">
                                                 <div class="docfilterbutton">
@@ -270,7 +274,7 @@
                                                     <div class="card-body">
                                                         <div class="row">
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-2">
                                                                 <div class="form-group ">
                                                                     <label for="" class="form-label"> Bedrooms</label>
                                                                     <input type="number" class="form-control" value="">
@@ -278,15 +282,21 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-4" id="access-code-container">
                                                                 <div class="form-group">
                                                                     <label class="form-label">*Access Code</label>
-                                                                    <input class="form-control" type="text" name=""
-                                                                        value="Post Box Code 103" />
+                                                                    <div class="input-group">
+                                                                        <input class="form-control" id="mpin-input"
+                                                                            type="password" maxlength="4"
+                                                                            placeholder="Enter 4-digit MPIN" />
+                                                                        <input class="form-control"
+                                                                            id="access-code-input" type="text"
+                                                                            value="****************" disabled />
+                                                                    </div>
                                                                 </div>
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-2">
                                                                 <div class="form-group">
                                                                     <label for="" class="form-label"> Office Key
                                                                         Label</label>
@@ -295,7 +305,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-2">
                                                                 <div class="form-group">
                                                                     <label for="" class="form-label"> Master Key
                                                                         Code</label>
@@ -304,7 +314,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-2">
                                                                 <div class="form-group">
                                                                     <label for="" class="form-label"> *Alarm
                                                                         Code</label>
@@ -313,7 +323,7 @@
 
                                                             </div>
 
-                                                            <div class="col-auto">
+                                                            <!-- <div class="col-auto">
                                                                 <div class="form-group">
                                                                     <label for="Name" class="form-label">&nbsp;</label>
                                                                     <div class="form-check checkWithLabel">
@@ -326,7 +336,7 @@
 
                                                                 </div>
 
-                                                            </div>
+                                                            </div> -->
                                                         </div>
                                                     </div>
                                                 </div>
@@ -504,38 +514,6 @@
 
                                                             <div class="col-md-3">
                                                                 <div class="form-group">
-                                                                    <label for="" class="form-label"> Inspection
-                                                                        Due</label>
-                                                                    <input type="text"
-                                                                        class="form-control customdataPicker "
-                                                                        value="May, 22 2024 ">
-                                                                </div>
-
-                                                            </div>
-
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label for="" class="form-label">Network Test
-                                                                        Due</label>
-                                                                    <input type="text"
-                                                                        class="form-control customdataPicker "
-                                                                        value="April, 18 2024 ">
-                                                                </div>
-
-                                                            </div>
-
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label for="" class="form-label">Cleaning
-                                                                        Rota</label>
-                                                                    <input type="text" class="form-control "
-                                                                        value="Please see 'Routine Cleaning' issue. ">
-                                                                </div>
-
-                                                            </div>
-
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
                                                                     <label for="" class="form-label">Heating
                                                                         Schedule</label>
                                                                     <input type="text" class="form-control "
@@ -567,14 +545,6 @@
                                                                             <i class="bi bi-eye"></i>
                                                                         </button>
                                                                     </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label for="" class="form-label">Sky
-                                                                        Channels</label>
-                                                                    <input type="text" class="form-control " value="">
                                                                 </div>
                                                             </div>
 
@@ -692,7 +662,6 @@
                                                     </iconify-icon>
                                                     Save Changes
                                                 </button>
-                                                <button type="button" class="formdeleteButton">Delete</button>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="Map">
@@ -913,10 +882,1316 @@
                                         </div>
 
                                         <div class="tab-pane fade" id="Documents">
-                                            <div class="fullwidthTabInner_content_container">
-                                                <div class="docFilterContainer">
+
+                                            <div class="fullwidthDesktopTabs MobileScrollShow" id="nopaddingTop">
+                                                <button class="scroll-btn prev" type="button">
+                                                    <iconify-icon icon="tabler:arrow-left"></iconify-icon>
+                                                </button>
+
+                                                <ul
+                                                    class="nav nav-tabs nav-line nav-icon fullwidthCustom_tabsUL nav-light">
+
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" data-bs-toggle="tab"
+                                                            href="#propertydocs">
+                                                            <div class="d-flex align-items-center">
+                                                                <span class="nav-link-text">Property Documents</span>
+
+                                                            </div>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-bs-toggle="tab" href="#compliancedoc">
+                                                            <div class="d-flex align-items-center">
+                                                                <span class="nav-link-text">Compliances Documents</span>
+
+                                                            </div>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-bs-toggle="tab" href="#warrentydoc">
+                                                            <div class="d-flex align-items-center">
+                                                                <span class="nav-link-text">Warranty Documents</span>
+
+                                                            </div>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-bs-toggle="tab" href="#Archivedoc">
+                                                            <div class="d-flex align-items-center">
+                                                                <span class="nav-link-text">Archive Documents</span>
+
+                                                            </div>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+
+                                                <button class="scroll-btn next" type="button">
+                                                    <iconify-icon icon="tabler:arrow-right"></iconify-icon>
+                                                </button>
+
+                                            </div>
+
+                                            <div class="post-list prodocs_innertabs">
+
+                                                <div class="tab-content">
+
+                                                    <div class="tab-pane fade show active" id="propertydocs">
+                                                        <div class="fullwidthTabInner_content_container">
+                                                            <div class="docFilterContainer">
+                                                                <div class="docfilterbutton">
+                                                                    <h2 class="tabinnerTitle">Property Documents </h2>
+                                                                    <div class="RightTabinr_container">
+                                                                        <div class="archived">
+                                                                            <a href="#" class="archivedBtn"
+                                                                                id="archivedBtnTU1">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:archive-outline">
+                                                                                </iconify-icon> Archived
+                                                                            </a>
+                                                                        </div>
+                                                                        <button
+                                                                            class="btn btn-sm addiconiButton commonAddnewButton btn-primary ms-3"
+                                                                            type="button" data-bs-toggle="offcanvas"
+                                                                            data-bs-target="#addDocument"
+                                                                            aria-controls="offcanvasExample">
+                                                                            <iconify-icon icon="lets-icons:add-round">
+                                                                            </iconify-icon> Upload Document
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <div class="contact-list-view">
+
+                                                                        <table
+                                                                            class="table common-datatable  nowrap w-100 ">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="selectAllCheckbox2"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="selectAllCheckbox2"></label>
+                                                                                        </div>
+                                                                                    </th>
+                                                                                    <th>Title</th>
+                                                                                    <th>Type</th>
+                                                                                    <th>Extension</th>
+                                                                                    <th>Uploaded By</th>
+                                                                                    <th>Date Added</th>
+                                                                                    <th>Expiry Date</th>
+                                                                                    <th>Visibility</th>
+                                                                                    <th>Actions</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="inlineCheckbox2"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="inlineCheckbox2"></label>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        4. How to rent guide
+                                                                                    </td>
+                                                                                    <td>Property Document</td>
+                                                                                    <td>pdf</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Amusan,
+                                                                                            Shy</a>
+                                                                                    </td>
+                                                                                    <td>28/09/2023 19:47</td>
+                                                                                    <td>31/03/2024</td>
+                                                                                    <td>Everyone</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="inlineCheckbox2"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="inlineCheckbox2"></label>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>7. Introduction to Marketing
+                                                                                    </td>
+                                                                                    <td>Property Document</td>
+                                                                                    <td>docx</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Smith,
+                                                                                            John</a>
+                                                                                    </td>
+                                                                                    <td>15/11/2023 10:22</td>
+                                                                                    <td>30/04/2024</td>
+                                                                                    <td>Landlord</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="inlineCheckbox2"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="inlineCheckbox2"></label>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>12. Project Management
+                                                                                        Essentials</td>
+                                                                                    <td>Property Document</td>
+                                                                                    <td>pptx</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Garcia,
+                                                                                            Maria</a>
+                                                                                    </td>
+                                                                                    <td>03/07/2023 14:55</td>
+                                                                                    <td>15/12/2023</td>
+                                                                                    <td>Managers</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="inlineCheckbox2"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="inlineCheckbox2"></label>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>5. Employee Code of Conduct</td>
+                                                                                    <td>Property Document</td>
+                                                                                    <td>pdf</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Brown,
+                                                                                            Sarah</a>
+                                                                                    </td>
+                                                                                    <td>10/02/2023 08:33</td>
+                                                                                    <td>31/12/2023</td>
+                                                                                    <td>Employees</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="inlineCheckbox2"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="inlineCheckbox2"></label>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>9. Cybersecurity Awareness
+                                                                                        Training</td>
+                                                                                    <td>Property Document</td>
+                                                                                    <td>pdf</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Johnson,
+                                                                                            Michael</a>
+                                                                                    </td>
+                                                                                    <td>22/08/2023 16:10</td>
+                                                                                    <td>30/06/2024</td>
+                                                                                    <td>Landlord</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="inlineCheckbox2"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="inlineCheckbox2"></label>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>8. Marketing Strategy Template
+                                                                                    </td>
+                                                                                    <td>Property Document</td>
+                                                                                    <td>doc</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Williams,
+                                                                                            David</a>
+                                                                                    </td>
+                                                                                    <td>19/05/2023 11:45</td>
+                                                                                    <td>31/12/2023</td>
+                                                                                    <td>Managers</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="inlineCheckbox2"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="inlineCheckbox2"></label>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>11. Workplace Diversity Policy
+                                                                                    </td>
+                                                                                    <td>Property Document</td>
+                                                                                    <td>pdf</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Lee,
+                                                                                            Jennifer</a>
+                                                                                    </td>
+                                                                                    <td>07/09/2023 09:30</td>
+                                                                                    <td>30/06/2024</td>
+                                                                                    <td>Staff Only</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="tab-pane fade" id="compliancedoc">
+                                                        <div class="fullwidthTabInner_content_container">
+                                                            <div class="docFilterContainer">
+                                                                <div class="docfilterbutton">
+                                                                    <h2 class="tabinnerTitle">Compliance Documents </h2>
+                                                                    <div class="RightTabinr_container">
+                                                                        <div class="archived">
+                                                                            <a href="#" class="archivedBtn"
+                                                                                id="archivedBtnTU2">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:archive-outline">
+                                                                                </iconify-icon> Archived
+                                                                            </a>
+                                                                        </div>
+                                                                        <button
+                                                                            class="btn btn-sm addiconiButton commonAddnewButton btn-primary ms-3"
+                                                                            type="button" data-bs-toggle="offcanvas"
+                                                                            data-bs-target="#addDocument"
+                                                                            aria-controls="offcanvasExample">
+                                                                            <iconify-icon icon="lets-icons:add-round">
+                                                                            </iconify-icon> Upload Document
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <div class="contact-list-view">
+
+                                                                        <table
+                                                                            class="table common-datatable  nowrap w-100 ">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="selectAllCheckbox2"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="selectAllCheckbox2"></label>
+                                                                                        </div>
+                                                                                    </th>
+                                                                                    <th>Title</th>
+                                                                                    <th>Type</th>
+                                                                                    <th>Extension</th>
+                                                                                    <th>Uploaded By</th>
+                                                                                    <th>Date Added</th>
+                                                                                    <th>Expiry Date</th>
+                                                                                    <th>Visibility</th>
+                                                                                    <th>Actions</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="inlineCheckbox2"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="inlineCheckbox2"></label>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        4. How to rent guide
+                                                                                    </td>
+                                                                                    <td>Compliance</td>
+                                                                                    <td>pdf</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Amusan,
+                                                                                            Shy</a>
+                                                                                    </td>
+                                                                                    <td>28/09/2023 19:47</td>
+                                                                                    <td>31/03/2024</td>
+                                                                                    <td>Everyone</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="inlineCheckbox2"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="inlineCheckbox2"></label>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>7. Introduction to Marketing
+                                                                                    </td>
+                                                                                    <td>Compliance</td>
+                                                                                    <td>docx</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Smith,
+                                                                                            John</a>
+                                                                                    </td>
+                                                                                    <td>15/11/2023 10:22</td>
+                                                                                    <td>30/04/2024</td>
+                                                                                    <td>Landlord</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="inlineCheckbox2"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="inlineCheckbox2"></label>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>12. Project Management
+                                                                                        Essentials</td>
+                                                                                    <td>Compliance</td>
+                                                                                    <td>pptx</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Garcia,
+                                                                                            Maria</a>
+                                                                                    </td>
+                                                                                    <td>03/07/2023 14:55</td>
+                                                                                    <td>15/12/2023</td>
+                                                                                    <td>Managers</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="inlineCheckbox2"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="inlineCheckbox2"></label>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>5. Employee Code of Conduct</td>
+                                                                                    <td>Compliance</td>
+                                                                                    <td>pdf</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Brown,
+                                                                                            Sarah</a>
+                                                                                    </td>
+                                                                                    <td>10/02/2023 08:33</td>
+                                                                                    <td>31/12/2023</td>
+                                                                                    <td>Employees</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="inlineCheckbox2"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="inlineCheckbox2"></label>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>9. Cybersecurity Awareness
+                                                                                        Training</td>
+                                                                                    <td>Compliance</td>
+                                                                                    <td>pdf</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Johnson,
+                                                                                            Michael</a>
+                                                                                    </td>
+                                                                                    <td>22/08/2023 16:10</td>
+                                                                                    <td>30/06/2024</td>
+                                                                                    <td>Landlord</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="inlineCheckbox2"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="inlineCheckbox2"></label>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>8. Marketing Strategy Template
+                                                                                    </td>
+                                                                                    <td>Compliance</td>
+                                                                                    <td>doc</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Williams,
+                                                                                            David</a>
+                                                                                    </td>
+                                                                                    <td>19/05/2023 11:45</td>
+                                                                                    <td>31/12/2023</td>
+                                                                                    <td>Managers</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="inlineCheckbox2"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="inlineCheckbox2"></label>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>11. Workplace Diversity Policy
+                                                                                    </td>
+                                                                                    <td>Compliance</td>
+                                                                                    <td>pdf</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Lee,
+                                                                                            Jennifer</a>
+                                                                                    </td>
+                                                                                    <td>07/09/2023 09:30</td>
+                                                                                    <td>30/06/2024</td>
+                                                                                    <td>Staff Only</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tab-pane fade" id="warrentydoc">
+                                                        <div class="fullwidthTabInner_content_container">
+                                                            <div class="docFilterContainer">
+                                                                <div class="docfilterbutton">
+                                                                    <h2 class="tabinnerTitle">Warranty Documents </h2>
+                                                                    <div class="RightTabinr_container">
+                                                                        <div class="archived">
+                                                                            <a href="#" class="archivedBtn"
+                                                                                id="archivedBtnTU">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:archive-outline">
+                                                                                </iconify-icon> Archived
+                                                                            </a>
+                                                                        </div>
+                                                                        <button
+                                                                            class="btn btn-sm addiconiButton commonAddnewButton btn-primary ms-3"
+                                                                            type="button" data-bs-toggle="offcanvas"
+                                                                            data-bs-target="#addDocument"
+                                                                            aria-controls="offcanvasExample">
+                                                                            <iconify-icon icon="lets-icons:add-round">
+                                                                            </iconify-icon> Upload Document
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <div class="contact-list-view">
+
+                                                                        <table
+                                                                            class="table common-datatable  nowrap w-100 ">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="selectAllCheckbox3"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="selectAllCheckbox3"></label>
+                                                                                        </div>
+                                                                                    </th>
+                                                                                    <th>Title</th>
+                                                                                    <th>Type</th>
+                                                                                    <th>Extension</th>
+                                                                                    <th>Uploaded By</th>
+                                                                                    <th>Date Added</th>
+                                                                                    <th>Expiry Date</th>
+                                                                                    <th>Visibility</th>
+                                                                                    <th>Actions</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="inlineCheckbox2"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="inlineCheckbox2"></label>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        4. How to rent guide
+                                                                                    </td>
+                                                                                    <td>Warranty Document</td>
+                                                                                    <td>pdf</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Amusan,
+                                                                                            Shy</a>
+                                                                                    </td>
+                                                                                    <td>28/09/2023 19:47</td>
+                                                                                    <td>31/03/2024</td>
+                                                                                    <td>Everyone</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="inlineCheckbox2"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="inlineCheckbox2"></label>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>7. Introduction to Marketing
+                                                                                    </td>
+                                                                                    <td>Warranty Document</td>
+                                                                                    <td>docx</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Smith,
+                                                                                            John</a>
+                                                                                    </td>
+                                                                                    <td>15/11/2023 10:22</td>
+                                                                                    <td>30/04/2024</td>
+                                                                                    <td>Landlord</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="inlineCheckbox2"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="inlineCheckbox2"></label>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>12. Project Management
+                                                                                        Essentials</td>
+                                                                                    <td>Warranty Document</td>
+                                                                                    <td>pptx</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Garcia,
+                                                                                            Maria</a>
+                                                                                    </td>
+                                                                                    <td>03/07/2023 14:55</td>
+                                                                                    <td>15/12/2023</td>
+                                                                                    <td>Managers</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="inlineCheckbox2"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="inlineCheckbox2"></label>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>5. Employee Code of Conduct</td>
+                                                                                    <td>Warranty Document</td>
+                                                                                    <td>pdf</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Brown,
+                                                                                            Sarah</a>
+                                                                                    </td>
+                                                                                    <td>10/02/2023 08:33</td>
+                                                                                    <td>31/12/2023</td>
+                                                                                    <td>Employees</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="inlineCheckbox2"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="inlineCheckbox2"></label>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>9. Cybersecurity Awareness
+                                                                                        Training</td>
+                                                                                    <td>Warranty Document</td>
+                                                                                    <td>pdf</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Johnson,
+                                                                                            Michael</a>
+                                                                                    </td>
+                                                                                    <td>22/08/2023 16:10</td>
+                                                                                    <td>30/06/2024</td>
+                                                                                    <td>Landlord</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="inlineCheckbox2"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="inlineCheckbox2"></label>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>8. Marketing Strategy Template
+                                                                                    </td>
+                                                                                    <td>Warranty Document</td>
+                                                                                    <td>doc</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Williams,
+                                                                                            David</a>
+                                                                                    </td>
+                                                                                    <td>19/05/2023 11:45</td>
+                                                                                    <td>31/12/2023</td>
+                                                                                    <td>Managers</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="form-check form-check-inline">
+                                                                                            <input
+                                                                                                class="form-check-input"
+                                                                                                type="checkbox"
+                                                                                                id="inlineCheckbox2"
+                                                                                                value="unchecked">
+                                                                                            <label
+                                                                                                class="form-check-label"
+                                                                                                for="inlineCheckbox2"></label>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>11. Workplace Diversity Policy
+                                                                                    </td>
+                                                                                    <td>Warranty Document</td>
+                                                                                    <td>pdf</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Lee,
+                                                                                            Jennifer</a>
+                                                                                    </td>
+                                                                                    <td>07/09/2023 09:30</td>
+                                                                                    <td>30/06/2024</td>
+                                                                                    <td>Staff Only</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="tab-pane fade" id="Archivedoc">
+                                                        <div class="fullwidthTabInner_content_container">
+                                                            <!-- <div class="docFilterContainer">
                                                     <div class="docfilterbutton">
-                                                        <h2 class="tabinnerTitle">Property Documents </h2>
+                                                        <h2 class="tabinnerTitle">Archive Documents </h2>
                                                         <div class="RightTabinr_container">
 
                                                             <button
@@ -930,272 +2205,298 @@
                                                         </div>
                                                     </div>
 
-                                                </div>
+                                                </div> -->
 
-                                                <div class="card">
-                                                    <div class="card-body">
-                                                        <div class="contact-list-view">
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <div class="contact-list-view">
 
-                                                            <table class="table common-datatable  nowrap w-100 ">
-                                                                <thead>
-                                                                    <tr>
+                                                                        <table
+                                                                            class="table common-datatable  nowrap w-100 ">
+                                                                            <thead>
+                                                                                <tr>
 
-                                                                        <th>Title</th>
-                                                                        <th>Type</th>
-                                                                        <th>Extension</th>
-                                                                        <th>Uploaded By</th>
-                                                                        <th>Date Added</th>
-                                                                        <th>Expiry Date</th>
-                                                                        <th>Visibility</th>
-                                                                        <th>Actions</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
+                                                                                    <th>Title</th>
+                                                                                    <th>Type</th>
+                                                                                    <th>Extension</th>
+                                                                                    <th>Uploaded By</th>
+                                                                                    <th>Date Added</th>
+                                                                                    <th>Expiry Date</th>
+                                                                                    <th>Visibility</th>
+                                                                                    <th>Actions</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
 
-                                                                        <td>
-                                                                            4. How to rent guide
-                                                                        </td>
-                                                                        <td>Policy</td>
-                                                                        <td>pdf</td>
-                                                                        <td>
-                                                                            <a href="view-user-details.php"
-                                                                                class="namelinkURl">Amusan, Shy</a>
-                                                                        </td>
-                                                                        <td>28/09/2023 19:47</td>
-                                                                        <td>31/03/2024</td>
-                                                                        <td>Everyone</td>
-                                                                        <td>
-                                                                            <div
-                                                                                class="d-flex align-items-center ActionDropdown">
-                                                                                <div class="d-flex">
-                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                        href="##"
-                                                                                        data-bs-toggle="tooltip"
-                                                                                        data-placement="top" title=""
-                                                                                        data-bs-original-title="Download Document"
-                                                                                        href="view-user-details.php"><span
-                                                                                            class="icon"><span
-                                                                                                class="feather-icon">
-                                                                                                <iconify-icon
-                                                                                                    icon="solar:file-download-broken">
-                                                                                                </iconify-icon>
-                                                                                            </span></span></a>
+                                                                                    <td>
+                                                                                        4. How to rent guide
+                                                                                    </td>
+                                                                                    <td>Property Document</td>
+                                                                                    <td>pdf</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Amusan,
+                                                                                            Shy</a>
+                                                                                    </td>
+                                                                                    <td>28/09/2023 19:47</td>
+                                                                                    <td>31/03/2024</td>
+                                                                                    <td>Everyone</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
 
-                                                                                </div>
+                                                                                            </div>
 
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>7. Introduction to Marketing</td>
-                                                                        <td>Guidelines</td>
-                                                                        <td>docx</td>
-                                                                        <td>
-                                                                            <a href="view-user-details.php"
-                                                                                class="namelinkURl">Smith, John</a>
-                                                                        </td>
-                                                                        <td>15/11/2023 10:22</td>
-                                                                        <td>30/04/2024</td>
-                                                                        <td>Landlord</td>
-                                                                        <td>
-                                                                            <div
-                                                                                class="d-flex align-items-center ActionDropdown">
-                                                                                <div class="d-flex">
-                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                        href="##"
-                                                                                        data-bs-toggle="tooltip"
-                                                                                        data-placement="top" title=""
-                                                                                        data-bs-original-title="Download Document"
-                                                                                        href="view-user-details.php"><span
-                                                                                            class="icon"><span
-                                                                                                class="feather-icon">
-                                                                                                <iconify-icon
-                                                                                                    icon="solar:file-download-broken">
-                                                                                                </iconify-icon>
-                                                                                            </span></span></a>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>7. Introduction to Marketing
+                                                                                    </td>
+                                                                                    <td>Compliance</td>
+                                                                                    <td>docx</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Smith,
+                                                                                            John</a>
+                                                                                    </td>
+                                                                                    <td>15/11/2023 10:22</td>
+                                                                                    <td>30/04/2024</td>
+                                                                                    <td>Landlord</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
 
-                                                                                </div>
+                                                                                            </div>
 
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>12. Project Management Essentials</td>
-                                                                        <td>Procedure</td>
-                                                                        <td>pptx</td>
-                                                                        <td>
-                                                                            <a href="view-user-details.php"
-                                                                                class="namelinkURl">Garcia, Maria</a>
-                                                                        </td>
-                                                                        <td>03/07/2023 14:55</td>
-                                                                        <td>15/12/2023</td>
-                                                                        <td>Managers</td>
-                                                                        <td>
-                                                                            <div
-                                                                                class="d-flex align-items-center ActionDropdown">
-                                                                                <div class="d-flex">
-                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                        href="##"
-                                                                                        data-bs-toggle="tooltip"
-                                                                                        data-placement="top" title=""
-                                                                                        data-bs-original-title="Download Document"
-                                                                                        href="view-user-details.php"><span
-                                                                                            class="icon"><span
-                                                                                                class="feather-icon">
-                                                                                                <iconify-icon
-                                                                                                    icon="solar:file-download-broken">
-                                                                                                </iconify-icon>
-                                                                                            </span></span></a>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>12. Project Management
+                                                                                        Essentials</td>
+                                                                                    <td>Compliance</td>
+                                                                                    <td>pptx</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Garcia,
+                                                                                            Maria</a>
+                                                                                    </td>
+                                                                                    <td>03/07/2023 14:55</td>
+                                                                                    <td>15/12/2023</td>
+                                                                                    <td>Managers</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
 
-                                                                                </div>
+                                                                                            </div>
 
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
 
-                                                                    <tr>
-                                                                        <td>5. Employee Code of Conduct</td>
-                                                                        <td>Policy</td>
-                                                                        <td>pdf</td>
-                                                                        <td>
-                                                                            <a href="view-user-details.php"
-                                                                                class="namelinkURl">Brown, Sarah</a>
-                                                                        </td>
-                                                                        <td>10/02/2023 08:33</td>
-                                                                        <td>31/12/2023</td>
-                                                                        <td>Employees</td>
-                                                                        <td>
-                                                                            <div
-                                                                                class="d-flex align-items-center ActionDropdown">
-                                                                                <div class="d-flex">
-                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                        href="##"
-                                                                                        data-bs-toggle="tooltip"
-                                                                                        data-placement="top" title=""
-                                                                                        data-bs-original-title="Download Document"
-                                                                                        href="view-user-details.php"><span
-                                                                                            class="icon"><span
-                                                                                                class="feather-icon">
-                                                                                                <iconify-icon
-                                                                                                    icon="solar:file-download-broken">
-                                                                                                </iconify-icon>
-                                                                                            </span></span></a>
+                                                                                <tr>
+                                                                                    <td>5. Employee Code of Conduct</td>
+                                                                                    <td>Warranty </td>
+                                                                                    <td>pdf</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Brown,
+                                                                                            Sarah</a>
+                                                                                    </td>
+                                                                                    <td>10/02/2023 08:33</td>
+                                                                                    <td>31/12/2023</td>
+                                                                                    <td>Employees</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
 
-                                                                                </div>
+                                                                                            </div>
 
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
 
-                                                                    <tr>
-                                                                        <td>9. Cybersecurity Awareness Training</td>
-                                                                        <td>Training</td>
-                                                                        <td>pdf</td>
-                                                                        <td>
-                                                                            <a href="view-user-details.php"
-                                                                                class="namelinkURl">Johnson, Michael</a>
-                                                                        </td>
-                                                                        <td>22/08/2023 16:10</td>
-                                                                        <td>30/06/2024</td>
-                                                                        <td>Landlord</td>
-                                                                        <td>
-                                                                            <div
-                                                                                class="d-flex align-items-center ActionDropdown">
-                                                                                <div class="d-flex">
-                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                        href="##"
-                                                                                        data-bs-toggle="tooltip"
-                                                                                        data-placement="top" title=""
-                                                                                        data-bs-original-title="Download Document"
-                                                                                        href="view-user-details.php"><span
-                                                                                            class="icon"><span
-                                                                                                class="feather-icon">
-                                                                                                <iconify-icon
-                                                                                                    icon="solar:file-download-broken">
-                                                                                                </iconify-icon>
-                                                                                            </span></span></a>
+                                                                                <tr>
+                                                                                    <td>9. Cybersecurity Awareness
+                                                                                        Training</td>
+                                                                                    <td>Warranty </td>
+                                                                                    <td>pdf</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Johnson,
+                                                                                            Michael</a>
+                                                                                    </td>
+                                                                                    <td>22/08/2023 16:10</td>
+                                                                                    <td>30/06/2024</td>
+                                                                                    <td>Landlord</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
 
-                                                                                </div>
+                                                                                            </div>
 
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
 
-                                                                    <tr>
-                                                                        <td>8. Marketing Strategy Template</td>
-                                                                        <td>Template</td>
-                                                                        <td>doc</td>
-                                                                        <td>
-                                                                            <a href="view-user-details.php"
-                                                                                class="namelinkURl">Williams, David</a>
-                                                                        </td>
-                                                                        <td>19/05/2023 11:45</td>
-                                                                        <td>31/12/2023</td>
-                                                                        <td>Managers</td>
-                                                                        <td>
-                                                                            <div
-                                                                                class="d-flex align-items-center ActionDropdown">
-                                                                                <div class="d-flex">
-                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                        href="##"
-                                                                                        data-bs-toggle="tooltip"
-                                                                                        data-placement="top" title=""
-                                                                                        data-bs-original-title="Download Document"
-                                                                                        href="view-user-details.php"><span
-                                                                                            class="icon"><span
-                                                                                                class="feather-icon">
-                                                                                                <iconify-icon
-                                                                                                    icon="solar:file-download-broken">
-                                                                                                </iconify-icon>
-                                                                                            </span></span></a>
+                                                                                <tr>
+                                                                                    <td>8. Marketing Strategy Template
+                                                                                    </td>
+                                                                                    <td>Warranty </td>
+                                                                                    <td>doc</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Williams,
+                                                                                            David</a>
+                                                                                    </td>
+                                                                                    <td>19/05/2023 11:45</td>
+                                                                                    <td>31/12/2023</td>
+                                                                                    <td>Managers</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
 
-                                                                                </div>
+                                                                                            </div>
 
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
 
-                                                                    <tr>
-                                                                        <td>11. Workplace Diversity Policy</td>
-                                                                        <td>Policy</td>
-                                                                        <td>pdf</td>
-                                                                        <td>
-                                                                            <a href="view-user-details.php"
-                                                                                class="namelinkURl">Lee, Jennifer</a>
-                                                                        </td>
-                                                                        <td>07/09/2023 09:30</td>
-                                                                        <td>30/06/2024</td>
-                                                                        <td>Staff Only</td>
-                                                                        <td>
-                                                                            <div
-                                                                                class="d-flex align-items-center ActionDropdown">
-                                                                                <div class="d-flex">
-                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                        href="##"
-                                                                                        data-bs-toggle="tooltip"
-                                                                                        data-placement="top" title=""
-                                                                                        data-bs-original-title="Download Document"
-                                                                                        href="view-user-details.php"><span
-                                                                                            class="icon"><span
-                                                                                                class="feather-icon">
-                                                                                                <iconify-icon
-                                                                                                    icon="solar:file-download-broken">
-                                                                                                </iconify-icon>
-                                                                                            </span></span></a>
+                                                                                <tr>
+                                                                                    <td>11. Workplace Diversity Policy
+                                                                                    </td>
+                                                                                    <td>Warranty </td>
+                                                                                    <td>pdf</td>
+                                                                                    <td>
+                                                                                        <a href="view-user-details.php"
+                                                                                            class="namelinkURl">Lee,
+                                                                                            Jennifer</a>
+                                                                                    </td>
+                                                                                    <td>07/09/2023 09:30</td>
+                                                                                    <td>30/06/2024</td>
+                                                                                    <td>Staff Only</td>
+                                                                                    <td>
+                                                                                        <div
+                                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                                            <div class="d-flex">
+                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                                    href="##"
+                                                                                                    data-bs-toggle="tooltip"
+                                                                                                    data-placement="top"
+                                                                                                    title=""
+                                                                                                    data-bs-original-title="Download Document"
+                                                                                                    href="view-user-details.php"><span
+                                                                                                        class="icon"><span
+                                                                                                            class="feather-icon">
+                                                                                                            <iconify-icon
+                                                                                                                icon="solar:file-download-broken">
+                                                                                                            </iconify-icon>
+                                                                                                        </span></span></a>
 
-                                                                                </div>
+                                                                                            </div>
 
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
 
-                                                                </tbody>
-                                                            </table>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
+
                                                     </div>
+
                                                 </div>
                                             </div>
+
                                         </div>
 
                                         <div class="tab-pane fade" id="Notes">
@@ -1471,185 +2772,236 @@
 
                                         <div class="tab-pane fade" id="Units">
                                             <div class="fullwidthTabInner_content_container">
-                                                <div class="docfilterbutton">
-                                                    <h2 class="tabinnerTitle">Units </h2>
-                                                    <div class="RightTabinr_container">
 
-                                                        <button
-                                                            class="btn btn-sm addiconiButton commonAddnewButton btn-primary ms-3"
-                                                            type="button" data-bs-toggle="offcanvas"
-                                                            data-bs-target="#propertiform_modal"
-                                                            aria-controls="offcanvasExample">
-                                                            <iconify-icon icon="lets-icons:add-round">
-                                                            </iconify-icon> Add Unit
-                                                        </button>
-                                                    </div>
-                                                </div>
                                                 <div class="card">
                                                     <div class="card-body">
-                                                        <div class="contact-list-view">
+                                                        <div class="docfilterbutton">
+                                                            <div class="flexheaderLeftWrap">
+                                                                <h1 class="budget-title">Manage Floor's
+                                                                </h1>
+                                                            </div>
+                                                            <div class="flexheader_right_action">
+                                                                <button
+                                                                    class=" addFolderBtn AddpropertyUnit addFloorsForpr"
+                                                                    type="button" data-bs-toggle="modal"
+                                                                    data-bs-target="#floorAdd__modal">
+                                                                    <iconify-icon icon="stash:list-add-light">
+                                                                    </iconify-icon> Add Floor
+                                                                    <i class="bi bi-arrow-up-right-down-duotone"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
 
-                                                            <table class="table common-datatable  nowrap w-100 ">
-                                                                <thead>
-                                                                    <tr>
+                                                        <div class="" id="FloorInrTabs">
+                                                            <!-- Floor Tabs -->
+                                                            <ul class="nav nav-pills custom-floor-tabs" id="floorTab2"
+                                                                role="tablist">
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button class="nav-link active" id="gfloor2-tab"
+                                                                        data-bs-toggle="pill" data-bs-target="#gfloor2"
+                                                                        type="button" role="tab" aria-controls="gfloor2"
+                                                                        aria-selected="true">
+                                                                        <i class="bi bi-building"></i> G
+                                                                        Floor
+                                                                    </button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button class="nav-link" id="firstfloor2-tab"
+                                                                        data-bs-toggle="pill"
+                                                                        data-bs-target="#firstfloor2" type="button"
+                                                                        role="tab" aria-controls="firstfloor2"
+                                                                        aria-selected="false">
+                                                                        <i class="bi bi-building"></i> 1st
+                                                                        Floor
+                                                                    </button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button class="nav-link" id="secondfloor2-tab"
+                                                                        data-bs-toggle="pill"
+                                                                        data-bs-target="#secondfloor2" type="button"
+                                                                        role="tab" aria-controls="secondfloor2"
+                                                                        aria-selected="false">
+                                                                        <i class="bi bi-building"></i> 2nd
+                                                                        Floor
+                                                                    </button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
 
-                                                                        <th>Type</th>
-                                                                        <th>Name</th>
-                                                                        <th>Occupancy</th>
-                                                                        <th>Actions</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
+                                                        <!-- Tab Content -->
+                                                        <div class="tab-content mt-3" id="floorTabContent">
+                                                            <div class="tab-pane fade show active" id="gfloor2"
+                                                                role="tabpanel" aria-labelledby="gfloor2-tab">
 
-                                                                        <td>
-                                                                            Bedroom 1
-                                                                        </td>
-                                                                        <td>131</td>
-                                                                        <td>1 / 1</td>
+                                                                <div class="col-lg-12">
+                                                                    <div class="form-group">
+                                                                        <label for="#">Floor Name</label>
+                                                                        <input type="text" class="form-control"
+                                                                            placeholder="Ground Floor">
+                                                                    </div>
 
-                                                                        <td>
-                                                                            <div
-                                                                                class="d-flex align-items-center ActionDropdown">
-                                                                                <div class="d-flex">
-                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                        href="property-details.php"
-                                                                                        data-bs-toggle="tooltip"
-                                                                                        data-placement="top" title=""
-                                                                                        data-bs-original-title="View Details"><span
-                                                                                            class="icon"><span
-                                                                                                class="feather-icon">
-                                                                                                <iconify-icon
-                                                                                                    icon="wpf:view-file">
-                                                                                                </iconify-icon>
-                                                                                            </span></span></a>
+                                                                </div>
 
+                                                                <div class="SubuNitAddContainer" id="unitContainer4">
+                                                                    <div class="container mt-5">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-12">
+
+                                                                                <div class="docfilterbutton">
+                                                                                    <div class="flexheaderLeftWrap">
+                                                                                        <h1 class="budget-title">
+                                                                                            Add Property
+                                                                                            Units</h1>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="flexheader_right_action">
+                                                                                        <button
+                                                                                            class="btn btn-primary addFolderBtn AddpropertyUnit"
+                                                                                            type="button"
+                                                                                            id="addFolderBtn">
+                                                                                            <iconify-icon
+                                                                                                icon="stash:list-add-light">
+                                                                                            </iconify-icon>
+                                                                                            Add Unit
+                                                                                            <i
+                                                                                                class="bi bi-arrow-up-right-down-duotone"></i>
+                                                                                        </button>
+                                                                                    </div>
                                                                                 </div>
 
                                                                             </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Living Room</td>
-                                                                        <td>215</td>
-                                                                        <td>2 / 2</td>
-                                                                        <td>
-                                                                            <div
-                                                                                class="d-flex align-items-center ActionDropdown">
-                                                                                <div class="d-flex">
-                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                        href="property-details.php"
-                                                                                        data-bs-toggle="tooltip"
-                                                                                        data-placement="top" title=""
-                                                                                        data-bs-original-title="View Details"><span
-                                                                                            class="icon"><span
-                                                                                                class="feather-icon">
-                                                                                                <iconify-icon
-                                                                                                    icon="wpf:view-file">
-                                                                                                </iconify-icon>
-                                                                                            </span></span></a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Kitchen</td>
-                                                                        <td>98</td>
-                                                                        <td>1 / 1</td>
-                                                                        <td>
-                                                                            <div
-                                                                                class="d-flex align-items-center ActionDropdown">
-                                                                                <div class="d-flex">
-                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                        href="property-details.php"
-                                                                                        data-bs-toggle="tooltip"
-                                                                                        data-placement="top" title=""
-                                                                                        data-bs-original-title="View Details"><span
-                                                                                            class="icon"><span
-                                                                                                class="feather-icon">
-                                                                                                <iconify-icon
-                                                                                                    icon="wpf:view-file">
-                                                                                                </iconify-icon>
-                                                                                            </span></span></a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
+                                                                        </div>
 
-                                                                    <tr>
-                                                                        <td>Bathroom</td>
-                                                                        <td>75</td>
-                                                                        <td>1 / 1</td>
-                                                                        <td>
-                                                                            <div
-                                                                                class="d-flex align-items-center ActionDropdown">
-                                                                                <div class="d-flex">
-                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                        href="property-details.php"
-                                                                                        data-bs-toggle="tooltip"
-                                                                                        data-placement="top" title=""
-                                                                                        data-bs-original-title="View Details"><span
-                                                                                            class="icon"><span
-                                                                                                class="feather-icon">
-                                                                                                <iconify-icon
-                                                                                                    icon="wpf:view-file">
-                                                                                                </iconify-icon>
-                                                                                            </span></span></a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
+                                                                        <table id="folderTable"
+                                                                            class="table Unitaddtable">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>Unit Type</th>
+                                                                                    <th>Unit Name</th>
+                                                                                    <th>Access Code</th>
+                                                                                    <th>Office Key Label
+                                                                                    </th>
+                                                                                    <th>Master Key Code
+                                                                                    </th>
+                                                                                    <th>Alarm Code</th>
+                                                                                    <th>Action</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <!-- Table rows will be added dynamically using JavaScript -->
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="firstfloor2" role="tabpanel"
+                                                                aria-labelledby="firstfloor2-tab">
+                                                                <div class="SubuNitAddContainer" id="unitContainer5">
+                                                                    <div class="container mt-5">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-12">
 
-                                                                    <tr>
-                                                                        <td>Office</td>
-                                                                        <td>110</td>
-                                                                        <td>1 / 1</td>
-                                                                        <td>
-                                                                            <div
-                                                                                class="d-flex align-items-center ActionDropdown">
-                                                                                <div class="d-flex">
-                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                        href="property-details.php"
-                                                                                        data-bs-toggle="tooltip"
-                                                                                        data-placement="top" title=""
-                                                                                        data-bs-original-title="View Details"><span
-                                                                                            class="icon"><span
-                                                                                                class="feather-icon">
-                                                                                                <iconify-icon
-                                                                                                    icon="wpf:view-file">
-                                                                                                </iconify-icon>
-                                                                                            </span></span></a>
+                                                                                <div class="docfilterbutton">
+                                                                                    <div class="flexheaderLeftWrap">
+                                                                                        <h1 class="budget-title">
+                                                                                            Add Property
+                                                                                            Units</h1>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="flexheader_right_action">
+                                                                                        <button
+                                                                                            class="btn btn-primary addFolderBtn AddpropertyUnit"
+                                                                                            type="button"
+                                                                                            id="addFolderBtn">
+                                                                                            <iconify-icon
+                                                                                                icon="stash:list-add-light">
+                                                                                            </iconify-icon>
+                                                                                            Add Unit
+                                                                                            <i
+                                                                                                class="bi bi-arrow-up-right-down-duotone"></i>
+                                                                                        </button>
+                                                                                    </div>
                                                                                 </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
 
-                                                                    <tr>
-                                                                        <td>Dining Room</td>
-                                                                        <td>150</td>
-                                                                        <td>1 / 1</td>
-                                                                        <td>
-                                                                            <div
-                                                                                class="d-flex align-items-center ActionDropdown">
-                                                                                <div class="d-flex">
-                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                        href="property-details.php"
-                                                                                        data-bs-toggle="tooltip"
-                                                                                        data-placement="top" title=""
-                                                                                        data-bs-original-title="View Details"><span
-                                                                                            class="icon"><span
-                                                                                                class="feather-icon">
-                                                                                                <iconify-icon
-                                                                                                    icon="wpf:view-file">
-                                                                                                </iconify-icon>
-                                                                                            </span></span></a>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <table id="folderTable"
+                                                                            class="table Unitaddtable">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>Unit Type</th>
+                                                                                    <th>Unit Name</th>
+                                                                                    <th>Access Code</th>
+                                                                                    <th>Office Key Label
+                                                                                    </th>
+                                                                                    <th>Master Key Code
+                                                                                    </th>
+                                                                                    <th>Alarm Code</th>
+                                                                                    <th>Action</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <!-- Table rows will be added dynamically using JavaScript -->
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="secondfloor2" role="tabpanel"
+                                                                aria-labelledby="secondfloor2-tab">
+                                                                <div class="SubuNitAddContainer" id="unitContainer6">
+                                                                    <div class="container mt-5">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-12">
+
+                                                                                <div class="docfilterbutton">
+                                                                                    <div class="flexheaderLeftWrap">
+                                                                                        <h1 class="budget-title">
+                                                                                            Add Property
+                                                                                            Units</h1>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="flexheader_right_action">
+                                                                                        <button
+                                                                                            class="btn btn-primary addFolderBtn AddpropertyUnit"
+                                                                                            type="button"
+                                                                                            id="addFolderBtn">
+                                                                                            <iconify-icon
+                                                                                                icon="stash:list-add-light">
+                                                                                            </iconify-icon>
+                                                                                            Add Unit
+                                                                                            <i
+                                                                                                class="bi bi-arrow-up-right-down-duotone"></i>
+                                                                                        </button>
+                                                                                    </div>
                                                                                 </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
 
-                                                                </tbody>
-                                                            </table>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <table id="folderTable"
+                                                                            class="table Unitaddtable">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>Unit Type</th>
+                                                                                    <th>Unit Name</th>
+                                                                                    <th>Access Code</th>
+                                                                                    <th>Office Key Label
+                                                                                    </th>
+                                                                                    <th>Master Key Code
+                                                                                    </th>
+                                                                                    <th>Alarm Code</th>
+                                                                                    <th>Action</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <!-- Table rows will be added dynamically using JavaScript -->
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1657,21 +3009,46 @@
                                         </div>
 
                                         <div class="tab-pane fade" id="Tenants">
-                                            <div class="fullwidthTabInner_content_container">
-                                                <div class="docfilterbutton">
-                                                    <h2 class="tabinnerTitle">Tenants </h2>
 
-                                                </div>
-                                                <div class="card">
-                                                    <div class="card-body">
+                                            <div class="fullwidthDesktopTabs MobileScrollShow" id="nopaddingTop">
+
+                                                <ul
+                                                    class="nav nav-tabs nav-line nav-icon fullwidthCustom_tabsUL nav-light">
+
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" data-bs-toggle="tab"
+                                                            href="#Activetenants">
+                                                            <div class="d-flex align-items-center">
+                                                                <span class="nav-link-text">Active Tenants</span>
+
+                                                            </div>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-bs-toggle="tab"
+                                                            href="#historictenants">
+                                                            <div class="d-flex align-items-center">
+                                                                <span class="nav-link-text">Historic Tenants</span>
+
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade show active" id="Activetenants">
+                                                    <div class="fullwidthTabInner_content_container">
                                                         <div class="contact-list-view">
-
                                                             <table class="table common-datatable  nowrap w-100 ">
                                                                 <thead>
                                                                     <tr>
 
                                                                         <th>Name</th>
                                                                         <th>Type</th>
+                                                                        <th>Unit</th>
+                                                                        <th>Sub Unit</th>
                                                                         <th>Start Date</th>
                                                                         <th>End Date</th>
                                                                         <th>Action</th>
@@ -1681,10 +3058,27 @@
                                                                     <tr>
 
                                                                         <td>
-                                                                            <a href="view-user-details.php"
-                                                                                class="namelinkURl">Danial Craig</a>
+                                                                            <a href="view-tenant-details.php">
+                                                                                <div class="media align-items-center">
+                                                                                    <div class="media-head me-2">
+                                                                                        <div
+                                                                                            class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="avatar-img">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="media-body">
+                                                                                        <span
+                                                                                            class="d-block text-high-em">Winston
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
                                                                         </td>
                                                                         <td>Student</td>
+                                                                        <td>Apartment</td>
+                                                                        <td>Apartment 101 tower 2</td>
                                                                         <td>05/09/2024</td>
                                                                         <td>03/09/2024</td>
 
@@ -1723,10 +3117,27 @@
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            <a href="view-user-details.php"
-                                                                                class="namelinkURl">Emma Watson</a>
+                                                                            <a href="view-tenant-details.php">
+                                                                                <div class="media align-items-center">
+                                                                                    <div class="media-head me-2">
+                                                                                        <div
+                                                                                            class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="avatar-img">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="media-body">
+                                                                                        <span
+                                                                                            class="d-block text-high-em">Winston
+                                                                                            Churchil</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
                                                                         </td>
                                                                         <td>Student</td>
+                                                                        <td>Studio</td>
+                                                                        <td>House 5C</td>
                                                                         <td>05/10/2024</td>
                                                                         <td>03/10/2024</td>
                                                                         <td>
@@ -1763,10 +3174,27 @@
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            <a href="view-user-details.php"
-                                                                                class="namelinkURl">John Doe</a>
+                                                                            <a href="view-tenant-details.php">
+                                                                                <div class="media align-items-center">
+                                                                                    <div class="media-head me-2">
+                                                                                        <div
+                                                                                            class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="avatar-img">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="media-body">
+                                                                                        <span
+                                                                                            class="d-block text-high-em">Morgan
+                                                                                            Freeman</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
                                                                         </td>
                                                                         <td>Student</td>
+                                                                        <td>Flat</td>
+                                                                        <td>Flat 2A</td>
                                                                         <td>05/11/2024</td>
                                                                         <td>03/11/2024</td>
                                                                         <td>
@@ -1803,10 +3231,27 @@
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            <a href="view-user-details.php"
-                                                                                class="namelinkURl"> Alice Johnson</a>
+                                                                            <a href="view-tenant-details.php">
+                                                                                <div class="media align-items-center">
+                                                                                    <div class="media-head me-2">
+                                                                                        <div
+                                                                                            class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="avatar-img">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="media-body">
+                                                                                        <span
+                                                                                            class="d-block text-high-em">Huma
+                                                                                            Therman</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
                                                                         </td>
                                                                         <td>Student</td>
+                                                                        <td>Apartment</td>
+                                                                        <td>Apartment 2C</td>
                                                                         <td>05/12/2024</td>
                                                                         <td>03/12/2024</td>
                                                                         <td>
@@ -1843,10 +3288,341 @@
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            <a href="view-user-details.php"
-                                                                                class="namelinkURl"> Michael Smith</a>
+                                                                            <a href="view-tenant-details.php">
+                                                                                <div class="media align-items-center">
+                                                                                    <div class="media-head me-2">
+                                                                                        <div
+                                                                                            class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="avatar-img">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="media-body">
+                                                                                        <span
+                                                                                            class="d-block text-high-em">Charlie
+                                                                                            Chaplin</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
                                                                         </td>
                                                                         <td>Student</td>
+                                                                        <td>Apartment</td>
+                                                                        <td>Apartment 5C</td>
+                                                                        <td>05/13/2024</td>
+                                                                        <td>03/13/2024</td>
+                                                                        <td>
+                                                                            <div
+                                                                                class="d-flex align-items-center ActionDropdown">
+                                                                                <div class="d-flex">
+                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                                        data-bs-toggle="tooltip"
+                                                                                        data-placement="top"
+                                                                                        title="View Tenancy Details"
+                                                                                        href="tenancy.php"><span
+                                                                                            class="icon"><span
+                                                                                                class="feather-icon"><svg
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    width="24"
+                                                                                                    height="24"
+                                                                                                    viewBox="0 0 24 24"
+                                                                                                    fill="none"
+                                                                                                    stroke="currentColor"
+                                                                                                    stroke-width="2"
+                                                                                                    stroke-linecap="round"
+                                                                                                    stroke-linejoin="round"
+                                                                                                    class="feather feather-eye">
+                                                                                                    <path
+                                                                                                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
+                                                                                                    </path>
+                                                                                                    <circle cx="12"
+                                                                                                        cy="12" r="3">
+                                                                                                    </circle>
+                                                                                                </svg></span></span></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                            </table>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="historictenants">
+                                                    <div class="fullwidthTabInner_content_container">
+                                                        <div class="contact-list-view">
+
+                                                            <table class="table common-datatable  nowrap w-100 ">
+                                                                <thead>
+                                                                    <tr>
+
+                                                                        <th>Name</th>
+                                                                        <th>Type</th>
+                                                                        <th>Unit</th>
+                                                                        <th>Sub Unit</th>
+                                                                        <th>Start Date</th>
+                                                                        <th>End Date</th>
+                                                                        <th>Action</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+
+                                                                        <td>
+                                                                            <a href="view-tenant-details.php">
+                                                                                <div class="media align-items-center">
+                                                                                    <div class="media-head me-2">
+                                                                                        <div
+                                                                                            class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="avatar-img">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="media-body">
+                                                                                        <span
+                                                                                            class="d-block text-high-em">Winston
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </td>
+                                                                        <td>Student</td>
+                                                                        <td>Apartment</td>
+                                                                        <td>Apartment 101 tower 2</td>
+                                                                        <td>05/09/2024</td>
+                                                                        <td>03/09/2024</td>
+
+                                                                        <td>
+                                                                            <div
+                                                                                class="d-flex align-items-center ActionDropdown">
+                                                                                <div class="d-flex">
+                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                        data-bs-toggle="tooltip"
+                                                                                        data-placement="top" title=""
+                                                                                        data-bs-original-title="View Tenancy Details"
+                                                                                        href="tenancy.php"><span
+                                                                                            class="icon"><span
+                                                                                                class="feather-icon"><svg
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    width="24"
+                                                                                                    height="24"
+                                                                                                    viewBox="0 0 24 24"
+                                                                                                    fill="none"
+                                                                                                    stroke="currentColor"
+                                                                                                    stroke-width="2"
+                                                                                                    stroke-linecap="round"
+                                                                                                    stroke-linejoin="round"
+                                                                                                    class="feather feather-eye">
+                                                                                                    <path
+                                                                                                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
+                                                                                                    </path>
+                                                                                                    <circle cx="12"
+                                                                                                        cy="12" r="3">
+                                                                                                    </circle>
+                                                                                                </svg></span></span></a>
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="view-tenant-details.php">
+                                                                                <div class="media align-items-center">
+                                                                                    <div class="media-head me-2">
+                                                                                        <div
+                                                                                            class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="avatar-img">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="media-body">
+                                                                                        <span
+                                                                                            class="d-block text-high-em">Winston
+                                                                                            Churchil</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </td>
+                                                                        <td>Student</td>
+                                                                        <td>Studio</td>
+                                                                        <td>House 5C</td>
+                                                                        <td>05/10/2024</td>
+                                                                        <td>03/10/2024</td>
+                                                                        <td>
+                                                                            <div
+                                                                                class="d-flex align-items-center ActionDropdown">
+                                                                                <div class="d-flex">
+                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                                        data-bs-toggle="tooltip"
+                                                                                        data-placement="top"
+                                                                                        title="View Tenancy Details"
+                                                                                        href="tenancy.php"><span
+                                                                                            class="icon"><span
+                                                                                                class="feather-icon"><svg
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    width="24"
+                                                                                                    height="24"
+                                                                                                    viewBox="0 0 24 24"
+                                                                                                    fill="none"
+                                                                                                    stroke="currentColor"
+                                                                                                    stroke-width="2"
+                                                                                                    stroke-linecap="round"
+                                                                                                    stroke-linejoin="round"
+                                                                                                    class="feather feather-eye">
+                                                                                                    <path
+                                                                                                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
+                                                                                                    </path>
+                                                                                                    <circle cx="12"
+                                                                                                        cy="12" r="3">
+                                                                                                    </circle>
+                                                                                                </svg></span></span></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="view-tenant-details.php">
+                                                                                <div class="media align-items-center">
+                                                                                    <div class="media-head me-2">
+                                                                                        <div
+                                                                                            class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="avatar-img">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="media-body">
+                                                                                        <span
+                                                                                            class="d-block text-high-em">Morgan
+                                                                                            Freeman</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </td>
+                                                                        <td>Student</td>
+                                                                        <td>Flat</td>
+                                                                        <td>Flat 2A</td>
+                                                                        <td>05/11/2024</td>
+                                                                        <td>03/11/2024</td>
+                                                                        <td>
+                                                                            <div
+                                                                                class="d-flex align-items-center ActionDropdown">
+                                                                                <div class="d-flex">
+                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                                        data-bs-toggle="tooltip"
+                                                                                        data-placement="top"
+                                                                                        title="View Tenancy Details"
+                                                                                        href="tenancy.php"><span
+                                                                                            class="icon"><span
+                                                                                                class="feather-icon"><svg
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    width="24"
+                                                                                                    height="24"
+                                                                                                    viewBox="0 0 24 24"
+                                                                                                    fill="none"
+                                                                                                    stroke="currentColor"
+                                                                                                    stroke-width="2"
+                                                                                                    stroke-linecap="round"
+                                                                                                    stroke-linejoin="round"
+                                                                                                    class="feather feather-eye">
+                                                                                                    <path
+                                                                                                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
+                                                                                                    </path>
+                                                                                                    <circle cx="12"
+                                                                                                        cy="12" r="3">
+                                                                                                    </circle>
+                                                                                                </svg></span></span></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="view-tenant-details.php">
+                                                                                <div class="media align-items-center">
+                                                                                    <div class="media-head me-2">
+                                                                                        <div
+                                                                                            class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="avatar-img">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="media-body">
+                                                                                        <span
+                                                                                            class="d-block text-high-em">Huma
+                                                                                            Therman</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </td>
+                                                                        <td>Student</td>
+                                                                        <td>Apartment</td>
+                                                                        <td>Apartment 2C</td>
+                                                                        <td>05/12/2024</td>
+                                                                        <td>03/12/2024</td>
+                                                                        <td>
+                                                                            <div
+                                                                                class="d-flex align-items-center ActionDropdown">
+                                                                                <div class="d-flex">
+                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                                        data-bs-toggle="tooltip"
+                                                                                        data-placement="top"
+                                                                                        title="View Tenancy Details"
+                                                                                        href="tenancy.php"><span
+                                                                                            class="icon"><span
+                                                                                                class="feather-icon"><svg
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    width="24"
+                                                                                                    height="24"
+                                                                                                    viewBox="0 0 24 24"
+                                                                                                    fill="none"
+                                                                                                    stroke="currentColor"
+                                                                                                    stroke-width="2"
+                                                                                                    stroke-linecap="round"
+                                                                                                    stroke-linejoin="round"
+                                                                                                    class="feather feather-eye">
+                                                                                                    <path
+                                                                                                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
+                                                                                                    </path>
+                                                                                                    <circle cx="12"
+                                                                                                        cy="12" r="3">
+                                                                                                    </circle>
+                                                                                                </svg></span></span></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="view-tenant-details.php">
+                                                                                <div class="media align-items-center">
+                                                                                    <div class="media-head me-2">
+                                                                                        <div
+                                                                                            class="avatar avatar-xs avatar-rounded">
+                                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="avatar-img">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="media-body">
+                                                                                        <span
+                                                                                            class="d-block text-high-em">Charlie
+                                                                                            Chaplin</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </td>
+                                                                        <td>Student</td>
+                                                                        <td>Apartment</td>
+                                                                        <td>Apartment 5C</td>
                                                                         <td>05/13/2024</td>
                                                                         <td>03/13/2024</td>
                                                                         <td>
@@ -1888,6 +3664,7 @@
                                                     </div>
                                                 </div>
                                             </div>
+
                                         </div>
 
                                         <div class="tab-pane fade" id="Events">
@@ -2480,6 +4257,7 @@
                                                                         <th>Name </th>
                                                                         <th>Mobile Number</th>
                                                                         <th>Email Address</th>
+                                                                        <th>Description</th>
                                                                         <th>Action</th>
                                                                     </tr>
                                                                 </thead>
@@ -2507,7 +4285,8 @@
                                                                         </td>
                                                                         <td>1234567890</td>
                                                                         <td>student@gmail.com</td>
-                                                                        
+                                                                        <td>Specializes in residential and commercial
+                                                                            electrical repairs and installations.</td>
                                                                         <td>
                                                                             <div
                                                                                 class="d-flex align-items-center ActionDropdown">
@@ -2524,17 +4303,18 @@
                                                                                                     icon="fluent:edit-16-regular">
                                                                                                 </iconify-icon>
                                                                                             </span></span></button>
-                                                                                            <button type="button" data-bs-toggle="offcanvas"
+                                                                                    <button type="button"
+                                                                                        data-bs-toggle="offcanvas"
                                                                                         data-bs-target="#Viewpreffered_contract"
                                                                                         aria-controls="offcanvasExample"
-                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                                                <span class="icon"><span
-                                                                                        class="feather-icon">
-                                                                                        <iconify-icon
-                                                                                            icon="ant-design:eye-outlined">
-                                                                                        </iconify-icon>
-                                                                                    </span></span>
-                                                                            </button>
+                                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                        <span class="icon"><span
+                                                                                                class="feather-icon">
+                                                                                                <iconify-icon
+                                                                                                    icon="ant-design:eye-outlined">
+                                                                                                </iconify-icon>
+                                                                                            </span></span>
+                                                                                    </button>
                                                                                 </div>
 
                                                                             </div>
@@ -2563,7 +4343,8 @@
                                                                         </td>
                                                                         <td>9876543210</td>
                                                                         <td>johnsmith@example.com</td>
-                                                                        
+                                                                        <td>Expert in pipe repairs, installation, and
+                                                                            general plumbing services.</td>
                                                                         <td>
                                                                             <div
                                                                                 class="d-flex align-items-center ActionDropdown">
@@ -2582,17 +4363,18 @@
                                                                                             </span>
                                                                                         </span>
                                                                                     </button>
-                                                                                    <button type="button" data-bs-toggle="offcanvas"
+                                                                                    <button type="button"
+                                                                                        data-bs-toggle="offcanvas"
                                                                                         data-bs-target="#Viewpreffered_contract"
                                                                                         aria-controls="offcanvasExample"
-                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                                                <span class="icon"><span
-                                                                                        class="feather-icon">
-                                                                                        <iconify-icon
-                                                                                            icon="ant-design:eye-outlined">
-                                                                                        </iconify-icon>
-                                                                                    </span></span>
-                                                                            </button>
+                                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                        <span class="icon"><span
+                                                                                                class="feather-icon">
+                                                                                                <iconify-icon
+                                                                                                    icon="ant-design:eye-outlined">
+                                                                                                </iconify-icon>
+                                                                                            </span></span>
+                                                                                    </button>
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -2621,7 +4403,9 @@
                                                                         </td>
                                                                         <td>1122334455</td>
                                                                         <td>janedoe@example.com</td>
-                                                                        
+                                                                        <td>Specializes in custom furniture and
+                                                                            woodwork, as well as general carpentry
+                                                                            repairs.</td>
                                                                         <td>
                                                                             <div
                                                                                 class="d-flex align-items-center ActionDropdown">
@@ -2640,17 +4424,18 @@
                                                                                             </span>
                                                                                         </span>
                                                                                     </button>
-                                                                                    <button type="button" data-bs-toggle="offcanvas"
+                                                                                    <button type="button"
+                                                                                        data-bs-toggle="offcanvas"
                                                                                         data-bs-target="#Viewpreffered_contract"
                                                                                         aria-controls="offcanvasExample"
-                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                                                <span class="icon"><span
-                                                                                        class="feather-icon">
-                                                                                        <iconify-icon
-                                                                                            icon="ant-design:eye-outlined">
-                                                                                        </iconify-icon>
-                                                                                    </span></span>
-                                                                            </button>
+                                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                        <span class="icon"><span
+                                                                                                class="feather-icon">
+                                                                                                <iconify-icon
+                                                                                                    icon="ant-design:eye-outlined">
+                                                                                                </iconify-icon>
+                                                                                            </span></span>
+                                                                                    </button>
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -2679,7 +4464,8 @@
                                                                         </td>
                                                                         <td>2233445566</td>
                                                                         <td>michaeljordan@example.com</td>
-                                                                        
+                                                                        <td>Provides residential and commercial cleaning
+                                                                            services, including deep cleaning.</td>
                                                                         <td>
                                                                             <div
                                                                                 class="d-flex align-items-center ActionDropdown">
@@ -2698,17 +4484,18 @@
                                                                                             </span>
                                                                                         </span>
                                                                                     </button>
-                                                                                    <button type="button" data-bs-toggle="offcanvas"
+                                                                                    <button type="button"
+                                                                                        data-bs-toggle="offcanvas"
                                                                                         data-bs-target="#Viewpreffered_contract"
                                                                                         aria-controls="offcanvasExample"
-                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                                                <span class="icon"><span
-                                                                                        class="feather-icon">
-                                                                                        <iconify-icon
-                                                                                            icon="ant-design:eye-outlined">
-                                                                                        </iconify-icon>
-                                                                                    </span></span>
-                                                                            </button>
+                                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                        <span class="icon"><span
+                                                                                                class="feather-icon">
+                                                                                                <iconify-icon
+                                                                                                    icon="ant-design:eye-outlined">
+                                                                                                </iconify-icon>
+                                                                                            </span></span>
+                                                                                    </button>
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -2737,7 +4524,8 @@
                                                                         </td>
                                                                         <td>3344556677</td>
                                                                         <td>sarahconnor@example.com</td>
-                                                                        
+                                                                        <td>Expert in air conditioning and heating
+                                                                            system installations and repairs.</td>
                                                                         <td>
                                                                             <div
                                                                                 class="d-flex align-items-center ActionDropdown">
@@ -2756,17 +4544,18 @@
                                                                                             </span>
                                                                                         </span>
                                                                                     </button>
-                                                                                    <button type="button" data-bs-toggle="offcanvas"
+                                                                                    <button type="button"
+                                                                                        data-bs-toggle="offcanvas"
                                                                                         data-bs-target="#Viewpreffered_contract"
                                                                                         aria-controls="offcanvasExample"
-                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                                                <span class="icon"><span
-                                                                                        class="feather-icon">
-                                                                                        <iconify-icon
-                                                                                            icon="ant-design:eye-outlined">
-                                                                                        </iconify-icon>
-                                                                                    </span></span>
-                                                                            </button>
+                                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                        <span class="icon"><span
+                                                                                                class="feather-icon">
+                                                                                                <iconify-icon
+                                                                                                    icon="ant-design:eye-outlined">
+                                                                                                </iconify-icon>
+                                                                                            </span></span>
+                                                                                    </button>
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -2795,7 +4584,8 @@
                                                                         </td>
                                                                         <td>4455667788</td>
                                                                         <td>lisasimpson@example.com</td>
-                                                                       
+                                                                        <td>Offers lawn care, landscaping, and garden
+                                                                            maintenance services.</td>
                                                                         <td>
                                                                             <div
                                                                                 class="d-flex align-items-center ActionDropdown">
@@ -2814,17 +4604,18 @@
                                                                                             </span>
                                                                                         </span>
                                                                                     </button>
-                                                                                    <button type="button" data-bs-toggle="offcanvas"
+                                                                                    <button type="button"
+                                                                                        data-bs-toggle="offcanvas"
                                                                                         data-bs-target="#Viewpreffered_contract"
                                                                                         aria-controls="offcanvasExample"
-                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                                                <span class="icon"><span
-                                                                                        class="feather-icon">
-                                                                                        <iconify-icon
-                                                                                            icon="ant-design:eye-outlined">
-                                                                                        </iconify-icon>
-                                                                                    </span></span>
-                                                                            </button>
+                                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                        <span class="icon"><span
+                                                                                                class="feather-icon">
+                                                                                                <iconify-icon
+                                                                                                    icon="ant-design:eye-outlined">
+                                                                                                </iconify-icon>
+                                                                                            </span></span>
+                                                                                    </button>
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -2853,7 +4644,8 @@
                                                                         </td>
                                                                         <td>5566778899</td>
                                                                         <td>tonystark@example.com</td>
-                                                                        
+                                                                        <td>Offers lawn care, landscaping, and garden
+                                                                            maintenance services.</td>
                                                                         <td>
                                                                             <div
                                                                                 class="d-flex align-items-center ActionDropdown">
@@ -2872,17 +4664,18 @@
                                                                                             </span>
                                                                                         </span>
                                                                                     </button>
-                                                                                    <button type="button" data-bs-toggle="offcanvas"
+                                                                                    <button type="button"
+                                                                                        data-bs-toggle="offcanvas"
                                                                                         data-bs-target="#Viewpreffered_contract"
                                                                                         aria-controls="offcanvasExample"
-                                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
-                                                                                <span class="icon"><span
-                                                                                        class="feather-icon">
-                                                                                        <iconify-icon
-                                                                                            icon="ant-design:eye-outlined">
-                                                                                        </iconify-icon>
-                                                                                    </span></span>
-                                                                            </button>
+                                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover btndocDownload">
+                                                                                        <span class="icon"><span
+                                                                                                class="feather-icon">
+                                                                                                <iconify-icon
+                                                                                                    icon="ant-design:eye-outlined">
+                                                                                                </iconify-icon>
+                                                                                            </span></span>
+                                                                                    </button>
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -4111,191 +5904,56 @@
 </div>
 <!-- add Event offcanvas modal end -->
 
-<!-- add property Unit offcanvas modal start -->
-<div class="offcanvas offcanvas-bottom custombottm_offcanvasStyle" tabindex="-1" id="propertiform_modal"
-    aria-labelledby="offcanvasTopLabel">
-    <div class="offcanvas-header custom-canvas-header">
-        <div class="canvas-header-title">
-            <iconify-icon icon="iconoir:unity" width="1.2em" height="1.2em"></iconify-icon>
-            Add Property Unit
-        </div>
-        <div class="closeCanvasContainer">
-            <button type="button" class="canvascloseButton" data-bs-dismiss="offcanvas" aria-label="Close">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                    class="ct-icon" style="min-width: 20px; min-height: 20px; color: var(--ct-white);"
-                    data-testid="icon">
-                    <path
-                        d="M11.375 14.5C11.5583 14.6833 11.7667 14.775 12 14.775C12.2333 14.775 12.4417 14.6833 12.625 14.5L15.625 11.525C15.7583 11.3917 15.8207 11.2167 15.812 11C15.804 10.7833 15.7333 10.6083 15.6 10.475C15.45 10.325 15.275 10.25 15.075 10.25C14.875 10.25 14.7 10.325 14.55 10.475L12 13.025L9.425 10.45C9.29167 10.3167 9.11667 10.254 8.9 10.262C8.68333 10.2707 8.50833 10.3417 8.375 10.475C8.225 10.625 8.15 10.8 8.15 11C8.15 11.2 8.225 11.375 8.375 11.525L11.375 14.5ZM12 21.5C10.6833 21.5 9.446 21.25 8.288 20.75C7.12933 20.25 6.125 19.575 5.275 18.725C4.425 17.875 3.75 16.8707 3.25 15.712C2.75 14.554 2.5 13.3167 2.5 12C2.5 10.6833 2.75 9.44567 3.25 8.287C3.75 7.129 4.425 6.125 5.275 5.275C6.125 4.425 7.12933 3.75 8.288 3.25C9.446 2.75 10.6833 2.5 12 2.5C13.3167 2.5 14.5543 2.75 15.713 3.25C16.871 3.75 17.875 4.425 18.725 5.275C19.575 6.125 20.25 7.129 20.75 8.287C21.25 9.44567 21.5 10.6833 21.5 12C21.5 13.3167 21.25 14.554 20.75 15.712C20.25 16.8707 19.575 17.875 18.725 18.725C17.875 19.575 16.871 20.25 15.713 20.75C14.5543 21.25 13.3167 21.5 12 21.5ZM12 20C14.2167 20 16.1043 19.221 17.663 17.663C19.221 16.1043 20 14.2167 20 12C20 9.78333 19.221 7.89567 17.663 6.337C16.1043 4.779 14.2167 4 12 4C9.78333 4 7.896 4.779 6.338 6.337C4.77933 7.89567 4 9.78333 4 12C4 14.2167 4.77933 16.1043 6.338 17.663C7.896 19.221 9.78333 20 12 20Z"
-                        fill="currentColor"></path>
-                </svg>Close
-            </button>
-        </div>
+<!-- Aadd floor modal-->
+<div id="floorAdd__modal" class="modal customwizard_formStyle sm_modalCustom fade" tabindex="-1" role="dialog"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <form action="property-details.php" method="" id="addpropertyModal">
+            <div class="modal-content">
 
-    </div>
-    <div class="Canvas_ct_divider"></div>
-    <form class="" action="property-details.php" method="POST">
-        <div class="offcanvas-body">
+                <div class="ModalheaderArea">
+                    <h5 class="mb-4 modaltitlewith_icon">
+                        <iconify-icon icon="ph:building"></iconify-icon> Add Floors
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
 
-            <div class="addingForm_Container">
-                <div class="add-users-modal-body-table-header text-headline-6">Add New Property Unit </div>
+                <div class="modal-body">
 
-                <div class="formstartcontainer">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label class="form-label">Address</label>
-                                        <input type="text" class="form-control" value="1-7 Union Street">
-                                    </div>
-
-                                </div>
-                                <div class=" col-md-3">
-                                    <div class="form-group">
-                                        <label for="" class="form-label">Area</label>
-                                        <input type="text" class="form-control" value="Sunderland">
-                                    </div>
-
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="" class="form-label">Postcode</label>
-                                        <input type="text" class="form-control" id="" value="SR1 3BT">
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="" class="form-label">Unit Type</label>
-                                        <input type="text" class="form-control" id="">
-                                    </div>
-
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="" class="form-label">Unit Name</label>
-                                        <input type="text" class="form-control" id="">
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="" class="form-label">Access Code</label>
-                                        <input type="phone" class="form-control" id="">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="" class="form-label">Alarm Code</label>
-                                        <input type="phone" class="form-control" id="">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label class="form-label">Default Tenancy Type</label>
-                                        <select name="" id="" class="form-control select2">
-                                            <option disabled="" selected="" value="">Please Select...</option>
-                                            <option value="1">Private</option>
-                                            <option value="2">Student</option>
-                                            <option value="4">Commercial</option>
-                                            <option value="5">Dental</option>
-
-                                        </select>
-
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label class="form-label">Landlord</label>
-                                        <select name="" id="" class="form-control select2">
-                                            <option disabled="" selected="" value="">Please Select...</option>
-                                            <option value="15">Properties, Graysons</option>
-                                            <option value="19">Ghai, Akash</option>
-                                            <option value="22">Properties, SR</option>
-                                            <option value="27">Ghai, Harjit</option>
-                                            <option value="239">Somal, Mohinder</option>
-                                            <option value="301">Ghai, Shashi</option>
-                                            <option value="302">Somal, Inderjeet</option>
-                                            <option value="304">Sunderland Ltd, City View</option>
-                                            <option value="310">Ghai Investments, Somal</option>
-                                            <option value="320">Sunderland Ltd, Phoenix House</option>
-                                            <option value="323">Developments Ltd, Graystones</option>
-                                            <option value="364">Nayyar, Neeraj</option>
-                                            <option value="401">Hussain, Zak</option>
-                                            <option value="437">Development, SSG Property</option>
-                                            <option value="837">Somal, Amrit</option>
-                                            <option value="1143">Limited, Ryecroft Holdings</option>
-                                            <option value="1245">Terrace Limited, Leazes</option>
-                                            <option value="1759">Dental Education, Waterfront</option>
-                                            <option value="1891">Ghai, Anil</option>
-                                            <option value="1892">Malhi, Navjit</option>
-                                            <option value="2087">Somal, Deepinder</option>
-                                            <option value="2088">Services Ltd, Union Property</option>
-                                        </select>
-
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-3">
-                                    <div class="form-group">
-                                        <label class="form-label">Appointment
-                                            Colour</label>
-                                        <div class="input-group color-picker">
-                                            <div class="input-group-text colorpicker-input-addon"
-                                                style="background-color: rgb(0, 155, 132);">
-                                                <input type="color"></div>
-                                            <input type="text" class="form-control colorpicker-value" value="#009B84">
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
+                    <div class="AddpropertforClient_mdWrap">
+                        <div class="stepheadingheader">
+                            <h1>Please enter the number of floors you want to create for this Property</h2>
                         </div>
 
+                        <div class="row">
+
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label class="form-label">Enter Floor Count</label>
+                                    <input class="form-control" type="text">
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
+                </div>
+                <div class="form-navigation canvasFooterContainer CustomModal_footer taskadd_footer">
 
-                    <div class="SubuNitAddContainer">
-                        <div class="container mt-5">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="addSubUnitButton">
-
-                                        <button class="btn btn-primary" type="button" id="addFolderBtn">
-                                            <iconify-icon icon="fluent:chat-add-16-regular"></iconify-icon> Add Unit
-                                            here <i class="bi bi-arrow-up-right-down-duotone"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <table id="folderTable" class="table  nowrap table-advance">
-                                <thead>
-                                    <tr>
-                                        <th>Unit Type</th>
-                                        <th>Unit Name</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <!-- Table rows will be added dynamically using JavaScript -->
-                                </tbody>
-                            </table>
-                        </div>
+                    <div class="eventSubmit_container">
+                        <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
+                            data-bs-dismiss="modal">Close</button>
+                        <button type="submit"
+                            class="submitButton  canvasSubmit_button commonCanvas_buttonFooter">Submit</button>
                     </div>
                 </div>
 
             </div>
-        </div>
-
-        <div class="canvasFooterContainer">
-            <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
-                data-bs-dismiss="offcanvas">Cancel</button>
-            <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter">Submit</button>
-        </div>
-    </form>
+        </form>
+    </div>
 </div>
-<!-- add property Unit offcanvas modal end -->
+<!-- add floor modal end-->
 
 <!-- view Recipients offcanvas modal-->
 <div class="offcanvas offcanvas-bottom custombottm_offcanvasStyle" tabindex="-1" id="viewRecipients"
@@ -4566,11 +6224,11 @@
                                 </div>
 
                                 <div class="col-lg-12">
-                                <div class="form-group">
-                                                                        <label class="form-label">Add
-                                                                            Contract Description</label>
-                                                                        <textarea class="form-control" rows="5"></textarea>
-                                                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Add
+                                            Contract Description</label>
+                                        <textarea class="form-control" rows="5"></textarea>
+                                    </div>
                                 </div>
 
                             </div>
@@ -4659,11 +6317,11 @@
 
                                 </div>
                                 <div class="col-lg-12">
-                                <div class="form-group">
-                                                                        <label class="form-label">Add
-                                                                            Contract Description</label>
-                                                                        <textarea class="form-control" rows="5"></textarea>
-                                                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Add
+                                            Contract Description</label>
+                                        <textarea class="form-control" rows="5"></textarea>
+                                    </div>
                                 </div>
 
                             </div>
@@ -4710,7 +6368,7 @@
         <div class="offcanvas-body">
 
             <div class="addingForm_Container ">
-                
+
                 <div class="formstartcontainer">
                     <div class="row">
                         <div class="col-lg-12">
@@ -4740,23 +6398,26 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">Mobile Number</label>
-                                        <input type="text" class="form-control" id="mobilenumbercntr" value="9876543210" readonly>
+                                        <input type="text" class="form-control" id="mobilenumbercntr" value="9876543210"
+                                            readonly>
                                     </div>
 
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">Email Address</label>
-                                        <input type="text" class="form-control" id="cntr_emailaddress" value="johnsmith@example.com" readonly>
+                                        <input type="text" class="form-control" id="cntr_emailaddress"
+                                            value="johnsmith@example.com" readonly>
                                     </div>
 
                                 </div>
                                 <div class="col-lg-12">
-                                <div class="form-group">
-                                                                        <label class="form-label">Add
-                                                                        Contractor Description</label>
-                                                                        <textarea class="form-control" rows="5" readonly>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti obcaecati aliquid pariatur ad quae minima?</textarea>
-                                                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Add
+                                            Contractor Description</label>
+                                        <textarea class="form-control" rows="5"
+                                            readonly>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti obcaecati aliquid pariatur ad quae minima?</textarea>
+                                    </div>
                                 </div>
 
                             </div>
@@ -5048,31 +6709,50 @@
 </script>
 <!-- end -->
 
+<!-- add property unit table js -->
 <script>
-    $(document).ready(function() {
-        // Function to add a new row to the table
+    function initializeUnitTable(containerId) {
+        var $container = $("#" + containerId);
+
         function addRow(unitType, unitName, level, parentRow) {
-            var table = $("#folderTable tbody");
+            var table = $container.find("table tbody");
             var newRow = $("<tr></tr>");
-            // Add indentation based on the level of nesting
-            var indent = '&nbsp;'.repeat(level * 4);
-            // Div element for the unit type
-            var unitTypeDiv = $("<div>" + indent + '<input type="text" class="sustomaddonInput" value="' +
-                unitType + '" />' + "</div>");
-            var cell1 = $("<td></td>").append(unitTypeDiv);
-            // Div element for the unit name
-            var unitNameDiv = $("<div>" + indent + '<input type="text" class="sustomaddonInput" value="' +
-                unitName + '" />' + "</div>");
+            // Calculate dynamic padding for the tree view
+            var padding = 20 * level; // Each level increases padding by 20px
+            // Create the first cell with the unit type and apply dynamic padding
+            var unitTypeDiv = $('<div><input type="text" class="sustomaddonInput" value="' +
+                unitType + '" /></div>');
+            var cell1 = $("<td></td>").append(unitTypeDiv).css("padding-left", padding + "px");
+            // Create the second cell with the unit name
+            var unitNameDiv = $('<div><input type="text" class="sustomaddonInput form-control" value="' +
+                unitName + '" /></div>');
             var cell2 = $("<td></td>").append(unitNameDiv);
-            // Always include remove button for each row
-            var cell3 = $(
-                '<td><div class="actionapndButton_container"><button class="removeBtn cmntabapndBtn customtablecreation_remove" type="button"><iconify-icon icon="fluent:delete-16-regular"></iconify-icon> Remove</button>  <button class="addBtn cmntabapndBtn customtablecreation_Add" type="button"><iconify-icon icon="fluent:add-12-regular"></iconify-icon> Add Sub unit</button></div></td>'
-            );
-            newRow.append(cell1);
-            newRow.append(cell2);
-            newRow.append(cell3);
+            // Create the additional fields
+            var cell3 = $("<td></td>").append(
+                '<input type="text" class="sustomaddonInput form-control" placeholder="Access Code" />');
+            var cell4 = $("<td></td>").append(
+                '<input type="text" class="sustomaddonInput form-control" placeholder="Office Key Label" />');
+            var cell5 = $("<td></td>").append(
+                '<input type="text" class="sustomaddonInput form-control" placeholder="Master Key Code" />');
+            var cell6 = $("<td></td>").append(
+                '<input type="text" class="sustomaddonInput form-control" placeholder="Alarm Code" />');
+            // Create the action buttons cell
+            var cell7 = $(`
+                <td>
+                    <div class="actionapndButton_container">
+                        <button class="removeBtn cmntabapndBtn customtablecreation_remove" type="button">
+                            <iconify-icon icon="fluent:delete-16-regular"></iconify-icon> Remove
+                        </button>  
+                        <button class="addBtn cmntabapndBtn customtablecreation_Add" type="button">
+                            <iconify-icon icon="fluent:add-12-regular"></iconify-icon> Add Sub unit
+                        </button>
+                    </div>
+                </td>
+            `);
+            // Append all cells to the new row
+            newRow.append(cell1, cell2, cell3, cell4, cell5, cell6, cell7);
             // Add event listener for the remove button
-            cell3.find(".removeBtn").click(function() {
+            cell7.find(".removeBtn").click(function() {
                 Swal.fire({
                     title: 'Confirmation',
                     text: "Are you sure you want to delete this " + unitType.toLowerCase() +
@@ -5084,7 +6764,6 @@
                     confirmButtonText: 'Yes, delete it!'
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        // Remove all child rows recursively
                         var parent = $(this).closest("tr");
                         var childRows = parent.nextUntil(":not(.child)");
                         childRows.remove();
@@ -5093,19 +6772,19 @@
                             'Deleted!',
                             'Your ' + unitType.toLowerCase() + ' has been deleted.',
                             'success'
-                        )
+                        );
                     }
-                })
+                });
             });
             // Add event listener for the add subunit button
-            cell3.find(".addBtn").click(function() {
+            cell7.find(".addBtn").click(function() {
                 var parent = $(this).closest("tr");
                 addRow("Sub Unit", "Sub Unit Name", level + 1, parent);
             });
+            // Add the row as a child or to the main table
             if (parentRow) {
                 newRow.addClass("child");
                 if (!parentRow.hasClass("main-parent")) {
-                    // Add class to the main parent row
                     parentRow.addClass("main-parent");
                 }
                 parentRow.after(newRow);
@@ -5114,12 +6793,122 @@
             }
         }
         // Add event listener for the add folder button
-        $("#addFolderBtn").click(function() {
+        $container.find(".addFolderBtn").click(function() {
             addRow("Unit Type", "Unit Name", 0);
+        });
+    }
+    // Initialize each container
+    $(document).ready(function() {
+        initializeUnitTable("unitContainer1");
+        initializeUnitTable("unitContainer2");
+        initializeUnitTable("unitContainer3");
+        initializeUnitTable("unitContainer4");
+        initializeUnitTable("unitContainer5");
+        initializeUnitTable("unitContainer6");
+        // Add more calls for other containers as needed
+    });
+</script>
+<!-- add property unit table js end-->
+
+<!-- add budget fields and edit budget title js start and also have some style for this -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Function to initialize functionality for a single budget section
+        function initializeBudgetSection(section) {
+            const addFieldButton = section.querySelector(".add-field-button");
+            const budgetFieldsContainer = section.querySelector(".budget-fields-container");
+            // Add a new field
+            addFieldButton.addEventListener("click", function() {
+                const newField = document.createElement("div");
+                newField.className = "col-lg-3 budget-field";
+                newField.innerHTML = `
+                <div class="form-group">
+                    <label contenteditable="true" class="form-label">New Budget</label>
+                    <input type="text" class="form-control" placeholder="">
+                </div>
+                `;
+                budgetFieldsContainer.appendChild(newField);
+            });
+        }
+        // Initialize all budget sections on the page
+        const budgetSections = document.querySelectorAll(".AddProperty_Budget");
+        budgetSections.forEach(function(section) {
+            initializeBudgetSection(section);
         });
     });
 </script>
-<!-- add sub unit custom  tree view table end -->
+
+<style>
+    #edit-title-container {
+        margin-top: 10px;
+    }
+
+    [contenteditable="true"] {
+
+        padding: 2px;
+    }
+
+    [contenteditable="true"]:focus {
+        outline: none;
+        border-color: #007bff;
+    }
+</style>
+<!-- add budget fields and edit budget title js start and also have some style for this  end -->
+
+<!-- property details property type custom option selection js start -->
+<script>
+    $(document).ready(function() {
+        $('.newPropertyTypeDiv').hide();
+        $('.property-type-select').on('change', function() {
+            const newPropertyTypeDiv = $(this).closest('.col-md-3').next('.newPropertyTypeDiv');
+            if ($(this).val() === 'Other') {
+                newPropertyTypeDiv.show();
+            } else {
+                newPropertyTypeDiv.hide();
+            }
+        });
+    });
+</script>
+<!-- property details property type custom option selection js end -->
+
+<!--  floor create confirmationa lert -->
+<script>
+    document.getElementById('floorctrate_button').addEventListener('click', function() {
+        const floorCountInput = document.querySelector('#floorAdd__modal input.form-control');
+        const floorCount = floorCountInput.value.trim();
+        if (floorCount && !isNaN(floorCount) && Number(floorCount) > 0) {
+            Swal.fire({
+                title: 'Floor Created Successfully!',
+                text: `${floorCount} floor(s) created successfully.`,
+                icon: 'success',
+                confirmButtonText: "Close",
+                timer: 3000,
+                timerProgressBar: true,
+                showConfirmButton: true,
+                customClass: {
+                    confirmButton: "my-ok-button"
+                },
+                willClose: () => {
+                    window.location.href = 'add-new-property.php';
+                }
+            });
+        } else {
+            Swal.fire({
+                title: 'Invalid Input!',
+                text: 'Please enter a valid number of floors.',
+                icon: 'error',
+                confirmButtonText: "Close",
+                timer: 3000,
+                customClass: {
+                    confirmButton: "my-ok-button"
+                },
+                timerProgressBar: true,
+                showConfirmButton: true
+            });
+        }
+    });
+</script>
+<!-- floor create confirmationa lert -->
 
 <!-- multiple video File Uploader js -->
 <!-- NOTE: Dont add this code in footer section -->
@@ -5199,3 +6988,116 @@
     });
 </script>
 <!-- filepod image uploader end-->
+
+<!-- mpin verify functionality for access code start -->
+<script>
+    // Correct MPIN for verification
+    const correctMPIN = "1234";
+    const accessCode = "Post Box Code 103"; // Actual Access Code
+    // MPIN input event listener for automatic validation
+    $('#mpin-input').on('input', function() {
+        const enteredMPIN = $(this).val();
+        if (enteredMPIN === correctMPIN) {
+            // Show success alert and access code
+            Swal.fire({
+                icon: 'success',
+                title: 'Access Granted!',
+                text: 'MPIN is correct.',
+            }).then(() => {
+                // Show Access Code input field and reveal actual value
+                $('#access-code-container').fadeIn(); // Show the access code input
+                $('#access-code-input').val(accessCode).prop('disabled',
+                    false); // Set actual value and enable input
+                // Clear MPIN input field
+                $('#mpin-input').val('');
+            });
+        } else if (enteredMPIN.length === 4) { // Check only when 4 digits are entered
+            // Show error alert
+            Swal.fire({
+                icon: 'error',
+                title: 'Access Denied!',
+                text: 'Incorrect MPIN. Please try again.',
+            });
+        }
+    });
+</script>
+<!-- mpin verify functionality for access code end -->
+
+<style>
+    .form-control[disabled] {
+        background-color: #f8f9fa;
+        pointer-events: none;
+    }
+
+    .input-group-text {
+        cursor: pointer;
+    }
+
+    .input-group {
+        width: 100%;
+    }
+</style>
+
+<!-- document archived functionality start -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const selectAllCheckbox = document.getElementById('selectAllCheckbox3');
+        const checkboxes = document.querySelectorAll('.common-datatable tbody .form-check-input');
+        const archivedBtnTU = document.getElementById('archivedBtnTU');
+        selectAllCheckbox.addEventListener('change', function() {
+            checkboxes.forEach(function(checkbox) {
+                checkbox.checked = selectAllCheckbox.checked;
+            });
+        });
+        archivedBtnTU.addEventListener('click', function(event) {
+            event.preventDefault();
+            let anyChecked = false;
+            checkboxes.forEach(function(checkbox) {
+                if (checkbox.checked) {
+                    anyChecked = true;
+                }
+            });
+            if (anyChecked) {
+                Swal.fire({
+                    title: 'Are you sure?',
+                    text: "Do you want to move this Document into the archived?",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonText: 'Yes, archive it!',
+                    cancelButtonText: 'No, cancel!',
+                    reverseButtons: true
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        checkboxes.forEach(function(checkbox) {
+                            if (checkbox.checked) {
+                                $(checkbox.closest('tr')).fadeOut(500, function() {
+                                    $(this).remove();
+                                });
+                            }
+                        });
+                        Swal.fire(
+                            'Archived!',
+                            'Your Document has been moved to archived.',
+                            'success'
+                        );
+                    } else if (
+                        result.dismiss === Swal.DismissReason.cancel
+                    ) {
+                        Swal.fire(
+                            'Cancelled',
+                            'Your Document is safe :)',
+                            'error'
+                        );
+                    }
+                });
+            } else {
+                Swal.fire(
+                    'Please select Document',
+                    'No Document selected.',
+                    'warning'
+                );
+            }
+        });
+    });
+</script>
+<!-- document archived functionality end -->

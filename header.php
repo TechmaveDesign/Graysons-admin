@@ -699,7 +699,13 @@
 																class="nav flex-column collapse  nav-children">
 
 																<li class="nav-item">
-																	<a class="nav-link" href="all-Enquiries.php">
+																	<a class="nav-link sidecolor_enqviewing" href="all-Enquiries.php">
+																	<span class="nav-icon-wrap">
+																		
+																		<span class="svg-icon">
+																		<iconify-icon icon="fluent:person-suport-32-light"></iconify-icon>
+																		</span>
+																	</span>
 																		<span class="nav-link-text">Enquiry &
 																			Viewing</span>
 																	</a>
@@ -708,15 +714,26 @@
 
 																</li>
 																<li class="nav-item">
-																	<a href="calendar.php" class="nav-link"
-																		data-key="add-enquiry-status"><span
-																			class="nav-link-text">Calendar</span>
+																	<a href="calendar.php" class="nav-link sidecolor_calendar"
+																		data-key="add-enquiry-status">
+																		<span class="nav-icon-wrap">
+																		
+																			<span class="svg-icon">
+																			<iconify-icon icon="solar:calendar-broken"></iconify-icon>
+																			</span>
+																		</span>
+																		<span class="nav-link-text">Calendar</span>
 																	</a>
 																</li>
 
 																<li class="nav-item">
-																	<a class="nav-link  " href="contract-statuses.php">
-
+																	<a class="nav-link  sidecolor_lettingadmin" href="contract-statuses.php">
+																	<span class="nav-icon-wrap">
+																		
+																		<span class="svg-icon">
+																		<iconify-icon icon="hugeicons:user-star-01"></iconify-icon>
+																		</span>
+																	</span>
 																		<span class="nav-link-text">Lettings
 																			Admin</span>
 																	</a>
@@ -724,8 +741,13 @@
 																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 																</li>
 																<li class="nav-item">
-																	<a class="nav-link  " href="enquiry-settings.php">
-
+																	<a class="nav-link  sidecolor_lettingsetting" href="enquiry-settings.php">
+																	<span class="nav-icon-wrap">
+																		
+																		<span class="svg-icon">
+																		<iconify-icon icon="hugeicons:dashboard-square-setting"></iconify-icon>
+																		</span>
+																	</span>
 																		<span class="nav-link-text">Lettings
 																			Settings</span>
 																	</a>
@@ -734,8 +756,14 @@
 																</li>
 
 																<li class="nav-item">
-																	<a class="nav-link "
+																	<a class="nav-link sidecolor_pravaible"
 																		href="property-availability.php">
+																		<span class="nav-icon-wrap">
+																		
+																			<span class="svg-icon">
+																			<iconify-icon icon="solar:buildings-outline"></iconify-icon>
+																			</span>
+																		</span>
 																		<span class="nav-link-text">Property
 																			Availability </span>
 																	</a>
@@ -746,8 +774,13 @@
 																
 
 																<li class="nav-item">
-																	<a class="nav-link "
+																	<a class="nav-link sidecolor_tenancyrenew"
 																		href="tenancy-renewal.php">
+																		<span class="nav-icon-wrap">
+																			<span class="svg-icon">
+																			<iconify-icon icon="carbon:renew"></iconify-icon>
+																			</span>
+																		</span>
 																		<span class="nav-link-text">Tenancy Renewal</span>
 																	</a>
 																	<i
@@ -755,8 +788,14 @@
 																</li>
 
 																<li class="nav-item">
-																	<a class="nav-link "
+																	<a class="nav-link sidecolor_tenancysetup"
 																		href="tenancy-setup.php">
+																		<span class="nav-icon-wrap">
+																		
+																			<span class="svg-icon">
+																			<iconify-icon icon="qlementine-icons:page-setup-16"></iconify-icon>
+																			</span>
+																		</span>
 																		<span class="nav-link-text">Tenancy Setup</span>
 																	</a>
 																	<i
@@ -1114,45 +1153,13 @@
 															</a>
 															<ul id="dash_proPertiesManage"
 																class="nav flex-column collapse  nav-children">
-																<li class="nav-item">
-																	<a class="nav-link sidecolor_Allproperties"
-																		href="all-properties.php">
-																		<span class="nav-icon-wrap">
-																			<span class="svg-icon">
-																				<svg xmlns="http://www.w3.org/2000/svg"
-																					width="24" height="24"
-																					viewBox="0 0 24 24" fill="none"
-																					stroke="currentColor"
-																					stroke-width="2"
-																					stroke-linecap="round"
-																					stroke-linejoin="round"
-																					class="icon icon-tabler icons-tabler-outline icon-tabler-building">
-																					<path stroke="none"
-																						d="M0 0h24v24H0z" fill="none" />
-																					<path d="M3 21l18 0" />
-																					<path d="M9 8l1 0" />
-																					<path d="M9 12l1 0" />
-																					<path d="M9 16l1 0" />
-																					<path d="M14 8l1 0" />
-																					<path d="M14 12l1 0" />
-																					<path d="M14 16l1 0" />
-																					<path
-																						d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16" />
-																				</svg>
-																			</span>
-																		</span>
-																		<span class="nav-link-text">All
-																			Properties</span>
-
-																	</a>
-																	<i
-																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
-																</li>
+																
 
 																<li class="nav-item">
 																	<a class="nav-link sidecolor_tickets"
 																		href="tickets.php">
 																		<span class="nav-icon-wrap">
+																		
 																			<span class="svg-icon">
 																				<svg xmlns="http://www.w3.org/2000/svg"
 																					width="24" height="24"
@@ -1172,7 +1179,8 @@
 																				</svg>
 																			</span>
 																		</span>
-																		<span class="nav-link-text">Tickets</span>
+																		<span class="nav-link-text">Tickets </span>
+																		<span class="badge badge-soft-success ms-2 numbermenuicon">2</span>
 																	</a>
 																	<i
 																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
@@ -1305,6 +1313,20 @@
 
 																</li>
 
+																<li class="nav-item">
+								<a class="nav-link sidecolorcleaning_rotas" href="cleaning-rotas.php">
+									<span class="nav-icon-wrap position-relative">
+
+										<span class="svg-icon">
+										<iconify-icon icon="solar:smart-vacuum-cleaner-line-duotone"></iconify-icon>
+										</span>
+									</span>
+									<span class="nav-link-text">Cleaning Rotas</span>
+								</a>
+								<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+
+							</li>
+
 															</ul>
 														</li>
 														<li class="nav-item">
@@ -1365,19 +1387,42 @@
 									<!-- department end -->
 								</div>
 							</li>
-							<!-- <li class="nav-item">
-								<a class="nav-link sidecolordue" href="NetworkTestDue.php">
-									<span class="nav-icon-wrap position-relative">
 
-										<span class="svg-icon">
-											<iconify-icon icon="gg:calendar-due"></iconify-icon>
-										</span>
-									</span>
-									<span class="nav-link-text">Due Reports</span>
-								</a>
-								<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+							<li class="nav-item">
+																	<a class="nav-link sidecolor_Allproperties"
+																		href="all-properties.php">
+																		<span class="nav-icon-wrap">
+																			<span class="svg-icon">
+																				<svg xmlns="http://www.w3.org/2000/svg"
+																					width="24" height="24"
+																					viewBox="0 0 24 24" fill="none"
+																					stroke="currentColor"
+																					stroke-width="2"
+																					stroke-linecap="round"
+																					stroke-linejoin="round"
+																					class="icon icon-tabler icons-tabler-outline icon-tabler-building">
+																					<path stroke="none"
+																						d="M0 0h24v24H0z" fill="none" />
+																					<path d="M3 21l18 0" />
+																					<path d="M9 8l1 0" />
+																					<path d="M9 12l1 0" />
+																					<path d="M9 16l1 0" />
+																					<path d="M14 8l1 0" />
+																					<path d="M14 12l1 0" />
+																					<path d="M14 16l1 0" />
+																					<path
+																						d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16" />
+																				</svg>
+																			</span>
+																		</span>
+																		<span class="nav-link-text">All
+																			Properties</span>
 
-							</li> -->
+																	</a>
+																	<i
+																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+																</li>
+							
 							<li class="nav-item">
 								<a class="nav-link sidecolorcalendar" href="calendar.php">
 									<span class="nav-icon-wrap position-relative">
@@ -1501,7 +1546,7 @@
 										</span>
 									</span>
 									<span class="nav-link-text">Daily Tasks</span>
-									<!-- <span class="badge badge-soft-success ms-2">2</span> -->
+									<span class="badge badge-soft-success ms-2 numbermenuicon">06</span>
 								</a>
 
 							</li>
@@ -1514,6 +1559,7 @@
 										</span>
 									</span>
 									<span class="nav-link-text">Approval Board</span>
+									<span class="badge badge-soft-success ms-2 numbermenuicon">2</span>
 								</a>
 
 							</li>
@@ -1583,6 +1629,7 @@
 										</span>
 									</span>
 									<span class="nav-link-text">Communication Center</span>
+									<span class="badge badge-soft-success ms-2 numbermenuicon">16</span>
 								</a>
 								<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 								<ul id="dash_Support" class="nav flex-column collapse  nav-children">

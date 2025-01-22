@@ -262,12 +262,21 @@
                         <li class="staff_propertyattendingList" data-bs-toggle="modal" data-bs-target="#staffallviewing_modal">
                             <span class="ev-icon-wrap"><span class="feather-icon"><i
                                         data-feather="user"></i></span></span>
-                            <span class="event-staff"></span> <div class="viewallscheduels_btn"><iconify-icon icon="hugeicons:eye"></iconify-icon> View All Schedules</div>
+                            <span class="event-staff"></span> 
                         </li>
-                        <li>
-                            <span class="ev-icon-wrap"><span class="feather-icon"><i
-                                        data-feather="map-pin"></i></span></span>
-                            <span class="event-location"></span>
+                        <li class="scheduledprop_listing_wrap" data-bs-toggle="modal"
+                        data-bs-target="#staffallviewing_modal">
+                           <div class="propertylistingfor_viewing">
+                           <span class="ev-icon-wrap"><span class="feather-icon"><i
+                                        data-feather="map-pin"></i></span>
+                                    </span>
+                                    <div class="viewallscheduels_btn">
+                                <iconify-icon icon="hugeicons:eye"></iconify-icon> View All Property Schedules
+                            </div>
+                            <!-- <span class="event-location"></span> -->
+                           </div>
+                            
+                           
                         </li>
                         <li class="calendarNotes_Wrapper">
                             <div class="form-group">
@@ -462,82 +471,106 @@
                 <div class="modal-body">
 
                     <div class="PropertiesAttending_list">
-                        <ul>
-                        <li>
-                               <div class="NameofPRoperty_viewing">
-                               <span class="ev-icon-wrap"><span class="feather-icon"><svg
-                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-map-pin">
-                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                            <circle cx="12" cy="10" r="3"></circle>
-                                        </svg></span></span>
-                                <span class="event-location"><a
-                                        href="https://www.techmavedesigns.com/Design/graysons-properties-adminpanel">https://www.techmavedesigns.com/Design/graysons-properties-adminpanel</a></span>
-                               </div>
-                           
+                    <ul>
+                            <li>
+                                <div class="NameofPRoperty_viewing">
+                                    <span class="ev-icon-wrap"><span class="feather-icon"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-map-pin">
+                                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                <circle cx="12" cy="10" r="3"></circle>
+                                            </svg></span></span>
+                                    <span class="event-location"><a
+                                    href="property-details.php" target="_blank"> Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House</a></span>
+                                </div>
 
-                               <div class="Moreproperty_staffviewing">
-                               <div class="ViewingEnqID">
-                               <span><iconify-icon icon="hugeicons:user-id-verification"></iconify-icon> Enquiry ID :</span> <div class="EnqViewID">86cvr79t2</div> 
-                               </div>
-                           <div class="VieeingDateandTime">
-                            <div class="DateofViewing datetimeofviewingProperty"><iconify-icon icon="clarity:date-line"></iconify-icon> Nov 04, 2024 </div>
-                            <div class="TimeofViewing datetimeofviewingProperty"><iconify-icon icon="subway:time-2" ></iconify-icon>Start Time: 9:30 AM End Time: 8:00 PM</div>
-                           </div>
-                               </div>
-                                    </li>
-                                    <li>
-                               <div class="NameofPRoperty_viewing">
-                               <span class="ev-icon-wrap"><span class="feather-icon"><svg
-                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-map-pin">
-                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                            <circle cx="12" cy="10" r="3"></circle>
-                                        </svg></span></span>
-                                <span class="event-location"><a
-                                        href="https://www.techmavedesigns.com/Design/graysons-properties-adminpanel">https://www.techmavedesigns.com/Design/graysons-properties-adminpanel</a></span>
-                               </div>
-                           
+                                <div class="Moreproperty_staffviewing">
+                                    <div class="ViewingEnqID">
+                                        <span>
+                                            <iconify-icon icon="hugeicons:user-id-verification"></iconify-icon> Enquiry
+                                            ID :
+                                        </span>
+                                        <div class="EnqViewID">86cvr79t2</div>
+                                    </div>
+                                    <div class="VieeingDateandTime">
+                                        <div class="DateofViewing datetimeofviewingProperty">
+                                            <iconify-icon icon="clarity:date-line"></iconify-icon> Nov 04, 2024
+                                        </div>
+                                        <div class="TimeofViewing datetimeofviewingProperty">
+                                            <iconify-icon icon="subway:time-2"></iconify-icon>Start Time: 9:30 AM End
+                                            Time: 8:00 PM
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="NameofPRoperty_viewing">
+                                    <span class="ev-icon-wrap"><span class="feather-icon"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-map-pin">
+                                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                <circle cx="12" cy="10" r="3"></circle>
+                                            </svg></span></span>
+                                    <span class="event-location"><a
+                                    href="property-details.php" target="_blank"> Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House</a></span>
+                                </div>
 
-                               <div class="Moreproperty_staffviewing">
-                               <div class="ViewingEnqID">
-                               <span><iconify-icon icon="hugeicons:user-id-verification"></iconify-icon> Enquiry ID :</span> <div class="EnqViewID">86cvr79t2</div> 
-                               </div>
-                           <div class="VieeingDateandTime">
-                            <div class="DateofViewing datetimeofviewingProperty"><iconify-icon icon="clarity:date-line"></iconify-icon> Nov 04, 2024 </div>
-                            <div class="TimeofViewing datetimeofviewingProperty"><iconify-icon icon="subway:time-2" ></iconify-icon>Start Time: 9:30 AM End Time: 8:00 PM</div>
-                           </div>
-                               </div>
-                                    </li>
-                                    <li>
-                               <div class="NameofPRoperty_viewing">
-                               <span class="ev-icon-wrap"><span class="feather-icon"><svg
-                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="feather feather-map-pin">
-                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                            <circle cx="12" cy="10" r="3"></circle>
-                                        </svg></span></span>
-                                <span class="event-location"><a
-                                        href="https://www.techmavedesigns.com/Design/graysons-properties-adminpanel">https://www.techmavedesigns.com/Design/graysons-properties-adminpanel</a></span>
-                               </div>
-                           
+                                <div class="Moreproperty_staffviewing">
+                                    <div class="ViewingEnqID">
+                                        <span>
+                                            <iconify-icon icon="hugeicons:user-id-verification"></iconify-icon> Enquiry
+                                            ID :
+                                        </span>
+                                        <div class="EnqViewID">86cvr79t2</div>
+                                    </div>
+                                    <div class="VieeingDateandTime">
+                                        <div class="DateofViewing datetimeofviewingProperty">
+                                            <iconify-icon icon="clarity:date-line"></iconify-icon> Nov 04, 2024
+                                        </div>
+                                        <div class="TimeofViewing datetimeofviewingProperty">
+                                            <iconify-icon icon="subway:time-2"></iconify-icon>Start Time: 9:30 AM End
+                                            Time: 8:00 PM
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="NameofPRoperty_viewing">
+                                    <span class="ev-icon-wrap"><span class="feather-icon"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-map-pin">
+                                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                <circle cx="12" cy="10" r="3"></circle>
+                                            </svg></span></span>
+                                    <span class="event-location"><a
+                                            href="property-details.php" target="_blank"> Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House</a></span>
+                                </div>
 
-                               <div class="Moreproperty_staffviewing">
-                               <div class="ViewingEnqID">
-                               <span><iconify-icon icon="hugeicons:user-id-verification"></iconify-icon> Enquiry ID :</span> <div class="EnqViewID">86cvr79t2</div> 
-                               </div>
-                           <div class="VieeingDateandTime">
-                            <div class="DateofViewing datetimeofviewingProperty"><iconify-icon icon="clarity:date-line"></iconify-icon> Nov 04, 2024 </div>
-                            <div class="TimeofViewing datetimeofviewingProperty"><iconify-icon icon="subway:time-2" ></iconify-icon>Start Time: 9:30 AM End Time: 8:00 PM</div>
-                           </div>
-                               </div>
-                                    </li>
+                                <div class="Moreproperty_staffviewing">
+                                    <div class="ViewingEnqID">
+                                        <span>
+                                            <iconify-icon icon="hugeicons:user-id-verification"></iconify-icon> Enquiry
+                                            ID :
+                                        </span>
+                                        <div class="EnqViewID">86cvr79t2</div>
+                                    </div>
+                                    <div class="VieeingDateandTime">
+                                        <div class="DateofViewing datetimeofviewingProperty">
+                                            <iconify-icon icon="clarity:date-line"></iconify-icon> Nov 04, 2024
+                                        </div>
+                                        <div class="TimeofViewing datetimeofviewingProperty">
+                                            <iconify-icon icon="subway:time-2"></iconify-icon>Start Time: 9:30 AM End
+                                            Time: 8:00 PM
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
 
