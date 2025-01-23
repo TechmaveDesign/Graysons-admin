@@ -314,6 +314,42 @@
                                             </div>
 
                                         </div>
+                                        <div class="col-xxl-3 col-sm-6 cardDash mt-3">
+                                            <div class="dashtileFlexWrap">
+                                                <div class="dashtile_titlewrap">
+                                                    <span class="d-block fw-medium fs-7">Pending Right to Rent (24-25)</span>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="d-block fs-4 fw-medium text-dark mb-0">498</span>
+                                                        <span class="badge badge-sm badge-soft-danger ms-1">
+                                                            <i class="bi bi-arrow-up"></i> 10.8% <i
+                                                                class="bi bi-arrow-down"></i>
+
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="IconBoxTiles">
+                                                <iconify-icon icon="solar:home-linear"></iconify-icon>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-3 col-sm-6 cardDash mt-3">
+                                            <div class="dashtileFlexWrap">
+                                                <div class="dashtile_titlewrap">
+                                                    <span class="d-block fw-medium fs-7">Pending Right to Rent (25-26)</span>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="d-block fs-4 fw-medium text-dark mb-0">498</span>
+                                                        <span class="badge badge-sm badge-soft-danger ms-1">
+                                                            <i class="bi bi-arrow-up"></i> 10.8% <i
+                                                                class="bi bi-arrow-down"></i>
+
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="IconBoxTiles">
+                                                <iconify-icon icon="solar:home-linear"></iconify-icon>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -412,7 +448,7 @@
 
                                                 <td>10/05/2023</td>
                                                 <td>18/06/2023</td>
-                                                <td>Check In</td>
+                                                <td>Unbooked Check In</td>
                                                 <td>
                                                     <div class="d-flex align-items-center ActionDropdown">
                                                         <div class="d-flex">
@@ -477,7 +513,7 @@
 
                                                 <td>10/05/2023</td>
                                                 <td>18/06/2023</td>
-                                                <td>Check In</td>
+                                                <td>Check In Booked</td>
                                                 <td>
                                                     <div class="d-flex align-items-center ActionDropdown">
                                                         <div class="d-flex">
@@ -543,7 +579,7 @@
 
                                                 <td>10/05/2023</td>
                                                 <td>18/06/2023</td>
-                                                <td>Check In</td>
+                                                <td>Check In booked</td>
                                                 <td>
                                                     <div class="d-flex align-items-center ActionDropdown">
                                                         <div class="d-flex">
@@ -609,7 +645,7 @@
 
                                                 <td>10/05/2023</td>
                                                 <td>18/06/2023</td>
-                                                <td>Check In</td>
+                                                <td>Right to Rent (24-25)</td>
                                                 <td>
                                                     <div class="d-flex align-items-center ActionDropdown">
                                                         <div class="d-flex">
@@ -675,7 +711,7 @@
 
                                                 <td>10/05/2023</td>
                                                 <td>18/06/2023</td>
-                                                <td>Check In</td>
+                                                <td>Right to Rent (25-26)</td>
                                                 <td>
                                                     <div class="d-flex align-items-center ActionDropdown">
                                                         <div class="d-flex">
@@ -741,7 +777,7 @@
 
                                                 <td>10/05/2023</td>
                                                 <td>18/06/2023</td>
-                                                <td>Check In</td>
+                                                <td>Check In Booked</td>
                                                 <td>
                                                     <div class="d-flex align-items-center ActionDropdown">
                                                         <div class="d-flex">

@@ -929,7 +929,7 @@
 																		<li class="nav-item">
 																			<a href="stripe-rent-advance.php" class="nav-link"
 																				data-key="dispatch-invoices"><span
-																					class="nav-link-text">Strip (Rent Advance)</span></a>
+																					class="nav-link-text">Stripe (Rent Advance)</span></a>
 																		</li>
 																		<li class="nav-item">
 																			<a href="#" class="nav-link"

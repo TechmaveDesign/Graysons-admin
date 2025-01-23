@@ -271,7 +271,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="user-custom-field">
+                                                        <!-- <div class="user-custom-field">
                                                             <div class="custom-field-name">Appointment Colour:</div>
                                                             <div class="custom-field-value">
                                                                 <div style="display: inline-block;">
@@ -287,7 +287,7 @@
 
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
 
                                                         <div class="flexcheckColumn">
                                                             <div class="form-group">
@@ -336,13 +336,13 @@
                                                             <span class="nav-link-text">Documents</span>
                                                         </a>
                                                     </li>
-                                                    <li class="nav-item">
+                                                    <!-- <li class="nav-item">
                                                         <a class="nav-link" data-bs-toggle="tab" href="#NewContact">
                                                             <span class="nav-icon-wrap"><span class="feather-icon"><i
                                                                         data-feather="user-plus"></i></span></span>
                                                             <span class="nav-link-text">New Contact</span>
                                                         </a>
-                                                    </li>
+                                                    </li> -->
                                                     <li class="nav-item">
                                                         <a class="nav-link" data-bs-toggle="tab" href="#Contracts">
                                                             <span class="nav-icon-wrap"><span class="feather-icon">

@@ -81,6 +81,7 @@
             <th>Date To</th>
             <th>Start Time</th>
             <th>End Time</th>
+            <th>Status</th>
             <th>Actions</th>
         </tr>
     </thead>
@@ -95,6 +96,7 @@
             <td>31, January 2024</td>
             <td>10:00 AM</td>
             <td>12:00 PM</td>
+            <td><span class="badge badge-soft-info">Assigned</span></td>
             <td>
                 <div class="d-flex align-items-center ActionDropdown">
                     <div class="d-flex">
@@ -120,6 +122,7 @@
             <td>28, February 2024</td>
             <td>2:00 PM</td>
             <td>4:00 PM</td>
+            <td><span class="badge badge-soft-review">In Progress</span></td>
             <td>
                 <div class="d-flex align-items-center ActionDropdown">
                     <div class="d-flex">
@@ -145,6 +148,7 @@
             <td>15, March 2024</td>
             <td>9:00 AM</td>
             <td>11:00 AM</td>
+            <td><span class="badge badge-soft-success">Completed</span></td>
             <td>
                 <div class="d-flex align-items-center ActionDropdown">
                     <div class="d-flex">
@@ -170,6 +174,7 @@
             <td>15, April 2024</td>
             <td>1:00 PM</td>
             <td>3:00 PM</td>
+            <td><span class="badge badge-soft-success">Completed</span></td>
             <td>
                 <div class="d-flex align-items-center ActionDropdown">
                     <div class="d-flex">
@@ -195,6 +200,7 @@
             <td>31, May 2024</td>
             <td>10:30 AM</td>
             <td>12:30 PM</td>
+            <td><span class="badge badge-soft-success">Completed</span></td>
             <td>
                 <div class="d-flex align-items-center ActionDropdown">
                     <div class="d-flex">

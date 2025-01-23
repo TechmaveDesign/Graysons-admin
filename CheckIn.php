@@ -140,6 +140,8 @@
                                             <th>Contract Start Date</th>
                                             <th>Check In Date</th>
                                             <th>End Date</th>
+                                            <th>Due Date</th>
+                                            <th>Status</th>
                                             <th>Actions</th>
                                         </tr>
                                     </thead>
@@ -167,7 +169,8 @@
                                             <td>23/04/2023</td>
                                             <td>10/05/2023</td>
                                             <td>15/06/2023</td>
-
+                                            <td>11/06/2023</td>
+                                            <td><span class="badge badge-soft-warning">Pending</span></td>
                                             <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
@@ -206,7 +209,9 @@
 
                                             <td>15/03/2023</td>
                                             <td>25/04/2023</td>
-                                            <td>28/05/2023</td>
+                                            <td>16/05/2023</td>
+                                            <td>26/06/2023</td>
+                                            <td><span class="badge badge-soft-success">Completed</span></td>
                                             <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
@@ -245,6 +250,8 @@
                                             <td>01/02/2023</td>
                                             <td>14/03/2023</td>
                                             <td>18/04/2023</td>
+                                            <td>15/06/2023</td>
+                                            <td><span class="badge badge-soft-info">Assigned</span></td>
                                             <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
@@ -283,6 +290,8 @@
                                             <td>10/01/2023</td>
                                             <td>20/02/2023</td>
                                             <td>23/03/2023</td>
+                                            <td>21/06/2023</td>
+                                            <td><span class="badge badge-soft-review">In Progress</span></td>
                                             <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
@@ -321,6 +330,8 @@
                                             <td>05/06/2023</td>
                                             <td>15/07/2023</td>
                                             <td>18/08/2023</td>
+                                            <td>16/06/2023</td>
+                                            <td><span class="badge badge-soft-warning">Pending</span></td>
                                             <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">
@@ -360,6 +371,8 @@
                                             <td>12/04/2023</td>
                                             <td>22/05/2023</td>
                                             <td>25/06/2023</td>
+                                            <td>23/06/2023</td>
+                                            <td><span class="badge badge-soft-success">Completed</span></td>
                                             <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
                                                     <div class="d-flex">

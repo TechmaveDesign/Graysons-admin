@@ -196,3 +196,74 @@ input.tableInput {
     align-items: center;
     gap: 5px;
 }
+.RquestDate {
+	font-size: 13px;
+	color: #8c8c8c;
+}
+.badge.badge-soft-review {
+	background: #fff7f0;
+	color: #ff720b;
+}
+.timingsInspection {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+	font-size: 14px;
+}
+.timingsInspection iconify-icon {
+	font-size: 17px;
+}
+.ActionBox {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+.ActionBox h6 {
+	margin-bottom: 0;
+}
+.addHyperLinkBtn {
+	font-size: 15px;
+	background: #e1f2ff;
+	align-items: center;
+	display: flex;
+	gap: 5px;
+	padding: 5px 10px;
+	color: #08f;
+	border: 1px solid #88c8ff;
+}
+.addHyperLinkBtn:hover {
+	font-size: 15px;
+	background: #e1f2ff;
+	align-items: center;
+	display: flex;
+	gap: 5px;
+	padding: 5px 10px;
+	color: #08f;
+    border: 1px solid #88c8ff;
+}
+.saveBtn {
+	padding: 5px 10px;
+	font-size: 14px;
+	font-weight: 500;
+}
+.removeLink {
+	background: #fff;
+	border: 1px solid #d1d1d1;
+	color: #f00;
+    cursor: pointer;
+}
+.removeLink:hover {
+	background: #fff;
+	border: 1px solid #d1d1d1;
+	color: #f00;
+}
+.removeLink iconify-icon {
+	display: flex;
+}
+.hyperlinkAdd {
+	cursor: pointer;
+}
+.form-control.LinkText {
+	cursor: pointer;
+}

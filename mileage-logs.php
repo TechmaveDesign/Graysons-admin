@@ -169,6 +169,7 @@
                                             <th>Before</th>
                                             <th>After</th>
                                             <th>Mileage</th>
+                                            <th>Mileage Type</th>
                                             <th>Status</th>
                                             <th>Actions</th>
                                         </tr>
@@ -188,6 +189,7 @@
                                             <td>8</td>
                                             <td>37</td>
                                             <td>29</td>
+                                            <td>Staff Milage</td>
                                             <td><span class="badge badge-soft-success  my-1  me-2">Approved</span></td>
                                             <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
@@ -229,6 +231,7 @@
                                             <td>5</td>
                                             <td>42</td>
                                             <td>33</td>
+                                            <td>Company Milage</td>
                                             <td><span class="badge bg-info">Paid</span></td>
                                             <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
@@ -277,6 +280,7 @@
                                             <td>10</td>
                                             <td>25</td>
                                             <td>18</td>
+                                            <td>Staff Milage</td>
                                             <td><span class="badge badge-soft-success  my-1  me-2">Approved</span></td>
                                             <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
@@ -323,6 +327,7 @@
                                             <td>6</td>
                                             <td>30</td>
                                             <td>22</td>
+                                            <td>Company Milage</td>
                                             <td><span class="badge badge-soft-success  my-1  me-2">Approved</span></td>
                                             <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
@@ -370,6 +375,7 @@
                                             <td>7</td>
                                             <td>28</td>
                                             <td>20</td>
+                                            <td>Company Milage</td>
                                             <td><span class="badge bg-warning">Pending</span></td>
                                             <td>
                                                 <div class="d-flex align-items-center ActionDropdown">

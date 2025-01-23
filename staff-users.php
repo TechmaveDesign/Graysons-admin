@@ -210,7 +210,6 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-
                                                             <td>
                                                                 <a href="view-user-details.php">
                                                                     <div class="media align-items-center">
@@ -230,10 +229,8 @@
                                                             </td>
                                                             <td class="">morgan@jampack.com</td>
                                                             <td>+145 52 5689</td>
-
                                                             <td>Staff</td>
                                                             <td>13 Jan, 2020</td>
-
                                                             <td><span
                                                                     class="badge badge-soft-success  my-1  me-2">Active</span>
                                                             </td>

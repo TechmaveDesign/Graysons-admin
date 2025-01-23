@@ -22,7 +22,7 @@
 
 											<li class="nav-item">
 												<a href="all-staff.php" class="nav-link" data-key="view-mileage-logs"><span
-														class="nav-link-text">All Staff</span></a>
+														class="nav-link-text">Staffs</span></a>
 											</li>
 											
 

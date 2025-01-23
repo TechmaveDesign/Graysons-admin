@@ -49,8 +49,8 @@
                         <div class="d-flex align-items-center">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb  mb-0">
-                                    <li class="breadcrumb-item"><a href="users.php">Users</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">View User Details</li>
+                                    <li class="breadcrumb-item"><a href="users.php">Tenant</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">View Tenant Details</li>
                                 </ol>
                             </nav>
                             <div class=" ms-3">
@@ -336,13 +336,13 @@
                                                             <span class="nav-link-text">Documents</span>
                                                         </a>
                                                     </li>
-                                                    <li class="nav-item">
+                                                    <!-- <li class="nav-item">
                                                         <a class="nav-link" data-bs-toggle="tab" href="#NewContact">
                                                             <span class="nav-icon-wrap"><span class="feather-icon"><i
                                                                         data-feather="user-plus"></i></span></span>
                                                             <span class="nav-link-text">New Contact</span>
                                                         </a>
-                                                    </li>
+                                                    </li> -->
                                                     <li class="nav-item">
                                                         <a class="nav-link" data-bs-toggle="tab" href="#Contracts">
                                                             <span class="nav-icon-wrap"><span class="feather-icon">
@@ -4361,7 +4361,14 @@
                 <div class="formstartcontainer">
 
                     <div class="row gx-3">
-                        <div class="col-md-6">
+                    <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="form-label">Contract Type</label>
+                                <input class="form-control " placeholder=""
+                                    name="" type="text" />
+                            </div>
+                        </div>
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label class="form-label">Property</label>
                                 <select name="" id="" class="form-control select2">
@@ -4374,7 +4381,7 @@
 
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label class="form-label">Status</label>
                                 <select name="" id="" class="form-control select2">

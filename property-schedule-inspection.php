@@ -70,152 +70,382 @@
                     <div class="contact-body">
                         <div class="nicescroll-bar">
                         <div class="contact-list-view">
+                        <table class="table common-datatable nowrap w-100">
+                            <thead>
+                                <tr>
+                                    <th>Property</th>
+                                    <th>Total Unit</th>
+                                    <th>Assigned Inspector</th>
+                                    <th>Frequency</th>
+                                    <th>Inspection Start From</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="LongMesage_container">
+                                            <input
+                                                class="refuge-collection-input tableLongMessage_Input"
+                                                value="Bedroom 2 101, Flat 7 (Floor 2, No7), Garden View@Emerald Apartments">
+                                            <button class="view-btn tablemessageview_btn"
+                                                type="button" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" aria-label="Click to view"
+                                                data-bs-original-title="Click to view Full Message">
+                                                <i class="bi bi-eye"></i> Read More
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td>5</td>
+                                    <td>John Smith</td>
+                                    <td>Weekly</td>
+                                    <td>01, January 2024</td>
+                                   
+                                    <td><span class="badge badge-soft-info">Assigned</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center ActionDropdown">
+                                            <div class="d-flex">
+                                            <a href="inspection-schedules.php" class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" >
+                                               <span class="icon">
+                                                    <span class="feather-icon">
+                                                      <i data-feather="eye"></i>
+                                                    </span>
+                                                </span>
+                                                </a>
+                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#Edit_property_inspection_modal">
+                                                    <span class="icon">
+                                                        <iconify-icon icon="fluent:edit-16-regular">
+                                                        </iconify-icon>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                <td>
+                                     <div class="LongMesage_container">
+                                            <input
+                                                class="refuge-collection-input tableLongMessage_Input"
+                                                value="Bedroom 2 101, Flat 7 (Floor 2, No7), Garden View@Emerald Apartments">
+                                            <button class="view-btn tablemessageview_btn"
+                                                type="button" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" aria-label="Click to view"
+                                                data-bs-original-title="Click to view Full Message">
+                                                <i class="bi bi-eye"></i> Read More
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td>4</td>
+                                    <td>Jane Doe</td>
+                                    <td>Monthly</td>
+                                    <td>01, February 2024</td>
+                                   
+                                    <td><span class="badge badge-soft-review">In Progress</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center ActionDropdown">
+                                            <div class="d-flex">
+                                            <a href="inspection-schedules.php" class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" >
+                                               <span class="icon">
+                                                    <span class="feather-icon">
+                                                      <i data-feather="eye"></i>
+                                                    </span>
+                                                </span>
+                                                </a>
+                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#Edit_property_inspection_modal">
+                                                    <span class="icon">
+                                                        <iconify-icon icon="fluent:edit-16-regular">
+                                                        </iconify-icon>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                <td>
+                                     <div class="LongMesage_container">
+                                            <input
+                                                class="refuge-collection-input tableLongMessage_Input"
+                                                value="Bedroom 2 101, Flat 7 (Floor 2, No7), Garden View@Emerald Apartments">
+                                            <button class="view-btn tablemessageview_btn"
+                                                type="button" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" aria-label="Click to view"
+                                                data-bs-original-title="Click to view Full Message">
+                                                <i class="bi bi-eye"></i> Read More
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td>4</td>
+                                    <td>Mark Taylor</td>
+                                    <td>One-Time</td>
+                                    <td>15, March 2024</td>
+                                   
+                                    <td><span class="badge badge-soft-warning">Pending</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center ActionDropdown">
+                                            <div class="d-flex">
+                                            <a href="inspection-schedules.php" class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" >
+                                               <span class="icon">
+                                                    <span class="feather-icon">
+                                                      <i data-feather="eye"></i>
+                                                    </span>
+                                                </span>
+                                                </a>
+                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#Edit_property_inspection_modal">
+                                                    <span class="icon">
+                                                        <iconify-icon icon="fluent:edit-16-regular">
+                                                        </iconify-icon>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                <td>
+                                     <div class="LongMesage_container">
+                                            <input
+                                                class="refuge-collection-input tableLongMessage_Input"
+                                                value="Bedroom 2 101, Flat 7 (Floor 2, No7), Garden View@Emerald Apartments">
+                                            <button class="view-btn tablemessageview_btn"
+                                                type="button" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" aria-label="Click to view"
+                                                data-bs-original-title="Click to view Full Message">
+                                                <i class="bi bi-eye"></i> Read More
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td>6</td>
+                                    <td>Emily White</td>
+                                    <td>Bi-Weekly</td>
+                                    <td>01, April 2024</td>
+                                   
+                                    <td><span class="badge badge-soft-success">Completed</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center ActionDropdown">
+                                            <div class="d-flex">
+                                            <a href="inspection-schedules.php" class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" >
+                                               <span class="icon">
+                                                    <span class="feather-icon">
+                                                      <i data-feather="eye"></i>
+                                                    </span>
+                                                </span>
+                                                </a>
+                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#Edit_property_inspection_modal">
+                                                    <span class="icon">
+                                                        <iconify-icon icon="fluent:edit-16-regular">
+                                                        </iconify-icon>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                <td>
+                                     <div class="LongMesage_container">
+                                            <input
+                                                class="refuge-collection-input tableLongMessage_Input"
+                                                value="Bedroom 2 101, Flat 7 (Floor 2, No7), Garden View@Emerald Apartments">
+                                            <button class="view-btn tablemessageview_btn"
+                                                type="button" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" aria-label="Click to view"
+                                                data-bs-original-title="Click to view Full Message">
+                                                <i class="bi bi-eye"></i> Read More
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td>3</td>
+                                    <td>Chris Brown</td>
+                                    <td>Monthly</td>
+                                    <td>01, May 2024</td>
+                                    <td><span class="badge badge-soft-success">Completed</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center ActionDropdown">
+                                            <div class="d-flex">
+                                            <a href="inspection-schedules.php" class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" >
+                                               <span class="icon">
+                                                    <span class="feather-icon">
+                                                      <i data-feather="eye"></i>
+                                                    </span>
+                                                </span>
+                                                </a>
+                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#Edit_property_inspection_modal">
+                                                    <span class="icon">
+                                                        <iconify-icon icon="fluent:edit-16-regular">
+                                                        </iconify-icon>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-<table class="table common-datatable nowrap w-100">
-    <thead>
-        <tr>
-            <th>Property</th>
-            <th>Area</th>
-            <th>Unit Type</th>
-            <th>Assigned Inspector</th>
-            <th>Frequency</th>
-            <th>Date From</th>
-            <th>Date To</th>
-            <th>Start Time</th>
-            <th>End Time</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1 Harvest Close</td>
-            <td>Sunderland</td>
-            <td>Flat 1</td>
-            <td>John Smith</td>
-            <td>Weekly</td>
-            <td>01, January 2024</td>
-            <td>31, January 2024</td>
-            <td>10:00 AM</td>
-            <td>12:00 PM</td>
-            <td>
-                <div class="d-flex align-items-center ActionDropdown">
-                    <div class="d-flex">
-                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                            data-bs-toggle="modal"
-                            data-bs-target="#Edit_property_inspection_modal">
-                            <span class="icon">
-                                <iconify-icon icon="fluent:edit-16-regular">
-                                </iconify-icon>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>23 Rosewood Avenue</td>
-            <td>Bristol</td>
-            <td>Apartment 3B</td>
-            <td>Jane Doe</td>
-            <td>Monthly</td>
-            <td>01, February 2024</td>
-            <td>28, February 2024</td>
-            <td>2:00 PM</td>
-            <td>4:00 PM</td>
-            <td>
-                <div class="d-flex align-items-center ActionDropdown">
-                    <div class="d-flex">
-                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                            data-bs-toggle="modal"
-                            data-bs-target="#Edit_property_inspection_modal">
-                            <span class="icon">
-                                <iconify-icon icon="fluent:edit-16-regular">
-                                </iconify-icon>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>17 Maple Street</td>
-            <td>Manchester</td>
-            <td>Flat 2A</td>
-            <td>Mark Taylor</td>
-            <td>One-Time</td>
-            <td>15, March 2024</td>
-            <td>15, March 2024</td>
-            <td>9:00 AM</td>
-            <td>11:00 AM</td>
-            <td>
-                <div class="d-flex align-items-center ActionDropdown">
-                    <div class="d-flex">
-                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                            data-bs-toggle="modal"
-                            data-bs-target="#Edit_property_inspection_modal">
-                            <span class="icon">
-                                <iconify-icon icon="fluent:edit-16-regular">
-                                </iconify-icon>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>42 Elm Street</td>
-            <td>Leeds</td>
-            <td>House 5C</td>
-            <td>Emily White</td>
-            <td>Bi-Weekly</td>
-            <td>01, April 2024</td>
-            <td>15, April 2024</td>
-            <td>1:00 PM</td>
-            <td>3:00 PM</td>
-            <td>
-                <div class="d-flex align-items-center ActionDropdown">
-                    <div class="d-flex">
-                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                            data-bs-toggle="modal"
-                            data-bs-target="#Edit_property_inspection_modal">
-                            <span class="icon">
-                                <iconify-icon icon="fluent:edit-16-regular">
-                                </iconify-icon>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>9 Oak Lane</td>
-            <td>Liverpool</td>
-            <td>Flat 5D</td>
-            <td>Chris Brown</td>
-            <td>Monthly</td>
-            <td>01, May 2024</td>
-            <td>31, May 2024</td>
-            <td>10:30 AM</td>
-            <td>12:30 PM</td>
-            <td>
-                <div class="d-flex align-items-center ActionDropdown">
-                    <div class="d-flex">
-                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                            data-bs-toggle="modal"
-                            data-bs-target="#Edit_property_inspection_modal">
-                            <span class="icon">
-                                <iconify-icon icon="fluent:edit-16-regular">
-                                </iconify-icon>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </td>
-        </tr>
-    </tbody>
-</table>
 
-</div>
+                        <!-- <table class="table common-datatable nowrap w-100">
+                            <thead>
+                                <tr>
+                                    <th>Property</th>
+                                    <th>Area</th>
+                                    <th>Unit Type</th>
+                                    <th>Assigned Inspector</th>
+                                    <th>Frequency</th>
+                                    <th>Date From</th>
+                                    <th>Date To</th>
+                                    <th>Start Time</th>
+                                    <th>End Time</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1 Harvest Close</td>
+                                    <td>Sunderland</td>
+                                    <td>Flat 1</td>
+                                    <td>John Smith</td>
+                                    <td>Weekly</td>
+                                    <td>01, January 2024</td>
+                                    <td>31, January 2024</td>
+                                    <td>10:00 AM</td>
+                                    <td>12:00 PM</td>
+                                    <td><span class="badge badge-soft-info">Assigned</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center ActionDropdown">
+                                            <div class="d-flex">
+                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#Edit_property_inspection_modal">
+                                                    <span class="icon">
+                                                        <iconify-icon icon="fluent:edit-16-regular">
+                                                        </iconify-icon>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>23 Rosewood Avenue</td>
+                                    <td>Bristol</td>
+                                    <td>Apartment 3B</td>
+                                    <td>Jane Doe</td>
+                                    <td>Monthly</td>
+                                    <td>01, February 2024</td>
+                                    <td>28, February 2024</td>
+                                    <td>2:00 PM</td>
+                                    <td>4:00 PM</td>
+                                    <td><span class="badge badge-soft-review">In Progress</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center ActionDropdown">
+                                            <div class="d-flex">
+                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#Edit_property_inspection_modal">
+                                                    <span class="icon">
+                                                        <iconify-icon icon="fluent:edit-16-regular">
+                                                        </iconify-icon>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>17 Maple Street</td>
+                                    <td>Manchester</td>
+                                    <td>Flat 2A</td>
+                                    <td>Mark Taylor</td>
+                                    <td>One-Time</td>
+                                    <td>15, March 2024</td>
+                                    <td>15, March 2024</td>
+                                    <td>9:00 AM</td>
+                                    <td>11:00 AM</td>
+                                    <td><span class="badge badge-soft-warning">Pending</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center ActionDropdown">
+                                            <div class="d-flex">
+                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#Edit_property_inspection_modal">
+                                                    <span class="icon">
+                                                        <iconify-icon icon="fluent:edit-16-regular">
+                                                        </iconify-icon>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>42 Elm Street</td>
+                                    <td>Leeds</td>
+                                    <td>House 5C</td>
+                                    <td>Emily White</td>
+                                    <td>Bi-Weekly</td>
+                                    <td>01, April 2024</td>
+                                    <td>15, April 2024</td>
+                                    <td>1:00 PM</td>
+                                    <td>3:00 PM</td>
+                                    <td><span class="badge badge-soft-success">Completed</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center ActionDropdown">
+                                            <div class="d-flex">
+                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#Edit_property_inspection_modal">
+                                                    <span class="icon">
+                                                        <iconify-icon icon="fluent:edit-16-regular">
+                                                        </iconify-icon>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>9 Oak Lane</td>
+                                    <td>Liverpool</td>
+                                    <td>Flat 5D</td>
+                                    <td>Chris Brown</td>
+                                    <td>Monthly</td>
+                                    <td>01, May 2024</td>
+                                    <td>31, May 2024</td>
+                                    <td>10:30 AM</td>
+                                    <td>12:30 PM</td>
+                                    <td><span class="badge badge-soft-success">Completed</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center ActionDropdown">
+                                            <div class="d-flex">
+                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#Edit_property_inspection_modal">
+                                                    <span class="icon">
+                                                        <iconify-icon icon="fluent:edit-16-regular">
+                                                        </iconify-icon>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table> -->
+                        </div>
 
                         </div>
                     </div>
@@ -890,3 +1120,20 @@
 
 </script>
 <!-- end -->
+
+<!-- input lenthy content show js -->
+<script>
+    $(document).ready(function() {
+        // Initialize Bootstrap Tooltip
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        // Show input value content in tooltip on view button click
+        $('.view-btn').on('mouseenter', function() {
+            var inputValue = $(this).siblings('.refuge-collection-input').val();
+            $(this).attr('data-bs-original-title', inputValue).tooltip('show');
+        });
+    });
+</script>
+<!-- input lenthy content show js end-->

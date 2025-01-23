@@ -603,10 +603,21 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="" class="form-label">Short Message (Push Notifications Only)</label>
+                                        <label for="" class="form-label">Title (Push Notifications Only)</label>
                                         <input type="text" class="form-control" id="" value="">
                                     </div>
 
+                                </div>
+
+                                <div class="col-lg-12">
+                                <div class="">
+                                    <div class="ActionBox">
+                                        <h6>Add Hyperlinks</h6>
+                                        <button class="btn addHyperLinkBtn" id="addLinkButton" type="button"><iconify-icon icon="majesticons:plus"></iconify-icon> New Link</button>
+                                    </div>
+                                    
+                                    <div id="linkContainer"></div>
+                                </div>
                                 </div>
 
                                 <div class="col-lg-12">
@@ -1661,3 +1672,102 @@
 <script src="dist/js/fullcalendar-init.js"></script>
 <!-- Bootstrap Notify JS -->
 <script src="dist/js/bootstrap-notify.min.js"></script>
+
+<script>
+    let linkIdCounter = 0; // Unique ID for each link block
+
+    // Function to create a new link block
+    function createLinkBlock(showRemoveButton = true) {
+      const container = document.getElementById('linkContainer');
+      const blockId = `linkBlock-${linkIdCounter++}`; // Unique block ID
+
+      // Create wrapper div
+      const linkBlock = document.createElement('div');
+      linkBlock.id = blockId;
+      linkBlock.className = 'mb-3';
+
+      // Build the input group with optional remove button
+      linkBlock.innerHTML = `
+        <div class="input-group">
+          <input type="text" class="form-control LinkText" placeholder="Enter Text here" aria-label="Recipient's username">
+          <span class="input-group-text hyperlinkAdd">
+            <iconify-icon icon="line-md:link"></iconify-icon>
+          </span>
+          ${showRemoveButton ? '<button class="btn btn-danger removeLink"><iconify-icon icon="tabler:trash"></iconify-icon></button>' : ''}
+        </div>
+        <div class="mt-2" id="${blockId}-linkInputContainer"></div>
+      `;
+
+      container.appendChild(linkBlock);
+
+      // Add functionality to the hyperlink add and remove buttons
+      addFunctionality(linkBlock, showRemoveButton);
+    }
+
+    // Add functionality to a link block
+    function addFunctionality(linkBlock, showRemoveButton) {
+      const linkText = linkBlock.querySelector('.LinkText');
+      const hyperlinkAdd = linkBlock.querySelector('.hyperlinkAdd');
+      const removeButton = linkBlock.querySelector('.removeLink');
+      const linkInputContainer = linkBlock.querySelector(`#${linkBlock.id}-linkInputContainer`);
+      let savedLink = ''; // Store link for this block
+
+      // Handle hyperlinkAdd click
+      hyperlinkAdd.addEventListener('click', function () {
+        linkInputContainer.innerHTML = ''; // Clear the container
+
+        // Create input for link
+        const linkInput = document.createElement('input');
+        linkInput.type = 'text';
+        linkInput.className = 'form-control mb-2';
+        linkInput.placeholder = 'Enter link here';
+        linkInput.value = savedLink; // Pre-fill with saved link if available
+
+        // Create save button
+        const saveButton = document.createElement('button');
+        saveButton.className = 'btn btn-primary saveBtn';
+        saveButton.textContent = 'Save';
+
+        // Append input and save button
+        linkInputContainer.appendChild(linkInput);
+        linkInputContainer.appendChild(saveButton);
+
+        // Save button functionality
+        saveButton.addEventListener('click', function () {
+          savedLink = linkInput.value.trim(); // Save the link
+
+          if (savedLink) {
+            // Apply link style
+            linkText.value = linkText.value || 'Link'; // Default text if none provided
+            linkText.style.textDecoration = 'underline';
+            linkText.style.color = 'blue';
+
+            // Clear the link input container
+            linkInputContainer.innerHTML = '';
+          } else {
+            alert('Please enter a valid link.');
+          }
+        });
+      });
+
+      // Redirect to the link when LinkText is clicked
+      linkText.addEventListener('click', function () {
+        if (savedLink) {
+          window.open(savedLink, '_blank'); // Open the link in a new tab
+        }
+      });
+
+      // Remove the entire block (only if remove button exists)
+      if (showRemoveButton && removeButton) {
+        removeButton.addEventListener('click', function () {
+          linkBlock.remove();
+        });
+      }
+    }
+
+    // Add new link block on button click
+    document.getElementById('addLinkButton').addEventListener('click', () => createLinkBlock(true));
+
+    // Initialize one link block by default without the remove button
+    createLinkBlock(false);
+  </script>
