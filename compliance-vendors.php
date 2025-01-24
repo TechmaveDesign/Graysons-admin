@@ -28,7 +28,7 @@
                         <div class="d-flex align-items-center">
                             <div class="dropdown">
                                 <a class="contactapp-title link-dark" href="#" role="button">
-                                    <h1>All Vendors List</h1>
+                                    <h1>All Contractors List</h1>
                                 </a>
 
                             </div>

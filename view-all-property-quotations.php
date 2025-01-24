@@ -181,7 +181,7 @@
                                                             <div class="flex-1 border-end CustomFlex_style">
                                                                 <div class="ticInfo_Item">
                                                                     <span class="d-block TicketDetails_info_title">
-                                                                        Vendor Name</span>
+                                                                        Contractor Name</span>
                                                                     <span
                                                                         class="d-block text-capitalize ticketdetailinfo_data">
                                                                         <span
@@ -195,8 +195,12 @@
                                                                 <div class="ticInfo_Item">
                                                                     <span class="d-block TicketDetails_info_title">
                                                                         Status</span>
-                                                                    <span class="d-block text-capitalize "> <span
-                                                                            class="badge badge-soft-success  my-1  me-2">Accepted</span></span>
+                                                                    <span class="d-block text-capitalize "> 
+                                                                        <span class="badge badge-soft-success my-1 me-2">Quotation Submitted</span>
+                                                                        <!-- <span class="badge badge-soft-warning my-1 me-2">Quotation Pending</span>
+                                                                        <span class="badge badge-soft-info my-1 me-2">Re-Quote Requested</span> -->
+
+                                                                    </span>
                                                                 </div>
                                                             </div>
 
@@ -687,7 +691,7 @@
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th>Property</th>
-                                                                                    <th>Vendor Name</th>
+                                                                                    <th>Contractor Name</th>
                                                                                     <th>Property Name</th>
                                                                                     <th>Job Title</th>
                                                                                     <th>Category</th>

@@ -267,3 +267,153 @@ input.tableInput {
 .form-control.LinkText {
 	cursor: pointer;
 }
+
+
+/* compliences */
+
+.user-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-list .user-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 10px;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+.user-list .user-item label {
+    display: flex;
+}
+.user-list .user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-list .user-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.user-list .user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-list .user-details .name {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.user-list .user-details .task {
+    font-size: 14px;
+    color: #51687d;
+}
+
+.user-list input[type="checkbox"] {
+    display: none;
+}
+
+.user-list .custom-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.user-list input[type="checkbox"]:checked + .custom-checkbox {
+    border-color: #fcb608;
+    background-color: #fcb608;
+}
+.user-list input[type="checkbox"]:checked + .custom-checkbox::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.modal-dialog-scrollable .modal-body {
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+span.subparaVen {
+    display: block;
+    font-size: 14px;
+    color: #61788d;
+}
+.bg-outline-success {
+    background-color: #ffffff;
+    border: 1px solid #28C76F;
+    color: #28C76F;
+    font-size: 12px !important;
+}
+.bg-outline-warning {
+    background-color: #ffffff;
+    border: 1px solid #FF9900;
+    color: #FF9900;
+    font-size: 12px !important;
+}
+.quotationInnertb_tabs.QuotationTabs {
+    width: 50% !important;
+    margin-bottom: 20px !important;
+    margin: 0 auto;
+}
+.propertyQuote {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.propertyQuote h6 {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+ul.PropertyList {
+    padding: 0;
+    margin: 0;
+}
+.iconLocation {
+    display: flex;
+}
+.iconLocation iconify-icon {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 50px;
+    color: #55585a;
+    background: #f5f5f5;
+}
+.PropertyList li {
+    border: 1px solid #ececec;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.morethan1property {
+    cursor: pointer;
+}
+#scrolableTabs {
+    margin-left: 0 !important;
+}
