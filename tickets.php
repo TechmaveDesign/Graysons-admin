@@ -6044,7 +6044,7 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label class="form-label">Ares</label>
+                                <label class="form-label">Area</label>
                                 <select name="" id="" class="form-control select2">
                                     <option disabled="" selected="" value="">Please Select...</option>
                                     <option value="Bedroom">Bedroom</option>
@@ -6055,8 +6055,44 @@
 
                             </div>
                         </div>
-
                         <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="form-label">Unit</label>
+                                <select name="" id="" class="form-control select2">
+                                    <option disabled="" selected="" value="">Please Select...</option>
+                                    <option value="Bedroom">Studio</option>
+                                    <option value="Kitchen">Flat/Appartment</option>
+                                    <option value="Bathroom">Room</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="form-label">Sub Unit</label>
+                                <select name="" id="" class="form-control select2">
+                                    <option disabled="" selected="" value="">Please Select...</option>
+                                    <option value="Bedroom">Insuite</option>
+                                    <option value="Kitchen">Nonsuite</option>
+                                   
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="form-label">Sub Sub Unit</label>
+                                <select name="" id="" class="form-control select2">
+                                    <option disabled="" selected="" value="">Please Select...</option>
+                                    <option value="Bedroom">Studio-001</option>
+                                    <option value="Kitchen">Studi-o002</option>
+                                    <option value="Kitchen">Studi-o003</option>
+                                    <option value="Kitchen">Studio-004</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-3">
                             <div class="form-group">
                                 <label class="form-label">Category</label>
                                 <select name="" id="" class="form-control select2">
@@ -6155,8 +6191,20 @@
                                 </select>
 
                             </div>
-                        </div>
+                        </div> -->
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="form-label">Ticket Category</label>
+                                <select name="" id="" class="form-control select2">
+                                    <option disabled="" selected="" value="">Please Select...</option>
+                                    <option value="General Enquiry Ticket">General Enquiry Ticket</option>
+                                    <option value="Maintenance Ticket">Maintenance Ticket</option>
+                                    <option value="Compliance Ticket">Compliance Ticket</option>
 
+                                </select>
+
+                            </div>
+                        </div>
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label class="form-label">Sub Category</label>
@@ -6175,22 +6223,11 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label class="form-label">Ticket Category</label>
-                                <select name="" id="" class="form-control select2">
-                                    <option disabled="" selected="" value="">Please Select...</option>
-                                    <option value="General Enquiry Ticket">General Enquiry Ticket</option>
-                                    <option value="Maintenance Ticket">Maintenance Ticket</option>
-
-                                </select>
-
-                            </div>
-                        </div>
+                        
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label class="form-label">User Type</label>
+                                <label class="form-label">Reported By</label>
                                 <select name="" id="" class="form-control select2">
                                     <option disabled="" selected="" value="">Please Select...</option>
                                     <option value="Landlord">Landlord</option>
@@ -6203,7 +6240,7 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label class="form-label">User Name</label>
+                                <label class="form-label">Property Manager</label>
                                 <select name="" id="" class="form-control select2">
                                     <option disabled="" selected="" value="">Please Select...</option>
                                     <option value="1">Danial Craig</option>

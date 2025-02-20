@@ -59,7 +59,7 @@
                                                 <line x1="12" y1="5" x2="12" y2="19"></line>
                                                 <line x1="5" y1="12" x2="19" y2="12"></line>
                                             </svg></span></span><span class="btn-text">Add new
-                                        Vendor</span></span></button>
+                                            Contractor</span></span></button>
 
                             <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover hk-navbar-togglable d-sm-inline-block d-none"
                                 href="#" data-bs-toggle="tooltip" data-placement="top" title=""
@@ -84,10 +84,10 @@
 
                                                 <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label for="vendorCategory" class="form-label">Filter by Vendor
+                                                        <label for="vendorCategory" class="form-label">Filter by Contractor
                                                             Name <span class="RequiredField_badge">*</span></label>
                                                         <select class="form-control select2">
-                                                            <option value="" disabled>Select Vendor</option>
+                                                            <option value="" disabled>Select Contractor</option>
                                                             <option value="John Doe">John Doe</option>
                                                             <option value="Jane Smith">Jane Smith</option>
                                                         </select>
@@ -416,7 +416,8 @@
     <div class="offcanvas-header custom-canvas-header">
         <div class="canvas-header-title">
             <iconify-icon icon="si:user-duotone"></iconify-icon>
-            Add New Vendor
+            Add New Contractor
+            
         </div>
         <div class="closeCanvasContainer">
             <button type="button" class="canvascloseButton" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -436,20 +437,26 @@
         <div class="offcanvas-body">
 
             <div class="addingForm_Container">
-                <div class="add-users-modal-body-table-header text-headline-6">Add Vendor Details</div>
+                <div class="add-users-modal-body-table-header text-headline-6">Add Contractor Details</div>
 
                 <div class="formstartcontainer">
                     <div class="row">
 
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <div class="form-group">
-                                <label for="vendorName" class="form-label">Vendor Name <span
+                                <label for="vendorName" class="form-label">First Name <span
                                         class="RequiredField_badge">*</span></label>
                                 <input type="text" class="form-control" id="vendorName" placeholder="Enter vendor name">
                             </div>
                         </div>
-
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <label for="vendorName" class="form-label">Last Name <span
+                                        class="RequiredField_badge">*</span></label>
+                                <input type="text" class="form-control" id="vendorName" placeholder="Enter vendor name">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
                             <div class="form-group">
                                 <label for="vendorEmail" class="form-label">Email Address <span
                                         class="RequiredField_badge">*</span></label>
@@ -458,9 +465,9 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <div class="form-group">
-                                <label class="form-label">Contact
+                                <label class="form-label">Mobile
                                     Number</label>
                                 <div class="pn-select" id="js_pn-select" style="--prefix-length: 2">
                                     <!-- Selected prefix -->
@@ -514,32 +521,26 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="form-group">
-                                <label for="Contact" class="form-label"> Alt Contact Number</label>
+                                <label for="Contact" class="form-label">Home Phone</label>
                                 <input type="phone" class="form-control" id="Contact">
                             </div>
 
                         </div>
-
-                        <div class="col-md-4">
+                    
+                        <div class="col-md-3">
                             <div class="form-group">
-                                <label for="addressline1" class="form-label"> Address Line 1 <span
+                                <label for="addressline1" class="form-label"> Address <span
                                         class="RequiredField_badge">*</span></label>
                                 <input type="text" class="form-control" id="addressline1">
                             </div>
 
                         </div>
 
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="addressline2" class="form-label"> Address Line 2</label>
-                                <input type="text" class="form-control" id="addressline2">
-                            </div>
+                    
 
-                        </div>
-
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <label for="Town/City" class="form-label"> Town/City <span
                                         class="RequiredField_badge">*</span></label>
@@ -548,7 +549,7 @@
 
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <label for="County" class="form-label"> Country <span
                                         class="RequiredField_badge">*</span></label>
@@ -557,7 +558,7 @@
 
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <label for="Postcode" class="form-label"> Postcode <span
                                         class="RequiredField_badge">*</span></label>
@@ -565,39 +566,93 @@
                             </div>
 
                         </div>
+                        <div class="col-lg-12">
+                           <h6 class="FormSecTitle">Emergency Contact Details</h6>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Contact" class="form-label">Emergency Contact Name</label>
+                                <input type="text" class="form-control" id="Contact">
+                            </div>
 
-                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Contact" class="form-label">Home Phone</label>
+                                <input type="phone" class="form-control" id="Contact">
+                            </div>
+
+                        </div>
+                        <div class="col-lg-12">
+                           <h6 class="FormSecTitle">Company Details</h6>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Contact" class="form-label">Company Name</label>
+                                <input type="text" class="form-control" id="Contact">
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Contact" class="form-label">Company Address</label>
+                                <input type="text" class="form-control" id="Contact">
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Contact" class="form-label">Work Phone Number</label>
+                                <input type="text" class="form-control" id="Contact">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Contact" class="form-label">VAT Number</label>
+                                <input type="text" class="form-control" id="Contact">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Contact" class="form-label">Company number</label>
+                                <input type="text" class="form-control" id="Contact">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label for="vendorCategory" class="form-label">Category <span
                                         class="RequiredField_badge">*</span></label>
                                 <select class="form-control vendor-category-select select2" required>
                                     <option value="" disabled>Select category</option>
-                                    <option value="Electrical Services">Electrical Services</option>
-                                    <option value="Plumbing Services">Plumbing Services</option>
-                                    <option value="Catering Services">Catering Services</option>
-                                    <option value="Cleaning Services">Cleaning Services</option>
+                                    <option value="Fire Safety">Fire Safety</option>
+                                    <option value="Electrician">Electrician</option>
+                                    <option value="Information Technology (IT)">Information Technology (IT) </option>
+                                    <option value="Carpenter">Carpenter</option>
                                     <option value="Other">Other</option>
                                 </select>
                             </div>
 
                         </div>
-
-                        <div class="col-lg-4 other-category-div" style="display: none;">
+                        <div class="col-md-3" id="otherFields">
                             <div class="form-group">
-                                <label for="otherCategoryInput" class="form-label">Other Category</label>
-                                <input type="text" class="form-control other-category-input"
-                                    placeholder="Enter other category">
+                                <label for="Contact" class="form-label">Other(Please Specify)</label>
+                                <input type="text" class="form-control" id="Contact">
                             </div>
                         </div>
-
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="form-group">
-                                <label for="vendorServiceArea" class="form-label">Service Area <span
-                                        class="RequiredField_badge">*</span></label>
-                                <input type="text" class="form-control" id="vendorServiceArea"
-                                    placeholder="Enter service area" required>
+                                <label for="Contact" class="form-label">Sub-Category</label>
+                                <input type="text" class="form-control" id="Contact">
                             </div>
                         </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label class="form-label">Upload Attachments</label>
+                                <input type="file" class="filepond" id="imageInput" name="imageInput" multiple
+                                    data-max-file-size="3MB" data-max-files="5">
+                            </div>
+                        </div>
+                    
 
                     </div>
                 </div>
@@ -620,7 +675,7 @@
     <div class="offcanvas-header custom-canvas-header">
         <div class="canvas-header-title">
             <iconify-icon icon="si:user-duotone"></iconify-icon>
-            Edit Vendor Details
+            Edit Contractor Details
         </div>
         <div class="closeCanvasContainer">
             <button type="button" class="canvascloseButton" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -645,27 +700,32 @@
                 <div class="formstartcontainer">
                     <div class="row">
 
-                        <div class="col-lg-4">
+                    <div class="col-lg-3">
                             <div class="form-group">
-                                <label for="vendorName" class="form-label">Vendor Name <span
+                                <label for="vendorName" class="form-label">First Name <span
                                         class="RequiredField_badge">*</span></label>
-                                <input type="text" class="form-control" id="vendorName" placeholder="Enter vendor name"
-                                    value="John Doe" required>
+                                <input type="text" class="form-control" id="vendorName" placeholder="Enter vendor name">
                             </div>
                         </div>
-
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <label for="vendorName" class="form-label">Last Name <span
+                                        class="RequiredField_badge">*</span></label>
+                                <input type="text" class="form-control" id="vendorName" placeholder="Enter vendor name">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
                             <div class="form-group">
                                 <label for="vendorEmail" class="form-label">Email Address <span
                                         class="RequiredField_badge">*</span></label>
                                 <input type="email" class="form-control" id="vendorEmail"
-                                    placeholder="Enter email address" value="johndoe@example.com" required>
+                                    placeholder="Enter email address">
                             </div>
                         </div>
 
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <div class="form-group">
-                                <label class="form-label">Contact
+                                <label class="form-label">Mobile
                                     Number</label>
                                 <div class="pn-select" id="js_pn-select" style="--prefix-length: 2">
                                     <!-- Selected prefix -->
@@ -719,24 +779,26 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="form-group">
-                                <label for="addressline1" class="form-label"> Address Line 1 <span
+                                <label for="Contact" class="form-label">Home Phone</label>
+                                <input type="phone" class="form-control" id="Contact">
+                            </div>
+
+                        </div>
+                    
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="addressline1" class="form-label"> Address <span
                                         class="RequiredField_badge">*</span></label>
                                 <input type="text" class="form-control" id="addressline1">
                             </div>
 
                         </div>
 
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="addressline2" class="form-label"> Address Line 2</label>
-                                <input type="text" class="form-control" id="addressline2">
-                            </div>
+                    
 
-                        </div>
-
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <label for="Town/City" class="form-label"> Town/City <span
                                         class="RequiredField_badge">*</span></label>
@@ -745,7 +807,7 @@
 
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <label for="County" class="form-label"> Country <span
                                         class="RequiredField_badge">*</span></label>
@@ -754,7 +816,7 @@
 
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <label for="Postcode" class="form-label"> Postcode <span
                                         class="RequiredField_badge">*</span></label>
@@ -762,37 +824,90 @@
                             </div>
 
                         </div>
+                        <div class="col-lg-12">
+                           <h6 class="FormSecTitle">Emergency Contact Details</h6>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Contact" class="form-label">Emergency Contact Name</label>
+                                <input type="text" class="form-control" id="Contact">
+                            </div>
 
-                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Contact" class="form-label">Home Phone</label>
+                                <input type="phone" class="form-control" id="Contact">
+                            </div>
+
+                        </div>
+                        <div class="col-lg-12">
+                           <h6 class="FormSecTitle">Company Details</h6>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Contact" class="form-label">Company Name</label>
+                                <input type="text" class="form-control" id="Contact">
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Contact" class="form-label">Company Address</label>
+                                <input type="text" class="form-control" id="Contact">
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Contact" class="form-label">Work Phone Number</label>
+                                <input type="text" class="form-control" id="Contact">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Contact" class="form-label">VAT Number</label>
+                                <input type="text" class="form-control" id="Contact">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Contact" class="form-label">Company number</label>
+                                <input type="text" class="form-control" id="Contact">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label for="vendorCategory" class="form-label">Category <span
                                         class="RequiredField_badge">*</span></label>
                                 <select class="form-control vendor-category-select select2" required>
                                     <option value="" disabled>Select category</option>
-                                    <option value="Electrical Services">Electrical Services</option>
-                                    <option value="Plumbing Services">Plumbing Services</option>
-                                    <option value="Catering Services">Catering Services</option>
-                                    <option value="Cleaning Services">Cleaning Services</option>
+                                    <option value="Fire Safety">Fire Safety</option>
+                                    <option value="Electrician">Electrician</option>
+                                    <option value="Information Technology (IT)">Information Technology (IT) </option>
+                                    <option value="Carpenter">Carpenter</option>
                                     <option value="Other">Other</option>
                                 </select>
                             </div>
 
                         </div>
-
-                        <div class="col-lg-4 other-category-div" style="display: none;">
+                        <div class="col-md-3" id="otherFieldss">
                             <div class="form-group">
-                                <label for="otherCategoryInput" class="form-label">Other Category</label>
-                                <input type="text" class="form-control other-category-input"
-                                    placeholder="Enter other category">
+                                <label for="Contact" class="form-label">Other(Please Specify)</label>
+                                <input type="text" class="form-control" id="Contact">
                             </div>
                         </div>
-
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="form-group">
-                                <label for="vendorServiceArea" class="form-label">Service Area <span
-                                        class="RequiredField_badge">*</span></label>
-                                <input type="text" class="form-control" id="vendorServiceArea"
-                                    placeholder="Enter service area" required>
+                                <label for="Contact" class="form-label">Sub-Category</label>
+                                <input type="text" class="form-control" id="Contact">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label class="form-label">Upload Attachments</label>
+                                <input type="file" class="filepond" id="imageInput1" name="imageInput" multiple
+                                    data-max-file-size="3MB" data-max-files="5">
                             </div>
                         </div>
 
@@ -805,7 +920,7 @@
         <div class="canvasFooterContainer">
             <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
                 data-bs-dismiss="offcanvas">Cancel</button>
-            <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter">Submit</button>
+            <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter">Save & update</button>
         </div>
     </form>
 </div>
@@ -862,3 +977,152 @@
 <script src="dist/customplugins/phonecountry/list.min.js"></script>
 <script src="dist/customplugins/phonecountry/phone-with-country.js"></script>
 <!-- phone number with country code custom code js and css end-->
+
+
+<script>
+    $(document).ready(function () {
+        // Initialize Select2
+        $('.vendor-category-select').select2();
+
+        // Hide otherFields by default
+        $('#otherFields').hide();
+
+        // Listen for change event on select2 dropdown
+        $('.vendor-category-select').on('change', function () {
+            if ($(this).val() === "Other") {
+                $('#otherFields').show();
+            } else {
+                $('#otherFields').hide();
+            }
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        // Initialize Select2
+        $('.vendor-category-select').select2();
+
+        // Hide otherFields by default
+        $('#otherFieldss').hide();
+
+        // Listen for change event on select2 dropdown
+        $('.vendor-category-select').on('change', function () {
+            if ($(this).val() === "Other") {
+                $('#otherFieldss').show();
+            } else {
+                $('#otherFieldss').hide();
+            }
+        });
+    });
+</script>
+
+<!-- multiple video File Uploader js -->
+<!-- NOTE: Dont add this code in footer section -->
+<!-- filepond for videos uploader -->
+<link href="dist/customplugins/file-uploader/filepond.css" rel="stylesheet">
+<link href="dist/customplugins/file-uploader/filepond-plugin-media-preview.min.css" rel="stylesheet">
+<script src="dist/customplugins/file-uploader/filepond.js"></script>
+<script src="dist/customplugins/file-uploader/filepond-plugin-file-validate-type.js"></script>
+<script src="dist/customplugins/file-uploader/filepond-plugin-media-preview.min.js"></script>
+<script src="dist/customplugins/file-uploader/lg-video.min.js"></script>
+<!-- filepond for images uploader -->
+<link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
+<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+<script src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.js"></script>
+
+<!-- filepond video js -->
+<!-- <script>
+    // Register the plugins
+    FilePond.registerPlugin(
+        FilePondPluginFileValidateType,
+        FilePondPluginMediaPreview
+    );
+    // Create a FilePond instance
+    const inputElement = document.querySelector('#videoInput');
+    const pond = FilePond.create(inputElement, {
+        acceptedFileTypes: ['video/*'],
+        fileValidateTypeDetectType: (source, type) => new Promise((resolve, reject) => {
+            resolve(type);
+        })
+    });
+    // Optional: FilePond configuration
+    FilePond.setOptions({
+        allowMultiple: true,
+        maxFiles: 10
+    });
+    // Handle video previews
+    pond.on('addfile', (error, file) => {
+        if (error) {
+            console.error('Error adding file', error);
+            return;
+        }
+    });
+</script> -->
+<!-- filepond video js end -->
+
+<!-- filepod image uploader start-->
+<script>
+    // Register the plugins
+    FilePond.registerPlugin(
+        FilePondPluginImagePreview,
+        FilePondPluginFileValidateSize,
+        FilePondPluginFileValidateType
+    );
+    // Turn all file input elements into ponds
+    FilePond.create(document.querySelector('#imageInput'), {
+        acceptedFileTypes: ['image/*'],
+        labelIdle: 'Drag & Drop your images or <span class="filepond--label-action">Browse</span>',
+        server: {
+            // configure your server endpoints here
+            url: '/upload',
+            process: {
+                url: './process',
+                method: 'POST',
+                headers: {
+                    'x-customheader': 'Hello World'
+                },
+                withCredentials: false,
+                onload: (response) => response.key,
+                onerror: (response) => response.data,
+                ondata: (formData) => {
+                    formData.append('Hello', 'World');
+                    return formData;
+                }
+            },
+            revert: './revert'
+        }
+    });
+</script>
+<script>
+    // Register the plugins
+    FilePond.registerPlugin(
+        FilePondPluginImagePreview,
+        FilePondPluginFileValidateSize,
+        FilePondPluginFileValidateType
+    );
+    // Turn all file input elements into ponds
+    FilePond.create(document.querySelector('#imageInput1'), {
+        acceptedFileTypes: ['image/*'],
+        labelIdle: 'Drag & Drop your images or <span class="filepond--label-action">Browse</span>',
+        server: {
+            // configure your server endpoints here
+            url: '/upload',
+            process: {
+                url: './process',
+                method: 'POST',
+                headers: {
+                    'x-customheader': 'Hello World'
+                },
+                withCredentials: false,
+                onload: (response) => response.key,
+                onerror: (response) => response.data,
+                ondata: (formData) => {
+                    formData.append('Hello', 'World');
+                    return formData;
+                }
+            },
+            revert: './revert'
+        }
+    });
+</script>
+<!-- filepod image uploader end-->

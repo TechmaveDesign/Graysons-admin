@@ -205,7 +205,7 @@
                                                         <tr>
 
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="landlord-view-details.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -237,8 +237,8 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
-                                                                            href="view-user-details.php"><span
+                                                                            data-bs-original-title="View Landlord Details"
+                                                                            href="landlord-view-details.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
                                                                                         data-feather="eye"></i></span></span></a>
@@ -256,7 +256,7 @@
                                                         <tr>
 
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="landlord-view-details.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -286,8 +286,8 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
-                                                                            href="view-user-details.php"><span
+                                                                            data-bs-original-title="View Landlord Details"
+                                                                            href="landlord-view-details.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
                                                                                         data-feather="eye"></i></span></span></a>
@@ -304,7 +304,7 @@
                                                         <tr>
 
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="landlord-view-details.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -334,8 +334,8 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
-                                                                            href="view-user-details.php"><span
+                                                                            data-bs-original-title="View Landlord Details"
+                                                                            href="landlord-view-details.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
                                                                                         data-feather="eye"></i></span></span></a>
@@ -353,7 +353,7 @@
                                                         <tr>
 
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="landlord-view-details.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -382,8 +382,8 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
-                                                                            href="view-user-details.php"><span
+                                                                            data-bs-original-title="View Landlord Details"
+                                                                            href="landlord-view-details.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
                                                                                         data-feather="eye"></i></span></span></a>
@@ -425,7 +425,7 @@
                                                         <tr>
 
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="landlord-view-details.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -452,8 +452,8 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
-                                                                            href="view-user-details.php"><span
+                                                                            data-bs-original-title="View Landlord Details"
+                                                                            href="landlord-view-details.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
                                                                                         data-feather="eye"></i></span></span></a>
@@ -466,7 +466,7 @@
                                                         <tr>
 
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="landlord-view-details.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -492,8 +492,8 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
-                                                                            href="view-user-details.php"><span
+                                                                            data-bs-original-title="View Landlord Details"
+                                                                            href="landlord-view-details.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
                                                                                         data-feather="eye"></i></span></span></a>
@@ -506,7 +506,7 @@
                                                         <tr>
 
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="landlord-view-details.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -532,8 +532,8 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
-                                                                            href="view-user-details.php"><span
+                                                                            data-bs-original-title="View Landlord Details"
+                                                                            href="landlord-view-details.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
                                                                                         data-feather="eye"></i></span></span></a>
@@ -546,7 +546,7 @@
                                                         <tr>
 
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="landlord-view-details.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -572,8 +572,8 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
-                                                                            href="view-user-details.php"><span
+                                                                            data-bs-original-title="View Landlord Details"
+                                                                            href="landlord-view-details.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
                                                                                         data-feather="eye"></i></span></span></a>
@@ -587,7 +587,7 @@
                                                         <tr>
 
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="landlord-view-details.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -613,8 +613,8 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
-                                                                            href="view-user-details.php"><span
+                                                                            data-bs-original-title="View Landlord Details"
+                                                                            href="landlord-view-details.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
                                                                                         data-feather="eye"></i></span></span></a>
@@ -648,7 +648,7 @@
                                                     <tbody>
                                                         <tr>
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="landlord-view-details.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -685,7 +685,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="landlord-view-details.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -724,7 +724,7 @@
 
                                                         <tr>
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="landlord-view-details.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -763,7 +763,7 @@
 
                                                         <tr>
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="landlord-view-details.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -802,7 +802,7 @@
 
                                                         <tr>
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="landlord-view-details.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -841,7 +841,7 @@
 
                                                         <tr>
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="landlord-view-details.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -880,7 +880,7 @@
 
                                                         <tr>
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="landlord-view-details.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div

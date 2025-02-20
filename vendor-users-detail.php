@@ -49,12 +49,12 @@
                         <div class="d-flex align-items-center">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb  mb-0">
-                                    <li class="breadcrumb-item"><a href="tenant-users.php">Tenant</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">View Tenant Details</li>
+                                    <li class="breadcrumb-item"><a href="vendor-users.php">Users</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">View Contractor Details</li>
                                 </ol>
                             </nav>
                             <div class=" ms-3">
-                                <a href="tenant-users.php" class="btn btn-sm cmnbackbtn btn-outline-secondary ">
+                                <a href="vendor-users.php" class="btn btn-sm cmnbackbtn btn-outline-secondary ">
                                     <iconify-icon icon="line-md:list-3"></iconify-icon> Back
                                 </a>
                             </div>
@@ -133,17 +133,17 @@
                                                 </div>
                                                 <div class="card-body">
                                                     <div class="user-fields-container">
-                                                        <div class="user-custom-field">
+                                                        <!-- <div class="user-custom-field">
                                                             <div class="custom-field-name">Title</div>
                                                             <div class="custom-field-value">
                                                                 <div style="display: inline-block;"><input type="text"
                                                                         placeholder="" class="r-user-input" value="Mr.">
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
 
                                                         <div class="user-custom-field">
-                                                            <div class="custom-field-name">Forename</div>
+                                                            <div class="custom-field-name">First name</div>
                                                             <div class="custom-field-value">
                                                                 <div style="display: inline-block;"><input type="text"
                                                                         placeholder="" class="r-user-input"
@@ -151,21 +151,15 @@
                                                             </div>
                                                         </div>
                                                         <div class="user-custom-field">
-                                                            <div class="custom-field-name">Middle Names</div>
-                                                            <div class="custom-field-value">
-                                                                <div style="display: inline-block;"><input type="text"
-                                                                        placeholder="" class="r-user-input" value="">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="user-custom-field">
-                                                            <div class="custom-field-name">Surname</div>
+                                                            <div class="custom-field-name">Last name</div>
                                                             <div class="custom-field-value">
                                                                 <div style="display: inline-block;"><input type="text"
                                                                         placeholder="" class="r-user-input"
                                                                         value="Jain"></div>
                                                             </div>
                                                         </div>
+                                                        
+                                                        
 
                                                         <div class="user-custom-field">
                                                             <div class="custom-field-name">Email: (Verified)</div>
@@ -177,7 +171,7 @@
                                                         </div>
 
                                                         <div class="user-custom-field">
-                                                            <div class="custom-field-name">Contact Number</div>
+                                                            <div class="custom-field-name">Mobile Number</div>
                                                             <div class="custom-field-value">
                                                                 <div style="display: inline-block;"><input type="text"
                                                                         placeholder="" class="r-user-input"
@@ -186,7 +180,7 @@
                                                         </div>
 
                                                         <div class="user-custom-field">
-                                                            <div class="custom-field-name">Alt Contact Number</div>
+                                                            <div class="custom-field-name">Home Phone</div>
                                                             <div class="custom-field-value">
                                                                 <div style="display: inline-block;"><input type="text"
                                                                         placeholder="" class="r-user-input" value="">
@@ -194,7 +188,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="user-custom-field">
-                                                            <div class="custom-field-name">Address Line 1</div>
+                                                            <div class="custom-field-name">Address</div>
                                                             <div class="custom-field-value">
                                                                 <div style="display: inline-block;"><input type="text"
                                                                         placeholder="" class="r-user-input"
@@ -202,15 +196,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="user-custom-field">
-                                                            <div class="custom-field-name">Address Line 2</div>
-                                                            <div class="custom-field-value">
-                                                                <div style="display: inline-block;"><input type="text"
-                                                                        placeholder="" class="r-user-input"
-                                                                        value="456 Ocean View, Coral City, Aquanis">
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                      
 
                                                         <div class="user-custom-field">
                                                             <div class="custom-field-name"> Town/City</div>
@@ -250,60 +236,119 @@
                                             <div class="separator-full"></div>
                                             <div class="card">
                                                 <div class="card-header">
-                                                    <div class="sperarationProfile_heading">More Info</div>
-                                                    <button class="btn btn-xs btn-icon btn-rounded btn-light"
-                                                        type="button" data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        title="" data-bs-original-title="Edit"><span class="icon"
-                                                            data-bs-toggle="modal" data-bs-target="#moreContact"><span
-                                                                class="feather-icon"><i
-                                                                    data-feather="edit-2"></i></span></span></button>
+                                                    <div class="sperarationProfile_heading">Emergency Contact Details</div>
+                                                  
                                                 </div>
                                                 <div class="card-body">
                                                     <div class="user-fields-container">
+                                               
                                                         <div class="user-custom-field">
-                                                            <div class="custom-field-name">Date of Birth</div>
+                                                            <div class="custom-field-name">Contact Number</div>
                                                             <div class="custom-field-value">
-                                                                <div style="display: inline-block;">
-
-                                                                    <input class="r-user-input customdataPicker "
-                                                                        type="text" name="" value="10/24/1984" />
+                                                                <div style="display: inline-block;"><input type="text"
+                                                                        placeholder="" class="r-user-input"
+                                                                        value=""></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-custom-field">
+                                                            <div class="custom-field-name">Home Phone</div>
+                                                            <div class="custom-field-value">
+                                                                <div style="display: inline-block;"><input type="text"
+                                                                        placeholder="" class="r-user-input" value="">
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                     
 
-                                                        <!-- <div class="user-custom-field">
-                                                            <div class="custom-field-name">Appointment Colour:</div>
-                                                            <div class="custom-field-value">
-                                                                <div style="display: inline-block;">
-                                                                    <div
-                                                                        class="input-group color-picker customcolorpickerbox">
-                                                                        <div
-                                                                            class="input-group-text colorpicker-input-addon customcolorpickerBox">
-                                                                            <input type="color"></div>
-                                                                        <input type="text"
-                                                                            class="r-user-inputcolorpicker-value"
-                                                                            value="#009B84" />
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
+                                                        <!-- <div class="basicdetailSubmitSecion">
+                                                            <button type="submit" class="buttonInfOUpdate">
+                                                                <iconify-icon icon="fluent:save-32-regular">
+                                                                </iconify-icon>
+                                                                Save Changes
+                                                            </button>
                                                         </div> -->
 
-                                                        <div class="flexcheckColumn">
-                                                            <div class="form-group">
-                                                                <div class="form-check">
-                                                                    <input type="checkbox" class="form-check-input"
-                                                                        id="customCheckList6">
-                                                                    <label class="form-check-label"
-                                                                        for="customCheckList6">
-                                                                        Has Special Needs (See notes for details)
-                                                                        <span class="done-strikethrough"></span>
-                                                                    </label>
+                                                    </div>
+                                                </div>
+                                            </div>
 
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <div class="sperarationProfile_heading">Company Details</div>
+                                                  
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="user-fields-container">
+                                               
+                                                        <div class="user-custom-field">
+                                                            <div class="custom-field-name">Company Name</div>
+                                                            <div class="custom-field-value">
+                                                                <div style="display: inline-block;"><input type="text"
+                                                                        placeholder="" class="r-user-input"
+                                                                        value=""></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-custom-field">
+                                                            <div class="custom-field-name">Company Address</div>
+                                                            <div class="custom-field-value">
+                                                                <div style="display: inline-block;"><input type="text"
+                                                                        placeholder="" class="r-user-input" value="">
                                                                 </div>
                                                             </div>
                                                         </div>
-
+                                                        <div class="user-custom-field">
+                                                            <div class="custom-field-name">Work Phone Number</div>
+                                                            <div class="custom-field-value">
+                                                                <div style="display: inline-block;"><input type="text"
+                                                                        placeholder="" class="r-user-input" value="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-custom-field">
+                                                            <div class="custom-field-name">VAT Number</div>
+                                                            <div class="custom-field-value">
+                                                                <div style="display: inline-block;"><input type="text"
+                                                                        placeholder="" class="r-user-input" value="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-custom-field">
+                                                            <div class="custom-field-name">Company number</div>
+                                                            <div class="custom-field-value">
+                                                                <div style="display: inline-block;"><input type="text"
+                                                                        placeholder="" class="r-user-input" value="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-custom-field">
+                                                            <div class="custom-field-name">Category</div>
+                                                            <div class="form-group">
+                                                                <select class="form-control vendor-category-select select2" required>
+                                                                    <option value="" disabled>Select category</option>
+                                                                    <option value="Fire Safety">Fire Safety</option>
+                                                                    <option value="Electrician">Electrician</option>
+                                                                    <option value="Information Technology (IT)">Information Technology (IT) </option>
+                                                                    <option value="Carpenter">Carpenter</option>
+                                                                    <option value="Other" selected>Other</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-custom-field">
+                                                            <div class="custom-field-name">Other(Please Specify)</div>
+                                                            <div class="custom-field-value">
+                                                                <div style="display: inline-block;"><input type="text"
+                                                                        placeholder="" class="r-user-input" value="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-custom-field">
+                                                            <div class="custom-field-name">Sub-Category</div>
+                                                            <div class="custom-field-value">
+                                                                <div style="display: inline-block;"><input type="text"
+                                                                        placeholder="" class="r-user-input" value="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                         <div class="basicdetailSubmitSecion">
                                                             <button type="submit" class="buttonInfOUpdate">
                                                                 <iconify-icon icon="fluent:save-32-regular">
@@ -4361,14 +4406,7 @@
                 <div class="formstartcontainer">
 
                     <div class="row gx-3">
-                    <div class="col-lg-4">
-                            <div class="form-group">
-                                <label class="form-label">Contract Type</label>
-                                <input class="form-control " placeholder=""
-                                    name="" type="text" />
-                            </div>
-                        </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label class="form-label">Property</label>
                                 <select name="" id="" class="form-control select2">
@@ -4381,7 +4419,7 @@
 
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label class="form-label">Status</label>
                                 <select name="" id="" class="form-control select2">

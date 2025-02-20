@@ -95,7 +95,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link" data-bs-toggle="tab" href="#AssignMaterial">
                                         <div class="d-flex align-items-center">
-                                            <span class="nav-link-text">Assign Material</span>
+                                            <span class="nav-link-text">Material</span>
 
                                         </div>
                                     </a>
@@ -130,14 +130,14 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a class="nav-link" data-bs-toggle="tab" href="#InventoryRequests ">
                                         <div class="d-flex align-items-center">
                                             <span class="nav-link-text">Material Purchase Requests </span>
 
                                         </div>
                                     </a>
-                                </li>
+                                </li> -->
                                 <li class="nav-item">
                                     <a class="nav-link" data-bs-toggle="tab" href="#History">
                                         <div class="d-flex align-items-center">
@@ -517,8 +517,132 @@
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <div class="card">
+                                                <div class="card-header">
+                                                <div class="card-title customcardTitle">
+                                                        <h6>Task List</h6>
+                                                    </div>
+                                                    <div class="TaskHeadRight">
+                                                    
+                                                    
+                                                    <button  type="button" class="btn button_popoverhighlights" data-bs-toggle="modal"  data-bs-target="#AssignStaff"><iconify-icon icon="clarity:assign-user-line"></iconify-icon> Assign Staff</button>
+                                                    <div class="planHighlights">
+                                                           <div class="wrapper">
+                                                            <button class="btn button_popoverhighlights" type="button">
+                                                                View Sent Slots <iconify-icon icon="uim:arrow-up-right"></iconify-icon>
+                                                            </button>
+                                                            <div class="tooltip">
+                                                                <div class="PlanmoduleList">
+                                                                   <h2>Sent Slots</h2>
+                                                                    <ul>
+                                                                        <li>
+                                                                           <div class="dateGHU">
+                                                                            <h6>22 June, 2024 <br><span>10:00 AM - 11:00 AM</span></h6>
+                                                                            <span class="badge badge-soft-success my-1  ">Confirm Slot</span>
+                                                                           </div> 
+                                                                        </li>
+                                                                        <li>
+                                                                           <div class="dateGHU">
+                                                                            <h6>22 June, 2024 <br><span>11:00 AM - 12:00 AM</span></h6>
+                                                                            <span class="badge badge-soft-warning my-1  ">Waiting for Approval</span>
+                                                                           </div> 
+                                                                        </li>
+                                                                        <li>
+                                                                           <div class="dateGHU">
+                                                                            <h6>22 June, 2024 <br><span>12:00 AM - 01:00 PM</span></h6>
+                                                                            <span class="badge badge-soft-warning my-1  ">Waiting for Approval</span>
+                                                                           </div> 
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            
+
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                          <button  class="btn button_popoverhighlights " type="button" data-bs-toggle="modal"  data-bs-target="#CreteSlot">+ Create Slots</button>
+                                                          <button class="btn button_popoverhighlights " type="button" data-bs-toggle="modal"  data-bs-target="#ConfirmSlot">Book Slot</button>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="contact-list-view">
+                                                        <table
+                                                            class="table common-datatable nowrap w-100 assignMaterial">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Task Title</th>
+                                                                    <th>Price</th>
+                                                                    <th>Assign Staff</th>
+                                                                    <th>Confirm Slot</th>
+                                                                    <th>Task Status</th>
+                                                                    <th>Task Start Time</th>
+                                                                    <th>Task End Time</th>
+                                                                    <th>Reach Time</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Plumbing Service</td>
+                                                                    <td>£10.00</td>
+                                                                    <td>Jane Doe</td>
+                                                                    <td>22 June, 2024 <br><span>10:00 AM - 11:00 AM</span></td>
+                                                                    <td><span class="badge bg-success">Done</span></td>
+                                                                    <td>06:26:49 </td>
+                                                                    <td>06:27:02</td>
+                                                                    <td>
+                                                                        <span class="badge bg-success">On Time</span>
+                                                                    </td>
+                                                                    
+                                                                    
+                                                                    <td>
+                                                                        <div
+                                                                            class="d-flex align-items-center ActionDropdown">
+                                                                            <div class="d-flex">
+                                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                                    data-bs-toggle="modal"
+                                                                                    data-bs-target="#assignMaterialEdit"
+                                                                                    href="#">
+                                                                                    <span class="icon">
+                                                                                        <span class="feather-icon">
+                                                                                            <i data-feather="eye"></i>
+                                                                                        </span>
+                                                                                    </span>
+                                                                                </a>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Plumbing Service</td>
+                                                                    <td>£10.00</td>
+                                                                    <td>Jane Doe</td>
+                                                                    <td>22 June, 2024 <br><span>10:00 AM - 11:00 AM</span></td>
+                                                                    <td><span class="badge bg-warning">Not Started</span></td>
+                                                                    <td>--</td>
+                                                                    <td>--</td>
+                                                                    <td>
+                                                                       ---
+                                                                    </td>
+                                                                    
+                                                                    
+                                                                    <td>
+                                                                        --
+                                                                    </td>
+                                                                </tr>
+
+                                                                
+
+
+
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="card">
                                                 <div class="card-header">
                                                     <div class="card-title customcardTitle">
                                                         <h6>Appointments</h6>
@@ -667,7 +791,7 @@
                                                         </table>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                             <div class="card">
                                                 <div class="card-header card-header-action">
                                                     <div class="media align-items-center">
@@ -1345,11 +1469,11 @@
                                                                 <iconify-icon icon="tabler:send"></iconify-icon>
                                                                 Raise Deposite Invoice
                                                             </button>
-                                                            <!-- <button type="button"
+                                                            <button type="button"
                                                                 class="btn btn-primary commonUpdateButton sendQuotationbtn">
                                                                 <iconify-icon icon="tabler:send"></iconify-icon>
-                                                                Send Quotation to client
-                                                            </button> -->
+                                                                Send Quotation 
+                                                            </button>
                                                         </a>
 
                                                         <!-- <a href="tickets.php">
@@ -2268,14 +2392,18 @@
                                                             <div class="docfilterbutton completedrtask_headeract">
                                                                 <h2 class="tabinnerTitle">All Task List </h2>
                                                                 <div class="RightTabinr_container">
-                                                                    <div
-                                                                        class="allSelect flex items-center gap-2 checkboxTask">
-                                                                        <input id="allSelectCheck" class=""
-                                                                            type="checkbox" value="">
-                                                                        <label for="allSelectCheck"
-                                                                            class="align-middle">All Select</label>
+                                                                    
+                                                                    <div class="form-group me-3">
+                                                                        <div class="form-check customformchec_kInpdisabled">
+                                                                            <input type="checkbox" class="form-check-input" id="customCheckList6">
+                                                                            <label class="form-check-label" for="customCheckList6">
+                                                                            All Select
+                                                                                <span class="done-strikethrough"></span>
+                                                                            </label>
+
+                                                                        </div>
                                                                     </div>
-                                                                    <div class="form-group">
+                                                                    <div class="form-group CompletedTaskStatus">
                                                                         <!-- <label for="exampleFormControlInput1" class="form-label">Client Name</label> -->
                                                                         <select class="form-input select2"
                                                                             id="choices-single-default">
@@ -2298,12 +2426,14 @@
                                                                 <div class="accordion-item">
                                                                     <h2 class="accordion-header taskHeader"
                                                                         id="headingOne">
-                                                                        <div
-                                                                            class="flex items-center gap-2 checkboxTask">
-                                                                            <input id="checkboxOutline8" class=""
-                                                                                type="checkbox" value="">
-                                                                            <label for="checkboxOutline8"
-                                                                                class="align-middle"></label>
+                                                                        <div class="form-group CompletedTaskCheck">
+                                                                        <div class="form-check customformchec_kInpdisabled">
+                                                                            <input type="checkbox" class="form-check-input" id="customCheckList6">
+                                                                            <label class="form-check-label" for="customCheckList6">
+                                                                                <span class="done-strikethrough"></span>
+                                                                            </label>
+
+                                                                          </div>
                                                                         </div>
                                                                         <button class="accordion-button collapsed"
                                                                             type="button" data-bs-toggle="collapse"
@@ -2507,13 +2637,14 @@
                                                                 <div class="accordion-item">
                                                                     <h2 class="accordion-header taskHeader"
                                                                         id="headingTwo">
-                                                                        <div
-                                                                            class="flex items-center gap-2 checkboxTask">
-                                                                            <input id="checkboxOutline9"
-                                                                                class="size-4 cursor-pointer bg-white border border-slate-200 checked:bg-none dark:bg-zink-700 dark:border-zink-500 rounded-sm appearance-none arrow-none relative after:absolute after:content-['\eb7b'] after:top-0 after:left-0 after:font-remix after:leading-none after:opacity-0 checked:after:opacity-100 after:text-orange-500 checked:border-orange-500 dark:after:text-orange-500 dark:checked:border-orange-800"
-                                                                                type="checkbox" value="">
-                                                                            <label for="checkboxOutline9"
-                                                                                class="align-middle"></label>
+                                                                        <div class="form-group CompletedTaskCheck">
+                                                                        <div class="form-check customformchec_kInpdisabled">
+                                                                            <input type="checkbox" class="form-check-input" id="customCheckList6">
+                                                                            <label class="form-check-label" for="customCheckList6">
+                                                                                <span class="done-strikethrough"></span>
+                                                                            </label>
+
+                                                                          </div>
                                                                         </div>
                                                                         <button class="accordion-button collapsed"
                                                                             type="button" data-bs-toggle="collapse"
@@ -6374,6 +6505,375 @@ aria-hidden="true">
 </div>
 <!-- Edit material popup -->
 
+<!-- Assign Staff modal -->
+<div id="AssignStaff" class="modal customwizard_formStyle sm_modalCustom fade" tabindex="-1" role="dialog"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+    <form action="" method="post" id="wizardForm">
+        <div class="modal-content">
+
+            <div class="ModalheaderArea">
+            <div class="stepheadingheader mb-0">
+                        <div class="steptitleIcon">
+                        <iconify-icon icon="clarity:assign-user-line"></iconify-icon>
+                        </div>
+                        <h1>Assign The Staff</h2>
+                    </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <div class="materialaddmodal_wrap">
+                
+
+                    <div class="row">
+                        <div class="col-lg-12 mb-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="customCheckList1" >
+                                <label class="form-check-label" for="customCheckList1">
+                                    If you want to assign staff to the ticket, please check
+                                    <span class="done-strikethrough"></span>
+                                </label>
+                              
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label class="form-label">Select Task</label>
+                                <div class="dropdown filterdropDownCustom available-users-dropdown-wrapper" >
+                                    <button class="dropbtn dropdown-toggle dropmenuBtn" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="selected-count">Select More Properties</span>
+                                        <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
+                                    </button>
+                                    <div
+                                        class="dropdown-menu customdropdownmenu_style available-users-dropdown">
+                                        <div class="filTerSearchMain">
+                                            <input type="text" class="filterclSearch available-users-search"
+                                                placeholder="Search More Properties...">
+                                            <iconify-icon icon="basil:search-outline"></iconify-icon>
+                                        </div>
+                                        <div class="sellallitemsMain">
+                                            <div class="CustomselectallContainer">
+                                                <input type="checkbox"
+                                                    class="select-all-available-users form-check-input">
+                                                Select All
+                                            </div>
+                                            <div class="clDivider_full"></div>
+                                        </div>
+                                        <div class="Customdrpitems_container">
+                                            <div class="mainoptionContainer">
+                                                <div class="dropfilter_options">
+                                                    <input type="checkbox" class="individual-option form-check-input">
+                                                     Plumbing Service
+                                                </div>
+                                            </div>
+                                            <div class="mainoptionContainer">
+                                                <div class="dropfilter_options">
+                                                    <input type="checkbox"
+                                                        class="individual-option form-check-input">
+                                                        Electrical Work
+                                                </div>
+                                            </div>
+                                            <div class="mainoptionContainer">
+                                                <div class="dropfilter_options">
+                                                    <input type="checkbox"
+                                                        class="individual-option form-check-input">
+                                                        Cleaning Service
+                                                </div>
+                                            </div>
+                                            <div class="mainoptionContainer">
+                                                <div class="dropfilter_options">
+                                                    <input type="checkbox"
+                                                        class="individual-option form-check-input">
+                                                        Garden Maintenance
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <p class="no-data" style="display: none;">No data found</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="form-label">Select Staff</label>
+                                <select name="" id="" class="form-control select2">
+                                    <option disabled="" selected="" value="">Please Select...</option>
+                                    <option value="1">Danial Craig</option>
+                                    <option value="2">Emily Blunt</option>
+                                    <option value="3">John Doe</option>
+                                    <option value="4">Sophia Turner</option>
+                                    <option value="5">Michael Jordan</option>
+                                    <option value="6">Olivia Smith</option>
+
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                        <div class="confirmslotBox">
+                            <div class="confirmHead">
+                               <h6 class="mb-0">Confirmed Slot</h6>
+                            </div>
+                            <div class="confirmBody">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                            <div class="form-group mb-0">
+                                                <label for="exampleFormControlInput1" class="form-label">Date</label>
+                                                <input type="text" class="form-control" id="" vlaue="22 June, 2024" placeholder="22 June, 2024" readonly="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group mb-0">
+                                                <label for="exampleFormControlInput1" class="form-label">Time</label>
+                                                <input type="text" class="form-control" id="" vlaue="10:00 AM - 11:00 AM" placeholder="10:00 AM - 11:00 AM" readonly="">
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                       
+
+                    </div>
+                </div>
+            </div>
+            <div class="form-navigation canvasFooterContainer CustomModal_footer taskadd_footer">
+
+                <div class="eventSubmit_container">
+                    <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="submitButton canvasSubmit_button commonCanvas_buttonFooter"
+                        style="display: inline-block;">Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>
+</div>
+
+<!-- Crete Slot & Send modal -->
+<div id="CreteSlot" class="modal customwizard_formStyle sm_modalCustom fade" tabindex="-1" role="dialog"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+    <form action="" method="post" id="wizardForm">
+        <div class="modal-content">
+
+            <div class="ModalheaderArea">
+            <div class="stepheadingheader mb-0">
+                        <div class="steptitleIcon">
+                        <iconify-icon icon="teenyicons:appointments-outline"></iconify-icon>
+                        </div>
+                        <h1>Create Slots & Send</h2>
+                    </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <div class="materialaddmodal_wrap">
+                
+
+                    <div class="row">
+                    <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="form-label">Select Disclaimer</label>
+                                <select name="" id="" class="form-control select2">
+                                    <option disabled="" selected="" value="">Please Select...</option>
+                                    <option value="1">Disclaimer 1</option>
+                                    <option value="2">Disclaimer 2</option>
+                                    <option value="3">Disclaimer 3</option>
+                                    <option value="4">Disclaimer 4</option>
+                                    <option value="5">Disclaimer 5</option>
+                                    <option value="6">Disclaimer 6</option>
+
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group inputwith_Icon">
+                                <label class="form-label">Date</label>
+                                <input class="form-control customdataPicker flatpickr-input" type="text" name="" placeholder="Select Date" readonly="readonly">
+                                <iconify-icon icon="fluent:calendar-ltr-32-regular"></iconify-icon>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ps-0">
+                            <div class="form-group inputwith_Icon">
+                                <label class="form-label">Start Time</label>
+                                <input type="text" name="time" value="" class="form-control time__pickers" id="timepicker" placeholder="Select Time" required="" readonly="">
+                                    
+                            </div>
+                        </div>
+                        <div class="col-md-3 ps-0">
+                            <div class="form-group inputwith_Icon">
+                                <label class="form-label">End Time</label>
+                                <input type="text" name="time" value="" class="form-control time__pickers" id="timepicker" placeholder="Select Time" required="" readonly="">
+                                    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group inputwith_Icon">
+                                <label class="form-label">Date</label>
+                                <input class="form-control customdataPicker flatpickr-input" type="text" name="" placeholder="Select Date" readonly="readonly">
+                                <iconify-icon icon="fluent:calendar-ltr-32-regular"></iconify-icon>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ps-0">
+                            <div class="form-group inputwith_Icon">
+                                <label class="form-label">Start Time</label>
+                                <input type="text" name="time" value="" class="form-control time__pickers" id="timepicker" placeholder="Select Time" required="" readonly="">
+                                    
+                            </div>
+                        </div>
+                        <div class="col-md-3 ps-0">
+                            <div class="form-group inputwith_Icon">
+                                <label class="form-label">End Time</label>
+                                <input type="text" name="time" value="" class="form-control time__pickers" id="timepicker" placeholder="Select Time" required="" readonly="">
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group inputwith_Icon">
+                                <label class="form-label">Date</label>
+                                <input class="form-control customdataPicker flatpickr-input" type="text" name="" placeholder="Select Date" readonly="readonly">
+                                <iconify-icon icon="fluent:calendar-ltr-32-regular"></iconify-icon>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ps-0">
+                            <div class="form-group inputwith_Icon">
+                                <label class="form-label">Start Time</label>
+                                <input type="text" name="time" value="" class="form-control time__pickers" id="timepicker" placeholder="Select Time" required="" readonly="">
+                                    
+                            </div>
+                        </div>
+                        <div class="col-md-3 ps-0">
+                            <div class="form-group inputwith_Icon">
+                                <label class="form-label">End Time</label>
+                                <input type="text" name="time" value="" class="form-control time__pickers" id="timepicker" placeholder="Select Time" required="" readonly="">
+                                    
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="form-navigation canvasFooterContainer CustomModal_footer taskadd_footer">
+
+                <div class="eventSubmit_container">
+                    <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="submitButton canvasSubmit_button commonCanvas_buttonFooter"
+                        style="display: inline-block;">Send Slots</button>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>
+</div>
+
+<!-- book Confirm Slot modal -->
+<div id="ConfirmSlot" class="modal customwizard_formStyle sm_modalCustom fade" tabindex="-1" role="dialog"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+    <form action="" method="post" id="wizardForm">
+        <div class="modal-content">
+
+            <div class="ModalheaderArea">
+            <div class="stepheadingheader mb-0">
+                        <div class="steptitleIcon">
+                        <iconify-icon icon="teenyicons:appointments-outline"></iconify-icon>
+                        </div>
+                        <h1>Book Slot</h2>
+                    </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <div class="materialaddmodal_wrap">
+                
+
+                    <div class="row">
+                    <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="form-label">Select Disclaimer</label>
+                                <select name="" id="" class="form-control select2">
+                                    <option disabled="" selected="" value="">Please Select...</option>
+                                    <option value="1">Disclaimer 1</option>
+                                    <option value="2">Disclaimer 2</option>
+                                    <option value="3">Disclaimer 3</option>
+                                    <option value="4">Disclaimer 4</option>
+                                    <option value="5">Disclaimer 5</option>
+                                    <option value="6">Disclaimer 6</option>
+
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group inputwith_Icon">
+                                <label class="form-label">Date</label>
+                                <input class="form-control customdataPicker flatpickr-input" type="text" name="" placeholder="Select Date" readonly="readonly">
+                                <iconify-icon icon="fluent:calendar-ltr-32-regular"></iconify-icon>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ps-0">
+                            <div class="form-group inputwith_Icon">
+                                <label class="form-label">Start Time</label>
+                                <input type="text" name="time" value="" class="form-control time__pickers" id="timepicker" placeholder="Select Time" required="" readonly="">
+                                    
+                            </div>
+                        </div>
+                        <div class="col-md-3 ps-0">
+                            <div class="form-group inputwith_Icon">
+                                <label class="form-label">End Time</label>
+                                <input type="text" name="time" value="" class="form-control time__pickers" id="timepicker" placeholder="Select Time" required="" readonly="">
+                                    
+                            </div>
+                        </div>
+                    </div>
+
+                   
+
+                </div>
+            </div>
+            <div class="form-navigation canvasFooterContainer CustomModal_footer taskadd_footer">
+
+                <div class="eventSubmit_container">
+                    <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="submitButton canvasSubmit_button commonCanvas_buttonFooter"
+                        style="display: inline-block;">Booking Confirm</button>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>
+</div>
 <?php include('footer.php') ?>
 
 <!-- input lenthy content show js -->
@@ -6846,4 +7346,75 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+</script>
+
+<!-- custom multiple select js start -->
+<script>
+   $(document).ready(function () {
+    // Update the count of selected options
+    function updateSelectedCount(dropdownWrapper) {
+        const selectedCount = dropdownWrapper.find(".individual-option:checked").length;
+        const selectedCountElement = dropdownWrapper.find(".selected-count");
+
+        if (selectedCount === 0) {
+            selectedCountElement.text("Select Location");
+        } else if (selectedCount === 1) {
+            selectedCountElement.text("1 selected");
+        } else {
+            selectedCountElement.text(`${selectedCount} selected`);
+        }
+    }
+
+    // Handle Select All checkbox
+    $(".select-all-available-users").on("change", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        const isChecked = $(this).prop("checked");
+        dropdownWrapper.find(".individual-option").prop("checked", isChecked);
+        updateSelectedCount(dropdownWrapper);
+    });
+
+    // Handle individual option selection
+    $(".individual-option").on("change", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        const totalOptions = dropdownWrapper.find(".individual-option").length;
+        const selectedOptions = dropdownWrapper.find(".individual-option:checked").length;
+
+        // Toggle the Select All checkbox
+        dropdownWrapper.find(".select-all-available-users").prop("checked", totalOptions === selectedOptions);
+
+        updateSelectedCount(dropdownWrapper);
+    });
+
+    // Reset Filter button
+    $(".reset-filter").on("click", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        dropdownWrapper.find(".individual-option").prop("checked", false);
+        dropdownWrapper.find(".select-all-available-users").prop("checked", false);
+        updateSelectedCount(dropdownWrapper);
+    });
+
+    // Apply Filter button
+    $(".apply-filter").on("click", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        const selectedItems = dropdownWrapper.find(".individual-option:checked").map(function () {
+            return $(this).parent().text().trim();
+        }).get();
+        console.log("Selected Items:", selectedItems);
+    });
+
+    // Filter search functionality
+    $(".available-users-search").on("keyup", function () {
+        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+        const searchTerm = $(this).val().toLowerCase();
+        const options = dropdownWrapper.find(".mainoptionContainer");
+
+        options.filter(function () {
+            $(this).toggle($(this).text().toLowerCase().includes(searchTerm));
+        });
+
+        const noDataMessage = dropdownWrapper.find(".no-data");
+        noDataMessage.toggle(options.filter(":visible").length === 0);
+    });
+});
+
 </script>

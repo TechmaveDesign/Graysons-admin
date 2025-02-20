@@ -17,7 +17,7 @@
             <a class="nav-link" href="landlord-users.php"><span class="nav-link-text">Landlords</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="vendor-users.php"><span class="nav-link-text">Vendors</span></a>
+            <a class="nav-link" href="vendor-users.php"><span class="nav-link-text">Contractor</span></a>
         </li>
         <!-- <li class="nav-item">
             <a class="nav-link" href="landlord-Income Summary.php"><span class="nav-link-text">Landlord

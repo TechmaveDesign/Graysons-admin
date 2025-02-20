@@ -237,7 +237,7 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
+                                                                            data-bs-original-title="View Tenant Details"
                                                                             href="view-tenant-details.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
@@ -286,7 +286,7 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
+                                                                            data-bs-original-title="View Tenant Details"
                                                                             href="view-tenant-details.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
@@ -334,7 +334,7 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
+                                                                            data-bs-original-title="View Tenant Details"
                                                                             href="view-tenant-details.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
@@ -382,7 +382,7 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
+                                                                            data-bs-original-title="View Tenant Details"
                                                                             href="view-tenant-details.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
@@ -452,7 +452,7 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
+                                                                            data-bs-original-title="View Tenant Details"
                                                                             href="view-tenant-details.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
@@ -492,7 +492,7 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
+                                                                            data-bs-original-title="View Tenant Details"
                                                                             href="view-tenant-details.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
@@ -532,7 +532,7 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
+                                                                            data-bs-original-title="View Tenant Details"
                                                                             href="view-tenant-details.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
@@ -572,7 +572,7 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
+                                                                            data-bs-original-title="View Tenant Details"
                                                                             href="view-tenant-details.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
@@ -613,7 +613,7 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
+                                                                            data-bs-original-title="View Tenant Details"
                                                                             href="view-tenant-details.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i

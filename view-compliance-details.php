@@ -2080,6 +2080,30 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
+                                                                    <div class="Visiblity">
+                                                                            <div class="form-group">
+                                                                                <!-- <label class="form-label">Select
+                                                                                    Users</label> -->
+                                                                                <select class="form-control select2"
+                                                                                    id="visiblity" data-placeholder="Select visibility">
+                                                                                    <option disabled selected
+                                                                                        value="">
+                                                                                        Please
+                                                                                        Select visibility...
+                                                                                    </option>
+                                                                                    <option value="For Staff">
+                                                                                        For Staff
+                                                                                    </option>
+                                                                                    <option value="For All">
+                                                                                        For All
+                                                                                    </option>
+                                                                                    <option value="For Contractor">
+                                                                                        For Contractor
+                                                                                    </option>
+                                                                                  
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
 
                                                                 </div>
 
@@ -2723,3 +2747,13 @@ document.getElementById('saveScheduleBtn').addEventListener('click', function ()
     });
 });
 </script>
+
+<!-- <script>
+     $(document).ready(function () {
+        // Initialize Select2 with a placeholder
+        $('#visibility').select2({
+            placeholder: 'Select visibility',
+            allowClear: true // Allows clearing the selection
+        });
+    });
+</script> -->

@@ -142,10 +142,10 @@
                                                             </div>
                                             <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label for="vendorCategory" class="form-label">Filter by Vendor
+                                                        <label for="vendorCategory" class="form-label">Filter by Contractor
                                                             Name <span class="RequiredField_badge">*</span></label>
                                                         <select class="form-control select2">
-                                                            <option value="" disabled>Select Vendor</option>
+                                                            <option value="" disabled>Select Contractor</option>
                                                             <option value="John Doe">John Doe</option>
                                                             <option value="Jane Smith">Jane Smith</option>
                                                         </select>
@@ -156,8 +156,8 @@
                                                 <div class="col-lg-3">
 
                                                     <div class="form-group">
-                                                        <label class="form-label">Filter by Job Title</label>
-                                                        <input class="form-control" placeholder="Enter Job Title"
+                                                        <label class="form-label">Filter by Job ID</label>
+                                                        <input class="form-control" placeholder="Enter Job ID"
                                                             value="" type="text">
                                                     </div>
                                                 </div>
@@ -190,9 +190,8 @@
                                         <iconify-icon icon="tabler:arrow-left"></iconify-icon>
                                     </button> -->
 
-                                    <ul class="nav nav-tabs nav-line nav-icon fullwidthCustom_tabsUL nav-light ticketsTabs"
+                                    <ul class="nav nav-tabs nav-line nav-icon fullwidthCustom_tabsUL nav-light ticketsTabs TicketBoxMain"
                                         id="scrolableTabs">
-
                                         <li class="nav-item">
                                             <a class="nav-link active" data-bs-toggle="tab" href="#allEnquiry">
                                                 <div class="d-flex align-items-center">
@@ -1483,18 +1482,18 @@
                        
                         <div class="col-lg-3">
                         <div class="form-group">
-                                            <label class="form-label">All Vendors</label>
+                                            <label class="form-label">All Contractor</label>
                                             <div class="dropdown filterdropDownCustom available-users-dropdown-wrapper" >
                                                 <button class="dropbtn dropdown-toggle dropmenuBtn" type="button"
                                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <span class="selected-count">Select Vendors</span>
+                                                    <span class="selected-count">Select Contractor</span>
                                                     <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
                                                 </button>
                                                 <div
                                                     class="dropdown-menu customdropdownmenu_style available-users-dropdown">
                                                     <div class="filTerSearchMain">
                                                         <input type="text" class="filterclSearch available-users-search"
-                                                            placeholder="Search Vendors....">
+                                                            placeholder="Search Contractor....">
                                                         <iconify-icon icon="basil:search-outline"></iconify-icon>
                                                     </div>
                                                     <div class="sellallitemsMain">
