@@ -178,7 +178,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" href="#SecureCodes">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#SecureCodes" id="approveButton" onclick="handleApproveClick()">
                                             <div class="d-flex align-items-center">
                                                 <span class="nav-link-text">Secure Codes</span>
 
@@ -7101,3 +7101,120 @@
     });
 </script>
 <!-- document archived functionality end -->
+
+
+<!-- approval status change confirmation alert start -->
+<script>
+    function handleApproveClick() {
+    Swal.fire({
+        title: '',
+        html: `
+            <div style="text-align: center; font-family: Arial, sans-serif;">
+                <iconify-icon icon="solar:lock-password-line-duotone" class="swaliconifyicon_mpin"></iconify-icon>
+                <h2 style="margin: 20px 0 10px; font-size: 22px; font-weight: 600;">MPIN Verification</h2>
+                <p style="font-size: 14px; color: #555; margin: 5px 0;">
+                    Please enter the 4-digit MPIN you created during registration.
+                </p>
+                <p style="font-size: 14px; color: #555; margin-bottom: 20px;">
+                    Ensure the MPIN is correct to proceed.
+                </p>
+                <div id="mpin-container" style="display: flex; justify-content: center; gap: 10px; margin-bottom: 20px;">
+                    <input type="text" maxlength="1" class="mpin-input form-control" id="mpin1" oninput="moveToNext(this, 'mpin2')"
+                        style="width: 45px; height: 45px; font-size: 18px; text-align: center; border: 1px solid #ccc; border-radius: 5px;">
+                    <input type="text" maxlength="1" class="mpin-input form-control" id="mpin2" oninput="moveToNext(this, 'mpin3')" 
+                        onkeydown="moveToPrev(event, 'mpin1')"
+                        style="width: 45px; height: 45px; font-size: 18px; text-align: center; border: 1px solid #ccc; border-radius: 5px;">
+                    <input type="text" maxlength="1" class="mpin-input form-control" id="mpin3" oninput="moveToNext(this, 'mpin4')" 
+                        onkeydown="moveToPrev(event, 'mpin2')"
+                        style="width: 45px; height: 45px; font-size: 18px; text-align: center; border: 1px solid #ccc; border-radius: 5px;">
+                    <input type="text" maxlength="1" class="mpin-input form-control" id="mpin4" 
+                        onkeydown="moveToPrev(event, 'mpin3')"
+                        style="width: 45px; height: 45px; font-size: 18px; text-align: center; border: 1px solid #ccc; border-radius: 5px;">
+                </div>
+            </div>
+        `,
+        showCancelButton: true,
+        confirmButtonText: "Verify",
+        cancelButtonText: "Cancel",
+        customClass: {
+            confirmButton: "swal2-confirm-button",
+            cancelButton: "swal2-cancel-button"
+        },
+        didOpen: () => {
+            document.getElementById("mpin1").focus();
+        },
+        preConfirm: () => {
+            const mpin =
+                document.getElementById("mpin1").value +
+                document.getElementById("mpin2").value +
+                document.getElementById("mpin3").value +
+                document.getElementById("mpin4").value;
+
+            if (mpin.length !== 4) {
+                Swal.showValidationMessage("Please enter a 4-digit MPIN.");
+            }
+            return mpin;
+        },
+    }).then((result) => {
+        if (result.isConfirmed) {
+            const enteredMpin = result.value;
+            const DUMMY_MPIN = "1234"; // Replace with your MPIN verification logic
+
+            if (enteredMpin === DUMMY_MPIN) {
+                Swal.fire({
+                    icon: "success",
+                    title: "MPIN Verified",
+                    text: "The MPIN you entered is correct. Proceeding...",
+                    timer: 1500,
+                    showConfirmButton: false,
+                }).then(() => {
+                    // Update Approval Status and Disable Approve Button
+                    const approvalStatusBtn = document.getElementById("approvalStatusBtn");
+                    const approveButton = document.getElementById("approveButton");
+
+                    approvalStatusBtn.textContent = "Approved";
+                    approvalStatusBtn.classList.remove("pending");
+                    approvalStatusBtn.classList.add("approved");
+                    approveButton.disabled = true;
+                    approveButton.style.opacity = "0.6";
+                    approveButton.style.cursor = "not-allowed";
+                });
+            } else {
+                Swal.fire({
+                    icon: "error",
+                    title: "Invalid MPIN",
+                    text: "The MPIN you entered is incorrect. Please try again.",
+                    timer: 1500,
+                    showConfirmButton: false,
+                });
+            }
+        }
+    });
+}
+// Focus handling for MPIN inputs
+function moveToNext(current, nextId) {
+    if (current.value.length === 1) {
+        const nextInput = document.getElementById(nextId);
+        if (nextInput) {
+            nextInput.focus();
+        }
+    }
+}
+
+function moveToPrev(event, prevId) {
+    if (event.key === "Backspace" && event.target.value === "") {
+        const prevInput = document.getElementById(prevId);
+        if (prevInput) {
+            prevInput.focus();
+        }
+    }
+}
+   </script>
+    <!-- approval status change confirmation alert end -->
+
+<style>
+.swal2-container.swal2-backdrop-show, .swal2-container.swal2-noanimation {
+        background: rgba(0,0,0,.5) !important;
+        backdrop-filter: blur(5px) !important;
+    }
+</style>

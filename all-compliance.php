@@ -54,7 +54,7 @@
                                 data-bs-toggle="offcanvas" data-bs-target="#quoteOffcanvas"
                                 aria-controls="offcanvasExample">
                                 <iconify-icon icon="lets-icons:add-round">
-                                </iconify-icon>Request for a quote
+                                </iconify-icon> Create Job
                             </button>
 
                             <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover hk-navbar-togglable d-sm-inline-block d-none"
@@ -142,10 +142,10 @@
                                                             </div>
                                             <div class="col-md-3">
                                                     <div class="form-group">
-                                                        <label for="vendorCategory" class="form-label">Filter by Vendor
+                                                        <label for="vendorCategory" class="form-label">Filter by Contractor
                                                             Name <span class="RequiredField_badge">*</span></label>
                                                         <select class="form-control select2">
-                                                            <option value="" disabled>Select Vendor</option>
+                                                            <option value="" disabled>Select Contractor</option>
                                                             <option value="John Doe">John Doe</option>
                                                             <option value="Jane Smith">Jane Smith</option>
                                                         </select>
@@ -156,8 +156,8 @@
                                                 <div class="col-lg-3">
 
                                                     <div class="form-group">
-                                                        <label class="form-label">Filter by Job Title</label>
-                                                        <input class="form-control" placeholder="Enter Job Title"
+                                                        <label class="form-label">Filter by Job ID</label>
+                                                        <input class="form-control" placeholder="Enter Job ID"
                                                             value="" type="text">
                                                     </div>
                                                 </div>
@@ -185,6 +185,134 @@
                                 </div>
 
                                 <div class="contact-list-view">
+                                <div class="scrollTabContainerMAin ticketsMainTabs">
+                                    <!-- <button class="scroll-btn prev" type="button">
+                                        <iconify-icon icon="tabler:arrow-left"></iconify-icon>
+                                    </button> -->
+
+                                    <ul class="nav nav-tabs nav-line nav-icon fullwidthCustom_tabsUL nav-light ticketsTabs TicketBoxMain"
+                                        id="scrolableTabs">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-bs-toggle="tab" href="#allEnquiry">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="nav-link-text">Quotation Requested</span>
+                                                    <!-- <span class="numberCount">02</span> -->
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link " data-bs-toggle="tab" href="#ActiveEnquiry">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="nav-link-text">Quotation Pending</span>
+                                                    <!-- <span class="numberCount">06</span> -->
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link " data-bs-toggle="tab" href="#openEnquiry">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="nav-link-text">Quotation Submitted</span>
+                                                    <!-- <span class="numberCount">05</span> -->
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#processingEnquiry">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="nav-link-text">Re-Quote Requested</span>
+                                                    <!-- <span class="numberCount">07</span> -->
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#Enquiry_followup1">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="nav-link-text">In Progress</span>
+                                                    <!-- <span class="numberCount">05</span> -->
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#Enquiry_followup2">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="nav-link-text">Completed</span>
+                                                    <!-- <span class="numberCount">10</span> -->
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <!-- <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#assignedTickets">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="nav-link-text">Assigned Tickets </span>
+                                                    <span class="numberCount">06</span>
+
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#CompletedTickets">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="nav-link-text">Completed Tickets </span>
+                                                    <span class="numberCount">05</span>
+
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#ApprovedTickets">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="nav-link-text">Approved Tickets </span>
+                                                    <span class="numberCount">12</span>
+
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#CancelledTickets">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="nav-link-text">Cancelled Tickets </span>
+                                                    <span class="numberCount">12</span>
+
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#MissedTickets">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="nav-link-text">Missed Appointment</span>
+                                                    <span class="numberCount">08</span>
+
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#archivedtickets">
+                                            <div class="d-flex align-items-center">
+                                                <span class="nav-link-text">Archived Tickets </span>
+
+                                            </div>
+                                        </a>
+                                    </li> -->
+
+                                    </ul>
+
+                                    <!-- <button class="scroll-btn next" type="button">
+                                        <iconify-icon icon="tabler:arrow-right"></iconify-icon>
+                                    </button> -->
+                                </div>
+
+                                <div class="tab-content notpMargin_tab">
+                                <div class="tab-pane fade show active" id="allEnquiry">
+                                    <div class="fullwidthTabInner_content_container">
                                     <table class="table common-datatable nowrap w-100">
                                         <thead>
                                             <tr>
@@ -192,14 +320,8 @@
                                                 <th>Property Name</th>
                                                 <th>Job Title</th>
                                                 <th>Category</th>
-                                                <!-- <th>Status</th> -->
-                                                <th>Vendors</th>
-                                                <!-- <th>Visit Date</th>
-                                                <th>Work Order ID</th>
-                                                <th>Completion Date</th>
-                                                <th>Renewal Date</th>
-                                                <th>Billing Status</th>
-                                                <th>Documents</th> -->
+                                                <th>Contractors</th>
+                                                <th>Status</th>
                                                 <th>Actions</th> <!-- Added Actions Column -->
                                             </tr>
                                         </thead>
@@ -222,7 +344,7 @@
                                                             </button>
                                                         </div>
                                                     </a>
-                                                    <div class="avatar-group avatar-group-sm avatar-group-overlapped morethan1property">
+                                                    <div class="avatar-group avatar-group-sm avatar-group-overlapped morethan1property"  data-bs-toggle="modal" data-bs-target="#manageScheduleModal">
                                                             <div class="avatar avatar-soft-primary avatar-rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="3+ more properties">
                                                                 <span class="initial-wrap">3+</span>
                                                             </div>
@@ -256,20 +378,15 @@
                                                             </div>
                                                             <div class="avatar avatar-soft-danger avatar-rounded"
                                                                 data-bs-toggle="tooltip" data-bs-placement="top"
-                                                                title="" data-bs-original-title="Tooltip text">
+                                                                title="" data-bs-original-title="3 Contractors">
                                                                 <span class="initial-wrap">3+</span>
                                                             </div>
                                                         </div>
                                               
 
                                                 </td>
-                                                <!-- <td>2024-11-30</td>
-                                                <td>WO1234</td>
-                                                <td>2024-12-05</td>
-                                                <td>2025-12-06</td>
-                                                <td>Pending</td>
-                                                <td><a href="documents/D001.pdf" target="_blank">Installation
-                                                        Certificate (D001)</a></td> -->
+                                         
+                                                <td><span class="badge badge-soft-info">Quotation Requested</span></td>
                                                 <td>
                                                     <div class="d-flex align-items-center ActionDropdown">
                                                         <div class="d-flex">
@@ -295,31 +412,7 @@
                                                                 </span>
                                                             </a>
 
-                                                            <!-- <a href="##" data-bs-toggle="modal" data-bs-target="#schedulevisit_modal" class="btn btn-sm commonAddnewButton generateContarct_btn btn-primary ms-3"><span><span class="icon"><span class="feather-icon">
-                                                                                <iconify-icon icon="iconamoon:clock-light">
-                                                                                </iconify-icon>
-                                                                            </span></span><span class="btn-text">Schedule a Visit
-                                                                        </span></span></a> -->
-
-                                                            <!-- Delete Button -->
-                                                            <!-- <button
-                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
-                                                                <span class="icon">
-                                                                    <span class="feather-icon">
-                                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                                            width="24" height="24" viewBox="0 0 24 24"
-                                                                            fill="none" stroke="currentColor"
-                                                                            stroke-width="2" stroke-linecap="round"
-                                                                            stroke-linejoin="round"
-                                                                            class="feather feather-trash">
-                                                                            <polyline points="3 6 5 6 21 6"></polyline>
-                                                                            <path
-                                                                                d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
-                                                                            </path>
-                                                                        </svg>
-                                                                    </span>
-                                                                </span>
-                                                            </button> -->
+                                                       
                                                         </div>
                                                     </div>
                                                 </td>
@@ -344,14 +437,9 @@
                                                 </td>
                                                 <td>Plumbing Repair</td>
                                                 <td>Plumbing Services</td>
-                                                <!-- <td class=""><span class="badge bg-danger">Rejected</span></td> -->
+                                              
                                                 <td>Morgan</td>
-                                                <!-- <td>2024-11-25</td>
-                                                <td>WO1235</td>
-                                                <td>N/A</td>
-                                                <td>N/A</td>
-                                                <td>Not Applicable</td>
-                                                <td>None</td> -->
+                                                <td><span class="badge badge-soft-info">Quotation Requested</span></td>
                                                 <td>
                                                     <div class="d-flex align-items-center ActionDropdown">
                                                         <div class="d-flex">
@@ -377,25 +465,7 @@
                                                                 </span>
                                                             </a>
 
-                                                            <!-- Delete Button -->
-                                                            <!-- <button
-                                                                class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
-                                                                <span class="icon">
-                                                                    <span class="feather-icon">
-                                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                                            width="24" height="24" viewBox="0 0 24 24"
-                                                                            fill="none" stroke="currentColor"
-                                                                            stroke-width="2" stroke-linecap="round"
-                                                                            stroke-linejoin="round"
-                                                                            class="feather feather-trash">
-                                                                            <polyline points="3 6 5 6 21 6"></polyline>
-                                                                            <path
-                                                                                d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
-                                                                            </path>
-                                                                        </svg>
-                                                                    </span>
-                                                                </span>
-                                                            </button> -->
+                                                           
                                                         </div>
                                                     </div>
                                                 </td>
@@ -403,6 +473,883 @@
                                             <!-- Add more rows as needed -->
                                         </tbody>
                                     </table>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade " id="openEnquiry">
+                                    <div class="fullwidthTabInner_content_container">
+                                    <table class="table common-datatable nowrap w-100">
+                                        <thead>
+                                            <tr>
+                                                <th>Job ID</th>
+                                                <th>Property Name</th>
+                                                <th>Job Title</th>
+                                                <th>Category</th>
+                                                <th>Contractors</th>
+                                                <th>Status</th>
+                                                <th>Actions</th> <!-- Added Actions Column -->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="view-compliance-details.php">CJ12345</a></td>
+                                                <td>
+                                                   <div class="morethenone_properties_wrap">
+                                                   <a href="property-details.php">
+                                                        <div class="LongMesage_container">
+                                                            <input
+                                                                class="refuge-collection-input tableLongMessage_Input"
+                                                                value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House"></input>
+                                                            <button class="view-btn tablemessageview_btn" type="button"
+                                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                aria-label="Click to view"
+                                                                data-bs-original-title="Click to view Full Message">
+                                                                <i class="bi bi-eye"></i> Read
+                                                                More
+                                                            </button>
+                                                        </div>
+                                                    </a>
+                                                    <div class="avatar-group avatar-group-sm avatar-group-overlapped morethan1property"  data-bs-toggle="modal" data-bs-target="#manageScheduleModal">
+                                                            <div class="avatar avatar-soft-primary avatar-rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="3+ more properties">
+                                                                <span class="initial-wrap">3+</span>
+                                                            </div>
+                                                        </div>
+                                                   </div>
+                                                </td>
+                                                <td>Fire Alarm Installation</td>
+                                                <td>Electrical Services</td>
+                                                <!-- <td class=""><span class="badge bg-success">Accepted</span></td> -->
+                                                <td>
+
+                                                 <!-- use this if vendors is multiple -->
+                                                        <div class="avatar-group avatar-group-sm avatar-group-overlapped me-3">
+                                                            <div class="avatar avatar-rounded" data-bs-toggle="tooltip"
+                                                                data-bs-placement="top" title=""
+                                                                data-bs-original-title="Katharine">
+                                                                <img src="dist/img/avatar8.jpg" alt="user"
+                                                                    class="avatar-img">
+                                                            </div>
+                                                            <div class="avatar avatar-rounded" data-bs-toggle="tooltip"
+                                                                data-bs-placement="top" title=""
+                                                                data-bs-original-title="Dean">
+                                                                <img src="dist/img/avatar13.jpg" alt="user"
+                                                                    class="avatar-img">
+                                                            </div>
+                                                            <div class="avatar avatar-rounded" data-bs-toggle="tooltip"
+                                                                data-bs-placement="top" title=""
+                                                                data-bs-original-title="Morgan">
+                                                                <img src="dist/img/avatar2.jpg" alt="user"
+                                                                    class="avatar-img">
+                                                            </div>
+                                                            <div class="avatar avatar-soft-danger avatar-rounded"
+                                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                title="" data-bs-original-title="3 Contractors">
+                                                                <span class="initial-wrap">3+</span>
+                                                            </div>
+                                                        </div>
+                                              
+
+                                                </td>
+                                         
+                                                <td><span class="badge badge-soft-success">Quotation Submitted</span></td>
+                                                <td>
+                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                        <div class="d-flex">
+                                                            <!-- View Details Button -->
+                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                data-bs-toggle="tooltip" data-placement="top"
+                                                                title="View compliance Details"
+                                                                href="view-compliance-details.php">
+                                                                <span class="icon">
+                                                                    <span class="feather-icon">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="24" height="24" viewBox="0 0 24 24"
+                                                                            fill="none" stroke="currentColor"
+                                                                            stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            class="feather feather-eye">
+                                                                            <path
+                                                                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
+                                                                            </path>
+                                                                            <circle cx="12" cy="12" r="3"></circle>
+                                                                        </svg>
+                                                                    </span>
+                                                                </span>
+                                                            </a>
+
+                                                       
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="view-compliance-details.php">CJ12346</a></td>
+                                                <td>
+                                                    <a href="property-details.php">
+                                                        <div class="LongMesage_container">
+                                                            <input
+                                                                class="refuge-collection-input tableLongMessage_Input"
+                                                                value="Lobby 002, Flat 1 (Ground Floor, No1), Street View@Central Plaza"></input>
+                                                            <button class="view-btn tablemessageview_btn" type="button"
+                                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                aria-label="Click to view"
+                                                                data-bs-original-title="Click to view Full Message">
+                                                                <i class="bi bi-eye"></i> Read
+                                                                More
+                                                            </button>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td>Plumbing Repair</td>
+                                                <td>Plumbing Services</td>
+                                              
+                                                <td>Morgan</td>
+                                                <td><span class="badge badge-soft-success">Quotation Submitted</span></td>
+                                                <td>
+                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                        <div class="d-flex">
+                                                            <!-- View Details Button -->
+                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                data-bs-toggle="tooltip" data-placement="top"
+                                                                title="View compliance Details"
+                                                                href="view-compliance-details.php">
+                                                                <span class="icon">
+                                                                    <span class="feather-icon">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="24" height="24" viewBox="0 0 24 24"
+                                                                            fill="none" stroke="currentColor"
+                                                                            stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            class="feather feather-eye">
+                                                                            <path
+                                                                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
+                                                                            </path>
+                                                                            <circle cx="12" cy="12" r="3"></circle>
+                                                                        </svg>
+                                                                    </span>
+                                                                </span>
+                                                            </a>
+
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- Add more rows as needed -->
+                                        </tbody>
+                                    </table>
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane fade " id="ActiveEnquiry">
+                                    <div class="fullwidthTabInner_content_container">
+                                    <table class="table common-datatable nowrap w-100">
+                                        <thead>
+                                            <tr>
+                                                <th>Job ID</th>
+                                                <th>Property Name</th>
+                                                <th>Job Title</th>
+                                                <th>Category</th>
+                                                <th>Contractors</th>
+                                                <th>Status</th>
+                                                <th>Actions</th> <!-- Added Actions Column -->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="view-compliance-details.php">CJ12345</a></td>
+                                                <td>
+                                                   <div class="morethenone_properties_wrap">
+                                                   <a href="property-details.php">
+                                                        <div class="LongMesage_container">
+                                                            <input
+                                                                class="refuge-collection-input tableLongMessage_Input"
+                                                                value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House"></input>
+                                                            <button class="view-btn tablemessageview_btn" type="button"
+                                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                aria-label="Click to view"
+                                                                data-bs-original-title="Click to view Full Message">
+                                                                <i class="bi bi-eye"></i> Read
+                                                                More
+                                                            </button>
+                                                        </div>
+                                                    </a>
+                                                    <div class="avatar-group avatar-group-sm avatar-group-overlapped morethan1property"  data-bs-toggle="modal" data-bs-target="#manageScheduleModal">
+                                                            <div class="avatar avatar-soft-primary avatar-rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="3+ more properties">
+                                                                <span class="initial-wrap">3+</span>
+                                                            </div>
+                                                        </div>
+                                                   </div>
+                                                </td>
+                                                <td>Fire Alarm Installation</td>
+                                                <td>Electrical Services</td>
+                                                <!-- <td class=""><span class="badge bg-success">Accepted</span></td> -->
+                                                <td>
+
+                                                 <!-- use this if vendors is multiple -->
+                                                        <div class="avatar-group avatar-group-sm avatar-group-overlapped me-3">
+                                                            <div class="avatar avatar-rounded" data-bs-toggle="tooltip"
+                                                                data-bs-placement="top" title=""
+                                                                data-bs-original-title="Katharine">
+                                                                <img src="dist/img/avatar8.jpg" alt="user"
+                                                                    class="avatar-img">
+                                                            </div>
+                                                            <div class="avatar avatar-rounded" data-bs-toggle="tooltip"
+                                                                data-bs-placement="top" title=""
+                                                                data-bs-original-title="Dean">
+                                                                <img src="dist/img/avatar13.jpg" alt="user"
+                                                                    class="avatar-img">
+                                                            </div>
+                                                            <div class="avatar avatar-rounded" data-bs-toggle="tooltip"
+                                                                data-bs-placement="top" title=""
+                                                                data-bs-original-title="Morgan">
+                                                                <img src="dist/img/avatar2.jpg" alt="user"
+                                                                    class="avatar-img">
+                                                            </div>
+                                                            <div class="avatar avatar-soft-danger avatar-rounded"
+                                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                title="" data-bs-original-title="3 Contractors">
+                                                                <span class="initial-wrap">3+</span>
+                                                            </div>
+                                                        </div>
+                                              
+
+                                                </td>
+                                         
+                                                <td><span class="badge badge-soft-warning">Quotation Pending</span></td>
+                                                <td>
+                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                        <div class="d-flex">
+                                                            <!-- View Details Button -->
+                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                data-bs-toggle="tooltip" data-placement="top"
+                                                                title="View compliance Details"
+                                                                href="view-compliance-details.php">
+                                                                <span class="icon">
+                                                                    <span class="feather-icon">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="24" height="24" viewBox="0 0 24 24"
+                                                                            fill="none" stroke="currentColor"
+                                                                            stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            class="feather feather-eye">
+                                                                            <path
+                                                                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
+                                                                            </path>
+                                                                            <circle cx="12" cy="12" r="3"></circle>
+                                                                        </svg>
+                                                                    </span>
+                                                                </span>
+                                                            </a>
+
+                                                       
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="view-compliance-details.php">CJ12346</a></td>
+                                                <td>
+                                                    <a href="property-details.php">
+                                                        <div class="LongMesage_container">
+                                                            <input
+                                                                class="refuge-collection-input tableLongMessage_Input"
+                                                                value="Lobby 002, Flat 1 (Ground Floor, No1), Street View@Central Plaza"></input>
+                                                            <button class="view-btn tablemessageview_btn" type="button"
+                                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                aria-label="Click to view"
+                                                                data-bs-original-title="Click to view Full Message">
+                                                                <i class="bi bi-eye"></i> Read
+                                                                More
+                                                            </button>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td>Plumbing Repair</td>
+                                                <td>Plumbing Services</td>
+                                              
+                                                <td>Morgan</td>
+                                                <td><span class="badge badge-soft-warning">Quotation Pending</span></td>
+                                                <td>
+                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                        <div class="d-flex">
+                                                            <!-- View Details Button -->
+                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                data-bs-toggle="tooltip" data-placement="top"
+                                                                title="View compliance Details"
+                                                                href="view-compliance-details.php">
+                                                                <span class="icon">
+                                                                    <span class="feather-icon">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="24" height="24" viewBox="0 0 24 24"
+                                                                            fill="none" stroke="currentColor"
+                                                                            stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            class="feather feather-eye">
+                                                                            <path
+                                                                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
+                                                                            </path>
+                                                                            <circle cx="12" cy="12" r="3"></circle>
+                                                                        </svg>
+                                                                    </span>
+                                                                </span>
+                                                            </a>
+
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- Add more rows as needed -->
+                                        </tbody>
+                                    </table>
+                                    
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="processingEnquiry">
+                                    <div class="fullwidthTabInner_content_container">
+                                    <table class="table common-datatable nowrap w-100">
+                                        <thead>
+                                            <tr>
+                                                <th>Job ID</th>
+                                                <th>Property Name</th>
+                                                <th>Job Title</th>
+                                                <th>Category</th>
+                                                <th>Contractors</th>
+                                                <th>Status</th>
+                                                <th>Actions</th> <!-- Added Actions Column -->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="view-compliance-details.php">CJ12345</a></td>
+                                                <td>
+                                                   <div class="morethenone_properties_wrap">
+                                                   <a href="property-details.php">
+                                                        <div class="LongMesage_container">
+                                                            <input
+                                                                class="refuge-collection-input tableLongMessage_Input"
+                                                                value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House"></input>
+                                                            <button class="view-btn tablemessageview_btn" type="button"
+                                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                aria-label="Click to view"
+                                                                data-bs-original-title="Click to view Full Message">
+                                                                <i class="bi bi-eye"></i> Read
+                                                                More
+                                                            </button>
+                                                        </div>
+                                                    </a>
+                                                    <div class="avatar-group avatar-group-sm avatar-group-overlapped morethan1property"  data-bs-toggle="modal" data-bs-target="#manageScheduleModal">
+                                                            <div class="avatar avatar-soft-primary avatar-rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="3+ more properties">
+                                                                <span class="initial-wrap">3+</span>
+                                                            </div>
+                                                        </div>
+                                                   </div>
+                                                </td>
+                                                <td>Fire Alarm Installation</td>
+                                                <td>Electrical Services</td>
+                                                <!-- <td class=""><span class="badge bg-success">Accepted</span></td> -->
+                                                <td>
+
+                                                 <!-- use this if vendors is multiple -->
+                                                        <div class="avatar-group avatar-group-sm avatar-group-overlapped me-3">
+                                                            <div class="avatar avatar-rounded" data-bs-toggle="tooltip"
+                                                                data-bs-placement="top" title=""
+                                                                data-bs-original-title="Katharine">
+                                                                <img src="dist/img/avatar8.jpg" alt="user"
+                                                                    class="avatar-img">
+                                                            </div>
+                                                            <div class="avatar avatar-rounded" data-bs-toggle="tooltip"
+                                                                data-bs-placement="top" title=""
+                                                                data-bs-original-title="Dean">
+                                                                <img src="dist/img/avatar13.jpg" alt="user"
+                                                                    class="avatar-img">
+                                                            </div>
+                                                            <div class="avatar avatar-rounded" data-bs-toggle="tooltip"
+                                                                data-bs-placement="top" title=""
+                                                                data-bs-original-title="Morgan">
+                                                                <img src="dist/img/avatar2.jpg" alt="user"
+                                                                    class="avatar-img">
+                                                            </div>
+                                                            <div class="avatar avatar-soft-danger avatar-rounded"
+                                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                title="" data-bs-original-title="3 Contractors">
+                                                                <span class="initial-wrap">3+</span>
+                                                            </div>
+                                                        </div>
+                                              
+
+                                                </td>
+                                         
+                                                <td><span class="badge badge-soft-info">Re-Quote Requested</span></td>
+                                                <td>
+                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                        <div class="d-flex">
+                                                            <!-- View Details Button -->
+                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                data-bs-toggle="tooltip" data-placement="top"
+                                                                title="View compliance Details"
+                                                                href="view-compliance-details.php">
+                                                                <span class="icon">
+                                                                    <span class="feather-icon">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="24" height="24" viewBox="0 0 24 24"
+                                                                            fill="none" stroke="currentColor"
+                                                                            stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            class="feather feather-eye">
+                                                                            <path
+                                                                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
+                                                                            </path>
+                                                                            <circle cx="12" cy="12" r="3"></circle>
+                                                                        </svg>
+                                                                    </span>
+                                                                </span>
+                                                            </a>
+
+                                                       
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="view-compliance-details.php">CJ12346</a></td>
+                                                <td>
+                                                    <a href="property-details.php">
+                                                        <div class="LongMesage_container">
+                                                            <input
+                                                                class="refuge-collection-input tableLongMessage_Input"
+                                                                value="Lobby 002, Flat 1 (Ground Floor, No1), Street View@Central Plaza"></input>
+                                                            <button class="view-btn tablemessageview_btn" type="button"
+                                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                aria-label="Click to view"
+                                                                data-bs-original-title="Click to view Full Message">
+                                                                <i class="bi bi-eye"></i> Read
+                                                                More
+                                                            </button>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td>Plumbing Repair</td>
+                                                <td>Plumbing Services</td>
+                                              
+                                                <td>Morgan</td>
+                                                <td><span class="badge badge-soft-info">Re-Quote Requested</span></td>
+                                                <td>
+                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                        <div class="d-flex">
+                                                            <!-- View Details Button -->
+                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                data-bs-toggle="tooltip" data-placement="top"
+                                                                title="View compliance Details"
+                                                                href="view-compliance-details.php">
+                                                                <span class="icon">
+                                                                    <span class="feather-icon">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="24" height="24" viewBox="0 0 24 24"
+                                                                            fill="none" stroke="currentColor"
+                                                                            stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            class="feather feather-eye">
+                                                                            <path
+                                                                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
+                                                                            </path>
+                                                                            <circle cx="12" cy="12" r="3"></circle>
+                                                                        </svg>
+                                                                    </span>
+                                                                </span>
+                                                            </a>
+
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- Add more rows as needed -->
+                                        </tbody>
+                                    </table>
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane fade" id="Enquiry_followup1">
+                                    <div class="fullwidthTabInner_content_container">
+                                    <table class="table common-datatable nowrap w-100">
+                                        <thead>
+                                            <tr>
+                                                <th>Job ID</th>
+                                                <th>Property Name</th>
+                                                <th>Job Title</th>
+                                                <th>Category</th>
+                                                <th>Contractors</th>
+                                                <th>Status</th>
+                                                <th>Actions</th> <!-- Added Actions Column -->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="view-compliance-details.php">CJ12345</a></td>
+                                                <td>
+                                                   <div class="morethenone_properties_wrap">
+                                                   <a href="property-details.php">
+                                                        <div class="LongMesage_container">
+                                                            <input
+                                                                class="refuge-collection-input tableLongMessage_Input"
+                                                                value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House"></input>
+                                                            <button class="view-btn tablemessageview_btn" type="button"
+                                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                aria-label="Click to view"
+                                                                data-bs-original-title="Click to view Full Message">
+                                                                <i class="bi bi-eye"></i> Read
+                                                                More
+                                                            </button>
+                                                        </div>
+                                                    </a>
+                                                    <div class="avatar-group avatar-group-sm avatar-group-overlapped morethan1property"  data-bs-toggle="modal" data-bs-target="#manageScheduleModal">
+                                                            <div class="avatar avatar-soft-primary avatar-rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="3+ more properties">
+                                                                <span class="initial-wrap">3+</span>
+                                                            </div>
+                                                        </div>
+                                                   </div>
+                                                </td>
+                                                <td>Fire Alarm Installation</td>
+                                                <td>Electrical Services</td>
+                                                <!-- <td class=""><span class="badge bg-success">Accepted</span></td> -->
+                                                <td>
+
+                                                 <!-- use this if vendors is multiple -->
+                                                        <div class="avatar-group avatar-group-sm avatar-group-overlapped me-3">
+                                                            <div class="avatar avatar-rounded" data-bs-toggle="tooltip"
+                                                                data-bs-placement="top" title=""
+                                                                data-bs-original-title="Katharine">
+                                                                <img src="dist/img/avatar8.jpg" alt="user"
+                                                                    class="avatar-img">
+                                                            </div>
+                                                            <div class="avatar avatar-rounded" data-bs-toggle="tooltip"
+                                                                data-bs-placement="top" title=""
+                                                                data-bs-original-title="Dean">
+                                                                <img src="dist/img/avatar13.jpg" alt="user"
+                                                                    class="avatar-img">
+                                                            </div>
+                                                            <div class="avatar avatar-rounded" data-bs-toggle="tooltip"
+                                                                data-bs-placement="top" title=""
+                                                                data-bs-original-title="Morgan">
+                                                                <img src="dist/img/avatar2.jpg" alt="user"
+                                                                    class="avatar-img">
+                                                            </div>
+                                                            <div class="avatar avatar-soft-danger avatar-rounded"
+                                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                title="" data-bs-original-title="3 Contractors">
+                                                                <span class="initial-wrap">3+</span>
+                                                            </div>
+                                                        </div>
+                                              
+
+                                                </td>
+                                         
+                                                <td><span class="badge badge-soft-review">In Progress</span></td>
+                                                <td>
+                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                        <div class="d-flex">
+                                                            <!-- View Details Button -->
+                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                data-bs-toggle="tooltip" data-placement="top"
+                                                                title="View compliance Details"
+                                                                href="view-compliance-details.php">
+                                                                <span class="icon">
+                                                                    <span class="feather-icon">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="24" height="24" viewBox="0 0 24 24"
+                                                                            fill="none" stroke="currentColor"
+                                                                            stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            class="feather feather-eye">
+                                                                            <path
+                                                                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
+                                                                            </path>
+                                                                            <circle cx="12" cy="12" r="3"></circle>
+                                                                        </svg>
+                                                                    </span>
+                                                                </span>
+                                                            </a>
+
+                                                       
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="view-compliance-details.php">CJ12346</a></td>
+                                                <td>
+                                                    <a href="property-details.php">
+                                                        <div class="LongMesage_container">
+                                                            <input
+                                                                class="refuge-collection-input tableLongMessage_Input"
+                                                                value="Lobby 002, Flat 1 (Ground Floor, No1), Street View@Central Plaza"></input>
+                                                            <button class="view-btn tablemessageview_btn" type="button"
+                                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                aria-label="Click to view"
+                                                                data-bs-original-title="Click to view Full Message">
+                                                                <i class="bi bi-eye"></i> Read
+                                                                More
+                                                            </button>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td>Plumbing Repair</td>
+                                                <td>Plumbing Services</td>
+                                              
+                                                <td>Morgan</td>
+                                                <td><span class="badge badge-soft-review">In Progress</span></td>
+                                                <td>
+                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                        <div class="d-flex">
+                                                            <!-- View Details Button -->
+                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                data-bs-toggle="tooltip" data-placement="top"
+                                                                title="View compliance Details"
+                                                                href="view-compliance-details.php">
+                                                                <span class="icon">
+                                                                    <span class="feather-icon">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="24" height="24" viewBox="0 0 24 24"
+                                                                            fill="none" stroke="currentColor"
+                                                                            stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            class="feather feather-eye">
+                                                                            <path
+                                                                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
+                                                                            </path>
+                                                                            <circle cx="12" cy="12" r="3"></circle>
+                                                                        </svg>
+                                                                    </span>
+                                                                </span>
+                                                            </a>
+
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- Add more rows as needed -->
+                                        </tbody>
+                                    </table>
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane fade" id="Enquiry_followup2">
+                                    <div class="fullwidthTabInner_content_container">
+                                    <table class="table common-datatable nowrap w-100">
+                                        <thead>
+                                            <tr>
+                                                <th>Job ID</th>
+                                                <th>Property Name</th>
+                                                <th>Job Title</th>
+                                                <th>Category</th>
+                                                <th>Contractors</th>
+                                                <th>Status</th>
+                                                <th>Actions</th> <!-- Added Actions Column -->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="view-compliance-details.php">CJ12345</a></td>
+                                                <td>
+                                                   <div class="morethenone_properties_wrap">
+                                                   <a href="property-details.php">
+                                                        <div class="LongMesage_container">
+                                                            <input
+                                                                class="refuge-collection-input tableLongMessage_Input"
+                                                                value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House"></input>
+                                                            <button class="view-btn tablemessageview_btn" type="button"
+                                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                aria-label="Click to view"
+                                                                data-bs-original-title="Click to view Full Message">
+                                                                <i class="bi bi-eye"></i> Read
+                                                                More
+                                                            </button>
+                                                        </div>
+                                                    </a>
+                                                    <div class="avatar-group avatar-group-sm avatar-group-overlapped morethan1property"  data-bs-toggle="modal" data-bs-target="#manageScheduleModal">
+                                                            <div class="avatar avatar-soft-primary avatar-rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="3+ more properties">
+                                                                <span class="initial-wrap">3+</span>
+                                                            </div>
+                                                        </div>
+                                                   </div>
+                                                </td>
+                                                <td>Fire Alarm Installation</td>
+                                                <td>Electrical Services</td>
+                                                <!-- <td class=""><span class="badge bg-success">Accepted</span></td> -->
+                                                <td>
+
+                                                 <!-- use this if vendors is multiple -->
+                                                        <div class="avatar-group avatar-group-sm avatar-group-overlapped me-3">
+                                                            <div class="avatar avatar-rounded" data-bs-toggle="tooltip"
+                                                                data-bs-placement="top" title=""
+                                                                data-bs-original-title="Katharine">
+                                                                <img src="dist/img/avatar8.jpg" alt="user"
+                                                                    class="avatar-img">
+                                                            </div>
+                                                            <div class="avatar avatar-rounded" data-bs-toggle="tooltip"
+                                                                data-bs-placement="top" title=""
+                                                                data-bs-original-title="Dean">
+                                                                <img src="dist/img/avatar13.jpg" alt="user"
+                                                                    class="avatar-img">
+                                                            </div>
+                                                            <div class="avatar avatar-rounded" data-bs-toggle="tooltip"
+                                                                data-bs-placement="top" title=""
+                                                                data-bs-original-title="Morgan">
+                                                                <img src="dist/img/avatar2.jpg" alt="user"
+                                                                    class="avatar-img">
+                                                            </div>
+                                                            <div class="avatar avatar-soft-danger avatar-rounded"
+                                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                title="" data-bs-original-title="3 Contractors">
+                                                                <span class="initial-wrap">3+</span>
+                                                            </div>
+                                                        </div>
+                                              
+
+                                                </td>
+                                         
+                                                <td><span class="badge badge-soft-success">Completed</span></td>
+                                                <td>
+                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                        <div class="d-flex">
+                                                            <!-- View Details Button -->
+                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                data-bs-toggle="tooltip" data-placement="top"
+                                                                title="View compliance Details"
+                                                                href="view-compliance-details.php">
+                                                                <span class="icon">
+                                                                    <span class="feather-icon">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="24" height="24" viewBox="0 0 24 24"
+                                                                            fill="none" stroke="currentColor"
+                                                                            stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            class="feather feather-eye">
+                                                                            <path
+                                                                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
+                                                                            </path>
+                                                                            <circle cx="12" cy="12" r="3"></circle>
+                                                                        </svg>
+                                                                    </span>
+                                                                </span>
+                                                            </a>
+
+                                                       
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="view-compliance-details.php">CJ12346</a></td>
+                                                <td>
+                                                    <a href="property-details.php">
+                                                        <div class="LongMesage_container">
+                                                            <input
+                                                                class="refuge-collection-input tableLongMessage_Input"
+                                                                value="Lobby 002, Flat 1 (Ground Floor, No1), Street View@Central Plaza"></input>
+                                                            <button class="view-btn tablemessageview_btn" type="button"
+                                                                data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                aria-label="Click to view"
+                                                                data-bs-original-title="Click to view Full Message">
+                                                                <i class="bi bi-eye"></i> Read
+                                                                More
+                                                            </button>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td>Plumbing Repair</td>
+                                                <td>Plumbing Services</td>
+                                              
+                                                <td>Morgan</td>
+                                                <td><span class="badge badge-soft-success">Completed</span></td>
+                                                <td>
+                                                    <div class="d-flex align-items-center ActionDropdown">
+                                                        <div class="d-flex">
+                                                            <!-- View Details Button -->
+                                                            <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                data-bs-toggle="tooltip" data-placement="top"
+                                                                title="View compliance Details"
+                                                                href="view-compliance-details.php">
+                                                                <span class="icon">
+                                                                    <span class="feather-icon">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="24" height="24" viewBox="0 0 24 24"
+                                                                            fill="none" stroke="currentColor"
+                                                                            stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            class="feather feather-eye">
+                                                                            <path
+                                                                                d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
+                                                                            </path>
+                                                                            <circle cx="12" cy="12" r="3"></circle>
+                                                                        </svg>
+                                                                    </span>
+                                                                </span>
+                                                            </a>
+
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- Add more rows as needed -->
+                                        </tbody>
+                                    </table>
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane fade" id="assignedTickets">
+                                    <div class="fullwidthTabInner_content_container">
+                                      
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane fade" id="CompletedTickets">
+                                    <div class="fullwidthTabInner_content_container">
+                                      
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane fade" id="ApprovedTickets">
+                                    <div class="fullwidthTabInner_content_container">
+                                        
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane fade" id="CancelledTickets">
+                                    <div class="fullwidthTabInner_content_container">
+                                        
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane fade" id="MissedTickets">
+                                    <div class="fullwidthTabInner_content_container">
+                                    
+                                       
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="archivedtickets">
+                                    <div class="fullwidthTabInner_content_container">
+                                       
+                                    </div>
+
+                                </div>
+
+                            </div>
+                                   
                                 </div>
 
                             </div>
@@ -422,7 +1369,7 @@
     <div class="offcanvas-header custom-canvas-header">
         <div class="canvas-header-title">
             <iconify-icon icon="si:user-duotone"></iconify-icon>
-            Request Compliance Quotation
+            Create Job
         </div>
         <div class="closeCanvasContainer">
             <button type="button" class="canvascloseButton" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -442,7 +1389,7 @@
         <div class="offcanvas-body">
 
             <div class="addingForm_Container">
-                <div class="add-users-modal-body-table-header text-headline-6">Request for a quote for a job</div>
+                <div class="add-users-modal-body-table-header text-headline-6">Create Job</div>
 
                 <div class="formstartcontainer">
                     <div class="row">
@@ -535,18 +1482,18 @@
                        
                         <div class="col-lg-3">
                         <div class="form-group">
-                                            <label class="form-label">All Vendors</label>
+                                            <label class="form-label">All Contractor</label>
                                             <div class="dropdown filterdropDownCustom available-users-dropdown-wrapper" >
                                                 <button class="dropbtn dropdown-toggle dropmenuBtn" type="button"
                                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <span class="selected-count">Select Vendors</span>
+                                                    <span class="selected-count">Select Contractor</span>
                                                     <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
                                                 </button>
                                                 <div
                                                     class="dropdown-menu customdropdownmenu_style available-users-dropdown">
                                                     <div class="filTerSearchMain">
                                                         <input type="text" class="filterclSearch available-users-search"
-                                                            placeholder="Search Vendors....">
+                                                            placeholder="Search Contractor....">
                                                         <iconify-icon icon="basil:search-outline"></iconify-icon>
                                                     </div>
                                                     <div class="sellallitemsMain">
@@ -621,6 +1568,59 @@
 </div>
 <!-- add compliance offcanvas modal end -->
 
+
+<!-- Modal Structure -->
+<div class="modal modal_schedule fade" id="manageScheduleModal" tabindex="-1" aria-labelledby="manageScheduleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="manageScheduleModalLabel">All Properties</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <!-- Form for Adding Time Schedule -->
+            <form id="scheduleForm" action="checkIn.php">
+                <div class="col-lg-12">
+                    <ul class="PropertyList">
+                        <li>
+                            <div class="propertyQuote">
+                                <div class="iconLocation">
+                                    <iconify-icon icon="akar-icons:check-in"></iconify-icon>
+                                </div>
+                                <h6>Bedroom 1 101, Flat 1 (Floor 1, No1), City View@Phoenix House</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="propertyQuote">
+                                <div class="iconLocation">
+                                    <iconify-icon icon="akar-icons:check-in"></iconify-icon>
+                                </div>
+                                <h6>Bedroom 2 102, Flat 2 (Floor 1, No2), Garden View@Phoenix House</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="propertyQuote">
+                                <div class="iconLocation">
+                                    <iconify-icon icon="akar-icons:check-in"></iconify-icon>
+                                </div>
+                                <h6>Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House</h6>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+        <!-- <div class="modal-footer">
+            <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
+                data-bs-dismiss="modal">Close</button>
+            <button type="button" class="canvasSubmit_button commonCanvas_buttonFooter" id="saveScheduleBtn">
+                Save & Send
+            </button>
+        </div> -->
+    </div>
+</div>
+</div>
 <?php include('footer.php') ?>
 
 <!-- filters show hide script -->

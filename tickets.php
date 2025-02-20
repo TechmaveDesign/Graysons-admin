@@ -36,8 +36,11 @@
                                                 </div>
                                             </div>
                                             <div class="media-body">
-                                                <div class="Cardcount-name">Total Stale Tickets</div>
-                                                <div class="NumberCountCard">1082</div>
+                                                <div class="Cardcount-name">Total Active Tickets</div>
+                                                <div class="todayyesterday_tick">
+                                               <div class="NumberCountCard_title">Today : <div class="numberoftickets">12</div> </div>
+                                               <div class="NumberCountCard_title">Yesterday : <div class="numberoftickets">04</div> </div>
+                                               </div>
 
                                             </div>
                                         </div>
@@ -59,7 +62,10 @@
                                             </div>
                                             <div class="media-body">
                                                 <div class="Cardcount-name">Tickets overdue</div>
-                                                <div class="NumberCountCard">800 </div>
+                                                <div class="todayyesterday_tick">
+                                               <div class="NumberCountCard_title">Today : <div class="numberoftickets">12</div> </div>
+                                               <div class="NumberCountCard_title">Yesterday : <div class="numberoftickets">04</div> </div>
+                                               </div>
 
                                             </div>
                                         </div>
@@ -80,7 +86,10 @@
                                             </div>
                                             <div class="media-body">
                                                 <div class="Cardcount-name"> Emergency Tickets</div>
-                                                <div class="NumberCountCard">14 </div>
+                                                <div class="todayyesterday_tick">
+                                               <div class="NumberCountCard_title">Today : <div class="numberoftickets">12</div> </div>
+                                               <div class="NumberCountCard_title">Yesterday : <div class="numberoftickets">04</div> </div>
+                                               </div>
 
                                             </div>
                                         </div>
@@ -102,7 +111,7 @@
                                             <div class="media-body">
                                                 <div class="Cardcount-name"> Completed Tickets</div>
                                                <div class="todayyesterday_tick">
-                                               <div class="NumberCountCard_title">Todays : <div class="numberoftickets">12</div> </div>
+                                               <div class="NumberCountCard_title">Today : <div class="numberoftickets">12</div> </div>
                                                <div class="NumberCountCard_title">Yesterday : <div class="numberoftickets">04</div> </div>
                                                </div>
                                             </div>
@@ -125,7 +134,7 @@
                                             <div class="media-body">
                                                 <div class="Cardcount-name"> In Progress Tickets</div>
                                                <div class="todayyesterday_tick">
-                                               <div class="NumberCountCard_title">Todays : <div class="numberoftickets">12</div> </div>
+                                               <div class="NumberCountCard_title">Today : <div class="numberoftickets">12</div> </div>
                                                <div class="NumberCountCard_title">Yesterday : <div class="numberoftickets">04</div> </div>
                                                </div>
                                             </div>
@@ -148,7 +157,7 @@
                                             <div class="media-body">
                                                 <div class="Cardcount-name"> Assigned Tickets</div>
                                                <div class="todayyesterday_tick">
-                                               <div class="NumberCountCard_title">Todays : <div class="numberoftickets">12</div> </div>
+                                               <div class="NumberCountCard_title">Today : <div class="numberoftickets">12</div> </div>
                                                <div class="NumberCountCard_title">Yesterday : <div class="numberoftickets">04</div> </div>
                                                </div>
                                             </div>
@@ -218,6 +227,14 @@
                                                 <div class="d-flex align-items-center">
                                                     <span class="nav-link-text">All Tickets</span>
                                                     <span class="numberCount">02</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link " data-bs-toggle="tab" href="#ActiveEnquiry">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="nav-link-text">Active Tickets</span>
+                                                    <span class="numberCount">06</span>
                                                 </div>
                                             </a>
                                         </li>
@@ -1453,6 +1470,447 @@
                                                         <td><span
                                                                 class="badge badge-soft-warning my-1 me-2">Pending</span>
                                                         </td>
+                                                        <td>09/04/2024 12:00</td>
+                                                        <td>26/11/2024</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="view-ticket.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        type="button"><span class="icon"><span
+                                                                                class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="teenyicons:eye-outline">
+                                                                                </iconify-icon>
+                                                                            </span></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane fade " id="ActiveEnquiry">
+                                    <div class="fullwidthTabInner_content_container">
+                                        <!-- <div class="docfilterbutton">
+                                            <h2 class="tabinnerTitle">Enquiry Statuses </h2>
+                                        </div> -->
+                                        <div class="contact-list-view">
+                                            <div class="row tickets_cardsnumber">
+
+                                                <div class="col-xl-4 col-lg-6 col-md-12">
+                                                    <div class="card">
+                                                        <a href="running-task.php">
+                                                            <div class="card-body">
+                                                                <div class="prioritycardwrap">
+                                                                    <div class="ticketpriority_card_leftcn">
+                                                                        <div class="mt-0 text-left">
+                                                                            <span class="priorityTitle">Medium Priority
+                                                                            </span>
+                                                                            <h3
+                                                                                class="mb-0 mt-1 text-mediumpriority  fs-25">
+                                                                                42</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="ticketpriority_card_Rightcn">
+                                                                        <div
+                                                                            class="icon1 bg-primary-transparent my-auto ">
+                                                                            <iconify-icon icon="ion:ticket-outline">
+                                                                            </iconify-icon>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-6 col-md-12">
+                                                    <div class="card">
+                                                        <a href="task-hold.php">
+                                                            <div class="card-body">
+                                                                <div class="prioritycardwrap">
+                                                                    <div class="ticketpriority_card_leftcn">
+                                                                        <div class="mt-0 text-left">
+                                                                            <span class="priorityTitle">Low Priority
+                                                                            </span>
+                                                                            <h3 class="mb-0 mt-1 text-warning  fs-25">11
+                                                                            </h3>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="ticketpriority_card_Rightcn">
+                                                                        <div
+                                                                            class="icon1 bg-secondary-transparent my-auto ">
+                                                                            <iconify-icon icon="ion:ticket-outline">
+                                                                            </iconify-icon>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-6 col-md-12">
+                                                    <div class="card">
+                                                        <a href="task-complete.php">
+                                                            <div class="card-body">
+                                                                <div class="prioritycardwrap">
+                                                                    <div class="ticketpriority_card_leftcn">
+                                                                        <div class="mt-0 text-left">
+                                                                            <span class="priorityTitle">High Priority
+                                                                            </span>
+                                                                            <h3 class="mb-0 mt-1 text-success fs-25">38
+                                                                            </h3>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="ticketpriority_card_Rightcn">
+                                                                        <div
+                                                                            class="icon1 bg-success-transparent my-auto ">
+                                                                            <iconify-icon icon="ion:ticket-outline">
+                                                                            </iconify-icon>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <table class="table common-datatable  nowrap w-100 ">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Ticket ID</th>
+                                                        <th>Priority</th>
+                                                        <th>Ticket Title</th>
+                                                        <th>Property</th>
+                                                        <th>Area</th>
+                                                        <th>Department</th>
+                                                        <th>Category</th>
+                                                        <th>Sub Category</th>
+                                                        <th>Ticket Category</th>
+                                                        <th>issued By</th>
+
+                                                        <th>Status</th>
+                                                        <th>Raised On</th>
+                                                        <th>Expected Finish Date</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="view-ticket.php" class="highlightLink">#2073</a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="prioritystatus highPriority">
+                                                                <span
+                                                                    class="highpriority_badge custom_mr_2 dot-label1"></span>
+                                                                <span class="priorityStatus_text">High Priority </span>
+                                                            </div>
+                                                        </td>
+                                                        <td>Routine Cleaning</td>
+                                                        <td>
+                                                            <div class="LongMesage_container">
+                                                                <input
+                                                                    class="refuge-collection-input tableLongMessage_Input"
+                                                                    value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House">
+                                                                <button class="view-btn tablemessageview_btn"
+                                                                    type="button" data-bs-toggle="tooltip"
+                                                                    data-bs-placement="top" aria-label="Click to view"
+                                                                    data-bs-original-title="Click to view Full Message">
+                                                                    <i class="bi bi-eye"></i> Read More
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <td>Manchester</td>
+                                                        <td>Accounts</td>
+                                                        <td>Bathroom</td>
+                                                        <td>Wall</td>
+                                                        <td>Maintenance Ticket</td>
+                                                        <td>
+                                                            <a href="view-user-details.php">
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-head me-2">
+                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                alt="user" class="avatar-img">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <span class="d-block text-high-em">Charlie
+                                                                            Chaplin</span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+
+                                                        <td><span class="badge bg-primary">In Progress</span>
+
+                                                        <td>09/04/2024 17:19</td>
+                                                        <td>25/11/2024</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="view-ticket.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                        type="button"><span class="icon"><span
+                                                                                class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="teenyicons:eye-outline">
+                                                                                </iconify-icon>
+                                                                            </span></span></a>
+                                                                </div>
+
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="view-ticket.php" class="highlightLink">#2023</a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="prioritystatus highPriority">
+                                                                <span
+                                                                    class="highpriority_badge custom_mr_2 dot-label1"></span>
+                                                                <span class="priorityStatus_text">High Priority </span>
+                                                            </div>
+                                                        </td>
+                                                        <td>Routine Cleaning</td>
+                                                        <td>
+                                                            <div class="LongMesage_container">
+                                                                <input
+                                                                    class="refuge-collection-input tableLongMessage_Input"
+                                                                    value="Bedroom 2 101, Flat 7 (Floor 2, No7), Garden View@Emerald Apartments">
+                                                                <button class="view-btn tablemessageview_btn"
+                                                                    type="button" data-bs-toggle="tooltip"
+                                                                    data-bs-placement="top" aria-label="Click to view"
+                                                                    data-bs-original-title="Click to view Full Message">
+                                                                    <i class="bi bi-eye"></i> Read More
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <td>Sunderland</td>
+                                                        <td>Maintenance</td>
+                                                        <td>Living Room</td>
+                                                        <td>Floor</td>
+                                                        <td>Maintenance Ticket</td>
+                                                        <td>
+                                                            <a href="view-user-details.php">
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-head me-2">
+                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                alt="user" class="avatar-img">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <span class="d-block text-high-em">Dean
+                                                                            Shaw</span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+
+                                                        <td><span class="badge bg-primary">In Progress</span>
+                                                        <td>09/04/2024 14:45</td>
+                                                        <td>27/11/2024</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="view-ticket.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        type="button"><span class="icon"><span
+                                                                                class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="teenyicons:eye-outline">
+                                                                                </iconify-icon>
+                                                                            </span></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><a href="view-ticket.php" class="highlightLink">#2054</a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="prioritystatus highPriority">
+                                                                <span
+                                                                    class="highpriority_badge custom_mr_2 dot-label1"></span>
+                                                                <span class="priorityStatus_text">High Priority </span>
+                                                            </div>
+                                                        </td>
+                                                        <td>Deep Cleaning</td>
+                                                        <td>
+                                                            <div class="LongMesage_container">
+                                                                <input
+                                                                    class="refuge-collection-input tableLongMessage_Input"
+                                                                    value="Kitchen 206, Flat 12 (Floor 3, No12), Sea View@Oceanic Towers">
+                                                                <button class="view-btn tablemessageview_btn"
+                                                                    type="button" data-bs-toggle="tooltip"
+                                                                    data-bs-placement="top" aria-label="Click to view"
+                                                                    data-bs-original-title="Click to view Full Message">
+                                                                    <i class="bi bi-eye"></i> Read More
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <td>Bristol</td>
+                                                        <td>Operations</td>
+                                                        <td>Kitchen</td>
+                                                        <td>Ceiling</td>
+                                                        <td>General Enquiry Ticket</td>
+                                                        <td>
+                                                            <a href="view-user-details.php">
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-head me-2">
+                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                alt="user" class="avatar-img">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <span class="d-block text-high-em">Tom
+                                                                            Cruz</span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+
+                                                        <td><span class="badge bg-primary">In Progress</span>
+                                                        <td>08/04/2024 11:30</td>
+                                                        <td>29/11/2024</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="view-ticket.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        type="button"><span class="icon"><span
+                                                                                class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="teenyicons:eye-outline">
+                                                                                </iconify-icon>
+                                                                            </span></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><a href="view-ticket.php" class="highlightLink">#1273</a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="prioritystatus MediumPriority">
+                                                                <span
+                                                                    class="Mediumpriority_badge custom_mr_2 dot-label1"></span>
+                                                                <span class="priorityStatus_text">Medium Priority
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td>General Inspection</td>
+                                                        <td>
+                                                            <div class="LongMesage_container">
+                                                                <input
+                                                                    class="refuge-collection-input tableLongMessage_Input"
+                                                                    value="Lobby 002, Flat 1 (Ground Floor, No1), Street View@Central Plaza">
+                                                                <button class="view-btn tablemessageview_btn"
+                                                                    type="button" data-bs-toggle="tooltip"
+                                                                    data-bs-placement="top" aria-label="Click to view"
+                                                                    data-bs-original-title="Click to view Full Message">
+                                                                    <i class="bi bi-eye"></i> Read More
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <td>Kitchen</td>
+                                                        <td>Security</td>
+                                                        <td>Lobby</td>
+                                                        <td>Windows</td>
+                                                        <td>Maintenance Ticket</td>
+                                                        <td>
+                                                            <a href="view-user-details.php">
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-head me-2">
+                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                alt="user" class="avatar-img">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <span class="d-block text-high-em">Huma
+                                                                            Therman</span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+
+                                                        <td><span class="badge bg-primary">In Progress</span>
+                                                        </td>
+                                                        <td>09/04/2024 09:15</td>
+                                                        <td>23/11/2024</td>
+                                                        <td>
+                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                <div class="d-flex">
+                                                                    <a href="view-ticket.php"
+                                                                        class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                                        type="button"><span class="icon"><span
+                                                                                class="feather-icon">
+                                                                                <iconify-icon
+                                                                                    icon="teenyicons:eye-outline">
+                                                                                </iconify-icon>
+                                                                            </span></span></a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><a href="view-ticket.php" class="highlightLink">#2543</a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="prioritystatus lowPriority">
+                                                                <span
+                                                                    class="lowpriority_badge custom_mr_2 dot-label1"></span>
+                                                                <span class="priorityStatus_text">Low Priority </span>
+                                                            </div>
+                                                        </td>
+                                                        <td>Emergency Repair</td>
+                                                        <td>
+                                                            <div class="LongMesage_container">
+                                                                <input
+                                                                    class="refuge-collection-input tableLongMessage_Input"
+                                                                    value="Hallway 305, Flat 15 (Floor 3, No15), River View@Riverside Residences">
+                                                                <button class="view-btn tablemessageview_btn"
+                                                                    type="button" data-bs-toggle="tooltip"
+                                                                    data-bs-placement="top" aria-label="Click to view"
+                                                                    data-bs-original-title="Click to view Full Message">
+                                                                    <i class="bi bi-eye"></i> Read More
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <td>Bedroom</td>
+                                                        <td>Maintenance</td>
+                                                        <td>Hallway</td>
+                                                        <td>Door</td>
+                                                        <td>General Enquiry Ticket</td>
+                                                        <td>
+                                                            <a href="view-user-details.php">
+                                                                <div class="media align-items-center">
+                                                                    <div class="media-head me-2">
+                                                                        <div class="avatar avatar-xs avatar-rounded">
+                                                                            <img src="dist/img/newimages/users/userdummy.png"
+                                                                                alt="user" class="avatar-img">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="media-body">
+                                                                        <span class="d-block text-high-em">Danial
+                                                                            Craig</span>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+
+                                                        <td><span class="badge bg-primary">In Progress</span>
                                                         <td>09/04/2024 12:00</td>
                                                         <td>26/11/2024</td>
                                                         <td>
@@ -5586,7 +6044,7 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label class="form-label">Ares</label>
+                                <label class="form-label">Area</label>
                                 <select name="" id="" class="form-control select2">
                                     <option disabled="" selected="" value="">Please Select...</option>
                                     <option value="Bedroom">Bedroom</option>
@@ -5597,8 +6055,44 @@
 
                             </div>
                         </div>
-
                         <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="form-label">Unit</label>
+                                <select name="" id="" class="form-control select2">
+                                    <option disabled="" selected="" value="">Please Select...</option>
+                                    <option value="Bedroom">Studio</option>
+                                    <option value="Kitchen">Flat/Appartment</option>
+                                    <option value="Bathroom">Room</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="form-label">Sub Unit</label>
+                                <select name="" id="" class="form-control select2">
+                                    <option disabled="" selected="" value="">Please Select...</option>
+                                    <option value="Bedroom">Insuite</option>
+                                    <option value="Kitchen">Nonsuite</option>
+                                   
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="form-label">Sub Sub Unit</label>
+                                <select name="" id="" class="form-control select2">
+                                    <option disabled="" selected="" value="">Please Select...</option>
+                                    <option value="Bedroom">Studio-001</option>
+                                    <option value="Kitchen">Studi-o002</option>
+                                    <option value="Kitchen">Studi-o003</option>
+                                    <option value="Kitchen">Studio-004</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-3">
                             <div class="form-group">
                                 <label class="form-label">Category</label>
                                 <select name="" id="" class="form-control select2">
@@ -5697,8 +6191,20 @@
                                 </select>
 
                             </div>
-                        </div>
+                        </div> -->
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="form-label">Ticket Category</label>
+                                <select name="" id="" class="form-control select2">
+                                    <option disabled="" selected="" value="">Please Select...</option>
+                                    <option value="General Enquiry Ticket">General Enquiry Ticket</option>
+                                    <option value="Maintenance Ticket">Maintenance Ticket</option>
+                                    <option value="Compliance Ticket">Compliance Ticket</option>
 
+                                </select>
+
+                            </div>
+                        </div>
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label class="form-label">Sub Category</label>
@@ -5717,22 +6223,11 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label class="form-label">Ticket Category</label>
-                                <select name="" id="" class="form-control select2">
-                                    <option disabled="" selected="" value="">Please Select...</option>
-                                    <option value="General Enquiry Ticket">General Enquiry Ticket</option>
-                                    <option value="Maintenance Ticket">Maintenance Ticket</option>
-
-                                </select>
-
-                            </div>
-                        </div>
+                        
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label class="form-label">User Type</label>
+                                <label class="form-label">Reported By</label>
                                 <select name="" id="" class="form-control select2">
                                     <option disabled="" selected="" value="">Please Select...</option>
                                     <option value="Landlord">Landlord</option>
@@ -5745,7 +6240,7 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label class="form-label">User Name</label>
+                                <label class="form-label">Property Manager</label>
                                 <select name="" id="" class="form-control select2">
                                     <option disabled="" selected="" value="">Please Select...</option>
                                     <option value="1">Danial Craig</option>

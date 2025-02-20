@@ -29,7 +29,7 @@
                         <div class="d-flex align-items-center">
                             <div class="dropdown">
                                 <a class="contactapp-title link-dark" href="#" role="button">
-                                    <h1>Vendors</h1>
+                                    <h1>Contractors</h1>
                                 </a>
 
                             </div>
@@ -63,7 +63,7 @@
                                                 <line x1="12" y1="5" x2="12" y2="19"></line>
                                                 <line x1="5" y1="12" x2="19" y2="12"></line>
                                             </svg></span></span><span class="btn-text">Add new
-                                        Vendor</span></span></button>
+                                            Contractor</span></span></button>
 
                             <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover hk-navbar-togglable d-sm-inline-block d-none"
                                 href="#" data-bs-toggle="tooltip" data-placement="top" title=""
@@ -205,7 +205,7 @@
                                                         <tr>
 
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="vendor-users-detail.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -224,7 +224,7 @@
                                                             <td class="">morgan@jampack.com</td>
                                                             <td>+145 52 5689</td>
 
-                                                            <td>Vendor</td>
+                                                            <td>Contractor</td>
                                                             <td>13 Jan, 2020</td>
 
                                                             <td><span
@@ -237,8 +237,8 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
-                                                                            href="view-user-details.php"><span
+                                                                            data-bs-original-title="View Contractor Details"
+                                                                            href="vendor-users-detail.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
                                                                                         data-feather="eye"></i></span></span></a>
@@ -256,7 +256,7 @@
                                                         <tr>
 
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="vendor-users-detail.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -275,7 +275,7 @@
                                                             <td class="">huma@clariesup.au</td>
                                                             <td>+234 48 2365</td>
 
-                                                            <td>Vendor</td>
+                                                            <td>Contractor</td>
                                                             <td>13 Jan, 2020</td>
                                                             <td><span
                                                                     class="badge badge-soft-success  my-1  me-2">Active</span>
@@ -286,8 +286,8 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
-                                                                            href="view-user-details.php"><span
+                                                                            data-bs-original-title="View Contractor Details"
+                                                                            href="vendor-users-detail.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
                                                                                         data-feather="eye"></i></span></span></a>
@@ -304,7 +304,7 @@
                                                         <tr>
 
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="vendor-users-detail.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -323,7 +323,7 @@
                                                             <td class="">charlie@leernoca.monster</td>
                                                             <td>+741 56 7896</td>
 
-                                                            <td>Vendor</td>
+                                                            <td>Contractor</td>
                                                             <td>13 Jan, 2019</td>
                                                             <td><span
                                                                     class="badge badge-soft-success  my-1  me-2">Active</span>
@@ -334,8 +334,8 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
-                                                                            href="view-user-details.php"><span
+                                                                            data-bs-original-title="View Contractor Details"
+                                                                            href="vendor-users-detail.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
                                                                                         data-feather="eye"></i></span></span></a>
@@ -353,7 +353,7 @@
                                                         <tr>
 
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="vendor-users-detail.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -371,7 +371,7 @@
                                                             </td>
                                                             <td class="">winston@worthniza.ga</td>
                                                             <td>+145 52 5463</td>
-                                                            <td>Vendor</td>
+                                                            <td>Contractor</td>
                                                             <td>13 Jan, 2020</td>
                                                             <td><span
                                                                     class="badge badge-soft-success  my-1  me-2">Active</span>
@@ -382,8 +382,8 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
-                                                                            href="view-user-details.php"><span
+                                                                            data-bs-original-title="View Contractor Details"
+                                                                            href="vendor-users-detail.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
                                                                                         data-feather="eye"></i></span></span></a>
@@ -425,7 +425,7 @@
                                                         <tr>
 
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="vendor-users-detail.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -452,8 +452,8 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
-                                                                            href="view-user-details.php"><span
+                                                                            data-bs-original-title="View Contractor Details"
+                                                                            href="vendor-users-detail.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
                                                                                         data-feather="eye"></i></span></span></a>
@@ -466,7 +466,7 @@
                                                         <tr>
 
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="vendor-users-detail.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -492,8 +492,8 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
-                                                                            href="view-user-details.php"><span
+                                                                            data-bs-original-title="View Contractor Details"
+                                                                            href="vendor-users-detail.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
                                                                                         data-feather="eye"></i></span></span></a>
@@ -506,7 +506,7 @@
                                                         <tr>
 
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="vendor-users-detail.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -532,8 +532,8 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
-                                                                            href="view-user-details.php"><span
+                                                                            data-bs-original-title="View Contractor Details"
+                                                                            href="vendor-users-detail.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
                                                                                         data-feather="eye"></i></span></span></a>
@@ -546,7 +546,7 @@
                                                         <tr>
 
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="vendor-users-detail.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -572,8 +572,8 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
-                                                                            href="view-user-details.php"><span
+                                                                            data-bs-original-title="View Contractor Details"
+                                                                            href="vendor-users-detail.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
                                                                                         data-feather="eye"></i></span></span></a>
@@ -587,7 +587,7 @@
                                                         <tr>
 
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="vendor-users-detail.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -613,8 +613,8 @@
                                                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
                                                                             data-bs-toggle="tooltip"
                                                                             data-placement="top" title=""
-                                                                            data-bs-original-title="View User Details"
-                                                                            href="view-user-details.php"><span
+                                                                            data-bs-original-title="View Contractor Details"
+                                                                            href="vendor-users-detail.php"><span
                                                                                 class="icon"><span
                                                                                     class="feather-icon"><i
                                                                                         data-feather="eye"></i></span></span></a>
@@ -648,7 +648,7 @@
                                                     <tbody>
                                                         <tr>
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="vendor-users-detail.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -685,7 +685,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="vendor-users-detail.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -724,7 +724,7 @@
 
                                                         <tr>
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="vendor-users-detail.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -763,7 +763,7 @@
 
                                                         <tr>
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="vendor-users-detail.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -802,7 +802,7 @@
 
                                                         <tr>
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="vendor-users-detail.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -841,7 +841,7 @@
 
                                                         <tr>
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="vendor-users-detail.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -880,7 +880,7 @@
 
                                                         <tr>
                                                             <td>
-                                                                <a href="view-user-details.php">
+                                                                <a href="vendor-users-detail.php">
                                                                     <div class="media align-items-center">
                                                                         <div class="media-head me-2">
                                                                             <div
@@ -944,7 +944,7 @@
     <div class="offcanvas-header custom-canvas-header">
         <div class="canvas-header-title">
             <iconify-icon icon="si:user-duotone"></iconify-icon>
-            Add New Vendor
+            Add New Contractor
         </div>
         <div class="closeCanvasContainer">
             <button type="button" class="canvascloseButton" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -964,20 +964,25 @@
         <div class="offcanvas-body">
 
             <div class="addingForm_Container">
-                <div class="add-users-modal-body-table-header text-headline-6">Add Vendor Details</div>
+                <div class="add-users-modal-body-table-header text-headline-6">Add Contractor Details</div>
 
                 <div class="formstartcontainer">
                     <div class="row">
-
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <div class="form-group">
-                                <label for="vendorName" class="form-label">Vendor Name <span
+                                <label for="vendorName" class="form-label">First Name <span
                                         class="RequiredField_badge">*</span></label>
                                 <input type="text" class="form-control" id="vendorName" placeholder="Enter vendor name">
                             </div>
                         </div>
-
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <label for="vendorName" class="form-label">Last Name <span
+                                        class="RequiredField_badge">*</span></label>
+                                <input type="text" class="form-control" id="vendorName" placeholder="Enter vendor name">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
                             <div class="form-group">
                                 <label for="vendorEmail" class="form-label">Email Address <span
                                         class="RequiredField_badge">*</span></label>
@@ -986,9 +991,9 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <div class="form-group">
-                                <label class="form-label">Contact
+                                <label class="form-label">Mobile
                                     Number</label>
                                 <div class="pn-select" id="js_pn-select" style="--prefix-length: 2">
                                     <!-- Selected prefix -->
@@ -1042,32 +1047,26 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="form-group">
-                                <label for="Contact" class="form-label"> Alt Contact Number</label>
+                                <label for="Contact" class="form-label">Home Phone</label>
                                 <input type="phone" class="form-control" id="Contact">
                             </div>
 
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="form-group">
-                                <label for="addressline1" class="form-label"> Address Line 1 <span
+                                <label for="addressline1" class="form-label"> Address <span
                                         class="RequiredField_badge">*</span></label>
                                 <input type="text" class="form-control" id="addressline1">
                             </div>
 
                         </div>
 
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="addressline2" class="form-label"> Address Line 2</label>
-                                <input type="text" class="form-control" id="addressline2">
-                            </div>
 
-                        </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <label for="Town/City" class="form-label"> Town/City <span
                                         class="RequiredField_badge">*</span></label>
@@ -1076,7 +1075,7 @@
 
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <label for="County" class="form-label"> Country <span
                                         class="RequiredField_badge">*</span></label>
@@ -1085,7 +1084,7 @@
 
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <div class="form-group">
                                 <label for="Postcode" class="form-label"> Postcode <span
                                         class="RequiredField_badge">*</span></label>
@@ -1093,41 +1092,95 @@
                             </div>
 
                         </div>
+                        <div class="col-lg-12">
+                        <h6 class="FormSecTitle">Emergency Contact Details</h6>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Contact" class="form-label">Emergency Contact Name</label>
+                                <input type="text" class="form-control" id="Contact">
+                            </div>
 
-                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Contact" class="form-label">Home Phone</label>
+                                <input type="phone" class="form-control" id="Contact">
+                            </div>
+
+                        </div>
+                        <div class="col-lg-12">
+                        <h6 class="FormSecTitle">Company Details</h6>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Contact" class="form-label">Company Name</label>
+                                <input type="text" class="form-control" id="Contact">
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Contact" class="form-label">Company Address</label>
+                                <input type="text" class="form-control" id="Contact">
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Contact" class="form-label">Work Phone Number</label>
+                                <input type="text" class="form-control" id="Contact">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Contact" class="form-label">VAT Number</label>
+                                <input type="text" class="form-control" id="Contact">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Contact" class="form-label">Company number</label>
+                                <input type="text" class="form-control" id="Contact">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label for="vendorCategory" class="form-label">Category <span
                                         class="RequiredField_badge">*</span></label>
                                 <select class="form-control vendor-category-select select2" required>
                                     <option value="" disabled>Select category</option>
-                                    <option value="Electrical Services">Electrical Services</option>
-                                    <option value="Plumbing Services">Plumbing Services</option>
-                                    <option value="Catering Services">Catering Services</option>
-                                    <option value="Cleaning Services">Cleaning Services</option>
+                                    <option value="Fire Safety">Fire Safety</option>
+                                    <option value="Electrician">Electrician</option>
+                                    <option value="Information Technology (IT)">Information Technology (IT) </option>
+                                    <option value="Carpenter">Carpenter</option>
                                     <option value="Other">Other</option>
                                 </select>
                             </div>
 
                         </div>
-
-                        <div class="col-lg-4 other-category-div" style="display: none;">
+                        <div class="col-md-3" id="otherFields">
                             <div class="form-group">
-                                <label for="otherCategoryInput" class="form-label">Other Category</label>
-                                <input type="text" class="form-control other-category-input"
-                                    placeholder="Enter other category">
+                                <label for="Contact" class="form-label">Other(Please Specify)</label>
+                                <input type="text" class="form-control" id="Contact">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Contact" class="form-label">Sub-Category</label>
+                                <input type="text" class="form-control" id="Contact">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label class="form-label">Upload Attachments</label>
+                                <input type="file" class="filepond" id="imageInput" name="imageInput" multiple
+                                    data-max-file-size="3MB" data-max-files="5">
                             </div>
                         </div>
 
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="vendorServiceArea" class="form-label">Service Area <span
-                                        class="RequiredField_badge">*</span></label>
-                                <input type="text" class="form-control" id="vendorServiceArea"
-                                    placeholder="Enter service area" required>
-                            </div>
-                        </div>
 
-                    </div>
+                        </div>
                 </div>
 
             </div>
@@ -1242,3 +1295,100 @@
 <script src="dist/customplugins/phonecountry/list.min.js"></script>
 <script src="dist/customplugins/phonecountry/phone-with-country.js"></script>
 <!-- phone number with country code custom code js and css end-->
+
+<script>
+    $(document).ready(function () {
+        // Initialize Select2
+        $('.vendor-category-select').select2();
+
+        // Hide otherFields by default
+        $('#otherFields').hide();
+
+        // Listen for change event on select2 dropdown
+        $('.vendor-category-select').on('change', function () {
+            if ($(this).val() === "Other") {
+                $('#otherFields').show();
+            } else {
+                $('#otherFields').hide();
+            }
+        });
+    });
+</script>
+
+<!-- multiple video File Uploader js -->
+<!-- NOTE: Dont add this code in footer section -->
+<!-- filepond for videos uploader -->
+<link href="dist/customplugins/file-uploader/filepond.css" rel="stylesheet">
+<link href="dist/customplugins/file-uploader/filepond-plugin-media-preview.min.css" rel="stylesheet">
+<script src="dist/customplugins/file-uploader/filepond.js"></script>
+<script src="dist/customplugins/file-uploader/filepond-plugin-file-validate-type.js"></script>
+<script src="dist/customplugins/file-uploader/filepond-plugin-media-preview.min.js"></script>
+<script src="dist/customplugins/file-uploader/lg-video.min.js"></script>
+<!-- filepond for images uploader -->
+<link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
+<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+<script src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.js"></script>
+
+<!-- filepond video js -->
+<!-- <script>
+    // Register the plugins
+    FilePond.registerPlugin(
+        FilePondPluginFileValidateType,
+        FilePondPluginMediaPreview
+    );
+    // Create a FilePond instance
+    const inputElement = document.querySelector('#videoInput');
+    const pond = FilePond.create(inputElement, {
+        acceptedFileTypes: ['video/*'],
+        fileValidateTypeDetectType: (source, type) => new Promise((resolve, reject) => {
+            resolve(type);
+        })
+    });
+    // Optional: FilePond configuration
+    FilePond.setOptions({
+        allowMultiple: true,
+        maxFiles: 10
+    });
+    // Handle video previews
+    pond.on('addfile', (error, file) => {
+        if (error) {
+            console.error('Error adding file', error);
+            return;
+        }
+    });
+</script> -->
+<!-- filepond video js end -->
+
+<!-- filepod image uploader start-->
+<script>
+    // Register the plugins
+    FilePond.registerPlugin(
+        FilePondPluginImagePreview,
+        FilePondPluginFileValidateSize,
+        FilePondPluginFileValidateType
+    );
+    // Turn all file input elements into ponds
+    FilePond.create(document.querySelector('#imageInput'), {
+        acceptedFileTypes: ['image/*'],
+        labelIdle: 'Drag & Drop your images or <span class="filepond--label-action">Browse</span>',
+        server: {
+            // configure your server endpoints here
+            url: '/upload',
+            process: {
+                url: './process',
+                method: 'POST',
+                headers: {
+                    'x-customheader': 'Hello World'
+                },
+                withCredentials: false,
+                onload: (response) => response.key,
+                onerror: (response) => response.data,
+                ondata: (formData) => {
+                    formData.append('Hello', 'World');
+                    return formData;
+                }
+            },
+            revert: './revert'
+        }
+    });
+</script>

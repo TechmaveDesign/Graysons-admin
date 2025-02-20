@@ -66823,8 +66823,8 @@ div.hopscotch-bubble .hopscotch-bubble-container .hopscotch-actions .hopscotch-n
   color: #298DFF;
 }
 .avatar.avatar-soft-primary > .initial-wrap {
-  background-color: #ebf5f5 !important;
-  color: #FBB70B;
+  background-color: #f3f6f9 !important;
+  color: #262625;
 }
 .avatar.avatar-soft-teal > .initial-wrap {
   background-color: #ebf5f5 !important;
@@ -67425,8 +67425,8 @@ div.hopscotch-bubble .hopscotch-bubble-container .hopscotch-actions .hopscotch-n
   border-color: #edfcfe;
 }
 .badge.badge-soft-info {
-  background: #edfcfe;
-  color: #18DDEF;
+  background: #f4faff;
+  color: #1096ff;
 }
 .badge.badge-soft-info.badge-indicator-processing:after {
   border-color: #edfcfe;

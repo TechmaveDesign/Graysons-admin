@@ -10,7 +10,7 @@
 </li>
 <li class="nav-item ">
     <a href="compliance-vendors.php" class="nav-link" data-key="inspections"><span
-            class="nav-link-text">Vendors</span></a>
+            class="nav-link-text">Contractors</span></a>
 </li>
 <li class="nav-item ">
     <a href="compliance-documents.php" class="nav-link" data-key="inspections"><span

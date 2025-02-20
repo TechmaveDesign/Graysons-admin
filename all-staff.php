@@ -28,7 +28,7 @@
                         <div class="d-flex align-items-center">
                             <div class="dropdown">
                                 <a class="contactapp-title link-dark" href="#" role="button">
-                                    <h1>All Staff</h1>
+                                    <h1>Staffs</h1>
                                 </a>
 
                             </div>
@@ -79,7 +79,7 @@
 <li class="nav-item">
     <a class="nav-link active" data-bs-toggle="tab" href="#AllStaffTab">
         <div class="d-flex align-items-center">
-            <span class="nav-link-text">All Staff</span>
+            <span class="nav-link-text">Active Staff</span>
         </div>
     </a>
 </li>

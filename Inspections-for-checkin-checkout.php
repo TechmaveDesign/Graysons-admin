@@ -138,6 +138,7 @@
                                             <th>Contract Start Date</th>
                                             <th>Inspection Date</th>
                                             <th>End Date</th>
+                                            <th>Status</th>
                                             <!-- <th>Actions</th> -->
                                         </tr>
                                     </thead>
@@ -165,6 +166,7 @@
                                             <td>23/04/2023</td>
                                             <td>10/05/2023</td>
                                             <td>15/06/2023</td>
+                                            <td><span class="badge badge-soft-success">Completed</span></td>
 
                                             <!-- <td>
                                                 <div class="d-flex align-items-center ActionDropdown">
@@ -205,7 +207,7 @@
                                             <td>15/03/2023</td>
                                             <td>25/04/2023</td>
                                             <td>28/05/2023</td>
-                                           
+                                            <td><span class="badge badge-soft-success">Completed</span></td>
                                         </tr>
 
                                         <tr>
@@ -231,7 +233,7 @@
                                             <td>01/02/2023</td>
                                             <td>14/03/2023</td>
                                             <td>18/04/2023</td>
-                                           
+                                            <td><span class="badge badge-soft-review">In Progress</span></td>
                                         </tr>
 
                                         <tr>
@@ -257,7 +259,7 @@
                                             <td>10/01/2023</td>
                                             <td>20/02/2023</td>
                                             <td>23/03/2023</td>
-                                           
+                                            <td><span class="badge badge-soft-review">In Progress</span></td>
                                         </tr>
 
                                         <tr>
@@ -283,7 +285,7 @@
                                             <td>05/06/2023</td>
                                             <td>15/07/2023</td>
                                             <td>18/08/2023</td>
-                                           
+                                            <td><span class="badge badge-soft-review">In Progress</span></td>
                                         </tr>
 
                                         <tr>
@@ -310,7 +312,7 @@
                                             <td>12/04/2023</td>
                                             <td>22/05/2023</td>
                                             <td>25/06/2023</td>
-                                          
+                                            <td><span class="badge badge-soft-success">Completed</span></td>
                                         </tr>
 
                                     </tbody>

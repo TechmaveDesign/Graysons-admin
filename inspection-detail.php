@@ -33,12 +33,12 @@
                         <div class="d-flex align-items-center">
                             <div class="dropdown">
                                 <a class="contactapp-title link-dark" href="##" role="button">
-                                    <h1>All Properties Quotations</h1>
+                                    <h1>Inspection Detail</h1>
                                 </a>
 
                             </div>
                             <div class=" ms-3">
-                                <a href="view-compliance-details.php"
+                                <a href="inspection-schedules.php"
                                     class="btn btn-sm cmnbackbtn btn-outline-secondary ">
                                     <iconify-icon icon="line-md:list-3"></iconify-icon> Back
                                 </a>
@@ -68,7 +68,7 @@
                         </div>
                     </header>
 
-                    <form action="view-all-property-quotations.php" method="">
+                    <form action="view-contract-details.php" method="">
                         <div class="contact-body">
                             <div class="fullwidthDesktopTabs MobileScrollShow " id="nopaddingTop">
                                 <button class="scroll-btn prev" type="button">
@@ -81,7 +81,7 @@
                                     <li class="nav-item">
                                         <a class="nav-link active" data-bs-toggle="tab" href="#Certificate_Report">
                                             <div class="d-flex align-items-center">
-                                                <span class="nav-link-text">All Properties Quotations</span>
+                                                <span class="nav-link-text">Inspection Detail</span>
                                             </div>
                                         </a>
                                     </li>
@@ -119,21 +119,29 @@
                                         <div class="tab-pane fade show active" id="Certificate_Report">
 
                                             <div class="fullwidthTabInner_content_container">
-                                                <div class="card card-border mb-lg-4 mb-3">
+                                            <div class="card card-border mb-lg-4 mb-3">
                                                     <div class="card-header card-header-action">
                                                         <div class="media align-items-center">
                                                             <div class="media-head me-2">
-                                                                <div class="avatar avatar-sm avatar-rounded">
-                                                                    <img src="dist/img/newimages/users/userdummy.png"
-                                                                        alt="user" class="avatar-img">
+                                                                <div class="JobIdIcon">
+                                                                    <iconify-icon icon="hugeicons:job-link">
+                                                                    </iconify-icon>
                                                                 </div>
                                                             </div>
                                                             <div class="media-body">
-                                                                <div class="fw-medium text-dark">Viewed and Confirmed By
+                                                                <div class="fw-medium text-dark">Property</div>
+                                                                <div class="fs-7"><a href="property-details.php"
+                                                                            target="_blank">Bedroom 3
+                                                                            133, Flat 3 (Floor 1, No3), City
+                                                                            View@Phoenix House</a>
                                                                 </div>
-                                                                <div class="fs-7"><a
-                                                                        href="view-user-details.php">Koriakowski,
-                                                                        Krystian</a> @ 01/09/2018 15:01</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="cardRightDetail_boxContainer">
+                                                            <div class="flexcheckColumn">
+                                                                <h6 class="timingsInspection"><iconify-icon icon="famicons:time-outline"></iconify-icon> 10:30 AM to 12:30 PM</h6>
+
                                                             </div>
                                                         </div>
 
@@ -143,690 +151,251 @@
                                                             <div class="flex-1 border-end CustomFlex_style">
                                                                 <div class="ticInfo_Item">
                                                                     <span class="d-block TicketDetails_info_title">
-                                                                        Job ID</span>
-
+                                                                        Frequency</span>
                                                                     <span
                                                                         class="d-block text-capitalize ticketdetailinfo_data">
                                                                         <span
-                                                                            class="badge badge-soft-success  my-1  me-2 JobID_specific"
-                                                                            id="JobID_specific">
-                                                                            <iconify-icon icon="hugeicons:job-link">
-                                                                            </iconify-icon> CJ12345
-                                                                        </span></span>
-
+                                                                            class="badge badge-soft-success  my-1  me-2">Monthly</span></span>
                                                                 </div>
                                                             </div>
                                                             <div class="flex-1 border-end CustomFlex_style">
                                                                 <div class="ticInfo_Item">
                                                                     <span class="d-block TicketDetails_info_title">
-                                                                        Job Title</span>
+                                                                        Assigned Inspector</span>
                                                                     <span
                                                                         class="d-block text-capitalize ticketdetailinfo_data">
                                                                         <span
-                                                                            class="badge badge-soft-success  my-1  me-2">Fire
-                                                                            Alarm Installation</span></span>
+                                                                            class="badge badge-soft-success  my-1  me-2">Jane Doe</span></span>
                                                                 </div>
                                                             </div>
                                                             <div class="flex-1 border-end CustomFlex_style">
                                                                 <div class="ticInfo_Item">
                                                                     <span class="d-block TicketDetails_info_title">
-                                                                        Category</span>
+                                                                       Last Inspection Date</span>
                                                                     <span
                                                                         class="d-block text-capitalize ticketdetailinfo_data">
                                                                         <span
-                                                                            class="badge badge-soft-success  my-1  me-2">Electrical
-                                                                            Services</span></span>
+                                                                            class="badge badge-soft-success  my-1  me-2">15
+                                                                            Dec, 2024</span></span>
                                                                 </div>
                                                             </div>
-                                                            <div class="flex-1 border-end CustomFlex_style">
-                                                                <div class="ticInfo_Item">
-                                                                    <span class="d-block TicketDetails_info_title">
-                                                                        Contractor Name</span>
-                                                                    <span
-                                                                        class="d-block text-capitalize ticketdetailinfo_data">
-                                                                        <span
-                                                                            class="badge badge-soft-success  my-1  me-2">
-                                                                            Charlie Chaplin
-                                                                        </span></span>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="flex-1 border-end CustomFlex_style">
-                                                                <div class="ticInfo_Item">
-                                                                    <span class="d-block TicketDetails_info_title">
-                                                                        Status</span>
-                                                                    <span class="d-block text-capitalize "> 
-                                                                        <span class="badge badge-soft-success my-1 me-2">Quotation Submitted</span>
-                                                                        <!-- <span class="badge badge-soft-warning my-1 me-2">Quotation Pending</span>
-                                                                        <span class="badge badge-soft-info my-1 me-2">Re-Quote Requested</span> -->
-
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="flex-1 CustomFlex_style ">
+                                                         
+                                                            <div class="flex-1  border-end CustomFlex_style ">
                                                                 <div class="ticInfo_Item">
                                                                     <div class="d-block TicketDetails_info_title ">
-                                                                        Property
+                                                                        Last Inspection Status
                                                                     </div>
-                                                                    <div
-                                                                        class="d-block text-capitalize fs-7 propertyUrlStyle">
-                                                                        <a href="property.php" target="_blank">Bedroom 3
-                                                                            133, Flat 3 (Floor 1, No3), City
-                                                                            View@Phoenix House</a></div>
+                                                                    <div class="d-block text-capitalize fs-7 propertyUrlStyle">
+                                                                        <span class="badge badge-soft-success">Completed</span>
+                                                                        </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-1 CustomFlex_style">
+                                                                <div class="ticInfo_Item">
+                                                                    <span class="d-block TicketDetails_info_title">
+                                                                        Upcoming Inspection Date</span>
+                                                                    <span
+                                                                        class="d-block text-capitalize ticketdetailinfo_data">
+                                                                        <span
+                                                                            class="badge badge-soft-success  my-1  me-2">15
+                                                                            Jan, 2025</span></span>
                                                                 </div>
                                                             </div>
 
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="row">
-
-                                                    <ul
-                                                        class="nav applicant_activiti_inrTabs  nav-justified nav-light nav-tabs nav-segmented-tabs active-theme quotationInnertb_tabs ">
-
-                                                        <li class="nav-item">
-                                                            <a class="nav-link active" data-bs-toggle="tab"
-                                                                href="#All_Compliances_Quotation">
-                                                                <span class="nav-link-text badge-on-text">All
-                                                                    Quotation</span>
-                                                            </a>
-                                                        </li>
-
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" data-bs-toggle="tab"
-                                                                href="#Archived_Compliances_Quotation">
-                                                                <span class="nav-link-text badge-on-text">Archived
-                                                                    Quotation</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="tab-content tasktab_content mt-3 nobtPadding">
-
-                                                        <div class="tab-pane fade show active"
-                                                            id="All_Compliances_Quotation">
-                                                            <div class="contact-list-view">
-                                                                <table class="table common-datatable nowrap w-100">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>Property</th>
-                                                                            <th>Quotation Requested</th>
-                                                                            <th>Documents</th>
-                                                                            <th>Certificate / Report</th>
-                                                                            <th>Status</th>
-                                                                            <th>Actions</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="LongMesage_container">
-                                                                                    <input
-                                                                                        class="refuge-collection-input tableLongMessage_Input"
-                                                                                        value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House">
-                                                                                    <button
-                                                                                        class="view-btn tablemessageview_btn"
-                                                                                        type="button"
-                                                                                        data-bs-toggle="tooltip"
-                                                                                        data-bs-placement="top"
-                                                                                        aria-label="Click to view"
-                                                                                        data-bs-original-title="Click to view Full Message">
-                                                                                        <i class="bi bi-eye"></i> Read
-                                                                                        More
-                                                                                    </button>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td class="Quotationamout_data">
-                                                                                <input type="text" class="form-control"
-                                                                                    value="£59"></td>
-                                                                            <td>
-                                                                                <div class="AddQuotation_document">
-                                                                                    <button type="button"
-                                                                                        data-bs-toggle="modal"
-                                                                                        data-bs-target="#Addquote_document_modal"
-                                                                                        class="tableAddDoc_button">
-                                                                                        <iconify-icon
-                                                                                            icon="si:add-duotone">
-                                                                                        </iconify-icon>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="AddQuotation_document">
-                                                                                    <button type="button"
-                                                                                        data-bs-toggle="modal"
-                                                                                        data-bs-target="#AddReport_modal"
-                                                                                        class="tableAddDoc_button">
-                                                                                        <iconify-icon
-                                                                                            icon="si:add-duotone">
-                                                                                        </iconify-icon>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td class="">
-                                                                                <div
-                                                                                    class="form-group tableselect_data">
-
-                                                                                    <select
-                                                                                        class="form-control statusSelect_withsearch ">
-                                                                                        <option disabled selected
-                                                                                            value="">
-                                                                                            Please
-                                                                                            Select...
-                                                                                        </option>
-                                                                                        <option
-                                                                                            value="Account Department"
-                                                                                            Selected>
-                                                                                            Accept
-                                                                                        </option>
-                                                                                        <option value="Reject Quotation">
-                                                                                            Reject
-                                                                                        </option>
-                                                                                        <option
-                                                                                            value="Request Re Quote">
-                                                                                            Request Re Quote
-                                                                                        </option>
-
-                                                                                    </select>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div
-                                                                                    class="d-flex align-items-center ActionDropdown">
-                                                                                    <div class="d-flex">
-
-                                                                                        <a href="##"
-                                                                                            data-bs-toggle="modal"
-                                                                                            data-bs-target="#schedulevisit_modal"
-                                                                                            class="btn btn-sm commonAddnewButton generateContarct_btn btn-primary ms-3"><span><span
-                                                                                                    class="icon"><span
-                                                                                                        class="feather-icon">
-                                                                                                        <iconify-icon
-                                                                                                            icon="iconamoon:clock-light">
-                                                                                                        </iconify-icon>
-                                                                                                    </span></span><span
-                                                                                                    class="btn-text">Schedule
-                                                                                                    a Visit
-                                                                                                </span></span></a>
-
-                                                                                    </div>
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="LongMesage_container">
-                                                                                    <input
-                                                                                        class="refuge-collection-input tableLongMessage_Input"
-                                                                                        value="Bedroom 2 101, Flat 7 (Floor 2, No7), Garden View@Emerald Apartments">
-                                                                                    <button
-                                                                                        class="view-btn tablemessageview_btn"
-                                                                                        type="button"
-                                                                                        data-bs-toggle="tooltip"
-                                                                                        data-bs-placement="top"
-                                                                                        aria-label="Click to view"
-                                                                                        data-bs-original-title="Click to view Full Message">
-                                                                                        <i class="bi bi-eye"></i> Read
-                                                                                        More
-                                                                                    </button>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td class="Quotationamout_data">
-                                                                                <input type="text" class="form-control"
-                                                                                    value="£120"></td>
-                                                                            <td>
-                                                                                <div
-                                                                                    class="d-flex align-items-center ActionDropdown">
-                                                                                    <div class="d-flex">
-                                                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                            href="##"
-                                                                                            data-bs-toggle="tooltip"
-                                                                                            data-placement="top"
-                                                                                            title=""
-                                                                                            data-bs-original-title="Download Document"><span
-                                                                                                class="icon"><span
-                                                                                                    class="feather-icon">
-                                                                                                    <iconify-icon
-                                                                                                        icon="solar:file-download-broken">
-                                                                                                    </iconify-icon>
-                                                                                                </span></span></a>
-
-                                                                                    </div>
-
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div
-                                                                                    class="d-flex align-items-center ActionDropdown">
-                                                                                    <div class="d-flex">
-                                                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                            href="view-quotation-report.php"
-                                                                                            data-bs-toggle="tooltip"
-                                                                                            data-placement="top"
-                                                                                            title=""
-                                                                                            data-bs-original-title="View quotation report"><span
-                                                                                                class="icon"><span
-                                                                                                    class="feather-icon">
-                                                                                                    <iconify-icon
-                                                                                                        icon="ant-design:eye-outlined">
-                                                                                                    </iconify-icon>
-                                                                                                </span></span></a>
-
-                                                                                    </div>
-
-                                                                                </div>
-                                                                            </td>
-                                                                            <td class="">
-                                                                                <div
-                                                                                    class="form-group tableselect_data">
-
-                                                                                    <select
-                                                                                        class="form-control statusSelect_withsearch ">
-                                                                                        <option disabled selected
-                                                                                            value="">
-                                                                                            Please
-                                                                                            Select...
-                                                                                        </option>
-                                                                                        <option
-                                                                                            value="Account Department">
-                                                                                            Accepted
-                                                                                        </option>
-                                                                                        <option value="Reject Quotation"
-                                                                                            Selected>
-                                                                                            Rejected
-                                                                                        </option>
-                                                                                        <option
-                                                                                            value="Request Re Quote">
-                                                                                            Request Re Quote
-                                                                                        </option>
-
-                                                                                    </select>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="LongMesage_container">
-                                                                                    <input
-                                                                                        class="refuge-collection-input tableLongMessage_Input"
-                                                                                        value="Kitchen 206, Flat 12 (Floor 3, No12), Sea View@Oceanic Towers">
-                                                                                    <button
-                                                                                        class="view-btn tablemessageview_btn"
-                                                                                        type="button"
-                                                                                        data-bs-toggle="tooltip"
-                                                                                        data-bs-placement="top"
-                                                                                        aria-label="Click to view"
-                                                                                        data-bs-original-title="Click to view Full Message">
-                                                                                        <i class="bi bi-eye"></i> Read
-                                                                                        More
-                                                                                    </button>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td class="Quotationamout_data">
-                                                                                <input type="text" class="form-control"
-                                                                                    value="£63"></td>
-                                                                            <td>
-                                                                                <div
-                                                                                    class="d-flex align-items-center ActionDropdown">
-                                                                                    <div class="d-flex">
-                                                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                            href="##"
-                                                                                            data-bs-toggle="tooltip"
-                                                                                            data-placement="top"
-                                                                                            title=""
-                                                                                            data-bs-original-title="Download Document"><span
-                                                                                                class="icon"><span
-                                                                                                    class="feather-icon">
-                                                                                                    <iconify-icon
-                                                                                                        icon="solar:file-download-broken">
-                                                                                                    </iconify-icon>
-                                                                                                </span></span></a>
-
-                                                                                    </div>
-
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div
-                                                                                    class="d-flex align-items-center ActionDropdown">
-                                                                                    <div class="d-flex">
-                                                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                            href="view-quotation-report.php"
-                                                                                            data-bs-toggle="tooltip"
-                                                                                            data-placement="top"
-                                                                                            title=""
-                                                                                            data-bs-original-title="View quotation report"><span
-                                                                                                class="icon"><span
-                                                                                                    class="feather-icon">
-                                                                                                    <iconify-icon
-                                                                                                        icon="ant-design:eye-outlined">
-                                                                                                    </iconify-icon>
-                                                                                                </span></span></a>
-
-                                                                                    </div>
-
-                                                                                </div>
-                                                                            </td>
-                                                                            <td class="">
-                                                                                <div
-                                                                                    class="form-group tableselect_data">
-
-                                                                                    <select
-                                                                                        class="form-control statusSelect_withsearch ">
-                                                                                        <option disabled selected
-                                                                                            value="">
-                                                                                            Please
-                                                                                            Select...
-                                                                                        </option>
-                                                                                        <option
-                                                                                            value="Account Department"
-                                                                                            Selected>
-                                                                                            Accept
-                                                                                        </option>
-                                                                                        <option value="Reject Quotation">
-                                                                                            Reject
-                                                                                        </option>
-                                                                                        <option
-                                                                                            value="Request Re Quote">
-                                                                                            Request Re Quote
-                                                                                        </option>
-
-                                                                                    </select>
-                                                                                </div>
-                                                                            </td>
-
-                                                                            <td>
-                                                                                <div
-                                                                                    class="d-flex align-items-center ActionDropdown">
-                                                                                    <div class="d-flex">
-
-                                                                                        <a href="##"
-                                                                                            data-bs-toggle="modal"
-                                                                                            data-bs-target="#schedulevisit_modal"
-                                                                                            class="btn btn-sm commonAddnewButton generateContarct_btn btn-primary ms-3"><span><span
-                                                                                                    class="icon"><span
-                                                                                                        class="feather-icon">
-                                                                                                        <iconify-icon
-                                                                                                            icon="iconamoon:clock-light">
-                                                                                                        </iconify-icon>
-                                                                                                    </span></span><span
-                                                                                                    class="btn-text">Schedule
-                                                                                                    a Visit
-                                                                                                </span></span></a>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="LongMesage_container">
-                                                                                    <input
-                                                                                        class="refuge-collection-input tableLongMessage_Input"
-                                                                                        value="Lobby 002, Flat 1 (Ground Floor, No1), Street View@Central Plaza">
-                                                                                    <button
-                                                                                        class="view-btn tablemessageview_btn"
-                                                                                        type="button"
-                                                                                        data-bs-toggle="tooltip"
-                                                                                        data-bs-placement="top"
-                                                                                        aria-label="Click to view"
-                                                                                        data-bs-original-title="Click to view Full Message">
-                                                                                        <i class="bi bi-eye"></i> Read
-                                                                                        More
-                                                                                    </button>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td class="Quotationamout_data">
-                                                                                <input type="text" class="form-control"
-                                                                                    value="£65"></td>
-                                                                            <td>
-                                                                                <div
-                                                                                    class="d-flex align-items-center ActionDropdown">
-                                                                                    <div class="d-flex">
-                                                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                            href="##"
-                                                                                            data-bs-toggle="tooltip"
-                                                                                            data-placement="top"
-                                                                                            title=""
-                                                                                            data-bs-original-title="Download Document"><span
-                                                                                                class="icon"><span
-                                                                                                    class="feather-icon">
-                                                                                                    <iconify-icon
-                                                                                                        icon="solar:file-download-broken">
-                                                                                                    </iconify-icon>
-                                                                                                </span></span></a>
-
-                                                                                    </div>
-
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div
-                                                                                    class="d-flex align-items-center ActionDropdown">
-                                                                                    <div class="d-flex">
-                                                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                            href="view-quotation-report.php"
-                                                                                            data-bs-toggle="tooltip"
-                                                                                            data-placement="top"
-                                                                                            title=""
-                                                                                            data-bs-original-title="View quotation report"><span
-                                                                                                class="icon"><span
-                                                                                                    class="feather-icon">
-                                                                                                    <iconify-icon
-                                                                                                        icon="ant-design:eye-outlined">
-                                                                                                    </iconify-icon>
-                                                                                                </span></span></a>
-
-                                                                                    </div>
-
-                                                                                </div>
-                                                                            </td>
-                                                                            <td class="">
-                                                                                <div
-                                                                                    class="form-group tableselect_data">
-
-                                                                                    <select
-                                                                                        class="form-control statusSelect_withsearch">
-                                                                                        <option disabled selected
-                                                                                            value="">
-                                                                                            Please
-                                                                                            Select...
-                                                                                        </option>
-                                                                                        <option
-                                                                                            value="Account Department"
-                                                                                            Selected>
-                                                                                            Accept
-                                                                                        </option>
-                                                                                        <option value="Reject Quotation">
-                                                                                            Reject
-                                                                                        </option>
-                                                                                        <option
-                                                                                            value="Request Re Quote">
-                                                                                            Request Re Quote
-                                                                                        </option>
-
-                                                                                    </select>
-                                                                                </div>
-                                                                            </td>
-
-                                                                            <td>
-                                                                                <div
-                                                                                    class="d-flex align-items-center ActionDropdown">
-                                                                                    <div class="d-flex">
-
-                                                                                        <a href="##"
-                                                                                            data-bs-toggle="modal"
-                                                                                            data-bs-target="#schedulevisit_modal"
-                                                                                            class="btn btn-sm commonAddnewButton generateContarct_btn btn-primary ms-3"><span><span
-                                                                                                    class="icon"><span
-                                                                                                        class="feather-icon">
-                                                                                                        <iconify-icon
-                                                                                                            icon="iconamoon:clock-light">
-                                                                                                        </iconify-icon>
-                                                                                                    </span></span><span
-                                                                                                    class="btn-text">Schedule
-                                                                                                    a Visit
-                                                                                                </span></span></a>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <!-- Add more rows as needed -->
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="tab-pane fade" id="Archived_Compliances_Quotation">
-                                                            <div class="card">
-                                                                <div class="card-body">
-                                                                    <div class="contact-list-view">
-                                                                        <table
-                                                                            class="table common-datatable nowrap w-100">
-                                                                            <thead>
-                                                                                <tr>
-                                                                                    <th>Property</th>
-                                                                                    <th>Contractor Name</th>
-                                                                                    <th>Property Name</th>
-                                                                                    <th>Job Title</th>
-                                                                                    <th>Category</th>
-                                                                                    <th>Status</th>
-
-                                                                                    <!-- <th>Visit Date</th>
-                                                <th>Work Order ID</th>
-                                                <th>Completion Date</th>
-                                                <th>Renewal Date</th>
-                                                <th>Billing Status</th>
-                                                <th>Documents</th> -->
-                                                                                    <th>Actions</th>
-                                                                                    <!-- Added Actions Column -->
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-
-                                                                                <tr>
-                                                                                    <td>
-                                                                                        <div
-                                                                                            class="LongMesage_container">
-                                                                                            <input
-                                                                                                class="refuge-collection-input tableLongMessage_Input"
-                                                                                                value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House">
-                                                                                            <button
-                                                                                                class="view-btn tablemessageview_btn"
-                                                                                                type="button"
-                                                                                                data-bs-toggle="tooltip"
-                                                                                                data-bs-placement="top"
-                                                                                                aria-label="Click to view"
-                                                                                                data-bs-original-title="Click to view Full Message">
-                                                                                                <i
-                                                                                                    class="bi bi-eye"></i>
-                                                                                                Read More
-                                                                                            </button>
-                                                                                        </div>
-                                                                                    </td>
-                                                                                    <td>HydroPlumb Solutions</td>
-                                                                                    <td class="Quotationamout_data">
-                                                                                        <input type="text"
-                                                                                            class="form-control"
-                                                                                            value="£120"></td>
-                                                                                    <td>
-                                                                                        <div
-                                                                                            class="d-flex align-items-center ActionDropdown">
-                                                                                            <div class="d-flex">
-                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                                    href="##"
-                                                                                                    data-bs-toggle="tooltip"
-                                                                                                    data-placement="top"
-                                                                                                    title=""
-                                                                                                    data-bs-original-title="Download Document"><span
-                                                                                                        class="icon"><span
-                                                                                                            class="feather-icon">
-                                                                                                            <iconify-icon
-                                                                                                                icon="solar:file-download-broken">
-                                                                                                            </iconify-icon>
-                                                                                                        </span></span></a>
-
-                                                                                            </div>
-
-                                                                                        </div>
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <div
-                                                                                            class="d-flex align-items-center ActionDropdown">
-                                                                                            <div class="d-flex">
-                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                                    href="view-quotation-report.php"
-                                                                                                    data-bs-toggle="tooltip"
-                                                                                                    data-placement="top"
-                                                                                                    title=""
-                                                                                                    data-bs-original-title="View quotation report"><span
-                                                                                                        class="icon"><span
-                                                                                                            class="feather-icon">
-                                                                                                            <iconify-icon
-                                                                                                                icon="ant-design:eye-outlined">
-                                                                                                            </iconify-icon>
-                                                                                                        </span></span></a>
-
-                                                                                            </div>
-
-                                                                                        </div>
-                                                                                    </td>
-                                                                                    <td class="">
-                                                                                        <div
-                                                                                            class="form-group tableselect_data">
-
-                                                                                            <select
-                                                                                                class="form-control statusSelect_withsearch ">
-                                                                                                <option disabled
-                                                                                                    selected value="">
-                                                                                                    Please
-                                                                                                    Select...
-                                                                                                </option>
-                                                                                                <option
-                                                                                                    value="Account Department">
-                                                                                                    Accepted
-                                                                                                </option>
-                                                                                                <option
-                                                                                                    value="Reject Quotation"
-                                                                                                    Selected>
-                                                                                                    Rejected
-                                                                                                </option>
-                                                                                                <option
-                                                                                                    value="Request Re Quote">
-                                                                                                    Request Re Quote
-                                                                                                </option>
-
-                                                                                            </select>
-                                                                                        </div>
-                                                                                    </td>
-                                                                                    <td>
-
-                                                                                    </td>
-                                                                                </tr>
-
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="canvasFooterContainer innertabbt_submit_action">
-                                                            <button type="button"
-                                                                class="canvascancel_button commonCanvas_buttonFooter"
-                                                                data-bs-dismiss="offcanvas">Cancel</button>
-                                                            <button type="submit"
-                                                                class="canvasSubmit_button commonCanvas_buttonFooter">Save</button>
                                                         </div>
                                                     </div>
 
                                                 </div>
 
                                             </div>
+
+                                            <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="contact-list-view">
+
+                                                            <table
+                                                                class="table common-datatable withoutActionTR nowrap w-100">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Location</th>
+                                                                        <th>Items</th>
+                                                                        <th>Status</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="inspectionwith360view">
+                                                                                <div class="nameofinspe_location">
+                                                                                    Bathroom</div>
+                                                                                <button type="button" class="view-360-btn lightbox-trigger360" data-panorama="dist/img/newimages/inspectionitems/bathroom.jpg">
+                                                                                
+                                                                                    <iconify-icon
+                                                                                        icon="solar:eye-broken">
+                                                                                    </iconify-icon> View 360 Image
+                                                                                </button>
+                                                                            </div>
+
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="multipleinspectItems_wrap">
+                                                                            <div class="inspection_multiitems">
+                                                                                <div class="inepect_iteamName">Faucet:
+                                                                                </div>
+                                                                                <div class="uplodedinspection_pictures">
+                                                                                <div class="inspPicture_item">
+                                                                                    <img src="dist/img/newimages/inspectionitems/Faucet2.jpg" class="lightbox-trigger" alt="">
+                                                                                </div>
+                                                                                <div class="inspPicture_item">
+                                                                                    <img src="dist/img/newimages/inspectionitems/Faucet3.jpg" class="lightbox-trigger" alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                            </div>
+                                                                          
+                                                                            <div class="inspection_multiitems">
+                                                                                <div class="inepect_iteamName">Paint:
+                                                                                </div>
+                                                                                <div class="uplodedinspection_pictures">
+                                                                                <div class="inspPicture_item">
+                                                                                    <img src="dist/img/newimages/inspectionitems/Paint.jpg" class="lightbox-trigger" alt="">
+                                                                                </div>
+                                                                                <div class="inspPicture_item">
+                                                                                    <img src="dist/img/newimages/inspectionitems/paint2.webp" class="lightbox-trigger" alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                            </div>
+                                                                            </div>
+                                                                            
+                                                                        </td>
+                                                                        <td>
+                                                                            <div>
+                                                                                <strong>Faucet:</strong> Checked - No
+                                                                                Leaks
+                                                                            </div>
+                                                                            <br>
+                                                                            <div>
+                                                                                <strong>Paint:</strong> Checked - Good
+                                                                                Condition
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="inspectionwith360view">
+                                                                                <div class="nameofinspe_location">Living
+                                                                                    Room</div>
+                                                                                    <button type="button" class="view-360-btn lightbox-trigger360" data-panorama="dist/img/newimages/inspectionitems/Living-Room.jpg">
+                                                                                
+                                                                                <iconify-icon
+                                                                                    icon="solar:eye-broken">
+                                                                                </iconify-icon> View 360 Image
+                                                                            </button>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="multipleinspectItems_wrap">
+                                                                            <div class="inspection_multiitems">
+                                                                                <div class="inepect_iteamName">Window
+                                                                                    Frame:</div>
+                                                                                    <div class="uplodedinspection_pictures">
+                                                                                <div class="inspPicture_item">
+                                                                                    <img src="dist/img/newimages/inspectionitems/Window-Frame.jpg" class="lightbox-trigger" alt="">
+                                                                                </div>
+                                                                                <div class="inspPicture_item">
+                                                                                    <img src="dist/img/newimages/inspectionitems/Window-Frame2.jpg" class="lightbox-trigger" alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                            </div>
+                                                                         
+                                                                            <div class="inspection_multiitems">
+                                                                                <div class="inepect_iteamName">Paint:
+                                                                                </div>
+                                                                                <div class="uplodedinspection_pictures">
+                                                                                <div class="inspPicture_item">
+                                                                                    <img src="dist/img/newimages/inspectionitems/Paint.jpg" class="lightbox-trigger" alt="">
+                                                                                </div>
+                                                                                <div class="inspPicture_item">
+                                                                                    <img src="dist/img/newimages/inspectionitems/paint2.webp" class="lightbox-trigger" alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                            </div>
+                                                                            </div>
+                                                                            
+                                                                        </td>
+                                                                        <td>
+                                                                            <div>
+                                                                                <strong>Window Frame:</strong> Checked -
+                                                                                Good Condition
+                                                                            </div>
+                                                                            <br>
+                                                                            <div>
+                                                                                <strong>Paint:</strong> Checked - No
+                                                                                Damage
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="inspectionwith360view">
+                                                                                <div class="nameofinspe_location">
+                                                                                    Kitchen</div>
+                                                                                    <button type="button" class="view-360-btn lightbox-trigger360" data-panorama="dist/img/newimages/inspectionitems/kitchen.jpg">
+                                                                                
+                                                                                <iconify-icon
+                                                                                    icon="solar:eye-broken">
+                                                                                </iconify-icon> View 360 Image
+                                                                            </button>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="multipleinspectItems_wrap">
+                                                                            <div class="inspection_multiitems">
+                                                                                <div class="inepect_iteamName">Cabinets:
+                                                                                </div>
+                                                                                <div class="uplodedinspection_pictures">
+                                                                                <div class="inspPicture_item">
+                                                                                    <img src="dist/img/newimages/inspectionitems/Cabinets.jpg" class="lightbox-trigger" alt="">
+                                                                                </div>
+                                                                                <div class="inspPicture_item">
+                                                                                    <img src="dist/img/newimages/inspectionitems/Cabinets2.jpg" class="lightbox-trigger" alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                            </div>
+                                                                        
+                                                                            <div class="inspection_multiitems">
+                                                                                <div class="inepect_iteamName">Lighting:
+                                                                                </div>
+                                                                                <div class="uplodedinspection_pictures">
+                                                                                <div class="inspPicture_item">
+                                                                                    <img src="dist/img/newimages/inspectionitems/roombulb.png" class="lightbox-trigger" alt="">
+                                                                                </div>
+                                                                                <div class="inspPicture_item">
+                                                                                    <img src="dist/img/newimages/inspectionitems/lighting2.jpg" class="lightbox-trigger" alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                            </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div>
+                                                                                <strong>Cabinets:</strong> Checked -
+                                                                                Functional
+                                                                            </div>
+                                                                            <br>
+                                                                            <div>
+                                                                                <strong>Lighting:</strong> Checked -
+                                                                                Working Properly
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                            </table>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
 
                                         </div>
 
@@ -1456,8 +1025,7 @@
                                                                                             Account
                                                                                             Department
                                                                                         </option>
-                                                                                        <option value="HR
-                                                                                            Department">
+                                                                                        <option value="HR Department">
                                                                                             HR
                                                                                             Department
                                                                                         </option>
@@ -1609,88 +1177,11 @@
                                 </div>
 
                                 <div class="row">
-
-                                <div class="col-sm-12">
+                                    <div class="col-sm-12">
                                         <div class="form-group">
                                             <label class="form-label">Visit Title</label>
                                             <input class="form-control" type="text">
                                         </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <label class="form-label">Property Name</label>
-                                            <input class="form-control" type="text"
-                                                value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House"
-                                                disabled readonly>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <div class="addmorevisitSchedule_forthesame">
-                                                <button type="button" class="Addmoreproperties_selectbtn">
-                                                    <iconify-icon icon="si:add-fill"></iconify-icon> Add More Properties
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12" id="more-properties-dropdown" style="display: none;">
-                                        <div class="form-group">
-                                            <label class="form-label">All Properties</label>
-                                            <div class="dropdown filterdropDownCustom available-users-dropdown-wrapper" >
-                                                <button class="dropbtn dropdown-toggle dropmenuBtn" type="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <span class="selected-count">Select More Properties</span>
-                                                    <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
-                                                </button>
-                                                <div
-                                                    class="dropdown-menu customdropdownmenu_style available-users-dropdown">
-                                                    <div class="filTerSearchMain">
-                                                        <input type="text" class="filterclSearch available-users-search"
-                                                            placeholder="Search More Properties...">
-                                                        <iconify-icon icon="basil:search-outline"></iconify-icon>
-                                                    </div>
-                                                    <div class="sellallitemsMain">
-                                                        <div class="CustomselectallContainer">
-                                                            <input type="checkbox"
-                                                                class="select-all-available-users form-check-input">
-                                                            Select All
-                                                        </div>
-                                                        <div class="clDivider_full"></div>
-                                                    </div>
-                                                    <div class="Customdrpitems_container">
-                                                        <div class="mainoptionContainer">
-                                                            <div class="dropfilter_options">
-                                                                <input type="checkbox"
-                                                                    class="individual-option form-check-input"> Bedroom
-                                                                3 133, Flat 3 (Floor 1, No3), City View@Phoenix House
-                                                            </div>
-                                                        </div>
-                                                        <div class="mainoptionContainer">
-                                                            <div class="dropfilter_options">
-                                                                <input type="checkbox"
-                                                                    class="individual-option form-check-input">
-                                                                Bedroom 2 101, Flat 7 (Floor 2, No7), Garden
-                                                                View@Emerald Apartments
-                                                            </div>
-                                                        </div>
-                                                        <div class="mainoptionContainer">
-                                                            <div class="dropfilter_options">
-                                                                <input type="checkbox"
-                                                                    class="individual-option form-check-input">
-                                                                Lobby 002, Flat 1 (Ground Floor, No1), Street
-                                                                View@Central Plaza
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <p class="no-data" style="display: none;">No data found</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
                                     </div>
 
                                     <div class="col-md-12">
@@ -1841,45 +1332,6 @@
         </form>
     </div>
 </div>
-<!-- end -->
-
-<!--  Quotation Reject Modal -->
-<div class="modal sm_modalCustom fade" id="RejectquoteModal" tabindex="-1" aria-labelledby="RejectquoteNoteLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <form id="rejectQuoteForm">
-            <div class="modal-content">
-
-                <div class="ModalheaderArea">
-                    <h5 class="modal-title" id="RejectquoteNoteLabel">Reject Quotation</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-
-                    <div class="mb-3">
-                        <label for="rejectquoteMessage" class="form-label">Add Reason</label>
-                        <textarea class="form-control" id="rejectquoteMessage" rows="4" placeholder="Enter Message"
-                            ></textarea>
-                    </div>
-
-                </div>
-
-                <div class="form-navigation canvasFooterContainer CustomModal_footer taskadd_footer">
-                    <div class="eventSubmit_container">
-                        <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
-                            data-bs-dismiss="modal">Cancel</button>
-                        <button type="button" class="submitButton canvasSubmit_button commonCanvas_buttonFooter"
-                            id="rejectquotemsgSend" style="display: inline-block;">Submit</button>
-                    </div>
-                </div>
-
-            </div>
-        </form>
-    </div>
-</div>
-<!-- Quotation Reject end -->
 
 <!-- Modal for scheduling a visit -->
 <div id="schedulevisit_modal" class="modal customwizard_formStyle sm_modalCustom fade" tabindex="-1" role="dialog"
@@ -2201,70 +1653,32 @@
 
 <!-- request re quote js start -->
 <script>
-    $(document).ready(function () {
-        // Handle change event on the select dropdown
-        $(".statusSelect_withsearch").on("change", function () {
+    $(document).ready(function() {
+        // Attach change event listener to all selects with the class
+        $(".statusSelect_withsearch").on("change", function() {
             const selectedValue = $(this).val();
-
             // Check if the selected value is "Request Re Quote"
             if (selectedValue === "Request Re Quote") {
+                // Show Bootstrap modal
                 const modal = new bootstrap.Modal($("#requestReQuoteModal"));
-                modal.show(); // Show the modal
-
-                // Reset the form when the modal is opened
+                modal.show();
+                // Reset the modal form on each open
                 $("#reQuoteForm")[0].reset();
-
-                // Attach a one-time click event listener for the submit button inside the modal
-                $("#submitQuote").off("click").on("click", function () {
+                // Handle form submission
+                $("#submitQuote").off("click").on("click", function() {
                     const title = $("#quoteTitle").val().trim();
                     const message = $("#quoteMessage").val().trim();
-
-                    // Validate the input fields
                     if (title && message) {
-                        modal.hide(); // Hide the modal
-                        
-                        // Show success confirmation using SweetAlert2
-                        Swal.fire({
-                            html: `
-                                <div style="text-align: center;">
-                                    <div class="swalalert_custom_icon">
-                                        <img src="dist/img/newimages/successgif.gif" alt="">
-                                    </div>
-                                    <h2 class="Swal_CustomTitle">Re Quotation Request Sent</h2>
-                                    <p>Your request has been sent successfully!</p>
-                                </div>`,
-                            confirmButtonText: "Close",
-                            timer: 3000,
-                            timerProgressBar: true,
-                            customClass: {
-                                confirmButton: "my-ok-button",
-                            },
-                        });
+                        alert(`Title: ${title}\nMessage: ${message}`);
+                        modal.hide(); // Hide modal after form submission
                     } else {
-                        // Show an error alert if fields are empty
-                        Swal.fire({
-                            html: `
-                                <div style="text-align: center;">
-                                    <div class="swalalert_custom_icon">
-                                        <img src="dist/img/newimages/errorgif3.gif" alt="">
-                                    </div>
-                                    <h2 class="Swal_CustomTitle">Form Incomplete</h2>
-                                    <p>Please fill in both the title and message fields before submitting.</p>
-                                </div>`,
-                            confirmButtonText: "Close",
-                            timer: 3000,
-                            timerProgressBar: true,
-                            customClass: {
-                                confirmButton: "my-ok-button",
-                            },
-                        });
+                        alert("Please fill in both fields before submitting.");
                     }
                 });
             }
         });
     });
 </script>
-
 <!-- request re quote js start -->
 
 <!-- re Quote submitalrt message -->
@@ -2320,166 +1734,3 @@
     });
 </script>
 <!-- end -->
-
-<!-- when admin  select reject option from the select -->
-
-<script>
-    $(document).ready(function () {
-        // Handle change event on the select dropdown
-        $(".statusSelect_withsearch").on("change", function () {
-            const selectedValue = $(this).val();
-
-            // Check if the selected value is "Reject Quotation"
-            if (selectedValue === "Reject Quotation") {
-                const modal = new bootstrap.Modal($("#RejectquoteModal"));
-                modal.show(); // Show the modal
-
-                // Reset the form when the modal is opened
-                $("#rejectQuoteForm")[0].reset();
-
-                // Attach a one-time click event listener for the submit button inside the modal
-                $("#rejectquotemsgSend").off("click").on("click", function () {
-                    const message = $("#rejectquoteMessage").val().trim();
-
-                    // Validate the input field
-                    if (message) {
-                        modal.hide(); // Hide the modal
-                        
-                        // Show success confirmation using SweetAlert2
-                        Swal.fire({
-                            html: `
-                                <div style="text-align: center;">
-                                    <div class="swalalert_custom_icon">
-                                        <img src="dist/img/newimages/successgif.gif" alt="">
-                                    </div>
-                                    <h2 class="Swal_CustomTitle">Reject Note Sent</h2>
-                                    <p>Your note has been sent successfully!</p>
-                                </div>`,
-                            confirmButtonText: "Close",
-                            timer: 3000,
-                            timerProgressBar: true,
-                            customClass: {
-                                confirmButton: "my-ok-button",
-                            },
-                        });
-                    } else {
-                        // Show an error alert if no message is provided
-                        Swal.fire({
-                            html: `
-                                <div style="text-align: center;">
-                                    <div class="swalalert_custom_icon">
-                                        <img src="dist/img/newimages/errorgif3.gif" alt="">
-                                    </div>
-                                    <h2 class="Swal_CustomTitle">Please Add Reason</h2>
-                                    <p>Please fill in the reason before submitting.</p>
-                                </div>`,
-                            confirmButtonText: "Close",
-                            timer: 3000,
-                            timerProgressBar: true,
-                            customClass: {
-                                confirmButton: "my-ok-button",
-                            },
-                        });
-                    }
-                });
-            }
-        });
-    });
-</script>
-<!-- end -->
-
-<!-- custom multiple select js start -->
-<script>
-   $(document).ready(function () {
-    // Update the count of selected options
-    function updateSelectedCount(dropdownWrapper) {
-        const selectedCount = dropdownWrapper.find(".individual-option:checked").length;
-        const selectedCountElement = dropdownWrapper.find(".selected-count");
-
-        if (selectedCount === 0) {
-            selectedCountElement.text("Select Location");
-        } else if (selectedCount === 1) {
-            selectedCountElement.text("1 selected");
-        } else {
-            selectedCountElement.text(`${selectedCount} selected`);
-        }
-    }
-
-    // Handle Select All checkbox
-    $(".select-all-available-users").on("change", function () {
-        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
-        const isChecked = $(this).prop("checked");
-        dropdownWrapper.find(".individual-option").prop("checked", isChecked);
-        updateSelectedCount(dropdownWrapper);
-    });
-
-    // Handle individual option selection
-    $(".individual-option").on("change", function () {
-        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
-        const totalOptions = dropdownWrapper.find(".individual-option").length;
-        const selectedOptions = dropdownWrapper.find(".individual-option:checked").length;
-
-        // Toggle the Select All checkbox
-        dropdownWrapper.find(".select-all-available-users").prop("checked", totalOptions === selectedOptions);
-
-        updateSelectedCount(dropdownWrapper);
-    });
-
-    // Reset Filter button
-    $(".reset-filter").on("click", function () {
-        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
-        dropdownWrapper.find(".individual-option").prop("checked", false);
-        dropdownWrapper.find(".select-all-available-users").prop("checked", false);
-        updateSelectedCount(dropdownWrapper);
-    });
-
-    // Apply Filter button
-    $(".apply-filter").on("click", function () {
-        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
-        const selectedItems = dropdownWrapper.find(".individual-option:checked").map(function () {
-            return $(this).parent().text().trim();
-        }).get();
-        console.log("Selected Items:", selectedItems);
-    });
-
-    // Filter search functionality
-    $(".available-users-search").on("keyup", function () {
-        const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
-        const searchTerm = $(this).val().toLowerCase();
-        const options = dropdownWrapper.find(".mainoptionContainer");
-
-        options.filter(function () {
-            $(this).toggle($(this).text().toLowerCase().includes(searchTerm));
-        });
-
-        const noDataMessage = dropdownWrapper.find(".no-data");
-        noDataMessage.toggle(options.filter(":visible").length === 0);
-    });
-});
-
-</script>
-<!-- end -->
-
-
-<!-- by default hide more properties dropdown select  -->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        // Ensure the script runs after the DOM is fully loaded
-        const toggleButton = document.querySelector('.Addmoreproperties_selectbtn');
-        const dropdown = document.getElementById('more-properties-dropdown');
-
-        // Check if the elements exist
-        if (toggleButton && dropdown) {
-            toggleButton.addEventListener('click', function () {
-                if (dropdown.style.display === 'none' || dropdown.style.display === '') {
-                    dropdown.style.display = 'block'; // Show the dropdown
-                } else {
-                    dropdown.style.display = 'none'; // Hide the dropdown
-                }
-            });
-        } else {
-            console.error('Dropdown or button not found in the DOM.');
-        }
-    });
-</script>
-<!-- by default hide more properties dropdown select  end-->

@@ -163,3 +163,820 @@ input.tableInput {
     width: 380px;
     white-space: normal !important;
 }
+.refundBtn {
+    font-weight: 600;
+    text-decoration: underline;
+    color: #2196F3;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+.refundBtn iconify-icon {
+    padding: 5px;
+    border: 1px solid #2196F3;
+    border-radius: 50px;
+    background: aliceblue;
+}
+.refundBtn:hover{
+    color: #FCB608; 
+}
+.refundBtn:hover iconify-icon {
+    border: 1px solid #FCB608;
+    background: #fcb6080d;
+}
+.RefundHeader {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+.canvasSubmit_button {
+    background: #0cb06b;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+.RquestDate {
+	font-size: 13px;
+	color: #8c8c8c;
+}
+.badge.badge-soft-review {
+	background: #fff7f0;
+	color: #ff720b;
+}
+.timingsInspection {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+	font-size: 14px;
+}
+.timingsInspection iconify-icon {
+	font-size: 17px;
+}
+.ActionBox {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+.ActionBox h6 {
+	margin-bottom: 0;
+}
+.addHyperLinkBtn {
+	font-size: 15px;
+	background: #e1f2ff;
+	align-items: center;
+	display: flex;
+	gap: 5px;
+	padding: 5px 10px;
+	color: #08f;
+	border: 1px solid #88c8ff;
+}
+.addHyperLinkBtn:hover {
+	font-size: 15px;
+	background: #e1f2ff;
+	align-items: center;
+	display: flex;
+	gap: 5px;
+	padding: 5px 10px;
+	color: #08f;
+    border: 1px solid #88c8ff;
+}
+.saveBtn {
+	padding: 5px 10px;
+	font-size: 14px;
+	font-weight: 500;
+}
+.removeLink {
+	background: #fff;
+	border: 1px solid #d1d1d1;
+	color: #f00;
+    cursor: pointer;
+}
+.removeLink:hover {
+	background: #fff;
+	border: 1px solid #d1d1d1;
+	color: #f00;
+}
+.removeLink iconify-icon {
+	display: flex;
+}
+.hyperlinkAdd {
+	cursor: pointer;
+}
+.form-control.LinkText {
+	cursor: pointer;
+}
+
+
+/* compliences */
+
+.user-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-list .user-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 10px;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+.user-list .user-item label {
+    display: flex;
+}
+.user-list .user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-list .user-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.user-list .user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-list .user-details .name {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.user-list .user-details .task {
+    font-size: 14px;
+    color: #51687d;
+}
+
+.user-list input[type="checkbox"] {
+    display: none;
+}
+
+.user-list .custom-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.user-list input[type="checkbox"]:checked + .custom-checkbox {
+    border-color: #fcb608;
+    background-color: #fcb608;
+}
+.user-list input[type="checkbox"]:checked + .custom-checkbox::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.modal-dialog-scrollable .modal-body {
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+span.subparaVen {
+    display: block;
+    font-size: 14px;
+    color: #61788d;
+}
+.bg-outline-success {
+    background-color: #ffffff;
+    border: 1px solid #28C76F;
+    color: #28C76F;
+    font-size: 12px !important;
+}
+.bg-outline-warning {
+    background-color: #ffffff;
+    border: 1px solid #FF9900;
+    color: #FF9900;
+    font-size: 12px !important;
+}
+.quotationInnertb_tabs.QuotationTabs {
+    width: 50% !important;
+    margin-bottom: 20px !important;
+    margin: 0 auto;
+}
+.propertyQuote {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.propertyQuote h6 {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+ul.PropertyList {
+    padding: 0;
+    margin: 0;
+}
+.iconLocation {
+    display: flex;
+}
+.iconLocation iconify-icon {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 50px;
+    color: #55585a;
+    background: #f5f5f5;
+}
+.PropertyList li {
+    border: 1px solid #ececec;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.morethan1property {
+    cursor: pointer;
+}
+#scrolableTabs.TicketBoxMain {
+    margin-left: 0 !important;
+}
+.Visiblity .form-group {
+    margin-bottom: 0;
+    margin-top: 13px;
+    margin-left: 14px;
+}
+.Visiblity {
+    width: 175px;
+}
+#scrolableTabs.TicketBoxMain .nav-link {
+    color: #262a2e;
+    padding: 5px 10px;
+}
+
+/******************************
+06 feb 2025 Start Css here
+*********************************/
+.scrollTabContainerMAin#NoButtonTab {
+    padding: 0;
+}
+#NoButtonTab #scrolableTabs {
+     margin: 0px 0px;
+  }
+
+
+  /*  */
+/* plan Highlights css */
+.planHighlights .wrapper {
+    text-transform: uppercase;
+    /* background: #ececec; */
+    color: #ddf247;
+    margin: 0;
+    /* padding: 15px 20px; */
+    position: relative;
+    text-align: center;
+    /* width: 200px; */
+    -webkit-transform: translateZ(0);
+    -webkit-font-smoothing: antialiased;
+    /* margin-left: 5px; */
+    z-index: 1;
+  }
+  /* .planHighlights .wrapper .tooltip::-webkit-scrollbar {
+    width: 10px;
+   } */
+   .planHighlights .wrapper .tooltip {
+    background: #ffffff;
+    bottom: 100%;
+    color: #ffffff;
+    display: block;
+    left: -220px;
+    margin-bottom: 15px;
+    opacity: 0;
+    padding: 20px;
+    pointer-events: none;
+    position: absolute;
+    width: 356px;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    -ms-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+    -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 400 !important;
+    z-index: 99;
+    /* height: 300px; */
+    /* overflow: hidden; */
+    /* overflow-y: scroll; */
+    margin-bottom: 4px !important;
+}
+    /* This bridges the gap so you can mouse into the tooltip without it disappearing */
+   .planHighlights .wrapper .tooltip:before {
+    bottom: -20px;
+    content: " ";
+    display: block;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    }
+    
+    /* CSS Triangles - see Trevor's post */
+    .planHighlights  .wrapper .tooltip::after {
+      border-left: solid transparent 10px;
+      border-right: solid transparent 10px;
+      border-top: solid #ffffff 10px;
+      bottom: -10px;
+      content: " ";
+      height: 0;
+      left: 67%;
+      margin-left: -13px;
+      position: absolute;
+      width: 0;
+  }
+    
+  .planHighlights .wrapper:hover .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: translateY(0px);
+      -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+       -o-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    .planHighlights .wrapper .PlanmoduleList {
+      display: block;
+      align-items: center;
+      height: auto;
+      margin-bottom: 10px;
+  }
+  .planHighlights .wrapper  h2 {
+    color: #000;
+    margin-bottom: 15px;
+    font-size: 15px !important;
+    font-weight: 600;
+  }
+  .planHighlights .tooltip #highlight-content h2 {
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .planHighlights .tooltip #highlight-content ul li {
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #000;
+    position: relative;
+  }
+  /* plan Highlights css */
+  .planHighlights {
+    margin-right: 0;
+}
+.button_popoverhighlights {
+    background: #f1f3f5;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #3b4b5b;
+    border: 1px solid #d5d9dd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 5px;
+}
+  .button_popoverhighlights  iconify-icon{
+    margin-left: 4px;
+  }
+  .button_popoverhighlights:hover,.button_popoverhighlights:active,.button_popoverhighlights:focus{
+    background: #dde4ea !important;
+    color: #3a4551 !important;
+    border: 1px solid #aeb7c0 !important;
+}
+  /* .button_popoverhighlights:active{
+    background: #dde4ea;
+    color: #3a4551;
+    border: 1px solid #aeb7c0;
+  }
+  .button_popoverhighlights:focus{
+    background: #dde4ea;
+    color: #3a4551;
+    border: 1px solid #aeb7c0;
+  } */
+  
+  .planHighlights h2 {
+    color: #000;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .rightStideBtn {
+    display: flex;
+    align-items: center;
+}
+.dateGHU {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    background: whitesmoke;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+.dateGHU h6 {
+    font-size: 12px;
+}
+.assignStaff {
+	padding: 5px 10px;
+	background: #4a274f;
+	color: #fff;
+	border-radius: 5px;
+}
+.confirmslotBox {
+	background: #f7f7f7;
+	border-radius: 5px;
+}
+.confirmHead{
+    padding: 10px;
+    border-bottom: 1px solid #ececec;
+}
+.confirmBody{
+    padding: 10px;
+}
+.PlanmoduleList ul {
+    padding: 0;
+    margin: 0;
+}
+
+.themeBtnPrimary {
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    background: #36b787;
+    border: 1px solid #36b787;
+}
+.themeBtnSecondary {
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    background: #098ac5;
+    border: 1px solid #098ac5;
+}
+.TaskHeadRight{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.taskHeader .checkboxTask {
+    padding-left: 12px;
+    line-height: 0;
+    margin-top: 20px;
+}
+.CompletedTaskStatus .select2-container {
+    width: 150px !important;
+    text-align: left;
+}
+.CompletedTaskCheck .form-check-input {
+    width: 20px;
+    height: 20px;
+}
+.CompletedTaskCheck .form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: 0;
+    margin-top: 13px;
+    margin-left: 19px;
+}
+.form-group.CompletedTaskCheck {
+    margin-bottom: 10px;
+}
+.taskAccordion .accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+.accordion-collapse.collapse.show .accordion-body {
+    border-top: 1px solid #ececec;
+}
+.sidecolor_disclaimer .svg-icon > svg {
+    background-color: #8a04be !important;
+    color: white !important;
+}
+.SecTitleDisclaimer {
+    font-size: 20px;
+    border-bottom: 1px solid #ececec;
+    padding: 0 18px 10px;
+    margin: -5px -20px 13px;
+}
+
+.commonBtn {
+    background-color: #007D88 !important;
+    border-color: #007D88 !important;
+    align-items: center;
+    gap: 5px;
+    font-weight: 400;
+}
+
+
+
+/*******************************************
+Stripe Detail Page css Start Here 07/Feb/2025
+*********************************************/
+.PaymentTitle {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	color: #687385;
+	text-transform: uppercase;
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+.chargedAmount iconify-icon {
+	font-size: 22px;
+}
+.chargedAmount {
+	font-weight: 600;
+	margin-bottom: 0;
+}
+.chargedAmount span {
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #7d8891;
+	font-size: 30px;
+}
+.amountCharged {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.statusSuccess {
+	padding: 1px 7px;
+	background: #deffe3;
+	color: #009c17;
+	border-radius: 5px;
+	border: 1px solid #6eda7e;
+	font-size: 14px;
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+}
+.charged {
+	margin-bottom: 0;
+	padding-top: 5px;
+	color: #7d8891;
+}
+.CustomerName {
+	color: #2297fd;
+}
+.paymentTopHead {
+	display: flex;
+	justify-content: space-between;
+}
+.RefundBtn {
+	padding: 2px 8px;
+	background: #f6f6f6;
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	font-size: 14px;
+	color: #252525;
+	border: 1px solid #e3e3e3;
+}
+.RefundBtn:hover {
+	padding: 2px 8px;
+	background: #e9e9e9;
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	font-size: 14px;
+	color: #000;
+	border: 1px solid #bababa;
+}
+
+.timelineBox .timeline {
+	display: flex;
+	flex-direction: column;
+	border-top: 1px solid #ececec;
+	padding: 15px 0 0;
+	margin: 10px 0;
+	border-bottom: 1px solid #ececec;
+}
+
+.timelineBox .event {
+	display: flex;
+	position: relative;
+	padding-left: 0;
+	padding-bottom: 15px;
+}
+
+.timelineBox .event::before {
+	content: "";
+	position: absolute;
+	left: 8px;
+	top: 14px;
+	bottom: 100%;
+	width: 1px;
+	background: #ccc;
+}
+
+.timelineBox .event:first-child::before {
+    bottom: 0;
+}
+
+.timelineBox .event iconify-icon {
+    font-size: 18px;
+    color: #4CAF50;
+
+  
+}
+
+.timelineBox .event:nth-child(2) iconify-icon {
+    color: #555;
+    border-color: #ccc;
+}
+
+.timelineBox .event div {
+    margin-left: 15px;
+}
+
+.timelineBox .event p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.timelineBox .event span {
+    font-size: 12px;
+    color: gray;
+}
+.SecTitleOP {
+	margin-bottom: 0;
+	font-weight: 600;
+}
+.timelineBox {
+	margin-top: 30px;
+}
+.paymentDetail {
+	padding: 0;
+	margin: 0;
+}
+.paymentDetail li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #ececec;
+	padding: 15px 0;
+}
+.MainPayment h5 {
+	margin-bottom: 0;
+	font-size: 18px;
+	font-weight: 600;
+}
+.MainPayment p {
+	font-size: 14px;
+	color: #828282;
+}
+.paymentBreakTitle, .paymentValue 
+ {
+	font-size: 14px;
+	color: #828282;
+}
+.paymentValue {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+}
+.paymentValue iconify-icon{
+    color: #000;
+}
+.netTotal {
+	font-weight: 500;
+	color: #252525;
+}
+
+
+.paymentMethodBox {
+	margin-top: 30px;
+}
+.paymentMethodDetail {
+	padding: 0;
+	margin-bottom: 0;
+	margin-top: 20px;
+}
+.paymentMethodDetail li {
+	display: flex;
+}
+.paymentMethodDetail li  h6{
+    margin-bottom: 0;
+    font-size: 14px;
+
+}
+.methodTitle {
+	width: 100px;
+}
+.methodValue {
+	color: gray;
+}
+.paymentMethodDetail li {
+	display: flex;
+	margin-bottom: 20px;
+}
+.PaymentDetailList {
+	padding: 0;
+	border-top: 1px solid #ececec;
+	/* border-bottom: 1px solid #ececec; */
+	padding: 15px 0;
+	margin: 15px 0;
+}
+.paymentDetailBox {
+	padding-left: 50px;
+}
+.PaymentDetailList li h6 {
+	font-weight: 600;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+.paymentId {
+	border: 1px solid #ddd;
+	padding: 5px 10px;
+	display: inline-block;
+	border-radius: 5px;
+	font-size: 13px;
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.PaymentDetailList li {
+	margin-bottom: 15px;
+}
+.paymentMethod p {
+	color: #5d5b5b;
+	font-size: 14px;
+}
+.FormSecTitle {
+	padding: 20px 0 10px;
+}
+
+/* 14 Feb 2025 */
+.sidecolor_stripe .svg-icon > svg {
+    background-color: #673AB7 !important;
+    color: white !important;
+}
+.SubDBSecTite {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.BDStrirtpf .chargedAmount {
+    font-weight: 600;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+.BDStrirtpf .chargedAmount iconify-icon {
+    font-size: 15px;
+}
+.BDStrirtpf .chargedAmount span {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #7d8891;
+    font-size: 20px;
+}
+.BDStrirtpf {
+    padding: 15px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+}
+.AmountDTY {
+    font-weight: 500;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

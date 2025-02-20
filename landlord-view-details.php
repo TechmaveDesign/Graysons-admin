@@ -49,12 +49,12 @@
                         <div class="d-flex align-items-center">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb  mb-0">
-                                    <li class="breadcrumb-item"><a href="tenant-users.php">Tenant</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">View Tenant Details</li>
+                                    <li class="breadcrumb-item"><a href="landlord-users.php">Users</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">View Landlord Details</li>
                                 </ol>
                             </nav>
                             <div class=" ms-3">
-                                <a href="tenant-users.php" class="btn btn-sm cmnbackbtn btn-outline-secondary ">
+                                <a href="landlord-users.php" class="btn btn-sm cmnbackbtn btn-outline-secondary ">
                                     <iconify-icon icon="line-md:list-3"></iconify-icon> Back
                                 </a>
                             </div>
@@ -319,12 +319,12 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-9 px-0">
-                                        <div class="contact-more-info">
+                                        <div class="contact-more-info" >
 
-                                            <div class="scrollTabContainerMAin">
-                                                <button class="scroll-btn prev" type="button">
+                                            <div class="scrollTabContainerMAin" id="NoButtonTab">
+                                                <!-- <button class="scroll-btn prev" type="button">
                                                     <iconify-icon icon="tabler:arrow-left"></iconify-icon>
-                                                </button>
+                                                </button> -->
                                                 <ul class="nav nav-tabs nav-line nav-icon nav-light customuserviewTabs"
                                                     id="scrolableTabs">
 
@@ -334,23 +334,6 @@
                                                             <span class="nav-icon-wrap"><span class="feather-icon"><i
                                                                         data-feather="clipboard"></i></span></span>
                                                             <span class="nav-link-text">Documents</span>
-                                                        </a>
-                                                    </li>
-                                                    <!-- <li class="nav-item">
-                                                        <a class="nav-link" data-bs-toggle="tab" href="#NewContact">
-                                                            <span class="nav-icon-wrap"><span class="feather-icon"><i
-                                                                        data-feather="user-plus"></i></span></span>
-                                                            <span class="nav-link-text">New Contact</span>
-                                                        </a>
-                                                    </li> -->
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" data-bs-toggle="tab" href="#Contracts">
-                                                            <span class="nav-icon-wrap"><span class="feather-icon">
-                                                                    <iconify-icon
-                                                                        icon="material-symbols-light:contract-outline">
-                                                                    </iconify-icon>
-                                                                </span></span>
-                                                            <span class="nav-link-text">Contracts</span>
                                                         </a>
                                                     </li>
                                                     <li class="nav-item">
@@ -364,13 +347,18 @@
                                                         </a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a class="nav-link" data-bs-toggle="tab"
-                                                            href="#ParkingTenancies">
+                                                        <a class="nav-link" data-bs-toggle="tab" href="#TenantHistory">
                                                             <span class="nav-icon-wrap"><span class="feather-icon">
-                                                                    <iconify-icon icon="mdi:car-brake-parking">
-                                                                    </iconify-icon>
+                                                            <iconify-icon icon="solar:history-broken"></iconify-icon>
                                                                 </span></span>
-                                                            <span class="nav-link-text">Parking Tenancies</span>
+                                                            <span class="nav-link-text">Tenant History</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-bs-toggle="tab" href="#Events">
+                                                            <span class="nav-icon-wrap"><span class="feather-icon"><i
+                                                                        data-feather="calendar"></i></span></span>
+                                                            <span class="nav-link-text">Events</span>
                                                         </a>
                                                     </li>
                                                     <li class="nav-item">
@@ -389,22 +377,46 @@
                                                             <span class="nav-link-text">Notes</span>
                                                         </a>
                                                     </li>
-                                                    <li class="nav-item">
+                                                    <!-- <li class="nav-item">
+                                                        <a class="nav-link" data-bs-toggle="tab" href="#NewContact">
+                                                            <span class="nav-icon-wrap"><span class="feather-icon"><i
+                                                                        data-feather="user-plus"></i></span></span>
+                                                            <span class="nav-link-text">New Contact</span>
+                                                        </a>
+                                                    </li> -->
+                                                    <!-- <li class="nav-item">
+                                                        <a class="nav-link" data-bs-toggle="tab" href="#Contracts">
+                                                            <span class="nav-icon-wrap"><span class="feather-icon">
+                                                                    <iconify-icon
+                                                                        icon="material-symbols-light:contract-outline">
+                                                                    </iconify-icon>
+                                                                </span></span>
+                                                            <span class="nav-link-text">Contracts</span>
+                                                        </a>
+                                                    </li> -->
+                                                    
+                                                    <!-- <li class="nav-item">
+                                                        <a class="nav-link" data-bs-toggle="tab"
+                                                            href="#ParkingTenancies">
+                                                            <span class="nav-icon-wrap"><span class="feather-icon">
+                                                                    <iconify-icon icon="mdi:car-brake-parking">
+                                                                    </iconify-icon>
+                                                                </span></span>
+                                                            <span class="nav-link-text">Parking Tenancies</span>
+                                                        </a>
+                                                    </li> -->
+                                                   
+                                                  
+                                                    <!-- <li class="nav-item">
                                                         <a class="nav-link" data-bs-toggle="tab"
                                                             href="#ExtendedDetails">
                                                             <span class="nav-icon-wrap"><span class="feather-icon"><i
                                                                         data-feather="shuffle"></i></span></span>
                                                             <span class="nav-link-text">Extended Details</span>
                                                         </a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" data-bs-toggle="tab" href="#Events">
-                                                            <span class="nav-icon-wrap"><span class="feather-icon"><i
-                                                                        data-feather="calendar"></i></span></span>
-                                                            <span class="nav-link-text">Events</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="nav-item">
+                                                    </li> -->
+                                                  
+                                                    <!-- <li class="nav-item">
                                                         <a class="nav-link" data-bs-toggle="tab" href="#Roles">
                                                             <span class="nav-icon-wrap"><span class="feather-icon"><i
                                                                         data-feather="user"></i></span></span>
@@ -425,12 +437,12 @@
                                                                         data-feather="lock"></i></span></span>
                                                             <span class="nav-link-text">Password</span>
                                                         </a>
-                                                    </li>
+                                                    </li> -->
 
                                                 </ul>
-                                                <button class="scroll-btn next" type="button">
+                                                <!-- <button class="scroll-btn next" type="button">
                                                     <iconify-icon icon="tabler:arrow-right"></iconify-icon>
-                                                </button>
+                                                </button> -->
                                             </div>
 
                                             <div class="tab-content usertabsContent">
@@ -1379,6 +1391,201 @@
                                                                             </div>
                                                                         </td>
                                                                     </tr>
+
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="tab-pane fade " id="TenantHistory">
+
+                                                    <div class="mainuserFilesds_tabpaneContainer">
+                                                        <div class="docfilterbutton">
+                                                            <h2 class="tabinnerTitle">Tenanat History</h2>
+                                                            <!-- <div class="RightTabinr_container">
+
+                                                                <button
+                                                                    class="btn btn-sm addiconiButton commonAddnewButton btn-primary ms-3"
+                                                                    type="button" data-bs-toggle="offcanvas"
+                                                                    data-bs-target="#AddTenancyModal"
+                                                                    aria-controls="offcanvasExample">
+                                                                    <iconify-icon icon="lets-icons:add-round">
+                                                                    </iconify-icon> Add New Tenancy
+                                                                </button>
+                                                            </div> -->
+                                                        </div>
+
+                                                        <div class="contact-list-view mt-4 topborderstyle">
+
+                                                            <table class="table common-datatable nowrap w-100 ">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Tenanat Name</th>
+                                                                        <th>Type</th>
+                                                                        <th>Property </th>
+                                                                        <th>Unit</th>
+                                                                        <th>Start Date</th>
+                                                                        <th>End Date</th>
+                                                                        <th>Status</th>
+                                                                        <th>Actions</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="view-tenant-details.php">Kimo Karen</a>
+                                                                        </td>
+                                                                        <td>
+                                                                            Student
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="LongMesage_container">
+                                                                                <input
+                                                                                    class="refuge-collection-input tableLongMessage_Input"
+                                                                                    value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House">
+                                                                                <button
+                                                                                    class="view-btn tablemessageview_btn"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="tooltip"
+                                                                                    data-bs-placement="top"
+                                                                                    aria-label="Click to view"
+                                                                                    data-bs-original-title="Click to view Full Message">
+                                                                                    <i class="bi bi-eye"></i> Read More
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>Studio</td>
+                                                                        <td>
+                                                                            09/04/2024 17:19
+                                                                        </td>
+                                                                        <td>28/09/2023 19:47</td>
+                                                                        <td><span class="badge bg-danger">Inactive</span></td>
+                                                                        <td>
+                                                                            <div
+                                                                                class="d-flex align-items-center ActionDropdown">
+                                                                                <div class="d-flex">
+                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                        data-bs-toggle="tooltip"
+                                                                                        data-placement="top" title=""
+                                                                                        data-bs-original-title="View Tenanat Details"
+                                                                                        href="view-tenant-details.php">
+                                                                                        <span class="icon">
+                                                                                            <span class="feather-icon">
+                                                                                                <iconify-icon
+                                                                                                    icon="majesticons:eye-line">
+                                                                                                </iconify-icon>
+                                                                                            </span>
+                                                                                        </span>
+                                                                                    </a>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="view-tenant-details.php">Mendaline Shane</a>
+                                                                        </td>
+                                                                        <td>
+                                                                            Student
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="LongMesage_container">
+                                                                                <input
+                                                                                    class="refuge-collection-input tableLongMessage_Input"
+                                                                                    value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House">
+                                                                                <button
+                                                                                    class="view-btn tablemessageview_btn"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="tooltip"
+                                                                                    data-bs-placement="top"
+                                                                                    aria-label="Click to view"
+                                                                                    data-bs-original-title="Click to view Full Message">
+                                                                                    <i class="bi bi-eye"></i> Read More
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>Flat</td>
+                                                                        <td>
+                                                                            09/04/2024 17:19
+                                                                        </td>
+                                                                        <td>28/09/2023 19:47</td>
+                                                                        <td><span class="badge bg-danger">Inactive</span></td>
+                                                                        <td>
+                                                                            <div
+                                                                                class="d-flex align-items-center ActionDropdown">
+                                                                                <div class="d-flex">
+                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                        data-bs-toggle="tooltip"
+                                                                                        data-placement="top" title=""
+                                                                                        data-bs-original-title="View Tenanat Details"
+                                                                                        href="view-tenant-details.php">
+                                                                                        <span class="icon">
+                                                                                            <span class="feather-icon">
+                                                                                                <iconify-icon
+                                                                                                    icon="majesticons:eye-line">
+                                                                                                </iconify-icon>
+                                                                                            </span>
+                                                                                        </span>
+                                                                                    </a>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="view-tenant-details.php">Shan Shane</a>
+                                                                        </td>
+                                                                        <td>
+                                                                            Student
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="LongMesage_container">
+                                                                                <input
+                                                                                    class="refuge-collection-input tableLongMessage_Input"
+                                                                                    value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House">
+                                                                                <button
+                                                                                    class="view-btn tablemessageview_btn"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="tooltip"
+                                                                                    data-bs-placement="top"
+                                                                                    aria-label="Click to view"
+                                                                                    data-bs-original-title="Click to view Full Message">
+                                                                                    <i class="bi bi-eye"></i> Read More
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>Room</td>
+                                                                        <td>
+                                                                            09/04/2024 17:19
+                                                                        </td>
+                                                                        <td>28/09/2023 19:47</td>
+                                                                        <td><span class="badge bg-danger">Inactive</span></td>
+                                                                        <td>
+                                                                            <div
+                                                                                class="d-flex align-items-center ActionDropdown">
+                                                                                <div class="d-flex">
+                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                        data-bs-toggle="tooltip"
+                                                                                        data-placement="top" title=""
+                                                                                        data-bs-original-title="View Tenanat Details"
+                                                                                        href="view-tenant-details.php">
+                                                                                        <span class="icon">
+                                                                                            <span class="feather-icon">
+                                                                                                <iconify-icon
+                                                                                                    icon="majesticons:eye-line">
+                                                                                                </iconify-icon>
+                                                                                            </span>
+                                                                                        </span>
+                                                                                    </a>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    
 
                                                                 </tbody>
                                                             </table>
@@ -4361,14 +4568,7 @@
                 <div class="formstartcontainer">
 
                     <div class="row gx-3">
-                    <div class="col-lg-4">
-                            <div class="form-group">
-                                <label class="form-label">Contract Type</label>
-                                <input class="form-control " placeholder=""
-                                    name="" type="text" />
-                            </div>
-                        </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label class="form-label">Property</label>
                                 <select name="" id="" class="form-control select2">
@@ -4381,7 +4581,7 @@
 
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label class="form-label">Status</label>
                                 <select name="" id="" class="form-control select2">

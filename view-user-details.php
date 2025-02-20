@@ -49,12 +49,12 @@
                         <div class="d-flex align-items-center">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb  mb-0">
-                                    <li class="breadcrumb-item"><a href="users.php">Users</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">View User Details</li>
+                                    <li class="breadcrumb-item"><a href="staff-users.php">Users</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">View Staff Details</li>
                                 </ol>
                             </nav>
                             <div class=" ms-3">
-                                <a href="users.php" class="btn btn-sm cmnbackbtn btn-outline-secondary ">
+                                <a href="staff-users.php" class="btn btn-sm cmnbackbtn btn-outline-secondary ">
                                     <iconify-icon icon="line-md:list-3"></iconify-icon> Back
                                 </a>
                             </div>
@@ -271,7 +271,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="user-custom-field">
+                                                        <!-- <div class="user-custom-field">
                                                             <div class="custom-field-name">Appointment Colour:</div>
                                                             <div class="custom-field-value">
                                                                 <div style="display: inline-block;">
@@ -287,7 +287,7 @@
 
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
 
                                                         <div class="flexcheckColumn">
                                                             <div class="form-group">
@@ -321,10 +321,10 @@
                                     <div class="col-lg-9 px-0">
                                         <div class="contact-more-info">
 
-                                            <div class="scrollTabContainerMAin">
-                                                <button class="scroll-btn prev" type="button">
+                                            <div class="scrollTabContainerMAin" id="NoButtonTab">
+                                                <!-- <button class="scroll-btn prev" type="button">
                                                     <iconify-icon icon="tabler:arrow-left"></iconify-icon>
-                                                </button>
+                                                </button> -->
                                                 <ul class="nav nav-tabs nav-line nav-icon nav-light customuserviewTabs"
                                                     id="scrolableTabs">
 
@@ -336,14 +336,14 @@
                                                             <span class="nav-link-text">Documents</span>
                                                         </a>
                                                     </li>
-                                                    <li class="nav-item">
+                                                    <!-- <li class="nav-item">
                                                         <a class="nav-link" data-bs-toggle="tab" href="#NewContact">
                                                             <span class="nav-icon-wrap"><span class="feather-icon"><i
                                                                         data-feather="user-plus"></i></span></span>
                                                             <span class="nav-link-text">New Contact</span>
                                                         </a>
-                                                    </li>
-                                                    <li class="nav-item">
+                                                    </li> -->
+                                                    <!-- <li class="nav-item">
                                                         <a class="nav-link" data-bs-toggle="tab" href="#Contracts">
                                                             <span class="nav-icon-wrap"><span class="feather-icon">
                                                                     <iconify-icon
@@ -352,8 +352,8 @@
                                                                 </span></span>
                                                             <span class="nav-link-text">Contracts</span>
                                                         </a>
-                                                    </li>
-                                                    <li class="nav-item">
+                                                    </li> -->
+                                                    <!-- <li class="nav-item">
                                                         <a class="nav-link" data-bs-toggle="tab" href="#Tenancies">
                                                             <span class="nav-icon-wrap"><span class="feather-icon">
                                                                     <iconify-icon
@@ -362,8 +362,8 @@
                                                                 </span></span>
                                                             <span class="nav-link-text">Tenancies</span>
                                                         </a>
-                                                    </li>
-                                                    <li class="nav-item">
+                                                    </li> -->
+                                                    <!-- <li class="nav-item">
                                                         <a class="nav-link" data-bs-toggle="tab"
                                                             href="#ParkingTenancies">
                                                             <span class="nav-icon-wrap"><span class="feather-icon">
@@ -372,7 +372,7 @@
                                                                 </span></span>
                                                             <span class="nav-link-text">Parking Tenancies</span>
                                                         </a>
-                                                    </li>
+                                                    </li> -->
                                                     <li class="nav-item">
                                                         <a class="nav-link" data-bs-toggle="tab" href="#Invoices">
                                                             <span class="nav-icon-wrap"><span class="feather-icon">
@@ -389,28 +389,28 @@
                                                             <span class="nav-link-text">Notes</span>
                                                         </a>
                                                     </li>
-                                                    <li class="nav-item">
+                                                    <!-- <li class="nav-item">
                                                         <a class="nav-link" data-bs-toggle="tab"
                                                             href="#ExtendedDetails">
                                                             <span class="nav-icon-wrap"><span class="feather-icon"><i
                                                                         data-feather="shuffle"></i></span></span>
                                                             <span class="nav-link-text">Extended Details</span>
                                                         </a>
-                                                    </li>
-                                                    <li class="nav-item">
+                                                    </li> -->
+                                                    <!-- <li class="nav-item">
                                                         <a class="nav-link" data-bs-toggle="tab" href="#Events">
                                                             <span class="nav-icon-wrap"><span class="feather-icon"><i
                                                                         data-feather="calendar"></i></span></span>
                                                             <span class="nav-link-text">Events</span>
                                                         </a>
-                                                    </li>
-                                                    <li class="nav-item">
+                                                    </li> -->
+                                                    <!-- <li class="nav-item">
                                                         <a class="nav-link" data-bs-toggle="tab" href="#Roles">
                                                             <span class="nav-icon-wrap"><span class="feather-icon"><i
                                                                         data-feather="user"></i></span></span>
                                                             <span class="nav-link-text">Roles</span>
                                                         </a>
-                                                    </li>
+                                                    </li> -->
                                                     <li class="nav-item">
                                                         <a class="nav-link" data-bs-toggle="tab" href="#Notifications">
                                                             <span class="nav-icon-wrap"><span class="feather-icon"><i
@@ -428,9 +428,9 @@
                                                     </li>
 
                                                 </ul>
-                                                <button class="scroll-btn next" type="button">
+                                                <!-- <button class="scroll-btn next" type="button">
                                                     <iconify-icon icon="tabler:arrow-right"></iconify-icon>
-                                                </button>
+                                                </button> -->
                                             </div>
 
                                             <div class="tab-content usertabsContent">

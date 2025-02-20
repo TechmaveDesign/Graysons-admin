@@ -140,6 +140,24 @@
                                                                             In</span></span>
                                                                 </div>
                                                             </div>
+                                                            <div class="flex-1 border-end CustomFlex_style ">
+                                                                <div>
+                                                                    <div class="d-block fs-4 text-dark mb-1 ">Status
+                                                                    </div>
+                                                                    <div class="form-group" style="width:200px;">
+                                                                    <!-- <label for="" class="form-label"> Council Tax
+                                                                        Type</label> -->
+                                                                    <select name="" id="" class="form-control select2">
+                                                                        <option value="" disable readonly selected>
+                                                                            Salect an Option</option>
+                                                                        <option value="1">Pending</option>
+                                                                        <option value="2">Completed </option>
+                                                                        <option value="3">Assigned</option>
+                                                                        <option value="4">Submitted for Review</option>
+                                                                    </select>
+                                                                </div>
+                                                                </div>
+                                                            </div>
                                                             <div class="flex-1 CustomFlex_style ">
                                                                 <div>
                                                                     <div class="d-block fs-4 text-dark mb-1 ">Property
