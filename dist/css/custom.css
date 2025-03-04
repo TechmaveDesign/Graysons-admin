@@ -9817,3 +9817,35 @@ font-size: 18px;
         grid-template-columns: 1fr !important; /* 1 card per row on mobile */
     }
 }
+
+
+
+/* ************************************************************
+Lettings settings add field style start 3/3/25
+**************************************************** */
+.customflexHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #f8f9fb !important;
+	padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.customflexHeader .tabinnerTitle {
+	font-size: 16px;
+	margin-bottom: 0px;
+	display: flex;
+	align-items: center;
+	font-family: "Roboto", serif;
+	font-weight: 500;
+	color: #3d3d56;
+	margin-top: 0px;
+}
+.customflexHeader .tabinnerTitle iconify-icon{
+    margin-right: 5px;
+}
+.add-users-modal-body-table-header {
+	background: #f3f5f9;
+}
+

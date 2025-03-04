@@ -118,6 +118,11 @@
 				stroke-dashoffset: -125px;
 			}
 		}
+
+		.sidecolor_Role .svg-icon > iconify-icon {
+	background: #1E3A8A !important;
+	color: #fff !important;
+}
 	</style>
 
 	<!-- light and dark theme loader js start -->
@@ -870,6 +875,8 @@
 																			<i
 																				class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 																		</li>
+
+																		
 
 																		<li class="nav-item">
 																			<a class="nav-link sidecolor_webmanage"
@@ -1744,7 +1751,17 @@
 									</li>
 								</ul>
 							</li>
-
+							<li class="nav-item">
+								<a class="nav-link sidecolor_Role" href="role-permission.php">
+									<span class="nav-icon-wrap">
+										<span class="svg-icon">
+										<iconify-icon icon="hugeicons:security-check"></iconify-icon>
+										</span>
+									</span>
+									<span class="nav-link-text">Role & Permissions</span>
+								</a>
+								<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+							</li>
 						</ul>
 					</div>
 
