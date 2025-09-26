@@ -73,11 +73,18 @@
     display: none; /* Hidden by default, shown only for new inputs */
 }
 
-#inputList .input-item, #multiselectOptionsList .multiselect-item {
+#inputList .input-item{
     margin: 10px 0;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    align-items: flex-start;
+}
+#multiselectOptionsList .multiselect-item {
+    margin: 10px 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
     align-items: flex-start;
 }
 .Edit_Field_label {
@@ -133,7 +140,7 @@
     padding: 8px 12px;
     border: 1px solid #ced4da;
     border-radius: 4px;
-    background-color: #f8f9fa;
+    background-color: #fff;
     cursor: pointer;
     position: relative;
     display: flex;
@@ -150,8 +157,8 @@
 }
 
 .multiselect-preview .buttons {
-    display: flex;
-    gap: 5px;
+	display: none;
+	gap: 5px;
 }
 
 .multiselect-preview .edit-btn, .multiselect-preview .remove-btn {
@@ -176,10 +183,10 @@
 }
 
 .dropdown-multiselect .dropdown-menu {
-    width: 100%;
+    width: 96%;
     padding: 10px;
     border: 1px solid #ced4da;
-    border-radius: 4px;
+    border-radius: 10px;
     background-color: #fff;
     max-height: 200px;
     overflow-y: auto;
