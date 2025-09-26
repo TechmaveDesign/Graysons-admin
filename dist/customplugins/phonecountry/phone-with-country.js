@@ -101,7 +101,7 @@ const init = async countries => {
       const { name, prefix, flag } = country;
 
       const element = `<li class="pn-list-item ${
-      flag === "nl" ? "pn-list-item--selected" : ""
+      flag === "gb" ? "pn-list-item--selected" : ""
       } js_pn-list-item" data-flag="${flag}" data-prefix="${prefix}" tabindex="0" role="button" aria-pressed="false">
           <img class="pn-list-item__flag" src="https://flagpedia.net/data/flags/icon/36x27/${flag}.png" />
           <span class="pn-list-item__country js_country-name">${name}</span>

@@ -7686,7 +7686,7 @@ margin-right: 30px;
 }
 
 .manage_approvalBoard {
-	padding: 10px 20px;
+    padding: 0;
 }
 
 
@@ -9848,4 +9848,3 @@ Lettings settings add field style start 3/3/25
 .add-users-modal-body-table-header {
 	background: #f3f5f9;
 }
-

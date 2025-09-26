@@ -67,6 +67,70 @@
                     </header>
 
                     <div class="contact-body">
+                    <div class="fullwidthDesktopTabs MobileScrollShow " id="nopaddingTop">
+                            <button class="scroll-btn prev" type="button">
+                                <iconify-icon icon="tabler:arrow-left"></iconify-icon>
+                            </button>
+
+                            <ul
+                                class="nav nav-tabs nav-line nav-icon customTabStyle autoloadTabs fullwidthCustom_tabsUL nav-light">
+
+                                <li class="nav-item" role="presentation">
+                                            <a class="nav-link active" data-bs-toggle="tab" href="#allLettings" aria-selected="true" role="tab">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="nav-link-text">Lettings</span>
+                                                    <span class="numberCount">02</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link " data-bs-toggle="tab" href="#allAccounts" aria-selected="false" tabindex="-1" role="tab">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="nav-link-text">Accounts</span>
+                                                    <span class="numberCount">06</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link " data-bs-toggle="tab" href="#allHRHub" aria-selected="false" tabindex="-1" role="tab">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="nav-link-text">HR Hub</span>
+                                                    <span class="numberCount">05</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link " data-bs-toggle="tab" href="#allProperty" aria-selected="false" tabindex="-1" role="tab">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="nav-link-text">Property</span>
+                                                    <span class="numberCount">05</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#allCompliance" aria-selected="false" tabindex="-1" role="tab">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="nav-link-text">Compliance</span>
+                                                    <span class="numberCount">07</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                      
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#allProcurement" aria-selected="false" tabindex="-1" role="tab">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="nav-link-text">Procurement</span>
+                                                    <span class="numberCount">12</span>
+
+                                                </div>
+                                            </a>
+                                        </li> 
+                            </ul>
+                            <button class="scroll-btn next" type="button">
+                                <iconify-icon icon="tabler:arrow-right"></iconify-icon>
+                            </button>
+
+                        </div>
                         <div class="nicescroll-bar">
                             <div class="userFilters onerowfilter" id="filterDiv" style="display: none;">
                                 <div class="quick-access-form-wrap nopaddingleftright">
@@ -78,7 +142,7 @@
                                                     <div class="col-lg-12">
                                                         <div class="row gx-3">
 
-                                                            <div class="col-lg-2">
+                                                            <!-- <div class="col-lg-2">
                                                                 <div class="form-group">
                                                                     <label class="form-label">Department</label>
                                                                     <select name="department" id="department_select"
@@ -97,7 +161,7 @@
                                                                             Support</option>
                                                                     </select>
                                                                 </div>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="col-lg-2">
                                                                 <div class="form-group">
                                                                     <label class="form-label">Users</label>
@@ -125,7 +189,7 @@
                                                                 </div>
                                                             </div>
 
-                                                            <div class="col-lg-3">
+                                                            <!-- <div class="col-lg-3">
                                                                 <div class="form-group">
                                                                     <label class="form-label">Status</label>
                                                                     <select name="" id="Status"
@@ -140,7 +204,7 @@
 
                                                                     </select>
                                                                 </div>
-                                                            </div>
+                                                            </div> -->
 
                                                             <div class="col-md-3">
                                                                 <div class="form-group">
@@ -208,11 +272,16 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="contact-list-view">
+                            <div class="contact-body">
+                        
+                        
 
-                                <div class="ApprovalBoards_tabs">
+                            <!-- add new content here start -->
+                            <div class="post-list propertyTabContent">
 
-                                <div class="manage_approvalBoard">
+                            <div class="tab-content notpMargin_tab pb-3">
+                                 <div class="tab-pane fade show active" id="allLettings" role="tabpanel">
+                                 <div class="manage_approvalBoard">
                                             <div class="row">
 
                                                 <div class="card-list">
@@ -768,9 +837,3277 @@
 
                                             </div>
                                         </div>
+                                 </div>
+                                 <div class="tab-pane fade" id="allAccounts" role="tabpanel">
+                                    <div class="manage_approvalBoard">
+                                                <div class="row">
+
+                                                    <div class="card-list">
+                                                        <div class="card approval_board">
+                                                            <div class="card-header">
+                                                                <div class="approvalHeader_title">
+                                                                    <div class="circleIcon_cmn">
+                                                                        <iconify-icon
+                                                                            icon="material-symbols-light:approval-outline-sharp">
+                                                                        </iconify-icon>
+                                                                    </div><span class="card_id">#54523</span>
+                                                                </div>
+                                                                <div class="LabelnTitle">
+                                                                    <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="Ticket_apr_info margined45_bottom">
+                                                                    <div class="Approval_inner_column">
+                                                                        <a href="view-user-details.php">
+                                                                            <div class="userName_container">
+                                                                                <div class="ImageOfUser"><img
+                                                                                        src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user"
+                                                                                        class="aprcard_userimage"></div>
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>User Name</label>
+                                                                                    <h3> Danial Craig
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Department</label>
+                                                                            <h3>Accounts Department</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div
+                                                                    class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Note</label>
+                                                                            <p class="description_Ticket_approval"
+                                                                                data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                Please review the mileage incurred during
+                                                                                this
+                                                                                timeframe and provide your approval at your
+                                                                                earliest
+                                                                                convenience.
+                                                                            </p>
+                                                                            <a href="#" class="read-more">Read More</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="card-footer approvalFooter_action">
+                                                            
+                                                                <a href="approval-details.php" class="approval_details">
+                                                                    <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                    View Details
+                                                                </a>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="card approval_board">
+                                                            <div class="card-header">
+                                                                <div class="approvalHeader_title">
+                                                                    <div class="circleIcon_cmn">
+                                                                        <iconify-icon
+                                                                            icon="material-symbols-light:approval-outline-sharp">
+                                                                        </iconify-icon>
+                                                                    </div><span class="card_id">#14322</span>
+                                                                </div>
+                                                                <div class="LabelnTitle">
+                                                                    <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="Ticket_apr_info margined45_bottom">
+                                                                    <div class="Approval_inner_column">
+                                                                        <a href="view-user-details.php">
+                                                                            <div class="userName_container">
+                                                                                <div class="ImageOfUser"><img
+                                                                                        src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user"
+                                                                                        class="aprcard_userimage"></div>
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>User Name</label>
+                                                                                    <h3> Morgan Freeman
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Department</label>
+                                                                            <h3>Accounts Department</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div
+                                                                    class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Note</label>
+                                                                            <p class="description_Ticket_approval"
+                                                                                data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                Please review the mileage incurred during
+                                                                                this
+                                                                                timeframe and provide your approval at your
+                                                                                earliest
+                                                                                convenience.
+                                                                            </p>
+                                                                            <a href="#" class="read-more">Read More</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="card-footer approvalFooter_action">
+                                                            
+                                                                <a href="approval-details.php" class="approval_details">
+                                                                    <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                    View Details
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card approval_board">
+                                                            <div class="card-header">
+                                                                <div class="approvalHeader_title">
+                                                                    <div class="circleIcon_cmn">
+                                                                        <iconify-icon
+                                                                            icon="material-symbols-light:approval-outline-sharp">
+                                                                        </iconify-icon>
+                                                                    </div><span class="card_id">#44323</span>
+                                                                </div>
+                                                                <div class="LabelnTitle">
+                                                                    <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="Ticket_apr_info margined45_bottom">
+                                                                    <div class="Approval_inner_column">
+                                                                        <a href="view-user-details.php">
+                                                                            <div class="userName_container">
+                                                                                <div class="ImageOfUser"><img
+                                                                                        src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user"
+                                                                                        class="aprcard_userimage"></div>
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>User Name</label>
+                                                                                    <h3> Huma Therman
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Department</label>
+                                                                            <h3>Accounts Department</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div
+                                                                    class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Note</label>
+                                                                            <p class="description_Ticket_approval"
+                                                                                data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                Please review the mileage incurred during
+                                                                                this
+                                                                                timeframe and provide your approval at your
+                                                                                earliest
+                                                                                convenience.
+                                                                            </p>
+                                                                            <a href="#" class="read-more">Read More</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="card-footer approvalFooter_action">
+                                                            
+                                                                <a href="approval-details.php" class="approval_details">
+                                                                    <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                    View Details
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card approval_board">
+                                                            <div class="card-header">
+                                                                <div class="approvalHeader_title">
+                                                                    <div class="circleIcon_cmn">
+                                                                        <iconify-icon
+                                                                            icon="material-symbols-light:approval-outline-sharp">
+                                                                        </iconify-icon>
+                                                                    </div><span class="card_id">#44324</span>
+                                                                </div>
+                                                                <div class="LabelnTitle">
+                                                                    <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="Ticket_apr_info margined45_bottom">
+                                                                    <div class="Approval_inner_column">
+                                                                        <a href="view-user-details.php">
+                                                                            <div class="userName_container">
+                                                                                <div class="ImageOfUser"><img
+                                                                                        src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user"
+                                                                                        class="aprcard_userimage"></div>
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>User Name</label>
+                                                                                    <h3>
+                                                                                        Dean Shaw
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Department</label>
+                                                                            <h3>Accounts Department</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div
+                                                                    class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Note</label>
+                                                                            <p class="description_Ticket_approval"
+                                                                                data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                Please review the mileage incurred during
+                                                                                this
+                                                                                timeframe and provide your approval at your
+                                                                                earliest
+                                                                                convenience.
+                                                                            </p>
+                                                                            <a href="#" class="read-more">Read More</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="card-footer approvalFooter_action">
+                                                            
+                                                                <a href="approval-details.php" class="approval_details">
+                                                                    <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                    View Details
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card approval_board">
+                                                            <div class="card-header">
+                                                                <div class="approvalHeader_title">
+                                                                    <div class="circleIcon_cmn">
+                                                                        <iconify-icon
+                                                                            icon="material-symbols-light:approval-outline-sharp">
+                                                                        </iconify-icon>
+                                                                    </div><span class="card_id">#44324</span>
+                                                                </div>
+                                                                <div class="LabelnTitle">
+                                                                    <h4 class="aprvl_cardDate"> 12 Sep , 2024 15:20
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="Ticket_apr_info margined45_bottom">
+                                                                    <div class="Approval_inner_column">
+                                                                        <a href="view-user-details.php">
+                                                                            <div class="userName_container">
+                                                                                <div class="ImageOfUser"><img
+                                                                                        src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user"
+                                                                                        class="aprcard_userimage"></div>
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>User Name</label>
+                                                                                    <h3>
+                                                                                        Winston Churchil
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Department</label>
+                                                                            <h3>Accounts Department</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div
+                                                                    class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Note</label>
+                                                                            <p class="description_Ticket_approval"
+                                                                                data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                Please review the mileage incurred during
+                                                                                this
+                                                                                timeframe and provide your approval at your
+                                                                                earliest
+                                                                                convenience.
+                                                                            </p>
+                                                                            <a href="#" class="read-more">Read More</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="card-footer approvalFooter_action">
+                                                            
+                                                                <a href="approval-details.php" class="approval_details">
+                                                                    <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                    View Details
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card approval_board">
+                                                            <div class="card-header">
+                                                                <div class="approvalHeader_title">
+                                                                    <div class="circleIcon_cmn">
+                                                                        <iconify-icon
+                                                                            icon="material-symbols-light:approval-outline-sharp">
+                                                                        </iconify-icon>
+                                                                    </div><span class="card_id">#44324</span>
+                                                                </div>
+                                                                <div class="LabelnTitle">
+                                                                    <h4 class="aprvl_cardDate"> 12 Sep , 2024 15:20
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="Ticket_apr_info margined45_bottom">
+                                                                    <div class="Approval_inner_column">
+                                                                        <a href="view-user-details.php">
+                                                                            <div class="userName_container">
+                                                                                <div class="ImageOfUser"><img
+                                                                                        src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user"
+                                                                                        class="aprcard_userimage"></div>
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>User Name</label>
+                                                                                    <h3>
+                                                                                        Winston Churchil
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Department</label>
+                                                                            <h3>Accounts Department</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div
+                                                                    class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Note</label>
+                                                                            <p class="description_Ticket_approval"
+                                                                                data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                Please review the mileage incurred during
+                                                                                this
+                                                                                timeframe and provide your approval at your
+                                                                                earliest
+                                                                                convenience.
+                                                                            </p>
+                                                                            <a href="#" class="read-more">Read More</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="card-footer approvalFooter_action">
+                                                            
+                                                                <a href="approval-details.php" class="approval_details">
+                                                                    <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                    View Details
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card approval_board">
+                                                            <div class="card-header">
+                                                                <div class="approvalHeader_title">
+                                                                    <div class="circleIcon_cmn">
+                                                                        <iconify-icon
+                                                                            icon="material-symbols-light:approval-outline-sharp">
+                                                                        </iconify-icon>
+                                                                    </div><span class="card_id">#44324</span>
+                                                                </div>
+                                                                <div class="LabelnTitle">
+                                                                    <h4 class="aprvl_cardDate"> 12 Sep , 2024 15:20
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="Ticket_apr_info margined45_bottom">
+                                                                    <div class="Approval_inner_column">
+                                                                        <a href="view-user-details.php">
+                                                                            <div class="userName_container">
+                                                                                <div class="ImageOfUser"><img
+                                                                                        src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user"
+                                                                                        class="aprcard_userimage"></div>
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>User Name</label>
+                                                                                    <h3>
+                                                                                        Winston Churchil
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Department</label>
+                                                                            <h3>Accounts Department</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div
+                                                                    class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Note</label>
+                                                                            <p class="description_Ticket_approval"
+                                                                                data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                Please review the mileage incurred during
+                                                                                this
+                                                                                timeframe and provide your approval at your
+                                                                                earliest
+                                                                                convenience.
+                                                                            </p>
+                                                                            <a href="#" class="read-more">Read More</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="card-footer approvalFooter_action">
+                                                            
+                                                                <a href="approval-details.php" class="approval_details">
+                                                                    <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                    View Details
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card approval_board">
+                                                            <div class="card-header">
+                                                                <div class="approvalHeader_title">
+                                                                    <div class="circleIcon_cmn">
+                                                                        <iconify-icon
+                                                                            icon="material-symbols-light:approval-outline-sharp">
+                                                                        </iconify-icon>
+                                                                    </div><span class="card_id">#44324</span>
+                                                                </div>
+                                                                <div class="LabelnTitle">
+                                                                    <h4 class="aprvl_cardDate"> 12 Sep , 2024 15:20
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="Ticket_apr_info margined45_bottom">
+                                                                    <div class="Approval_inner_column">
+                                                                        <a href="view-user-details.php">
+                                                                            <div class="userName_container">
+                                                                                <div class="ImageOfUser"><img
+                                                                                        src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user"
+                                                                                        class="aprcard_userimage"></div>
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>User Name</label>
+                                                                                    <h3>
+                                                                                        Winston Churchil
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Department</label>
+                                                                            <h3>Accounts Department</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div
+                                                                    class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Note</label>
+                                                                            <p class="description_Ticket_approval"
+                                                                                data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                Please review the mileage incurred during
+                                                                                this
+                                                                                timeframe and provide your approval at your
+                                                                                earliest
+                                                                                convenience.
+                                                                            </p>
+                                                                            <a href="#" class="read-more">Read More</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="card-footer approvalFooter_action">
+                                                            
+                                                                <a href="approval-details.php" class="approval_details">
+                                                                    <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                    View Details
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                 </div>
+                                 <div class="tab-pane fade" id="allHRHub" role="tabpanel">
+                                 <div class="manage_approvalBoard">
+                                                <div class="row">
+
+                                                    <div class="card-list">
+                                                        <div class="card approval_board">
+                                                            <div class="card-header">
+                                                                <div class="approvalHeader_title">
+                                                                    <div class="circleIcon_cmn">
+                                                                        <iconify-icon
+                                                                            icon="material-symbols-light:approval-outline-sharp">
+                                                                        </iconify-icon>
+                                                                    </div><span class="card_id">#54523</span>
+                                                                </div>
+                                                                <div class="LabelnTitle">
+                                                                    <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="Ticket_apr_info margined45_bottom">
+                                                                    <div class="Approval_inner_column">
+                                                                        <a href="view-user-details.php">
+                                                                            <div class="userName_container">
+                                                                                <div class="ImageOfUser"><img
+                                                                                        src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user"
+                                                                                        class="aprcard_userimage"></div>
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>User Name</label>
+                                                                                    <h3> Danial Craig
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Department</label>
+                                                                            <h3>HR. Department</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div
+                                                                    class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Note</label>
+                                                                            <p class="description_Ticket_approval"
+                                                                                data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                Please review the mileage incurred during
+                                                                                this
+                                                                                timeframe and provide your approval at your
+                                                                                earliest
+                                                                                convenience.
+                                                                            </p>
+                                                                            <a href="#" class="read-more">Read More</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="card-footer approvalFooter_action">
+                                                            
+                                                                <a href="approval-details.php" class="approval_details">
+                                                                    <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                    View Details
+                                                                </a>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="card approval_board">
+                                                            <div class="card-header">
+                                                                <div class="approvalHeader_title">
+                                                                    <div class="circleIcon_cmn">
+                                                                        <iconify-icon
+                                                                            icon="material-symbols-light:approval-outline-sharp">
+                                                                        </iconify-icon>
+                                                                    </div><span class="card_id">#14322</span>
+                                                                </div>
+                                                                <div class="LabelnTitle">
+                                                                    <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="Ticket_apr_info margined45_bottom">
+                                                                    <div class="Approval_inner_column">
+                                                                        <a href="view-user-details.php">
+                                                                            <div class="userName_container">
+                                                                                <div class="ImageOfUser"><img
+                                                                                        src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user"
+                                                                                        class="aprcard_userimage"></div>
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>User Name</label>
+                                                                                    <h3> Morgan Freeman
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Department</label>
+                                                                            <h3>HR. Department</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div
+                                                                    class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Note</label>
+                                                                            <p class="description_Ticket_approval"
+                                                                                data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                Please review the mileage incurred during
+                                                                                this
+                                                                                timeframe and provide your approval at your
+                                                                                earliest
+                                                                                convenience.
+                                                                            </p>
+                                                                            <a href="#" class="read-more">Read More</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="card-footer approvalFooter_action">
+                                                            
+                                                                <a href="approval-details.php" class="approval_details">
+                                                                    <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                    View Details
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card approval_board">
+                                                            <div class="card-header">
+                                                                <div class="approvalHeader_title">
+                                                                    <div class="circleIcon_cmn">
+                                                                        <iconify-icon
+                                                                            icon="material-symbols-light:approval-outline-sharp">
+                                                                        </iconify-icon>
+                                                                    </div><span class="card_id">#44323</span>
+                                                                </div>
+                                                                <div class="LabelnTitle">
+                                                                    <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="Ticket_apr_info margined45_bottom">
+                                                                    <div class="Approval_inner_column">
+                                                                        <a href="view-user-details.php">
+                                                                            <div class="userName_container">
+                                                                                <div class="ImageOfUser"><img
+                                                                                        src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user"
+                                                                                        class="aprcard_userimage"></div>
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>User Name</label>
+                                                                                    <h3> Huma Therman
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Department</label>
+                                                                            <h3>HR. Department</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div
+                                                                    class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Note</label>
+                                                                            <p class="description_Ticket_approval"
+                                                                                data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                Please review the mileage incurred during
+                                                                                this
+                                                                                timeframe and provide your approval at your
+                                                                                earliest
+                                                                                convenience.
+                                                                            </p>
+                                                                            <a href="#" class="read-more">Read More</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="card-footer approvalFooter_action">
+                                                            
+                                                                <a href="approval-details.php" class="approval_details">
+                                                                    <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                    View Details
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card approval_board">
+                                                            <div class="card-header">
+                                                                <div class="approvalHeader_title">
+                                                                    <div class="circleIcon_cmn">
+                                                                        <iconify-icon
+                                                                            icon="material-symbols-light:approval-outline-sharp">
+                                                                        </iconify-icon>
+                                                                    </div><span class="card_id">#44324</span>
+                                                                </div>
+                                                                <div class="LabelnTitle">
+                                                                    <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="Ticket_apr_info margined45_bottom">
+                                                                    <div class="Approval_inner_column">
+                                                                        <a href="view-user-details.php">
+                                                                            <div class="userName_container">
+                                                                                <div class="ImageOfUser"><img
+                                                                                        src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user"
+                                                                                        class="aprcard_userimage"></div>
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>User Name</label>
+                                                                                    <h3>
+                                                                                        Dean Shaw
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Department</label>
+                                                                            <h3>HR. Department</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div
+                                                                    class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Note</label>
+                                                                            <p class="description_Ticket_approval"
+                                                                                data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                Please review the mileage incurred during
+                                                                                this
+                                                                                timeframe and provide your approval at your
+                                                                                earliest
+                                                                                convenience.
+                                                                            </p>
+                                                                            <a href="#" class="read-more">Read More</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="card-footer approvalFooter_action">
+                                                            
+                                                                <a href="approval-details.php" class="approval_details">
+                                                                    <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                    View Details
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card approval_board">
+                                                            <div class="card-header">
+                                                                <div class="approvalHeader_title">
+                                                                    <div class="circleIcon_cmn">
+                                                                        <iconify-icon
+                                                                            icon="material-symbols-light:approval-outline-sharp">
+                                                                        </iconify-icon>
+                                                                    </div><span class="card_id">#44324</span>
+                                                                </div>
+                                                                <div class="LabelnTitle">
+                                                                    <h4 class="aprvl_cardDate"> 12 Sep , 2024 15:20
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="Ticket_apr_info margined45_bottom">
+                                                                    <div class="Approval_inner_column">
+                                                                        <a href="view-user-details.php">
+                                                                            <div class="userName_container">
+                                                                                <div class="ImageOfUser"><img
+                                                                                        src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user"
+                                                                                        class="aprcard_userimage"></div>
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>User Name</label>
+                                                                                    <h3>
+                                                                                        Winston Churchil
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Department</label>
+                                                                            <h3>HR. Department</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div
+                                                                    class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Note</label>
+                                                                            <p class="description_Ticket_approval"
+                                                                                data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                Please review the mileage incurred during
+                                                                                this
+                                                                                timeframe and provide your approval at your
+                                                                                earliest
+                                                                                convenience.
+                                                                            </p>
+                                                                            <a href="#" class="read-more">Read More</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="card-footer approvalFooter_action">
+                                                            
+                                                                <a href="approval-details.php" class="approval_details">
+                                                                    <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                    View Details
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card approval_board">
+                                                            <div class="card-header">
+                                                                <div class="approvalHeader_title">
+                                                                    <div class="circleIcon_cmn">
+                                                                        <iconify-icon
+                                                                            icon="material-symbols-light:approval-outline-sharp">
+                                                                        </iconify-icon>
+                                                                    </div><span class="card_id">#44324</span>
+                                                                </div>
+                                                                <div class="LabelnTitle">
+                                                                    <h4 class="aprvl_cardDate"> 12 Sep , 2024 15:20
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="Ticket_apr_info margined45_bottom">
+                                                                    <div class="Approval_inner_column">
+                                                                        <a href="view-user-details.php">
+                                                                            <div class="userName_container">
+                                                                                <div class="ImageOfUser"><img
+                                                                                        src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user"
+                                                                                        class="aprcard_userimage"></div>
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>User Name</label>
+                                                                                    <h3>
+                                                                                        Winston Churchil
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Department</label>
+                                                                            <h3>HR. Department</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div
+                                                                    class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Note</label>
+                                                                            <p class="description_Ticket_approval"
+                                                                                data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                Please review the mileage incurred during
+                                                                                this
+                                                                                timeframe and provide your approval at your
+                                                                                earliest
+                                                                                convenience.
+                                                                            </p>
+                                                                            <a href="#" class="read-more">Read More</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="card-footer approvalFooter_action">
+                                                            
+                                                                <a href="approval-details.php" class="approval_details">
+                                                                    <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                    View Details
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card approval_board">
+                                                            <div class="card-header">
+                                                                <div class="approvalHeader_title">
+                                                                    <div class="circleIcon_cmn">
+                                                                        <iconify-icon
+                                                                            icon="material-symbols-light:approval-outline-sharp">
+                                                                        </iconify-icon>
+                                                                    </div><span class="card_id">#44324</span>
+                                                                </div>
+                                                                <div class="LabelnTitle">
+                                                                    <h4 class="aprvl_cardDate"> 12 Sep , 2024 15:20
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="Ticket_apr_info margined45_bottom">
+                                                                    <div class="Approval_inner_column">
+                                                                        <a href="view-user-details.php">
+                                                                            <div class="userName_container">
+                                                                                <div class="ImageOfUser"><img
+                                                                                        src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user"
+                                                                                        class="aprcard_userimage"></div>
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>User Name</label>
+                                                                                    <h3>
+                                                                                        Winston Churchil
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Department</label>
+                                                                            <h3>HR. Department</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div
+                                                                    class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Note</label>
+                                                                            <p class="description_Ticket_approval"
+                                                                                data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                Please review the mileage incurred during
+                                                                                this
+                                                                                timeframe and provide your approval at your
+                                                                                earliest
+                                                                                convenience.
+                                                                            </p>
+                                                                            <a href="#" class="read-more">Read More</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="card-footer approvalFooter_action">
+                                                            
+                                                                <a href="approval-details.php" class="approval_details">
+                                                                    <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                    View Details
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card approval_board">
+                                                            <div class="card-header">
+                                                                <div class="approvalHeader_title">
+                                                                    <div class="circleIcon_cmn">
+                                                                        <iconify-icon
+                                                                            icon="material-symbols-light:approval-outline-sharp">
+                                                                        </iconify-icon>
+                                                                    </div><span class="card_id">#44324</span>
+                                                                </div>
+                                                                <div class="LabelnTitle">
+                                                                    <h4 class="aprvl_cardDate"> 12 Sep , 2024 15:20
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="Ticket_apr_info margined45_bottom">
+                                                                    <div class="Approval_inner_column">
+                                                                        <a href="view-user-details.php">
+                                                                            <div class="userName_container">
+                                                                                <div class="ImageOfUser"><img
+                                                                                        src="dist/img/newimages/users/userdummy.png"
+                                                                                        alt="user"
+                                                                                        class="aprcard_userimage"></div>
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>User Name</label>
+                                                                                    <h3>
+                                                                                        Winston Churchil
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Department</label>
+                                                                            <h3>HR. Department</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div
+                                                                    class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                    <div class="Approval_inner_column">
+                                                                        <div class="LabelnTitle">
+                                                                            <label>Note</label>
+                                                                            <p class="description_Ticket_approval"
+                                                                                data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                Please review the mileage incurred during
+                                                                                this
+                                                                                timeframe and provide your approval at your
+                                                                                earliest
+                                                                                convenience.
+                                                                            </p>
+                                                                            <a href="#" class="read-more">Read More</a>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="card-footer approvalFooter_action">
+                                                            
+                                                                <a href="approval-details.php" class="approval_details">
+                                                                    <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                    View Details
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                 </div>
+                                 <div class="tab-pane fade" id="allProperty" role="tabpanel">
+                                    <div class="manage_approvalBoard">
+                                                    <div class="row">
+
+                                                        <div class="card-list">
+                                                            <div class="card approval_board">
+                                                                <div class="card-header">
+                                                                    <div class="approvalHeader_title">
+                                                                        <div class="circleIcon_cmn">
+                                                                            <iconify-icon
+                                                                                icon="material-symbols-light:approval-outline-sharp">
+                                                                            </iconify-icon>
+                                                                        </div><span class="card_id">#54523</span>
+                                                                    </div>
+                                                                    <div class="LabelnTitle">
+                                                                        <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="Ticket_apr_info margined45_bottom">
+                                                                        <div class="Approval_inner_column">
+                                                                            <a href="view-user-details.php">
+                                                                                <div class="userName_container">
+                                                                                    <div class="ImageOfUser"><img
+                                                                                            src="dist/img/newimages/users/userdummy.png"
+                                                                                            alt="user"
+                                                                                            class="aprcard_userimage"></div>
+                                                                                    <div class="LabelnTitle">
+                                                                                        <label>User Name</label>
+                                                                                        <h3> Danial Craig
+                                                                                        </h3>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="Approval_inner_column">
+                                                                            <div class="LabelnTitle">
+                                                                                <label>Department</label>
+                                                                                <h3>Property Department</h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div
+                                                                        class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                        <div class="Approval_inner_column">
+                                                                            <div class="LabelnTitle">
+                                                                                <label>Note</label>
+                                                                                <p class="description_Ticket_approval"
+                                                                                    data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                    Please review the mileage incurred during
+                                                                                    this
+                                                                                    timeframe and provide your approval at your
+                                                                                    earliest
+                                                                                    convenience.
+                                                                                </p>
+                                                                                <a href="#" class="read-more">Read More</a>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="card-footer approvalFooter_action">
+                                                                
+                                                                    <a href="approval-details.php" class="approval_details">
+                                                                        <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                        View Details
+                                                                    </a>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="card approval_board">
+                                                                <div class="card-header">
+                                                                    <div class="approvalHeader_title">
+                                                                        <div class="circleIcon_cmn">
+                                                                            <iconify-icon
+                                                                                icon="material-symbols-light:approval-outline-sharp">
+                                                                            </iconify-icon>
+                                                                        </div><span class="card_id">#14322</span>
+                                                                    </div>
+                                                                    <div class="LabelnTitle">
+                                                                        <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="Ticket_apr_info margined45_bottom">
+                                                                        <div class="Approval_inner_column">
+                                                                            <a href="view-user-details.php">
+                                                                                <div class="userName_container">
+                                                                                    <div class="ImageOfUser"><img
+                                                                                            src="dist/img/newimages/users/userdummy.png"
+                                                                                            alt="user"
+                                                                                            class="aprcard_userimage"></div>
+                                                                                    <div class="LabelnTitle">
+                                                                                        <label>User Name</label>
+                                                                                        <h3> Morgan Freeman
+                                                                                        </h3>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="Approval_inner_column">
+                                                                            <div class="LabelnTitle">
+                                                                                <label>Department</label>
+                                                                                <h3>Property Department</h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div
+                                                                        class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                        <div class="Approval_inner_column">
+                                                                            <div class="LabelnTitle">
+                                                                                <label>Note</label>
+                                                                                <p class="description_Ticket_approval"
+                                                                                    data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                    Please review the mileage incurred during
+                                                                                    this
+                                                                                    timeframe and provide your approval at your
+                                                                                    earliest
+                                                                                    convenience.
+                                                                                </p>
+                                                                                <a href="#" class="read-more">Read More</a>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="card-footer approvalFooter_action">
+                                                                
+                                                                    <a href="approval-details.php" class="approval_details">
+                                                                        <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                        View Details
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card approval_board">
+                                                                <div class="card-header">
+                                                                    <div class="approvalHeader_title">
+                                                                        <div class="circleIcon_cmn">
+                                                                            <iconify-icon
+                                                                                icon="material-symbols-light:approval-outline-sharp">
+                                                                            </iconify-icon>
+                                                                        </div><span class="card_id">#44323</span>
+                                                                    </div>
+                                                                    <div class="LabelnTitle">
+                                                                        <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="Ticket_apr_info margined45_bottom">
+                                                                        <div class="Approval_inner_column">
+                                                                            <a href="view-user-details.php">
+                                                                                <div class="userName_container">
+                                                                                    <div class="ImageOfUser"><img
+                                                                                            src="dist/img/newimages/users/userdummy.png"
+                                                                                            alt="user"
+                                                                                            class="aprcard_userimage"></div>
+                                                                                    <div class="LabelnTitle">
+                                                                                        <label>User Name</label>
+                                                                                        <h3> Huma Therman
+                                                                                        </h3>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="Approval_inner_column">
+                                                                            <div class="LabelnTitle">
+                                                                                <label>Department</label>
+                                                                                <h3>Property Department</h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div
+                                                                        class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                        <div class="Approval_inner_column">
+                                                                            <div class="LabelnTitle">
+                                                                                <label>Note</label>
+                                                                                <p class="description_Ticket_approval"
+                                                                                    data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                    Please review the mileage incurred during
+                                                                                    this
+                                                                                    timeframe and provide your approval at your
+                                                                                    earliest
+                                                                                    convenience.
+                                                                                </p>
+                                                                                <a href="#" class="read-more">Read More</a>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="card-footer approvalFooter_action">
+                                                                
+                                                                    <a href="approval-details.php" class="approval_details">
+                                                                        <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                        View Details
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="card approval_board">
+                                                                <div class="card-header">
+                                                                    <div class="approvalHeader_title">
+                                                                        <div class="circleIcon_cmn">
+                                                                            <iconify-icon
+                                                                                icon="material-symbols-light:approval-outline-sharp">
+                                                                            </iconify-icon>
+                                                                        </div><span class="card_id">#44324</span>
+                                                                    </div>
+                                                                    <div class="LabelnTitle">
+                                                                        <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="Ticket_apr_info margined45_bottom">
+                                                                        <div class="Approval_inner_column">
+                                                                            <a href="view-user-details.php">
+                                                                                <div class="userName_container">
+                                                                                    <div class="ImageOfUser"><img
+                                                                                            src="dist/img/newimages/users/userdummy.png"
+                                                                                            alt="user"
+                                                                                            class="aprcard_userimage"></div>
+                                                                                    <div class="LabelnTitle">
+                                                                                        <label>User Name</label>
+                                                                                        <h3>
+                                                                                            Dean Shaw
+                                                                                        </h3>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="Approval_inner_column">
+                                                                            <div class="LabelnTitle">
+                                                                                <label>Department</label>
+                                                                                <h3>Property Department</h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div
+                                                                        class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                        <div class="Approval_inner_column">
+                                                                            <div class="LabelnTitle">
+                                                                                <label>Note</label>
+                                                                                <p class="description_Ticket_approval"
+                                                                                    data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                    Please review the mileage incurred during
+                                                                                    this
+                                                                                    timeframe and provide your approval at your
+                                                                                    earliest
+                                                                                    convenience.
+                                                                                </p>
+                                                                                <a href="#" class="read-more">Read More</a>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="card-footer approvalFooter_action">
+                                                                
+                                                                    <a href="approval-details.php" class="approval_details">
+                                                                        <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                        View Details
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="card approval_board">
+                                                                <div class="card-header">
+                                                                    <div class="approvalHeader_title">
+                                                                        <div class="circleIcon_cmn">
+                                                                            <iconify-icon
+                                                                                icon="material-symbols-light:approval-outline-sharp">
+                                                                            </iconify-icon>
+                                                                        </div><span class="card_id">#44324</span>
+                                                                    </div>
+                                                                    <div class="LabelnTitle">
+                                                                        <h4 class="aprvl_cardDate"> 12 Sep , 2024 15:20
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="Ticket_apr_info margined45_bottom">
+                                                                        <div class="Approval_inner_column">
+                                                                            <a href="view-user-details.php">
+                                                                                <div class="userName_container">
+                                                                                    <div class="ImageOfUser"><img
+                                                                                            src="dist/img/newimages/users/userdummy.png"
+                                                                                            alt="user"
+                                                                                            class="aprcard_userimage"></div>
+                                                                                    <div class="LabelnTitle">
+                                                                                        <label>User Name</label>
+                                                                                        <h3>
+                                                                                            Winston Churchil
+                                                                                        </h3>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="Approval_inner_column">
+                                                                            <div class="LabelnTitle">
+                                                                                <label>Department</label>
+                                                                                <h3>Property Department</h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div
+                                                                        class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                        <div class="Approval_inner_column">
+                                                                            <div class="LabelnTitle">
+                                                                                <label>Note</label>
+                                                                                <p class="description_Ticket_approval"
+                                                                                    data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                    Please review the mileage incurred during
+                                                                                    this
+                                                                                    timeframe and provide your approval at your
+                                                                                    earliest
+                                                                                    convenience.
+                                                                                </p>
+                                                                                <a href="#" class="read-more">Read More</a>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="card-footer approvalFooter_action">
+                                                                
+                                                                    <a href="approval-details.php" class="approval_details">
+                                                                        <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                        View Details
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="card approval_board">
+                                                                <div class="card-header">
+                                                                    <div class="approvalHeader_title">
+                                                                        <div class="circleIcon_cmn">
+                                                                            <iconify-icon
+                                                                                icon="material-symbols-light:approval-outline-sharp">
+                                                                            </iconify-icon>
+                                                                        </div><span class="card_id">#44324</span>
+                                                                    </div>
+                                                                    <div class="LabelnTitle">
+                                                                        <h4 class="aprvl_cardDate"> 12 Sep , 2024 15:20
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="Ticket_apr_info margined45_bottom">
+                                                                        <div class="Approval_inner_column">
+                                                                            <a href="view-user-details.php">
+                                                                                <div class="userName_container">
+                                                                                    <div class="ImageOfUser"><img
+                                                                                            src="dist/img/newimages/users/userdummy.png"
+                                                                                            alt="user"
+                                                                                            class="aprcard_userimage"></div>
+                                                                                    <div class="LabelnTitle">
+                                                                                        <label>User Name</label>
+                                                                                        <h3>
+                                                                                            Winston Churchil
+                                                                                        </h3>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="Approval_inner_column">
+                                                                            <div class="LabelnTitle">
+                                                                                <label>Department</label>
+                                                                                <h3>Property Department</h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div
+                                                                        class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                        <div class="Approval_inner_column">
+                                                                            <div class="LabelnTitle">
+                                                                                <label>Note</label>
+                                                                                <p class="description_Ticket_approval"
+                                                                                    data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                    Please review the mileage incurred during
+                                                                                    this
+                                                                                    timeframe and provide your approval at your
+                                                                                    earliest
+                                                                                    convenience.
+                                                                                </p>
+                                                                                <a href="#" class="read-more">Read More</a>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="card-footer approvalFooter_action">
+                                                                
+                                                                    <a href="approval-details.php" class="approval_details">
+                                                                        <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                        View Details
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="card approval_board">
+                                                                <div class="card-header">
+                                                                    <div class="approvalHeader_title">
+                                                                        <div class="circleIcon_cmn">
+                                                                            <iconify-icon
+                                                                                icon="material-symbols-light:approval-outline-sharp">
+                                                                            </iconify-icon>
+                                                                        </div><span class="card_id">#44324</span>
+                                                                    </div>
+                                                                    <div class="LabelnTitle">
+                                                                        <h4 class="aprvl_cardDate"> 12 Sep , 2024 15:20
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="Ticket_apr_info margined45_bottom">
+                                                                        <div class="Approval_inner_column">
+                                                                            <a href="view-user-details.php">
+                                                                                <div class="userName_container">
+                                                                                    <div class="ImageOfUser"><img
+                                                                                            src="dist/img/newimages/users/userdummy.png"
+                                                                                            alt="user"
+                                                                                            class="aprcard_userimage"></div>
+                                                                                    <div class="LabelnTitle">
+                                                                                        <label>User Name</label>
+                                                                                        <h3>
+                                                                                            Winston Churchil
+                                                                                        </h3>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="Approval_inner_column">
+                                                                            <div class="LabelnTitle">
+                                                                                <label>Department</label>
+                                                                                <h3>Property Department</h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div
+                                                                        class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                        <div class="Approval_inner_column">
+                                                                            <div class="LabelnTitle">
+                                                                                <label>Note</label>
+                                                                                <p class="description_Ticket_approval"
+                                                                                    data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                    Please review the mileage incurred during
+                                                                                    this
+                                                                                    timeframe and provide your approval at your
+                                                                                    earliest
+                                                                                    convenience.
+                                                                                </p>
+                                                                                <a href="#" class="read-more">Read More</a>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="card-footer approvalFooter_action">
+                                                                
+                                                                    <a href="approval-details.php" class="approval_details">
+                                                                        <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                        View Details
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="card approval_board">
+                                                                <div class="card-header">
+                                                                    <div class="approvalHeader_title">
+                                                                        <div class="circleIcon_cmn">
+                                                                            <iconify-icon
+                                                                                icon="material-symbols-light:approval-outline-sharp">
+                                                                            </iconify-icon>
+                                                                        </div><span class="card_id">#44324</span>
+                                                                    </div>
+                                                                    <div class="LabelnTitle">
+                                                                        <h4 class="aprvl_cardDate"> 12 Sep , 2024 15:20
+                                                                        </h4>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="Ticket_apr_info margined45_bottom">
+                                                                        <div class="Approval_inner_column">
+                                                                            <a href="view-user-details.php">
+                                                                                <div class="userName_container">
+                                                                                    <div class="ImageOfUser"><img
+                                                                                            src="dist/img/newimages/users/userdummy.png"
+                                                                                            alt="user"
+                                                                                            class="aprcard_userimage"></div>
+                                                                                    <div class="LabelnTitle">
+                                                                                        <label>User Name</label>
+                                                                                        <h3>
+                                                                                            Winston Churchil
+                                                                                        </h3>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="Approval_inner_column">
+                                                                            <div class="LabelnTitle">
+                                                                                <label>Department</label>
+                                                                                <h3>Property Department</h3>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div
+                                                                        class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                        <div class="Approval_inner_column">
+                                                                            <div class="LabelnTitle">
+                                                                                <label>Note</label>
+                                                                                <p class="description_Ticket_approval"
+                                                                                    data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                    Please review the mileage incurred during
+                                                                                    this
+                                                                                    timeframe and provide your approval at your
+                                                                                    earliest
+                                                                                    convenience.
+                                                                                </p>
+                                                                                <a href="#" class="read-more">Read More</a>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="card-footer approvalFooter_action">
+                                                                
+                                                                    <a href="approval-details.php" class="approval_details">
+                                                                        <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                        View Details
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                 </div>
+                                 <div class="tab-pane fade" id="allCompliance" role="tabpanel">
+                                    <div class="manage_approvalBoard">
+                                                        <div class="row">
+
+                                                            <div class="card-list">
+                                                                <div class="card approval_board">
+                                                                    <div class="card-header">
+                                                                        <div class="approvalHeader_title">
+                                                                            <div class="circleIcon_cmn">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:approval-outline-sharp">
+                                                                                </iconify-icon>
+                                                                            </div><span class="card_id">#54523</span>
+                                                                        </div>
+                                                                        <div class="LabelnTitle">
+                                                                            <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                            </h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="Ticket_apr_info margined45_bottom">
+                                                                            <div class="Approval_inner_column">
+                                                                                <a href="view-user-details.php">
+                                                                                    <div class="userName_container">
+                                                                                        <div class="ImageOfUser"><img
+                                                                                                src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="aprcard_userimage"></div>
+                                                                                        <div class="LabelnTitle">
+                                                                                            <label>User Name</label>
+                                                                                            <h3> Danial Craig
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Department</label>
+                                                                                    <h3>Compliance Dpt.</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Note</label>
+                                                                                    <p class="description_Ticket_approval"
+                                                                                        data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                        Please review the mileage incurred during
+                                                                                        this
+                                                                                        timeframe and provide your approval at your
+                                                                                        earliest
+                                                                                        convenience.
+                                                                                    </p>
+                                                                                    <a href="#" class="read-more">Read More</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="card-footer approvalFooter_action">
+                                                                    
+                                                                        <a href="approval-details.php" class="approval_details">
+                                                                            <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                            View Details
+                                                                        </a>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card approval_board">
+                                                                    <div class="card-header">
+                                                                        <div class="approvalHeader_title">
+                                                                            <div class="circleIcon_cmn">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:approval-outline-sharp">
+                                                                                </iconify-icon>
+                                                                            </div><span class="card_id">#14322</span>
+                                                                        </div>
+                                                                        <div class="LabelnTitle">
+                                                                            <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                            </h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="Ticket_apr_info margined45_bottom">
+                                                                            <div class="Approval_inner_column">
+                                                                                <a href="view-user-details.php">
+                                                                                    <div class="userName_container">
+                                                                                        <div class="ImageOfUser"><img
+                                                                                                src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="aprcard_userimage"></div>
+                                                                                        <div class="LabelnTitle">
+                                                                                            <label>User Name</label>
+                                                                                            <h3> Morgan Freeman
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Department</label>
+                                                                                    <h3>Compliance Dpt.</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Note</label>
+                                                                                    <p class="description_Ticket_approval"
+                                                                                        data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                        Please review the mileage incurred during
+                                                                                        this
+                                                                                        timeframe and provide your approval at your
+                                                                                        earliest
+                                                                                        convenience.
+                                                                                    </p>
+                                                                                    <a href="#" class="read-more">Read More</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="card-footer approvalFooter_action">
+                                                                    
+                                                                        <a href="approval-details.php" class="approval_details">
+                                                                            <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                            View Details
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card approval_board">
+                                                                    <div class="card-header">
+                                                                        <div class="approvalHeader_title">
+                                                                            <div class="circleIcon_cmn">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:approval-outline-sharp">
+                                                                                </iconify-icon>
+                                                                            </div><span class="card_id">#44323</span>
+                                                                        </div>
+                                                                        <div class="LabelnTitle">
+                                                                            <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                            </h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="Ticket_apr_info margined45_bottom">
+                                                                            <div class="Approval_inner_column">
+                                                                                <a href="view-user-details.php">
+                                                                                    <div class="userName_container">
+                                                                                        <div class="ImageOfUser"><img
+                                                                                                src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="aprcard_userimage"></div>
+                                                                                        <div class="LabelnTitle">
+                                                                                            <label>User Name</label>
+                                                                                            <h3> Huma Therman
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Department</label>
+                                                                                    <h3>Compliance Dpt.</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Note</label>
+                                                                                    <p class="description_Ticket_approval"
+                                                                                        data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                        Please review the mileage incurred during
+                                                                                        this
+                                                                                        timeframe and provide your approval at your
+                                                                                        earliest
+                                                                                        convenience.
+                                                                                    </p>
+                                                                                    <a href="#" class="read-more">Read More</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="card-footer approvalFooter_action">
+                                                                    
+                                                                        <a href="approval-details.php" class="approval_details">
+                                                                            <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                            View Details
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="card approval_board">
+                                                                    <div class="card-header">
+                                                                        <div class="approvalHeader_title">
+                                                                            <div class="circleIcon_cmn">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:approval-outline-sharp">
+                                                                                </iconify-icon>
+                                                                            </div><span class="card_id">#44324</span>
+                                                                        </div>
+                                                                        <div class="LabelnTitle">
+                                                                            <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                            </h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="Ticket_apr_info margined45_bottom">
+                                                                            <div class="Approval_inner_column">
+                                                                                <a href="view-user-details.php">
+                                                                                    <div class="userName_container">
+                                                                                        <div class="ImageOfUser"><img
+                                                                                                src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="aprcard_userimage"></div>
+                                                                                        <div class="LabelnTitle">
+                                                                                            <label>User Name</label>
+                                                                                            <h3>
+                                                                                                Dean Shaw
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Department</label>
+                                                                                    <h3>Compliance Dpt.</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Note</label>
+                                                                                    <p class="description_Ticket_approval"
+                                                                                        data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                        Please review the mileage incurred during
+                                                                                        this
+                                                                                        timeframe and provide your approval at your
+                                                                                        earliest
+                                                                                        convenience.
+                                                                                    </p>
+                                                                                    <a href="#" class="read-more">Read More</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="card-footer approvalFooter_action">
+                                                                    
+                                                                        <a href="approval-details.php" class="approval_details">
+                                                                            <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                            View Details
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="card approval_board">
+                                                                    <div class="card-header">
+                                                                        <div class="approvalHeader_title">
+                                                                            <div class="circleIcon_cmn">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:approval-outline-sharp">
+                                                                                </iconify-icon>
+                                                                            </div><span class="card_id">#44324</span>
+                                                                        </div>
+                                                                        <div class="LabelnTitle">
+                                                                            <h4 class="aprvl_cardDate"> 12 Sep , 2024 15:20
+                                                                            </h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="Ticket_apr_info margined45_bottom">
+                                                                            <div class="Approval_inner_column">
+                                                                                <a href="view-user-details.php">
+                                                                                    <div class="userName_container">
+                                                                                        <div class="ImageOfUser"><img
+                                                                                                src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="aprcard_userimage"></div>
+                                                                                        <div class="LabelnTitle">
+                                                                                            <label>User Name</label>
+                                                                                            <h3>
+                                                                                                Winston Churchil
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Department</label>
+                                                                                    <h3>Compliance Dpt.</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Note</label>
+                                                                                    <p class="description_Ticket_approval"
+                                                                                        data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                        Please review the mileage incurred during
+                                                                                        this
+                                                                                        timeframe and provide your approval at your
+                                                                                        earliest
+                                                                                        convenience.
+                                                                                    </p>
+                                                                                    <a href="#" class="read-more">Read More</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="card-footer approvalFooter_action">
+                                                                    
+                                                                        <a href="approval-details.php" class="approval_details">
+                                                                            <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                            View Details
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="card approval_board">
+                                                                    <div class="card-header">
+                                                                        <div class="approvalHeader_title">
+                                                                            <div class="circleIcon_cmn">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:approval-outline-sharp">
+                                                                                </iconify-icon>
+                                                                            </div><span class="card_id">#44324</span>
+                                                                        </div>
+                                                                        <div class="LabelnTitle">
+                                                                            <h4 class="aprvl_cardDate"> 12 Sep , 2024 15:20
+                                                                            </h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="Ticket_apr_info margined45_bottom">
+                                                                            <div class="Approval_inner_column">
+                                                                                <a href="view-user-details.php">
+                                                                                    <div class="userName_container">
+                                                                                        <div class="ImageOfUser"><img
+                                                                                                src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="aprcard_userimage"></div>
+                                                                                        <div class="LabelnTitle">
+                                                                                            <label>User Name</label>
+                                                                                            <h3>
+                                                                                                Winston Churchil
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Department</label>
+                                                                                    <h3>Compliance Dpt.</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Note</label>
+                                                                                    <p class="description_Ticket_approval"
+                                                                                        data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                        Please review the mileage incurred during
+                                                                                        this
+                                                                                        timeframe and provide your approval at your
+                                                                                        earliest
+                                                                                        convenience.
+                                                                                    </p>
+                                                                                    <a href="#" class="read-more">Read More</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="card-footer approvalFooter_action">
+                                                                    
+                                                                        <a href="approval-details.php" class="approval_details">
+                                                                            <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                            View Details
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="card approval_board">
+                                                                    <div class="card-header">
+                                                                        <div class="approvalHeader_title">
+                                                                            <div class="circleIcon_cmn">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:approval-outline-sharp">
+                                                                                </iconify-icon>
+                                                                            </div><span class="card_id">#44324</span>
+                                                                        </div>
+                                                                        <div class="LabelnTitle">
+                                                                            <h4 class="aprvl_cardDate"> 12 Sep , 2024 15:20
+                                                                            </h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="Ticket_apr_info margined45_bottom">
+                                                                            <div class="Approval_inner_column">
+                                                                                <a href="view-user-details.php">
+                                                                                    <div class="userName_container">
+                                                                                        <div class="ImageOfUser"><img
+                                                                                                src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="aprcard_userimage"></div>
+                                                                                        <div class="LabelnTitle">
+                                                                                            <label>User Name</label>
+                                                                                            <h3>
+                                                                                                Winston Churchil
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Department</label>
+                                                                                    <h3>Compliance Dpt.</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Note</label>
+                                                                                    <p class="description_Ticket_approval"
+                                                                                        data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                        Please review the mileage incurred during
+                                                                                        this
+                                                                                        timeframe and provide your approval at your
+                                                                                        earliest
+                                                                                        convenience.
+                                                                                    </p>
+                                                                                    <a href="#" class="read-more">Read More</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="card-footer approvalFooter_action">
+                                                                    
+                                                                        <a href="approval-details.php" class="approval_details">
+                                                                            <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                            View Details
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="card approval_board">
+                                                                    <div class="card-header">
+                                                                        <div class="approvalHeader_title">
+                                                                            <div class="circleIcon_cmn">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:approval-outline-sharp">
+                                                                                </iconify-icon>
+                                                                            </div><span class="card_id">#44324</span>
+                                                                        </div>
+                                                                        <div class="LabelnTitle">
+                                                                            <h4 class="aprvl_cardDate"> 12 Sep , 2024 15:20
+                                                                            </h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="Ticket_apr_info margined45_bottom">
+                                                                            <div class="Approval_inner_column">
+                                                                                <a href="view-user-details.php">
+                                                                                    <div class="userName_container">
+                                                                                        <div class="ImageOfUser"><img
+                                                                                                src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="aprcard_userimage"></div>
+                                                                                        <div class="LabelnTitle">
+                                                                                            <label>User Name</label>
+                                                                                            <h3>
+                                                                                                Winston Churchil
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Department</label>
+                                                                                    <h3>Compliance Dpt.</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Note</label>
+                                                                                    <p class="description_Ticket_approval"
+                                                                                        data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                        Please review the mileage incurred during
+                                                                                        this
+                                                                                        timeframe and provide your approval at your
+                                                                                        earliest
+                                                                                        convenience.
+                                                                                    </p>
+                                                                                    <a href="#" class="read-more">Read More</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="card-footer approvalFooter_action">
+                                                                    
+                                                                        <a href="approval-details.php" class="approval_details">
+                                                                            <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                            View Details
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                 </div>
+                                 <div class="tab-pane fade" id="allProcurement" role="tabpanel">
+                                 <div class="row">
+                                        <ul
+                                            class="nav applicant_activiti_inrTabs  nav-justified nav-light nav-tabs nav-segmented-tabs active-theme quotationInnertb_tabs QuotationTabs">
+                                            
+                                            <li class="nav-item ">
+                                                <a class="nav-link active" data-bs-toggle="tab"
+                                                    href="#shortlistedSupplierMain">
+                                                    <span class="nav-link-text badge-on-text">New Request For Approval</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-bs-toggle="tab"
+                                                    href="#Archived_Compliances_Quotation">
+                                                    <span class="nav-link-text badge-on-text">Request For Quotation Approval</span>
+                                                </a>
+                                            </li>
+                                            <!-- <li class="nav-item">
+                                                <a class="nav-link" data-bs-toggle="tab"
+                                                    href="#Accepted_Quotation">
+                                                    <span class="nav-link-text badge-on-text">Accepted
+                                                        Quotation</span>
+                                                </a>
+                                            </li> -->
+                                            <!-- <li class="nav-item">
+                                                <a class="nav-link " data-bs-toggle="tab"
+                                                    href="#Work_Activity">
+                                                    <span class="nav-link-text badge-on-text">
+                                                        Activity Log</span>
+                                                </a>
+                                            </li> -->
+                                        </ul>
+                                        <div class="tab-content tasktab_content mt-3 nobtPadding">
+                                            <div class="tab-pane fade show active" id="shortlistedSupplierMain">
+                                            <div class="manage_approvalBoard">
+                                                        <div class="row">
+
+                                                            <div class="card-list">
+                                                                <div class="card approval_board">
+                                                                    <div class="card-header">
+                                                                        <div class="approvalHeader_title">
+                                                                            <div class="circleIcon_cmn">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:approval-outline-sharp">
+                                                                                </iconify-icon>
+                                                                            </div><span class="card_id">#54523</span>
+                                                                        </div>
+                                                                        <div class="LabelnTitle">
+                                                                            <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                            </h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="Ticket_apr_info margined45_bottom">
+                                                                            <div class="Approval_inner_column">
+                                                                                <a href="view-user-details.php">
+                                                                                    <div class="userName_container">
+                                                                                        <div class="ImageOfUser"><img
+                                                                                                src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="aprcard_userimage"></div>
+                                                                                        <div class="LabelnTitle">
+                                                                                            <label>User Name</label>
+                                                                                            <h3> Danial Craig
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Department</label>
+                                                                                    <h3>Procurement Dpt.</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Note</label>
+                                                                                    <p class="description_Ticket_approval"
+                                                                                        data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                        Please review the mileage incurred during
+                                                                                        this
+                                                                                        timeframe and provide your approval at your
+                                                                                        earliest
+                                                                                        convenience.
+                                                                                    </p>
+                                                                                    <a href="#" class="read-more">Read More</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="card-footer approvalFooter_action">
+                                                                    
+                                                                        <a href="procurement-other-department-request-detailpage.php" class="approval_details">
+                                                                            <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                            View Details
+                                                                        </a>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card approval_board">
+                                                                    <div class="card-header">
+                                                                        <div class="approvalHeader_title">
+                                                                            <div class="circleIcon_cmn">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:approval-outline-sharp">
+                                                                                </iconify-icon>
+                                                                            </div><span class="card_id">#14322</span>
+                                                                        </div>
+                                                                        <div class="LabelnTitle">
+                                                                            <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                            </h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="Ticket_apr_info margined45_bottom">
+                                                                            <div class="Approval_inner_column">
+                                                                                <a href="view-user-details.php">
+                                                                                    <div class="userName_container">
+                                                                                        <div class="ImageOfUser"><img
+                                                                                                src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="aprcard_userimage"></div>
+                                                                                        <div class="LabelnTitle">
+                                                                                            <label>User Name</label>
+                                                                                            <h3> Morgan Freeman
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Department</label>
+                                                                                    <h3>Procurement Dpt.</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Note</label>
+                                                                                    <p class="description_Ticket_approval"
+                                                                                        data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                        Please review the mileage incurred during
+                                                                                        this
+                                                                                        timeframe and provide your approval at your
+                                                                                        earliest
+                                                                                        convenience.
+                                                                                    </p>
+                                                                                    <a href="#" class="read-more">Read More</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="card-footer approvalFooter_action">
+                                                                    
+                                                                        <a href="procurement-other-department-request-detailpage.php" class="approval_details">
+                                                                            <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                            View Details
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card approval_board">
+                                                                    <div class="card-header">
+                                                                        <div class="approvalHeader_title">
+                                                                            <div class="circleIcon_cmn">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:approval-outline-sharp">
+                                                                                </iconify-icon>
+                                                                            </div><span class="card_id">#44323</span>
+                                                                        </div>
+                                                                        <div class="LabelnTitle">
+                                                                            <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                            </h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="Ticket_apr_info margined45_bottom">
+                                                                            <div class="Approval_inner_column">
+                                                                                <a href="view-user-details.php">
+                                                                                    <div class="userName_container">
+                                                                                        <div class="ImageOfUser"><img
+                                                                                                src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="aprcard_userimage"></div>
+                                                                                        <div class="LabelnTitle">
+                                                                                            <label>User Name</label>
+                                                                                            <h3> Huma Therman
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Department</label>
+                                                                                    <h3>Procurement Dpt.</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Note</label>
+                                                                                    <p class="description_Ticket_approval"
+                                                                                        data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                        Please review the mileage incurred during
+                                                                                        this
+                                                                                        timeframe and provide your approval at your
+                                                                                        earliest
+                                                                                        convenience.
+                                                                                    </p>
+                                                                                    <a href="#" class="read-more">Read More</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="card-footer approvalFooter_action">
+                                                                    
+                                                                        <a href="procurement-other-department-request-detailpage.php" class="approval_details">
+                                                                            <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                            View Details
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="card approval_board">
+                                                                    <div class="card-header">
+                                                                        <div class="approvalHeader_title">
+                                                                            <div class="circleIcon_cmn">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:approval-outline-sharp">
+                                                                                </iconify-icon>
+                                                                            </div><span class="card_id">#44324</span>
+                                                                        </div>
+                                                                        <div class="LabelnTitle">
+                                                                            <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                            </h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="Ticket_apr_info margined45_bottom">
+                                                                            <div class="Approval_inner_column">
+                                                                                <a href="view-user-details.php">
+                                                                                    <div class="userName_container">
+                                                                                        <div class="ImageOfUser"><img
+                                                                                                src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="aprcard_userimage"></div>
+                                                                                        <div class="LabelnTitle">
+                                                                                            <label>User Name</label>
+                                                                                            <h3>
+                                                                                                Dean Shaw
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Department</label>
+                                                                                    <h3>Procurement Dpt.</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Note</label>
+                                                                                    <p class="description_Ticket_approval"
+                                                                                        data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                        Please review the mileage incurred during
+                                                                                        this
+                                                                                        timeframe and provide your approval at your
+                                                                                        earliest
+                                                                                        convenience.
+                                                                                    </p>
+                                                                                    <a href="#" class="read-more">Read More</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="card-footer approvalFooter_action">
+                                                                    
+                                                                        <a href="procurement-other-department-request-detailpage.php" class="approval_details">
+                                                                            <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                            View Details
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="card approval_board">
+                                                                    <div class="card-header">
+                                                                        <div class="approvalHeader_title">
+                                                                            <div class="circleIcon_cmn">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:approval-outline-sharp">
+                                                                                </iconify-icon>
+                                                                            </div><span class="card_id">#44324</span>
+                                                                        </div>
+                                                                        <div class="LabelnTitle">
+                                                                            <h4 class="aprvl_cardDate"> 12 Sep , 2024 15:20
+                                                                            </h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="Ticket_apr_info margined45_bottom">
+                                                                            <div class="Approval_inner_column">
+                                                                                <a href="view-user-details.php">
+                                                                                    <div class="userName_container">
+                                                                                        <div class="ImageOfUser"><img
+                                                                                                src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="aprcard_userimage"></div>
+                                                                                        <div class="LabelnTitle">
+                                                                                            <label>User Name</label>
+                                                                                            <h3>
+                                                                                                Winston Churchil
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Department</label>
+                                                                                    <h3>Procurement Dpt.</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Note</label>
+                                                                                    <p class="description_Ticket_approval"
+                                                                                        data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                        Please review the mileage incurred during
+                                                                                        this
+                                                                                        timeframe and provide your approval at your
+                                                                                        earliest
+                                                                                        convenience.
+                                                                                    </p>
+                                                                                    <a href="#" class="read-more">Read More</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="card-footer approvalFooter_action">
+                                                                    
+                                                                        <a href="procurement-other-department-request-detailpage.php" class="approval_details">
+                                                                            <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                            View Details
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="card approval_board">
+                                                                    <div class="card-header">
+                                                                        <div class="approvalHeader_title">
+                                                                            <div class="circleIcon_cmn">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:approval-outline-sharp">
+                                                                                </iconify-icon>
+                                                                            </div><span class="card_id">#44324</span>
+                                                                        </div>
+                                                                        <div class="LabelnTitle">
+                                                                            <h4 class="aprvl_cardDate"> 12 Sep , 2024 15:20
+                                                                            </h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="Ticket_apr_info margined45_bottom">
+                                                                            <div class="Approval_inner_column">
+                                                                                <a href="view-user-details.php">
+                                                                                    <div class="userName_container">
+                                                                                        <div class="ImageOfUser"><img
+                                                                                                src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="aprcard_userimage"></div>
+                                                                                        <div class="LabelnTitle">
+                                                                                            <label>User Name</label>
+                                                                                            <h3>
+                                                                                                Winston Churchil
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Department</label>
+                                                                                    <h3>Procurement Dpt.</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Note</label>
+                                                                                    <p class="description_Ticket_approval"
+                                                                                        data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                        Please review the mileage incurred during
+                                                                                        this
+                                                                                        timeframe and provide your approval at your
+                                                                                        earliest
+                                                                                        convenience.
+                                                                                    </p>
+                                                                                    <a href="#" class="read-more">Read More</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="card-footer approvalFooter_action">
+                                                                    
+                                                                        <a href="procurement-other-department-request-detailpage.php" class="approval_details">
+                                                                            <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                            View Details
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="card approval_board">
+                                                                    <div class="card-header">
+                                                                        <div class="approvalHeader_title">
+                                                                            <div class="circleIcon_cmn">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:approval-outline-sharp">
+                                                                                </iconify-icon>
+                                                                            </div><span class="card_id">#44324</span>
+                                                                        </div>
+                                                                        <div class="LabelnTitle">
+                                                                            <h4 class="aprvl_cardDate"> 12 Sep , 2024 15:20
+                                                                            </h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="Ticket_apr_info margined45_bottom">
+                                                                            <div class="Approval_inner_column">
+                                                                                <a href="view-user-details.php">
+                                                                                    <div class="userName_container">
+                                                                                        <div class="ImageOfUser"><img
+                                                                                                src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="aprcard_userimage"></div>
+                                                                                        <div class="LabelnTitle">
+                                                                                            <label>User Name</label>
+                                                                                            <h3>
+                                                                                                Winston Churchil
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Department</label>
+                                                                                    <h3>Procurement Dpt.</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Note</label>
+                                                                                    <p class="description_Ticket_approval"
+                                                                                        data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                        Please review the mileage incurred during
+                                                                                        this
+                                                                                        timeframe and provide your approval at your
+                                                                                        earliest
+                                                                                        convenience.
+                                                                                    </p>
+                                                                                    <a href="#" class="read-more">Read More</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="card-footer approvalFooter_action">
+                                                                    
+                                                                        <a href="procurement-other-department-request-detailpage.php" class="approval_details">
+                                                                            <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                            View Details
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+                                                                
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="tab-pane fade " id="Archived_Compliances_Quotation">
+                                            <div class="manage_approvalBoard">
+                                                        <div class="row">
+
+                                                            <div class="card-list">
+                                                                <div class="card approval_board">
+                                                                    <div class="card-header">
+                                                                        <div class="approvalHeader_title">
+                                                                            <div class="circleIcon_cmn">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:approval-outline-sharp">
+                                                                                </iconify-icon>
+                                                                            </div><span class="card_id">#54523</span>
+                                                                        </div>
+                                                                        <div class="LabelnTitle">
+                                                                            <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                            </h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="Ticket_apr_info margined45_bottom">
+                                                                            <div class="Approval_inner_column">
+                                                                                <a href="view-user-details.php">
+                                                                                    <div class="userName_container">
+                                                                                        <div class="ImageOfUser"><img
+                                                                                                src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="aprcard_userimage"></div>
+                                                                                        <div class="LabelnTitle">
+                                                                                            <label>User Name</label>
+                                                                                            <h3> Danial Craig
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Department</label>
+                                                                                    <h3>Procurement Dpt.</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Note</label>
+                                                                                    <p class="description_Ticket_approval"
+                                                                                        data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                        Please review the mileage incurred during
+                                                                                        this
+                                                                                        timeframe and provide your approval at your
+                                                                                        earliest
+                                                                                        convenience.
+                                                                                    </p>
+                                                                                    <a href="#" class="read-more">Read More</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="card-footer approvalFooter_action">
+                                                                    
+                                                                        <a href="procurement-quotation-approval-request.php" class="approval_details">
+                                                                            <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                            View Details
+                                                                        </a>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card approval_board">
+                                                                    <div class="card-header">
+                                                                        <div class="approvalHeader_title">
+                                                                            <div class="circleIcon_cmn">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:approval-outline-sharp">
+                                                                                </iconify-icon>
+                                                                            </div><span class="card_id">#14322</span>
+                                                                        </div>
+                                                                        <div class="LabelnTitle">
+                                                                            <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                            </h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="Ticket_apr_info margined45_bottom">
+                                                                            <div class="Approval_inner_column">
+                                                                                <a href="view-user-details.php">
+                                                                                    <div class="userName_container">
+                                                                                        <div class="ImageOfUser"><img
+                                                                                                src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="aprcard_userimage"></div>
+                                                                                        <div class="LabelnTitle">
+                                                                                            <label>User Name</label>
+                                                                                            <h3> Morgan Freeman
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Department</label>
+                                                                                    <h3>Procurement Dpt.</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Note</label>
+                                                                                    <p class="description_Ticket_approval"
+                                                                                        data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                        Please review the mileage incurred during
+                                                                                        this
+                                                                                        timeframe and provide your approval at your
+                                                                                        earliest
+                                                                                        convenience.
+                                                                                    </p>
+                                                                                    <a href="#" class="read-more">Read More</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="card-footer approvalFooter_action">
+                                                                    
+                                                                        <a href="procurement-quotation-approval-request.php" class="approval_details">
+                                                                            <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                            View Details
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card approval_board">
+                                                                    <div class="card-header">
+                                                                        <div class="approvalHeader_title">
+                                                                            <div class="circleIcon_cmn">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:approval-outline-sharp">
+                                                                                </iconify-icon>
+                                                                            </div><span class="card_id">#44323</span>
+                                                                        </div>
+                                                                        <div class="LabelnTitle">
+                                                                            <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                            </h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="Ticket_apr_info margined45_bottom">
+                                                                            <div class="Approval_inner_column">
+                                                                                <a href="view-user-details.php">
+                                                                                    <div class="userName_container">
+                                                                                        <div class="ImageOfUser"><img
+                                                                                                src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="aprcard_userimage"></div>
+                                                                                        <div class="LabelnTitle">
+                                                                                            <label>User Name</label>
+                                                                                            <h3> Huma Therman
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Department</label>
+                                                                                    <h3>Procurement Dpt.</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Note</label>
+                                                                                    <p class="description_Ticket_approval"
+                                                                                        data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                        Please review the mileage incurred during
+                                                                                        this
+                                                                                        timeframe and provide your approval at your
+                                                                                        earliest
+                                                                                        convenience.
+                                                                                    </p>
+                                                                                    <a href="#" class="read-more">Read More</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="card-footer approvalFooter_action">
+                                                                    
+                                                                        <a href="procurement-quotation-approval-request.php" class="approval_details">
+                                                                            <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                            View Details
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="card approval_board">
+                                                                    <div class="card-header">
+                                                                        <div class="approvalHeader_title">
+                                                                            <div class="circleIcon_cmn">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:approval-outline-sharp">
+                                                                                </iconify-icon>
+                                                                            </div><span class="card_id">#44324</span>
+                                                                        </div>
+                                                                        <div class="LabelnTitle">
+                                                                            <h4 class="aprvl_cardDate"> 15 Sep , 2024 15:20
+                                                                            </h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="Ticket_apr_info margined45_bottom">
+                                                                            <div class="Approval_inner_column">
+                                                                                <a href="view-user-details.php">
+                                                                                    <div class="userName_container">
+                                                                                        <div class="ImageOfUser"><img
+                                                                                                src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="aprcard_userimage"></div>
+                                                                                        <div class="LabelnTitle">
+                                                                                            <label>User Name</label>
+                                                                                            <h3>
+                                                                                                Dean Shaw
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Department</label>
+                                                                                    <h3>Procurement Dpt.</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Note</label>
+                                                                                    <p class="description_Ticket_approval"
+                                                                                        data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                        Please review the mileage incurred during
+                                                                                        this
+                                                                                        timeframe and provide your approval at your
+                                                                                        earliest
+                                                                                        convenience.
+                                                                                    </p>
+                                                                                    <a href="#" class="read-more">Read More</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="card-footer approvalFooter_action">
+                                                                    
+                                                                        <a href="procurement-quotation-approval-request.php" class="approval_details">
+                                                                            <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                            View Details
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="card approval_board">
+                                                                    <div class="card-header">
+                                                                        <div class="approvalHeader_title">
+                                                                            <div class="circleIcon_cmn">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:approval-outline-sharp">
+                                                                                </iconify-icon>
+                                                                            </div><span class="card_id">#44324</span>
+                                                                        </div>
+                                                                        <div class="LabelnTitle">
+                                                                            <h4 class="aprvl_cardDate"> 12 Sep , 2024 15:20
+                                                                            </h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="Ticket_apr_info margined45_bottom">
+                                                                            <div class="Approval_inner_column">
+                                                                                <a href="view-user-details.php">
+                                                                                    <div class="userName_container">
+                                                                                        <div class="ImageOfUser"><img
+                                                                                                src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="aprcard_userimage"></div>
+                                                                                        <div class="LabelnTitle">
+                                                                                            <label>User Name</label>
+                                                                                            <h3>
+                                                                                                Winston Churchil
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Department</label>
+                                                                                    <h3>Procurement Dpt.</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Note</label>
+                                                                                    <p class="description_Ticket_approval"
+                                                                                        data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                        Please review the mileage incurred during
+                                                                                        this
+                                                                                        timeframe and provide your approval at your
+                                                                                        earliest
+                                                                                        convenience.
+                                                                                    </p>
+                                                                                    <a href="#" class="read-more">Read More</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="card-footer approvalFooter_action">
+                                                                    
+                                                                        <a href="procurement-quotation-approval-request.php" class="approval_details">
+                                                                            <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                            View Details
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="card approval_board">
+                                                                    <div class="card-header">
+                                                                        <div class="approvalHeader_title">
+                                                                            <div class="circleIcon_cmn">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:approval-outline-sharp">
+                                                                                </iconify-icon>
+                                                                            </div><span class="card_id">#44324</span>
+                                                                        </div>
+                                                                        <div class="LabelnTitle">
+                                                                            <h4 class="aprvl_cardDate"> 12 Sep , 2024 15:20
+                                                                            </h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="Ticket_apr_info margined45_bottom">
+                                                                            <div class="Approval_inner_column">
+                                                                                <a href="view-user-details.php">
+                                                                                    <div class="userName_container">
+                                                                                        <div class="ImageOfUser"><img
+                                                                                                src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="aprcard_userimage"></div>
+                                                                                        <div class="LabelnTitle">
+                                                                                            <label>User Name</label>
+                                                                                            <h3>
+                                                                                                Winston Churchil
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Department</label>
+                                                                                    <h3>Procurement Dpt.</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Note</label>
+                                                                                    <p class="description_Ticket_approval"
+                                                                                        data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                        Please review the mileage incurred during
+                                                                                        this
+                                                                                        timeframe and provide your approval at your
+                                                                                        earliest
+                                                                                        convenience.
+                                                                                    </p>
+                                                                                    <a href="#" class="read-more">Read More</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="card-footer approvalFooter_action">
+                                                                    
+                                                                        <a href="procurement-quotation-approval-request.php" class="approval_details">
+                                                                            <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                            View Details
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="card approval_board">
+                                                                    <div class="card-header">
+                                                                        <div class="approvalHeader_title">
+                                                                            <div class="circleIcon_cmn">
+                                                                                <iconify-icon
+                                                                                    icon="material-symbols-light:approval-outline-sharp">
+                                                                                </iconify-icon>
+                                                                            </div><span class="card_id">#44324</span>
+                                                                        </div>
+                                                                        <div class="LabelnTitle">
+                                                                            <h4 class="aprvl_cardDate"> 12 Sep , 2024 15:20
+                                                                            </h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <div class="Ticket_apr_info margined45_bottom">
+                                                                            <div class="Approval_inner_column">
+                                                                                <a href="view-user-details.php">
+                                                                                    <div class="userName_container">
+                                                                                        <div class="ImageOfUser"><img
+                                                                                                src="dist/img/newimages/users/userdummy.png"
+                                                                                                alt="user"
+                                                                                                class="aprcard_userimage"></div>
+                                                                                        <div class="LabelnTitle">
+                                                                                            <label>User Name</label>
+                                                                                            <h3>
+                                                                                                Winston Churchil
+                                                                                            </h3>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Department</label>
+                                                                                    <h3>Procurement Dpt.</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="Ticket_apr_info ticket_description aprinr_bdr_top aprcrdto_padding">
+                                                                            <div class="Approval_inner_column">
+                                                                                <div class="LabelnTitle">
+                                                                                    <label>Note</label>
+                                                                                    <p class="description_Ticket_approval"
+                                                                                        data-full-text="Please review the mileage incurred during this timeframe and provide your approval at your earliest convenience. ">
+                                                                                        Please review the mileage incurred during
+                                                                                        this
+                                                                                        timeframe and provide your approval at your
+                                                                                        earliest
+                                                                                        convenience.
+                                                                                    </p>
+                                                                                    <a href="#" class="read-more">Read More</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="card-footer approvalFooter_action">
+                                                                    
+                                                                        <a href="procurement-quotation-approval-request.php" class="approval_details">
+                                                                            <iconify-icon icon="proicons:eye"></iconify-icon>
+                                                                            View Details
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+
+                                                                
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                            </div>
+
+                                            
+                                            
+                                        </div>
+
+                                        </div>
+                                 </div>
+                                </div>
+                            </div>
+                       
+
+              
+
+            </div>
+                            <!--<div class="contact-list-view">
+
+                                <div class="ApprovalBoards_tabs">
+
+                                
 
 
-                                    <!-- <ul class="nav nav-tabs nav-line nav-icon nav-light customuserviewTabs">
+                                     <ul class="nav nav-tabs nav-line nav-icon nav-light customuserviewTabs">
 
                                         <li class="nav-item">
                                             <a class="nav-link active" data-bs-toggle="tab" href="#NewApproval">
@@ -1362,10 +4699,10 @@
                                         </div>
                                     </div>
 
-                                </div> -->
+                                </div> 
 
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
 

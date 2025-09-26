@@ -982,12 +982,815 @@ Stripe Detail Page css Start Here 07/Feb/2025
 }
 
 
+/************************************
+Compliance Job Form CSS 04/march/2025
+*************************************/
+.sectionCreateBox h5 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.sectionCreateBox h5 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.sectionCreateBox p {
+    font-size: 14px;
+    color: #46596a;
+}
+.iconImageSection {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.buttontext {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.actionBtnSection.text-end {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+.templateEditBtn {
+    margin-left: 5px;
+    padding: 5px;
+    border: 1px solid #b8cdef;
+    display: inline-flex;
+    border-radius: 55px;
+    color: #6488a7;
+}
+.form-actionsbtns button {
+    padding: 8px 25px;
+}
+.form-actionsbtns {
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    padding: 10px 20px;
+    border-top: 1px solid #eaeaea;
+    left: 0;
+}
+.commonCanvas_buttonFooter {
+    border: 1px solid #dde0e1;
+    padding: 8px 20px;
+    border-radius: 50px;
+    outline: none !important;
+    margin-right: 10px;
+}
+.formpreview_button {
+    display: flex;
+    align-items: center;
+    margin-right: 9px;
+    background: #00a9ec;
+    color: #fff;
+}
+
+
+.setDataWrap{
+    display: none;
+}
+.form-wrap.form-builder .frmb li.form-field {
+	border-color: #66afe9;
+	outline: 0;
+	box-shadow: none !important;
+	border: 1px solid #ececec;
+}
+.frmb.stage-wrap {
+	padding: 20px !important;
+}
+.form-wrap.form-builder .frmb li.form-field {
+	margin-bottom: 15px !important;
+}
+.form-wrap.form-builder .frmb .form-field{
+	border-radius: 5px !important;
+}
+.form-wrap.form-builder .stage-wrap.empty {
+  border: none !important;
+}
+.form-wrap.form-builder .frmb .field-actions .btn {
+	color: #6c6c6c !important;
+}
+
+.formpreview_button{
+  display: flex;
+  align-items: center;
+  margin-right: 9px;
+  background: #00a9ec;
+  color: #fff;
+}
+.formpreview_button:hover{
+  display: flex;
+  align-items: center;
+  margin-right: 9px;
+  background: #019cd9;
+  color: #fff;
+}
+.formpreview_button iconify-icon{
+  margin-right:5px;
+  font-size:17px;
+}
+.jobCategoryImg {
+    width: 80px;
+    margin-bottom: 10px;
+}
+.TemplateBox .card {
+    padding: 15px 20px;
+    width: calc(20% - 20px);
+    cursor: pointer;
+    margin: 0 10px 0 0;
+}
+.TemplateBox .card .radio-label {
+    border: 2px solid #cfd2d8 !important;
+}
+.taskDTKOp {
+    margin-bottom: 5px;
+}
+.badge.badge-soft-primary {
+    background: #e5e8f8;
+    color: #3F51B5;
+}
+.bg-outline-info {
+    border: 1px solid #2196F3;
+    color: #2196F3;
+}
+.sidecolor_PCdepartment .svg-icon > iconify-icon {
+    background-color: #198fe5 !important;
+    color: #fff !important;
+}
+.numberOfRequest {
+    font-weight: 500;
+    font-size: 16px;
+}
+.procurementTiles .Cardcount-name {
+    color: #5a6e81;
+    font-weight: 500;
+    font-size: 14px;
+}
+.procurementTiles .numberoftickets {
+    color: #000000;
+    margin-left: 4px;
+    font-size: 17px;
+    font-weight: 500;
+}
+span.initial-wrap.stationary_icBG {
+    background: #e9fdfb !important;
+}
+span.initial-wrap.It_icBG {
+    background: #dcefff !important;
+}
+span.initial-wrap.Gift_icBG {
+    background: #ffe4ed !important;
+}
+span.initial-wrap.Letting_icBG {
+    background: #fdeeff !important;
+}
+span.initial-wrap.account_icBG {
+    background: #ecf1ff !important;
+}
+span.initial-wrap.HR_icBG {
+    background: #e6dfff !important;
+}
+span.initial-wrap.maintenance_icBG {
+    background: #e5e9ff !important;
+}
+span.initial-wrap.Pending_icBG {
+    background: #fff3e3 !important;
+}
+span.initial-wrap.property_icBG {
+    background: #e5e6ff !important;
+}
+.TableUsedSelect .select2-container {
+    width: 160px !important;
+}
+span.autoFillData {
+    color: #09c123;
+}
+.FormsActionGroup {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 7px 20px;
+    border-top: 1px solid #f2f2f2;
+    background: #fff;
+    right: 0;
+}
+h6.ReqIdGen {
+    margin-bottom: 0;
+}
+h6.ReqIdGen span {
+    color: #009688;
+}
+.RequestDetail .ReportData_fields {
+    padding-inline-start: .375rem;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr minmax(18px, auto-fit) 0fr 0fr 0fr;
+    transition: grid-template-rows .6s ease-in-out, min-height .2s ease-in-out;
+    padding-left: 0px;
+    flex-wrap: wrap;
+    position: relative;
+}
+.RequestDetail .cu-task-fields__row {
+    display: flex;
+    align-items: flex-start;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 4px;
+    margin-right: 0px;
+    width: 24.33%;
+    flex-direction: column;
+    margin-bottom: 0px;
+    padding: 10px;
+}
+.RequestDetail .cu-task-label-icon__container {
+    color: #656f7d;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    white-space: nowrap;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    min-height: auto;
+}
+.RequestDetail .userenuData {
+    color: #25272b;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+}
+.RequestDetail .cu-task-fields__row:hover {
+    background-color: #f7f8f9;
+}
+.OtherDetailsjob {
+    padding: 10px;
+}
+.TitleSD {
+    color: #656f7d;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    white-space: nowrap;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+    min-height: auto;
+}
+.valueSD{
+    color: #25272b;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.RequestDetail .files .file-box {
+    border: 1px solid #ecf3fa;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(99,98,231,0.05);
+    width: calc(12.5% - 15px);
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.RequestDetail .file-content .files .file-box .file-top {
+    height: 200px;
+    overflow: hidden;
+}
+.RequestDetail .file-top img {
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+}
+.RequestDetail .file-manager .files h6 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+.RequestDetail .file-manager p {
+    opacity: 0.9;
+    font-size: 12px;
+    color: #999;
+}
+ul.files {
+    padding: 15px 0 0 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+.file-bottom p {
+    font-size: 12px;
+    margin-top: 12px;
+}
+.SourceDataBtn.approved {
+    color: green !important;
+}
+
+.SourceDataBtn.RejectReq {
+
+    color: red !important;
+}
+
+.swal2-styled.swal2-deny {
+    font-size: 14px !important;
+}
+.compose-body .hidden{
+    display: none;
+}
+.ComposeACBtn {
+    padding: 5px;
+}
+.EmailInner .emailapp-wrap .emailapp-content .emailapp-single-email .email-body {
+    padding: 15px;
+}
+.badgecustomstyle {
+     display: inline-flex;
+    gap: 10px;
+}
+.CreateCst_button {
+    background: linear-gradient(58.28deg, #7fd288 -14.11%, #3db88b 80.9%);
+    color: #fff;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 8px;
+}
+
+
+.productdetails .product_priceTitle_main {
+    font-size: 24px !important;
+    line-height: 32px !important;
+    color: #0f1111;
+    margin-bottom: 10px;
+}
+.productdetails p {
+    color: #555;
+}
+.product_priceTitle {
+    margin: 20px 0px;
+}
+.dicsounte76_flex {
+    font-size: 28px;
+    color: #0e0f0f;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    line-height: normal;
+    align-items: center;
+}
+.product_priceTitle .Discount_price {
+    color: #CC0C39 !important;
+    font-weight: 300 !important;
+    margin-right: 3px;
+    font-size: 24px !important;
+    line-height: 32px !important;
+}
+.SellingPriceMRP {
+    display: flex;
+    align-items: center;
+}
+.SellingPriceMRP span {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 12px;
+}
+.keyPoints {
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+}
+.keyPoints li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+    color: #000;
+}
+.keyPoints li::before {
+    content: '\f058';
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #FF9800;
+}
+.DownloadBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    background: #4CB8C4;
+    background: -webkit-linear-gradient(to right, #3CD3AD, #4CB8C4);
+    background: linear-gradient(to right, #3CD3AD, #4CB8C4);
+    color: #fff !important;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.DownloadBtn:hover{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    background: #4CB8C4;
+    background: -webkit-linear-gradient(to right, #3CD3AD, #4CB8C4);
+    background: linear-gradient(to right, #3CD3AD, #4CB8C4);
+    color: #fff !important;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.SendForConfirmationBtn, .SendForConfirmationBtn:hover {
+    margin-left: 5px !important;
+    background: #2196F3;
+    border: 1px solid #2196f3;
+}
+
+.OrderDetail_left_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.OrderID_title {
+    font-size: 22px;
+}
+.rightInvoices_action {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.orderDetail_wrapper .invoice-btn {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 6px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+.FlexbtnStyleBtn iconify-icon {
+    font-size: 17px;
+    color: #333333;
+    margin-right: 5px;
+}
+.orderDetail_wrapper  .tracking-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 100%;
+    color: #000000;
+    box-shadow: none;
+    border: 1px solid #ccc;
+}
+.orderDetail_wrapper  .progress-header {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #1f1f1f;
+}
+.orderDetail_wrapper  .progress-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    margin-bottom: 35px;
+    flex-direction: row;
+    overflow: visible;
+}
+.orderDetail_wrapper  .stage {
+    flex: 1;
+    height: 4px;
+    background-color: #4a4a4a;
+    position: relative;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.orderDetail_wrapper  .stage.success {
+    background-color: #4caf50; /* Green for completed stages */
+}
+
+.orderDetail_wrapper  .stage.processing {
+    background-color: #ffca28; /* Yellow for in-progress stage */
+}
+
+.orderDetail_wrapper  .stage::after {
+    content: attr(data-stage);
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transform: translateX(0%);
+    font-size: 12px;
+    color: #0f0f0f;
+    white-space: nowrap;
+    opacity: 0.8;
+}
+
+.orderDetail_wrapper  .shipping-date {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #767676;
+    border: 1px solid #d9dee6;
+    padding: 4px 15px;
+    border-radius: 50px;
+}
+.orderDetail_wrapper  .shipping-date input[type="checkbox"] {
+    margin-right: 8px;
+    vertical-align: middle;
+    accent-color: #4caf50; /* Match checkbox color with success state */
+}
+
+.orderDetail_wrapper  .shipping-date label {
+    vertical-align: middle;
+    color: #b0b0b0;
+}
+
+.orderDetail_wrapper  .ship-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+	padding: 6px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.orderDetail_wrapper  .ship-button:hover {
+    background-color: #0056b3;
+}
+.orderDetail_wrapper  .tracking-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 100%;
+    color: #000000;
+    box-shadow: none;
+    border: 1px solid #ccc;
+}
+
+.orderDetail_wrapper .order-tracking h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.orderDetail_wrapper .tracking-timeline {
+    position: relative;
+    padding-left: 25px;
+}
+
+.orderDetail_wrapper .tracking-timeline::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 0;
+    height: 100%;
+	width: 1px;
+    background: #ddd;
+    z-index: 1;
+}
+
+.orderDetail_wrapper .timeline-step {
+    position: relative;
+    margin: 20px 0;
+    padding-left: 15px;
+    color: #666;
+}
+
+.orderDetail_wrapper .timeline-step p {
+    font-size: 14px;
+}
+
+.orderDetail_wrapper .dot {
+	width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+	left: -22px;
+    top: 5px;
+    z-index: 2;
+    border: 2px solid #ddd;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.orderDetail_wrapper .dot.current iconify-icon {
+    border-color: #ff8c00;
+    color: #ff8c00;
+    font-size: 24px;
+}
+.orderDetail_wrapper .dot iconify-icon{
+	font-size: 18px;
+}
+span.dot.current {
+    border: none;
+}
+span.dot.loading {
+    border: none;
+}
+span.dot.loading iconify-icon {
+    color: #ff8c00;
+    font-size: 24px;
+}
+.orderDetail_wrapper .dot.completed {
+	width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 2;
+    color: #21ab24;
+    border: 2px solid #ddd;
+    background-color: white;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.orderDetail_wrapper {
+    border-top: 1px solid #eee;
+    margin: 0px -15px;
+    padding: 15px 20px;
+}
+.OrderID_title{
+	font-size: 22px;
+	margin-bottom: 0;
+}
+.OrderDetail_left_header p{
+	color: #1f2b24;
+	margin-bottom: 0px;
+	margin-top: 3px;
+}
+.OrderDetail_left_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.shipping-date{
+	display: flex;
+	align-items: center;
+	color: #000;
+}
+.shipping-date iconify-icon {
+    font-size: 19px;
+    margin-right: 5px;
+    color: #333;
+}
+.ShippingDate_label {
+    color: #000;
+    font-size: 14px;
+    margin-left: 5px;
+}
+.orderdate_and_action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img.deliveryDateImg {
+    width: 70px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.customTabStyle .nav-link.active .numberCount{
+    background: #009c17;
+    color: #fff;
+}
+
+/**************************************************
+ Tenancy cancel Request Module Start Css
+ ********************************************/
+ .sidecolor_tenancycancel .svg-icon > iconify-icon {
+    background-color: #ff3b2d;
+    color: #fff !important;
+}
+.bg-outline-danger {
+    background-color: #ffffff;
+    border: 1px solid #F44336;
+    color: #F44336;
+    font-size: 12px !important;
+}
 
 
 
+.selectable-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
 
+.selectable-options label {
+    cursor: pointer;
+    width: 100%;
+}
 
+.selectable-options .card {
+    background: #fff;
+    padding: 16px;
+    border-radius: 12px;
+    /* width: 350px; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    cursor: pointer;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: block;
+}
+/* .selectable-options .card span {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+} */
+.selectable-options .card:hover {
+    border-color: #bbb;
+}
 
+.selectable-options input[type="radio"] {
+    display: none;
+}
 
+.selectable-options input[type="radio"]:checked + .card {
+    border-color: #FF5722;
+    box-shadow: 0px 4px 12px rgba(0, 123, 255, 0.3);
+}
 
+.selectable-options .calendar-icon {
+    font-size: 22px;
+    color: #555;
+    margin-right: 10px;
+    padding: 10px;
+    /* width: auto; */
+    display: inline-block;
+    background: #ecf1f6;
+    border-radius: 5px;
+    border: 1px solid #c6d2db;
+}
+.selectable-options .card .innerCard {
+    display: flex;
+    align-items: center;
+}
+.selectable-options .card .innerCard  span.Year {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+.selectable-options .card .innerCard  span.Year span {
+    display: block;
+    font-size: 14px;
+    color: #60747e;
+}
+.selectable-options .check-icon {
+    font-size: 24px;
+    color: #FF5722;
+    position: absolute;
+    right: 16px;
+    display: none;
+    top: 10px;
+}
 
+.selectable-options input[type="radio"]:checked + .card .check-icon {
+    display: block;
+}
+.selectable-options input[type="radio"]:checked + .card .calendar-icon{
+    border: 1px solid #ff57222b;
+    background: #ffeee8;
+}

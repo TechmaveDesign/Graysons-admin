@@ -791,7 +791,19 @@
 																	<i
 																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 																</li>
-
+																<li class="nav-item">
+																	<a class="nav-link sidecolor_tenancycancel"
+																		href="tenancy-cancel-request.php">
+																		<span class="nav-icon-wrap">
+																			<span class="svg-icon">
+																			<iconify-icon icon="material-symbols:person-cancel-outline-rounded"></iconify-icon>
+																			</span>
+																		</span>
+																		<span class="nav-link-text">Tenancy Cancel <br> Requests</span>
+																	</a>
+																	<i
+																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+																</li>
 																<li class="nav-item">
 																	<a class="nav-link sidecolor_tenancysetup"
 																		href="tenancy-setup.php">
@@ -1376,22 +1388,94 @@
 																</li>
 
 																<li class="nav-item">
-								<a class="nav-link sidecolorcleaning_rotas" href="cleaning-rotas.php">
-									<span class="nav-icon-wrap position-relative">
+																	<a class="nav-link sidecolorcleaning_rotas" href="cleaning-rotas.php">
+																		<span class="nav-icon-wrap position-relative">
 
-										<span class="svg-icon">
-										<iconify-icon icon="solar:smart-vacuum-cleaner-line-duotone"></iconify-icon>
-										</span>
-									</span>
-									<span class="nav-link-text">Cleaning Rotas</span>
-								</a>
-								<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+																			<span class="svg-icon">
+																			<iconify-icon icon="solar:smart-vacuum-cleaner-line-duotone"></iconify-icon>
+																			</span>
+																		</span>
+																		<span class="nav-link-text">Cleaning Rotas</span>
+																	</a>
+																	<i class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 
-							</li>
+																</li>
 
 															</ul>
 														</li>
+														<!-- <a class="nav-link sidecolor_Compliance custompadding_megamenu"
+																href="all-compliance.php">
+																<span class="nav-icon-wrap position-relative">
+
+																	<span class="svg-icon">
+																		<iconify-icon
+																			icon="fluent-mdl2:compliance-audit">
+																		</iconify-icon>
+																	</span>
+																</span>
+																<span class="nav-link-text">Compliance</span>
+															</a>
+															<i
+																class="fa fa-circle text-danger-glow blink sidenabBlinker"></i> -->
 														<li class="nav-item">
+															<a class="nav-link sidecolor_download custompadding_megamenu"
+																href="javascript:void(0);" data-bs-toggle="collapse"
+																data-bs-target="#dash_complianceManage">
+																<span class="nav-icon-wrap">
+																	<span class="svg-icon">
+																	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="icon icon-tabler icons-tabler-outline icon-tabler-building"><g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M40 27V6a2 2 0 0 0-2-2H10a2 2 0 0 0-2 2v36a2 2 0 0 0 2 2h11m-4-32h14m-14 8h14m-14 8h6"/><path d="M37 37c0 1.38-.56 2.63-1.465 3.535A5 5 0 1 1 37 37"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m39 44l-3.465-3.465m0 0a5 5 0 1 0-7.071-7.07a5 5 0 0 0 7.072 7.07"/></g></svg>
+																		
+																	</span>
+																</span>
+																<span class="nav-link-text position-relative">Manage
+																	Compliance
+
+																</span>
+															</a>
+															<ul id="dash_complianceManage"
+																class="nav flex-column collapse  nav-children">
+																
+
+																<li class="nav-item">
+																	<a class="nav-link sidecolor_tickets"
+																		href="all-compliance.php">
+																		<span class="nav-icon-wrap">
+																		
+																			<span class="svg-icon">
+																			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon icon-tabler icons-tabler-outline icon-tabler-help-hexagon"><path fill="none" stroke="currentColor" stroke-width="2" d="M8 6h8V1H8zm8-3h5v20H3V3h5m0 11l3 3l6-6"/></svg>
+																				
+																			</span>
+																		</span>
+																		<span class="nav-link-text">Compliance</span>
+																		<!-- <span class="badge badge-soft-success ms-2 numbermenuicon">2</span> -->
+																	</a>
+																	<i
+																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+
+																</li>
+
+																<li class="nav-item">
+																	<a class="nav-link sidecolor_tenancydash"
+																		href="compliance-job-form-template.php">
+																		<span class="nav-icon-wrap">
+																			<span class="svg-icon">
+																			<iconify-icon icon="lsicon:setting-search-outline"></iconify-icon>
+																			</span>
+																		</span>
+																		<span class="nav-link-text">Compliance Setting</span>
+																	</a>
+																	<i
+																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+
+																</li>
+
+																
+
+																
+
+															</ul>
+														</li>
+														<!-- <li class="nav-item">
 															<a class="nav-link sidecolor_Compliance custompadding_megamenu"
 																href="all-compliance.php">
 																<span class="nav-icon-wrap position-relative">
@@ -1407,7 +1491,7 @@
 															<i
 																class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
 
-														</li>
+														</li> -->
 
 														<li class="nav-item">
 															<a class="nav-link sidecolor_Procurement custompadding_megamenu"
@@ -1423,7 +1507,7 @@
 															
 															<ul id="Procurement"
 																class="nav flex-column collapse  nav-children">
-																<li class="nav-item">
+																<!-- <li class="nav-item">
 																	<a class="nav-link sidecolor_material"
 																		href="material-stock.php">
 																		<span class="nav-icon-wrap">
@@ -1434,6 +1518,34 @@
 																		</span>
 																		<span class="nav-link-text">Material
 																			Stock</span>
+																	</a>
+																	<i
+																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+
+																</li> -->
+																<li class="nav-item">
+																	<a class="nav-link sidecolor_material"
+																		href="procurement-request.php">
+																		<span class="nav-icon-wrap">
+																			<span class="svg-icon">
+																			<iconify-icon icon="hugeicons:return-request"></iconify-icon>
+																			</span>
+																		</span>
+																		<span class="nav-link-text">All Requests</span>
+																	</a>
+																	<i
+																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
+
+																</li>
+																<li class="nav-item">
+																	<a class="nav-link  sidecolor_PCdepartment"
+																		href="procurement-department.php">
+																		<span class="nav-icon-wrap">
+																			<span class="svg-icon">
+																			<iconify-icon icon="fluent:box-search-16-regular"></iconify-icon>
+																			</span>
+																		</span>
+																		<span class="nav-link-text">Procurement <br> Department</span>
 																	</a>
 																	<i
 																		class="fa fa-circle text-danger-glow blink sidenabBlinker"></i>
