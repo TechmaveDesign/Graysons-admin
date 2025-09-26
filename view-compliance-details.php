@@ -219,17 +219,11 @@
 
                                                     <ul
                                                         class="nav applicant_activiti_inrTabs  nav-justified nav-light nav-tabs nav-segmented-tabs active-theme quotationInnertb_tabs QuotationTabs">
-                                                        <li class="nav-item">
+                                                        
+                                                        <li class="nav-item ">
                                                             <a class="nav-link active" data-bs-toggle="tab"
-                                                                href="#Work_Activity">
-                                                                <span class="nav-link-text badge-on-text">Job Work
-                                                                    Activity</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" data-bs-toggle="tab"
                                                                 href="#All_Compliances_Quotation">
-                                                                <span class="nav-link-text badge-on-text">All
+                                                                <span class="nav-link-text badge-on-text">Shortlisted
                                                                     Contractor</span>
                                                             </a>
                                                         </li>
@@ -241,16 +235,23 @@
                                                                     Contractor</span>
                                                             </a>
                                                         </li>
-                                                        <li class="nav-item">
+                                                        <!-- <li class="nav-item">
                                                             <a class="nav-link" data-bs-toggle="tab"
                                                                 href="#Accepted_Quotation">
                                                                 <span class="nav-link-text badge-on-text">Accepted
                                                                     Quotation</span>
                                                             </a>
+                                                        </li> -->
+                                                        <li class="nav-item">
+                                                            <a class="nav-link " data-bs-toggle="tab"
+                                                                href="#Work_Activity">
+                                                                <span class="nav-link-text badge-on-text">
+                                                                    Activity Log</span>
+                                                            </a>
                                                         </li>
                                                     </ul>
                                                     <div class="tab-content tasktab_content mt-3 nobtPadding">
-                                                        <div class="tab-pane fade show active" id="Work_Activity">
+                                                        <div class="tab-pane fade " id="Work_Activity">
                                                             <table
                                                                 class="table common-datatable nowrap w-100 tbWithout_action">
                                                                 <thead>
@@ -772,7 +773,7 @@
                                                                 </tbody>
                                                             </table>
                                                         </div>
-                                                        <div class="tab-pane fade" id="All_Compliances_Quotation">
+                                                        <div class="tab-pane fade show active" id="All_Compliances_Quotation">
                                                             <div class="contact-list-view">
                                                                 <table class="table common-datatable nowrap w-100">
                                                                     <thead>
@@ -780,119 +781,139 @@
                                                                             <th>Contractor Name</th>
                                                                             <th>Email Address</th>
                                                                             <th>Phone Number</th>
+                                                                            <th>Task</th>
+                                                                            <th>Charges</th>
+                                                                            <th>Time</th>
                                                                             <th>Actions</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
-                                                                        <tr>
-                                                                            <td>David Wilson</td>
-                                                                            <td>davidwilson@example.com</td>
-                                                                            <td>+1 789 012 3456</td>
-                                                                            <td>
-                                                                                <div
-                                                                                    class="d-flex align-items-center ActionDropdown">
-                                                                                    <div class="d-flex">
-                                                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                            href="view-all-property-quotations.php"
-                                                                                            data-bs-toggle="tooltip"
-                                                                                            data-placement="top"
-                                                                                            title=""
-                                                                                            data-bs-original-title="View All Properties quotations"><span
-                                                                                                class="icon"><span
-                                                                                                    class="feather-icon">
-                                                                                                    <iconify-icon
-                                                                                                        icon="ant-design:eye-outlined">
-                                                                                                    </iconify-icon>
-                                                                                                </span></span></a>
-
-                                                                                    </div>
-
-                                                                                </div>
-                                                                            </td>
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Emma Johnson</td>
-                                                                            <td>emmajohnson@example.com</td>
-                                                                            <td>+44 7700 900123</td>
-                                                                            <td>
-                                                                                <div
-                                                                                    class="d-flex align-items-center ActionDropdown">
-                                                                                    <div class="d-flex">
-                                                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                                                                            href="view-all-property-quotations.php"
-                                                                                            data-bs-toggle="tooltip"
-                                                                                            data-placement="top"
-                                                                                            title=""
-                                                                                            data-bs-original-title="View All Properties quotations">
-                                                                                            <span class="icon">
-                                                                                                <span
-                                                                                                    class="feather-icon">
-                                                                                                    <iconify-icon
-                                                                                                        icon="ant-design:eye-outlined">
-                                                                                                    </iconify-icon>
-                                                                                                </span>
+                                                                    <tr>
+                                                                        <td>David Wilson</td>
+                                                                        <td>davidwilson@example.com</td>
+                                                                        <td>+1 789 012 3456</td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">Wire Change</div>
+                                                                            <div class="taskDTKOp">Bulb repair</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">$5/per hour</div>
+                                                                            <div class="taskDTKOp">$2/per hour</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">1 Day</div>
+                                                                            <div class="taskDTKOp">2 Days</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                                <div class="d-flex">
+                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-all-property-quotations.php" data-bs-toggle="tooltip" data-placement="top" title="" data-bs-original-title="View All Properties quotations">
+                                                                                        <span class="icon">
+                                                                                            <span class="feather-icon">
+                                                                                                <iconify-icon icon="ant-design:eye-outlined"></iconify-icon>
                                                                                             </span>
-                                                                                        </a>
-                                                                                    </div>
+                                                                                        </span>
+                                                                                    </a>
                                                                                 </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Michael Brown</td>
-                                                                            <td>michaelbrown@example.com</td>
-                                                                            <td>+61 410 567 890</td>
-                                                                            <td>
-                                                                                <div
-                                                                                    class="d-flex align-items-center ActionDropdown">
-                                                                                    <div class="d-flex">
-                                                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                                                                            href="view-all-property-quotations.php"
-                                                                                            data-bs-toggle="tooltip"
-                                                                                            data-placement="top"
-                                                                                            title=""
-                                                                                            data-bs-original-title="View quotation report">
-                                                                                            <span class="icon">
-                                                                                                <span
-                                                                                                    class="feather-icon">
-                                                                                                    <iconify-icon
-                                                                                                        icon="ant-design:eye-outlined">
-                                                                                                    </iconify-icon>
-                                                                                                </span>
-                                                                                            </span>
-                                                                                        </a>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Sophia Martinez</td>
-                                                                            <td>sophiamartinez@example.com</td>
-                                                                            <td>+91 98765 43210</td>
-                                                                            <td>
-                                                                                <div
-                                                                                    class="d-flex align-items-center ActionDropdown">
-                                                                                    <div class="d-flex">
-                                                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                                                                            href="view-all-property-quotations.php"
-                                                                                            data-bs-toggle="tooltip"
-                                                                                            data-placement="top"
-                                                                                            title=""
-                                                                                            data-bs-original-title="View All Properties quotations">
-                                                                                            <span class="icon">
-                                                                                                <span
-                                                                                                    class="feather-icon">
-                                                                                                    <iconify-icon
-                                                                                                        icon="ant-design:eye-outlined">
-                                                                                                    </iconify-icon>
-                                                                                                </span>
-                                                                                            </span>
-                                                                                        </a>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
 
+                                                                    <tr>
+                                                                        <td>Sarah Johnson</td>
+                                                                        <td>sarahjohnson@example.com</td>
+                                                                        <td>+1 456 789 0123</td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">AC Repair</div>
+                                                                            <div class="taskDTKOp">Thermostat Replacement</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">$8/per hour</div>
+                                                                            <div class="taskDTKOp">$5/per hour</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">3 Days</div>
+                                                                            <div class="taskDTKOp">2 Days</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                                <div class="d-flex">
+                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-all-property-quotations.php" data-bs-toggle="tooltip" data-placement="top" title="" data-bs-original-title="View All Properties quotations">
+                                                                                        <span class="icon">
+                                                                                            <span class="feather-icon">
+                                                                                                <iconify-icon icon="ant-design:eye-outlined"></iconify-icon>
+                                                                                            </span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>Michael Brown</td>
+                                                                        <td>michaelbrown@example.com</td>
+                                                                        <td>+1 321 654 0987</td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">Wire Change</div>
+                                                                            <div class="taskDTKOp">Bulb repair</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">$5/per hour</div>
+                                                                            <div class="taskDTKOp">$2/per hour</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">1 Day</div>
+                                                                            <div class="taskDTKOp">2 Days</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                                <div class="d-flex">
+                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-all-property-quotations.php" data-bs-toggle="tooltip" data-placement="top" title="" data-bs-original-title="View All Properties quotations">
+                                                                                        <span class="icon">
+                                                                                            <span class="feather-icon">
+                                                                                                <iconify-icon icon="ant-design:eye-outlined"></iconify-icon>
+                                                                                            </span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>Emily Davis</td>
+                                                                        <td>emilydavis@example.com</td>
+                                                                        <td>+1 987 654 3210</td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">AC Repair</div>
+                                                                            <div class="taskDTKOp">Thermostat Replacement</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">$8/per hour</div>
+                                                                            <div class="taskDTKOp">$5/per hour</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">3 Days</div>
+                                                                            <div class="taskDTKOp">2 Days</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                                <div class="d-flex">
+                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-all-property-quotations.php" data-bs-toggle="tooltip" data-placement="top" title="" data-bs-original-title="View All Properties quotations">
+                                                                                        <span class="icon">
+                                                                                            <span class="feather-icon">
+                                                                                                <iconify-icon icon="ant-design:eye-outlined"></iconify-icon>
+                                                                                            </span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                        
+                                                                        
                                                                     </tbody>
                                                                 </table>
                                                             </div>
@@ -903,133 +924,147 @@
                                                             <div class="card">
                                                                 <div class="card-body">
                                                                     <div class="contact-list-view">
-                                                                        <table
-                                                                            class="table common-datatable nowrap w-100">
-                                                                            <thead>
-                                                                                <tr>
-                                                                                    <th>Contractor Name</th>
-                                                                                    <th>Email Address</th>
-                                                                                    <th>Phone Number</th>
-                                                                                    <th>Actions</th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td>David Wilson</td>
-                                                                                    <td>davidwilson@example.com</td>
-                                                                                    <td>+1 789 012 3456</td>
-                                                                                    <td>
-                                                                                        <div
-                                                                                            class="d-flex align-items-center ActionDropdown">
-                                                                                            <div class="d-flex">
-                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                                    href="view-all-property-quotations.php"
-                                                                                                    data-bs-toggle="tooltip"
-                                                                                                    data-placement="top"
-                                                                                                    title=""
-                                                                                                    data-bs-original-title="View All Properties quotations"><span
-                                                                                                        class="icon"><span
-                                                                                                            class="feather-icon">
-                                                                                                            <iconify-icon
-                                                                                                                icon="ant-design:eye-outlined">
-                                                                                                            </iconify-icon>
-                                                                                                        </span></span></a>
+                                                                    <table class="table common-datatable nowrap w-100">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Contractor Name</th>
+                                                                            <th>Email Address</th>
+                                                                            <th>Phone Number</th>
+                                                                            <th>Task</th>
+                                                                            <th>Charges</th>
+                                                                            <th>Time</th>
+                                                                            <th>Actions</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td>David Wilson</td>
+                                                                        <td>davidwilson@example.com</td>
+                                                                        <td>+1 789 012 3456</td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">Wire Change</div>
+                                                                            <div class="taskDTKOp">Bulb repair</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">$5/per hour</div>
+                                                                            <div class="taskDTKOp">$2/per hour</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">1 Day</div>
+                                                                            <div class="taskDTKOp">2 Days</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                                <div class="d-flex">
+                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-all-property-quotations.php" data-bs-toggle="tooltip" data-placement="top" title="" data-bs-original-title="View All Properties quotations">
+                                                                                        <span class="icon">
+                                                                                            <span class="feather-icon">
+                                                                                                <iconify-icon icon="ant-design:eye-outlined"></iconify-icon>
+                                                                                            </span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
 
-                                                                                            </div>
+                                                                    <tr>
+                                                                        <td>Sarah Johnson</td>
+                                                                        <td>sarahjohnson@example.com</td>
+                                                                        <td>+1 456 789 0123</td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">AC Repair</div>
+                                                                            <div class="taskDTKOp">Thermostat Replacement</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">$8/per hour</div>
+                                                                            <div class="taskDTKOp">$5/per hour</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">3 Days</div>
+                                                                            <div class="taskDTKOp">2 Days</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                                <div class="d-flex">
+                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-all-property-quotations.php" data-bs-toggle="tooltip" data-placement="top" title="" data-bs-original-title="View All Properties quotations">
+                                                                                        <span class="icon">
+                                                                                            <span class="feather-icon">
+                                                                                                <iconify-icon icon="ant-design:eye-outlined"></iconify-icon>
+                                                                                            </span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
 
-                                                                                        </div>
-                                                                                    </td>
+                                                                    <tr>
+                                                                        <td>Michael Brown</td>
+                                                                        <td>michaelbrown@example.com</td>
+                                                                        <td>+1 321 654 0987</td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">Wire Change</div>
+                                                                            <div class="taskDTKOp">Bulb repair</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">$5/per hour</div>
+                                                                            <div class="taskDTKOp">$2/per hour</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">1 Day</div>
+                                                                            <div class="taskDTKOp">2 Days</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                                <div class="d-flex">
+                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-all-property-quotations.php" data-bs-toggle="tooltip" data-placement="top" title="" data-bs-original-title="View All Properties quotations">
+                                                                                        <span class="icon">
+                                                                                            <span class="feather-icon">
+                                                                                                <iconify-icon icon="ant-design:eye-outlined"></iconify-icon>
+                                                                                            </span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
 
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td>Emma Johnson</td>
-                                                                                    <td>emmajohnson@example.com</td>
-                                                                                    <td>+44 7700 900123</td>
-                                                                                    <td>
-                                                                                        <div
-                                                                                            class="d-flex align-items-center ActionDropdown">
-                                                                                            <div class="d-flex">
-                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                                                                                    href="view-all-property-quotations.php"
-                                                                                                    data-bs-toggle="tooltip"
-                                                                                                    data-placement="top"
-                                                                                                    title=""
-                                                                                                    data-bs-original-title="View All Properties quotations">
-                                                                                                    <span
-                                                                                                        class="icon">
-                                                                                                        <span
-                                                                                                            class="feather-icon">
-                                                                                                            <iconify-icon
-                                                                                                                icon="ant-design:eye-outlined">
-                                                                                                            </iconify-icon>
-                                                                                                        </span>
-                                                                                                    </span>
-                                                                                                </a>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td>Michael Brown</td>
-                                                                                    <td>michaelbrown@example.com
-                                                                                    </td>
-                                                                                    <td>+61 410 567 890</td>
-                                                                                    <td>
-                                                                                        <div
-                                                                                            class="d-flex align-items-center ActionDropdown">
-                                                                                            <div class="d-flex">
-                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                                                                                    href="view-all-property-quotations.php"
-                                                                                                    data-bs-toggle="tooltip"
-                                                                                                    data-placement="top"
-                                                                                                    title=""
-                                                                                                    data-bs-original-title="View quotation report">
-                                                                                                    <span
-                                                                                                        class="icon">
-                                                                                                        <span
-                                                                                                            class="feather-icon">
-                                                                                                            <iconify-icon
-                                                                                                                icon="ant-design:eye-outlined">
-                                                                                                            </iconify-icon>
-                                                                                                        </span>
-                                                                                                    </span>
-                                                                                                </a>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td>Sophia Martinez</td>
-                                                                                    <td>sophiamartinez@example.com
-                                                                                    </td>
-                                                                                    <td>+91 98765 43210</td>
-                                                                                    <td>
-                                                                                        <div
-                                                                                            class="d-flex align-items-center ActionDropdown">
-                                                                                            <div class="d-flex">
-                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                                                                                    href="view-all-property-quotations.php"
-                                                                                                    data-bs-toggle="tooltip"
-                                                                                                    data-placement="top"
-                                                                                                    title=""
-                                                                                                    data-bs-original-title="View All Properties quotations">
-                                                                                                    <span
-                                                                                                        class="icon">
-                                                                                                        <span
-                                                                                                            class="feather-icon">
-                                                                                                            <iconify-icon
-                                                                                                                icon="ant-design:eye-outlined">
-                                                                                                            </iconify-icon>
-                                                                                                        </span>
-                                                                                                    </span>
-                                                                                                </a>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </td>
-                                                                                </tr>
+                                                                    <tr>
+                                                                        <td>Emily Davis</td>
+                                                                        <td>emilydavis@example.com</td>
+                                                                        <td>+1 987 654 3210</td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">AC Repair</div>
+                                                                            <div class="taskDTKOp">Thermostat Replacement</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">$8/per hour</div>
+                                                                            <div class="taskDTKOp">$5/per hour</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">3 Days</div>
+                                                                            <div class="taskDTKOp">2 Days</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="d-flex align-items-center ActionDropdown">
+                                                                                <div class="d-flex">
+                                                                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-all-property-quotations.php" data-bs-toggle="tooltip" data-placement="top" title="" data-bs-original-title="View All Properties quotations">
+                                                                                        <span class="icon">
+                                                                                            <span class="feather-icon">
+                                                                                                <iconify-icon icon="ant-design:eye-outlined"></iconify-icon>
+                                                                                            </span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
 
-                                                                            </tbody>
-                                                                        </table>
+                                                                        
+                                                                        
+                                                                    </tbody>
+                                                                </table>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -2255,12 +2290,12 @@ aria-hidden="true">
     <div class="modal-content">
         <div class="modal-header">
             <h5 class="modal-title" id="manageScheduleModalLabel">Request for a quote <span
-                    class="subparaVen">Please select the vendor for quote</span></h5>
+                    class="subparaVen">Please select the contractor for quote</span></h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
             <!-- Form for Adding Time Schedule -->
-            <form id="scheduleForm" action="checkIn.php">
+            <form id="scheduleForm" action="#">
                 <div class="col-lg-12">
                     <ul class="user-list">
                         <li class="user-item" data-user="1">
@@ -2736,8 +2771,8 @@ $(document).ready(function () {
 document.getElementById('saveScheduleBtn').addEventListener('click', function () {
     Swal.fire({
         icon: 'success',
-        title: 'Quote Sent Successfully',
-        text: 'The quote has been sent successfully to the selected vendors.',
+        title: 'Quote Request Sent Successfully',
+        text: 'The quote request has been sent successfully to the selected contractors.',
         confirmButtonText: 'OK'
     }).then((result) => {
         if (result.isConfirmed) {

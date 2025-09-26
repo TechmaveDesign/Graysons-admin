@@ -51,8 +51,7 @@
                             <div class="v-separator d-lg-block d-none"></div>
 
                             <button class="btn btn-sm addiconiButton commonAddnewButton btn-primary ms-3" type="button"
-                                data-bs-toggle="offcanvas" data-bs-target="#quoteOffcanvas"
-                                aria-controls="offcanvasExample">
+                            data-bs-toggle="offcanvas" data-bs-target="#quoteOffcanvas" aria-controls="offcanvasExample">
                                 <iconify-icon icon="lets-icons:add-round">
                                 </iconify-icon> Create Job
                             </button>
@@ -196,7 +195,7 @@
                                             <a class="nav-link active" data-bs-toggle="tab" href="#allEnquiry">
                                                 <div class="d-flex align-items-center">
                                                     <span class="nav-link-text">Quotation Requested</span>
-                                                    <!-- <span class="numberCount">02</span> -->
+                                                    <span class="numberCount">02</span>
                                                 </div>
                                             </a>
                                         </li>
@@ -204,7 +203,7 @@
                                             <a class="nav-link " data-bs-toggle="tab" href="#ActiveEnquiry">
                                                 <div class="d-flex align-items-center">
                                                     <span class="nav-link-text">Quotation Pending</span>
-                                                    <!-- <span class="numberCount">06</span> -->
+                                                    <span class="numberCount">06</span>
                                                 </div>
                                             </a>
                                         </li>
@@ -212,7 +211,7 @@
                                             <a class="nav-link " data-bs-toggle="tab" href="#openEnquiry">
                                                 <div class="d-flex align-items-center">
                                                     <span class="nav-link-text">Quotation Submitted</span>
-                                                    <!-- <span class="numberCount">05</span> -->
+                                                    <span class="numberCount">05</span>
                                                 </div>
                                             </a>
                                         </li>
@@ -220,7 +219,7 @@
                                             <a class="nav-link" data-bs-toggle="tab" href="#processingEnquiry">
                                                 <div class="d-flex align-items-center">
                                                     <span class="nav-link-text">Re-Quote Requested</span>
-                                                    <!-- <span class="numberCount">07</span> -->
+                                                    <span class="numberCount">07</span>
                                                 </div>
                                             </a>
                                         </li>
@@ -229,7 +228,7 @@
                                             <a class="nav-link" data-bs-toggle="tab" href="#Enquiry_followup1">
                                                 <div class="d-flex align-items-center">
                                                     <span class="nav-link-text">In Progress</span>
-                                                    <!-- <span class="numberCount">05</span> -->
+                                                    <span class="numberCount">05</span>
                                                 </div>
                                             </a>
                                         </li>
@@ -238,7 +237,7 @@
                                             <a class="nav-link" data-bs-toggle="tab" href="#Enquiry_followup2">
                                                 <div class="d-flex align-items-center">
                                                     <span class="nav-link-text">Completed</span>
-                                                    <!-- <span class="numberCount">10</span> -->
+                                                    <span class="numberCount">10</span>
                                                 </div>
                                             </a>
                                         </li>
@@ -1362,7 +1361,53 @@
     </div>
     <!-- /Page Body -->
 </div>
+<!-- Modal -->
+<div class="addEnquiry">
+  <form action="#">
+    <div class="modal fade" id="createfolderModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="sectionCreateBox">
+            <div class="actionBtnSection text-end">
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+              <div class="iconImageSection">
+                <img src="dist/img/newimages/statistics.png" alt="" class="jobCategoryImg">
+                <h5>Choose Job Category</h5>
+                <p>Choose the right job category to create a job.</p>
+              </div>
+         
+              <div class="form-group">
+                  <!-- <label for="category" class="form-label">Select Category</label> -->
+                  <select class="form-select select2">
+                      <option value="Select Category" disabled selected>Select Category</option>
+                      <option value="Electrical">Electrical</option>
+                      <option value="Plumbing">Plumbing</option>
+                      <option value="HVAC">HVAC</option>
+                      <!-- Add more categories here -->
+                  </select>
+              </div>
+            </div>
+             
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btnContinueProcess btn-primary" >
+            <div class="buttontext">
+              <div class="formediticon_modal">
+                <iconify-icon icon="hugeicons:edit-02"></iconify-icon>
+              </div>
+              Continue to Process
+            </div>
+            <iconify-icon icon="bi:arrow-right"></iconify-icon>
+          </button>
 
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
 <!-- add compliance offcanvas -->
 <div class="offcanvas offcanvas-bottom custombottm_offcanvasStyle" tabindex="-1" id="quoteOffcanvas"
     aria-labelledby="offcanvasTopLabel">
@@ -1385,16 +1430,100 @@
 
     </div>
     <div class="Canvas_ct_divider"></div>
-    <form class="" action="all-compliance.php">
+    <form class="" action="#">
         <div class="offcanvas-body">
 
             <div class="addingForm_Container">
-                <div class="add-users-modal-body-table-header text-headline-6">Create Job</div>
+                <div class="add-users-modal-body-table-header text-headline-6 mt-2 mb-3">Choose a template to create a job</div>
 
                 <div class="formstartcontainer">
                     <div class="row">
 
-                        <div class="col-lg-2">
+                       
+
+                        <div class="col-lg-12">
+                        <div class="selectedtype_container TemplateBox">
+                            <div class="card " >
+                                <div class="card-content">
+                                    <div class="formtypecard_icon">
+                                    <iconify-icon icon="fluent:form-28-regular"></iconify-icon>
+                                    </div>
+                                    <h2 class="card-title">Electrical Template 1</h2>
+                                    <div class="radio-container">
+                                        <input type="radio" id="radioAcFire" name="formType" value="acFire">
+                                        <label for="radioAcFire" class="radio-label"></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card " >
+                                <div class="card-content">
+                                    <div class="formtypecard_icon">
+                                    <iconify-icon icon="fluent:form-28-regular"></iconify-icon>
+                                    </div>
+                                    <h2 class="card-title">Electrical Template 2</h2>
+                                    <div class="radio-container">
+                                        <input type="radio" id="radioFdic" name="formType" value="fdic">
+                                        <label for="radioFdic" class="radio-label"></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card " >
+                                <div class="card-content">
+                                    <div class="formtypecard_icon">
+                                    <iconify-icon icon="fluent:form-28-regular"></iconify-icon>
+                                    </div>
+                                    <h2 class="card-title">Electrical Template 3</h2>
+                                    <div class="radio-container">
+                                        <input type="radio" id="radiogroup" name="formType" value="group">
+                                        <label for="radiogroup" class="radio-label"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card " >
+                                <div class="card-content">
+                                    <div class="formtypecard_icon">
+                                    <iconify-icon icon="fluent:form-28-regular"></iconify-icon>
+                                    </div>
+                                    <h2 class="card-title">Electrical Template 4</h2>
+                                    <div class="radio-container">
+                                        <input type="radio" id="radiogroup1" name="formType" value="group">
+                                        <label for="radiogroup1" class="radio-label"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card " >
+                                <div class="card-content">
+                                    <div class="formtypecard_icon">
+                                    <iconify-icon icon="fluent:form-28-regular"></iconify-icon>
+                                    </div>
+                                    <h2 class="card-title">Electrical Template 5</h2>
+                                    <div class="radio-container">
+                                        <input type="radio" id="radiogroup2" name="formType" value="group">
+                                        <label for="radiogroup2" class="radio-label"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card " >
+                                <div class="card-content">
+                                    <div class="formtypecard_icon">
+                                    <iconify-icon icon="fluent:form-28-regular"></iconify-icon>
+                                    </div>
+                                    <h2 class="card-title">Electrical Template 6</h2>
+                                    <div class="radio-container">
+                                        <input type="radio" id="radiogroup3" name="formType" value="group">
+                                        <label for="radiogroup3" class="radio-label"></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <input type="hidden" name="selectedFormType" id="selectedFormType" required="">
+                        </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="row">
+                            <div class="col-lg-3">
                             <div class="form-group">
                                 <label for="jobTitle" class="form-label">Job Title</label>
                                 <input type="text" class="form-control" id="jobTitle" placeholder="Enter the job title">
@@ -1403,139 +1532,135 @@
 
                         <div class="col-lg-3">
                         <div class="form-group">
-                                            <label class="form-label">All Properties</label>
-                                            <div class="dropdown filterdropDownCustom available-users-dropdown-wrapper" >
-                                                <button class="dropbtn dropdown-toggle dropmenuBtn" type="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <span class="selected-count">Select More Properties</span>
-                                                    <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
-                                                </button>
-                                                <div
-                                                    class="dropdown-menu customdropdownmenu_style available-users-dropdown">
-                                                    <div class="filTerSearchMain">
-                                                        <input type="text" class="filterclSearch available-users-search"
-                                                            placeholder="Search More Properties...">
-                                                        <iconify-icon icon="basil:search-outline"></iconify-icon>
-                                                    </div>
-                                                    <div class="sellallitemsMain">
-                                                        <div class="CustomselectallContainer">
-                                                            <input type="checkbox"
-                                                                class="select-all-available-users form-check-input">
-                                                            Select All
-                                                        </div>
-                                                        <div class="clDivider_full"></div>
-                                                    </div>
-                                                    <div class="Customdrpitems_container">
-                                                        <div class="mainoptionContainer">
-                                                            <div class="dropfilter_options">
-                                                                <input type="checkbox"
-                                                                    class="individual-option form-check-input"> Bedroom
-                                                                3 133, Flat 3 (Floor 1, No3), City View@Phoenix House
-                                                            </div>
-                                                        </div>
-                                                        <div class="mainoptionContainer">
-                                                            <div class="dropfilter_options">
-                                                                <input type="checkbox"
-                                                                    class="individual-option form-check-input">
-                                                                Bedroom 2 101, Flat 7 (Floor 2, No7), Garden
-                                                                View@Emerald Apartments
-                                                            </div>
-                                                        </div>
-                                                        <div class="mainoptionContainer">
-                                                            <div class="dropfilter_options">
-                                                                <input type="checkbox"
-                                                                    class="individual-option form-check-input">
-                                                                Lobby 002, Flat 1 (Ground Floor, No1), Street
-                                                                View@Central Plaza
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <p class="no-data" style="display: none;">No data found</p>
+                                <label class="form-label">All Properties</label>
+                                <div class="dropdown filterdropDownCustom available-users-dropdown-wrapper" >
+                                    <button class="dropbtn dropdown-toggle dropmenuBtn" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="selected-count">Select More Properties</span>
+                                        <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
+                                    </button>
+                                    <div
+                                        class="dropdown-menu customdropdownmenu_style available-users-dropdown">
+                                        <div class="filTerSearchMain">
+                                            <input type="text" class="filterclSearch available-users-search"
+                                                placeholder="Search More Properties...">
+                                            <iconify-icon icon="basil:search-outline"></iconify-icon>
+                                        </div>
+                                        <div class="sellallitemsMain">
+                                            <div class="CustomselectallContainer">
+                                                <input type="checkbox"
+                                                    class="select-all-available-users form-check-input">
+                                                Select All
+                                            </div>
+                                            <div class="clDivider_full"></div>
+                                        </div>
+                                        <div class="Customdrpitems_container">
+                                            <div class="mainoptionContainer">
+                                                <div class="dropfilter_options">
+                                                    <input type="checkbox"
+                                                        class="individual-option form-check-input"> Bedroom
+                                                    3 133, Flat 3 (Floor 1, No3), City View@Phoenix House
+                                                </div>
+                                            </div>
+                                            <div class="mainoptionContainer">
+                                                <div class="dropfilter_options">
+                                                    <input type="checkbox"
+                                                        class="individual-option form-check-input">
+                                                    Bedroom 2 101, Flat 7 (Floor 2, No7), Garden
+                                                    View@Emerald Apartments
+                                                </div>
+                                            </div>
+                                            <div class="mainoptionContainer">
+                                                <div class="dropfilter_options">
+                                                    <input type="checkbox"
+                                                        class="individual-option form-check-input">
+                                                    Lobby 002, Flat 1 (Ground Floor, No1), Street
+                                                    View@Central Plaza
                                                 </div>
                                             </div>
                                         </div>
 
+                                        <p class="no-data" style="display: none;">No data found</p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
-                        <div class="col-lg-2">
+                        <!-- <div class="col-lg-2">
                             <div class="form-group">
                                 <label for="category" class="form-label">Category</label>
                                 <select class="form-select select2" id="category">
                                     <option value="Electrical">Electrical</option>
                                     <option value="Plumbing">Plumbing</option>
                                     <option value="HVAC">HVAC</option>
-                                    <!-- Add more categories here -->
+                             
                                 </select>
                             </div>
+                        </div> -->
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label class="form-label">Due Date</label>
+                                <input class="form-control customdataPicker flatpickr-input" type="text" name="" value="01/06/2024" readonly="readonly">
+                                <iconify-icon icon="ion:calendar-outline" class="dateinput_icon"></iconify-icon>
+                            </div>
                         </div>
-
-                        <div class="col-md-2">
-
-<div class="form-group">
-    <label class="form-label">Due Date</label>
-    <input class="form-control customdataPicker flatpickr-input" type="text" name="" value="01/06/2024" readonly="readonly">
-    <iconify-icon icon="ion:calendar-outline" class="dateinput_icon"></iconify-icon>
-</div>
-</div>
 
                        
                         <div class="col-lg-3">
                         <div class="form-group">
-                                            <label class="form-label">All Contractor</label>
-                                            <div class="dropdown filterdropDownCustom available-users-dropdown-wrapper" >
-                                                <button class="dropbtn dropdown-toggle dropmenuBtn" type="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <span class="selected-count">Select Contractor</span>
-                                                    <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
-                                                </button>
-                                                <div
-                                                    class="dropdown-menu customdropdownmenu_style available-users-dropdown">
-                                                    <div class="filTerSearchMain">
-                                                        <input type="text" class="filterclSearch available-users-search"
-                                                            placeholder="Search Contractor....">
-                                                        <iconify-icon icon="basil:search-outline"></iconify-icon>
-                                                    </div>
-                                                    <div class="sellallitemsMain">
-                                                        <div class="CustomselectallContainer">
-                                                            <input type="checkbox"
-                                                                class="select-all-available-users form-check-input">
-                                                            Select All
-                                                        </div>
-                                                        <div class="clDivider_full"></div>
-                                                    </div>
-                                                    <div class="Customdrpitems_container">
-                                                        <div class="mainoptionContainer">
-                                                            <div class="dropfilter_options">
-                                                                <input type="checkbox"
-                                                                    class="individual-option form-check-input"> John Doe
-                                                            </div>
-                                                        </div>
-                                                        <div class="mainoptionContainer">
-                                                            <div class="dropfilter_options">
-                                                                <input type="checkbox"
-                                                                    class="individual-option form-check-input">
-                                                                    Jane Smith
-                                                            </div>
-                                                        </div>
-                                                        <div class="mainoptionContainer">
-                                                            <div class="dropfilter_options">
-                                                                <input type="checkbox"
-                                                                    class="individual-option form-check-input">
-                                                                    Alice Johnson
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <p class="no-data" style="display: none;">No data found</p>
-                                                </div>
+                            <label class="form-label">All Contractor</label>
+                            <div class="dropdown filterdropDownCustom available-users-dropdown-wrapper" >
+                                <button class="dropbtn dropdown-toggle dropmenuBtn" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="selected-count">Select Contractor</span>
+                                    <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
+                                </button>
+                                <div
+                                    class="dropdown-menu customdropdownmenu_style available-users-dropdown">
+                                    <div class="filTerSearchMain">
+                                        <input type="text" class="filterclSearch available-users-search"
+                                            placeholder="Search Contractor....">
+                                        <iconify-icon icon="basil:search-outline"></iconify-icon>
+                                    </div>
+                                    <div class="sellallitemsMain">
+                                        <div class="CustomselectallContainer">
+                                            <input type="checkbox"
+                                                class="select-all-available-users form-check-input">
+                                            Select All
+                                        </div>
+                                        <div class="clDivider_full"></div>
+                                    </div>
+                                    <div class="Customdrpitems_container">
+                                        <div class="mainoptionContainer">
+                                            <div class="dropfilter_options">
+                                                <input type="checkbox"
+                                                    class="individual-option form-check-input"> John Doe
                                             </div>
                                         </div>
+                                        <div class="mainoptionContainer">
+                                            <div class="dropfilter_options">
+                                                <input type="checkbox"
+                                                    class="individual-option form-check-input">
+                                                    Jane Smith
+                                            </div>
+                                        </div>
+                                        <div class="mainoptionContainer">
+                                            <div class="dropfilter_options">
+                                                <input type="checkbox"
+                                                    class="individual-option form-check-input">
+                                                    Alice Johnson
+                                            </div>
+                                        </div>
+                                    </div>
 
+                                    <p class="no-data" style="display: none;">No data found</p>
+                                </div>
+                            </div>
                         </div>
 
-                        
-
+                        </div>
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <div class="form-label-group">
@@ -1552,6 +1677,11 @@
                                     data-max-file-size="3MB" data-max-files="5">
                             </div>
                         </div>
+                            </div>
+
+                        </div>
+
+                        
 
                     </div>
                 </div>
@@ -1810,3 +1940,101 @@ aria-hidden="true">
 
 </script>
 <!-- end -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.btnContinueProcess').forEach(function(button) {
+      button.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent immediate action
+
+        // Show loading dots
+        button.classList.add('btn-loading');
+        button.insertAdjacentHTML('beforeend', `
+          <div class="loading-dots">
+            <span></span><span></span><span></span>
+          </div>
+        `);
+
+        // Simulate a delay before taking action
+        setTimeout(function() {
+          // Hide the modals when applicable
+          ['createfolderModal', 'EditGroupModal'].forEach(function(modalId) {
+            var modalElement = document.getElementById(modalId);
+            if (modalElement) {
+              var modalInstance = bootstrap.Modal.getInstance(modalElement); 
+              if (modalInstance) {
+                modalInstance.hide();
+              }
+            }
+          });
+
+          // Remove loading dots
+          button.classList.remove('btn-loading');
+          var loadingDots = button.querySelector('.loading-dots');
+          if (loadingDots) {
+            loadingDots.remove();
+          }
+
+          // Open the offcanvas after closing the modal
+          var offcanvasElement = document.getElementById('quoteOffcanvas');
+          if (offcanvasElement) {
+            var offcanvasInstance = new bootstrap.Offcanvas(offcanvasElement);
+            offcanvasInstance.show();
+          }
+
+        }, 1000); // Adjust delay as needed
+      });
+    });
+  });
+</script>
+
+<script>
+    function getRandomColor() {
+        let letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    // Apply random colors to elements inside .TemplateBox
+    document.querySelectorAll('.TemplateBox .card').forEach(card => {
+        let randomColor = getRandomColor(); // One color for everything except card background
+
+        // Apply same color to the required elements
+        card.style.borderColor = randomColor; // Card border
+        card.querySelector('.formtypecard_icon').style.background = randomColor; // Icon background
+        card.querySelector('.card-title').style.color = randomColor; // Text color
+
+        // Ensure the icon color is white
+        let icon = card.querySelector('.formtypecard_icon iconify-icon');
+        if (icon) {
+            icon.style.color = "#fff";
+        }
+
+        // Target the radio input and its label
+        let radioInput = card.querySelector('.radio-container input[type="radio"]');
+        let radioLabel = card.querySelector('.radio-container .radio-label');
+
+        if (radioInput && radioLabel) {
+            // Store the color in custom attributes
+            radioInput.setAttribute("data-color", randomColor);
+
+            // Apply styles when checked
+            radioInput.addEventListener("change", function () {
+                document.querySelectorAll('.radio-container input[type="radio"]').forEach(input => {
+                    let label = input.nextElementSibling;
+                    label.style.borderColor = ""; // Reset border
+                    label.style.background = ""; // Reset background
+                });
+
+                if (this.checked) {
+                    radioLabel.style.borderColor = randomColor; // Same border color
+                    radioLabel.style.background = randomColor; // Same background color
+                }
+            });
+        }
+    });
+</script>
+

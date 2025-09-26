@@ -252,10 +252,14 @@
                                                                     <thead>
                                                                         <tr>
                                                                             <th>Property</th>
-                                                                            <th>Quotation Requested</th>
+                                                                            <!-- <th>Quotation Requested</th> -->
+                                                                              
                                                                             <th>Documents</th>
                                                                             <th>Certificate / Report</th>
                                                                             <th>Status</th>
+                                                                            <th>Task</th>
+                                                                            <th>Charges</th>
+                                                                            <th>Time</th>
                                                                             <th>Actions</th>
                                                                         </tr>
                                                                     </thead>
@@ -278,9 +282,9 @@
                                                                                     </button>
                                                                                 </div>
                                                                             </td>
-                                                                            <td class="Quotationamout_data">
+                                                                            <!-- <td class="Quotationamout_data">
                                                                                 <input type="text" class="form-control"
-                                                                                    value="£59"></td>
+                                                                                    value="£59"></td> -->
                                                                             <td>
                                                                                 <div class="AddQuotation_document">
                                                                                     <button type="button"
@@ -333,6 +337,18 @@
                                                                                 </div>
                                                                             </td>
                                                                             <td>
+                                                                            <div class="taskDTKOp">Wire Change</div>
+                                                                            <div class="taskDTKOp">Bulb repair</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">$5/per hour</div>
+                                                                            <div class="taskDTKOp">$2/per hour</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">1 Day</div>
+                                                                            <div class="taskDTKOp">2 Days</div>
+                                                                        </td>
+                                                                            <td>
                                                                                 <div
                                                                                     class="d-flex align-items-center ActionDropdown">
                                                                                     <div class="d-flex">
@@ -373,9 +389,9 @@
                                                                                     </button>
                                                                                 </div>
                                                                             </td>
-                                                                            <td class="Quotationamout_data">
+                                                                            <!-- <td class="Quotationamout_data">
                                                                                 <input type="text" class="form-control"
-                                                                                    value="£120"></td>
+                                                                                    value="£120"></td> -->
                                                                             <td>
                                                                                 <div
                                                                                     class="d-flex align-items-center ActionDropdown">
@@ -446,6 +462,18 @@
                                                                                 </div>
                                                                             </td>
                                                                             <td>
+                                                                            <div class="taskDTKOp">Wire Change</div>
+                                                                            <div class="taskDTKOp">Bulb repair</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">$5/per hour</div>
+                                                                            <div class="taskDTKOp">$2/per hour</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">1 Day</div>
+                                                                            <div class="taskDTKOp">2 Days</div>
+                                                                        </td>
+                                                                            <td>
 
                                                                             </td>
                                                                         </tr>
@@ -467,9 +495,9 @@
                                                                                     </button>
                                                                                 </div>
                                                                             </td>
-                                                                            <td class="Quotationamout_data">
+                                                                            <!-- <td class="Quotationamout_data">
                                                                                 <input type="text" class="form-control"
-                                                                                    value="£63"></td>
+                                                                                    value="£63"></td> -->
                                                                             <td>
                                                                                 <div
                                                                                     class="d-flex align-items-center ActionDropdown">
@@ -539,7 +567,18 @@
                                                                                     </select>
                                                                                 </div>
                                                                             </td>
-
+                                                                            <td>
+                                                                            <div class="taskDTKOp">Wire Change</div>
+                                                                            <div class="taskDTKOp">Bulb repair</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">$5/per hour</div>
+                                                                            <div class="taskDTKOp">$2/per hour</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">1 Day</div>
+                                                                            <div class="taskDTKOp">2 Days</div>
+                                                                        </td>
                                                                             <td>
                                                                                 <div
                                                                                     class="d-flex align-items-center ActionDropdown">
@@ -581,9 +620,9 @@
                                                                                     </button>
                                                                                 </div>
                                                                             </td>
-                                                                            <td class="Quotationamout_data">
+                                                                            <!-- <td class="Quotationamout_data">
                                                                                 <input type="text" class="form-control"
-                                                                                    value="£65"></td>
+                                                                                    value="£65"></td> -->
                                                                             <td>
                                                                                 <div
                                                                                     class="d-flex align-items-center ActionDropdown">
@@ -653,7 +692,18 @@
                                                                                     </select>
                                                                                 </div>
                                                                             </td>
-
+                                                                            <td>
+                                                                            <div class="taskDTKOp">Wire Change</div>
+                                                                            <div class="taskDTKOp">Bulb repair</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">$5/per hour</div>
+                                                                            <div class="taskDTKOp">$2/per hour</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">1 Day</div>
+                                                                            <div class="taskDTKOp">2 Days</div>
+                                                                        </td>
                                                                             <td>
                                                                                 <div
                                                                                     class="d-flex align-items-center ActionDropdown">
@@ -690,124 +740,144 @@
                                                                             class="table common-datatable nowrap w-100">
                                                                             <thead>
                                                                                 <tr>
-                                                                                    <th>Property</th>
-                                                                                    <th>Contractor Name</th>
-                                                                                    <th>Property Name</th>
-                                                                                    <th>Job Title</th>
-                                                                                    <th>Category</th>
-                                                                                    <th>Status</th>
-
-                                                                                    <!-- <th>Visit Date</th>
-                                                <th>Work Order ID</th>
-                                                <th>Completion Date</th>
-                                                <th>Renewal Date</th>
-                                                <th>Billing Status</th>
-                                                <th>Documents</th> -->
-                                                                                    <th>Actions</th>
-                                                                                    <!-- Added Actions Column -->
+                                                                                <th>Property</th>
+                                                                            <!-- <th>Quotation Requested</th> -->
+                                                                              
+                                                                            <th>Documents</th>
+                                                                            <th>Certificate / Report</th>
+                                                                            <th>Status</th>
+                                                                            <th>Task</th>
+                                                                            <th>Charges</th>
+                                                                            <th>Time</th>
+                                                                            <th>Actions</th>
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
 
-                                                                                <tr>
-                                                                                    <td>
-                                                                                        <div
-                                                                                            class="LongMesage_container">
-                                                                                            <input
-                                                                                                class="refuge-collection-input tableLongMessage_Input"
-                                                                                                value="Bedroom 3 133, Flat 3 (Floor 1, No3), City View@Phoenix House">
-                                                                                            <button
-                                                                                                class="view-btn tablemessageview_btn"
-                                                                                                type="button"
-                                                                                                data-bs-toggle="tooltip"
-                                                                                                data-bs-placement="top"
-                                                                                                aria-label="Click to view"
-                                                                                                data-bs-original-title="Click to view Full Message">
-                                                                                                <i
-                                                                                                    class="bi bi-eye"></i>
-                                                                                                Read More
-                                                                                            </button>
-                                                                                        </div>
-                                                                                    </td>
-                                                                                    <td>HydroPlumb Solutions</td>
-                                                                                    <td class="Quotationamout_data">
-                                                                                        <input type="text"
-                                                                                            class="form-control"
-                                                                                            value="£120"></td>
-                                                                                    <td>
-                                                                                        <div
-                                                                                            class="d-flex align-items-center ActionDropdown">
-                                                                                            <div class="d-flex">
-                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                                    href="##"
-                                                                                                    data-bs-toggle="tooltip"
-                                                                                                    data-placement="top"
-                                                                                                    title=""
-                                                                                                    data-bs-original-title="Download Document"><span
-                                                                                                        class="icon"><span
-                                                                                                            class="feather-icon">
-                                                                                                            <iconify-icon
-                                                                                                                icon="solar:file-download-broken">
-                                                                                                            </iconify-icon>
-                                                                                                        </span></span></a>
+                                                                            <tr>
+                                                                            <td>
+                                                                                <div class="LongMesage_container">
+                                                                                    <input
+                                                                                        class="refuge-collection-input tableLongMessage_Input"
+                                                                                        value="Kitchen 206, Flat 12 (Floor 3, No12), Sea View@Oceanic Towers">
+                                                                                    <button
+                                                                                        class="view-btn tablemessageview_btn"
+                                                                                        type="button"
+                                                                                        data-bs-toggle="tooltip"
+                                                                                        data-bs-placement="top"
+                                                                                        aria-label="Click to view"
+                                                                                        data-bs-original-title="Click to view Full Message">
+                                                                                        <i class="bi bi-eye"></i> Read
+                                                                                        More
+                                                                                    </button>
+                                                                                </div>
+                                                                            </td>
+                                                                            <!-- <td class="Quotationamout_data">
+                                                                                <input type="text" class="form-control"
+                                                                                    value="£63"></td> -->
+                                                                            <td>
+                                                                                <div
+                                                                                    class="d-flex align-items-center ActionDropdown">
+                                                                                    <div class="d-flex">
+                                                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                            href="##"
+                                                                                            data-bs-toggle="tooltip"
+                                                                                            data-placement="top"
+                                                                                            title=""
+                                                                                            data-bs-original-title="Download Document"><span
+                                                                                                class="icon"><span
+                                                                                                    class="feather-icon">
+                                                                                                    <iconify-icon
+                                                                                                        icon="solar:file-download-broken">
+                                                                                                    </iconify-icon>
+                                                                                                </span></span></a>
 
-                                                                                            </div>
+                                                                                    </div>
 
-                                                                                        </div>
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <div
-                                                                                            class="d-flex align-items-center ActionDropdown">
-                                                                                            <div class="d-flex">
-                                                                                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
-                                                                                                    href="view-quotation-report.php"
-                                                                                                    data-bs-toggle="tooltip"
-                                                                                                    data-placement="top"
-                                                                                                    title=""
-                                                                                                    data-bs-original-title="View quotation report"><span
-                                                                                                        class="icon"><span
-                                                                                                            class="feather-icon">
-                                                                                                            <iconify-icon
-                                                                                                                icon="ant-design:eye-outlined">
-                                                                                                            </iconify-icon>
-                                                                                                        </span></span></a>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div
+                                                                                    class="d-flex align-items-center ActionDropdown">
+                                                                                    <div class="d-flex">
+                                                                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover "
+                                                                                            href="view-quotation-report.php"
+                                                                                            data-bs-toggle="tooltip"
+                                                                                            data-placement="top"
+                                                                                            title=""
+                                                                                            data-bs-original-title="View quotation report"><span
+                                                                                                class="icon"><span
+                                                                                                    class="feather-icon">
+                                                                                                    <iconify-icon
+                                                                                                        icon="ant-design:eye-outlined">
+                                                                                                    </iconify-icon>
+                                                                                                </span></span></a>
 
-                                                                                            </div>
+                                                                                    </div>
 
-                                                                                        </div>
-                                                                                    </td>
-                                                                                    <td class="">
-                                                                                        <div
-                                                                                            class="form-group tableselect_data">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td class="">
+                                                                                <div
+                                                                                    class="form-group tableselect_data">
 
-                                                                                            <select
-                                                                                                class="form-control statusSelect_withsearch ">
-                                                                                                <option disabled
-                                                                                                    selected value="">
-                                                                                                    Please
-                                                                                                    Select...
-                                                                                                </option>
-                                                                                                <option
-                                                                                                    value="Account Department">
-                                                                                                    Accepted
-                                                                                                </option>
-                                                                                                <option
-                                                                                                    value="Reject Quotation"
-                                                                                                    Selected>
-                                                                                                    Rejected
-                                                                                                </option>
-                                                                                                <option
-                                                                                                    value="Request Re Quote">
-                                                                                                    Request Re Quote
-                                                                                                </option>
+                                                                                    <select
+                                                                                        class="form-control statusSelect_withsearch ">
+                                                                                        <option disabled selected
+                                                                                            value="">
+                                                                                            Please
+                                                                                            Select...
+                                                                                        </option>
+                                                                                        <option
+                                                                                            value="Account Department"
+                                                                                         >
+                                                                                            Accept
+                                                                                        </option>
+                                                                                        <option value="Reject Quotation"    Selected>
+                                                                                            Reject
+                                                                                        </option>
+                                                                                        <option
+                                                                                            value="Request Re Quote">
+                                                                                            Request Re Quote
+                                                                                        </option>
 
-                                                                                            </select>
-                                                                                        </div>
-                                                                                    </td>
-                                                                                    <td>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                            <div class="taskDTKOp">Wire Change</div>
+                                                                            <div class="taskDTKOp">Bulb repair</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">$5/per hour</div>
+                                                                            <div class="taskDTKOp">$2/per hour</div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="taskDTKOp">1 Day</div>
+                                                                            <div class="taskDTKOp">2 Days</div>
+                                                                        </td>
+                                                                            <td>
+                                                                                <!-- <div
+                                                                                    class="d-flex align-items-center ActionDropdown">
+                                                                                    <div class="d-flex">
 
-                                                                                    </td>
-                                                                                </tr>
+                                                                                        <a href="##"
+                                                                                            data-bs-toggle="modal"
+                                                                                            data-bs-target="#schedulevisit_modal"
+                                                                                            class="btn btn-sm commonAddnewButton generateContarct_btn btn-primary ms-3"><span><span
+                                                                                                    class="icon"><span
+                                                                                                        class="feather-icon">
+                                                                                                        <iconify-icon
+                                                                                                            icon="iconamoon:clock-light">
+                                                                                                        </iconify-icon>
+                                                                                                    </span></span><span
+                                                                                                    class="btn-text">Schedule
+                                                                                                    a Visit
+                                                                                                </span></span></a>
+                                                                                    </div>
+                                                                                </div> -->
+                                                                            </td>
+                                                                        </tr>
 
                                                                             </tbody>
                                                                         </table>

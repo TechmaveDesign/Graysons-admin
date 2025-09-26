@@ -468,10 +468,11 @@
                         <div class="col-lg-3">
                             <div class="form-group">
                                 <label class="form-label">Mobile
-                                    Number</label>
+                                    Number <span
+                                    class="RequiredField_badge">*</span></label>
                                 <div class="pn-select" id="js_pn-select" style="--prefix-length: 2">
                                     <!-- Selected prefix -->
-                                    <button class="pn-selected-prefix" aria-label="Select phonenumber prefix"
+                                    <button type="button" class="pn-selected-prefix" aria-label="Select phonenumber prefix"
                                         id="js_trigger-dropdown" tabindex="1">
                                         <img class="pn-selected-prefix__flag" id="js_selected-flag"
                                             src="https://flagpedia.net/data/flags/icon/36x27/nl.png" />
@@ -523,7 +524,7 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label for="Contact" class="form-label">Home Phone</label>
+                                <label for="Contact" class="form-label">Phone</label>
                                 <input type="phone" class="form-control" id="Contact">
                             </div>
 
@@ -571,14 +572,16 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label for="Contact" class="form-label">Emergency Contact Name</label>
+                                <label for="Contact" class="form-label">Emergency Contact Name <span
+                                class="RequiredField_badge">*</span></label>
                                 <input type="text" class="form-control" id="Contact">
                             </div>
 
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label for="Contact" class="form-label">Home Phone</label>
+                                <label for="Contact" class="form-label">Phone <span
+                                class="RequiredField_badge">*</span></label>
                                 <input type="phone" class="form-control" id="Contact">
                             </div>
 
@@ -588,21 +591,24 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label for="Contact" class="form-label">Company Name</label>
+                                <label for="Contact" class="form-label">Company Name <span
+                                class="RequiredField_badge">*</span></label>
                                 <input type="text" class="form-control" id="Contact">
                             </div>
 
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label for="Contact" class="form-label">Company Address</label>
+                                <label for="Contact" class="form-label">Company Address <span
+                                class="RequiredField_badge">*</span></label>
                                 <input type="text" class="form-control" id="Contact">
                             </div>
 
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label for="Contact" class="form-label">Work Phone Number</label>
+                                <label for="Contact" class="form-label">Work Phone Number <span
+                                class="RequiredField_badge">*</span></label>
                                 <input type="text" class="form-control" id="Contact">
                             </div>
                         </div>
@@ -641,7 +647,8 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label for="Contact" class="form-label">Sub-Category</label>
+                                <label for="Contact" class="form-label">Sub-Category <span
+                                class="RequiredField_badge">*</span></label>
                                 <input type="text" class="form-control" id="Contact">
                             </div>
                         </div>
@@ -700,7 +707,7 @@
                 <div class="formstartcontainer">
                     <div class="row">
 
-                    <div class="col-lg-3">
+                        <div class="col-lg-3">
                             <div class="form-group">
                                 <label for="vendorName" class="form-label">First Name <span
                                         class="RequiredField_badge">*</span></label>
@@ -726,10 +733,11 @@
                         <div class="col-lg-3">
                             <div class="form-group">
                                 <label class="form-label">Mobile
-                                    Number</label>
+                                    Number <span
+                                    class="RequiredField_badge">*</span></label>
                                 <div class="pn-select" id="js_pn-select" style="--prefix-length: 2">
                                     <!-- Selected prefix -->
-                                    <button class="pn-selected-prefix" aria-label="Select phonenumber prefix"
+                                    <button type="button" class="pn-selected-prefix" aria-label="Select phonenumber prefix"
                                         id="js_trigger-dropdown" tabindex="1">
                                         <img class="pn-selected-prefix__flag" id="js_selected-flag"
                                             src="https://flagpedia.net/data/flags/icon/36x27/nl.png" />
@@ -781,7 +789,7 @@
 
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label for="Contact" class="form-label">Home Phone</label>
+                                <label for="Contact" class="form-label">Phone</label>
                                 <input type="phone" class="form-control" id="Contact">
                             </div>
 
@@ -829,14 +837,16 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label for="Contact" class="form-label">Emergency Contact Name</label>
+                                <label for="Contact" class="form-label">Emergency Contact Name <span
+                                class="RequiredField_badge">*</span></label>
                                 <input type="text" class="form-control" id="Contact">
                             </div>
 
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label for="Contact" class="form-label">Home Phone</label>
+                                <label for="Contact" class="form-label">Phone <span
+                                class="RequiredField_badge">*</span></label>
                                 <input type="phone" class="form-control" id="Contact">
                             </div>
 
@@ -846,21 +856,24 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label for="Contact" class="form-label">Company Name</label>
+                                <label for="Contact" class="form-label">Company Name <span
+                                class="RequiredField_badge">*</span></label>
                                 <input type="text" class="form-control" id="Contact">
                             </div>
 
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label for="Contact" class="form-label">Company Address</label>
+                                <label for="Contact" class="form-label">Company Address <span
+                                class="RequiredField_badge">*</span></label>
                                 <input type="text" class="form-control" id="Contact">
                             </div>
 
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label for="Contact" class="form-label">Work Phone Number</label>
+                                <label for="Contact" class="form-label">Work Phone Number <span
+                                class="RequiredField_badge">*</span></label>
                                 <input type="text" class="form-control" id="Contact">
                             </div>
                         </div>
@@ -891,7 +904,7 @@
                             </div>
 
                         </div>
-                        <div class="col-md-3" id="otherFieldss">
+                        <div class="col-md-3" id="otherFields">
                             <div class="form-group">
                                 <label for="Contact" class="form-label">Other(Please Specify)</label>
                                 <input type="text" class="form-control" id="Contact">
@@ -899,17 +912,19 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label for="Contact" class="form-label">Sub-Category</label>
+                                <label for="Contact" class="form-label">Sub-Category <span
+                                class="RequiredField_badge">*</span></label>
                                 <input type="text" class="form-control" id="Contact">
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <label class="form-label">Upload Attachments</label>
-                                <input type="file" class="filepond" id="imageInput1" name="imageInput" multiple
+                                <input type="file" class="filepond" id="imageInput" name="imageInput" multiple
                                     data-max-file-size="3MB" data-max-files="5">
                             </div>
                         </div>
+                    
 
                     </div>
                 </div>

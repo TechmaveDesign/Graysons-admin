@@ -38,6 +38,10 @@
                             </div>
                         </div>
                         <div class="contact-options-wrap">
+                            <button class="CreateCst_button me-2" data-bs-toggle="modal" data-bs-target="#createfolderModal">
+                            <iconify-icon icon="icon-park-outline:table-report"></iconify-icon>
+                                Generate Report
+                            </button>
                             <button id="toggleButton" type="button"
                                 class="btn  btn-flush-dark flush-soft-hover fIlterCmnButton"><span class="icon"><span
                                         class="feather-icon"><i data-feather="list"></i></span></span>Filter</button>
@@ -66,6 +70,42 @@
                     </header>
                     <div class="contact-body">
                         <div class="nicescroll-bar">
+                        <div class="selectable-options">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <label>
+                                        <input type="radio" name="select" value="1" checked>
+                                        <div class="card">
+                                          
+                                            <span class="innerCard">
+                                            <iconify-icon class="iconify calendar-icon" icon="solar:calendar-broken"></iconify-icon>
+                                              
+                                              <span class="Year">2024-2025 <span>Availability Sheet</span></span>
+                                            </span>
+                                            <iconify-icon class="iconify check-icon" icon="pajamas:check"></iconify-icon>
+                                            <!-- <span  data-icon="mdi:check-circle-outline"></span> -->
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <label>
+                                        <input type="radio" name="select" value="2">
+                                        <div class="card">
+                                          
+                                            <span class="innerCard">
+                                            <iconify-icon class="iconify calendar-icon" icon="solar:calendar-broken"></iconify-icon>
+                                              
+                                              <span class="Year">2025-2026 <span>Availability Sheet</span></span>
+                                            </span>
+                                            <iconify-icon class="iconify check-icon" icon="pajamas:check"></iconify-icon>
+                                            <!-- <span  data-icon="mdi:check-circle-outline"></span> -->
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                           
+                            
+                        </div>
                             <div class="userFilters" id="filterDiv" style="display: none;">
                                 <div class="quick-access-form-wrap nopaddingleftright">
                                     <form class="quick-access-form border">
@@ -1212,9 +1252,110 @@
     </div>
     <!-- /Page Body -->
 </div>
+<!-- Modal -->
+<div class="addEnquiry">
+  <form action="#">
+    <div class="modal fade" id="createfolderModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="sectionCreateBox">
+            <div class="actionBtnSection text-end">
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+              <div class="iconImageSection">
+                <img src="dist/img/newimages/documents.png" alt="" class="deliveryDateImg">
+                <h5>Select the year to generate report</h5>
+                <p>Easily generate reports by selecting the year.</p>
+              </div>
+              <div class="form-group">
+              <select name="" id="" class="form-control select2">
+                <option disabled=""  value="">Please Select year...</option>
+                <option value="1" selected="">2024-2025</option>
+                <option value="2">2025-2026</option>
+            
+            </select>
+              
+            </div>
+            </div>
+             
+          </div>
+          <div class="modal-footer">
+          <button type="submit" class="btn btnContinueProcess btn-primary " >
+            <div class="buttontext">
+              <div class="formediticon_modal">
+              <iconify-icon icon="material-symbols-light:download"></iconify-icon>
+              </div>
+              Generate & Download
+            </div>
+            <iconify-icon icon="bi:arrow-right"></iconify-icon>
+          </button>
 
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
 <?php include('footer.php') ?>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Flatpickr with only the year selection
+    flatpickr(".yearselect", {
+      enableTime: false,
+      dateFormat: "Y", // "Y" for only the year
+      allowInput: false, // Prevent manual typing
+      defaultDate: new Date().getFullYear().toString()
+    });
 
+    document.querySelectorAll('.btnContinueProcess').forEach(function(button) {
+      button.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent page reload
+
+        // Show loading dots
+        button.classList.add('btn-loading');
+        button.insertAdjacentHTML('beforeend', `
+          <div class="loading-dots">
+            <span></span><span></span><span></span>
+          </div>
+        `);
+
+        setTimeout(function() {
+          // Hide modal
+          var modalElement = document.getElementById('createfolderModal');
+          if (modalElement) {
+            var modalInstance = bootstrap.Modal.getOrCreateInstance(modalElement);
+            modalInstance.hide();
+          }
+
+          // Remove loading dots
+          button.classList.remove('btn-loading');
+          var loadingDots = button.querySelector('.loading-dots');
+          if (loadingDots) {
+            loadingDots.remove();
+          }
+
+          // Show success alert & download file
+          Swal.fire({
+            icon: 'success',
+            title: 'Report Downloaded',
+            text: 'The report has been successfully generated and downloaded!',
+            confirmButtonText: 'OK'
+          }).then(() => {
+            // Download dummy report
+            let link = document.createElement("a");
+            link.href = "dist/img/newimages/item-images/dummy.pdf"; // Replace with your actual file path
+            link.download = "Report_2024.pdf"; // Custom filename
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          });
+
+        }, 1000); // Delay before dismissing modal
+      });
+    });
+  });
+</script>
 <!-- filters show hide script -->
 <script>
     document.addEventListener("DOMContentLoaded", function() {
